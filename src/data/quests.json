@@ -1,152 +1,1555 @@
 {
-  "meta": {
-    "note": "Auszug aus den Quest-Bundles 01–08 (Originalformat). Enthalten sind nur die Etappen, die vollständig in Großregion 1 liegen (Demo). total_stages = Gesamtlänge laut GDD.",
-    "source": "explore_osaka_quests_bundle_01..08.json"
-  },
-  "quests": [
+ "meta": {
+  "note": "Auszug aus den Quest-Bundles 01–08 (Originalformat). Enthalten sind die Etappen, die vollständig in Großregion 1 und 2 liegen. total_stages = Gesamtlänge laut GDD.",
+  "source": "explore_osaka_quests_bundle_01..08.json"
+ },
+ "quests": [
+  {
+   "quest_id": "STRANG_GEOGRAPHY",
+   "total_stages": 12,
+   "lead_npcs": [
+    "DR_SETO_GEOGRAPHER",
+    "AOI_TRANSIT_STUDENT"
+   ],
+   "stages": [
     {
-      "quest_id": "STRANG_GEOGRAPHY", "total_stages": 12,
-      "lead_npcs": ["DR_SETO_GEOGRAPHER", "AOI_TRANSIT_STUDENT"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "1", "npc_id": "DR_SETO_GEOGRAPHER", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "13", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "13", "npc_id": "DR_SETO_GEOGRAPHER", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "5", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 3, "screen_id": "5", "npc_id": "AOI_TRANSIT_STUDENT", "interaction_type": "ESTIMATION_INPUT", "routing_next": {"target_screen_id": "26", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
+     "stage_index": 1,
+     "screen_id": "1",
+     "npc_id": "DR_SETO_GEOGRAPHER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "13",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
     },
     {
-      "quest_id": "STRANG_NATURE_RETREAT", "total_stages": 11,
-      "lead_npcs": ["MAYA_EXCHANGE_STUDENT", "TALKING_STRAY_CAT"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "1", "npc_id": "MAYA_EXCHANGE_STUDENT", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "13", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "13", "npc_id": "TALKING_STRAY_CAT", "interaction_type": "SILHOUETTE_IDENTIFY", "routing_next": {"target_screen_id": "9", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 3, "screen_id": "9", "npc_id": "MAYA_EXCHANGE_STUDENT", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "26", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
+     "stage_index": 2,
+     "screen_id": "13",
+     "npc_id": "DR_SETO_GEOGRAPHER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
     },
     {
-      "quest_id": "STRANG_NIGHTLIFE_ETIQUETTE", "total_stages": 20,
-      "lead_npcs": ["RYO_NIGHT_PROMOTER", "KENJI_DORM_MATE"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "2b", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "39", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}}
-      ]
+     "stage_index": 3,
+     "screen_id": "5",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
     },
     {
-      "quest_id": "STRANG_PHILOSOPHY_THEOLOGY", "total_stages": 24,
-      "lead_npcs": ["DR_KIRYU_PHILOSOPHER", "PROF_TAKADA_MENTOR", "YAMADA_SHINTO_BELIEVER"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "15", "npc_id": "DR_KIRYU_PHILOSOPHER", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "15", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "15", "npc_id": "DR_KIRYU_PHILOSOPHER", "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE", "routing_next": {"target_screen_id": "18", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "18", "npc_id": "YAMADA_SHINTO_BELIEVER", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "1", "difficulty_tier": 2, "hint_type": "CAMPUS_POINTER"}},
-        {"stage_index": 4, "screen_id": "1", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "6", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 5, "screen_id": "6", "npc_id": "DR_KIRYU_PHILOSOPHER", "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE", "routing_next": {"target_screen_id": "8", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}},
-        {"stage_index": 6, "screen_id": "8", "npc_id": "DR_KIRYU_PHILOSOPHER", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "24", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_CULTURE_JAPAN", "total_stages": 16,
-      "lead_npcs": ["EMI_FOLKLORE_RESEARCHER", "TAKESHI_CULTURE_HOST"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "4", "npc_id": "EMI_FOLKLORE_RESEARCHER", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "4", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "4", "npc_id": "EMI_FOLKLORE_RESEARCHER", "interaction_type": "HANAFUDA_MATCH_MINI", "routing_next": {"target_screen_id": "65", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_CULTURE_KANSAI", "total_stages": 16,
-      "lead_npcs": ["TAKESHI_CULTURE_HOST", "EMI_FOLKLORE_RESEARCHER", "DAIKI_SPORTS_RIVAL"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "16", "npc_id": "TAKESHI_CULTURE_HOST", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "17", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "17", "npc_id": "DAIKI_SPORTS_RIVAL", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "15", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 3, "screen_id": "15", "npc_id": "EMI_FOLKLORE_RESEARCHER", "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE", "routing_next": {"target_screen_id": "18", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 4, "screen_id": "18", "npc_id": "TAKESHI_CULTURE_HOST", "interaction_type": "KARUTA_TOUCH_SLAP", "routing_next": {"target_screen_id": "19", "difficulty_tier": 2, "hint_type": "NEIGHBORHOOD_VIBE"}},
-        {"stage_index": 5, "screen_id": "19", "npc_id": "EMI_FOLKLORE_RESEARCHER", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "24", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_FOOTBALL_DERBY", "total_stages": 20,
-      "lead_npcs": ["COACH_SAKAI_SOCCER", "DAIKI_SPORTS_RIVAL", "KENJI_DORM_MATE"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "1", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "1", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "1", "npc_id": "COACH_SAKAI_SOCCER", "interaction_type": "SOCCER_1V1_TACTIC_MATCH", "routing_next": {"target_screen_id": "10", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 3, "screen_id": "10", "npc_id": "COACH_SAKAI_SOCCER", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "11", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 4, "screen_id": "11", "npc_id": "KENJI_DORM_MATE", "interaction_type": "PENALTY_TIMING_STOP", "routing_next": {"target_screen_id": "8", "difficulty_tier": 2, "hint_type": "CAMPUS_POINTER"}},
-        {"stage_index": 5, "screen_id": "8", "npc_id": "DAIKI_SPORTS_RIVAL", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "8", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 6, "screen_id": "8", "npc_id": "DAIKI_SPORTS_RIVAL", "interaction_type": "SOCCER_1V1_TACTIC_MATCH", "routing_next": {"target_screen_id": "15", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}},
-        {"stage_index": 7, "screen_id": "15", "npc_id": "COACH_SAKAI_SOCCER", "interaction_type": "SOCCER_1V1_TACTIC_MATCH", "routing_next": {"target_screen_id": "16", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 8, "screen_id": "16", "npc_id": "DAIKI_SPORTS_RIVAL", "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE", "routing_next": {"target_screen_id": "47", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_CAMPUS_EXPEDITION", "total_stages": 20,
-      "lead_npcs": ["MRS_MORIMOTO_RYOBO", "PROF_TAKADA_MENTOR"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "2a", "npc_id": "MRS_MORIMOTO_RYOBO", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "1", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "1", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "3", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "5", "difficulty_tier": 2, "hint_type": "CAMPUS_POINTER"}},
-        {"stage_index": 4, "screen_id": "5", "npc_id": "STUDENT_HANDAI_MEDIC", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "6", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 5, "screen_id": "6", "npc_id": "STUDENT_HANDAI_MEDIC", "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE", "routing_next": {"target_screen_id": "7", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 6, "screen_id": "7", "npc_id": "STUDENT_HANDAI_MEDIC", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "12", "difficulty_tier": 2, "hint_type": "CAMPUS_POINTER"}},
-        {"stage_index": 7, "screen_id": "12", "npc_id": "STUDENT_MINOH_LANG", "interaction_type": "POINT_AND_CLICK_INSPECT", "routing_next": {"target_screen_id": "24", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_ROMANCE_MEMORIES", "total_stages": 28,
-      "lead_npcs": ["AOI_TRANSIT_STUDENT", "MAYA_EXCHANGE_STUDENT", "KENJI_DORM_MATE"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "1", "npc_id": "KENJI_DORM_MATE", "interaction_type": "ROUTE_BRANCH_CHOICE", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "3", "npc_id": "BRANCH_ACTIVE_PARTNER", "interaction_type": "DIALOGUE_PURE", "routing_next": {"target_screen_id": "26", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_LANG_HIRAGANA", "total_stages": 24,
-      "lead_npcs": ["STUDENT_MINOH_LANG", "PROF_TAKADA_MENTOR", "KENJI_DORM_MATE"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "12", "npc_id": "STUDENT_MINOH_LANG", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "1", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "1", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "3", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "2b", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 4, "screen_id": "2b", "npc_id": "KENJI_DORM_MATE", "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH", "routing_next": {"target_screen_id": "2c", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 5, "screen_id": "2c", "npc_id": "MAYA_EXCHANGE_STUDENT", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "20", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_LANG_KATAKANA", "total_stages": 24,
-      "lead_npcs": ["STUDENT_MINOH_LANG", "AOI_TRANSIT_STUDENT", "YUKI_SUBCULTURE_OTAKU"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "12", "npc_id": "STUDENT_MINOH_LANG", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "3", "npc_id": "KENJI_DORM_MATE", "interaction_type": "KATAKANA_SIGN_DECIPHER", "routing_next": {"target_screen_id": "2b", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "2b", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "2c", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 4, "screen_id": "2c", "npc_id": "MAYA_EXCHANGE_STUDENT", "interaction_type": "KATAKANA_SIGN_DECIPHER", "routing_next": {"target_screen_id": "14", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 5, "screen_id": "14", "npc_id": "BARISTA_SHIZUKU", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "20", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_LANG_KANJI", "total_stages": 24,
-      "lead_npcs": ["PROF_TAKADA_MENTOR", "SENSEI_OGATA_LIT", "YAMADA_SHINTO_BELIEVER"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "4", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "20", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_LANG_VOCABULARY", "total_stages": 24,
-      "lead_npcs": ["KENJI_DORM_MATE", "MASTER_GEN_FOOD", "MADOKA_BARGAIN_HUNTER"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "2b", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "2c", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "2c", "npc_id": "MRS_MORIMOTO_RYOBO", "interaction_type": "VOCAB_ITEM_SLOT_IN", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "3", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "1", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 4, "screen_id": "1", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "VOCAB_ITEM_SLOT_IN", "routing_next": {"target_screen_id": "5", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 5, "screen_id": "5", "npc_id": "STUDENT_HANDAI_MEDIC", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "8", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}},
-        {"stage_index": 6, "screen_id": "8", "npc_id": "STUDENT_KANDAI_LAW", "interaction_type": "VOCAB_ITEM_SLOT_IN", "routing_next": {"target_screen_id": "12", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 7, "screen_id": "12", "npc_id": "STUDENT_MINOH_LANG", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "20", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}}
-      ]
-    },
-    {
-      "quest_id": "STRANG_LANG_CONVERSATION", "total_stages": 24,
-      "lead_npcs": ["MRS_MORIMOTO_RYOBO", "AOI_TRANSIT_STUDENT", "REN_INDIE_BARISTA"],
-      "stages": [
-        {"stage_index": 1, "screen_id": "2a", "npc_id": "MRS_MORIMOTO_RYOBO", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "1", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 2, "screen_id": "1", "npc_id": "PROF_TAKADA_MENTOR", "interaction_type": "SENTENCE_BUILDER_PUZZLE", "routing_next": {"target_screen_id": "3", "difficulty_tier": 1, "hint_type": "EXPLICIT_NAME"}},
-        {"stage_index": 3, "screen_id": "3", "npc_id": "KENJI_DORM_MATE", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "5", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 4, "screen_id": "5", "npc_id": "STUDENT_HANDAI_MEDIC", "interaction_type": "SENTENCE_BUILDER_PUZZLE", "routing_next": {"target_screen_id": "12", "difficulty_tier": 2, "hint_type": "LANDMARK_FEATURE"}},
-        {"stage_index": 5, "screen_id": "12", "npc_id": "STUDENT_MINOH_LANG", "interaction_type": "DIALOGUE_RECALL", "routing_next": {"target_screen_id": "20", "difficulty_tier": 3, "hint_type": "DISTRICT_ZONE"}}
-      ]
+     "stage_index": 4,
+     "screen_id": "26",
+     "npc_id": "DR_SETO_GEOGRAPHER",
+     "interaction_type": "GEO_MAP_QUIZ",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
     }
-  ]
+   ]
+  },
+  {
+   "quest_id": "STRANG_NATURE_RETREAT",
+   "total_stages": 11,
+   "lead_npcs": [
+    "MAYA_EXCHANGE_STUDENT",
+    "TALKING_STRAY_CAT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "1",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "13",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "13",
+     "npc_id": "TALKING_STRAY_CAT",
+     "interaction_type": "SILHOUETTE_IDENTIFY",
+     "routing_next": {
+      "target_screen_id": "9",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "9",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "30",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_NIGHTLIFE_ETIQUETTE",
+   "total_stages": 20,
+   "lead_npcs": [
+    "RYO_NIGHT_PROMOTER",
+    "KENJI_DORM_MATE"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "2b",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "39",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_PHILOSOPHY_THEOLOGY",
+   "total_stages": 24,
+   "lead_npcs": [
+    "DR_KIRYU_PHILOSOPHER",
+    "PROF_TAKADA_MENTOR",
+    "YAMADA_SHINTO_BELIEVER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "15",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "15",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "15",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "18",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "18",
+     "npc_id": "YAMADA_SHINTO_BELIEVER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "6",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "6",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "8",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "24",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "24",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "FETCH_AND_RETURN",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     },
+     "fetch_details": {
+      "origin_screen_id": "24",
+      "target_fetch_screens": [
+       "25"
+      ],
+      "return_screen_id": "24"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "25",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_CULTURE_JAPAN",
+   "total_stages": 16,
+   "lead_npcs": [
+    "EMI_FOLKLORE_RESEARCHER",
+    "TAKESHI_CULTURE_HOST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "4",
+     "npc_id": "EMI_FOLKLORE_RESEARCHER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "4",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "4",
+     "npc_id": "EMI_FOLKLORE_RESEARCHER",
+     "interaction_type": "HANAFUDA_MATCH_MINI",
+     "routing_next": {
+      "target_screen_id": "65",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_CULTURE_KANSAI",
+   "total_stages": 16,
+   "lead_npcs": [
+    "TAKESHI_CULTURE_HOST",
+    "EMI_FOLKLORE_RESEARCHER",
+    "DAIKI_SPORTS_RIVAL"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "16",
+     "npc_id": "TAKESHI_CULTURE_HOST",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "17",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "17",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "15",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "15",
+     "npc_id": "EMI_FOLKLORE_RESEARCHER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "18",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "18",
+     "npc_id": "TAKESHI_CULTURE_HOST",
+     "interaction_type": "KARUTA_TOUCH_SLAP",
+     "routing_next": {
+      "target_screen_id": "19",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "19",
+     "npc_id": "EMI_FOLKLORE_RESEARCHER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "24",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "24",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "25",
+     "npc_id": "TAKESHI_CULTURE_HOST",
+     "interaction_type": "KARUTA_TOUCH_SLAP",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_FOOTBALL_DERBY",
+   "total_stages": 20,
+   "lead_npcs": [
+    "COACH_SAKAI_SOCCER",
+    "DAIKI_SPORTS_RIVAL",
+    "KENJI_DORM_MATE"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "1",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "1",
+     "npc_id": "COACH_SAKAI_SOCCER",
+     "interaction_type": "SOCCER_1V1_TACTIC_MATCH",
+     "routing_next": {
+      "target_screen_id": "10",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "10",
+     "npc_id": "COACH_SAKAI_SOCCER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "11",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "11",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "PENALTY_TIMING_STOP",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "8",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "8",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "SOCCER_1V1_TACTIC_MATCH",
+     "routing_next": {
+      "target_screen_id": "15",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "15",
+     "npc_id": "COACH_SAKAI_SOCCER",
+     "interaction_type": "SOCCER_1V1_TACTIC_MATCH",
+     "routing_next": {
+      "target_screen_id": "16",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "16",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "47",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_CAMPUS_EXPEDITION",
+   "total_stages": 20,
+   "lead_npcs": [
+    "MRS_MORIMOTO_RYOBO",
+    "PROF_TAKADA_MENTOR"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "2a",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "3",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "5",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "6",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "6",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "7",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "7",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "12",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "24",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "24",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "8",
+     "npc_id": "STUDENT_KANDAI_LAW",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "8",
+     "npc_id": "STUDENT_KANDAI_LAW",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "15",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 11,
+     "screen_id": "15",
+     "npc_id": "STUDENT_KWANSEI_REP",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "15",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 12,
+     "screen_id": "15",
+     "npc_id": "STUDENT_KWANSEI_REP",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "36",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_ROMANCE_MEMORIES",
+   "total_stages": 28,
+   "lead_npcs": [
+    "AOI_TRANSIT_STUDENT",
+    "MAYA_EXCHANGE_STUDENT",
+    "KENJI_DORM_MATE"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "1",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "ROUTE_BRANCH_CHOICE",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "3",
+     "npc_id": "BRANCH_ACTIVE_PARTNER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "26",
+     "npc_id": "BRANCH_ACTIVE_PARTNER",
+     "interaction_type": "DATING_ETIQUETTE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "25",
+     "npc_id": "BRANCH_ACTIVE_PARTNER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "22",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "22",
+     "npc_id": "BRANCH_ACTIVE_PARTNER",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "23",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "23",
+     "npc_id": "BRANCH_ACTIVE_PARTNER",
+     "interaction_type": "DATING_ETIQUETTE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "2b",
+      "difficulty_tier": 1,
+      "hint_type": "HOME_BASE"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "2b",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "39",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANG_HIRAGANA",
+   "total_stages": 24,
+   "lead_npcs": [
+    "STUDENT_MINOH_LANG",
+    "PROF_TAKADA_MENTOR",
+    "KENJI_DORM_MATE"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "3",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "2b",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "2b",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "2c",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "2c",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "20",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "20",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "29",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "29",
+     "npc_id": "EMI_FOLKLORE_RESEARCHER",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "30",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANG_KATAKANA",
+   "total_stages": 24,
+   "lead_npcs": [
+    "STUDENT_MINOH_LANG",
+    "AOI_TRANSIT_STUDENT",
+    "YUKI_SUBCULTURE_OTAKU"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "3",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "KATAKANA_SIGN_DECIPHER",
+     "routing_next": {
+      "target_screen_id": "2b",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "2b",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "2c",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "2c",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "KATAKANA_SIGN_DECIPHER",
+     "routing_next": {
+      "target_screen_id": "14",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "14",
+     "npc_id": "BARISTA_SHIZUKU",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "20",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "20",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "KATAKANA_SIGN_DECIPHER",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "KATAKANA_SIGN_DECIPHER",
+     "routing_next": {
+      "target_screen_id": "27",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "27",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "39",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANG_KANJI",
+   "total_stages": 24,
+   "lead_npcs": [
+    "PROF_TAKADA_MENTOR",
+    "SENSEI_OGATA_LIT",
+    "YAMADA_SHINTO_BELIEVER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "4",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "20",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "20",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "KANJI_RADICAL_STROKE_PICK",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "KANJI_RADICAL_STROKE_PICK",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "25",
+     "npc_id": "SENSEI_OGATA_LIT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "KANJI_RADICAL_STROKE_PICK",
+     "routing_next": {
+      "target_screen_id": "13",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "13",
+     "npc_id": "DR_SETO_GEOGRAPHER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "24",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "24",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "KANJI_RADICAL_STROKE_PICK",
+     "routing_next": {
+      "target_screen_id": "30",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANG_VOCABULARY",
+   "total_stages": 24,
+   "lead_npcs": [
+    "KENJI_DORM_MATE",
+    "MASTER_GEN_FOOD",
+    "MADOKA_BARGAIN_HUNTER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "2b",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "2c",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "2c",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "VOCAB_ITEM_SLOT_IN",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "3",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "VOCAB_ITEM_SLOT_IN",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "5",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "8",
+     "npc_id": "STUDENT_KANDAI_LAW",
+     "interaction_type": "VOCAB_ITEM_SLOT_IN",
+     "routing_next": {
+      "target_screen_id": "12",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "20",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "20",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "VOCAB_ITEM_SLOT_IN",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "VOCAB_ITEM_SLOT_IN",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 11,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "37",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANG_CONVERSATION",
+   "total_stages": 24,
+   "lead_npcs": [
+    "MRS_MORIMOTO_RYOBO",
+    "AOI_TRANSIT_STUDENT",
+    "REN_INDIE_BARISTA"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "2a",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "1",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "1",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "SENTENCE_BUILDER_PUZZLE",
+     "routing_next": {
+      "target_screen_id": "3",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "3",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "5",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "SENTENCE_BUILDER_PUZZLE",
+     "routing_next": {
+      "target_screen_id": "12",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "20",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "20",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "SENTENCE_BUILDER_PUZZLE",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "26",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 8,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "SENTENCE_BUILDER_PUZZLE",
+     "routing_next": {
+      "target_screen_id": "27",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "27",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "SENTENCE_BUILDER_PUZZLE",
+     "routing_next": {
+      "target_screen_id": "37",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_TRANSIT_STATIONS",
+   "total_stages": 10,
+   "lead_npcs": [
+    "TORI_TETSU_TAKUMI",
+    "AOI_TRANSIT_STUDENT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "20",
+     "npc_id": "TORI_TETSU_TAKUMI",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "21",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "TICKET_VENDING_MINIGAME",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 2,
+      "hint_type": "TRANSIT_LINE_COLOR"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "28",
+     "npc_id": "TORI_TETSU_TAKUMI",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "8",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "8",
+     "npc_id": "TORI_TETSU_TAKUMI",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "5",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "WAYFINDING_MAP",
+     "routing_next": {
+      "target_screen_id": "16",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "16",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "TICKET_VENDING_MINIGAME",
+     "routing_next": {
+      "target_screen_id": "18",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "18",
+     "npc_id": "TORI_TETSU_TAKUMI",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "41",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_CAFE_CULTURE",
+   "total_stages": 19,
+   "lead_npcs": [
+    "BARISTA_SHIZUKU",
+    "REN_INDIE_BARISTA",
+    "MAYA_EXCHANGE_STUDENT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "26",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "27",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "27",
+     "npc_id": "BARISTA_SHIZUKU",
+     "interaction_type": "ESPRESSO_EXTRACTION_TWEAK",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "25",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "23",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "23",
+     "npc_id": "BARISTA_SHIZUKU",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "40",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_SHOPPING_BARGAINS",
+   "total_stages": 9,
+   "lead_npcs": [
+    "MADOKA_BARGAIN_HUNTER",
+    "MRS_MORIMOTO_RYOBO"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "28",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "21",
+      "difficulty_tier": 2,
+      "hint_type": "SUBTERRANEAN_LABYRINTH"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "21",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "WAYFINDING_MAP",
+     "routing_next": {
+      "target_screen_id": "43",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LITERATURE",
+   "total_stages": 14,
+   "lead_npcs": [
+    "SENSEI_OGATA_LIT",
+    "PROF_TAKADA_MENTOR",
+    "MAYA_EXCHANGE_STUDENT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "25",
+     "npc_id": "SENSEI_OGATA_LIT",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "25",
+     "npc_id": "SENSEI_OGATA_LIT",
+     "interaction_type": "BOOK_CHRONO_SORT",
+     "routing_next": {
+      "target_screen_id": "24",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "24",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "4",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "4",
+     "npc_id": "SENSEI_OGATA_LIT",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "27",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "27",
+     "npc_id": "REN_INDIE_BARISTA",
+     "interaction_type": "BOOK_CHRONO_SORT",
+     "routing_next": {
+      "target_screen_id": "12",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "12",
+     "npc_id": "MAYA_EXCHANGE_STUDENT",
+     "interaction_type": "FETCH_AND_RETURN",
+     "routing_next": {
+      "target_screen_id": "51",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     },
+     "fetch_details": {
+      "origin_screen_id": "12",
+      "target_fetch_screens": [
+       "25"
+      ],
+      "return_screen_id": "12"
+     }
+    }
+   ]
+  }
+ ]
 }

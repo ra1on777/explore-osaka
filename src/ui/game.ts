@@ -1,23 +1,23 @@
 // Spielablauf: Titelbild, neues Spiel, Erkunden, Etappen, Menüs.
 import { sfx } from '../audio';
 import {
-  ALL_STRANDS, CLUSTERS, QUEST_BY_ID, SCREENS, clusterName, clusterOf, maxStars, npcName,
+  ALL_STRANDS, CLUSTERS, QUEST_BY_ID, REGIONS, SCREENS, clusterName, clusterOf, maxStars, npcName,
   regionName, screenName, screenPlayable, stageContent, strandTitle,
 } from '../data';
 import {
-  completeStage, discoveredStrands, isStrandComplete, isStrandDemoFinished, lastHint, peekProgress, presence,
-  resolveNpc, strandStars, type Presence,
+  completeStage, discoveredStrands, isStrandComplete, isStrandDemoFinished, lastHint, peekProgress, pickUp, pickups,
+  presence, resolveNpc, startFetch, strandStars, type Presence,
 } from '../engine';
 import { t } from '../i18n';
 import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { icons, mapBase } from './art';
+import { closeups, icons, mapBase, mapBaseR2 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
-import { ensureNpc, focusNpc, preload, renderScene, setMood, showOverlay } from './scene';
+import { ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay } from './scene';
 import { runTask } from './tasks';
 import { jpBlock, vars } from './text';
 
@@ -126,6 +126,8 @@ export function explore() {
   focusNpc(null);
   const pres = presence(G.screen);
   renderScene(G.screen, pres.shown, talkTo);
+  const items = pickups(G.screen).map((pk) => ({ ...pk, c: stageContent(pk.questId, pk.stage.stage_index, G.flags.partner)!.fetch! }));
+  renderPickups(items.map((it) => ({ x: it.c.x, y: it.c.y, label: it.c.item, onClick: () => takeItem(it.questId, it.c) })));
   const cl = clusterOf(G.screen);
   const ways = (cl?.screens ?? []).filter((s) => s !== G.screen);
   ways.forEach(preload);
@@ -141,6 +143,9 @@ export function explore() {
             h('span', { class: 'excl' }, '!'), npcName(p.npcId))))
         : h('div', { class: 'small muted' }, t('explore.nobody')),
       pres.waiting ? h('div', { class: 'small muted' }, t('explore.more')) : null,
+      items.length ? h('div', { class: 'people' }, h('div', { class: 'label' }, t('explore.items')),
+        ...items.map((it) => h('button', { class: 'person item', onclick: () => takeItem(it.questId, it.c) },
+          svg(icons.magnifier, 'ico'), it.c.item))) : null,
       ways.length ? h('div', { class: 'ways' }, h('div', { class: 'label' }, t('explore.ways')),
         ...ways.map((s) => h('button', { class: 'way', onclick: () => travel(s) }, svg(icons.walk, 'ico'), screenName(s)))) : null,
     ),
@@ -152,7 +157,7 @@ function navBar() {
   const b = (key: string, icon: string, fn: () => void, hot?: string) =>
     h('button', { class: 'nav-btn', 'data-hotkey': hot, onclick: () => { sfx.tap(); fn(); } }, svg(icons[icon], 'ico'), h('span', {}, t(key)));
   return h('nav', { class: 'navbar' },
-    b('nav.map', 'map', mapScreen, 'm'),
+    b('nav.map', 'map', () => mapScreen(), 'm'),
     b('nav.quests', 'quests', questLog, 'q'),
     b('nav.vocab', 'vocab', vocabScreen, 'v'),
     b('nav.bag', 'bag', bagScreen, 'b'),
@@ -197,11 +202,50 @@ async function talkTo(p: Presence) {
   explore();
 }
 
+async function takeItem(questId: string, f: NonNullable<ReturnType<typeof stageContent>>['fetch']) {
+  if (busy || !f) return;
+  busy = true;
+  sfx.find();
+  pickUp(questId, f.item);
+  save();
+  showOverlay(h('div', { class: 'closeup' }, h('div', { class: 'closeup-card' },
+    h('div', { class: 'closeup-head' }, f.item), svg(closeups[f.art ?? ''] ?? closeups.dictionary, 'closeup-art'))));
+  await new Promise<void>((r) => mount(h('div', { class: 'result' },
+    h('div', { class: 'result-strand' }, strandTitle(questId)),
+    h('h3', {}, t('fetch.got')),
+    h('p', {}, vars(f.find)),
+    h('div', { class: 'result-hint' }, h('div', { class: 'label' }, t('result.hint')), h('div', {}, vars(f.hintBack))),
+    h('button', { class: 'btn primary wide', 'data-primary': '', onclick: () => r() }, t('common.next')))));
+  explore();
+}
+
 async function playStage(questId: string, idx: number) {
   const c = stageContent(questId, idx, G.flags.partner);
   const def = QUEST_BY_ID[questId].stages.find((s) => s.stage_index === idx)!;
   if (!c) { toast(`Inhalt fehlt: ${questId} #${idx}`, 'bad'); return; }
   (window as unknown as Record<string, unknown>).__eoCurrent = { q: questId, i: idx };
+  // Holen und Zurückbringen: Teil 1 = Auftrag, Teil 2 = Abgabe beim Auftraggeber
+  if (def.interaction_type === 'FETCH_AND_RETURN' && c.fetch) {
+    const npc = resolveNpc(def.npc_id);
+    ensureNpc(G.screen, npc);
+    if (peekProgress(questId).fetch !== 'got') {
+      await runLines(c.lines);
+      startFetch(questId);
+      save();
+      focusNpc(null);
+      await new Promise<void>((r) => mount(h('div', { class: 'result' },
+        h('div', { class: 'result-strand' }, strandTitle(questId)),
+        h('h3', {}, t('fetch.task')),
+        h('div', { class: 'result-hint' }, h('div', { class: 'label' }, t('result.hint')), h('div', {}, vars(c.fetch!.hintOut))),
+        h('button', { class: 'btn primary wide', 'data-primary': '', onclick: () => r() }, t('common.next')))));
+      return;
+    }
+    await runLines(c.after);
+    completeStage(questId, idx, 0);
+    save();
+    await resultCard(questId, null);
+    return;
+  }
   const npcId = resolveNpc(def.npc_id);
   ensureNpc(G.screen, npcId);
   if (c.mood && !SCREENS[G.screen]?.night) setMood(c.mood);
@@ -238,24 +282,25 @@ function resultCard(questId: string, stars: number | null): Promise<void> {
 // =====================================================================
 // Karte (oberer Bildschirm) mit freier Schnellreise
 // =====================================================================
-function mapScreen() {
+function mapScreen(regionId?: string) {
   const here = clusterOf(G.screen)?.id;
+  const region = regionId ?? clusterOf(G.screen)?.region ?? 'R1';
   const info = h('div', { class: 'map-info' }, h('div', { class: 'small muted' }, t('map.pick')));
-  const pins = CLUSTERS.map((c) => {
+  const pins = CLUSTERS.filter((c) => c.region === region).map((c) => {
     const visited = c.screens.some((s) => G.visited.includes(s));
-    const pin = h('button', {
+    return h('button', {
       class: `pin ${c.id === here ? 'here' : ''} ${visited ? 'visited' : ''} ${c.flip ? 'flip' : ''}`,
       style: `left:${c.x / 10}%;top:${(c.y / 820) * 100}%`,
       'aria-label': clusterName(c.id),
+      'data-id': c.id,
       onclick: () => pick(c.id),
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
-    return pin;
   });
-  const map = h('div', { class: 'worldmap' }, svg(mapBase, 'map-base'), ...pins);
-  showOverlay(map);
+  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2 };
+  showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();
-    pins.forEach((p) => p.classList.toggle('sel', p.getAttribute('aria-label') === clusterName(id)));
+    pins.forEach((p) => p.classList.toggle('sel', p.dataset.id === id));
     const c = CLUSTERS.find((x) => x.id === id)!;
     info.replaceChildren(
       h('div', { class: 'map-title' }, clusterName(id), h('span', { class: 'small muted' }, ` · ${regionName(c.region)}`)),
@@ -263,11 +308,16 @@ function mapScreen() {
         svg(icons.walk, 'ico'), screenName(s),
         h('span', { class: 'small muted' }, s === G.screen ? ` · ${t('map.here')}` : G.visited.includes(s) ? ` · ${t('map.visited')}` : ''))));
   };
+  const playable = REGIONS.filter((r) => r.playable);
+  const soon = REGIONS.filter((r) => !r.playable);
   mount(h('div', { class: 'sub' },
     header(t('map.title'), () => { showOverlay(null); explore(); }),
+    h('div', { class: 'seg region-tabs' }, ...playable.map((r) => h('button', {
+      class: `seg-btn ${r.id === region ? 'on' : ''}`, 'data-region': r.id, onclick: () => { sfx.tap(); mapScreen(r.id); },
+    }, regionName(r.id)))),
     info,
-    h('div', { class: 'small muted' }, `${t('map.soon')}: ${['R2', 'R3', 'R4', 'R5', 'R6'].map(regionName).join(' · ')}`)));
-  if (here) pick(here);
+    soon.length ? h('div', { class: 'small muted' }, `${t('map.soon')}: ${soon.map((r) => regionName(r.id)).join(' · ')}`) : null));
+  if (here && CLUSTERS.find((c) => c.id === here)?.region === region) pick(here);
 }
 
 function header(title: string, back: () => void) {

@@ -44,17 +44,30 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
     // Nächste spielbare Etappe bestimmen
     const next = await page.evaluate(() => {
       const { engine, data, G } = window.__eo;
+      if (engine.pickups(G.screen).length) return { pickup: true };
+      for (const q of data.QUESTS) if (engine.peekProgress(q.quest_id).fetch === 'out') return { here: false, screen: engine.nextStage(q.quest_id).fetch_details.target_fetch_screens[0] };
       const here = engine.presence(G.screen).shown;
       if (here.length) return { here: true, npc: here[0].npcId, q: here[0].offers[0].questId, i: here[0].offers[0].stage.stage_index };
       for (const q of data.QUESTS) { const s = engine.nextStage(q.quest_id); if (s) return { here: false, screen: s.screen_id }; }
       return null;
     });
     if (!next) break;
+    if (next.pickup) {
+      await shot('pickup');
+      await page.click('.pickup', { force: true });
+      await page.waitForSelector('.result');
+      await page.click('.result .btn.primary');
+      await page.waitForTimeout(150);
+      continue;
+    }
     if (!next.here) {
-      // über die Karte reisen
+      // über die Karte reisen (ggf. Region wechseln)
       await page.click('[data-hotkey="m"]');
       await page.waitForTimeout(150);
       const cluster = await page.evaluate((sid) => window.__eo.data.clusterOf(sid).id, next.screen);
+      const region = await page.evaluate((sid) => window.__eo.data.clusterOf(sid).region, next.screen);
+      const tab = await page.$(`[data-region="${region}"]:not(.on)`);
+      if (tab) { await tab.click(); await page.waitForTimeout(120); }
       const label = await page.evaluate((cid) => document.querySelector(`.pin[aria-label]`) && [...document.querySelectorAll('.pin')].find((p) => p.getAttribute('aria-label') === window.__eo.data.clusterName(cid)).getAttribute('aria-label'), cluster);
       await page.click(`.pin[aria-label="${label}"]`);
       await page.waitForTimeout(100);
@@ -74,7 +87,12 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
       for (const t of c.tasks || []) {
         await page.waitForTimeout(80);
         if (played % 7 === 0) await shot(`${cur.q}-${cur.i}-${t.type}`);
-        await solve(page, t);
+        try { await solve(page, t); }
+        catch (e) {
+          await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` });
+          console.log('FAIL', JSON.stringify(cur), t.type, await page.evaluate(() => document.querySelector('.panel')?.innerText.slice(0, 300)));
+          throw e;
+        }
         if (t.type !== 'route' && t.type !== 'pairs') {
           const btn = await page.$('.task .btn.primary.wide');
           if (btn) await btn.click();
@@ -84,8 +102,9 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
       await clickDialogs();
       await page.waitForSelector('.result');
       if (played % 9 === 0) await shot(`${cur.q}-${cur.i}-result`);
+      const isFetchStart = (await page.textContent('.result h3').catch(() => '')) === 'Neuer Auftrag';
       await page.click('.result .btn.primary');
-      played++;
+      if (!isFetchStart) played++;
       await page.waitForTimeout(120);
       const more = await page.$('.result .btn.primary');
       if (!more) break;
@@ -172,6 +191,47 @@ async function solve(page, t) {
       break;
     case 'route':
       await S('.task [data-key="1"]');
+      break;
+    case 'mapquiz':
+      for (let i = 0; i < t.rounds.length; i++) {
+        const r = t.rounds[i];
+        const lab = (id) => { const p = t.points.find((x) => x.id === id); return p.label ?? p.id; };
+        if (i === 0) await page.click(`.qpin[aria-label="${lab(t.points.find((p) => p.id !== r.answer).id)}"]`);
+        await page.click(`.qpin[aria-label="${lab(r.answer)}"]`);
+        if (i < t.rounds.length - 1) await page.click('.task .btn.primary.wide');
+        await page.waitForTimeout(60);
+      }
+      break;
+    case 'ticket': {
+      const price = t.fares.find((f) => f.jp === t.target).price;
+      const keys = await page.$$('.tkey');
+      const wrongKey = [];
+      for (const k of keys) { const tx = await k.textContent(); if (tx === `${price}円`) wrongKey.unshift(k); else wrongKey.push(k); }
+      await wrongKey[wrongKey.length - 1].click();
+      await wrongKey[0].click();
+      while (await page.$('.coin:not([disabled])')) { await page.click('.coin.c100'); await page.waitForTimeout(20); }
+      break;
+    }
+    case 'espresso': {
+      const set = async (v) => page.$$eval('.task input[type=range]', (els, v) => els.forEach((el, i) => { el.value = String(v[i]); el.dispatchEvent(new Event('input')); }), v);
+      await S('.task .row .btn.primary'); // Startwerte: Fehlschuss
+      const mid = (k) => Math.round((t.ok[k][0] + t.ok[k][1]) / 2);
+      await set([mid('grind'), mid('temp'), mid('tamp')]);
+      await S('.task .row .btn.primary');
+      break;
+    }
+    case 'sort':
+      for (let i = t.items.length - 1; i >= 0; i--) await S(`.sort-card[data-i="${i}"]`);
+      await S('.task .row .btn.primary');
+      await S('.task .row .btn.small');
+      for (let i = 0; i < t.items.length; i++) await S(`.sort-card[data-i="${i}"]`);
+      await S('.task .row .btn.primary');
+      break;
+    case 'kanjigrid':
+      for (const p of t.prompts) {
+        await page.locator('.kg-tile', { hasText: p.answer }).first().click();
+        await page.waitForTimeout(520);
+      }
       break;
   }
 }

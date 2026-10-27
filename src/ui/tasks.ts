@@ -9,9 +9,11 @@ import { h, shuffle, svg, wait } from './dom';
 import { mount, toast } from './layout';
 import { hot, showOverlay } from './scene';
 import { jpBlock, matches, rich } from './text';
+import { espresso, kanjigrid, mapquiz, sortTask, ticket } from './tasks2';
 
 type El = HTMLElement;
 
+export { frame, wrongFx, rightFx, continueBtn };
 export async function runTask(task: Task): Promise<number> {
   switch (task.type) {
     case 'choice': return choice(task);
@@ -24,6 +26,11 @@ export async function runTask(task: Task): Promise<number> {
     case 'build': return build(task);
     case 'rounds': return rounds(task);
     case 'route': return route(task);
+    case 'mapquiz': return mapquiz(task);
+    case 'ticket': return ticket(task);
+    case 'espresso': return espresso(task);
+    case 'sort': return sortTask(task);
+    case 'kanjigrid': return kanjigrid(task);
   }
 }
 
@@ -122,7 +129,8 @@ async function input(task: Extract<Task, { type: 'input' }>): Promise<number> {
 // ---------- Schätzregler (±Toleranz) ----------
 async function estimate(task: Extract<Task, { type: 'estimate' }>): Promise<number> {
   let errors = 0;
-  const mid = Math.round((task.min + task.max) / 2 / task.step) * task.step;
+  const dec = (String(task.step).split('.')[1] ?? '').length;
+  const mid = Number((Math.round((task.min + task.max) / 2 / task.step) * task.step).toFixed(dec));
   const range = h('input', { type: 'range', min: task.min, max: task.max, step: task.step, value: mid, 'aria-label': task.q });
   const num = h('input', { type: 'number', class: 'field num', min: task.min, max: task.max, step: task.step, value: mid });
   range.oninput = () => (num.value = range.value);

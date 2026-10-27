@@ -7,6 +7,8 @@ import deStrands from './content/de/strands.json';
 import deStoryA from './content/de/stages_story_a.json';
 import deStoryB from './content/de/stages_story_b.json';
 import deLang from './content/de/stages_lang.json';
+import deR2Story from './content/de/stages_r2_story.json';
+import deR2Lang from './content/de/stages_r2_lang.json';
 import type { StageContent } from './types';
 
 export interface LangPack {
@@ -17,13 +19,20 @@ export interface LangPack {
   stages: Record<string, Record<string, StageContent>>;
 }
 
+/** Inhalte sind pro Region in Dateien aufgeteilt; Stränge werden etappenweise zusammengeführt. */
+function mergeStages(...files: object[]): Record<string, Record<string, StageContent>> {
+  const out: Record<string, Record<string, StageContent>> = {};
+  for (const f of files) for (const [q, st] of Object.entries(f as Record<string, Record<string, StageContent>>)) out[q] = { ...out[q], ...st };
+  return out;
+}
+
 const packs: Record<string, LangPack> = {
   de: {
     ui: de,
     world: deWorld,
     npcs: deNpcs,
     strands: deStrands,
-    stages: { ...deStoryA, ...deStoryB, ...deLang } as unknown as Record<string, Record<string, StageContent>>,
+    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang),
   },
 };
 

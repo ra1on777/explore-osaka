@@ -35,7 +35,10 @@ function offersOn(screenId: string): Offer[] {
   const out: Offer[] = [];
   for (const q of QUESTS) {
     const s = nextStage(q.quest_id);
-    if (s && s.screen_id === screenId) out.push({ questId: q.quest_id, stage: s, npcId: resolveNpc(s.npc_id) });
+    if (!s || s.screen_id !== screenId) continue;
+    // Holen-und-Zurückbringen: Während der Gegenstand unterwegs ist, wartet die Figur nicht mit „!“
+    if (s.interaction_type === 'FETCH_AND_RETURN' && peekProgress(q.quest_id).fetch === 'out') continue;
+    out.push({ questId: q.quest_id, stage: s, npcId: resolveNpc(s.npc_id) });
   }
   return out;
 }
@@ -83,6 +86,7 @@ export function completeStage(questId: string, idx: number, errors: number): Sta
   const stars = scored ? Math.max(0, 3 - errors) : null;
   if (stars !== null) p.stars[idx] = stars;
   p.done = Math.max(p.done, idx);
+  delete p.fetch;
   p.touched = Date.now();
   for (const v of c?.vocab ?? []) G.vocab[v.jp] = { ro: v.ro, de: v.de };
   const def = stageDef(questId, idx);
@@ -91,11 +95,38 @@ export function completeStage(questId: string, idx: number, errors: number): Sta
   return { stars, questId, idx };
 }
 
+/** Abholbare Gegenstände auf einem Screen (laufende Fetch-Aufträge). */
+export function pickups(screenId: string): { questId: string; stage: StageDef }[] {
+  const out: { questId: string; stage: StageDef }[] = [];
+  for (const q of QUESTS) {
+    const s = nextStage(q.quest_id);
+    if (s?.interaction_type === 'FETCH_AND_RETURN' && peekProgress(q.quest_id).fetch === 'out'
+      && s.fetch_details?.target_fetch_screens.includes(screenId)) out.push({ questId: q.quest_id, stage: s });
+  }
+  return out;
+}
+export function startFetch(questId: string) {
+  const p = progress(questId);
+  p.fetch = 'out';
+  p.touched = Date.now();
+}
+export function pickUp(questId: string, item: string) {
+  const p = progress(questId);
+  p.fetch = 'got';
+  p.touched = Date.now();
+  G.inventory.push(`${questId}#${item}`);
+}
+
 export function strandStars(questId: string): number {
   return Object.values(peekProgress(questId).stars).reduce((a, b) => a + b, 0);
 }
 export function lastHint(questId: string): { text: string; target: string | null; outside: boolean } | null {
   const p = peekProgress(questId);
+  if (p.fetch) {
+    const s = nextStage(questId);
+    const fc = s && stageContent(questId, s.stage_index, G.flags.partner)?.fetch;
+    if (s && fc) return { text: p.fetch === 'out' ? fc.hintOut : fc.hintBack, target: null, outside: false };
+  }
   if (p.done === 0) return null;
   const c = stageContent(questId, p.done, G.flags.partner);
   const def = stageDef(questId, p.done);
@@ -103,6 +134,6 @@ export function lastHint(questId: string): { text: string; target: string | null
   return { text: c?.hint ?? '', target, outside: !!target && !screenPlayable(target) };
 }
 export function discoveredStrands(): string[] {
-  return QUESTS.map((q) => q.quest_id).filter((id) => peekProgress(id).done > 0)
+  return QUESTS.map((q) => q.quest_id).filter((id) => peekProgress(id).done > 0 || !!peekProgress(id).fetch)
     .sort((a, b) => peekProgress(b).touched - peekProgress(a).touched);
 }

@@ -1,0 +1,2402 @@
+{
+ "STRANG_LANG_HIRAGANA": {
+  "6": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Du willst die kleinen Striche lernen? Dann bist du hier richtig – am Bahnhof steht alles voll davon."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Zwei kleine Striche oben rechts heißen Dakuten. Sie machen einen Laut weich: aus か (ka) wird が (ga)."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "か → が ・ さ → ざ ・ た → だ ・ は → ば",
+     "ro": "ka → ga ・ sa → za ・ ta → da ・ ha → ba",
+     "t": "Achtung bei は: Mit Dakuten wird daraus ば (ba)."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Und じ liest man „ji“, nicht „zi“. Das ist die einzige kleine Falle."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde jedes Zeichen mit seiner Lesung.",
+     "sets": [
+      [
+       [
+        "が",
+        "ga"
+       ],
+       [
+        "ざ",
+        "za"
+       ],
+       [
+        "だ",
+        "da"
+       ],
+       [
+        "ば",
+        "ba"
+       ],
+       [
+        "ぐ",
+        "gu"
+       ]
+      ],
+      [
+       [
+        "じ",
+        "ji"
+       ],
+       [
+        "ず",
+        "zu"
+       ],
+       [
+        "で",
+        "de"
+       ],
+       [
+        "ど",
+        "do"
+       ],
+       [
+        "び",
+        "bi"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "jp": "おおさかえき",
+     "ro": "Ōsaka-eki",
+     "t": "Und schon kannst du das lesen: Bahnhof Ōsaka. Na ja, fast – ohne Dakuten."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Unten im Untergrund gibt es noch mehr Schilder. Ich zeig dir dort die kleinen Kreise."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "えき",
+     "ro": "eki",
+     "de": "Bahnhof"
+    },
+    {
+     "jp": "だいがく",
+     "ro": "daigaku",
+     "de": "Universität"
+    }
+   ],
+   "hint": "Aoi in den unterirdischen Gängen von Umeda."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Hier unten siehst du auch kleine Kreise oben rechts: Handakuten. Die gibt es nur bei der H-Reihe."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "jp": "は ひ ふ へ ほ → ぱ ぴ ぷ ぺ ぽ",
+     "ro": "ha hi fu he ho → pa pi pu pe po",
+     "t": "Aus „h“ wird „p“. Mit Strichen wird es „b“, mit Kreis „p“."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Mein Lieblingswort damit: ぴかぴか (pikapika) – funkelnd sauber. Wie die Züge hier."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was passiert mit は, wenn ein kleiner Kreis dazukommt?",
+     "options": [
+      "Es wird zu ba",
+      "Es wird zu pa",
+      "Es wird zu ma",
+      "Es bleibt ha"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "input",
+     "q": "Wie liest man ぴかぴか? (in Rōmaji)",
+     "show": {
+      "jp": "ぴかぴか"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "pikapika",
+      "pika pika"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Perfekt! Ab jetzt kannst du fast jedes Hiragana-Schild lesen."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Ren, ein Barista am Fluss, schreibt seine Karte ganz in Hiragana. Such die Cafés, die über das Wasser hinausgebaut sind."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ぴかぴか",
+     "ro": "pikapika",
+     "de": "funkelnd, blitzblank"
+    }
+   ],
+   "hint": "Cafés, die über das Wasser hinausgebaut sind."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Meine Karte lesen? Gern. Aber da steht viel mit kleinen Zeichen drauf."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Ein kleines や, ゆ oder よ verschmilzt mit dem Zeichen davor. き + ゃ wird nicht „ki-ya“, sondern „kya“."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "jp": "おちゃ",
+     "ro": "ocha",
+     "t": "Grüner Tee. ち + ゃ = cha."
+    },
+    {
+     "s": "me",
+     "t": "Und groß geschrieben wäre es etwas anderes?"
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Genau. Die Größe zählt. Lies genau hin."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde die verschmolzenen Silben mit ihrer Lesung.",
+     "sets": [
+      [
+       [
+        "きゃ",
+        "kya"
+       ],
+       [
+        "きゅ",
+        "kyu"
+       ],
+       [
+        "きょ",
+        "kyo"
+       ],
+       [
+        "しゃ",
+        "sha"
+       ],
+       [
+        "しゅ",
+        "shu"
+       ]
+      ],
+      [
+       [
+        "しょ",
+        "sho"
+       ],
+       [
+        "ちゃ",
+        "cha"
+       ],
+       [
+        "ちゅ",
+        "chu"
+       ],
+       [
+        "ちょ",
+        "cho"
+       ],
+       [
+        "にゃ",
+        "nya"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Und にゃ? Das sagen hier die Katzen. Nyā."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Madoka kauft gerade auf der längsten Einkaufsstraße der Stadt ein. Dort lernst du den kleinsten Buchstaben von allen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おちゃ",
+     "ro": "ocha",
+     "de": "(grüner) Tee"
+    }
+   ],
+   "hint": "Auf der längsten Einkaufsstraße der Stadt, in Kita."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Ren schickt dich? Dann zeig ich dir das kleine っ. Es ist eine Pause."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "jp": "きっぷ",
+     "ro": "kippu",
+     "t": "Fahrkarte. Das kleine っ verdoppelt den nächsten Laut: ki-p-pu. Kurz anhalten, dann weiter."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "jp": "きって",
+     "ro": "kitte",
+     "t": "Briefmarke. Hier gibt es einen alten Laden, der nur Briefmarken verkauft!"
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Und ohne Pause wird es was anderes: きて (kite) heißt „komm!“."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was macht das kleine っ?",
+     "options": [
+      "Es wird als „tsu“ gesprochen",
+      "Es verdoppelt den folgenden Konsonanten",
+      "Es macht den Vokal lang",
+      "Es ist nur Dekoration"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "input",
+     "q": "Wie liest man きって? (in Rōmaji)",
+     "show": {
+      "jp": "きって"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "kitte"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Genau! Kitte. Zwei Briefmarken, bitte – zum Sonderpreis."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "t": "Emi ist im Museum, in dem eine ganze Straße aus der Edo-Zeit nachgebaut ist. Dort lernst du die langen Vokale."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "きっぷ",
+     "ro": "kippu",
+     "de": "Fahrkarte"
+    },
+    {
+     "jp": "きって",
+     "ro": "kitte",
+     "de": "Briefmarke"
+    }
+   ],
+   "hint": "Ein Museum mit einer nachgebauten Straße aus der Edo-Zeit."
+  },
+  "10": {
+   "mood": "night",
+   "lines": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Willkommen in der Edo-Zeit! Alles hier ist nachgebaut – sogar das Licht wechselt von Tag zu Nacht."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Die letzte Hiragana-Regel: lange Vokale. Ein zusätzliches あ, い, う oder お verlängert den Laut davor."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "jp": "おおさか ・ とうきょう",
+     "ro": "Ōsaka ・ Tōkyō",
+     "t": "Darum der Strich über dem O in Ōsaka. Achtung: Bei O schreibt man meist う, wie in とうきょう."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "jp": "おかあさん",
+     "ro": "okāsan",
+     "t": "Mutter. Ohne das lange a wäre es fast „okasan“ – und das klingt komisch."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde die Wörter mit ihrer Lesung.",
+     "sets": [
+      [
+       [
+        "おおさか",
+        "Ōsaka"
+       ],
+       [
+        "とうきょう",
+        "Tōkyō"
+       ],
+       [
+        "おかあさん",
+        "okāsan"
+       ],
+       [
+        "くうき",
+        "kūki"
+       ],
+       [
+        "せんせい",
+        "sensei"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Und bei せんせい schreibt man ein い, spricht es aber oft wie ein langes e."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Glückwunsch – du kennst jetzt alle Hiragana-Regeln! Feiern wir am Ōte-mon, dem großen Tor der Burg Ōsaka."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おかあさん",
+     "ro": "okāsan",
+     "de": "Mutter"
+    },
+    {
+     "jp": "せんせい",
+     "ro": "sensei",
+     "de": "Lehrer/in"
+    },
+    {
+     "jp": "くうき",
+     "ro": "kūki",
+     "de": "Luft"
+    }
+   ],
+   "hint": "Emi am Ōte-mon der Burg Ōsaka."
+  }
+ },
+ "STRANG_LANG_KATAKANA": {
+  "6": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Katakana am Bahnhof? Überall! Fremdwörter schreibt man in Katakana."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Der lange Strich ー macht einen Vokal lang. In Hiragana schreibt man dafür einen Vokal, in Katakana nur den Strich."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "ホーム",
+     "ro": "hōmu",
+     "t": "Bahnsteig – vom englischen „platform“. Die Japaner haben einfach den Rest weggelassen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Was steht auf dem Schild über der Treppe?",
+     "sign": "ホーム",
+     "tiles": [
+      "hō",
+      "mu",
+      "ho",
+      "ru"
+     ],
+     "answer": [
+      "hō",
+      "mu"
+     ],
+     "meaning": "Bahnsteig"
+    },
+    {
+     "type": "decipher",
+     "q": "Und hier?",
+     "sign": "エスカレーター",
+     "tiles": [
+      "e",
+      "su",
+      "ka",
+      "rē",
+      "tā",
+      "ta",
+      "re"
+     ],
+     "answer": [
+      "e",
+      "su",
+      "ka",
+      "rē",
+      "tā"
+     ],
+     "meaning": "Rolltreppe"
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Esukarētā! Und in Ōsaka stellt man sich rechts hin – in Tōkyō links."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Komm mit nach unten in die Gänge unter Umeda. Da gibt es Läden und noch mehr Schilder."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ホーム",
+     "ro": "hōmu",
+     "de": "Bahnsteig"
+    },
+    {
+     "jp": "エスカレーター",
+     "ro": "esukarētā",
+     "de": "Rolltreppe"
+    }
+   ],
+   "hint": "Aoi in den unterirdischen Gängen von Umeda."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Hier unten brauchst du drei Wörter, um zu überleben."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "jp": "トイレ",
+     "ro": "toire",
+     "t": "Toilette. Das wichtigste Wort überhaupt."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "ショップ ・ インフォメーション",
+     "ro": "shoppu ・ infomēshon",
+     "t": "Laden und Information. Wenn du dich verläufst: immer zur インフォメーション."
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Und du wirst dich verlaufen. Alle verlaufen sich hier."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Du musst ganz dringend. Welches Schild suchst du?",
+       "options": [
+        "ショップ",
+        "トイレ",
+        "ホーム",
+        "インフォメーション"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Du hast dich verlaufen. Wohin gehst du?",
+       "options": [
+        "インフォメーション",
+        "エスカレーター",
+        "トイレ",
+        "ショップ"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Was bedeutet ショップ?",
+       "options": [
+        "Bahnsteig",
+        "Laden",
+        "Treppe",
+        "Kasse"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Du überlebst den Untergrund! Respekt."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Ren hat eine Kaffeekarte voller Katakana. Sein Café ist am Fluss, wo die Terrassen über das Wasser ragen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "トイレ",
+     "ro": "toire",
+     "de": "Toilette"
+    },
+    {
+     "jp": "ショップ",
+     "ro": "shoppu",
+     "de": "Laden"
+    },
+    {
+     "jp": "インフォメーション",
+     "ro": "infomēshon",
+     "de": "Information"
+    }
+   ],
+   "hint": "Ein Café am Fluss, wo die Terrassen über das Wasser ragen."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Kaffee ist in Japan ein Fremdwort. Darum steht auf meiner Karte fast alles in Katakana."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Das kleine ッ funktioniert wie das kleine っ in Hiragana: eine kurze Pause."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Und ein kleines ェ hinter フ macht daraus „fe“. So schreibt man Laute, die es im Japanischen eigentlich nicht gibt."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Lies die erste Zeile der Karte.",
+     "sign": "エスプレッソ",
+     "tiles": [
+      "e",
+      "su",
+      "pu",
+      "re",
+      "sso",
+      "so",
+      "ru"
+     ],
+     "answer": [
+      "e",
+      "su",
+      "pu",
+      "re",
+      "sso"
+     ],
+     "meaning": "Espresso"
+    },
+    {
+     "type": "decipher",
+     "q": "Und die zweite.",
+     "sign": "カフェラテ",
+     "tiles": [
+      "ka",
+      "fe",
+      "fu",
+      "ra",
+      "te",
+      "ta"
+     ],
+     "answer": [
+      "ka",
+      "fe",
+      "ra",
+      "te"
+     ],
+     "meaning": "Caffè Latte"
+    },
+    {
+     "type": "decipher",
+     "q": "Und die dritte.",
+     "sign": "カプチーノ",
+     "tiles": [
+      "ka",
+      "pu",
+      "chī",
+      "chi",
+      "no",
+      "ne"
+     ],
+     "answer": [
+      "ka",
+      "pu",
+      "chī",
+      "no"
+     ],
+     "meaning": "Cappuccino"
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Du kannst bestellen. Gefährlich – jetzt trinkst du zu viel Kaffee."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Heute Abend spiele ich in einer kleinen Bar unter den Bahnbögen in Nakatsu. Komm vorbei!"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "カフェラテ",
+     "ro": "kaferate",
+     "de": "Milchkaffee"
+    },
+    {
+     "jp": "カプチーノ",
+     "ro": "kapuchīno",
+     "de": "Cappuccino"
+    }
+   ],
+   "hint": "Unter den Bahnbögen in Nakatsu."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Du bist gekommen! Hier unter den Gleisen ist es laut – perfekt für Musik."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "jp": "ライブ",
+     "ro": "raibu",
+     "t": "Ein Konzert heißt in Japan ライブ – „live“. Heute ist Rock-Abend."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "jp": "ロック ・ ジャズ",
+     "ro": "rokku ・ jazu",
+     "t": "Morgen ist ジャズ. In den alten Kissaten läuft fast immer Jazz."
+    },
+    {
+     "s": "me",
+     "t": "Und was spielst du?"
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Alles, was laut genug ist, dass man die Züge nicht hört."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "input",
+     "q": "Wie liest man ライブ? (in Rōmaji)",
+     "show": {
+      "jp": "ライブ"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "raibu"
+     ]
+    },
+    {
+     "type": "choice",
+     "q": "Welche Musik läuft laut Ren in den alten Kissaten?",
+     "options": [
+      {
+       "jp": "ロック"
+      },
+      {
+       "jp": "ジャズ"
+      },
+      {
+       "jp": "ポップ"
+      },
+      {
+       "jp": "ラップ"
+      }
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Richtig. Morgen dann Jazz – kommst du wieder?"
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Wenn du mehr Katakana willst: Im Süden gibt es ein Jugendviertel mit Vintage-Läden und einem kleinen dreieckigen Platz. Dort ist alles auf Englisch-Japanisch."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ライブ",
+     "ro": "raibu",
+     "de": "Konzert"
+    },
+    {
+     "jp": "ロック",
+     "ro": "rokku",
+     "de": "Rock(musik)"
+    },
+    {
+     "jp": "ジャズ",
+     "ro": "jazu",
+     "de": "Jazz"
+    }
+   ],
+   "hint": "Ein Jugendviertel im Süden mit einem kleinen dreieckigen Platz."
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "2": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Prof. Takada hat dir die Zahlen bis zehn gezeigt? Dann kommen jetzt die großen."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "jp": "百 ・ 千 ・ 万",
+     "ro": "hyaku ・ sen ・ man",
+     "t": "Hundert, tausend, zehntausend. Japaner zählen in Zehntausendern – nicht in Tausendern."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "円",
+     "ro": "en",
+     "t": "Und das ist Yen. Steht auf jedem Preisschild hier am Bahnhof."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "jp": "三千円",
+     "ro": "sanzen en",
+     "t": "Dreitausend Yen. Einfach zusammensetzen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "百",
+      "千",
+      "万",
+      "円",
+      "十",
+      "九"
+     ],
+     "prompts": [
+      {
+       "de": "hundert",
+       "answer": "百"
+      },
+      {
+       "de": "zehntausend",
+       "answer": "万"
+      },
+      {
+       "de": "Yen",
+       "answer": "円"
+      },
+      {
+       "de": "tausend",
+       "answer": "千"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Super! Jetzt kannst du jeden Fahrpreis lesen."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Unten im Untergrund gibt es Läden mit Preisschildern. Da üben wir weiter."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "百",
+     "ro": "hyaku",
+     "de": "hundert"
+    },
+    {
+     "jp": "千",
+     "ro": "sen",
+     "de": "tausend"
+    },
+    {
+     "jp": "万",
+     "ro": "man",
+     "de": "zehntausend"
+    },
+    {
+     "jp": "円",
+     "ro": "en",
+     "de": "Yen"
+    }
+   ],
+   "hint": "Aoi in den Gängen unter Umeda."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Siehst du das Schild da? Ein Bentō für 五百円. Und daneben ein Regenschirm für 千二百円."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Zehntausend heißt 一万 (ichiman). Den größten Geldschein nennt man darum einfach „ichiman-en-satsu“."
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Und der ist hier schneller weg, als man denkt."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie viel kostet das Bentō – 五百円?",
+     "show": {
+      "jp": "五百円"
+     },
+     "options": [
+      "50 Yen",
+      "500 Yen",
+      "5.000 Yen",
+      "5 Yen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Und der Schirm – 千二百円?",
+     "show": {
+      "jp": "千二百円"
+     },
+     "options": [
+      "120 Yen",
+      "1.200 Yen",
+      "12.000 Yen",
+      "2.100 Yen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "input",
+     "q": "Wie liest man 一万? (in Rōmaji)",
+     "show": {
+      "jp": "一万"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "ichiman"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Du rechnest schneller als die Kasse!"
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Madoka zeigt dir die Schilder in den Läden. Sie ist dort, wo unter einem Dach mit roten Laternen Hunderte Geschäfte stehen."
+    }
+   ],
+   "hint": "Hunderte Geschäfte unter einem Dach mit roten Laternen."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Kanji für Schnäppchenjäger! Die wichtigsten stehen über jeder Tür."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "jp": "入口 ・ 出口",
+     "ro": "iriguchi ・ deguchi",
+     "t": "Eingang und Ausgang. 入 sieht aus wie jemand, der hineingeht. 口 ist ein Mund – eine Öffnung."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "jp": "上 ・ 下 ・ 中",
+     "ro": "ue ・ shita ・ naka",
+     "t": "Oben, unten, innen. Am Kaufhaus-Aufzug: 上 nach oben, 下 nach unten."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "入",
+      "出",
+      "口",
+      "上",
+      "下",
+      "中"
+     ],
+     "prompts": [
+      {
+       "de": "hinausgehen",
+       "answer": "出"
+      },
+      {
+       "de": "oben",
+       "answer": "上"
+      },
+      {
+       "de": "Mund / Öffnung",
+       "answer": "口"
+      },
+      {
+       "de": "hineingehen",
+       "answer": "入"
+      },
+      {
+       "de": "unten",
+       "answer": "下"
+      },
+      {
+       "de": "innen / Mitte",
+       "answer": "中"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Jetzt findest du immer den Ausgang. Wichtig, wenn das Geld alle ist!"
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Sensei Ogata kennt die Geschichte jedes Zeichens. Er liest im großen Lesesaal mit den Holzgalerien auf der Flussinsel."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "いりぐち",
+     "ro": "iriguchi",
+     "de": "Eingang"
+    },
+    {
+     "jp": "でぐち",
+     "ro": "deguchi",
+     "de": "Ausgang"
+    },
+    {
+     "jp": "うえ",
+     "ro": "ue",
+     "de": "oben"
+    },
+    {
+     "jp": "した",
+     "ro": "shita",
+     "de": "unten"
+    }
+   ],
+   "hint": "Ein großer Lesesaal mit Holzgalerien auf der Flussinsel."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "ogata",
+     "p": "explain",
+     "t": "Viele Kanji sind Bilder. Schau: 人 – zwei Beine, ein Mensch, der geht."
+    },
+    {
+     "s": "ogata",
+     "p": "smile",
+     "jp": "子",
+     "ro": "ko",
+     "t": "Ein Kind: ein kleiner Kopf, die Arme ausgestreckt."
+    },
+    {
+     "s": "ogata",
+     "p": "read",
+     "jp": "女",
+     "ro": "onna",
+     "t": "Eine Frau: Früher zeigte das Zeichen eine kniende Gestalt."
+    },
+    {
+     "s": "ogata",
+     "p": "explain",
+     "jp": "男",
+     "ro": "otoko",
+     "t": "Und der Mann: oben ein Reisfeld 田, unten Kraft 力. Wer auf dem Feld arbeitet."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Welches Zeichen ist laut Ogata „ein Mensch, der geht“?",
+       "options": [
+        "子",
+        "人",
+        "女",
+        "男"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Aus welchen zwei Teilen besteht 男?",
+       "options": [
+        "Mund und Baum",
+        "Reisfeld und Kraft",
+        "Sonne und Mond",
+        "Berg und Fluss"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was bedeutet 子?",
+       "options": [
+        "Kind",
+        "Frau",
+        "Lehrer",
+        "Freund"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ogata",
+     "p": "smile",
+     "t": "Wer die Bilder sieht, vergisst die Zeichen nicht mehr."
+    },
+    {
+     "s": "ogata",
+     "p": "read",
+     "t": "Für die Zeichen der Natur geh zurück auf den Campus Toyonaka. Prof. Takada steht an der Hauptachse – auf einem kleinen Berg."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ひと",
+     "ro": "hito",
+     "de": "Mensch"
+    },
+    {
+     "jp": "こ",
+     "ro": "ko",
+     "de": "Kind"
+    },
+    {
+     "jp": "おんな",
+     "ro": "onna",
+     "de": "Frau"
+    },
+    {
+     "jp": "おとこ",
+     "ro": "otoko",
+     "de": "Mann"
+    }
+   ],
+   "hint": "Prof. Takada auf dem Campus Toyonaka."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Ogata hat dir die Bilder gezeigt? Dann schau dich hier um."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "jp": "山 ・ 川 ・ 木",
+     "ro": "yama ・ kawa ・ ki",
+     "t": "Berg: drei Gipfel. Fluss: drei Linien Wasser. Baum: Stamm mit Ästen."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "jp": "花 ・ 空",
+     "ro": "hana ・ sora",
+     "t": "Blume und Himmel. Die sind etwas schwerer – aber du siehst sie im Frühling überall."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "山",
+      "川",
+      "木",
+      "花",
+      "空",
+      "人"
+     ],
+     "prompts": [
+      {
+       "de": "Fluss",
+       "answer": "川"
+      },
+      {
+       "de": "Baum",
+       "answer": "木"
+      },
+      {
+       "de": "Himmel",
+       "answer": "空"
+      },
+      {
+       "de": "Berg",
+       "answer": "山"
+      },
+      {
+       "de": "Blume",
+       "answer": "花"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Wunderbar. 山 und 川 stecken in vielen Namen – auch im Machikaneyama unter deinen Füßen."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Dr. Seto ist am Minō-Wasserfall. Dort lernst du die Zeichen der Wochentage – das Wasser spielt eine Rolle."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "やま",
+     "ro": "yama",
+     "de": "Berg"
+    },
+    {
+     "jp": "はな",
+     "ro": "hana",
+     "de": "Blume"
+    },
+    {
+     "jp": "そら",
+     "ro": "sora",
+     "de": "Himmel"
+    }
+   ],
+   "hint": "Dr. Seto am Minō-Wasserfall."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Hörst du das Wasser? 水 – mizu. In den Wochentagen steckt die ganze Natur."
+    },
+    {
+     "s": "seto",
+     "p": "book",
+     "jp": "日 月 火 水 木 金 土",
+     "ro": "nichi getsu ka sui moku kin do",
+     "t": "Sonne, Mond, Feuer, Wasser, Holz, Metall, Erde. Daraus werden Sonntag bis Samstag."
+    },
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Sonntag ist にちようび (nichiyōbi) – Tag der Sonne. Wie im Deutschen!"
+    },
+    {
+     "s": "seto",
+     "p": "book",
+     "t": "Und Montag, げつようび, ist der Tag des Mondes. Auch wie im Deutschen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Welches Kanji steht laut Dr. Seto für Wasser?",
+       "options": [
+        "火",
+        "水",
+        "木",
+        "土"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "にちようび ist der Tag der …",
+       "options": [
+        "Erde",
+        "Sonne",
+        "Mond",
+        "Feuer"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Welcher Wochentag ist der Tag des Mondes?",
+       "options": [
+        "Sonntag",
+        "Montag",
+        "Freitag",
+        "Samstag"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Genau. Am Wochenende, am 土 und 日, sind hier die meisten Leute."
+    },
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Prof. Takada bringt dir den Rest im Haus der Handai auf der Flussinsel bei – dort, wo die Universität angefangen hat."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "みず",
+     "ro": "mizu",
+     "de": "Wasser"
+    },
+    {
+     "jp": "にちようび",
+     "ro": "nichiyōbi",
+     "de": "Sonntag"
+    },
+    {
+     "jp": "げつようび",
+     "ro": "getsuyōbi",
+     "de": "Montag"
+    }
+   ],
+   "hint": "Das Haus der Handai auf der Flussinsel."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Letzte Lektion für heute: die Zeit. Ohne sie kommst du in Japan nicht weit."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "jp": "時 ・ 分 ・ 半",
+     "ro": "ji ・ fun ・ han",
+     "t": "Stunde, Minute, halb. 三時半 – halb vier."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "jp": "今 ・ 午前 ・ 午後",
+     "ro": "ima ・ gozen ・ gogo",
+     "t": "Jetzt, vormittags, nachmittags. 午 ist die Mittagsstunde."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "時",
+      "分",
+      "半",
+      "今",
+      "午",
+      "日"
+     ],
+     "prompts": [
+      {
+       "de": "Minute",
+       "answer": "分"
+      },
+      {
+       "de": "jetzt",
+       "answer": "今"
+      },
+      {
+       "de": "Stunde / Uhr",
+       "answer": "時"
+      },
+      {
+       "de": "Mittag (in vormittags / nachmittags)",
+       "answer": "午"
+      },
+      {
+       "de": "halb",
+       "answer": "半"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "think",
+     "jp": "今 何時ですか。",
+     "ro": "Ima nanji desu ka.",
+     "t": "Wie spät ist es jetzt? Diese Frage kannst du jetzt lesen."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Die nächsten Zeichen findest du rund um die Burg Ōsaka. Dort stehen Schilder aus allen Jahrhunderten."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "いま",
+     "ro": "ima",
+     "de": "jetzt"
+    },
+    {
+     "jp": "ごぜん",
+     "ro": "gozen",
+     "de": "vormittags"
+    },
+    {
+     "jp": "ごご",
+     "ro": "gogo",
+     "de": "nachmittags"
+    },
+    {
+     "jp": "はん",
+     "ro": "han",
+     "de": "halb"
+    }
+   ],
+   "hint": "Rund um die Burg Ōsaka."
+  }
+ },
+ "STRANG_LANG_VOCABULARY": {
+  "8": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Das hier ist mein Revier. Lass uns die Verkehrsmittel lernen."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "jp": "でんしゃ ・ ちかてつ",
+     "ro": "densha ・ chikatetsu",
+     "t": "Zug und U-Bahn. ちかてつ heißt wörtlich „Untergrund-Eisen“."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "バス ・ タクシー",
+     "ro": "basu ・ takushī",
+     "t": "Bus und Taxi. Die sind einfach, das sind Fremdwörter."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Die Taxitür öffnet sich übrigens von allein. Nicht anfassen!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter den Verkehrsmitteln zu.",
+     "items": [
+      {
+       "icon": "train",
+       "label": "Zug",
+       "answer": "densha"
+      },
+      {
+       "icon": "subway",
+       "label": "U-Bahn",
+       "answer": "chikatetsu"
+      },
+      {
+       "icon": "bus",
+       "label": "Bus",
+       "answer": "basu"
+      },
+      {
+       "icon": "taxi",
+       "label": "Taxi",
+       "answer": "takushī"
+      }
+     ],
+     "words": [
+      {
+       "jp": "バス",
+       "ro": "basu"
+      },
+      {
+       "jp": "でんしゃ",
+       "ro": "densha"
+      },
+      {
+       "jp": "タクシー",
+       "ro": "takushī"
+      },
+      {
+       "jp": "ちかてつ",
+       "ro": "chikatetsu"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Perfekt! Damit kommst du überall hin."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Weiter geht's im Labyrinth unter Umeda – dort lernst du, nach dem Weg zu fragen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "でんしゃ",
+     "ro": "densha",
+     "de": "Zug"
+    },
+    {
+     "jp": "ちかてつ",
+     "ro": "chikatetsu",
+     "de": "U-Bahn"
+    },
+    {
+     "jp": "バス",
+     "ro": "basu",
+     "de": "Bus"
+    },
+    {
+     "jp": "タクシー",
+     "ro": "takushī",
+     "de": "Taxi"
+    }
+   ],
+   "hint": "Im Labyrinth unter Umeda."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Hier unten brauchst du Zeigewörter. Im Japanischen gibt es drei Entfernungen."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "jp": "ここ ・ そこ ・ あそこ",
+     "ro": "koko ・ soko ・ asoko",
+     "t": "Hier bei mir, dort bei dir, und da drüben – weit weg von uns beiden."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "どこ",
+     "ro": "doko",
+     "t": "Und die Frage: wo? トイレは どこですか – wo ist die Toilette?"
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Die Antwort ist hier meistens „あそこ“. Sehr weit あそこ."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Etwas ist weit weg von dir UND von Aoi. Welches Wort passt?",
+     "options": [
+      {
+       "jp": "ここ"
+      },
+      {
+       "jp": "そこ"
+      },
+      {
+       "jp": "あそこ"
+      },
+      {
+       "jp": "どこ"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "type": "input",
+     "q": "Wie heißt „wo?“ auf Japanisch? (in Rōmaji)",
+     "placeholder": "Rōmaji",
+     "accept": [
+      "doko"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Super. Jetzt verläufst du dich nur noch mit Stil."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Ren am Fluss bringt dir Wörter fürs Essen und Trinken bei. Sein Café ist da, wo die Terrassen über das Wasser ragen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ここ",
+     "ro": "koko",
+     "de": "hier"
+    },
+    {
+     "jp": "そこ",
+     "ro": "soko",
+     "de": "dort (bei dir)"
+    },
+    {
+     "jp": "あそこ",
+     "ro": "asoko",
+     "de": "da drüben"
+    },
+    {
+     "jp": "どこ",
+     "ro": "doko",
+     "de": "wo?"
+    }
+   ],
+   "hint": "Ein Café, dessen Terrasse über das Wasser ragt."
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Probier mal. Und dann sag mir auf Japanisch, wie es schmeckt."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "jp": "おいしい ・ あまい",
+     "ro": "oishii ・ amai",
+     "t": "Lecker und süß."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "jp": "からい ・ あつい",
+     "ro": "karai ・ atsui",
+     "t": "Scharf und heiß. Beim Kaffee hoffentlich nur heiß."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter zu.",
+     "items": [
+      {
+       "icon": "yum",
+       "label": "lecker",
+       "answer": "oishii"
+      },
+      {
+       "icon": "cake",
+       "label": "süß",
+       "answer": "amai"
+      },
+      {
+       "icon": "pepper",
+       "label": "scharf",
+       "answer": "karai"
+      },
+      {
+       "icon": "coffee",
+       "label": "heiß",
+       "answer": "atsui"
+      }
+     ],
+     "words": [
+      {
+       "jp": "からい",
+       "ro": "karai"
+      },
+      {
+       "jp": "おいしい",
+       "ro": "oishii"
+      },
+      {
+       "jp": "あつい",
+       "ro": "atsui"
+      },
+      {
+       "jp": "あまい",
+       "ro": "amai"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "jp": "おいしい！",
+     "ro": "Oishii!",
+     "t": "Das hör ich gern."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Madoka wartet auf der Einkaufsstraße Tenjinbashisuji. Sie bringt dir bei, über Preise zu reden."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おいしい",
+     "ro": "oishii",
+     "de": "lecker"
+    },
+    {
+     "jp": "あまい",
+     "ro": "amai",
+     "de": "süß"
+    },
+    {
+     "jp": "からい",
+     "ro": "karai",
+     "de": "scharf"
+    },
+    {
+     "jp": "あつい",
+     "ro": "atsui",
+     "de": "heiß"
+    }
+   ],
+   "hint": "Madoka in der Einkaufsstraße Tenjinbashisuji."
+  },
+  "11": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Einkaufen auf Japanisch – mit drei Wörtern bist du dabei."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "jp": "いくら",
+     "ro": "ikura",
+     "t": "Wie viel? Das fragst du mit einem Lächeln."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "jp": "たかい ・ やすい",
+     "ro": "takai ・ yasui",
+     "t": "Teuer und billig. Hier hörst du fast nur das zweite."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "jp": "かいもの",
+     "ro": "kaimono",
+     "t": "Und das Ganze heißt かいもの – Einkaufen. Mein Lieblingssport."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Wie fragt man nach dem Preis?",
+       "options": [
+        "いくら",
+        "どこ",
+        "やすい",
+        "あそこ"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Was ist laut Madoka das Wort, das man hier am häufigsten hört?",
+       "options": [
+        "たかい",
+        "やすい",
+        "からい",
+        "あまい"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was heißt かいもの?",
+       "options": [
+        "Kasse",
+        "Einkaufen",
+        "Geldbeutel",
+        "Rabatt"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Du bist bereit für die große Jagd!"
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "t": "Die nächste Lektion gibt es im Süden, in Minami – wo die Leuchtreklamen über dem Kanal flackern."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "いくら",
+     "ro": "ikura",
+     "de": "wie viel (kostet)?"
+    },
+    {
+     "jp": "たかい",
+     "ro": "takai",
+     "de": "teuer; hoch"
+    },
+    {
+     "jp": "かいもの",
+     "ro": "kaimono",
+     "de": "Einkaufen"
+    }
+   ],
+   "hint": "In Minami, wo Leuchtreklamen über dem Kanal flackern."
+  }
+ },
+ "STRANG_LANG_CONVERSATION": {
+  "6": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Uhrzeiten! Die brauchst du am Bahnhof jeden Tag."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "jp": "でんしゃは なんじですか。",
+     "ro": "Densha wa nanji desu ka.",
+     "t": "Um wie viel Uhr fährt der Zug? なんじ heißt „wie viel Uhr“."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "jp": "くじです。",
+     "ro": "Ku-ji desu.",
+     "t": "Um neun Uhr. Achtung: neun Uhr ist くじ, nicht きゅうじ."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Um wie viel Uhr fährt der Zug?“",
+     "tiles": [
+      {
+       "jp": "なんじ",
+       "ro": "nanji"
+      },
+      {
+       "jp": "でんしゃ",
+       "ro": "densha"
+      },
+      {
+       "jp": "ですか",
+       "ro": "desu ka"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      },
+      {
+       "jp": "どこ",
+       "ro": "doko"
+      }
+     ],
+     "answer": [
+      "でんしゃ",
+      "は",
+      "なんじ",
+      "ですか"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Antworte: „Um neun Uhr.“",
+     "tiles": [
+      {
+       "jp": "です",
+       "ro": "desu"
+      },
+      {
+       "jp": "くじ",
+       "ro": "ku-ji"
+      },
+      {
+       "jp": "きゅう",
+       "ro": "kyū"
+      },
+      {
+       "jp": "か",
+       "ro": "ka"
+      }
+     ],
+     "answer": [
+      "くじ",
+      "です"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Perfekt! Und in Japan fährt der Zug dann auch wirklich um neun."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Unten im Untergrund üben wir, wie man sagt, wo etwas ist."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "なんじ",
+     "ro": "nanji",
+     "de": "wie viel Uhr?"
+    },
+    {
+     "jp": "くじ",
+     "ro": "ku-ji",
+     "de": "neun Uhr"
+    }
+   ],
+   "hint": "Aoi im Untergrund von Umeda."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Wenn du sagen willst, dass es irgendwo etwas gibt, brauchst du あります."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "jp": "ここに えきが あります。",
+     "ro": "Koko ni eki ga arimasu.",
+     "t": "Hier gibt es einen Bahnhof. Ort + に, Ding + が, dann あります."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Für Menschen und Tiere sagt man übrigens います. Für Dinge あります."
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Hier unten gibt es übrigens sieben Bahnhöfe. あります, あります, あります …"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welches Wort benutzt man für Dinge, die irgendwo sind?",
+     "options": [
+      {
+       "jp": "います"
+      },
+      {
+       "jp": "あります"
+      },
+      {
+       "jp": "です"
+      },
+      {
+       "jp": "ます"
+      }
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welches Teilchen steht laut Aoi hinter dem Ort?",
+     "options": [
+      {
+       "jp": "が"
+      },
+      {
+       "jp": "は"
+      },
+      {
+       "jp": "に"
+      },
+      {
+       "jp": "を"
+      }
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Genau. ここに カフェが あります – hier gibt es ein Café. Dazu passt Ren am Fluss!"
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Such die Cafés, deren Terrassen über das Wasser ragen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あります",
+     "ro": "arimasu",
+     "de": "es gibt (Dinge)"
+    },
+    {
+     "jp": "います",
+     "ro": "imasu",
+     "de": "es gibt (Lebewesen)"
+    }
+   ],
+   "hint": "Cafés, deren Terrassen über das Wasser ragen."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Sag mir, was du magst. Dann weiß ich, was ich dir brühe."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "jp": "コーヒーが すきです。",
+     "ro": "Kōhī ga suki desu.",
+     "t": "Ich mag Kaffee. すき heißt „mögen“, und davor steht が."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "jp": "おちゃは すきじゃないです。",
+     "ro": "Ocha wa suki ja nai desu.",
+     "t": "Tee mag ich nicht. Das ist die höfliche Verneinung."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Ich mag Kaffee.“",
+     "tiles": [
+      {
+       "jp": "が",
+       "ro": "ga"
+      },
+      {
+       "jp": "すき",
+       "ro": "suki"
+      },
+      {
+       "jp": "コーヒー",
+       "ro": "kōhī"
+      },
+      {
+       "jp": "です",
+       "ro": "desu"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      }
+     ],
+     "answer": [
+      "コーヒー",
+      "が",
+      "すき",
+      "です"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Tee mag ich nicht.“",
+     "tiles": [
+      {
+       "jp": "おちゃ",
+       "ro": "ocha"
+      },
+      {
+       "jp": "すきじゃない",
+       "ro": "suki ja nai"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      },
+      {
+       "jp": "です",
+       "ro": "desu"
+      },
+      {
+       "jp": "すき",
+       "ro": "suki"
+      }
+     ],
+     "answer": [
+      "おちゃ",
+      "は",
+      "すきじゃない",
+      "です"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Dann bekommst du Kaffee. Kein Tee. Versprochen."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Ich spiele heute Abend in einer Bar unter den Bahnbögen von Nakatsu. Komm vorbei, dann reden wir weiter."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "すき",
+     "ro": "suki",
+     "de": "mögen"
+    }
+   ],
+   "hint": "Ren in Nakatsu, unter den Bahnbögen."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Du bist da! Kommst du oft in solche Bars?"
+    },
+    {
+     "s": "me",
+     "t": "Nicht so oft."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "jp": "よく きます。",
+     "ro": "Yoku kimasu.",
+     "t": "Ich komme oft. よく heißt „oft“."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "jp": "ときどき いきます。",
+     "ro": "Tokidoki ikimasu.",
+     "t": "Ich gehe manchmal hin. ときどき heißt „manchmal“."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Merk dir: きます – kommen, hierher. いきます – gehen, woandershin."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was heißt ときどき?",
+     "options": [
+      "oft",
+      "manchmal",
+      "nie",
+      "immer"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Ren sagt, er komme oft hierher. Welches Verb benutzt er?",
+     "options": [
+      {
+       "jp": "いきます"
+      },
+      {
+       "jp": "きます"
+      },
+      {
+       "jp": "あります"
+      },
+      {
+       "jp": "すきです"
+      }
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Genau. Und ab heute: よく きますね?"
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Madoka will dir zeigen, wie man einkauft, ohne sich zu blamieren. Sie ist in der Einkaufsstraße mit den roten Laternen, ganz in der Nähe."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "よく",
+     "ro": "yoku",
+     "de": "oft"
+    },
+    {
+     "jp": "ときどき",
+     "ro": "tokidoki",
+     "de": "manchmal"
+    },
+    {
+     "jp": "きます",
+     "ro": "kimasu",
+     "de": "kommen"
+    },
+    {
+     "jp": "いきます",
+     "ro": "ikimasu",
+     "de": "gehen"
+    }
+   ],
+   "hint": "Die Einkaufsstraße mit den roten Laternen."
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Okay, Einkaufs-Prüfung! Zwei Sätze, und du kannst alles kaufen."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "jp": "これは いくらですか。",
+     "ro": "Kore wa ikura desu ka.",
+     "t": "Wie viel kostet das? これ heißt „das hier“."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "jp": "これを ください。",
+     "ro": "Kore o kudasai.",
+     "t": "Das hier, bitte. Mit を, weil du es nimmst."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Wie viel kostet das hier?“",
+     "tiles": [
+      {
+       "jp": "いくら",
+       "ro": "ikura"
+      },
+      {
+       "jp": "これ",
+       "ro": "kore"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      },
+      {
+       "jp": "ですか",
+       "ro": "desu ka"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      }
+     ],
+     "answer": [
+      "これ",
+      "は",
+      "いくら",
+      "ですか"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Das hier, bitte.“",
+     "tiles": [
+      {
+       "jp": "ください",
+       "ro": "kudasai"
+      },
+      {
+       "jp": "これ",
+       "ro": "kore"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      }
+     ],
+     "answer": [
+      "これ",
+      "を",
+      "ください"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Bestanden! Jetzt bist du ein echter Ōsaka-Shopper."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Das große Finale gibt es an der Ebisu-Brücke in Dōtonbori. Unter dem großen Läufer auf der Leuchtreklame!"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "これ",
+     "ro": "kore",
+     "de": "das hier"
+    },
+    {
+     "jp": "ください",
+     "ro": "kudasai",
+     "de": "bitte (geben Sie mir)"
+    }
+   ],
+   "hint": "Madoka an der Ebisu-Brücke in Dōtonbori."
+  }
+ }
+}

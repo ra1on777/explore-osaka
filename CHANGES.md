@@ -12,6 +12,18 @@ Still korrigiert (wie vereinbart) und hier dokumentiert.
 - Nummer der Screens: Die Overlay-Spezifikation nennt 75 Haupt-Screens, das GDD 70. Tatsächlich gibt es 75 IDs (durch 2a/b/c, 32a/b, 45a/b, 56a/b). Die Engine arbeitet mit den 75 IDs.
 - Dialogbox-Vorlage: Der Name „Hana“ gehört zu keiner Figur und wird nicht verwendet.
 
+## Region 2
+- Kanji 6 und 8: Das Bundle sah 林/森 und 曜 vor (nicht N5). Ersetzt durch 山 川 木 花 空 (Natur) und 時 分 半 今 午 (Uhrzeit). Wochentage werden in Kanji 7 nur über die Grundzeichen 日 月 火 水 木 金 土 und in Kana (にちようび) gezeigt.
+- Kanji 2–8: Die Mechanik „Radikal/Strich wählen“ ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen).
+- Wortschatz 10: „にがい“ (bitter) ist nicht N5 → stattdessen „あつい“ (heiß).
+- STUDENT_KWANSEI_REP heißt im Spiel „Haruto“, TORI_TETSU_TAKUMI stellt sich als Takumi mit Spitznamen „Tori“ (von Tori-Tetsu) vor.
+- Bahnhöfe 2: Die Route Umeda → Tenjinbashisuji führt mit der lila Tanimachi-Linie über Higashi-Umeda (die braune Sakaisuji-Linie fährt dort nicht ab). Der Hinweis nennt deshalb die lila Linie.
+- Bahnhöfe 2 und 6: Die Fahrpreise am Automaten sind vereinfachte Beispielwerte, keine aktuellen Tarife.
+- Bahnhöfe 3: „Tenroku 1925“ als Endbahnhof einer Vorortbahn (Shin-Keihan, heute Hankyū Senri-Linie) – ohne genaues Streckenziel formuliert.
+- Romance 3–6: Die Partnerin spricht je nach Route eigene Zeilen (Aoi/Maya); Aufgaben und Abschluss sind gemeinsam.
+- Fetch-Etappen (Philosophie 7, Literatur 6): Die Gegenstände liegen in der Nakanoshima-Bibliothek (Screen 25), wie im Bundle angegeben.
+- Karte Region 1: „Wohnheim“ beschriftet nach links, „Panasonic Stadium“ etwas tiefer, damit sich die Markierungen nicht mehr überlagern.
+
 ## Noch zu korrigieren (außerhalb der Demo, betrifft spätere Regionen)
 - „Dende Town“ → „Den Den Town“ (Café-Kultur, Etappe 6).
 - „Revanchmatch“ → „Revanchematch“ (Fußball, Etappe 12).
@@ -31,3 +43,18 @@ Nach bestem Wissen geschrieben; bitte bei Gelegenheit gegenprüfen:
 - Colonel-Sanders-Statue 1985 im Dōtonbori, 2009 wiedergefunden; Japan-Series-Sieg der Tigers 2023.
 - Kobayashi Ichizō: Hankyū, Takarazuka-Revue.
 - Panasonic Stadium Suita überwiegend durch Spenden finanziert.
+
+## Zur Faktenprüfung (Region 2)
+- „Naniwa no happyaku-ya-bashi“ (808 Brücken), Brücken der Edo-Zeit überwiegend von Kaufleuten finanziert.
+- Ōkawa teilt sich an der Ostspitze von Nakanoshima in Dōjima-gawa und Tosabori-gawa; Reisbörse Dōjima (1730).
+- Dōtonbori-Kanal: Baubeginn 1612 durch Yasui Dōton, Fertigstellung 1615.
+- Tekijuku-Register mit über 600 Namen; Fukuzawa Yukichi auf dem 10.000-Yen-Schein (1984–2024).
+- Nishida Kitarō, „Zen no kenkyū“ (1911), reine Erfahrung; Kamo no Chōmei, „Hōjōki“ (1212).
+- Kaitokudō 1724 von Kaufleuten gegründet; Hyakunin Isshu von Fujiwara no Teika.
+- Kaiserliche Universität Ōsaka 1931; Kansai Hōritsu Gakkō 1886; Kwansei-Uhrturm (Vories, um 1929), Motto „Mastery for Service“.
+- Nakanoshima-Bibliothek 1904; Umeda Sky Building 173 m, Dach am Boden montiert und hochgezogen.
+- Tenjinbashisuji rund 2,6 km, über 600 Läden; Tenroku-Station 1925.
+- Senri New Town: Erstbezug 1962. Monorail: Umstieg zur Saito-Linie in Banpaku-kinen-kōen, Shibahara-handaimae für Toyonaka.
+- Bashō 1644 Iga – Oku no Hosomichi 1689 – gestorben 1694 in Ōsaka; Chikamatsu „Sonezaki Shinjū“ 1703.
+- Nel Drip = Flanellfilter; Kissaten-„Morning Set“.
+- Kein Trinkgeld in japanischen Restaurants; Kushikatsu-Soße nur einmal tunken.

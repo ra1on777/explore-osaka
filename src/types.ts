@@ -33,7 +33,14 @@ export type Task =
   | { type: 'build'; q: string; tiles: { jp: string; ro: string }[]; answer: string[] }
   | { type: 'rounds'; art?: string; timed?: number; fixed?: string[];
       rounds: { q?: string; jp?: string; ro?: string; art?: string; options?: string[]; answer: number; fb?: string }[] }
-  | { type: 'route'; q: string; options: { label: string; value: string }[] };
+  | { type: 'route'; q: string; options: { label: string; value: string }[] }
+  | { type: 'mapquiz'; q?: string; map: string; points: { id: string; x: number; y: number; label?: string }[];
+      rounds: { q: string; answer: string; fb?: string }[] }
+  | { type: 'ticket'; q: string; fares: { jp: string; ro: string; price: number }[]; target: string }
+  | { type: 'espresso'; q: string; start: { grind: number; temp: number; tamp: number };
+      ok: { grind: [number, number]; temp: [number, number]; tamp: [number, number] } }
+  | { type: 'sort'; q: string; items: { label: string; sub?: string }[] }
+  | { type: 'kanjigrid'; q: string; grid: string[]; prompts: { de: string; answer: string }[] };
 
 export interface VocabEntry { jp: string; ro: string; de: string }
 export interface StageContent {
@@ -44,11 +51,13 @@ export interface StageContent {
   hint: string;
   vocab?: VocabEntry[];
   variants?: Record<string, { lines?: Line[]; tasks?: Task[]; after?: Line[] }>;
+  /** Holen-und-Zurückbringen: Gegenstand liegt auf dem Ziel-Screen an (x, y). */
+  fetch?: { item: string; x: number; y: number; find: string; hintOut: string; hintBack: string; art?: string };
 }
 export type Mood = 'morning' | 'day' | 'golden' | 'night';
 
 // ---------- Spielstand ----------
-export interface StrandProgress { done: number; stars: Record<number, number>; touched: number }
+export interface StrandProgress { done: number; stars: Record<number, number>; touched: number; fetch?: 'out' | 'got' }
 export interface Settings { romaji: boolean; sound: boolean; autosave: boolean; textSpeed: number }
 export interface GameState {
   version: 1;

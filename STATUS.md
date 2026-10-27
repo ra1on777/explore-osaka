@@ -1,7 +1,13 @@
 # ExploreOsaka – Projektstatus
 
-Stand: Demo v0.1 (Großregion 1 „Hokusetsu & Hanshin-Nord“, Screens 1–19 inkl. 2a/2b/2c).
-Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **60/60 Etappen spielbar, keine Laufzeitfehler** (Handy- und PC-Layout).
+Stand: Demo v0.2 – Region 1 „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c) und Region 2 „Kita & Nakanoshima“ (Screens 20–29).
+Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **122/122 Etappen spielbar, keine Laufzeitfehler** (Handy- und PC-Layout).
+
+### Neu in v0.2
+- Region 2 mit 10 Screens und 8 Orten auf einer eigenen Karte (Umschalter „Region“ in der Weltkarte).
+- 62 neue Etappen, 4 neue Stränge (Bahnhöfe & Gleise, Café-Kultur, Literatur, Schnäppchen).
+- Neue Mechaniken: Holen & Zurückbringen, Kartenquiz/Wegfindung, Ticketautomat, Espresso-Maschine, Chronologisch sortieren, Kanji-Raster, Dating-Etikette.
+- Figuren in allen Screens beider Regionen neu skaliert und platziert (Größe an den Passanten im Bild gemessen, Füße auf freiem Boden). Prüfwerkzeug: `python3 tools/preview_slots.py <ordner> [screen-ids]` legt Raster und Testfiguren über die Hintergründe.
 
 ---
 
@@ -27,9 +33,9 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **60/60 Etappen spielba
 - Logo freigestellt, App-Icons 512/192/180 px, Titelbild aus „Logo mit Skyline“.
 
 ### Welt & Navigation
-- Weltkarte (auf dem oberen Bildschirm) mit 13 Orten der Region 1, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
+- Weltkarte (auf dem oberen Bildschirm), eine Karte pro Region (Region 1: 13 Orte, Region 2: 8 Orte), Umschalten per Region-Tab, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
 - Wege zwischen Unter-Screens eines Ortes (z. B. Wohnheim: Flur ↔ Zimmer ↔ Küche) direkt im Erkunden-Menü.
-- NPC-Platzierung: generische Slots A/B/C mit Überschreibungen pro Screen (x, Fußhöhe, Größe) in `src/data/world.json` für 1, 2a, 2b, 2c, 5, 9, 11, 13, 15, 17.
+- NPC-Platzierung: Slots A/B/C mit Werten pro Screen (x, Fußhöhe, Größe in % der Bildhöhe) in `src/data/world.json`, für alle Screens der Regionen 1 und 2 einzeln eingemessen.
 
 ### Quest-System
 - Alle Stränge von Beginn an offen; Fortschritt über Etappen-Freischaltung.
@@ -54,12 +60,18 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **60/60 Etappen spielba
 | KNOWLEDGE_MULTIPLE_CHOICE | 4 Optionen, Erklärung nach richtiger Antwort |
 | ESTIMATION_INPUT | Schieberegler + Zahlenfeld, ±10 % Toleranz, Hinweis „zu hoch/zu niedrig“ |
 | POINT_AND_CLICK_INSPECT | Tippen auf den oberen Bildschirm; Treffer öffnet eine Nahaufnahme (SVG). Fehltipps weit daneben kosten einen Stern, knapp daneben nicht |
-| FETCH_AND_RETURN | Engine-Unterstützung (Item wird nach Abgabe aus der Tasche entfernt), in Region 1 aber keine Fetch-Etappe |
+| FETCH_AND_RETURN | Auftrag annehmen → am Zielort liegt der Gegenstand im Bild (Lupe) und in der Liste „Hier liegt etwas“ → einstecken (Tasche, Nahaufnahme) → beim Auftraggeber abgeben. Keine Sterne |
 | HIRAGANA_ROMAJI_TILE_MATCH | Kachel-Paare Kana ↔ Rōmaji in Runden |
 | KATAKANA_SIGN_DECIPHER | Schild lesen, Silben in Reihenfolge antippen |
 | VOCAB_ITEM_SLOT_IN | Wort antippen, dann passendes Ding/Person |
 | SENTENCE_BUILDER_PUZZLE | Bausteine in Reihenfolge, Ablenker-Kacheln |
 | ROUTE_BRANCH_CHOICE | Entscheidung, gespeichert als Flag |
+| GEO_MAP_QUIZ / WAYFINDING_MAP | Karte auf dem oberen Bildschirm, Punkt antippen; mehrere Runden (Kanäle, Monorail-Netz, Umeda-Ausgänge) |
+| TICKET_VENDING_MINIGAME | Fahrpreistafel in Kana lesen → Preisknopf drücken → Münzen einwerfen, Wechselgeld-Anzeige |
+| ESPRESSO_EXTRACTION_TWEAK | Mahlgrad, Temperatur, Anpressdruck einstellen; jeder misslungene Bezug mit Geschmacks-Rückmeldung kostet einen Stern |
+| BOOK_CHRONO_SORT | Karten in die richtige Reihenfolge tippen, Prüfen/Zurücknehmen |
+| KANJI_RADICAL_STROKE_PICK | Kanji-Raster: deutsche Bedeutung → passendes Zeichen antippen |
+| DATING_ETIQUETTE_CHOICE | Situationsfragen mit Erklärung; Texte je nach Partnerin (Aoi/Maya) |
 
 ### Sprache
 - Hepburn mit Makron; N5-Grenze; Kansai-ben nur als markierte Ausnahme (Karuta-Etappe).
@@ -75,26 +87,30 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **60/60 Etappen spielba
 - Bedienung per Touch, Maus und Tastatur: Enter/Leertaste = weiter, 1–9 = Antworten, Esc = zurück, M/Q/V/B = Karte/Quests/Vokabeln/Tasche.
 - `prefers-reduced-motion` wird respektiert.
 
-### Inhalte der Demo (60 Etappen in 14 Strängen)
+### Inhalte der Demo (122 Etappen in 18 Strängen)
 | Strang | Etappen in der Demo | Ende in der Demo führt nach |
 |---|---|---|
-| Geographie | 1–3 | 26 Kitahama |
-| Natur & Stille | 1–3 | 26 Kitahama |
+| Geographie | 1–4 | 35 Museum of History |
+| Natur & Stille | 1–4 | 30 Burg Ōsaka |
 | Nachtleben | 1 | 39 Amerikamura |
-| Philosophie & Glaube | 1–6 | 24 Nakanoshima Center |
+| Philosophie & Glaube | 1–9 | 35 Museum of History |
 | Kultur Japan | 1–2 | 65 Sumiyoshi Taisha |
-| Kansai Pride | 1–5 | 24 Nakanoshima Center |
+| Kansai Pride | 1–7 | 35 Museum of History |
 | Fußball-Derby | 1–8 | 47 Kyocera Dome |
-| Campus-Atlas | 1–7 | 24 Nakanoshima Center |
-| Romance | 1–2 | 26 Kitahama |
-| Hiragana | 1–5 | 20 Bahnhof Ōsaka |
-| Katakana | 1–5 | 20 Bahnhof Ōsaka |
-| Kanji | 1 | 20 Bahnhof Ōsaka |
-| Wortschatz | 1–7 | 20 Bahnhof Ōsaka |
-| Konversation | 1–5 | 20 Bahnhof Ōsaka |
+| Campus-Atlas | 1–12 | 36 Otemon Gakuin |
+| Romance | 1–7 | 39 Amerikamura |
+| Hiragana | 1–10 | 30 Burg Ōsaka |
+| Katakana | 1–9 | 39 Amerikamura |
+| Kanji | 1–8 | 30 Burg Ōsaka |
+| Wortschatz | 1–11 | 37 Dōtonbori |
+| Konversation | 1–10 | 37 Dōtonbori |
+| Bahnhöfe & Gleise | 1–7 | 41 Namba Parks |
+| Café-Kultur | 1–4 | 40 Amerikamura |
+| Schnäppchen | 1–3 | 43 Kuromon-Markt |
+| Literatur | 1–6 | 51 Kindai |
 
-Elf Stränge beginnen außerhalb von Region 1 und kommen in der Demo noch nicht vor.
-Dialoge: Ø 5,5 Zeilen je Etappe (min. 5, max. 7), dazu kommen die Aufgabentexte.
+Sieben Stränge beginnen außerhalb der Regionen 1–2 und kommen in der Demo noch nicht vor.
+Dialoge: Ø 5,6 Zeilen je Etappe (min. 5, max. 8), dazu kommen die Aufgabentexte.
 
 ---
 
@@ -104,22 +120,23 @@ Dialoge: Ø 5,5 Zeilen je Etappe (min. 5, max. 7), dazu kommen die Aufgabentexte
 - SOCCER_1V1_TACTIC_MATCH (Fußball 2, 6, 7): Situation lesen → eine der 4 Aktionen wählen.
 - PENALTY_TIMING_STOP (Fußball 4): Torwart lesen → Ecke wählen (kein Timing-Balken).
 - HANAFUDA_MATCH_MINI (Kultur Japan 2): Monat → Pflanze, mit einfacher SVG-Karte.
-- KARUTA_TOUCH_SLAP (Kansai 4): Satz → Bedeutung, mit 8-Sekunden-Zeitbalken.
+- KARUTA_TOUCH_SLAP (Kansai 4, 7): Satz/Hinweis → Karte, mit 8-Sekunden-Zeitbalken.
 - SILHOUETTE_IDENTIFY (Natur 2): Blatt-Umriss → Baum.
-- Noch gar nicht umgesetzt (keine Etappe in Region 1): ESPRESSO_EXTRACTION_TWEAK, SECRET_INGREDIENT_GUESS, DRINK_ETIQUETTE_CHOICE, DATING_ETIQUETTE_CHOICE, FRAMING_PHOTO_CHALLENGE, BOOK_CHRONO_SORT, SHOGI_ONE_MOVE_PUZZLE, KANJI_RADICAL_STROKE_PICK, WAYFINDING_MAP, TICKET_VENDING_MINIGAME, GEO_MAP_QUIZ, FINAL_CONFESSION_CHOICE, ITEM_SUBMISSION.
+- Noch gar nicht umgesetzt (keine Etappe in den Regionen 1–2): SECRET_INGREDIENT_GUESS, DRINK_ETIQUETTE_CHOICE, FRAMING_PHOTO_CHALLENGE, SHOGI_ONE_MOVE_PUZZLE, FINAL_CONFESSION_CHOICE, ITEM_SUBMISSION.
+- KANJI_RADICAL_STROKE_PICK ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen), ohne echtes Strich- oder Radikal-Zerlegen.
 
 ### Grafik
-- Platzhalter-Figuren: Kater Goro (gezeichnete SVG-Katze), Ryōsuke / STUDENT_KANDAI_LAW (Silhouette). Ebenfalls ohne Sprite: TORI_TETSU_TAKUMI, STUDENT_KWANSEI_REP, STUDENT_OTEMON_BIZ, STUDENT_OMU_LEAD.
-- Inspect-Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
+- Platzhalter-Figuren (Silhouette mit „?“): Ryōsuke / STUDENT_KANDAI_LAW, Tori / TORI_TETSU_TAKUMI, Haruto / STUDENT_KWANSEI_REP; Kater Goro als gezeichnete SVG-Katze. Noch ohne Sprite und noch nicht im Spiel: STUDENT_OTEMON_BIZ, STUDENT_OMU_LEAD.
+- Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner, Espresso, Ladenschild, Linienplan, Buchrücken, Bildband, Holzdruck, Torschild, Uhrturm, Wörterbuch, Register) und die Quizkarten (Kanäle, Monorail, Umeda-Ausgänge) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
 - Partikeleffekte (Blüten, Regen, Laub) aus dem GDD fehlen noch.
 - Screen 53: Variante B ist als Standard eingetragen, A als Alternative (`variants` in `world.json`); die Rotation selbst ist noch nicht gebaut, da Region 5 außerhalb der Demo liegt.
 - Screens 11–17 haben nur halbe Auflösung (bewusst so belassen).
 - Weltkarte ist schematisch gezeichnet (keine echte Kartengrundlage).
 
 ### Inhalte
-- Regionen 2–6: Bilder fertig konvertiert, aber keine Ortsdaten (japanische Schilder, Slots, Hotspots) und keine Dialoge.
-- 382 von 442 Etappen ohne Dialogtexte.
-- Der Kanji-Strang muss ab Etappe 6 auf N5-Zeichen umgestellt werden (im Bundle stehen u. a. 森, 城, 社, 神, 鳥, 道, 地, 図, 館, 医, 院, 寺, 心, 作, 工, 物, 店, 肉). Die Hentaigana-Etappe (Hiragana 12) muss inhaltlich ersetzt werden.
+- Regionen 3–6: Bilder fertig konvertiert, aber keine Ortsdaten (japanische Schilder, Slots, Hotspots) und keine Dialoge.
+- 320 von 442 Etappen ohne Dialogtexte.
+- Kanji-Strang bis Etappe 8 auf N5 umgestellt (siehe `CHANGES.md`). Ab Etappe 9 stehen im Bundle noch Nicht-N5-Zeichen (u. a. 城, 社, 神, 鳥, 道, 地, 図, 館, 医, 院, 寺, 心, 作, 工, 物, 店, 肉). Die Hentaigana-Etappe (Hiragana 12) muss inhaltlich ersetzt werden.
 - Die gelieferten Sachquellen-PDFs decken nur Bundle 04 ab (beide Dateien identisch). Für Region 1 wurden die „200 Fakten“ und Allgemeinwissen genutzt; zu prüfen siehe `CHANGES.md` → „Zur Faktenprüfung“.
 
 ### Technik

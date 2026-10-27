@@ -81,8 +81,9 @@ button:disabled { cursor: default; }
 .npc .fig { height: 100%; width: auto; display: block; pointer-events: none; }
 .npc .svg.fig { aspect-ratio: 1 / 2; }
 .npc .svg.fig.ph-cat { aspect-ratio: 3 / 4; }
-.npc .bubble { position: absolute; top: -9%; left: 50%; width: 2.6em; height: 3.1em; transform: translateX(-50%); animation: bob 1.4s ease-in-out infinite; pointer-events: none; }
-.npc.small .bubble { top: -40%; }
+.npc .bubble { position: absolute; top: -3.3em; left: 50%; width: 2.4em; height: 2.9em; transform: translateX(-50%); animation: bob 1.4s ease-in-out infinite; pointer-events: none; }
+.npc.small .bubble { top: -3.3em; }
+.npc::after { content: ''; position: absolute; inset: -6% -40%; }
 .npc:hover { filter: drop-shadow(0 0 6px var(--gold)) drop-shadow(0 4px 4px rgba(0, 0, 0, .35)); }
 .top.talking .npc { filter: brightness(.55) saturate(.6); }
 .top.talking .npc.active { filter: drop-shadow(0 0 8px rgba(244, 182, 63, .7)); }
@@ -335,3 +336,64 @@ h3 { font-family: var(--title); font-weight: 600; font-size: 1.25em; margin: .2e
 }
 
 .pin.flip { flex-direction: row-reverse; transform: translate(calc(-100% + .78em), -50%); }
+
+/* ---------- Region 2: Gegenstände & neue Mechaniken ---------- */
+.items { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+.pickup { position: absolute; transform: translate(-50%, -100%); width: 2.4em; height: 2.9em; border: 0; background: none; padding: 0; pointer-events: auto; animation: bob 1.4s ease-in-out infinite; filter: drop-shadow(0 2px 3px rgba(0,0,0,.5)); }
+.pickup .svg { width: 100%; height: 100%; }
+.pickup::after { content: ''; position: absolute; inset: -40%; }
+.person.item { border-color: #9cc3ff; }
+.region-tabs { margin-bottom: .2em; }
+
+.quizmap { position: absolute; inset: 0; background: var(--paper); }
+.quizmap-art, .quizmap-art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.qpin { position: absolute; transform: translate(-50%, -50%); border: 0; background: none; padding: .4em; display: flex; flex-direction: column; align-items: center; gap: .1em; }
+.qdot { width: 1.1em; height: 1.1em; border-radius: 50%; background: var(--gold); border: 3px solid var(--navy); box-shadow: 0 0 0 3px rgba(244,182,63,.35); }
+.qlabel { font-size: .7em; font-weight: 700; color: var(--navy); background: rgba(255,255,255,.88); border-radius: .3em; padding: 0 .3em; white-space: nowrap; font-family: var(--jp), var(--ui); }
+.qpin.al { align-items: flex-start; transform: translate(-.95em, -50%); }
+.qpin.ar { align-items: flex-end; transform: translate(calc(-100% + .95em), -50%); }
+.qpin.right .qdot { background: #5ad18f; }
+.qpin.wrong .qdot { background: var(--red); }
+.qpin:hover .qdot { transform: scale(1.2); }
+
+.faretable { position: absolute; inset: 0; background: #2b2f38; padding: 4% 5%; display: flex; flex-direction: column; gap: .4em; }
+.fare-head { color: var(--gold); font-weight: 700; font-family: var(--jp), var(--ui); }
+.fare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .3em .8em; }
+.fare { display: flex; justify-content: space-between; align-items: baseline; background: #f7f7f2; color: var(--navy); border-radius: .3em; padding: .2em .5em; }
+.fare-st { display: flex; flex-direction: column; }
+.fare-st .jp { font-size: 1.05em; }
+.fare-p { font-weight: 800; font-variant-numeric: tabular-nums; }
+.ticket-keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: .35em; }
+.tkey { border: 2px solid #59647a; background: #e9edf3; color: var(--navy); border-radius: .4em; padding: .5em 0; font-weight: 800; font-variant-numeric: tabular-nums; }
+.tkey.right { background: #bff0d2; border-color: #2f8f5b; }
+.tkey.wrong { background: #f7c9c3; opacity: .6; }
+.lcd { font-family: ui-monospace, monospace; background: #142a1e; color: #8ff0b0; padding: .35em .6em; border-radius: .3em; font-variant-numeric: tabular-nums; }
+.coins { display: flex; gap: .5em; justify-content: center; }
+.coin { width: 3em; height: 3em; border-radius: 50%; border: 3px solid #8a6d2a; background: radial-gradient(circle at 35% 35%, #fff3c4, #d4a349); color: #4a3a12; font-weight: 800; font-size: .85em; }
+.coin.c50, .coin.c100 { background: radial-gradient(circle at 35% 35%, #ffffff, #b9c0c9); border-color: #6f7782; }
+.coin.c10 { background: radial-gradient(circle at 35% 35%, #f6c7a0, #b5652d); border-color: #7a3f16; color: #fff; }
+.coin:disabled { opacity: .5; }
+
+.espresso-cup { position: relative; }
+.espresso-cup .svg { display: block; width: 100%; aspect-ratio: 4 / 3; }
+.espresso-cup .stream { opacity: 0; }
+.espresso-cup.pour .stream { animation: pour 1.6s ease-in-out; }
+@keyframes pour { 10%, 80% { opacity: 1; } 100% { opacity: 0; } }
+.espresso-note { padding: .4em .7em; font-size: .85em; color: var(--ink); }
+.sl { display: grid; grid-template-columns: 7.5em 1fr 5.5em; align-items: center; gap: .5em; font-size: .9em; }
+.sl input { accent-color: var(--gold); }
+.sl-val { text-align: right; font-variant-numeric: tabular-nums; color: var(--gold); }
+
+.sort-list { list-style: none; counter-reset: s; margin: 0; padding: .3em; min-height: 3em; border: 2px dashed #3a5288; border-radius: .6em; display: flex; flex-direction: column; gap: .3em; }
+.sort-pool { display: flex; flex-direction: column; gap: .3em; }
+.sort-card { text-align: left; display: flex; flex-direction: column; border: 2px solid #3a5288; background: #1a2b52; border-radius: .6em; padding: .4em .7em; }
+.sort-list .sort-card { border-color: var(--gold); counter-increment: s; }
+.sort-list .sort-card::before { content: counter(s) '.'; color: var(--gold); font-weight: 800; font-size: .8em; }
+.sc-s { font-size: .78em; opacity: .75; }
+
+.kg-prompt { display: flex; flex-direction: column; align-items: center; gap: .1em; }
+.kg-de { font-size: 1.3em; font-weight: 800; color: var(--gold); }
+.kg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .4em; }
+.kg-tile { font-family: var(--jp); font-size: 1.9em; padding: .15em 0; border-radius: .4em; border: 2px solid #3a5288; background: #f3f1ea; color: var(--navy); }
+.kg-tile.right { background: #bff0d2; border-color: #2f8f5b; opacity: .6; }
+.kg-tile.wrong { background: #f7c9c3; }

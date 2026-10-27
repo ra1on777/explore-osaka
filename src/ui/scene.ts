@@ -2,7 +2,7 @@
 import { SCREENS, SLOT_DEFAULTS, imgChar, imgScreen, NPCS, npcName, screenName } from '../data';
 import type { Presence } from '../engine';
 import type { Mood } from '../types';
-import { bubble, placeholders } from './art';
+import { bubble, pickupIcon, placeholders } from './art';
 import { h, svg } from './dom';
 import { top } from './layout';
 
@@ -10,9 +10,10 @@ const bg = h('img', { class: 'bg', alt: '', draggable: 'false' });
 const mood = h('div', { class: 'mood' });
 const npcLayer = h('div', { class: 'npcs' });
 const sign = h('div', { class: 'sign' });
+const itemLayer = h('div', { class: 'items' });
 export const hot = h('div', { class: 'hot' });
 export const overlay = h('div', { class: 'overlay' });
-top.append(bg, mood, npcLayer, sign, hot, overlay);
+top.append(bg, mood, itemLayer, npcLayer, sign, hot, overlay);
 
 let currentScreen = '';
 const preloaded = new Set<string>();
@@ -59,6 +60,13 @@ function npcEl(screenId: string, p: Presence, onNpc: (p: Presence) => void) {
     onclick: () => onNpc(p),
   }, fig, svg(bubble, 'bubble'));
   return el;
+}
+
+/** Abholbare Gegenstände (Fetch-Aufträge) als Lupen-Marker im Bild. */
+export function renderPickups(list: { x: number; y: number; label: string; onClick: () => void }[]) {
+  itemLayer.replaceChildren(...list.map((it) => h('button', {
+    class: 'pickup', style: `left:${it.x}%;top:${it.y}%`, 'aria-label': it.label, onclick: it.onClick,
+  }, svg(pickupIcon, 'pickup-ico'))));
 }
 
 /** Während eines Gesprächs: sprechende Figur hervorheben, Pose wechseln, Rest abdunkeln. */

@@ -1,76 +1,1150 @@
 {
-  "regions": [
-    {"id": "R1", "playable": true},
-    {"id": "R2", "playable": false},
-    {"id": "R3", "playable": false},
-    {"id": "R4", "playable": false},
-    {"id": "R5", "playable": false},
-    {"id": "R6", "playable": false}
-  ],
-  "slotDefaults": {
-    "A": {"x": 22, "bottom": 3, "h": 60},
-    "B": {"x": 50, "bottom": 6, "h": 56},
-    "C": {"x": 78, "bottom": 3, "h": 60}
+ "regions": [
+  {
+   "id": "R1",
+   "playable": true
   },
-  "clusters": [
-    {"id": "toyonaka", "region": "R1", "x": 554, "y": 316, "flip": true, "screens": ["1", "3", "4"]},
-    {"id": "dorm", "region": "R1", "x": 600, "y": 372, "screens": ["2a", "2b", "2c"]},
-    {"id": "suita", "region": "R1", "x": 800, "y": 251, "screens": ["5", "6", "7"]},
-    {"id": "kandai", "region": "R1", "x": 739, "y": 473, "screens": ["8"]},
-    {"id": "expo", "region": "R1", "x": 822, "y": 312, "flip": true, "screens": ["9"]},
-    {"id": "stadium", "region": "R1", "x": 880, "y": 395, "flip": true, "screens": ["10", "11"]},
-    {"id": "minoh_campus", "region": "R1", "x": 629, "y": 195, "screens": ["12"]},
-    {"id": "minoh_falls", "region": "R1", "x": 614, "y": 70, "screens": ["13"]},
-    {"id": "ikeda", "region": "R1", "x": 450, "y": 273, "screens": ["14"]},
-    {"id": "kwansei", "region": "R1", "x": 179, "y": 481, "screens": ["15"]},
-    {"id": "koshien", "region": "R1", "x": 221, "y": 689, "screens": ["16", "17"]},
-    {"id": "nishinomiya", "region": "R1", "x": 120, "y": 622, "screens": ["18"]},
-    {"id": "amagasaki", "region": "R1", "x": 418, "y": 711, "screens": ["19"]}
-  ],
-  "screens": {
-    "1":  {"region": "R1", "cluster": "toyonaka", "jp": "豊中キャンパス", "kana": "とよなかキャンパス", "ro": "Toyonaka kyanpasu",
-           "slots": {"A": {"x": 27, "bottom": 5, "h": 56}, "B": {"x": 53, "bottom": 13, "h": 44}, "C": {"x": 80, "bottom": 3, "h": 60}}},
-    "2a": {"region": "R1", "cluster": "dorm", "jp": "留学生寮・ろうか", "kana": "りゅうがくせいりょう", "ro": "Ryūgakusei-ryō", "indoor": true,
-           "slots": {"A": {"x": 32, "bottom": 3, "h": 70}, "B": {"x": 57, "bottom": 18, "h": 50}, "C": {"x": 76, "bottom": 3, "h": 70}}},
-    "2b": {"region": "R1", "cluster": "dorm", "jp": "じぶんのへや", "kana": "じぶんのへや", "ro": "Jibun no heya", "indoor": true,
-           "slots": {"A": {"x": 30, "bottom": 16, "h": 56}, "B": {"x": 64, "bottom": 13, "h": 56}, "C": {"x": 47, "bottom": 4, "h": 62}}},
-    "2c": {"region": "R1", "cluster": "dorm", "jp": "きょうどうキッチン", "kana": "きょうどうキッチン", "ro": "Kyōdō kitchin", "indoor": true,
-           "slots": {"A": {"x": 22, "bottom": 5, "h": 66}, "B": {"x": 52, "bottom": 9, "h": 60}, "C": {"x": 80, "bottom": 4, "h": 66}}},
-    "3":  {"region": "R1", "cluster": "toyonaka", "jp": "しょくどう「かさね」", "kana": "しょくどう かさね", "ro": "Shokudō Kasane", "indoor": true},
-    "4":  {"region": "R1", "cluster": "toyonaka", "jp": "大学博物館", "kana": "だいがくはくぶつかん", "ro": "Daigaku hakubutsukan", "indoor": true},
-    "5":  {"region": "R1", "cluster": "suita", "jp": "吹田キャンパス", "kana": "すいたキャンパス", "ro": "Suita kyanpasu",
-           "slots": {"A": {"x": 30, "bottom": 4, "h": 55}, "B": {"x": 52, "bottom": 9, "h": 48}, "C": {"x": 76, "bottom": 4, "h": 55}}},
-    "6":  {"region": "R1", "cluster": "suita", "jp": "サイバーメディアセンター", "kana": "サイバーメディアセンター", "ro": "Saibā media sentā", "indoor": true},
-    "7":  {"region": "R1", "cluster": "suita", "jp": "大学びょういん", "kana": "だいがくびょういん", "ro": "Daigaku byōin"},
-    "8":  {"region": "R1", "cluster": "kandai", "jp": "関西大学", "kana": "かんさいだいがく", "ro": "Kansai daigaku"},
-    "9":  {"region": "R1", "cluster": "expo", "jp": "太陽の塔", "kana": "たいようのとう", "ro": "Taiyō no tō",
-           "slots": {"A": {"x": 24, "bottom": 4, "h": 54}, "B": {"x": 46, "bottom": 8, "h": 48}, "C": {"x": 74, "bottom": 4, "h": 54}}},
-    "10": {"region": "R1", "cluster": "stadium", "jp": "スタジアム", "kana": "スタジアム", "ro": "Sutajiamu"},
-    "11": {"region": "R1", "cluster": "stadium", "jp": "ピッチ", "kana": "ピッチ", "ro": "Pitchi",
-           "slots": {"A": {"x": 18, "bottom": 5, "h": 60}, "B": {"x": 44, "bottom": 11, "h": 52}, "C": {"x": 70, "bottom": 8, "h": 58}}},
-    "12": {"region": "R1", "cluster": "minoh_campus", "jp": "箕面キャンパス", "kana": "みのおキャンパス", "ro": "Minō kyanpasu"},
-    "13": {"region": "R1", "cluster": "minoh_falls", "jp": "箕面のたき", "kana": "みのおのたき", "ro": "Minō no taki",
-           "slots": {"A": {"x": 28, "bottom": 3, "h": 54}, "B": {"x": 50, "bottom": 15, "h": 40}, "C": {"x": 76, "bottom": 3, "h": 54}}},
-    "14": {"region": "R1", "cluster": "ikeda", "jp": "カップヌードルミュージアム", "kana": "カップヌードルミュージアム", "ro": "Kappu nūdoru myūjiamu", "indoor": true},
-    "15": {"region": "R1", "cluster": "kwansei", "jp": "関西学院大学", "kana": "かんせいがくいんだいがく", "ro": "Kansei gakuin daigaku",
-           "slots": {"A": {"x": 24, "bottom": 4, "h": 55}, "B": {"x": 50, "bottom": 7, "h": 50}, "C": {"x": 76, "bottom": 4, "h": 55}}},
-    "16": {"region": "R1", "cluster": "koshien", "jp": "甲子園きゅうじょう", "kana": "こうしえんきゅうじょう", "ro": "Kōshien kyūjō"},
-    "17": {"region": "R1", "cluster": "koshien", "jp": "スタンド", "kana": "スタンド", "ro": "Sutando", "night": true,
-           "slots": {"A": {"x": 16, "bottom": 0, "h": 74}, "B": {"x": 50, "bottom": 0, "h": 72}, "C": {"x": 84, "bottom": 0, "h": 74}}},
-    "18": {"region": "R1", "cluster": "nishinomiya", "jp": "西宮じんじゃ", "kana": "にしのみやじんじゃ", "ro": "Nishinomiya-jinja"},
-    "19": {"region": "R1", "cluster": "amagasaki", "jp": "尼崎の商店街", "kana": "あまがさきのしょうてんがい", "ro": "Amagasaki no shōtengai"},
-
-    "20": {"region": "R2"}, "21": {"region": "R2"}, "22": {"region": "R2"}, "23": {"region": "R2"}, "24": {"region": "R2"},
-    "25": {"region": "R2"}, "26": {"region": "R2"}, "27": {"region": "R2"}, "28": {"region": "R2"}, "29": {"region": "R2"},
-    "30": {"region": "R3"}, "31": {"region": "R3"}, "32a": {"region": "R3"}, "32b": {"region": "R3"}, "33": {"region": "R3"},
-    "34": {"region": "R3"}, "35": {"region": "R3"}, "36": {"region": "R3"},
-    "37": {"region": "R4"}, "38": {"region": "R4"}, "39": {"region": "R4"}, "40": {"region": "R4"}, "41": {"region": "R4"},
-    "42": {"region": "R4"}, "43": {"region": "R4"}, "44": {"region": "R4"}, "45a": {"region": "R4"}, "45b": {"region": "R4"},
-    "46": {"region": "R4"}, "47": {"region": "R4"}, "48": {"region": "R4"}, "49": {"region": "R4"}, "50": {"region": "R4"},
-    "51": {"region": "R4"}, "52": {"region": "R4"},
-    "53": {"region": "R5", "variants": ["53-b", "53-a"]}, "54": {"region": "R5"}, "55": {"region": "R5"}, "56a": {"region": "R5"},
-    "56b": {"region": "R5"}, "57": {"region": "R5"}, "58": {"region": "R5"}, "59": {"region": "R5"}, "60": {"region": "R5"}, "61": {"region": "R5"},
-    "62": {"region": "R6"}, "63": {"region": "R6"}, "64": {"region": "R6"}, "65": {"region": "R6"}, "66": {"region": "R6"},
-    "67": {"region": "R6"}, "68": {"region": "R6"}, "69": {"region": "R6"}, "70": {"region": "R6"}
+  {
+   "id": "R2",
+   "playable": true
+  },
+  {
+   "id": "R3",
+   "playable": false
+  },
+  {
+   "id": "R4",
+   "playable": false
+  },
+  {
+   "id": "R5",
+   "playable": false
+  },
+  {
+   "id": "R6",
+   "playable": false
   }
+ ],
+ "slotDefaults": {
+  "A": {
+   "x": 22,
+   "bottom": 3,
+   "h": 60
+  },
+  "B": {
+   "x": 50,
+   "bottom": 6,
+   "h": 56
+  },
+  "C": {
+   "x": 78,
+   "bottom": 3,
+   "h": 60
+  }
+ },
+ "clusters": [
+  {
+   "id": "toyonaka",
+   "region": "R1",
+   "x": 554,
+   "y": 316,
+   "flip": true,
+   "screens": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "dorm",
+   "region": "R1",
+   "x": 600,
+   "y": 372,
+   "screens": [
+    "2a",
+    "2b",
+    "2c"
+   ],
+   "flip": true
+  },
+  {
+   "id": "suita",
+   "region": "R1",
+   "x": 800,
+   "y": 251,
+   "screens": [
+    "5",
+    "6",
+    "7"
+   ]
+  },
+  {
+   "id": "kandai",
+   "region": "R1",
+   "x": 739,
+   "y": 473,
+   "screens": [
+    "8"
+   ]
+  },
+  {
+   "id": "expo",
+   "region": "R1",
+   "x": 822,
+   "y": 312,
+   "flip": true,
+   "screens": [
+    "9"
+   ]
+  },
+  {
+   "id": "stadium",
+   "region": "R1",
+   "x": 880,
+   "y": 412,
+   "flip": true,
+   "screens": [
+    "10",
+    "11"
+   ]
+  },
+  {
+   "id": "minoh_campus",
+   "region": "R1",
+   "x": 629,
+   "y": 195,
+   "screens": [
+    "12"
+   ]
+  },
+  {
+   "id": "minoh_falls",
+   "region": "R1",
+   "x": 614,
+   "y": 70,
+   "screens": [
+    "13"
+   ]
+  },
+  {
+   "id": "ikeda",
+   "region": "R1",
+   "x": 450,
+   "y": 273,
+   "screens": [
+    "14"
+   ]
+  },
+  {
+   "id": "kwansei",
+   "region": "R1",
+   "x": 179,
+   "y": 481,
+   "screens": [
+    "15"
+   ]
+  },
+  {
+   "id": "koshien",
+   "region": "R1",
+   "x": 221,
+   "y": 689,
+   "screens": [
+    "16",
+    "17"
+   ]
+  },
+  {
+   "id": "nishinomiya",
+   "region": "R1",
+   "x": 120,
+   "y": 622,
+   "screens": [
+    "18"
+   ]
+  },
+  {
+   "id": "amagasaki",
+   "region": "R1",
+   "x": 418,
+   "y": 711,
+   "screens": [
+    "19"
+   ]
+  },
+  {
+   "id": "umeda",
+   "region": "R2",
+   "x": 407,
+   "y": 372,
+   "screens": [
+    "20",
+    "21"
+   ]
+  },
+  {
+   "id": "sky",
+   "region": "R2",
+   "x": 282,
+   "y": 295,
+   "screens": [
+    "22",
+    "23"
+   ],
+   "flip": true
+  },
+  {
+   "id": "nakatsu",
+   "region": "R2",
+   "x": 409,
+   "y": 206,
+   "screens": [
+    "27"
+   ]
+  },
+  {
+   "id": "tenjin",
+   "region": "R2",
+   "x": 761,
+   "y": 440,
+   "screens": [
+    "28"
+   ],
+   "flip": true
+  },
+  {
+   "id": "konjaku",
+   "region": "R2",
+   "x": 770,
+   "y": 171,
+   "screens": [
+    "29"
+   ],
+   "flip": true
+  },
+  {
+   "id": "nakanoshima",
+   "region": "R2",
+   "x": 220,
+   "y": 674,
+   "screens": [
+    "24"
+   ]
+  },
+  {
+   "id": "library",
+   "region": "R2",
+   "x": 548,
+   "y": 636,
+   "screens": [
+    "25"
+   ],
+   "flip": true
+  },
+  {
+   "id": "kitahama",
+   "region": "R2",
+   "x": 655,
+   "y": 699,
+   "screens": [
+    "26"
+   ]
+  }
+ ],
+ "screens": {
+  "1": {
+   "region": "R1",
+   "cluster": "toyonaka",
+   "jp": "豊中キャンパス",
+   "kana": "とよなかキャンパス",
+   "ro": "Toyonaka kyanpasu",
+   "slots": {
+    "A": {
+     "x": 36,
+     "bottom": 3,
+     "h": 29
+    },
+    "B": {
+     "x": 60,
+     "bottom": 9,
+     "h": 22
+    },
+    "C": {
+     "x": 86,
+     "bottom": 2,
+     "h": 30
+    }
+   }
+  },
+  "2a": {
+   "region": "R1",
+   "cluster": "dorm",
+   "jp": "留学生寮・ろうか",
+   "kana": "りゅうがくせいりょう",
+   "ro": "Ryūgakusei-ryō",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 33,
+     "bottom": 4,
+     "h": 66
+    },
+    "B": {
+     "x": 56,
+     "bottom": 22,
+     "h": 36
+    },
+    "C": {
+     "x": 76,
+     "bottom": 6,
+     "h": 60
+    }
+   }
+  },
+  "2b": {
+   "region": "R1",
+   "cluster": "dorm",
+   "jp": "じぶんのへや",
+   "kana": "じぶんのへや",
+   "ro": "Jibun no heya",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 28,
+     "bottom": 15,
+     "h": 44
+    },
+    "B": {
+     "x": 66,
+     "bottom": 10,
+     "h": 46
+    },
+    "C": {
+     "x": 84,
+     "bottom": 13,
+     "h": 45
+    }
+   }
+  },
+  "2c": {
+   "region": "R1",
+   "cluster": "dorm",
+   "jp": "きょうどうキッチン",
+   "kana": "きょうどうキッチン",
+   "ro": "Kyōdō kitchin",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 22,
+     "bottom": 3,
+     "h": 58
+    },
+    "B": {
+     "x": 55,
+     "bottom": 5,
+     "h": 56
+    },
+    "C": {
+     "x": 71,
+     "bottom": 6,
+     "h": 53
+    }
+   }
+  },
+  "3": {
+   "region": "R1",
+   "cluster": "toyonaka",
+   "jp": "しょくどう「かさね」",
+   "kana": "しょくどう かさね",
+   "ro": "Shokudō Kasane",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 24,
+     "bottom": 4,
+     "h": 40
+    },
+    "B": {
+     "x": 47,
+     "bottom": 10,
+     "h": 34
+    },
+    "C": {
+     "x": 70,
+     "bottom": 14,
+     "h": 32
+    }
+   }
+  },
+  "4": {
+   "region": "R1",
+   "cluster": "toyonaka",
+   "jp": "大学博物館",
+   "kana": "だいがくはくぶつかん",
+   "ro": "Daigaku hakubutsukan",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 64,
+     "bottom": 4,
+     "h": 52
+    },
+    "B": {
+     "x": 80,
+     "bottom": 3,
+     "h": 52
+    },
+    "C": {
+     "x": 17,
+     "bottom": 2,
+     "h": 50
+    }
+   }
+  },
+  "5": {
+   "region": "R1",
+   "cluster": "suita",
+   "jp": "吹田キャンパス",
+   "kana": "すいたキャンパス",
+   "ro": "Suita kyanpasu",
+   "slots": {
+    "A": {
+     "x": 30,
+     "bottom": 2,
+     "h": 27
+    },
+    "B": {
+     "x": 52,
+     "bottom": 6,
+     "h": 24
+    },
+    "C": {
+     "x": 74,
+     "bottom": 3,
+     "h": 27
+    }
+   }
+  },
+  "6": {
+   "region": "R1",
+   "cluster": "suita",
+   "jp": "サイバーメディアセンター",
+   "kana": "サイバーメディアセンター",
+   "ro": "Saibā media sentā",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 26,
+     "bottom": 3,
+     "h": 42
+    },
+    "B": {
+     "x": 50,
+     "bottom": 5,
+     "h": 40
+    },
+    "C": {
+     "x": 70,
+     "bottom": 4,
+     "h": 41
+    }
+   }
+  },
+  "7": {
+   "region": "R1",
+   "cluster": "suita",
+   "jp": "大学びょういん",
+   "kana": "だいがくびょういん",
+   "ro": "Daigaku byōin",
+   "slots": {
+    "A": {
+     "x": 32,
+     "bottom": 2,
+     "h": 31
+    },
+    "B": {
+     "x": 48,
+     "bottom": 9,
+     "h": 26
+    },
+    "C": {
+     "x": 68,
+     "bottom": 14,
+     "h": 24
+    }
+   }
+  },
+  "8": {
+   "region": "R1",
+   "cluster": "kandai",
+   "jp": "関西大学",
+   "kana": "かんさいだいがく",
+   "ro": "Kansai daigaku",
+   "slots": {
+    "A": {
+     "x": 34,
+     "bottom": 1,
+     "h": 32
+    },
+    "B": {
+     "x": 56,
+     "bottom": 4,
+     "h": 30
+    },
+    "C": {
+     "x": 76,
+     "bottom": 2,
+     "h": 32
+    }
+   }
+  },
+  "9": {
+   "region": "R1",
+   "cluster": "expo",
+   "jp": "太陽の塔",
+   "kana": "たいようのとう",
+   "ro": "Taiyō no tō",
+   "slots": {
+    "A": {
+     "x": 28,
+     "bottom": 2,
+     "h": 28
+    },
+    "B": {
+     "x": 48,
+     "bottom": 10,
+     "h": 22
+    },
+    "C": {
+     "x": 72,
+     "bottom": 3,
+     "h": 28
+    }
+   }
+  },
+  "10": {
+   "region": "R1",
+   "cluster": "stadium",
+   "jp": "スタジアム",
+   "kana": "スタジアム",
+   "ro": "Sutajiamu",
+   "slots": {
+    "A": {
+     "x": 32,
+     "bottom": 1,
+     "h": 31
+    },
+    "B": {
+     "x": 55,
+     "bottom": 2,
+     "h": 30
+    },
+    "C": {
+     "x": 88,
+     "bottom": 1,
+     "h": 31
+    }
+   }
+  },
+  "11": {
+   "region": "R1",
+   "cluster": "stadium",
+   "jp": "ピッチ",
+   "kana": "ピッチ",
+   "ro": "Pitchi",
+   "slots": {
+    "A": {
+     "x": 27,
+     "bottom": 9,
+     "h": 42
+    },
+    "B": {
+     "x": 45,
+     "bottom": 14,
+     "h": 38
+    },
+    "C": {
+     "x": 68,
+     "bottom": 9,
+     "h": 43
+    }
+   }
+  },
+  "12": {
+   "region": "R1",
+   "cluster": "minoh_campus",
+   "jp": "箕面キャンパス",
+   "kana": "みのおキャンパス",
+   "ro": "Minō kyanpasu",
+   "slots": {
+    "A": {
+     "x": 26,
+     "bottom": 2,
+     "h": 30
+    },
+    "B": {
+     "x": 68,
+     "bottom": 4,
+     "h": 29
+    },
+    "C": {
+     "x": 90,
+     "bottom": 2,
+     "h": 30
+    }
+   }
+  },
+  "13": {
+   "region": "R1",
+   "cluster": "minoh_falls",
+   "jp": "箕面のたき",
+   "kana": "みのおのたき",
+   "ro": "Minō no taki",
+   "slots": {
+    "A": {
+     "x": 42,
+     "bottom": 1,
+     "h": 30
+    },
+    "B": {
+     "x": 52,
+     "bottom": 20,
+     "h": 19
+    },
+    "C": {
+     "x": 60,
+     "bottom": 2,
+     "h": 30
+    }
+   }
+  },
+  "14": {
+   "region": "R1",
+   "cluster": "ikeda",
+   "jp": "カップヌードルミュージアム",
+   "kana": "カップヌードルミュージアム",
+   "ro": "Kappu nūdoru myūjiamu",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 8,
+     "bottom": 1,
+     "h": 42
+    },
+    "B": {
+     "x": 36,
+     "bottom": 1,
+     "h": 42
+    },
+    "C": {
+     "x": 66,
+     "bottom": 1,
+     "h": 42
+    }
+   }
+  },
+  "15": {
+   "region": "R1",
+   "cluster": "kwansei",
+   "jp": "関西学院大学",
+   "kana": "かんせいがくいんだいがく",
+   "ro": "Kansei gakuin daigaku",
+   "slots": {
+    "A": {
+     "x": 28,
+     "bottom": 2,
+     "h": 23
+    },
+    "B": {
+     "x": 52,
+     "bottom": 6,
+     "h": 20
+    },
+    "C": {
+     "x": 70,
+     "bottom": 3,
+     "h": 23
+    }
+   }
+  },
+  "16": {
+   "region": "R1",
+   "cluster": "koshien",
+   "jp": "甲子園きゅうじょう",
+   "kana": "こうしえんきゅうじょう",
+   "ro": "Kōshien kyūjō",
+   "slots": {
+    "A": {
+     "x": 30,
+     "bottom": 1,
+     "h": 30
+    },
+    "B": {
+     "x": 56,
+     "bottom": 4,
+     "h": 27
+    },
+    "C": {
+     "x": 74,
+     "bottom": 2,
+     "h": 29
+    }
+   }
+  },
+  "17": {
+   "region": "R1",
+   "cluster": "koshien",
+   "jp": "スタンド",
+   "kana": "スタンド",
+   "ro": "Sutando",
+   "night": true,
+   "slots": {
+    "A": {
+     "x": 15,
+     "bottom": -30,
+     "h": 82
+    },
+    "B": {
+     "x": 50,
+     "bottom": -15,
+     "h": 62
+    },
+    "C": {
+     "x": 86,
+     "bottom": -30,
+     "h": 82
+    }
+   }
+  },
+  "18": {
+   "region": "R1",
+   "cluster": "nishinomiya",
+   "jp": "西宮じんじゃ",
+   "kana": "にしのみやじんじゃ",
+   "ro": "Nishinomiya-jinja",
+   "slots": {
+    "A": {
+     "x": 40,
+     "bottom": 2,
+     "h": 22
+    },
+    "B": {
+     "x": 55,
+     "bottom": 10,
+     "h": 19
+    },
+    "C": {
+     "x": 76,
+     "bottom": 3,
+     "h": 22
+    }
+   }
+  },
+  "19": {
+   "region": "R1",
+   "cluster": "amagasaki",
+   "jp": "尼崎の商店街",
+   "kana": "あまがさきのしょうてんがい",
+   "ro": "Amagasaki no shōtengai",
+   "slots": {
+    "A": {
+     "x": 36,
+     "bottom": 1,
+     "h": 28
+    },
+    "B": {
+     "x": 52,
+     "bottom": 8,
+     "h": 24
+    },
+    "C": {
+     "x": 73,
+     "bottom": 1,
+     "h": 28
+    }
+   }
+  },
+  "20": {
+   "region": "R2",
+   "cluster": "umeda",
+   "jp": "大阪駅",
+   "kana": "おおさかえき",
+   "ro": "Ōsaka-eki",
+   "slots": {
+    "A": {
+     "x": 16,
+     "bottom": 2,
+     "h": 31
+    },
+    "B": {
+     "x": 38,
+     "bottom": 7,
+     "h": 27
+    },
+    "C": {
+     "x": 57,
+     "bottom": 1,
+     "h": 31
+    }
+   }
+  },
+  "21": {
+   "region": "R2",
+   "cluster": "umeda",
+   "jp": "梅田の地下",
+   "kana": "うめだのちか",
+   "ro": "Umeda no chika",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 26,
+     "bottom": 3,
+     "h": 34
+    },
+    "B": {
+     "x": 64,
+     "bottom": 8,
+     "h": 31
+    },
+    "C": {
+     "x": 86,
+     "bottom": 3,
+     "h": 34
+    }
+   }
+  },
+  "22": {
+   "region": "R2",
+   "cluster": "sky",
+   "jp": "空中庭園",
+   "kana": "くうちゅうていえん",
+   "ro": "Kūchū teien",
+   "slots": {
+    "A": {
+     "x": 38,
+     "bottom": 2,
+     "h": 24
+    },
+    "B": {
+     "x": 52,
+     "bottom": 10,
+     "h": 19
+    },
+    "C": {
+     "x": 63,
+     "bottom": 4,
+     "h": 22
+    }
+   }
+  },
+  "23": {
+   "region": "R2",
+   "cluster": "sky",
+   "jp": "滝見小路",
+   "kana": "たきみこうじ",
+   "ro": "Takimi kōji",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 38,
+     "bottom": 2,
+     "h": 48
+    },
+    "B": {
+     "x": 52,
+     "bottom": 14,
+     "h": 34
+    },
+    "C": {
+     "x": 64,
+     "bottom": 3,
+     "h": 46
+    }
+   }
+  },
+  "24": {
+   "region": "R2",
+   "cluster": "nakanoshima",
+   "jp": "中之島センター",
+   "kana": "なかのしまセンター",
+   "ro": "Nakanoshima sentā",
+   "slots": {
+    "A": {
+     "x": 33,
+     "bottom": 1,
+     "h": 26
+    },
+    "B": {
+     "x": 52,
+     "bottom": 10,
+     "h": 19
+    },
+    "C": {
+     "x": 68,
+     "bottom": 4,
+     "h": 22
+    }
+   }
+  },
+  "25": {
+   "region": "R2",
+   "cluster": "library",
+   "jp": "中之島図書館",
+   "kana": "なかのしまとしょかん",
+   "ro": "Nakanoshima toshokan",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 22,
+     "bottom": 3,
+     "h": 40
+    },
+    "B": {
+     "x": 46,
+     "bottom": 7,
+     "h": 37
+    },
+    "C": {
+     "x": 64,
+     "bottom": 4,
+     "h": 39
+    }
+   }
+  },
+  "26": {
+   "region": "R2",
+   "cluster": "kitahama",
+   "jp": "北浜",
+   "kana": "きたはま",
+   "ro": "Kitahama",
+   "slots": {
+    "A": {
+     "x": 24,
+     "bottom": 2,
+     "h": 38
+    },
+    "B": {
+     "x": 60,
+     "bottom": 4,
+     "h": 38
+    },
+    "C": {
+     "x": 68,
+     "bottom": 18,
+     "h": 30
+    }
+   }
+  },
+  "27": {
+   "region": "R2",
+   "cluster": "nakatsu",
+   "jp": "中津",
+   "kana": "なかつ",
+   "ro": "Nakatsu",
+   "slots": {
+    "A": {
+     "x": 40,
+     "bottom": 3,
+     "h": 33
+    },
+    "B": {
+     "x": 56,
+     "bottom": 10,
+     "h": 27
+    },
+    "C": {
+     "x": 68,
+     "bottom": 4,
+     "h": 31
+    }
+   }
+  },
+  "28": {
+   "region": "R2",
+   "cluster": "tenjin",
+   "jp": "天神橋筋商店街",
+   "kana": "てんじんばしすじしょうてんがい",
+   "ro": "Tenjinbashisuji shōtengai",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 26,
+     "bottom": 1,
+     "h": 32
+    },
+    "B": {
+     "x": 52,
+     "bottom": 4,
+     "h": 30
+    },
+    "C": {
+     "x": 72,
+     "bottom": 1,
+     "h": 32
+    }
+   }
+  },
+  "29": {
+   "region": "R2",
+   "cluster": "konjaku",
+   "jp": "今昔館",
+   "kana": "こんじゃくかん",
+   "ro": "Konjakukan",
+   "indoor": true,
+   "night": true,
+   "slots": {
+    "A": {
+     "x": 30,
+     "bottom": 2,
+     "h": 44
+    },
+    "B": {
+     "x": 50,
+     "bottom": 14,
+     "h": 30
+    },
+    "C": {
+     "x": 70,
+     "bottom": 3,
+     "h": 42
+    }
+   }
+  },
+  "30": {
+   "region": "R3"
+  },
+  "31": {
+   "region": "R3"
+  },
+  "32a": {
+   "region": "R3"
+  },
+  "32b": {
+   "region": "R3"
+  },
+  "33": {
+   "region": "R3"
+  },
+  "34": {
+   "region": "R3"
+  },
+  "35": {
+   "region": "R3"
+  },
+  "36": {
+   "region": "R3"
+  },
+  "37": {
+   "region": "R4"
+  },
+  "38": {
+   "region": "R4"
+  },
+  "39": {
+   "region": "R4"
+  },
+  "40": {
+   "region": "R4"
+  },
+  "41": {
+   "region": "R4"
+  },
+  "42": {
+   "region": "R4"
+  },
+  "43": {
+   "region": "R4"
+  },
+  "44": {
+   "region": "R4"
+  },
+  "45a": {
+   "region": "R4"
+  },
+  "45b": {
+   "region": "R4"
+  },
+  "46": {
+   "region": "R4"
+  },
+  "47": {
+   "region": "R4"
+  },
+  "48": {
+   "region": "R4"
+  },
+  "49": {
+   "region": "R4"
+  },
+  "50": {
+   "region": "R4"
+  },
+  "51": {
+   "region": "R4"
+  },
+  "52": {
+   "region": "R4"
+  },
+  "53": {
+   "region": "R5",
+   "variants": [
+    "53-b",
+    "53-a"
+   ]
+  },
+  "54": {
+   "region": "R5"
+  },
+  "55": {
+   "region": "R5"
+  },
+  "56a": {
+   "region": "R5"
+  },
+  "56b": {
+   "region": "R5"
+  },
+  "57": {
+   "region": "R5"
+  },
+  "58": {
+   "region": "R5"
+  },
+  "59": {
+   "region": "R5"
+  },
+  "60": {
+   "region": "R5"
+  },
+  "61": {
+   "region": "R5"
+  },
+  "62": {
+   "region": "R6"
+  },
+  "63": {
+   "region": "R6"
+  },
+  "64": {
+   "region": "R6"
+  },
+  "65": {
+   "region": "R6"
+  },
+  "66": {
+   "region": "R6"
+  },
+  "67": {
+   "region": "R6"
+  },
+  "68": {
+   "region": "R6"
+  },
+  "69": {
+   "region": "R6"
+  },
+  "70": {
+   "region": "R6"
+  }
+ }
 }

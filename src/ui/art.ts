@@ -44,6 +44,14 @@ export const icons: Record<string, string> = {
   upload: I('<path d="M12 16V4M7 9l5-5 5 5M4 20h16"/>'),
   download: I('<path d="M12 4v12M7 11l5 5 5-5M4 20h16"/>'),
   home: I('<path d="M3 11l9-8 9 8M5 9v12h14V9"/>'),
+  train: I('<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 17l-2 4M15 17l2 4"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/>'),
+  subway: I('<path d="M3 21h18"/><path d="M4 21V9a8 8 0 0 1 16 0v12"/><rect x="8" y="10" width="8" height="7" rx="2"/>'),
+  bus: I('<rect x="4" y="3" width="16" height="15" rx="2"/><path d="M4 10h16M7 18v3M17 18v3"/><circle cx="8" cy="14" r="1"/><circle cx="16" cy="14" r="1"/>'),
+  taxi: I('<path d="M3 15l2-5h14l2 5v4H3z"/><path d="M9 10l1-3h4l1 3"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/>'),
+  yum: I('<circle cx="12" cy="12" r="9"/><path d="M8 14c2 3 6 3 8 0M8 9h1M15 9h1"/><path d="M14 16c1 1 2 1 2 0"/>'),
+  cake: I('<path d="M4 20h16v-7H4z"/><path d="M4 13c2-2 4-2 6 0s4 2 6 0 3-1 4 0M12 9V6"/><path d="M12 6c-1-1 0-3 0-3s1 2 0 3z"/>'),
+  pepper: I('<path d="M15 6c-6 0-10 6-10 13 5-2 12-6 12-12z"/><path d="M15 6c1-2 3-3 4-3"/>'),
+  coffee: I('<path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 11h2a2 2 0 0 1 0 4h-2M8 3c0 2 2 2 2 4M12 3c0 2 2 2 2 4"/>'),
   gear: I('<circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>'),
 };
 
@@ -208,3 +216,120 @@ export const mapBase = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <text x="40" y="808" font-size="22" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Bucht von Ōsaka</text>
   <text x="500" y="34" font-size="22" text-anchor="middle" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Hokusetsu-Berge</text>
   <text x="880" y="676" font-size="20" text-anchor="middle" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Yodo-gawa</text>`);
+
+// ---------- Region 2: weitere Nahaufnahmen ----------
+Object.assign(closeups, {
+  espresso: C(`
+    <rect width="200" height="150" fill="#3b2f2a"/>
+    <rect x="40" y="10" width="120" height="34" rx="6" fill="#c9ced6" stroke="${O}" stroke-width="2"/>
+    <rect x="86" y="44" width="28" height="14" fill="#8d939c" stroke="${O}" stroke-width="2"/>
+    <path d="M60 52h80" stroke="#5a3b2a" stroke-width="8"/>
+    <path class="stream" d="M96 58v52M104 58v52" stroke="#9b5a2b" stroke-width="3"/>
+    <path d="M74 108h52l-6 26H80z" fill="#fff" stroke="${O}" stroke-width="2"/>
+    <path d="M126 114c10 0 10 14 0 14" fill="none" stroke="${O}" stroke-width="3"/>
+    <ellipse cx="100" cy="110" rx="24" ry="4" fill="#c58a4b"/>
+    <circle cx="150" cy="27" r="9" fill="#fff" stroke="${O}" stroke-width="2"/><path d="M150 27l5-5" stroke="${RED}" stroke-width="2"/>`),
+  stationsign: C(`
+    <rect width="200" height="150" fill="#4a3426"/>
+    <rect x="20" y="24" width="160" height="70" rx="6" fill="${PAPER}" stroke="${O}" stroke-width="3"/>
+    <text x="100" y="56" font-size="20" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-weight="700" fill="${NAVY}">てんろく</text>
+    <text x="100" y="80" font-size="10" text-anchor="middle" font-family="Manrope, sans-serif" fill="${O}">Tenroku · ab 1925 Endbahnhof einer Vorortbahn</text>
+    <path d="M20 106h160" stroke="#b5651d" stroke-width="10"/><path d="M20 122h160" stroke="#7a4fa0" stroke-width="10"/>
+    <text x="100" y="142" font-size="9" text-anchor="middle" fill="#fff" font-family="Manrope, sans-serif">heute: U-Bahn Sakaisuji- & Tanimachi-Linie</text>`),
+  routemap: C(`
+    <rect width="200" height="150" fill="#fff"/>
+    <text x="100" y="18" font-size="10" text-anchor="middle" font-family="Manrope, sans-serif" fill="${NAVY}" font-weight="700">Ōsaka ⇄ Kōbe</text>
+    <path d="M20 50h160" stroke="#7a1f2b" stroke-width="7"/><path d="M20 100h160" stroke="#1F4B8F" stroke-width="7"/>
+    ${[20, 75, 125, 180].map((x) => `<circle cx="${x}" cy="50" r="6" fill="#fff" stroke="#7a1f2b" stroke-width="3"/><circle cx="${x}" cy="100" r="6" fill="#fff" stroke="#1F4B8F" stroke-width="3"/>`).join('')}
+    <text x="100" y="40" font-size="9" text-anchor="middle" font-family="Manrope, sans-serif" fill="#7a1f2b">Hankyū Kōbe-Linie (am Berghang)</text>
+    <text x="100" y="122" font-size="9" text-anchor="middle" font-family="Manrope, sans-serif" fill="#1F4B8F">Hanshin-Hauptlinie (an der Küste)</text>
+    <text x="20" y="140" font-size="8" font-family="Manrope, sans-serif" fill="${O}">Umeda</text><text x="180" y="140" font-size="8" text-anchor="end" font-family="Manrope, sans-serif" fill="${O}">Kōbe</text>`),
+  bookspine: C(`
+    <rect width="200" height="150" fill="#5a3b2a"/>
+    ${[0, 1, 2, 3, 4, 5].map((i) => `<rect x="${20 + i * 28}" y="20" width="24" height="112" fill="${['#7a2a24', '#2E5BA6', '#4E7B74', '#d4a349', '#6b4f7a', '#8a5a3a'][i]}" stroke="${O}"/>`).join('')}
+    <rect x="76" y="14" width="32" height="122" fill="${PAPER}" stroke="${GOLD}" stroke-width="3"/>
+    ${['善', 'の', '研', '究'].map((k, i) => `<text x="92" y="${44 + i * 22}" font-size="16" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">${k}</text>`).join('')}`),
+  photobook: C(`
+    <rect width="200" height="150" fill="#6e4a32"/>
+    <path d="M20 22h78v106H20zM102 22h78v106h-78z" fill="${PAPER}" stroke="${O}" stroke-width="2"/>
+    <rect x="28" y="32" width="62" height="48" fill="#8c8170"/><path d="M28 70l16-14 14 10 12-8 20 14v8H28z" fill="#5f574c"/>
+    <path d="M30 64c20-6 40 4 58-2" stroke="#c9d6ec" stroke-width="3" fill="none"/>
+    <rect x="110" y="32" width="62" height="48" fill="#8c8170"/><path d="M118 74h46v-20l-23-12-23 12z" fill="#5f574c"/>
+    <text x="59" y="100" font-size="8" text-anchor="middle" font-family="Manrope, sans-serif" fill="${O}">Nakanoshima, um 1925</text>
+    <text x="141" y="100" font-size="8" text-anchor="middle" font-family="Manrope, sans-serif" fill="${O}">Bibliothek, 1904</text>`),
+  woodblock: C(`
+    <rect width="200" height="150" fill="#3e2b20"/>
+    <rect x="30" y="20" width="140" height="96" rx="4" fill="#b88a5a" stroke="${O}" stroke-width="3"/>
+    ${[0, 1, 2, 3, 4, 5].map((i) => `<path d="M${150 - i * 20} 30v74" stroke="#7a5432" stroke-width="5" stroke-dasharray="6 4"/>`).join('')}
+    <path d="M40 124h120" stroke="#1c1c1c" stroke-width="5"/>
+    <text x="100" y="142" font-size="9" text-anchor="middle" fill="#f3e3c8" font-family="Manrope, sans-serif">Spiegelverkehrt geschnitzte Schrift</text>`),
+  gateplaque: C(`
+    <rect width="200" height="150" fill="#a5532d"/>
+    ${[0, 1, 2, 3, 4, 5, 6].map((i) => `<path d="M0 ${i * 22}h200" stroke="#8c4122" stroke-width="2"/>`).join('')}
+    <rect x="66" y="12" width="68" height="126" fill="#3a2a1e" stroke="${GOLD}" stroke-width="4"/>
+    ${['関', '西', '大', '学'].map((k, i) => `<text x="100" y="${42 + i * 28}" font-size="22" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${GOLD}">${k}</text>`).join('')}`),
+  clocktower: C(`
+    <rect width="200" height="150" fill="#bfe1f3"/>
+    <path d="M70 150V50h60v100z" fill="#fbf6ea" stroke="${O}" stroke-width="2"/>
+    <path d="M78 50l22-30 22 30z" fill="#b5523a" stroke="${O}" stroke-width="2"/>
+    <circle cx="100" cy="74" r="14" fill="#fff" stroke="${O}" stroke-width="2"/><path d="M100 74v-9M100 74l6 4" stroke="${O}" stroke-width="2"/>
+    <path d="M84 104h32v46H84z" fill="#d9cdb4" stroke="${O}"/><path d="M90 150v-30a10 10 0 0 1 20 0v30" fill="#6b4f3a"/>
+    <path d="M0 150v-26h70M130 124h70v26" fill="#fbf6ea" stroke="${O}" stroke-width="2"/><path d="M0 124l20-10h50M130 114h50l20 10" fill="#b5523a" stroke="${O}"/>`),
+  dictionary: C(`
+    <rect width="200" height="150" fill="#e4dccb"/>
+    <path d="M50 20h100v110H50z" fill="#7a2a24" stroke="${O}" stroke-width="3"/>
+    <path d="M58 28h84v94H58z" fill="none" stroke="${GOLD}" stroke-width="2"/>
+    <text x="100" y="70" font-size="16" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${GOLD}" font-weight="700">大阪ことば</text>
+    <text x="100" y="92" font-size="9" text-anchor="middle" font-family="Manrope, sans-serif" fill="${PAPER}">Wörterbuch</text>`),
+  register: C(`
+    <rect width="200" height="150" fill="#e4dccb"/>
+    <path d="M40 18h120v114H40z" fill="#f3ead3" stroke="${O}" stroke-width="2"/>
+    ${[0, 1, 2, 3, 4, 5, 6].map((i) => `<path d="M${140 - i * 15} 30v90" stroke="#3d3a35" stroke-width="2" stroke-dasharray="3 5"/>`).join('')}
+    <text x="100" y="142" font-size="9" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Abschrift: Schülerliste der Tekijuku</text>`),
+});
+
+// ---------- Quiz-Karten (viewBox 200x150, Punkte in %) ----------
+export const quizMaps: Record<string, string> = {
+  canals: wrap('0 0 200 150" preserveAspectRatio="none', `
+    <rect width="200" height="150" fill="#e8e2d0"/>
+    <path d="M200 18c-20 8-34 22-46 44" stroke="#5f97c9" stroke-width="12" fill="none"/>
+    <path d="M154 62C120 56 60 58 0 54" stroke="#5f97c9" stroke-width="8" fill="none"/>
+    <path d="M154 62c-30 22-90 28-154 28" stroke="#5f97c9" stroke-width="8" fill="none"/>
+    <path d="M140 84v52" stroke="#5f97c9" stroke-width="5" fill="none"/>
+    <path d="M10 130h132" stroke="#5f97c9" stroke-width="6" fill="none"/>
+    <path d="M28 62c40 2 80 2 116 2-30 16-70 20-116 20z" fill="#cfe0b8" stroke="${O}" stroke-width="1"/>
+    ${[40, 70, 100, 125].map((x) => `<path d="M${x} 50v12M${x} 82v12" stroke="${O}" stroke-width="2"/>`).join('')}
+    <text x="6" y="146" font-size="7" fill="${O}" font-family="Manrope, sans-serif">N ↑</text>`),
+  monorail: wrap('0 0 200 150" preserveAspectRatio="none', `
+    <rect width="200" height="150" fill="#f3f1ea"/>
+    <path d="M10 108C50 92 80 90 120 84s50-20 70-26" stroke="#1F4B8F" stroke-width="6" fill="none"/>
+    <path d="M142 80c-4-20-6-40-2-64" stroke="#3A72C8" stroke-width="5" fill="none" stroke-dasharray="1 0"/>
+    <text x="100" y="140" font-size="8" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Ōsaka Monorail · Hauptlinie (dunkel) · Saito-Linie (hell)</text>`),
+  umeda: wrap('0 0 200 150" preserveAspectRatio="none', `
+    <rect width="200" height="150" fill="#3b3428"/>
+    <path d="M100 10v130M20 75h160M50 30l100 90M150 30L50 120" stroke="#d7c9a8" stroke-width="12" stroke-linecap="square"/>
+    <circle cx="100" cy="75" r="18" fill="#d7c9a8"/>
+    <text x="100" y="79" font-size="9" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Du</text>`),
+};
+
+// ---------- Weltkarte Region 2 (Kita & Nakanoshima), viewBox 1000x820 ----------
+export const mapBaseR2 = wrap('0 0 1000 820" preserveAspectRatio="none', `
+  <rect width="1000" height="820" fill="#12213F"/>
+  <path d="M1000 260c-120 60-200 160-260 330" stroke="#2E5BA6" stroke-width="34" fill="none" opacity=".85"/>
+  <path d="M740 590C560 600 300 590 0 600" stroke="#2E5BA6" stroke-width="22" fill="none" opacity=".8"/>
+  <path d="M740 590c-40 60-300 120-740 130" stroke="#2E5BA6" stroke-width="22" fill="none" opacity=".8"/>
+  <path d="M120 612C300 606 560 612 720 604c-30 40-300 90-600 98z" fill="#1c3b4a"/>
+  <path d="M0 380h1000" stroke="#5a6570" stroke-width="10" stroke-dasharray="26 10" opacity=".7"/>
+  <path d="M410 0v380" stroke="#5a6570" stroke-width="8" stroke-dasharray="20 10" opacity=".6"/>
+  <path d="M780 0v820" stroke="#5a6570" stroke-width="6" stroke-dasharray="14 10" opacity=".45"/>
+  <text x="980" y="250" font-size="22" text-anchor="end" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Ōkawa</text>
+  <text x="40" y="585" font-size="20" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Dōjima-gawa</text>
+  <text x="40" y="760" font-size="20" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Tosabori-gawa</text>
+  <text x="440" y="664" font-size="22" fill="rgba(243,241,234,.4)" font-family="Fredoka, sans-serif">Nakanoshima</text>
+  <text x="20" y="370" font-size="18" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">JR / Hankyū / Hanshin</text>
+  <text x="790" y="40" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Tenjinbashisuji ↕</text>
+  <text x="980" y="806" font-size="22" text-anchor="end" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Burg ↘</text>`);
+
+export const pickupIcon = wrap('0 0 40 48', `
+  <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>
+  <circle cx="18" cy="17" r="7" fill="none" stroke="${NAVY}" stroke-width="3"/><path d="M23 22l6 6" stroke="${NAVY}" stroke-width="3"/>`);
