@@ -1,0 +1,895 @@
+{
+ "STRANG_FOOTBALL_DERBY": {
+  "1": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "{{name}}! Fang!"
+    },
+    {
+     "s": "nar",
+     "t": "Ein Ball rollt dir vor die Füße. Du stoppst ihn mit der Sohle."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Nicht schlecht! Spielst du Fußball? In Deutschland spielt doch jeder."
+    },
+    {
+     "s": "me",
+     "t": "Ein bisschen. Früher im Verein."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Dann musst du Coach Sakai kennenlernen. Er trainiert unser Uni-Team und testet jeden Neuen im Eins-gegen-eins."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Er kommt gleich hierher. Wärm dich schon mal auf!"
+    }
+   ],
+   "hint": "Coach Sakai kommt gleich hierher an die Hauptachse."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Du bist also der Deutsche. Kenji übertreibt gern. Zeig mir, was du kannst."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Eins-gegen-eins ist Kopfsache. Lies meinen Körper, bevor ich mich bewege."
+    },
+    {
+     "s": "me",
+     "t": "Okay. Ich bin bereit."
+    },
+    {
+     "s": "sakai",
+     "t": "Das sagt jeder. Ich sag dir, was ich mache – du entscheidest, wie du reagierst.",
+     "p": "arms"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Dribbling / Antritt",
+      "Finte / Körpertäuschung",
+      "Grätsche / Pressing",
+      "Zonendeckung / Abfangen"
+     ],
+     "rounds": [
+      {
+       "q": "Du hast den Ball. Sakai stürmt mit großen Schritten auf dich zu und kann kaum noch bremsen.",
+       "answer": 0,
+       "fb": "Wer anrennt, kann nicht stoppen: Ball an ihm vorbeilegen und antreten!"
+      },
+      {
+       "q": "Sakai bleibt tief stehen, wartet geduldig und versperrt dir den Weg nach vorn.",
+       "answer": 1,
+       "fb": "Gegen einen wartenden Verteidiger hilft eine Körpertäuschung, die ihn aus der Position lockt."
+      },
+      {
+       "q": "Jetzt hat Sakai den Ball. Er schaut immer wieder zum freien Raum auf seiner rechten Seite.",
+       "answer": 3,
+       "fb": "Er verrät sein Ziel – stell den Raum zu, statt blind hineinzugrätschen."
+      },
+      {
+       "q": "Sakai legt sich den Ball einen Schritt zu weit vor.",
+       "answer": 2,
+       "fb": "Jetzt oder nie: sofort dazwischengehen!"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Hm! Nicht schlecht. Du liest das Spiel."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Komm am Wochenende zum Stadion in Suita – zur Heimat der Blau-Schwarzen. Dort lernst du, wie Profis denken."
+    }
+   ],
+   "hint": "Das Stadion in Suita, Heimat der Blau-Schwarzen."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Das ist das Panasonic Stadium Suita. Hier spielt Gamba Ōsaka."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Weißt du, wer es bezahlt hat? Zum großen Teil Spenden von Firmen und Fans. Ein Stadion, das die Leute selbst gebaut haben."
+    },
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Im Fanshop hängt der Spielplan. Such ihn – wir schauen uns den nächsten Gegner an."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf den Fanshop, in dem der Spielplan hängt.",
+     "x": 77,
+     "y": 62,
+     "r": 9,
+     "closeup": {
+      "art": "schedule",
+      "title": "Spielplan im Fanshop",
+      "text": "Heimspiel am Samstag – gegen den Rivalen aus dem Süden der Stadt. Das Ōsaka-Derby: Gamba aus Suita gegen Cerezo aus Nagai."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Derby! Da brennt die Luft. Bevor du das verstehst, musst du selbst spüren, wie sich Druck anfühlt."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Kenji wartet schon drinnen am Spielfeldrand. Schusstraining!"
+    }
+   ],
+   "hint": "Kenji ist drinnen am Spielfeldrand des Stadions."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Leere Kurve, nur wir zwei. Ich spiele Torwart – zeig mir deinen besten Schuss!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Tipp vom Profi: Schau dem Torwart auf die Hüfte, nicht in die Augen."
+    },
+    {
+     "s": "me",
+     "t": "Und wenn ich verschieße?"
+    },
+    {
+     "s": "kenji",
+     "t": "Dann holst du Mittagessen für uns beide. Kein Druck!",
+     "p": "hyped"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "penalty",
+     "rounds": [
+      {
+       "q": "Kenji verlagert sein Gewicht schon früh in Richtung deiner linken Ecke.",
+       "options": [
+        "Linkes Eck",
+        "Rechtes Eck",
+        "Hoch in die Mitte",
+        "Abbrechen"
+       ],
+       "answer": 1,
+       "fb": "Er ist schon unterwegs nach links – also ab ins rechte Eck!"
+      },
+      {
+       "q": "Kenji bleibt stehen und wartet bis zur letzten Sekunde.",
+       "options": [
+        "Lupfer in die Mitte",
+        "Halbhoch und flach",
+        "Hart und hoch ins Eck",
+        "Ganz langsam schieben"
+       ],
+       "answer": 2,
+       "fb": "Gegen einen geduldigen Torwart hilft nur Präzision: hart und hoch ins Eck."
+      },
+      {
+       "q": "Kenji wirft sich schon vor dem Schuss flach in deine rechte Ecke.",
+       "options": [
+        "Rechtes Eck",
+        "Locker in die Mitte",
+        "Linkes Eck, flach",
+        "Drüberschießen"
+       ],
+       "answer": 1,
+       "fb": "Wenn der Torwart früh springt, ist die Mitte frei."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Wow! Coach Sakai wird staunen."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Moment … Daiki von der Kandai hat geschrieben. Er will dich treffen – wahrscheinlich, um anzugeben. An seinem Campustor."
+    }
+   ],
+   "hint": "Am Campustor der Kandai."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Da ist er ja, der Handai-Deutsche. Ich hab gehört, du spielst Fußball."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Lass dir eins sagen: In der Kansai-Studentenliga spielen die Privatunis vorne mit. Und die Kandai gehört zu den Besten."
+    },
+    {
+     "s": "me",
+     "t": "Und die Handai?"
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Die Handai ist gut im Lernen. Fußball? Na ja … ihr habt ja eure Roboter!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "In welcher Liga spielt Daikis Team laut ihm vorne mit?",
+     "options": [
+      "In der J-League",
+      "In der Kansai-Studentenliga",
+      "In der Bundesliga",
+      "Beim Oberschul-Turnier in Kōshien"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Richtig. Und jetzt beweis, dass du mehr kannst als zuhören."
+    }
+   ],
+   "hint": "Daiki wartet vor dem Kandai-Tor – auf ein Duell."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Eins-gegen-eins. Zwischen Tor und Treppe. Wer verliert, zahlt das Mittagessen!"
+    },
+    {
+     "s": "me",
+     "t": "Abgemacht. Aber sag hinterher nicht, ich hätte Glück gehabt."
+    },
+    {
+     "s": "daiki",
+     "t": "Ha! Wir werden sehen. Ich spiele dich schwindelig.",
+     "p": "cocky"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Dribbling / Antritt",
+      "Finte / Körpertäuschung",
+      "Grätsche / Pressing",
+      "Zonendeckung / Abfangen"
+     ],
+     "rounds": [
+      {
+       "q": "Daiki dribbelt auf dich zu und zieht immer wieder nach rechts.",
+       "answer": 3,
+       "fb": "Er hat eine Lieblingsseite – stell sie zu."
+      },
+      {
+       "q": "Daiki macht Übersteiger, aber der Ball springt ihm dabei weit vom Fuß.",
+       "answer": 2,
+       "fb": "Viel Show, wenig Kontrolle: dazwischengehen!"
+      },
+      {
+       "q": "Jetzt hast du den Ball. Daiki ist übermotiviert und springt sofort auf dich zu.",
+       "answer": 1,
+       "fb": "Ein Gegner, der anbeißt, fällt auf jede Täuschung herein."
+      },
+      {
+       "q": "Daiki ist ausgerutscht und steht nur halb.",
+       "answer": 0,
+       "fb": "Sofort antreten und vorbeiziehen!"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Glück gehabt! Na gut … das Mittagessen geht auf mich."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Coach Sakai hat übrigens mit dem Kapitän von Kwansei ein Duell ausgemacht. Irgendwo in Nishinomiya, auf einem großen Rasen."
+    }
+   ],
+   "hint": "Auf einem großen Rasen in Nishinomiya."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Da bist du. Der Kapitän von Kwansei wartet dort drüben. Er ist schnell – und das weiß er."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Ich stehe an der Linie und sage dir, was ich sehe. Hör auf mich."
+    },
+    {
+     "s": "me",
+     "t": "Was, wenn ich gegen ihn verliere?"
+    },
+    {
+     "s": "sakai",
+     "t": "Dann lernst du etwas. Aber verlieren wollen wir heute nicht.",
+     "p": "shout"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Dribbling / Antritt",
+      "Finte / Körpertäuschung",
+      "Grätsche / Pressing",
+      "Zonendeckung / Abfangen"
+     ],
+     "rounds": [
+      {
+       "q": "Sakai ruft: „Er kommt mit vollem Tempo und kann nicht mehr bremsen!“",
+       "answer": 0,
+       "fb": "Ball zur Seite und vorbei!"
+      },
+      {
+       "q": "Sakai ruft: „Er stellt sich quer und versperrt dir den Weg!“",
+       "answer": 1,
+       "fb": "Locke ihn mit einer Täuschung aus der Position."
+      },
+      {
+       "q": "Der Kapitän führt den Ball eng, schaut aber immer wieder auf den freien Raum links.",
+       "answer": 3,
+       "fb": "Er verrät sein Ziel – zustellen!"
+      },
+      {
+       "q": "Er wird müde und lässt den Ball zu weit springen.",
+       "answer": 2,
+       "fb": "Jetzt: dazwischen!"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Sieg! Der Kapitän hat dir die Hand gegeben. Das bedeutet hier viel."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Nächste Lektion: Taktik aus einer anderen Sportart. Daiki wartet vor der Ziegelwand mit dem Efeu."
+    }
+   ],
+   "hint": "Vor einer Ziegelwand mit Efeu."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Na? Kōshien. Das Baseball-Mekka. Ihr Fußballer könnt hier was lernen."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Beim Baseball teilt sich die Verteidigung das Feld in feste Zonen auf – jeder ist für seinen Raum zuständig. Wie Zonendeckung im Fußball!"
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Und dieses Stadion ist älter als fast jedes Fußballstadion in Japan."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "In welchem Jahr wurde das Kōshien-Stadion eröffnet?",
+     "options": [
+      "1924",
+      "1936",
+      "1958",
+      "1970"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Richtig! Der Name kommt sogar vom Jahr 1924: Im alten Kalender war es ein „Kōshi“-Jahr, geschrieben 甲子."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Unser nächstes Spiel? Unter einer riesigen Kuppel am Wasser im Westen der Innenstadt. Da regnet es nie."
+    }
+   ],
+   "hint": "Unter einer riesigen Kuppel am Wasser im Westen der Innenstadt."
+  }
+ },
+ "STRANG_CAMPUS_EXPEDITION": {
+  "1": {
+   "mood": "morning",
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Ah, {{name}}-san! Gut, dass ich dich erwische. Hier, das ist für dich."
+    },
+    {
+     "s": "nar",
+     "t": "Frau Morimoto reicht dir ein kleines Heft mit leeren Stempelfeldern."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Ein Stempelbuch. In Japan sammelt man Stempel an Bahnhöfen, an Tempeln – und für unser Austauschprogramm an den Universitäten."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Besuch die Hochschulen von Ōsaka und lass dir überall einen Stempel geben. Fang gleich vor der Tür an, auf der Hauptachse des Campus."
+    },
+    {
+     "s": "morimoto",
+     "p": "scold",
+     "t": "Und die Hausschuhe bleiben im Wohnheim!"
+    }
+   ],
+   "hint": "Hauptachse des Toyonaka-Campus – Prof. Takada hat den ersten Stempel."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Das Stempelbuch! Frau Morimoto ist gründlich. Den ersten Stempel bekommst du, wenn du etwas für mich findest."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Hier am Machikaneyama wurde 1964 bei Bauarbeiten etwas Erstaunliches entdeckt: das Skelett eines Krokodils."
+    },
+    {
+     "s": "me",
+     "t": "Ein Krokodil? In Japan?"
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Vor rund 400.000 Jahren war es hier wärmer. Man nennt es Machikanesuchus – das Machikaneyama-Krokodil. Ein Gedenkstein erinnert daran."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde den Gedenkstein am Treppenaufgang.",
+     "x": 31,
+     "y": 74,
+     "r": 7,
+     "closeup": {
+      "art": "stone",
+      "title": "Gedenkstein: Machikaneyama-Krokodil",
+      "text": "1964 fand man hier das fast vollständige Skelett eines etwa sieben Meter langen Krokodils. Es ist heute im Universitätsmuseum auf diesem Campus zu sehen."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Erster Stempel – erledigt. Das Skelett kannst du dir übrigens im Museum hier am Campus ansehen."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Jetzt aber erst mal Mittagessen. Kenji wartet in der Mensa."
+    }
+   ],
+   "hint": "Kenji wartet in der Mensa „Kasane“."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Da bist du! Das ist die Kasane, unsere Mensa. Billig, schnell und laut."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Du nimmst ein Tablett, holst dir, was du willst, und zahlst am Ende. Danach bringst du alles zum Rückgabefenster."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "In der Prüfungszeit ist hier um zwölf die Hölle los. Profis kommen um halb zwölf."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Und das Wichtigste: Curry. Immer Curry. Curry ist Leben."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wann kommen laut Kenji die „Profis“ in der Prüfungszeit in die Mensa?",
+     "options": [
+      "Um zwölf",
+      "Um halb zwölf",
+      "Um eins",
+      "Erst abends"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Gut aufgepasst. Den Mensa-Stempel hast du – Frau Morimoto zählt bestimmt mit."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Als Nächstes musst du zu unserem zweiten Campus. Riesig, mit Medizin und Technik. Nimm die Monorail."
+    }
+   ],
+   "hint": "Der große Handai-Campus mit Medizin und Technik."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Hallo! Du siehst ein bisschen verloren aus. Ich bin Haruka, ich studiere hier in Suita Medizin."
+    },
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "t": "Dieser Campus ist so groß, dass die Monorail gleich zwei Haltestellen darauf hat. Ohne Plan läufst du dich tot."
+    },
+    {
+     "s": "me",
+     "t": "Ich soll hier einen Stempel holen – für Frau Morimotos Stempelbuch."
+    },
+    {
+     "s": "haruka",
+     "t": "Ah, das Austauschprogramm! Dann zeig ich dir erst mal, wo hier was ist.",
+     "p": "wave"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo kannst du dich hier orientieren? Tippe auf den Lageplan.",
+     "x": 19,
+     "y": 71,
+     "r": 7,
+     "closeup": {
+      "art": "campusmap",
+      "title": "Lageplan Suita-Campus",
+      "text": "Medizin, Zahnmedizin, Ingenieurwissenschaften, das Universitätsklinikum – und mittendrin das Cybermedia Center."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "Genau. Für deinen nächsten Stempel musst du ins Cybermedia Center. Ich komme mit, ich habe dort gleich eine Übung."
+    },
+    {
+     "s": "haruka",
+     "t": "Dort gibt es übrigens die schnellsten Rechner der ganzen Uni.",
+     "p": "wave"
+    }
+   ],
+   "hint": "Haruka geht mit dir ins Cybermedia Center."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "t": "Hier stehen einige der schnellsten Rechner der Universität. Forschende aus ganz Japan rechnen darauf."
+    },
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "Wir in der Medizin brauchen das auch – für Proteine, Gene, Simulationen."
+    },
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Und nebenan bauen sie Roboter. Manchmal weiß man nicht mehr, ob man mit einem Menschen redet."
+    },
+    {
+     "s": "me",
+     "t": "Und was macht ein Student wie ich damit?"
+    },
+    {
+     "s": "haruka",
+     "t": "Meistens nichts. Aber für die Forschung sind sie unverzichtbar. Du bekommst gleich eine Frage dazu.",
+     "p": "clipboard"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wofür ist das Cybermedia Center vor allem da?",
+     "options": [
+      "Fernsehstudio der Universität",
+      "Manga-Bibliothek",
+      "Hochleistungsrechner für die Forschung",
+      "Notaufnahme des Klinikums"
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Stempel Nummer vier! Jetzt zeige ich dir meinen künftigen Arbeitsplatz: das Universitätsklinikum."
+    }
+   ],
+   "hint": "Haruka wartet vor dem Universitätsklinikum."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "t": "Das ist das Klinikum der Handai. Hier forscht man an regenerativer Medizin – also daran, krankes Gewebe zu ersetzen."
+    },
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "Ein wichtiges Werkzeug sind iPS-Zellen. Das sind Körperzellen, die man im Labor in eine Art Ursprungszustand zurückversetzt."
+    },
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "t": "Daraus kann man zum Beispiel Zellen für Herz oder Augen züchten. Shinya Yamanaka bekam für die Entdeckung 2012 den Nobelpreis."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "input",
+     "q": "Wie heißen die Zellen, von denen Haruka erzählt?",
+     "placeholder": "…-Zellen",
+     "accept": [
+      "ips",
+      "ips-zellen",
+      "ips zellen",
+      "ipszellen",
+      "ips-zelle",
+      "ips zelle"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Richtig! Viele Patientinnen und Patienten hoffen auf neue Behandlungen damit."
+    },
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "Deinen nächsten Stempel bekommst du am dritten Handai-Campus – dort, wo die Fremdsprachen zu Hause sind."
+    }
+   ],
+   "hint": "Der Handai-Campus, an dem die Fremdsprachen zu Hause sind."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Hallo! Willkommen in Minō. Ich bin Sōta. Hier ist die Fakultät für Fremdsprachen."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "An der Handai kann man rund 25 Sprachen studieren – von Arabisch bis Urdu. Und natürlich Deutsch!"
+    },
+    {
+     "s": "sota",
+     "p": "puzzled",
+     "t": "Für deinen Stempel such das Zeichen der Fakultät. Es hängt groß an der Fassade."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde das Banner der Fakultät für Fremdsprachen.",
+     "x": 84,
+     "y": 40,
+     "r": 7,
+     "closeup": {
+      "art": "banner",
+      "title": "外国語学部",
+      "text": "Gaikokugo-gakubu – Fakultät für Fremdsprachen. 外国 (gaikoku) heißt Ausland, 語 (go) heißt Sprache."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Super! Hier, der Stempel aus Minō – mit einem kleinen Wasserfall drauf."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Den nächsten bekommst du dort, wo die Handai einst angefangen hat: mitten in der Stadt, auf einer Flussinsel."
+    }
+   ],
+   "hint": "Wo die Handai einst angefangen hat – auf einer Flussinsel mitten in der Stadt."
+  }
+ },
+ "STRANG_ROMANCE_MEMORIES": {
+  "1": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Hey, {{name}}. Bald ist das Frühlingsfest auf dem Campus. Gehst du hin?"
+    },
+    {
+     "s": "me",
+     "t": "Vielleicht. Allein ist das aber langweilig."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Eben! Du musst jemanden einladen. Ich kenne zwei Leute, die auch noch niemanden haben: Aoi aus der Verkehrsplanung und Maya, die Austauschstudentin."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Also? Wen fragst du?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "route",
+     "q": "Wen lädst du zum Frühlingsfest ein?",
+     "options": [
+      {
+       "label": "Aoi – sie kennt jede Bahnlinie der Stadt",
+       "value": "AOI_TRANSIT_STUDENT"
+      },
+      {
+       "label": "Maya – mit ihr wird es ruhig und entspannt",
+       "value": "MAYA_EXCHANGE_STUDENT"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Gute Wahl! Ich sag {{partner}} Bescheid, dass du in der Mensa wartest. Viel Glück!"
+    }
+   ],
+   "hint": "{{partner}} trifft dich in der Mensa „Kasane“."
+  },
+  "2": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Kenji meinte, du willst mit mir zum Frühlingsfest? … Ich hab mich echt gefreut."
+      },
+      {
+       "s": "me",
+       "t": "Ich wollte dich lieber selbst fragen. Hast du Lust?"
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Klar! Aber erst erzählst du mir, was du in Deutschland gern machst."
+      },
+      {
+       "s": "me",
+       "t": "Radfahren. Karten anschauen. Neue Orte entdecken."
+      },
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Karten! Okay, du bist offiziell interessant. Am Wochenende zeig ich dir mein Lieblingscafé – direkt am Fluss."
+      },
+      {
+       "s": "me",
+       "t": "Abgemacht. Ich bin gespannt."
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Hi … Kenji hat gesagt, du suchst mich?"
+      },
+      {
+       "s": "me",
+       "t": "Ich wollte dich fragen, ob du mit mir zum Frühlingsfest gehst."
+      },
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Echt? Gern! Ich hatte schon Angst, dass ich wieder allein in einer Ecke stehe."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Weißt du was? Lass uns am Wochenende vorher in Ruhe einen Kaffee trinken. Ich kenne ein Café direkt am Fluss."
+      },
+      {
+       "s": "me",
+       "t": "Sehr gern. Ich bring meinen Hunger mit."
+      },
+      {
+       "s": "partner",
+       "t": "Dann bist du in Ōsaka genau richtig.",
+       "p": "wave"
+      }
+     ]
+    }
+   },
+   "hint": "Ein Café direkt am Fluss, mit Blick aufs Wasser."
+  }
+ }
+}

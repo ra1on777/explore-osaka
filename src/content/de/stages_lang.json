@@ -1,0 +1,2220 @@
+{
+ "STRANG_LANG_HIRAGANA": {
+  "1": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Du lernst Japanisch? Dann fangen wir ganz vorne an: mit den fünf Vokalen."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "jp": "あ い う え お",
+     "ro": "a i u e o",
+     "t": "Das sind die Grundlaute. Fast jede Silbe im Japanischen endet auf einen davon."
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Eselsbrücke: あ sieht aus wie jemand mit weit offenem Mund, der „Aaah“ sagt. う hat oben einen kleinen Strich – wie ein Ohr."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Hiragana benutzt man für japanische Wörter und Endungen. Kinder lernen sie als Erstes."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welches Zeichen ist „u“?",
+     "options": [
+      {
+       "jp": "あ"
+      },
+      {
+       "jp": "い"
+      },
+      {
+       "jp": "う"
+      },
+      {
+       "jp": "え"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Welches Zeichen ist „o“?",
+     "options": [
+      {
+       "jp": "お"
+      },
+      {
+       "jp": "あ"
+      },
+      {
+       "jp": "え"
+      },
+      {
+       "jp": "い"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Perfekt! Prof. Takada übt mit den Neuen auf dem Toyonaka-Campus weiter – an der Hauptachse."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あいうえお",
+     "ro": "a i u e o",
+     "de": "die fünf Vokale"
+    }
+   ],
+   "hint": "Prof. Takada an der Hauptachse des Toyonaka-Campus."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Sōta hat dich geschickt? Gut. Jetzt kommen die K-Reihe und die S-Reihe."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "jp": "か き く け こ",
+     "ro": "ka ki ku ke ko",
+     "t": "Konsonant plus Vokal – ganz regelmäßig."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "jp": "さ し す せ そ",
+     "ro": "sa shi su se so",
+     "t": "Achtung: し spricht man „shi“, nicht „si“."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde jedes Zeichen mit seiner Lesung.",
+     "sets": [
+      [
+       [
+        "か",
+        "ka"
+       ],
+       [
+        "き",
+        "ki"
+       ],
+       [
+        "く",
+        "ku"
+       ],
+       [
+        "け",
+        "ke"
+       ],
+       [
+        "こ",
+        "ko"
+       ]
+      ],
+      [
+       [
+        "さ",
+        "sa"
+       ],
+       [
+        "し",
+        "shi"
+       ],
+       [
+        "す",
+        "su"
+       ],
+       [
+        "せ",
+        "se"
+       ],
+       [
+        "そ",
+        "so"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "think",
+     "jp": "さくら",
+     "ro": "sakura",
+     "t": "Das kannst du jetzt schon lesen: Kirschblüte."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Weiter geht es beim Mittagessen. In der Mensa gibt es viel zu lesen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "さくら",
+     "ro": "sakura",
+     "de": "Kirschblüte"
+    }
+   ],
+   "hint": "In der Mensa „Kasane“."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Du übst Hiragana? Die Speisekarte ist mit Kanji … aber auf diesem Schild hier steht's in Hiragana."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "た ち つ て と",
+     "ro": "ta chi tsu te to",
+     "t": "ち heißt „chi“ und つ heißt „tsu“."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "な に ぬ ね の",
+     "ro": "na ni nu ne no",
+     "t": "Die N-Reihe. ぬ und ね sehen sich ähnlich – ね hat unten eine Schlaufe mit Fuß."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "たこ",
+     "ro": "tako",
+     "t": "Oktopus! Wie in Takoyaki."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "input",
+     "q": "Wie liest man ち? (in Rōmaji)",
+     "show": {
+      "jp": "ち"
+     },
+     "placeholder": "z. B. ka",
+     "accept": [
+      "chi"
+     ]
+    },
+    {
+     "type": "choice",
+     "q": "Welches Zeichen ist „nu“?",
+     "options": [
+      {
+       "jp": "ね"
+      },
+      {
+       "jp": "の"
+      },
+      {
+       "jp": "ぬ"
+      },
+      {
+       "jp": "な"
+      }
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Mega! Heute Abend üben wir weiter. Ich hab dir Zettel in dein Zimmer gelegt."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "たこ",
+     "ro": "tako",
+     "de": "Oktopus"
+    }
+   ],
+   "hint": "In deinem Zimmer im Wohnheim liegen Zettel."
+  },
+  "4": {
+   "mood": "golden",
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Ich hab dir Übungszettel geschrieben – mit der H- und der M-Reihe."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "は ひ ふ へ ほ",
+     "ro": "ha hi fu he ho",
+     "t": "ふ spricht man „fu“ – ganz weich, fast wie Pusten."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "ま み む め も",
+     "ro": "ma mi mu me mo",
+     "t": "Die M-Reihe. め sieht aus wie ein Auge – und heißt als Wort auch „Auge“."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde jedes Zeichen mit seiner Lesung.",
+     "sets": [
+      [
+       [
+        "は",
+        "ha"
+       ],
+       [
+        "ひ",
+        "hi"
+       ],
+       [
+        "ふ",
+        "fu"
+       ],
+       [
+        "へ",
+        "he"
+       ],
+       [
+        "ほ",
+        "ho"
+       ]
+      ],
+      [
+       [
+        "ま",
+        "ma"
+       ],
+       [
+        "み",
+        "mi"
+       ],
+       [
+        "む",
+        "mu"
+       ],
+       [
+        "め",
+        "me"
+       ],
+       [
+        "も",
+        "mo"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "はなみ",
+     "ro": "hanami",
+     "t": "Kirschblütenschauen – im Frühling picknickt ganz Japan unter den Bäumen."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Die letzten Reihen erklärt dir Maya. Sie ist meistens in der Gemeinschaftsküche."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "はなみ",
+     "ro": "hanami",
+     "de": "Kirschblütenschauen"
+    },
+    {
+     "jp": "め",
+     "ro": "me",
+     "de": "Auge"
+    }
+   ],
+   "hint": "Maya in der Gemeinschaftsküche."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Hey! Kenji meinte, du bist schon bei den letzten Reihen. Ich zeig dir, wie ich sie mir gemerkt habe."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "jp": "や ゆ よ",
+     "ro": "ya yu yo",
+     "t": "Nur drei Zeichen – „yi“ und „ye“ gibt es heute nicht mehr."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "jp": "ら り る れ ろ",
+     "ro": "ra ri ru re ro",
+     "t": "Das japanische R liegt irgendwo zwischen R und L."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "jp": "わ を ん",
+     "ro": "wa o n",
+     "t": "を klingt wie „o“ und wird fast nur als Partikel benutzt. ん ist das einzige Zeichen ohne Vokal."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Damit kennst du alle 46 Grundzeichen! Kleiner Test?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welches Zeichen ist „n“?",
+     "options": [
+      {
+       "jp": "を"
+      },
+      {
+       "jp": "ん"
+      },
+      {
+       "jp": "わ"
+      },
+      {
+       "jp": "る"
+      }
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie liest man ろ?",
+     "show": {
+      "jp": "ろ"
+     },
+     "options": [
+      "ru",
+      "re",
+      "ro",
+      "yo"
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Super! Jetzt kannst du theoretisch alles lesen, was in Hiragana steht. Die Praxis wartet draußen in der Stadt."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Aoi meinte, an einem großen Bahnhof in Kita gibt es Schilder mit Dakuten – diesen kleinen Strichen. Frag sie dort!"
+    }
+   ],
+   "vocab": [],
+   "hint": "Irgendwo in Kita, an einem großen Bahnhof."
+  }
+ },
+ "STRANG_LANG_KATAKANA": {
+  "1": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Kennst du schon Katakana? Das ist die zweite Silbenschrift – eckiger, vor allem für Wörter aus dem Ausland."
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "jp": "ア イ ウ エ オ",
+     "ro": "a i u e o",
+     "t": "Dieselben Laute wie あいうえお – nur andere Formen."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "jp": "ドイツ",
+     "ro": "Doitsu",
+     "t": "Deutschland! Hier an der Fakultät steht so etwas überall an den Türen."
+    },
+    {
+     "s": "me",
+     "t": "Warum braucht Japanisch zwei Silbenschriften?"
+    },
+    {
+     "s": "sota",
+     "t": "Hiragana ist für Japanisches, Katakana für Fremdes – und zum Betonen, wie fett gedruckt.",
+     "p": "puzzled"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welches ist „a“ in Katakana?",
+     "options": [
+      {
+       "jp": "イ"
+      },
+      {
+       "jp": "ア"
+      },
+      {
+       "jp": "ウ"
+      },
+      {
+       "jp": "オ"
+      }
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Und welches ist „e“?",
+     "options": [
+      {
+       "jp": "イ"
+      },
+      {
+       "jp": "オ"
+      },
+      {
+       "jp": "ウ"
+      },
+      {
+       "jp": "エ"
+      }
+     ],
+     "answer": 3
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Gut! Kenji aus deinem Wohnheim ist ein Katakana-Fan – er liest jeden Getränkeautomaten laut vor. Er ist oft in der Mensa."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ドイツ",
+     "ro": "Doitsu",
+     "de": "Deutschland"
+    }
+   ],
+   "hint": "Kenji in der Mensa „Kasane“."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Siehst du den Automaten? Lauter Katakana. Mit der K- und S-Reihe kommst du schon weit."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "カ キ ク ケ コ",
+     "ro": "ka ki ku ke ko"
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "サ シ ス セ ソ",
+     "ro": "sa shi su se so",
+     "t": "Vorsicht: シ (shi) und ツ (tsu) sehen fast gleich aus. Bei シ zeigen die Striche eher nach rechts oben."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Was steht auf dem Knopf? Setze die Lesung zusammen.",
+     "sign": "ココア",
+     "tiles": [
+      "ko",
+      "a",
+      "ka",
+      "ko",
+      "sa"
+     ],
+     "answer": [
+      "ko",
+      "ko",
+      "a"
+     ],
+     "meaning": "Kakao"
+    },
+    {
+     "type": "decipher",
+     "q": "Und auf diesem?",
+     "sign": "アイス",
+     "tiles": [
+      "su",
+      "a",
+      "shi",
+      "i",
+      "ku"
+     ],
+     "answer": [
+      "a",
+      "i",
+      "su"
+     ],
+     "meaning": "Eis (Speiseeis)"
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "ココア! Mein Wintergetränk. Du wirst gefährlich gut."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Komm nachher in dein Zimmer. Ich zeig dir, wie die Sachen dort auf Japanisch heißen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ココア",
+     "ro": "kokoa",
+     "de": "Kakao"
+    },
+    {
+     "jp": "アイス",
+     "ro": "aisu",
+     "de": "Eis"
+    }
+   ],
+   "hint": "Dein Zimmer im Wohnheim."
+  },
+  "3": {
+   "mood": "golden",
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Okay, Zimmer-Tour. Fast alles hier hat einen Katakana-Namen."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "ベッド",
+     "ro": "beddo",
+     "t": "Bett. Das kleine ッ verdoppelt den Laut danach."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "デスク",
+     "ro": "desuku",
+     "t": "Schreibtisch."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "ノート",
+     "ro": "nōto",
+     "t": "Heft. Der Strich ー macht den Vokal davor lang."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet ノート?",
+     "options": [
+      "Bett",
+      "Heft",
+      "Schreibtisch",
+      "Fernseher"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "input",
+     "q": "Wie liest man ベッド? (in Rōmaji)",
+     "show": {
+      "jp": "ベッド"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "beddo"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Japanisch borgt sich ständig Wörter – und macht sie passend."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Maya macht gerade Frühstück in der Küche. Da gibt's noch mehr Katakana – auf jeder Packung."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ベッド",
+     "ro": "beddo",
+     "de": "Bett"
+    },
+    {
+     "jp": "デスク",
+     "ro": "desuku",
+     "de": "Schreibtisch"
+    },
+    {
+     "jp": "ノート",
+     "ro": "nōto",
+     "de": "Heft"
+    }
+   ],
+   "hint": "Maya in der Gemeinschaftsküche."
+  },
+  "4": {
+   "mood": "morning",
+   "lines": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Frühstück! Schau mal auf die Packungen. Kannst du lesen, was das ist?"
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "jp": "パン",
+     "ro": "pan",
+     "t": "Brot – das Wort kam schon vor über 400 Jahren mit portugiesischen Händlern nach Japan."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Ein Tipp: ミ ist „mi“, ル ist „ru“, ク kennst du schon."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Was steht auf der Flasche?",
+     "sign": "ミルク",
+     "tiles": [
+      "ru",
+      "ku",
+      "mi",
+      "ri",
+      "su"
+     ],
+     "answer": [
+      "mi",
+      "ru",
+      "ku"
+     ],
+     "meaning": "Milch"
+    },
+    {
+     "type": "decipher",
+     "q": "Und auf dem Päckchen? (バ ist „ba“, ター ist „tā“)",
+     "sign": "バター",
+     "tiles": [
+      "ta",
+      "tā",
+      "ba",
+      "pa"
+     ],
+     "answer": [
+      "ba",
+      "tā"
+     ],
+     "meaning": "Butter"
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Pan, batā, miruku – fast wie Englisch, oder?"
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Shizuku, eine Kaffeerösterin, ist heute im Museum der Instant-Nudeln. Sie liebt Verpackungsdesign."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "パン",
+     "ro": "pan",
+     "de": "Brot"
+    },
+    {
+     "jp": "ミルク",
+     "ro": "miruku",
+     "de": "Milch"
+    },
+    {
+     "jp": "バター",
+     "ro": "batā",
+     "de": "Butter"
+    }
+   ],
+   "hint": "Im Museum der Instant-Nudeln."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Oh, hallo! Maya hat erzählt, dass du Katakana lernst. Dann bist du hier richtig."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Hier siehst du, wie Momofuku Andō 1958 die ersten Instant-Nudeln erfand – in einem Schuppen hier in Ikeda."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "jp": "ラーメン",
+     "ro": "rāmen",
+     "t": "Ramen."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "jp": "カップ",
+     "ro": "kappu",
+     "t": "Becher – vom englischen „cup“. Hier kann man seinen eigenen bemalen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet カップ?",
+     "options": [
+      "Nudel",
+      "Suppe",
+      "Becher",
+      "Löffel"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Wie liest man ラーメン?",
+     "show": {
+      "jp": "ラーメン"
+     },
+     "options": [
+      "rōmen",
+      "rāmen",
+      "raimen",
+      "rumen"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Super! Ramen gibt es in Japan an jeder Ecke – aber die Instant-Version wurde hier erfunden."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Wenn du weiterlernen willst: An einem großen Bahnhof in Kita gibt es tausend Katakana-Schilder."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ラーメン",
+     "ro": "rāmen",
+     "de": "Ramen"
+    },
+    {
+     "jp": "カップ",
+     "ro": "kappu",
+     "de": "Becher"
+    }
+   ],
+   "hint": "Irgendwo in Kita, an einem großen Bahnhof."
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "1": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Kanji – die Schriftzeichen aus China. Keine Angst: Wir fangen mit Zahlen an."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "jp": "一 二 三",
+     "ro": "ichi ni san",
+     "t": "Eins, zwei, drei – einfach Striche."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "jp": "四 五 六 七 八 九 十",
+     "ro": "yon go roku nana hachi kyū jū",
+     "t": "Vier bis zehn. 十 sieht aus wie ein Kreuz."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Schau dir die Vitrinen an: Auf alten Etiketten stehen Jahreszahlen in Kanji."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welche Zahl ist 七?",
+     "show": {
+      "jp": "七"
+     },
+     "options": [
+      "4",
+      "7",
+      "9",
+      "2"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welches Kanji bedeutet 10?",
+     "options": [
+      {
+       "jp": "一"
+      },
+      {
+       "jp": "八"
+      },
+      {
+       "jp": "十"
+      },
+      {
+       "jp": "六"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "type": "input",
+     "q": "Wie liest man 三? (in Rōmaji)",
+     "show": {
+      "jp": "三"
+     },
+     "placeholder": "Rōmaji",
+     "accept": [
+      "san"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Sehr gut. Mit diesen zehn Zeichen kannst du schon Preise und Daten lesen."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Große Zahlen und das Yen-Zeichen findest du überall am Bahnhof Ōsaka. Aoi kennt sich dort aus – sie wartet am Toki no Hiroba."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "一",
+     "ro": "ichi",
+     "de": "eins"
+    },
+    {
+     "jp": "二",
+     "ro": "ni",
+     "de": "zwei"
+    },
+    {
+     "jp": "三",
+     "ro": "san",
+     "de": "drei"
+    },
+    {
+     "jp": "四",
+     "ro": "yon / shi",
+     "de": "vier"
+    },
+    {
+     "jp": "五",
+     "ro": "go",
+     "de": "fünf"
+    },
+    {
+     "jp": "六",
+     "ro": "roku",
+     "de": "sechs"
+    },
+    {
+     "jp": "七",
+     "ro": "nana / shichi",
+     "de": "sieben"
+    },
+    {
+     "jp": "八",
+     "ro": "hachi",
+     "de": "acht"
+    },
+    {
+     "jp": "九",
+     "ro": "kyū / ku",
+     "de": "neun"
+    },
+    {
+     "jp": "十",
+     "ro": "jū",
+     "de": "zehn"
+    }
+   ],
+   "hint": "Aoi am Bahnhof Ōsaka (Toki no Hiroba)."
+  }
+ },
+ "STRANG_LANG_VOCABULARY": {
+  "1": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Bevor du rausgehst: vier Ausdrücke, mit denen du in Japan fast alles schaffst."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "こんにちは",
+     "ro": "konnichiwa",
+     "t": "Hallo / Guten Tag."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "ありがとう",
+     "ro": "arigatō",
+     "t": "Danke."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "すみません",
+     "ro": "sumimasen",
+     "t": "Entschuldigung – auch, um jemanden anzusprechen."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "おねがいします",
+     "ro": "onegaishimasu",
+     "t": "Bitte – wenn du um etwas bittest."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Du rempelst jemanden im Flur an. Was sagst du?",
+     "options": [
+      {
+       "jp": "こんにちは",
+       "ro": "konnichiwa"
+      },
+      {
+       "jp": "ありがとう",
+       "ro": "arigatō"
+      },
+      {
+       "jp": "すみません",
+       "ro": "sumimasen"
+      },
+      {
+       "jp": "おねがいします",
+       "ro": "onegaishimasu"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Frau Morimoto gibt dir deinen Schlüssel. Was sagst du?",
+     "options": [
+      {
+       "jp": "ありがとう",
+       "ro": "arigatō"
+      },
+      {
+       "jp": "すみません",
+       "ro": "sumimasen"
+      },
+      {
+       "jp": "こんにちは",
+       "ro": "konnichiwa"
+      },
+      {
+       "jp": "おねがいします",
+       "ro": "onegaishimasu"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Perfekt! Frau Morimoto will dir in der Küche noch die Wohnheimregeln erklären."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "こんにちは",
+     "ro": "konnichiwa",
+     "de": "Hallo / Guten Tag"
+    },
+    {
+     "jp": "ありがとう",
+     "ro": "arigatō",
+     "de": "Danke"
+    },
+    {
+     "jp": "すみません",
+     "ro": "sumimasen",
+     "de": "Entschuldigung"
+    },
+    {
+     "jp": "おねがいします",
+     "ro": "onegaishimasu",
+     "de": "Bitte (um etwas bitten)"
+    }
+   ],
+   "hint": "Frau Morimoto in der Gemeinschaftsküche."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "So. Wohnheimregeln. Zuerst die Wörter, damit du die Schilder verstehst."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "jp": "へや ・ かぎ",
+     "ro": "heya ・ kagi",
+     "t": "Zimmer und Schlüssel."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "jp": "ごみ ・ そうじ",
+     "ro": "gomi ・ sōji",
+     "t": "Müll und Putzen."
+    },
+    {
+     "s": "morimoto",
+     "p": "scold",
+     "t": "Den Müll trennen wir streng! Und der Putzplan an der Tafel gilt auch für dich."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter den Dingen zu.",
+     "items": [
+      {
+       "icon": "key",
+       "label": "Schlüssel",
+       "answer": "kagi"
+      },
+      {
+       "icon": "trash",
+       "label": "Müll",
+       "answer": "gomi"
+      },
+      {
+       "icon": "broom",
+       "label": "Putzen",
+       "answer": "sōji"
+      },
+      {
+       "icon": "door",
+       "label": "Zimmer",
+       "answer": "heya"
+      }
+     ],
+     "words": [
+      {
+       "jp": "へや",
+       "ro": "heya"
+      },
+      {
+       "jp": "ごみ",
+       "ro": "gomi"
+      },
+      {
+       "jp": "かぎ",
+       "ro": "kagi"
+      },
+      {
+       "jp": "そうじ",
+       "ro": "sōji"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "jp": "よくできました！",
+     "ro": "Yoku dekimashita!",
+     "t": "Gut gemacht!"
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Kenji isst gerade in der Mensa. Er kann dir die Wörter fürs Essen beibringen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "へや",
+     "ro": "heya",
+     "de": "Zimmer"
+    },
+    {
+     "jp": "かぎ",
+     "ro": "kagi",
+     "de": "Schlüssel"
+    },
+    {
+     "jp": "ごみ",
+     "ro": "gomi",
+     "de": "Müll"
+    },
+    {
+     "jp": "そうじ",
+     "ro": "sōji",
+     "de": "Putzen"
+    }
+   ],
+   "hint": "Kenji in der Mensa."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Essenswörter! Die brauchst du jeden Tag."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "ごはん ・ みず ・ おちゃ",
+     "ro": "gohan ・ mizu ・ ocha",
+     "t": "Reis (auch: Mahlzeit), Wasser, Tee."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "にく ・ さかな",
+     "ro": "niku ・ sakana",
+     "t": "Fleisch und Fisch."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Wasser und Tee gibt es in der Mensa übrigens umsonst – da drüben am Spender."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet さかな?",
+     "show": {
+      "jp": "さかな"
+     },
+     "options": [
+      "Fleisch",
+      "Tee",
+      "Fisch",
+      "Reis"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "input",
+     "q": "Was heißt „Wasser“ auf Japanisch? (in Rōmaji)",
+     "placeholder": "Rōmaji",
+     "accept": [
+      "mizu"
+     ]
+    },
+    {
+     "type": "choice",
+     "q": "Kenji will Reis. Was bestellt er?",
+     "options": [
+      {
+       "jp": "にく",
+       "ro": "niku"
+      },
+      {
+       "jp": "ごはん",
+       "ro": "gohan"
+      },
+      {
+       "jp": "おちゃ",
+       "ro": "ocha"
+      },
+      {
+       "jp": "みず",
+       "ro": "mizu"
+      }
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Prima! Prof. Takada wollte noch mit dir über Leute reden – draußen auf dem Hauptweg unter den Bäumen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ごはん",
+     "ro": "gohan",
+     "de": "Reis / Mahlzeit"
+    },
+    {
+     "jp": "みず",
+     "ro": "mizu",
+     "de": "Wasser"
+    },
+    {
+     "jp": "おちゃ",
+     "ro": "ocha",
+     "de": "Tee"
+    },
+    {
+     "jp": "にく",
+     "ro": "niku",
+     "de": "Fleisch"
+    },
+    {
+     "jp": "さかな",
+     "ro": "sakana",
+     "de": "Fisch"
+    }
+   ],
+   "hint": "Draußen auf dem Hauptweg unter den Bäumen."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Wer bist du – und wer bin ich? Dafür brauchst du diese Wörter."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "jp": "わたし ・ がくせい",
+     "ro": "watashi ・ gakusei",
+     "t": "ich – Student/Studentin"
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "jp": "せんせい ・ ともだち",
+     "ro": "sensei ・ tomodachi",
+     "t": "Lehrer/Lehrerin – Freund/Freundin"
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Ich bin せんせい. Du bist がくせい. Und Kenji ist hoffentlich dein ともだち."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter den Personen zu.",
+     "items": [
+      {
+       "icon": "teacher",
+       "label": "Prof. Takada",
+       "answer": "sensei"
+      },
+      {
+       "icon": "student",
+       "label": "Du an der Uni",
+       "answer": "gakusei"
+      },
+      {
+       "icon": "friends",
+       "label": "Kenji für dich",
+       "answer": "tomodachi"
+      },
+      {
+       "icon": "me",
+       "label": "„ich“",
+       "answer": "watashi"
+      }
+     ],
+     "words": [
+      {
+       "jp": "ともだち",
+       "ro": "tomodachi"
+      },
+      {
+       "jp": "わたし",
+       "ro": "watashi"
+      },
+      {
+       "jp": "せんせい",
+       "ro": "sensei"
+      },
+      {
+       "jp": "がくせい",
+       "ro": "gakusei"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Ausgezeichnet. Auf dem großen Campus mit Medizin und Technik gibt es viele Gebäude, deren Namen du kennen solltest. Frag dort nach."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "わたし",
+     "ro": "watashi",
+     "de": "ich"
+    },
+    {
+     "jp": "がくせい",
+     "ro": "gakusei",
+     "de": "Student/in"
+    },
+    {
+     "jp": "せんせい",
+     "ro": "sensei",
+     "de": "Lehrer/in"
+    },
+    {
+     "jp": "ともだち",
+     "ro": "tomodachi",
+     "de": "Freund/in"
+    }
+   ],
+   "hint": "Der große Handai-Campus mit Medizin und Technik."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Du lernst Ortswörter? Super, hier hast du alle auf einmal."
+    },
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "jp": "だいがく ・ びょういん",
+     "ro": "daigaku ・ byōin",
+     "t": "Universität – Krankenhaus"
+    },
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "jp": "としょかん ・ じむしょ",
+     "ro": "toshokan ・ jimusho",
+     "t": "Bibliothek – Büro"
+    },
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "Vorsicht: びょういん (Krankenhaus) und びよういん (Friseur) klingen fast gleich!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wo wird Haruka später als Ärztin arbeiten?",
+     "options": [
+      {
+       "jp": "としょかん",
+       "ro": "toshokan"
+      },
+      {
+       "jp": "じむしょ",
+       "ro": "jimusho"
+      },
+      {
+       "jp": "びょういん",
+       "ro": "byōin"
+      },
+      {
+       "jp": "だいがく",
+       "ro": "daigaku"
+      }
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Wo leiht man Bücher aus?",
+     "options": [
+      {
+       "jp": "としょかん",
+       "ro": "toshokan"
+      },
+      {
+       "jp": "びょういん",
+       "ro": "byōin"
+      },
+      {
+       "jp": "じむしょ",
+       "ro": "jimusho"
+      },
+      {
+       "jp": "へや",
+       "ro": "heya"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Genau! Ein Freund von mir, Ryōsuke, studiert Jura an einer Privatuni in Senriyama. Der kann dir Wörter fürs Studium beibringen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "だいがく",
+     "ro": "daigaku",
+     "de": "Universität"
+    },
+    {
+     "jp": "びょういん",
+     "ro": "byōin",
+     "de": "Krankenhaus"
+    },
+    {
+     "jp": "としょかん",
+     "ro": "toshokan",
+     "de": "Bibliothek"
+    },
+    {
+     "jp": "じむしょ",
+     "ro": "jimusho",
+     "de": "Büro"
+    }
+   ],
+   "hint": "Eine Privatuniversität in Senriyama."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "ryosuke",
+     "t": "Hi! Haruka hat dich angekündigt. Ich bin Ryōsuke, Jura, drittes Jahr. Also: viel lernen."
+    },
+    {
+     "s": "ryosuke",
+     "jp": "べんきょう ・ じゅぎょう",
+     "ro": "benkyō ・ jugyō",
+     "t": "Lernen – Unterricht"
+    },
+    {
+     "s": "ryosuke",
+     "jp": "しけん ・ ほん",
+     "ro": "shiken ・ hon",
+     "t": "Prüfung – Buch"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Vor jeder しけん mache ich nur noch べんきょう. Und lese hundert ほん."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter den Dingen zu.",
+     "items": [
+      {
+       "icon": "book",
+       "label": "Buch",
+       "answer": "hon"
+      },
+      {
+       "icon": "exam",
+       "label": "Prüfung",
+       "answer": "shiken"
+      },
+      {
+       "icon": "lecture",
+       "label": "Unterricht",
+       "answer": "jugyō"
+      },
+      {
+       "icon": "study",
+       "label": "Lernen",
+       "answer": "benkyō"
+      }
+     ],
+     "words": [
+      {
+       "jp": "しけん",
+       "ro": "shiken"
+      },
+      {
+       "jp": "べんきょう",
+       "ro": "benkyō"
+      },
+      {
+       "jp": "ほん",
+       "ro": "hon"
+      },
+      {
+       "jp": "じゅぎょう",
+       "ro": "jugyō"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ryosuke",
+     "t": "Klasse. Für Sprachen und Länder musst du nach Minō – an die Fakultät für Fremdsprachen der Handai."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "べんきょう",
+     "ro": "benkyō",
+     "de": "Lernen"
+    },
+    {
+     "jp": "じゅぎょう",
+     "ro": "jugyō",
+     "de": "Unterricht"
+    },
+    {
+     "jp": "しけん",
+     "ro": "shiken",
+     "de": "Prüfung"
+    },
+    {
+     "jp": "ほん",
+     "ro": "hon",
+     "de": "Buch"
+    }
+   ],
+   "hint": "Fakultät für Fremdsprachen in Minō."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Sprachen und Länder! Das ist meine Spezialität."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "jp": "にほんご ・ ドイツご ・ えいご",
+     "ro": "nihongo ・ doitsugo ・ eigo",
+     "t": "Japanisch – Deutsch – Englisch"
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "jp": "くに",
+     "ro": "kuni",
+     "t": "Land."
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Siehst du das Muster? Land + ご = Sprache. ドイツ + ご = ドイツご."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "input",
+     "q": "Wie heißt „Japanisch“ (die Sprache) auf Japanisch? (in Rōmaji)",
+     "placeholder": "Rōmaji",
+     "accept": [
+      "nihongo"
+     ]
+    },
+    {
+     "type": "choice",
+     "q": "Was bedeutet くに?",
+     "show": {
+      "jp": "くに"
+     },
+     "options": [
+      "Sprache",
+      "Land",
+      "Stadt",
+      "Schule"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Genau! Und welche Sprachen hört man in Ōsaka am häufigsten? Das findest du am großen Bahnhof im Norden der Innenstadt heraus."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "にほんご",
+     "ro": "nihongo",
+     "de": "Japanisch"
+    },
+    {
+     "jp": "ドイツご",
+     "ro": "doitsugo",
+     "de": "Deutsch"
+    },
+    {
+     "jp": "えいご",
+     "ro": "eigo",
+     "de": "Englisch"
+    },
+    {
+     "jp": "くに",
+     "ro": "kuni",
+     "de": "Land"
+    }
+   ],
+   "hint": "Am großen Bahnhof im Norden der Innenstadt."
+  }
+ },
+ "STRANG_LANG_CONVERSATION": {
+  "1": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "{{name}}-san, morgen kommt eine neue Studentin. Du stellst dich vor – auf Japanisch!"
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "jp": "わたしは {{nameJa}} です。",
+     "ro": "Watashi wa {{nameRo}} desu.",
+     "t": "Ich bin {{name}}."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "jp": "ドイツに すんでいます。",
+     "ro": "Doitsu ni sunde imasu.",
+     "t": "Ich wohne in Deutschland."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "は spricht man hier „wa“. Und です macht den Satz höflich."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "jp": "よろしく おねがいします。",
+     "ro": "Yoroshiku onegaishimasu.",
+     "t": "Zum Schluss: „Auf gute Zusammenarbeit!“"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie liest man は in „わたしは“?",
+     "options": [
+      "ha",
+      "wa",
+      "ho",
+      "ba"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was sagst du am Ende deiner Vorstellung?",
+     "options": [
+      {
+       "jp": "いただきます",
+       "ro": "itadakimasu"
+      },
+      {
+       "jp": "すみません",
+       "ro": "sumimasen"
+      },
+      {
+       "jp": "よろしく おねがいします",
+       "ro": "yoroshiku onegaishimasu"
+      },
+      {
+       "jp": "おやすみなさい",
+       "ro": "oyasuminasai"
+      }
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Wunderbar. Prof. Takada übt mit dir weiter – draußen an der Hauptachse."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "よろしく おねがいします",
+     "ro": "yoroshiku onegaishimasu",
+     "de": "Freut mich / Auf gute Zusammenarbeit"
+    }
+   ],
+   "hint": "Prof. Takada an der Hauptachse."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Jetzt sagen wir, was du kannst. Das Muster: [Sprache] が できます."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "jp": "にほんごが すこし できます。",
+     "ro": "Nihongo ga sukoshi dekimasu.",
+     "t": "Ich kann ein bisschen Japanisch."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "すこし heißt „ein bisschen“. Ehrlich und bescheiden – das kommt in Japan gut an."
+    },
+    {
+     "s": "me",
+     "t": "Und wenn ich gar nichts kann?"
+    },
+    {
+     "s": "takada",
+     "t": "Dann sagst du: すこしだけ – nur ein kleines bisschen. Aber du kannst schon mehr, als du denkst.",
+     "p": "ponder"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Ich kann ein bisschen Japanisch.“",
+     "tiles": [
+      {
+       "jp": "できます",
+       "ro": "dekimasu"
+      },
+      {
+       "jp": "にほんご",
+       "ro": "nihongo"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      },
+      {
+       "jp": "すこし",
+       "ro": "sukoshi"
+      },
+      {
+       "jp": "が",
+       "ro": "ga"
+      }
+     ],
+     "answer": [
+      "にほんご",
+      "が",
+      "すこし",
+      "できます"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Ich kann Deutsch.“",
+     "tiles": [
+      {
+       "jp": "が",
+       "ro": "ga"
+      },
+      {
+       "jp": "です",
+       "ro": "desu"
+      },
+      {
+       "jp": "できます",
+       "ro": "dekimasu"
+      },
+      {
+       "jp": "ドイツご",
+       "ro": "doitsugo"
+      }
+     ],
+     "answer": [
+      "ドイツご",
+      "が",
+      "できます"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "ponder",
+     "jp": "じょうずですね。",
+     "ro": "Jōzu desu ne.",
+     "t": "Sehr geschickt! Jetzt aber zum Essen – Kenji wartet in der Mensa."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "できます",
+     "ro": "dekimasu",
+     "de": "können"
+    },
+    {
+     "jp": "すこし",
+     "ro": "sukoshi",
+     "de": "ein bisschen"
+    },
+    {
+     "jp": "じょうず",
+     "ro": "jōzu",
+     "de": "geschickt, gut (in etwas)"
+    }
+   ],
+   "hint": "Kenji in der Mensa."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Wenn jemand sagt, er ist Student, und du auch – dann nimmst du も."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "わたしは がくせいです。",
+     "ro": "Watashi wa gakusei desu.",
+     "t": "Ich bin Student."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "わたしも がくせいです！",
+     "ro": "Watashi mo gakusei desu!",
+     "t": "Ich bin auch Student!"
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "も heißt „auch“ und ersetzt einfach は. Easy, oder?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Kenji sagt: „わたしは がくせいです。“ Wie sagst du „Ich auch“?",
+     "options": [
+      {
+       "jp": "わたしは がくせいです",
+       "ro": "watashi wa gakusei desu"
+      },
+      {
+       "jp": "わたしが がくせいです",
+       "ro": "watashi ga gakusei desu"
+      },
+      {
+       "jp": "わたしも がくせいです",
+       "ro": "watashi mo gakusei desu"
+      },
+      {
+       "jp": "わたしを がくせいです",
+       "ro": "watashi o gakusei desu"
+      }
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Exakt! Wenn du auf dem großen Campus in Suita bist, frag mal nach dem Weg – das ist die nächste Lektion."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "も",
+     "ro": "mo",
+     "de": "auch"
+    }
+   ],
+   "hint": "Der große Handai-Campus in Suita."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Nach dem Weg fragen ist das Wichtigste in einer fremden Stadt!"
+    },
+    {
+     "s": "haruka",
+     "p": "clipboard",
+     "jp": "トイレは どこですか。",
+     "ro": "Toire wa doko desu ka.",
+     "t": "Wo ist die Toilette?"
+    },
+    {
+     "s": "haruka",
+     "p": "wave",
+     "jp": "あそこです。",
+     "ro": "Asoko desu.",
+     "t": "Dort drüben."
+    },
+    {
+     "s": "haruka",
+     "p": "think",
+     "t": "か am Ende macht den Satz zur Frage. Ein Fragezeichen braucht man eigentlich nicht."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Wo ist die Toilette?“",
+     "tiles": [
+      {
+       "jp": "どこ",
+       "ro": "doko"
+      },
+      {
+       "jp": "あそこ",
+       "ro": "asoko"
+      },
+      {
+       "jp": "トイレ",
+       "ro": "toire"
+      },
+      {
+       "jp": "ですか",
+       "ro": "desu ka"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      }
+     ],
+     "answer": [
+      "トイレ",
+      "は",
+      "どこ",
+      "ですか"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Wo ist die Bibliothek?“",
+     "tiles": [
+      {
+       "jp": "は",
+       "ro": "wa"
+      },
+      {
+       "jp": "ですか",
+       "ro": "desu ka"
+      },
+      {
+       "jp": "としょかん",
+       "ro": "toshokan"
+      },
+      {
+       "jp": "どこ",
+       "ro": "doko"
+      },
+      {
+       "jp": "も",
+       "ro": "mo"
+      }
+     ],
+     "answer": [
+      "としょかん",
+      "は",
+      "どこ",
+      "ですか"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "p": "wave",
+     "t": "Perfekt. Sōta in Minō wollte wissen, woher du kommst. Er übt mit allen Austauschstudierenden."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "どこ",
+     "ro": "doko",
+     "de": "wo"
+    },
+    {
+     "jp": "あそこ",
+     "ro": "asoko",
+     "de": "dort drüben"
+    },
+    {
+     "jp": "トイレ",
+     "ro": "toire",
+     "de": "Toilette"
+    }
+   ],
+   "hint": "Der Handai-Campus der Fremdsprachen."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Woher kommst du? Das sagt man so:"
+    },
+    {
+     "s": "sota",
+     "p": "point",
+     "jp": "ドイツから きました。",
+     "ro": "Doitsu kara kimashita.",
+     "t": "Ich komme aus Deutschland."
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "から heißt „von / aus“. きました heißt „bin gekommen“."
+    },
+    {
+     "s": "sota",
+     "p": "puzzled",
+     "jp": "どこから きましたか。",
+     "ro": "Doko kara kimashita ka.",
+     "t": "Woher kommst du?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet から?",
+     "options": [
+      "nach",
+      "mit",
+      "aus / von",
+      "und"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Wie fragst du jemanden, woher er kommt?",
+     "options": [
+      {
+       "jp": "どこですか",
+       "ro": "doko desu ka"
+      },
+      {
+       "jp": "どこから きましたか",
+       "ro": "doko kara kimashita ka"
+      },
+      {
+       "jp": "なんですか",
+       "ro": "nan desu ka"
+      },
+      {
+       "jp": "いくらですか",
+       "ro": "ikura desu ka"
+      }
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Sehr gut! Bald brauchst du Uhrzeiten – irgendwo in Kita fahren die Züge im Minutentakt."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "から",
+     "ro": "kara",
+     "de": "aus / von"
+    },
+    {
+     "jp": "きました",
+     "ro": "kimashita",
+     "de": "bin gekommen"
+    }
+   ],
+   "hint": "Irgendwo in Kita, wo die Züge im Minutentakt fahren."
+  }
+ }
+}

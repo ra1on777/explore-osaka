@@ -1,0 +1,16 @@
+{
+  "name": "explore-osaka",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/build.mjs --serve",
+    "build": "node tools/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate": "node tools/validate.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "typescript": "5.6.3"
+  }
+}

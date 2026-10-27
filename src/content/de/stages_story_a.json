@@ -1,0 +1,995 @@
+{
+ "STRANG_GEOGRAPHY": {
+  "1": {
+   "mood": "morning",
+   "lines": [
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Ah, ein neues Gesicht! Ich bin Dr. Seto, Geographie. Weißt du, dass du gerade auf einem Hügel stehst? Dem Machikaneyama."
+    },
+    {
+     "s": "me",
+     "t": "Einem Hügel? Hier sieht doch alles ziemlich flach aus."
+    },
+    {
+     "s": "seto",
+     "p": "book",
+     "t": "Täuscht! Unter dem Campus liegen Schichten aus Sand, Kies und Ton – die sogenannte Ōsaka-Gruppe. Flüsse und Meer haben sie über Jahrmillionen abgelagert."
+    },
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Später hob sich das Land, und Flüsse schnitten Täler hinein. So entstanden die Hügel im Norden von Ōsaka. Ein [[山|やま|yama|Berg]] ist das hier also noch nicht."
+    },
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Wenn du sehen willst, wie Wasser Gestein formt, dann komm zum Minō-Wasserfall. Dort treffen wir uns!"
+    }
+   ],
+   "hint": "Dr. Seto wartet am Minō-Wasserfall."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Da bist du ja! Hörst du, wie laut das ist? Rund 33 Meter stürzt das Wasser hier hinunter."
+    },
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Fallendes Wasser hat enorme Kraft. Am Fuß des Falls wirbelt es Steine herum, und die schleifen den Fels aus wie Sandpapier."
+    },
+    {
+     "s": "me",
+     "t": "Wie lange dauert so etwas?"
+    },
+    {
+     "s": "seto",
+     "t": "Tausende Jahre. Aber Wasser hat Zeit. Schau genau hin, dann siehst du die Spuren selbst.",
+     "p": "book"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Stelle, an der das Wasser den Fels am stärksten aushöhlt.",
+     "x": 47,
+     "y": 56,
+     "r": 8,
+     "closeup": {
+      "art": "plungepool",
+      "title": "Der Kolk",
+      "text": "Am Fuß des Wasserfalls hat das herabstürzende Wasser ein tiefes Becken ausgespült – einen Kolk (auch Gumpe). Mitgerissene Steine wirken dabei wie Schleifmittel."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "seto",
+     "p": "book",
+     "t": "Genau! Weil der Fels unten schneller abgetragen wird, bricht die Kante oben irgendwann nach. So wandert ein Wasserfall über sehr lange Zeit talaufwärts."
+    },
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Als Nächstes geht es um die Höhenunterschiede zwischen Hügeln und Flusstälern. Meine Kollegin wartet dort, wo eine Einschienenbahn über einen Campus gleitet."
+    }
+   ],
+   "hint": "Dort, wo eine Einschienenbahn über einen Campus gleitet."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Hi! Dr. Seto hat dich angekündigt. Ich bin Aoi, ich studiere Verkehrsplanung."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Schau mal hoch: die Ōsaka Monorail. Sie fährt auf Stelzen über die Senri-Hügel – rauf und runter, ohne dass Straßen oder Täler im Weg sind."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "In welligem Gelände ist das ideal: Eine Hochbahn überbrückt die Senken einfach, statt sie mühsam zu umfahren."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Was schätzt du: Wie lang ist das gesamte Streckennetz der Ōsaka Monorail?",
+     "min": 5,
+     "max": 80,
+     "step": 1,
+     "answer": 28,
+     "unit": "km",
+     "tol": 0.1
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Rund 28 Kilometer! Damit war sie lange Zeit laut Guinness-Buch die längste Einschienenbahn der Welt."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Dr. Seto will dir als Nächstes das alte Kanalnetz zeigen. Ich soll dir nur sagen: im alten Kaufmannsviertel an den Flüssen von Kita."
+    }
+   ],
+   "hint": "Irgendwo im alten Kaufmannsviertel an den Flüssen von Kita."
+  }
+ },
+ "STRANG_NATURE_RETREAT": {
+  "1": {
+   "mood": "morning",
+   "lines": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Oh – hallo! Sorry, ich hab dich gar nicht kommen sehen. Ich bin Maya, auch Austauschstudentin."
+    },
+    {
+     "s": "me",
+     "t": "{{name}}, aus Deutschland. Was machst du so früh hier draußen?"
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "In den Fluren ist es mir oft zu voll. Ich suche mir Orte, an denen es still ist."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Gestern war ich am Minō-Wasserfall. Auf der roten Brücke saß ein Kater und hat mich angesehen, als wollte er mir etwas erzählen."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Klingt verrückt, oder? Geh doch mal hin. Vielleicht wartet er ja auf dich."
+    }
+   ],
+   "hint": "Ein Kater am Minō-Wasserfall – angeblich auf der roten Brücke."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "goro",
+     "t": "Miau … Du bist also der Neue, von dem Maya erzählt hat."
+    },
+    {
+     "s": "me",
+     "t": "Moment – du kannst sprechen?!"
+    },
+    {
+     "s": "goro",
+     "t": "Nur mit Leuten, die genau hinschauen. Ich bin Goro. Beweis mir, dass du das kannst."
+    },
+    {
+     "s": "goro",
+     "t": "Jeder [[木|き|ki|Baum]] hier verrät sich durch seine Blätter. Welcher Umriss gehört zu welchem Baum?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "leaf",
+     "rounds": [
+      {
+       "q": "Dieses Blatt hat fünf bis sieben spitze Finger. Von welchem Baum stammt es?",
+       "art": "maple",
+       "options": [
+        "Japanischer Ahorn (Momiji)",
+        "Ginkgo",
+        "Kirschbaum",
+        "Kiefer"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Ein Fächer mit einer Kerbe in der Mitte. Welcher Baum?",
+       "art": "ginkgo",
+       "options": [
+        "Ahorn",
+        "Ginkgo",
+        "Bambus",
+        "Kiefer"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Lange, feine Nadeln, immer zu zweit. Welcher Baum?",
+       "art": "pine",
+       "options": [
+        "Kirschbaum",
+        "Ahorn",
+        "Kiefer (Matsu)",
+        "Ginkgo"
+       ],
+       "answer": 2
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "goro",
+     "t": "Nicht schlecht. Im Herbst färbt sich der Ahorn hier knallrot. Dann drängen sich die Menschen auf dem Weg – und verkaufen frittierte Ahornblätter."
+    },
+    {
+     "s": "goro",
+     "t": "Maya ist übrigens weitergezogen. Zu dem Ort, an dem eine riesige weiße Gestalt mit goldenem Gesicht über die Wiesen wacht."
+    }
+   ],
+   "hint": "Wo eine riesige weiße Gestalt mit goldenem Gesicht über die Wiesen wacht."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Du hast den Kater getroffen? Ich wusste es!"
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Das hier ist der Expo-'70-Park. Zur Weltausstellung 1970 standen hier überall Pavillons. Heute ist fast nur noch Wiese und Wald übrig."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Und mittendrin dieser Turm: der Turm der Sonne von Tarō Okamoto. Er hat mehrere Gesichter."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde das Gesicht, das in die Zukunft blicken soll.",
+     "x": 62,
+     "y": 12,
+     "r": 7,
+     "closeup": {
+      "art": "goldenface",
+      "title": "Das goldene Gesicht",
+      "text": "Ganz oben glänzt das goldene Gesicht – es steht für die Zukunft. In der Mitte sieht man das Gesicht der Gegenwart, auf der Rückseite die schwarze Sonne der Vergangenheit."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Komisch, oder? So ein lautes Kunstwerk – und trotzdem ist es hier so ruhig."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Ich will als Nächstes ans Wasser. Ein Barista hat mir die Weiden am Fluss empfohlen, im Viertel Kitahama."
+    }
+   ],
+   "hint": "Am Flussufer im Viertel Kitahama."
+  }
+ },
+ "STRANG_NIGHTLIFE_ETIQUETTE": {
+  "1": {
+   "mood": "golden",
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "{{name}}! Du hast heute Abend nichts vor. Ich weiß es. Ich seh's dir an."
+    },
+    {
+     "s": "me",
+     "t": "… stimmt sogar."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Perfekt. Ōsaka bei Nacht ist was ganz anderes als der Campus: Neonlicht, Straßenmusik, Essen an jeder Ecke."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Ein Freund von mir, Ryō, legt in der Szene auf. Wir treffen ihn im Sankaku-Kōen – dem Dreieckspark in Amerikamura."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Und bring Hunger mit. In Ōsaka sagt man kuidaore – essen, bis man pleite ist."
+    }
+   ],
+   "hint": "Kenji und Ryō warten im Dreieckspark (Sankaku-Kōen) in Amerikamura."
+  }
+ },
+ "STRANG_PHILOSOPHY_THEOLOGY": {
+  "1": {
+   "lines": [
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Ein Student aus Deutschland auf diesem Rasen. Wie passend."
+    },
+    {
+     "s": "me",
+     "t": "Wieso passend?"
+    },
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Ich bin Kiryū und lehre vergleichende Philosophie. Mich interessiert, was passiert, wenn westliches und japanisches Denken sich begegnen."
+    },
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Diese Universität ist selbst so eine Begegnung: gegründet von einem amerikanischen Missionar – mitten in Japan."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Bleib noch einen Moment. Ich möchte wissen, wie aufmerksam du zuhörst."
+    }
+   ],
+   "hint": "Dr. Kiryū ist noch hier auf dem Rasen von Kwansei Gakuin."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Kwansei Gakuin wurde 1889 in Kōbe gegründet – als kleine christliche Schule. 1929 zog sie hierher nach Nishinomiya."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "In der Meiji-Zeit öffnete sich Japan dem Westen. Missionsschulen brachten Englisch, Naturwissenschaft und Christentum gleich mit."
+    },
+    {
+     "s": "me",
+     "t": "Also kam das Christentum über die Schulen nach Japan?"
+    },
+    {
+     "s": "kiryu",
+     "t": "Teilweise. Viele Familien schickten ihre Kinder wegen der Sprachen – nicht wegen der Religion. Aber hör gut zu: Ich frage dich gleich etwas.",
+     "p": "doubt"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wer hat Kwansei Gakuin 1889 gegründet?",
+     "options": [
+      "Der methodistische Missionar Walter R. Lambuth",
+      "Fukuzawa Yukichi",
+      "Niijima Jō",
+      "Ogata Kōan"
+     ],
+     "answer": 0,
+     "explain": "Fukuzawa gründete die Keiō-Universität, Niijima die Dōshisha und Ogata Kōan die Tekijuku-Schule in Ōsaka."
+    }
+   ],
+   "after": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Richtig. Aber Japan hatte längst eigene Antworten auf die großen Fragen."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Frag jemanden, der an die Kami glaubt. Herr Yamada ist oft am Nishinomiya-Schrein."
+    }
+   ],
+   "hint": "Herr Yamada am Nishinomiya-Schrein."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Willkommen. Dr. Kiryū schickt dich? Dann willst du sicher über die Kami sprechen."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Kami sind keine fernen Götter über der Welt. Sie wohnen in ihr – in einem alten Baum, einem Felsen, einem Berg, einem Wasserfall."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "In vielen westlichen Vorstellungen steht ein Schöpfer außerhalb der Welt. Im Shintō ist das Heilige mitten im Alltag."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Darum verbeugen wir uns am Tor, bevor wir eintreten. Wir betreten einen Ort, an dem Kami gegenwärtig sind."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wo sind die Kami laut Herrn Yamada zu finden?",
+     "options": [
+      "In der Natur selbst – in Bäumen, Felsen und Bergen",
+      "Nur in einem Himmel jenseits der Welt",
+      "Ausschließlich im Kaiserpalast",
+      "Nur in heiligen Büchern"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Gut zugehört. Dieser Schrein ist übrigens Ebisu geweiht, dem Kami des Handels und der Fischerei."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Prof. Takada wollte dich sprechen – auf dem Campus, auf dem du selbst wohnst. An der Hauptachse."
+    }
+   ],
+   "hint": "An der Hauptachse deines eigenen Campus."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Ah, da bist du. Weißt du eigentlich, woher diese Universität kommt?"
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Im Ōsaka der Edo-Zeit gründeten Kaufleute 1724 eine eigene Akademie, das Kaitokudō. Dort diskutierte man Moral, Wirtschaft und Vernunft."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Und 1838 eröffnete der Arzt Ogata Kōan die Tekijuku, eine Schule für westliche Medizin. Beide gelten als geistige Wurzeln der Handai."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Hier hängt irgendwo eine Infotafel zur Geschichte der Universität. Tippe sie an.",
+     "x": 47,
+     "y": 72,
+     "r": 5,
+     "closeup": {
+      "art": "board",
+      "title": "Infotafel: Wurzeln der Handai",
+      "text": "Kaitokudō (1724): Akademie der Kaufleute von Ōsaka. Tekijuku (1838): Ogata Kōans Schule für westliche Medizin. Beide gelten als Vorläufer der Universität Ōsaka."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Eine Stadt der Händler, die ihre eigenen Denker ausbildet. Das passt zu Ōsaka."
+    },
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Dr. Kiryū spricht heute im Cybermedia Center in Suita über Maschinen und Bewusstsein. Geh hin!"
+    }
+   ],
+   "hint": "Vortrag von Dr. Kiryū im Cybermedia Center in Suita."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Sieh dir diese Maschine an. Sie sieht fast aus wie ein Mensch. Ist da jemand drin?"
+    },
+    {
+     "s": "me",
+     "t": "Ich glaube nicht … aber ganz sicher bin ich mir nicht."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Genau dieses Unbehagen erforschen sie hier. Wann behandeln wir etwas als Gegenüber?"
+    },
+    {
+     "s": "kiryu",
+     "p": "doubt",
+     "t": "In Japan fällt die Antwort oft offener aus. Wenn sogar ein Felsen Kami beherbergen kann – warum nicht auch eine Maschine?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welcher Forscher der Universität Ōsaka wurde mit lebensechten Androiden (Geminoiden) weltbekannt?",
+     "options": [
+      "Shinya Yamanaka",
+      "Hideki Yukawa",
+      "Hiroshi Ishiguro",
+      "Momofuku Andō"
+     ],
+     "answer": 2,
+     "explain": "Yukawa war Physiker und Japans erster Nobelpreisträger, Yamanaka erforscht iPS-Stammzellen, Andō erfand die Instant-Nudeln."
+    }
+   ],
+   "after": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Ishiguro hat sogar einen Androiden nach seinem eigenen Vorbild gebaut. Ein Doppelgänger – ideal zum Philosophieren."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Mein nächster Halt ist eine Privatuniversität in Senriyama, südlich von hier. Dort geht es um Recht."
+    }
+   ],
+   "hint": "Eine Privatuniversität in Senriyama."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Die Kansai-Universität begann 1886 als Rechtsschule. Japan brauchte damals sehr schnell ein modernes Recht."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Die Meiji-Regierung holte sich Vorbilder aus Europa. Ein französischer Jurist, Gustave Boissonade, entwarf frühe Gesetzbücher."
+    },
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Das Bürgerliche Gesetzbuch von 1898 orientierte sich dann stark am deutschen Entwurf. Deine Heimat steckt also in Japans Recht."
+    },
+    {
+     "s": "me",
+     "t": "Das hätte ich nicht gedacht."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "An welchen Vorbildern orientierte sich Japans modernes Recht in der Meiji-Zeit vor allem?",
+     "options": [
+      "Am englischen Gewohnheitsrecht",
+      "Am französischen und am deutschen Recht",
+      "Am chinesischen Kaiserrecht",
+      "An der US-Verfassung"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "kiryu",
+     "p": "explain",
+     "t": "Genau. Übersetzen hieß damals auch: Begriffe neu erfinden. Für Wörter wie „Recht“ oder „Freiheit“ brauchte man neue Ausdrücke."
+    },
+    {
+     "s": "kiryu",
+     "p": "think",
+     "t": "Wir sehen uns im Nakanoshima Center der Handai wieder – auf der Flussinsel in der Innenstadt."
+    }
+   ],
+   "hint": "Handai Nakanoshima Center auf der Flussinsel."
+  }
+ },
+ "STRANG_CULTURE_JAPAN": {
+  "1": {
+   "lines": [
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Oh! Besuch. Ich bin Emi, ich erforsche Volksbräuche. Hast du heute schon in den Kalender geschaut?"
+    },
+    {
+     "s": "me",
+     "t": "Ähm … ist heute nicht einfach Dienstag?"
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Im alten japanischen Kalender gibt es mehr als Wochentage! Zum Beispiel die Rokuyō – sechs Tagesarten, die sich immer wiederholen."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Taian gilt als Glückstag, perfekt für Hochzeiten. Butsumetsu dagegen als Unglückstag. Viele achten bis heute darauf."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Und das Jahr ist in 24 Abschnitte geteilt, die Sekki – etwa Risshun, der Frühlingsbeginn Anfang Februar."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Bleib kurz hier! Ich habe ein Kartenspiel, das die Monate in Bildern zeigt."
+    }
+   ],
+   "hint": "Emi ist noch im Universitätsmuseum."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Das sind Hanafuda – Blumenkarten. Zwölf Monate, jeder mit seiner eigenen Pflanze."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Fangen wir mit Frühling und Sommer an. Ordne die Monate den richtigen Motiven zu!"
+    },
+    {
+     "s": "me",
+     "t": "Sieht hübsch aus. Spielt man damit auch richtig?"
+    },
+    {
+     "s": "emi",
+     "t": "Oh ja! An Neujahr spielen viele Familien Koi-Koi. Aber erst lernen wir die Bilder.",
+     "p": "inspect"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "hanafuda",
+     "rounds": [
+      {
+       "q": "Welche Pflanze gehört zum März?",
+       "art": "hf-3",
+       "options": [
+        "Pflaumenblüte",
+        "Kirschblüte",
+        "Pfingstrose",
+        "Schwertlilie"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Und zum Februar?",
+       "art": "hf-2",
+       "options": [
+        "Pflaumenblüte",
+        "Glyzinie",
+        "Kirschblüte",
+        "Ahorn"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Der April zeigt herabhängende lila Blütentrauben …",
+       "art": "hf-4",
+       "options": [
+        "Schwertlilie",
+        "Kiefer",
+        "Glyzinie",
+        "Pfingstrose"
+       ],
+       "answer": 2
+      },
+      {
+       "q": "Mai – eine Blume, die am Wasser wächst.",
+       "art": "hf-5",
+       "options": [
+        "Chrysantheme",
+        "Schwertlilie",
+        "Glyzinie",
+        "Buschklee"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Juni – große, prächtige Blüten mit Schmetterlingen.",
+       "art": "hf-6",
+       "options": [
+        "Kirschblüte",
+        "Weide",
+        "Pflaume",
+        "Pfingstrose"
+       ],
+       "answer": 3
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Wunderbar! In Japan siehst du die Jahreszeiten fast überall – auf Karten, Süßigkeiten, Teeschalen."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Als Nächstes will ich mir Glückslose an einem alten Schrein ansehen. Ich warte an der roten, steil gewölbten Brücke."
+    }
+   ],
+   "hint": "An einer roten, steil gewölbten Brücke vor einem alten Schrein."
+  }
+ },
+ "STRANG_CULTURE_KANSAI": {
+  "1": {
+   "lines": [
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Yo! Siehst du die Efeuwand? Dieses Stadion steht seit 1924. Kōshien – der heilige Rasen des Baseballs."
+    },
+    {
+     "s": "me",
+     "t": "Ich dachte, Fußball wäre hier größer."
+    },
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Ha! Nicht in Kansai. Hier spielen die Hanshin Tigers, und jeden Sommer kämpfen Oberschulteams aus ganz Japan um den Titel."
+    },
+    {
+     "s": "takeshi",
+     "p": "think",
+     "t": "Weißt du, Tōkyō ist die Hauptstadt. Aber Kansai war über tausend Jahre lang das Zentrum – Nara, Kyōto, Ōsaka."
+    },
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Diesen Stolz spürst du hier überall. Geh rein auf die Tribüne, da sitzt mein Kumpel Daiki."
+    }
+   ],
+   "hint": "Daiki sitzt auf der Tribüne im Kōshien-Stadion."
+  },
+  "2": {
+   "mood": "night",
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Hey, du bist der Neue von der Handai? Setz dich! Hörst du das? DAS ist Kansai!"
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Tigers-Fans sind die verrücktesten in ganz Japan. Als die Tigers 1985 Meister wurden, sprangen Fans vor Freude in den Dōtonbori-Kanal."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Einer hat eine Statue von Colonel Sanders mitgenommen – die Werbefigur vor einem Fast-Food-Laden. Platsch, ab in den Kanal."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Danach kam angeblich der Fluch: 38 Jahre lang kein Sieg in der Japan Series. Erst 2023 war es vorbei!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was landete 1985 laut Daiki im Dōtonbori-Kanal?",
+     "options": [
+      "Ein goldener Baseballschläger",
+      "Die Meisterschaftstrophäe",
+      "Eine Statue von Colonel Sanders",
+      "Ein Tiger-Maskottchen"
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Genau! Die Statue wurde erst 2009 wiedergefunden. Kansai vergisst nichts."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Takeshis Freundin Emi will dir was über die Gegend erzählen. Sie wartet beim Uhrturm im spanischen Missionsstil."
+    }
+   ],
+   "hint": "Beim Uhrturm im spanischen Missionsstil."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Hier bist du! Schön, oder? Dieser Campus ist ein Kind der Hanshin-Moderne."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Zwischen Ōsaka und Kōbe entstanden ab den 1910er-Jahren entlang der Bahnlinien neue Vorstädte: Villen, Cafés, Jazz, westliche Mode."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Ein Bahnunternehmer hatte die Idee: erst die Bahn, dann Häuser daran, dann Freizeit – ein Kaufhaus am Bahnhof und ein Theater in Takarazuka."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie hieß der Bahnunternehmer, der die Hanshin-Moderne mit Vorstädten und der Takarazuka-Revue prägte?",
+     "options": [
+      "Matsushita Kōnosuke",
+      "Kobayashi Ichizō",
+      "Torii Shinjirō",
+      "Andō Momofuku"
+     ],
+     "answer": 1,
+     "explain": "Matsushita gründete Panasonic, Torii das Spirituosenhaus Suntory, Andō erfand die Instant-Nudeln."
+    }
+   ],
+   "after": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Richtig! Kobayashi gründete die Hankyū-Bahn. Seine Revue, in der nur Frauen auftreten, gibt es bis heute."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Komm mit zum Nishinomiya-Schrein. Takeshi will dich dort im Dialekt-Karuta herausfordern!"
+    }
+   ],
+   "hint": "Takeshi wartet am Nishinomiya-Schrein."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Karuta! Ich sage einen Satz auf Kansai-ben, du tippst so schnell wie möglich auf die richtige Bedeutung."
+    },
+    {
+     "s": "takeshi",
+     "p": "think",
+     "t": "Kansai-ben ist kein Standardjapanisch – aber wer hier lebt, hört es jeden Tag. Bereit?"
+    },
+    {
+     "s": "me",
+     "t": "Und wenn ich falsch tippe?"
+    },
+    {
+     "s": "takeshi",
+     "t": "Dann lachen alle – auf Kansai-Art. Das gehört dazu!",
+     "p": "explain"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "karuta",
+     "timed": 8,
+     "rounds": [
+      {
+       "jp": "おおきに",
+       "ro": "ōkini",
+       "options": [
+        "Tschüss",
+        "Danke",
+        "Wie teuer?",
+        "Wirklich?"
+       ],
+       "answer": 1
+      },
+      {
+       "jp": "ほんま？",
+       "ro": "honma?",
+       "options": [
+        "Wirklich?",
+        "Danke",
+        "Das geht nicht",
+        "Gut gemacht"
+       ],
+       "answer": 0
+      },
+      {
+       "jp": "あかん",
+       "ro": "akan",
+       "options": [
+        "Lecker",
+        "Ich komme",
+        "Das geht nicht!",
+        "Danke"
+       ],
+       "answer": 2
+      },
+      {
+       "jp": "なんでやねん！",
+       "ro": "nande ya nen!",
+       "options": [
+        "Guten Morgen",
+        "Wie geht's?",
+        "Ich weiß",
+        "Wieso das denn?!"
+       ],
+       "answer": 3
+      },
+      {
+       "jp": "もうかりまっか？",
+       "ro": "mōkarimakka?",
+       "options": [
+        "Läuft das Geschäft?",
+        "Bist du müde?",
+        "Hast du Hunger?",
+        "Wo ist der Bahnhof?"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Stark! Und auf „mōkarimakka?“ antwortet man übrigens „bochibochi denna“ – so lala."
+    },
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Emi ist schon weiter. Sie wollte in eine überdachte Einkaufsstraße in einer alten Arbeiterstadt an der Hanshin-Linie."
+    }
+   ],
+   "hint": "Eine überdachte Einkaufsstraße in einer alten Arbeiterstadt an der Hanshin-Linie."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Willkommen in Amagasaki! Fabriken, Werften, Arbeiter – und Leute, die sagen, was sie denken."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Hier im Shōtengai kennt man sich. Gemüsehändler, Imbissfrau, Drogist – alle grüßen einander."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Und fast alle halten zum selben Baseballteam. Siehst du, wem hier gehuldigt wird?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde das Zeichen der Tigers-Liebe über der Einkaufsstraße.",
+     "x": 79,
+     "y": 37,
+     "r": 7,
+     "closeup": {
+      "art": "tiger",
+      "title": "Der Tiger über der Straße",
+      "text": "Ein grinsender Tiger hängt über den Läden – ein Gruß an die Hanshin Tigers. Amagasaki liegt direkt an der Hanshin-Bahnlinie zwischen Ōsaka und Kōbe."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Gefunden! Hier ist man nicht nur Kunde, sondern Teil der Nachbarschaft."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Für den nächsten Teil brauche ich Bücher aus der Stadt – auf der Flussinsel mitten in Kita."
+    }
+   ],
+   "hint": "Auf der Flussinsel mitten in Kita."
+  }
+ }
+}
