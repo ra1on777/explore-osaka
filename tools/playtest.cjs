@@ -38,9 +38,10 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
   const total = await page.evaluate(() => window.__eo.data.QUESTS.reduce((a, q) => a + q.stages.length, 0));
   let played = 0;
   let shots = 0;
+  let pickedMenus = 0;
   const shot = async (n) => { if (shotDir && shots < 40) { shots++; await page.screenshot({ path: `${shotDir}/${vpName}-${String(shots).padStart(2, '0')}-${n}.png` }); } };
 
-  for (let guard = 0; guard < 200 && played < total; guard++) {
+  for (let guard = 0; guard < 800 && played < total; guard++) {
     // Nächste spielbare Etappe bestimmen
     const next = await page.evaluate(() => {
       const { engine, data, G } = window.__eo;
@@ -79,39 +80,35 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
     try { await page.click(`.npc[data-npc="${next.npc}"]`, { timeout: 4000 }); }
     catch (e) { await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` }); console.log('FAIL', JSON.stringify(next), await page.evaluate(() => document.querySelector('.panel').innerText.slice(0, 400))); throw e; }
     await page.waitForTimeout(100);
-    let cur = next;
-    for (;;) {
-      await page.waitForTimeout(60);
-      const c = await page.evaluate(([q, i]) => window.__eo.data.stageContent(q, i, window.__eo.G.flags.partner), [cur.q, cur.i]);
-      await clickDialogs();
-      for (const t of c.tasks || []) {
-        await page.waitForTimeout(80);
-        if (played % 7 === 0) await shot(`${cur.q}-${cur.i}-${t.type}`);
-        try { await solve(page, t); }
-        catch (e) {
-          await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` });
-          console.log('FAIL', JSON.stringify(cur), t.type, await page.evaluate(() => document.querySelector('.panel')?.innerText.slice(0, 300)));
-          throw e;
-        }
-        if (t.type !== 'route' && t.type !== 'pairs') {
-          const btn = await page.$('.task .btn.primary.wide');
-          if (btn) await btn.click();
-        }
-        await page.waitForTimeout(80);
+    if (await page.$('.offer-pick')) { pickedMenus++; await page.click(`.offer-pick [data-quest="${next.q}"]`); await page.waitForTimeout(80); }
+    const cur = next;
+    await page.waitForTimeout(60);
+    const c = await page.evaluate(([q, i]) => window.__eo.data.stageContent(q, i, window.__eo.G.flags.partner), [cur.q, cur.i]);
+    await clickDialogs();
+    const fetchReturn = await page.evaluate((q) => window.__eo.engine.peekProgress(q).fetch === 'got', cur.q);
+    for (const t of fetchReturn ? [] : c.tasks || []) {
+      await page.waitForTimeout(80);
+      if (played % 7 === 0) await shot(`${cur.q}-${cur.i}-${t.type}`);
+      try { await solve(page, t); }
+      catch (e) {
+        await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` });
+        console.log('FAIL', JSON.stringify(cur), t.type, await page.evaluate(() => document.querySelector('.panel')?.innerText.slice(0, 300)));
+        throw e;
       }
-      await clickDialogs();
-      await page.waitForSelector('.result');
-      if (played % 9 === 0) await shot(`${cur.q}-${cur.i}-result`);
-      const isFetchStart = (await page.textContent('.result h3').catch(() => '')) === 'Neuer Auftrag';
-      await page.click('.result .btn.primary');
-      if (!isFetchStart) played++;
-      await page.waitForTimeout(120);
-      const more = await page.$('.result .btn.primary');
-      if (!more) break;
-      await more.click();
-      await page.waitForTimeout(120);
-      cur = await page.evaluate(() => window.__eoCurrent);
+      if (t.type !== 'route' && t.type !== 'pairs') {
+        const btn = await page.$('.task .btn.primary.wide');
+        if (btn) await btn.click();
+      }
+      await page.waitForTimeout(80);
     }
+    await clickDialogs();
+    await page.waitForSelector('.result');
+    if (played % 9 === 0) await shot(`${cur.q}-${cur.i}-result`);
+    const isFetchStart = (await page.textContent('.result h3').catch(() => '')) === 'Neuer Auftrag';
+    await page.click('.result .btn.primary');
+    if (!isFetchStart) played++;
+    await page.waitForTimeout(120);
+    if (await page.$('.result .btn.primary')) throw new Error('Unerwartete Folge-Etappe ohne Auswahl');
   }
   const state = await page.evaluate(() => {
     const { G, engine, data } = window.__eo;
@@ -122,7 +119,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
   await page.click('[data-esc]');
   await page.click('[data-hotkey="v"]');
   await shot('vocab');
-  console.log(JSON.stringify({ played, total, state, errors }, null, 1));
+  console.log(JSON.stringify({ played, total, pickedMenus, state, errors }, null, 1));
   await browser.close();
 })();
 
@@ -227,6 +224,17 @@ async function solve(page, t) {
       for (let i = 0; i < t.items.length; i++) await S(`.sort-card[data-i="${i}"]`);
       await S('.task .row .btn.primary');
       break;
+    case 'photo': {
+      const box = await page.locator('.hot').boundingBox();
+      const setZoom = (z) => page.$eval('.task input[type=range]', (el, z) => { el.value = String(z); el.dispatchEvent(new Event('input')); }, z);
+      await page.mouse.click(box.x + box.width * 0.5, box.y + box.height * 0.6); // daneben
+      await S('.task .row .btn.primary');
+      await setZoom(t.zoom[0]);
+      await page.mouse.click(box.x + (box.width * t.target.x) / 100, box.y + (box.height * t.target.y) / 100);
+      await page.waitForTimeout(200);
+      await S('.task .row .btn.primary');
+      break;
+    }
     case 'kanjigrid':
       for (const p of t.prompts) {
         await page.locator('.kg-tile', { hasText: p.answer }).first().click();

@@ -10,7 +10,7 @@
   },
   {
    "id": "R3",
-   "playable": false
+   "playable": true
   },
   {
    "id": "R4",
@@ -248,6 +248,63 @@
    "y": 699,
    "screens": [
     "26"
+   ]
+  },
+  {
+   "id": "otemon",
+   "region": "R3",
+   "x": 330,
+   "y": 430,
+   "screens": [
+    "30"
+   ]
+  },
+  {
+   "id": "castle",
+   "region": "R3",
+   "x": 560,
+   "y": 360,
+   "screens": [
+    "31",
+    "32a",
+    "32b"
+   ]
+  },
+  {
+   "id": "hokoku",
+   "region": "R3",
+   "x": 585,
+   "y": 560,
+   "screens": [
+    "33"
+   ]
+  },
+  {
+   "id": "hall",
+   "region": "R3",
+   "x": 790,
+   "y": 170,
+   "screens": [
+    "34"
+   ],
+   "flip": true
+  },
+  {
+   "id": "museum",
+   "region": "R3",
+   "x": 215,
+   "y": 600,
+   "screens": [
+    "35"
+   ]
+  },
+  {
+   "id": "otemae",
+   "region": "R3",
+   "x": 150,
+   "y": 450,
+   "screens": [
+    "36"
    ]
   }
  ],
@@ -1011,28 +1068,198 @@
    }
   },
   "30": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "otemon",
+   "jp": "大手門",
+   "kana": "おおてもん",
+   "ro": "Ōte-mon",
+   "slots": {
+    "A": {
+     "x": 22,
+     "bottom": 6,
+     "h": 34
+    },
+    "B": {
+     "x": 45,
+     "bottom": 16,
+     "h": 26
+    },
+    "C": {
+     "x": 70,
+     "bottom": 4,
+     "h": 36
+    }
+   }
   },
   "31": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "castle",
+   "jp": "大阪城",
+   "kana": "おおさかじょう",
+   "ro": "Ōsaka-jō",
+   "slots": {
+    "A": {
+     "x": 25,
+     "bottom": 5,
+     "h": 32
+    },
+    "B": {
+     "x": 50,
+     "bottom": 14,
+     "h": 25
+    },
+    "C": {
+     "x": 75,
+     "bottom": 4,
+     "h": 33
+    }
+   }
   },
   "32a": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "castle",
+   "jp": "天守閣",
+   "kana": "てんしゅかく",
+   "ro": "Tenshukaku",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 24,
+     "bottom": 3,
+     "h": 52
+    },
+    "B": {
+     "x": 52,
+     "bottom": 12,
+     "h": 42
+    },
+    "C": {
+     "x": 78,
+     "bottom": 3,
+     "h": 52
+    }
+   }
   },
   "32b": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "castle",
+   "jp": "展望台",
+   "kana": "てんぼうだい",
+   "ro": "Tenbōdai",
+   "slots": {
+    "A": {
+     "x": 50,
+     "bottom": 4,
+     "h": 48
+    },
+    "B": {
+     "x": 66,
+     "bottom": 14,
+     "h": 38
+    },
+    "C": {
+     "x": 82,
+     "bottom": 5,
+     "h": 46
+    }
+   }
   },
   "33": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "hokoku",
+   "jp": "豊國神社",
+   "kana": "ほうこくじんじゃ",
+   "ro": "Hōkoku-jinja",
+   "slots": {
+    "A": {
+     "x": 35,
+     "bottom": 4,
+     "h": 40
+    },
+    "B": {
+     "x": 52,
+     "bottom": 16,
+     "h": 30
+    },
+    "C": {
+     "x": 75,
+     "bottom": 5,
+     "h": 40
+    }
+   }
   },
   "34": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "hall",
+   "jp": "大阪城ホール",
+   "kana": "おおさかじょうホール",
+   "ro": "Ōsaka-jō hōru",
+   "slots": {
+    "A": {
+     "x": 22,
+     "bottom": 4,
+     "h": 40
+    },
+    "B": {
+     "x": 42,
+     "bottom": 18,
+     "h": 28
+    },
+    "C": {
+     "x": 62,
+     "bottom": 4,
+     "h": 40
+    }
+   }
   },
   "35": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "museum",
+   "jp": "歴史博物館",
+   "kana": "れきしはくぶつかん",
+   "ro": "Rekishi hakubutsukan",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 34,
+     "bottom": 2,
+     "h": 33
+    },
+    "B": {
+     "x": 52,
+     "bottom": 14,
+     "h": 25
+    },
+    "C": {
+     "x": 86,
+     "bottom": 1,
+     "h": 33
+    }
+   }
   },
   "36": {
-   "region": "R3"
+   "region": "R3",
+   "cluster": "otemae",
+   "jp": "大手前",
+   "kana": "おおてまえ",
+   "ro": "Ōtemae",
+   "slots": {
+    "A": {
+     "x": 22,
+     "bottom": 3,
+     "h": 30
+    },
+    "B": {
+     "x": 45,
+     "bottom": 9,
+     "h": 26
+    },
+    "C": {
+     "x": 60,
+     "bottom": 3,
+     "h": 30
+    }
+   }
   },
   "37": {
    "region": "R4"

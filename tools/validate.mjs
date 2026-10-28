@@ -7,7 +7,7 @@ const world = j('src/data/world.json');
 const npcs = j('src/data/npcs.json');
 const lang = 'de';
 const stages = {};
-for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang'])
+for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3'])
   for (const [q, st] of Object.entries(j(`src/content/${lang}/${f}.json`))) stages[q] = { ...stages[q], ...st };
 const art = readFileSync('src/ui/art.ts', 'utf8');
 const hasArt = (k) => new RegExp(`\\b${k}\\s*:`).test(art);
@@ -83,6 +83,10 @@ for (const q of quests) {
           const [lo, hi] = t.ok[k]; const s0 = t.start[k];
           if (!(lo <= hi)) err(`${key}: espresso ${k}`);
           if (s0 >= lo && s0 <= hi && k === 'grind') err(`${key}: espresso Startwert schon richtig`);
+        }
+        if (t.type === 'photo') {
+          if (!(t.target.x >= 0 && t.target.x <= 100 && t.target.y >= 0 && t.target.y <= 100)) err(`${key}: photo Ziel`);
+          if (!(t.zoom[0] >= 1 && t.zoom[1] <= 6 && t.zoom[0] <= t.zoom[1])) err(`${key}: photo Zoom`);
         }
         if (t.type === 'sort' && t.items.length < 3) err(`${key}: sort zu kurz`);
         if (t.type === 'kanjigrid') for (const p of t.prompts) if (!t.grid.includes(p.answer)) err(`${key}: kanjigrid ${p.answer} fehlt`);

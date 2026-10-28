@@ -3,7 +3,7 @@
   "title.continue": "Weiter",
   "title.load": "Spielstand laden",
   "title.settings": "Einstellungen",
-  "title.demo": "Demo · Region 1 & 2: Hokusetsu bis Nakanoshima",
+  "title.demo": "Demo · Regionen 1–3: Hokusetsu bis zur Burg",
   "new.heading": "Neues Spiel",
   "new.name": "Dein Name",
   "new.namePh": "z. B. Lukas",
@@ -96,7 +96,7 @@
   "result.title": "Etappe geschafft!",
   "result.noStars": "Etappe abgeschlossen",
   "result.hint": "Neuer Hinweis im Quest-Log",
-  "result.more": "{npc} hat noch etwas für dich.",
+  "talk.pick": "Worüber möchtest du sprechen?",
   "speaker.nar": "",
   "time.just": "gerade eben",
   "explore.items": "Hier liegt etwas",
@@ -127,5 +127,12 @@
   "task.espresso.perfect": "Goldbraune Crema, süß und rund – perfekt!",
   "task.sort.hint": "Tippe die Karten in der richtigen Reihenfolge an (älteste zuerst).",
   "task.sort.all": "Ordne erst alle Karten ein.",
-  "map.region": "Region"
+  "map.region": "Region",
+  "task.photo.hint": "Tippe oben ins Bild, um den Sucher zu setzen. Mit dem Regler zoomst du.",
+  "task.photo.zoom": "Zoom",
+  "task.photo.shoot": "Auslösen",
+  "task.photo.missing": "Das Motiv ist gar nicht im Bild.",
+  "task.photo.edge": "Angeschnitten – rück das Motiv mehr in die Mitte.",
+  "task.photo.far": "Zu weit weg – das Motiv ist winzig. Zoom näher heran.",
+  "task.photo.near": "Zu nah – vom Motiv sieht man nur noch einen Teil."
 }

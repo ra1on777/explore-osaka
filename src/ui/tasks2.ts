@@ -4,7 +4,7 @@ import { t } from '../i18n';
 import type { Task } from '../types';
 import { closeups, quizMaps } from './art';
 import { h, shuffle, svg, wait } from './dom';
-import { showOverlay } from './scene';
+import { hot, sceneImage, showOverlay } from './scene';
 import { continueBtn, frame, rightFx, wrongFx } from './tasks';
 import { jpBlock, rich } from './text';
 
@@ -234,5 +234,72 @@ export async function kanjigrid(task: Extract<Task, { type: 'kanjigrid' }>): Pro
   }
   rightFx(fb);
   await continueBtn(el);
+  return errors;
+}
+
+// ---------- Foto-Challenge: Sucher auf dem oberen Bildschirm platzieren, zoomen, auslösen ----------
+const ZOOM_W = [80, 62, 46, 34, 24, 16]; // Breite des Suchers in % des Bildes je Zoomstufe (1–6)
+export async function photo(task: Extract<Task, { type: 'photo' }>): Promise<number> {
+  let errors = 0;
+  let zoom = 1;
+  let cx = 50;
+  let cy = 50;
+  const finder = h('div', { class: 'finder' }, h('span', { class: 'finder-grid' }));
+  const place = () => {
+    const w = ZOOM_W[zoom - 1];
+    const hgt = w; // Bild ist 4:3, Sucher ebenfalls 4:3 → gleiche Prozentwerte
+    cx = Math.min(100 - w / 2, Math.max(w / 2, cx));
+    cy = Math.min(100 - hgt / 2, Math.max(hgt / 2, cy));
+    finder.style.cssText = `left:${cx - w / 2}%;top:${cy - hgt / 2}%;width:${w}%;height:${hgt}%`;
+  };
+  hot.classList.add('on', 'photo-mode');
+  hot.append(finder);
+  place();
+  const onTap = (e: PointerEvent) => {
+    const r = hot.getBoundingClientRect();
+    cx = ((e.clientX - r.left) / r.width) * 100;
+    cy = ((e.clientY - r.top) / r.height) * 100;
+    place();
+  };
+  hot.addEventListener('pointerdown', onTap);
+  const out = h('span', { class: 'sl-val' }, `${zoom}×`);
+  const range = h('input', { type: 'range', min: 1, max: ZOOM_W.length, step: 1, value: zoom, 'aria-label': t('task.photo.zoom') }) as HTMLInputElement;
+  range.oninput = () => { zoom = Number(range.value); out.textContent = `${zoom}×`; place(); };
+  const shoot = h('button', { class: 'btn primary' }, t('task.photo.shoot'));
+  const { el, fb } = frame(task.q, h('div', { class: 'small' }, t('task.photo.hint')),
+    h('label', { class: 'sl' }, h('span', { class: 'sl-l' }, t('task.photo.zoom')), range, out), h('div', { class: 'row' }, shoot));
+  await new Promise<void>((resolve) => {
+    shoot.onclick = () => {
+      const w = ZOOM_W[zoom - 1];
+      const dx = Math.abs(task.target.x - cx) / (w / 2);
+      const dy = Math.abs(task.target.y - cy) / (w / 2);
+      sfx.tap();
+      finder.classList.remove('flash');
+      void finder.offsetWidth;
+      finder.classList.add('flash');
+      let problem = '';
+      // Am Bildrand lässt sich der Sucher nicht weiter schieben – dort zählt „angeschnitten“ nicht.
+      const atEdgeX = (cx <= w / 2 + 0.01 && task.target.x < cx) || (cx >= 100 - w / 2 - 0.01 && task.target.x > cx);
+      const atEdgeY = (cy <= w / 2 + 0.01 && task.target.y < cy) || (cy >= 100 - w / 2 - 0.01 && task.target.y > cy);
+      if (dx > 1 || dy > 1) problem = t('task.photo.missing');
+      else if ((dx > 0.62 && !atEdgeX) || (dy > 0.62 && !atEdgeY)) problem = t('task.photo.edge');
+      else if (zoom < task.zoom[0]) problem = t('task.photo.far');
+      else if (zoom > task.zoom[1]) problem = t('task.photo.near');
+      if (problem) { errors++; wrongFx(el, fb, problem); return; }
+      hot.removeEventListener('pointerdown', onTap);
+      hot.classList.remove('on', 'photo-mode');
+      finder.remove();
+      shoot.remove();
+      range.disabled = true;
+      // Abzug: Ausschnitt des Hintergrunds
+      const scale = 100 / w;
+      const pic = h('div', { class: 'print-pic', style: `background-image:url("${sceneImage()}");background-size:${scale * 100}% ${scale * 100}%;background-position:${((cx - w / 2) / (100 - w)) * 100}% ${((cy - w / 2) / (100 - w)) * 100}%` });
+      showOverlay(h('div', { class: 'closeup' }, h('div', { class: 'print' }, pic, h('div', { class: 'print-cap' }, task.title))));
+      rightFx(fb, task.text);
+      resolve();
+    };
+  });
+  await continueBtn(el);
+  showOverlay(null);
   return errors;
 }

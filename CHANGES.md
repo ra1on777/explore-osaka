@@ -24,6 +24,26 @@ Still korrigiert (wie vereinbart) und hier dokumentiert.
 - Fetch-Etappen (Philosophie 7, Literatur 6): Die Gegenstände liegen in der Nakanoshima-Bibliothek (Screen 25), wie im Bundle angegeben.
 - Karte Region 1: „Wohnheim“ beschriftet nach links, „Panasonic Stadium“ etwas tiefer, damit sich die Markierungen nicht mehr überlagern.
 
+## Region 3
+- Screen 36: Das Bundle nennt „Otemon Gakuin – Otemae Campus“, das Artwork zeigt aber den Namensstein 大手前大学 (Ōtemae-Universität). Im Spiel heißt der Ort neutral „Campus Ōtemae“, die Figur STUDENT_OTEMON_BIZ heißt „Mio“. Beide Namen (追手門 / 大手) bezeichnen das Haupttor der Burg – die Etappe erklärt genau das.
+- Hiragana 12: Statt Hentaigana (nicht A1) alte Schreibweisen: ゑ/ゐ und Ladenschilder von rechts nach links.
+- Kanji 9: 城 (nicht N5) ersetzt durch 高; Etappe behandelt 大 小 高 国.
+- Kansai 8 (Museum of History) bleibt außerhalb der Demo, weil der Fetch-Ort (Screen 38) in Region 4 liegt.
+- Geographie 7: Schätzfrage zur Länge des Yodo-gawa (rund 75 km) statt „fluviale Prozesse“ allgemein.
+- Wahrzeichen 2: Der berühmte Läufer an der Ebisu-Brücke wird im Hinweis nur beschrieben, ohne Markennamen.
+
+## Zur Faktenprüfung (Region 3)
+- Uemachi-Hochebene rund 12 km lang (Burg bis Sumiyoshi); vor rund 6000 Jahren Meeresbuchten im Westen und Osten (Kawachi).
+- Naniwa-Palast (7. Jh.) direkt neben dem Museum of History.
+- Burgbau ab 1583 durch Hideyoshi auf dem Gelände des Ishiyama Hongan-ji; Mauersteine teils über 100 Tonnen.
+- Hauptturm 1931 mit Bürgerspenden neu gebaut; Shachihoko als Feuerschutz, meist paarweise.
+- Yodo-gawa rund 75 km (Biwa-See → Seta-gawa → Uji-gawa → Yodo-gawa); neues Flussbett um 1900–1910.
+- Graureiher (aosagi) am Burggraben.
+- Franz Xaver 1549; Hosokawa Gracia in Ōsaka; Missionarsausweisung 1587; Verbot ab 1614; Kakure Kirishitan; Aufhebung 1873.
+- Hideyoshi († 1598) als Toyokuni Daimyōjin verehrt, von den Tokugawa unterdrückt; Hōkoku-Schrein Ōsaka zuerst auf Nakanoshima, 1961 in den Burgpark verlegt.
+- „Sanpō yoshi“ als Leitsatz der Ōmi-Kaufleute.
+- Waagerechte Schilder vor dem Krieg oft von rechts nach links; ゑびす als alte Schreibung.
+
 ## Noch zu korrigieren (außerhalb der Demo, betrifft spätere Regionen)
 - „Dende Town“ → „Den Den Town“ (Café-Kultur, Etappe 6).
 - „Revanchmatch“ → „Revanchematch“ (Fußball, Etappe 12).
@@ -44,7 +64,7 @@ Nach bestem Wissen geschrieben; bitte bei Gelegenheit gegenprüfen:
 - Kobayashi Ichizō: Hankyū, Takarazuka-Revue.
 - Panasonic Stadium Suita überwiegend durch Spenden finanziert.
 
-## Zur Faktenprüfung (Region 2)
+## Faktenprüfung Region 2 (vom Nutzer bestätigt, Präzisierungen eingearbeitet)
 - „Naniwa no happyaku-ya-bashi“ (808 Brücken), Brücken der Edo-Zeit überwiegend von Kaufleuten finanziert.
 - Ōkawa teilt sich an der Ostspitze von Nakanoshima in Dōjima-gawa und Tosabori-gawa; Reisbörse Dōjima (1730).
 - Dōtonbori-Kanal: Baubeginn 1612 durch Yasui Dōton, Fertigstellung 1615.

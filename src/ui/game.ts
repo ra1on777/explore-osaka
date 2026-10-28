@@ -13,7 +13,7 @@ import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { closeups, icons, mapBase, mapBaseR2 } from './art';
+import { closeups, icons, mapBase, mapBaseR2, mapBaseR3 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
@@ -186,19 +186,20 @@ async function talkTo(p: Presence) {
   if (busy) return;
   busy = true;
   sfx.open();
-  const first = p.offers[0];
-  await playStage(first.questId, first.stage.stage_index);
-  // Hat dieselbe Figur hier noch etwas? Dann ohne Szenenwechsel direkt weiter.
-  const again = presence(G.screen).shown.find((x) => x.npcId === p.npcId);
-  if (again) {
-    busy = false;
-    await new Promise<void>((r) => {
-      mount(h('div', { class: 'result' },
-        h('p', {}, t('result.more', { npc: npcName(p.npcId) })),
-        h('button', { class: 'btn primary wide', 'data-primary': '', onclick: () => r() }, t('common.next'))));
+  let pickOffer = p.offers[0];
+  // Hat die Figur hier Etappen aus mehreren Strängen, wählt man bewusst, worüber man spricht.
+  if (p.offers.length > 1) {
+    const chosen = await new Promise<typeof pickOffer | null>((r) => {
+      mount(h('div', { class: 'sub offer-pick' },
+        header(npcName(p.npcId), () => r(null)),
+        h('p', { class: 'small muted' }, t('talk.pick')),
+        ...p.offers.map((o) => h('button', { class: 'btn wide offer', 'data-quest': o.questId, onclick: () => { sfx.tap(); r(o); } },
+          h('span', { class: 'excl' }, '!'), strandTitle(o.questId)))));
     });
-    return talkTo(again);
+    if (!chosen) { explore(); return; }
+    pickOffer = chosen;
   }
+  await playStage(pickOffer.questId, pickOffer.stage.stage_index);
   explore();
 }
 
@@ -296,7 +297,7 @@ function mapScreen(regionId?: string) {
       onclick: () => pick(c.id),
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
   });
-  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2 };
+  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3 };
   showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();

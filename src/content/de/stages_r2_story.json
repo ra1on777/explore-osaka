@@ -20,7 +20,7 @@
     {
      "s": "seto",
      "p": "book",
-     "t": "Die meisten nicht! In der Edo-Zeit bezahlten oft die Kaufleute selbst die Brücken vor ihren Lagerhäusern."
+     "t": "Die meisten nicht! In der Edo-Zeit gab es rund 200 Brücken, und nur ein Dutzend davon bezahlte das Shōgunat. Den Rest finanzierten Kaufleute und Nachbarschaften."
     },
     {
      "s": "seto",
@@ -78,12 +78,12 @@
       {
        "q": "Wo fließt der Dōjima-gawa?",
        "answer": "dojima",
-       "fb": "Am Nordufer. Dort stand die Reisbörse von Dōjima – eine der ersten Terminbörsen der Welt."
+       "fb": "Am Nordufer. Dort stand die Reisbörse von Dōjima – 1730 vom Shōgunat genehmigt, eine der ersten Terminbörsen der Welt."
       },
       {
        "q": "Und der Kanal im Süden, an dem heute die Leuchtreklamen glitzern?",
        "answer": "dotonbori",
-       "fb": "Der Dōtonbori. Ein Kaufmann namens Yasui Dōton ließ ihn ab 1612 graben, fertig wurde er 1615."
+       "fb": "Der Dōtonbori. Der Kaufmann Yasui Dōton ließ ihn ab 1612 graben. Er fiel 1615 bei der Belagerung von Ōsaka – seine Verwandten vollendeten den Kanal noch im selben Jahr."
       }
      ]
     }
@@ -222,7 +222,7 @@
     "x": 66,
     "y": 52,
     "art": "register",
-    "find": "Eine dicke Mappe: Namen über Namen, sorgfältig mit dem Pinsel geschrieben. Über 600 Schüler sollen sich eingetragen haben.",
+    "find": "Eine dicke Mappe: Namen über Namen, sorgfältig mit dem Pinsel geschrieben – 636 Schüler haben sich eingetragen.",
     "hintOut": "Die Registerkopie liegt in der Nakanoshima-Bibliothek.",
     "hintBack": "Bring die Mappe zu Prof. Takada ins Nakanoshima Center."
    },
@@ -995,7 +995,7 @@
       {
        "s": "partner",
        "p": "cheer",
-       "t": "Weil alle aus demselben Topf tunken. Das ist hier ein heiliges Gesetz."
+       "t": "Weil alle aus demselben Topf tunken. Nido-zuke kinshi – zweimal tunken verboten! Wer mehr Soße will, nimmt sie mit einem Kohlblatt."
       }
      ]
     },

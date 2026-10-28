@@ -263,6 +263,40 @@ Object.assign(closeups, {
     ${[0, 1, 2, 3, 4, 5].map((i) => `<path d="M${150 - i * 20} 30v74" stroke="#7a5432" stroke-width="5" stroke-dasharray="6 4"/>`).join('')}
     <path d="M40 124h120" stroke="#1c1c1c" stroke-width="5"/>
     <text x="100" y="142" font-size="9" text-anchor="middle" fill="#f3e3c8" font-family="Manrope, sans-serif">Spiegelverkehrt geschnitzte Schrift</text>`),
+  heron: C(`
+    <rect y="80" width="200" height="70" fill="#7fb2c9"/>
+    <path d="M0 80h200" stroke="#5d8fa6" stroke-width="3"/>
+    <rect y="0" width="200" height="60" fill="#b9ab8f"/>
+    ${[0,1,2,3,4].map((i) => `<path d="M${i*44} 0v60M${i*44+22} 20v40" stroke="#8f8268" stroke-width="2"/>`).join('')}
+    <path d="M0 60h200v20H0z" fill="#9fb48a"/>
+    <path d="M110 128v-38M118 128v-38" stroke="${O}" stroke-width="3"/>
+    <path d="M100 92c-6-18 4-34 22-34 10 0 18 6 20 14l-14 20z" fill="#e9ecee" stroke="${O}" stroke-width="2.5"/>
+    <path d="M128 60c2-14-4-24-12-28" stroke="${O}" stroke-width="5" fill="none"/>
+    <path d="M114 30l-26 6 26 2" fill="${GOLD}" stroke="${O}" stroke-width="2"/>
+    <circle cx="117" cy="31" r="1.6" fill="${O}"/>
+    <path d="M30 120c10-6 30-6 40 0M150 132c10-5 26-5 36 0" stroke="#e6f1f6" stroke-width="2" fill="none"/>`),
+  noticeboard: C(`
+    <rect x="20" y="14" width="160" height="122" rx="6" fill="#7a5a3a" stroke="${O}" stroke-width="3"/>
+    <rect x="30" y="24" width="140" height="102" fill="#e9e1cc"/>
+    <rect x="40" y="32" width="58" height="40" fill="#fff" stroke="${O}"/>
+    <rect x="108" y="32" width="52" height="54" fill="#fff8d8" stroke="${O}"/>
+    <text x="134" y="52" font-size="12" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">三方</text>
+    <text x="134" y="70" font-size="12" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${RED}">よし</text>
+    <path d="M46 42h46M46 50h40M46 58h44" stroke="#9a9a9a" stroke-width="3"/>
+    <rect x="40" y="80" width="58" height="38" fill="#fff" stroke="${O}"/>
+    <path d="M46 90h46M46 98h30M46 106h40" stroke="#9a9a9a" stroke-width="3"/>
+    <circle cx="69" cy="30" r="3" fill="${RED}"/><circle cx="134" cy="30" r="3" fill="${BLUE}"/>`),
+  otemaesign: C(`
+    <rect width="200" height="150" fill="#d9d2c3"/>
+    <path d="M40 140V40l10-10h100l10 10v100z" fill="#cfc8b8" stroke="${O}" stroke-width="3"/>
+    ${['大', '手', '前'].map((k, i) => `<text x="100" y="${68 + i * 30}" font-size="26" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="#3b3a36">${k}</text>`).join('')}
+    <text x="100" y="138" font-size="9" text-anchor="middle" font-family="Manrope, sans-serif" fill="#3b3a36">ŌTE · MAE</text>`),
+  scroll: C(`
+    <rect x="18" y="30" width="164" height="90" fill="#f4ecd6" stroke="${O}" stroke-width="2"/>
+    <rect x="10" y="26" width="12" height="98" rx="5" fill="#7a3b22" stroke="${O}" stroke-width="2"/>
+    <rect x="178" y="26" width="12" height="98" rx="5" fill="#7a3b22" stroke="${O}" stroke-width="2"/>
+    ${[0,1,2,3,4,5,6,7].map((i) => `<path d="M${160 - i * 17} 42v64" stroke="#3b3a36" stroke-width="3" stroke-dasharray="6 4"/>`).join('')}
+    <rect x="34" y="88" width="18" height="18" fill="none" stroke="${RED}" stroke-width="3"/>`),
   gateplaque: C(`
     <rect width="200" height="150" fill="#a5532d"/>
     ${[0, 1, 2, 3, 4, 5, 6].map((i) => `<path d="M0 ${i * 22}h200" stroke="#8c4122" stroke-width="2"/>`).join('')}
@@ -329,6 +363,22 @@ export const mapBaseR2 = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <text x="20" y="370" font-size="18" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">JR / Hankyū / Hanshin</text>
   <text x="790" y="40" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Tenjinbashisuji ↕</text>
   <text x="980" y="806" font-size="22" text-anchor="end" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Burg ↘</text>`);
+
+export const mapBaseR3 = wrap('0 0 1000 820" preserveAspectRatio="none', `
+  <rect width="1000" height="820" fill="#12213F"/>
+  <path d="M0 80C300 60 600 70 1000 40" stroke="#2E5BA6" stroke-width="34" fill="none" opacity=".85"/>
+  <path d="M960 48c-30 120-60 260-40 420" stroke="#2E5BA6" stroke-width="16" fill="none" opacity=".7"/>
+  <path d="M290 820V120" stroke="#5a6570" stroke-width="8" stroke-dasharray="20 10" opacity=".55"/>
+  <rect x="380" y="200" width="380" height="330" rx="26" fill="#1a3350" stroke="#2E5BA6" stroke-width="22" opacity=".95"/>
+  <rect x="470" y="270" width="190" height="170" rx="14" fill="#203d36" stroke="#2E5BA6" stroke-width="14"/>
+  <path d="M545 330l20-22 20 22v34h-40z" fill="rgba(244,182,63,.45)"/>
+  <path d="M120 820c30-200 60-420 150-700" stroke="rgba(243,241,234,.08)" stroke-width="120" fill="none"/>
+  <text x="980" y="30" font-size="22" text-anchor="end" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Ōkawa</text>
+  <text x="935" y="520" font-size="18" text-anchor="end" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Neya-gawa</text>
+  <text x="300" y="790" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Tanimachi-suji ↕</text>
+  <text x="70" y="300" font-size="20" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif" transform="rotate(-80 70 300)">Uemachi-Hochebene</text>
+  <text x="570" y="510" font-size="18" text-anchor="middle" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Burggraben</text>
+  <text x="20" y="40" font-size="20" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">↖ Kita / Nakanoshima</text>`);
 
 export const pickupIcon = wrap('0 0 40 48', `
   <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>

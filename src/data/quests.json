@@ -1,6 +1,6 @@
 {
  "meta": {
-  "note": "Auszug aus den Quest-Bundles 01–08 (Originalformat). Enthalten sind die Etappen, die vollständig in Großregion 1 und 2 liegen. total_stages = Gesamtlänge laut GDD.",
+  "note": "Auszug aus den Quest-Bundles 01–08 (Originalformat). Enthalten sind die Etappen, die vollständig in Großregion 1 bis 3 liegen. total_stages = Gesamtlänge laut GDD.",
   "source": "explore_osaka_quests_bundle_01..08.json"
  },
  "quests": [
@@ -55,6 +55,39 @@
       "difficulty_tier": 1,
       "hint_type": "EXPLICIT_NAME"
      }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "35",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "30",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 6,
+     "screen_id": "30",
+     "npc_id": "DR_SETO_GEOGRAPHER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "22",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 7,
+     "screen_id": "22",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "50",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
     }
    ]
   },
@@ -108,6 +141,17 @@
       "target_screen_id": "30",
       "difficulty_tier": 1,
       "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "30",
+     "npc_id": "TALKING_STRAY_CAT",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "41",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
      }
     }
    ]
@@ -244,6 +288,39 @@
      "interaction_type": "DIALOGUE_RECALL",
      "routing_next": {
       "target_screen_id": "35",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "35",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "33",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 11,
+     "screen_id": "33",
+     "npc_id": "YAMADA_SHINTO_BELIEVER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "36",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 12,
+     "screen_id": "36",
+     "npc_id": "DR_KIRYU_PHILOSOPHER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "58",
       "difficulty_tier": 2,
       "hint_type": "LANDMARK_FEATURE"
      }
@@ -608,6 +685,17 @@
       "difficulty_tier": 3,
       "hint_type": "DISTRICT_ZONE"
      }
+    },
+    {
+     "stage_index": 13,
+     "screen_id": "36",
+     "npc_id": "STUDENT_OTEMON_BIZ",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "51",
+      "difficulty_tier": 4,
+      "hint_type": "CRYPTIC_TEASER"
+     }
     }
    ]
   },
@@ -817,6 +905,28 @@
       "difficulty_tier": 1,
       "hint_type": "EXPLICIT_NAME"
      }
+    },
+    {
+     "stage_index": 11,
+     "screen_id": "30",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 12,
+     "screen_id": "35",
+     "npc_id": "TAKESHI_CULTURE_HOST",
+     "interaction_type": "HIRAGANA_ROMAJI_TILE_MATCH",
+     "routing_next": {
+      "target_screen_id": "37",
+      "difficulty_tier": 4,
+      "hint_type": "CRYPTIC_TEASER"
+     }
     }
    ]
   },
@@ -1023,6 +1133,39 @@
      "interaction_type": "KANJI_RADICAL_STROKE_PICK",
      "routing_next": {
       "target_screen_id": "30",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 9,
+     "screen_id": "30",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "32a",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 10,
+     "screen_id": "32a",
+     "npc_id": "TAKESHI_CULTURE_HOST",
+     "interaction_type": "KANJI_RADICAL_STROKE_PICK",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 11,
+     "screen_id": "35",
+     "npc_id": "PROF_TAKADA_MENTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "37",
       "difficulty_tier": 3,
       "hint_type": "DISTRICT_ZONE"
      }
@@ -1547,6 +1690,38 @@
        "25"
       ],
       "return_screen_id": "12"
+     }
+    }
+   ]
+  },
+  {
+   "quest_id": "STRANG_LANDMARKS_DISCOVERY",
+   "total_stages": 13,
+   "lead_npcs": [
+    "REPORTER_HINA",
+    "AOI_TRANSIT_STUDENT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "31",
+     "npc_id": "REPORTER_HINA",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "32b",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "32b",
+     "npc_id": "REPORTER_HINA",
+     "interaction_type": "FRAMING_PHOTO_CHALLENGE",
+     "routing_next": {
+      "target_screen_id": "37",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
      }
     }
    ]

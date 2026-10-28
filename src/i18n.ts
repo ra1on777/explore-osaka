@@ -9,6 +9,7 @@ import deStoryB from './content/de/stages_story_b.json';
 import deLang from './content/de/stages_lang.json';
 import deR2Story from './content/de/stages_r2_story.json';
 import deR2Lang from './content/de/stages_r2_lang.json';
+import deR3 from './content/de/stages_r3.json';
 import type { StageContent } from './types';
 
 export interface LangPack {
@@ -32,7 +33,7 @@ const packs: Record<string, LangPack> = {
     world: deWorld,
     npcs: deNpcs,
     strands: deStrands,
-    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang),
+    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3),
   },
 };
 

@@ -93,6 +93,9 @@ export function setMood(m: Mood | null | undefined) {
   top.dataset.mood = m ?? 'day';
 }
 
+/** Aktuelles Hintergrundbild (für Foto-Ausschnitte). */
+export function sceneImage(): string { return bg.src; }
+
 export function showOverlay(el: HTMLElement | null) {
   overlay.replaceChildren(...(el ? [el] : []));
   overlay.classList.toggle('on', !!el);

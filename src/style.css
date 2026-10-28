@@ -397,3 +397,14 @@ h3 { font-family: var(--title); font-weight: 600; font-size: 1.25em; margin: .2e
 .kg-tile { font-family: var(--jp); font-size: 1.9em; padding: .15em 0; border-radius: .4em; border: 2px solid #3a5288; background: #f3f1ea; color: var(--navy); }
 .kg-tile.right { background: #bff0d2; border-color: #2f8f5b; opacity: .6; }
 .kg-tile.wrong { background: #f7c9c3; }
+.offer-pick .offer { display: flex; align-items: center; gap: .6em; text-align: left; margin-top: .4em; }
+.hot.photo-mode { cursor: crosshair; animation: none; box-shadow: none; background: rgba(5, 11, 26, .25); }
+.finder { position: absolute; border: 3px solid #fff; box-shadow: 0 0 0 999px rgba(5, 11, 26, .35); pointer-events: none; transition: left .15s, top .15s, width .15s, height .15s; }
+.finder::before, .finder::after { content: ''; position: absolute; left: 50%; top: 50%; width: 1.2em; height: 1.2em; transform: translate(-50%, -50%); border: 2px solid rgba(255,255,255,.8); border-radius: 50%; }
+.finder-grid { position: absolute; inset: 0; background: linear-gradient(90deg, transparent 33%, rgba(255,255,255,.35) 33%, rgba(255,255,255,.35) calc(33% + 1px), transparent calc(33% + 1px), transparent 66%, rgba(255,255,255,.35) 66%, rgba(255,255,255,.35) calc(66% + 1px), transparent calc(66% + 1px)), linear-gradient(180deg, transparent 33%, rgba(255,255,255,.35) 33%, rgba(255,255,255,.35) calc(33% + 1px), transparent calc(33% + 1px), transparent 66%, rgba(255,255,255,.35) 66%, rgba(255,255,255,.35) calc(66% + 1px), transparent calc(66% + 1px)); }
+.finder.flash { animation: flash .35s ease-out; }
+@keyframes flash { 0% { background: rgba(255,255,255,.9); } 100% { background: transparent; } }
+.print { background: #fff; padding: 4% 4% 2%; width: 62%; transform: rotate(-2deg); box-shadow: 0 6px 18px rgba(0,0,0,.45); border-radius: 2px; }
+.print-pic { width: 100%; aspect-ratio: 4 / 3; background-repeat: no-repeat; }
+.print-cap { font-family: var(--title); color: var(--ink); text-align: center; padding: .3em 0 .1em; font-size: .9em; }
+.top:has(.hot.photo-mode) .sign { opacity: 0; transition: opacity .2s; }

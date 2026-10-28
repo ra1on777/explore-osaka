@@ -1,0 +1,272 @@
+{
+ "STRANG_GEOGRAPHY": {
+  "5": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Dr. Seto hat dich zu mir geschickt? Gut. Schau aus dem Fenster – siehst du, dass die Burg etwas höher liegt als die Stadt drumherum?"},
+    {"s": "takada", "p": "think", "t": "Das ist die Uemachi-Hochebene. Ein schmaler Rücken aus festem Boden, rund zwölf Kilometer lang, von hier bis nach Sumiyoshi im Süden."},
+    {"s": "takada", "p": "ponder", "t": "Vor etwa 6000 Jahren lag der Meeresspiegel höher. Im Westen war die Bucht von Ōsaka, im Osten eine zweite Bucht: Kawachi. Die Hochebene war eine Landzunge im Wasser."},
+    {"s": "me", "t": "Dann stand hier früher alles halb unter Wasser?"},
+    {"s": "takada", "p": "explain", "t": "Genau. Darum baute man hier schon im 7. Jahrhundert einen Kaiserpalast, den Naniwa-Palast. Seine Reste liegen direkt unter diesem Fenster."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was lag vor etwa 6000 Jahren östlich der Uemachi-Hochebene?", "options": ["Ein Gebirge", "Eine Meeresbucht (Kawachi)", "Ein Vulkan", "Eine Wüste"], "answer": 1},
+    {"type": "choice", "q": "Wie lang ist die Hochebene laut Prof. Takada ungefähr?", "options": ["1 km", "12 km", "50 km", "120 km"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "think", "t": "Richtig. Wer Ōsaka verstehen will, muss wissen, wo früher Wasser war."},
+    {"s": "takada", "p": "explain", "t": "Dr. Seto wartet am großen Tor im Westen der Burg, gleich hinter dem Wassergraben."}
+   ],
+   "hint": "Das große Tor im Westen der Burg, hinter dem Wassergraben."
+  },
+  "6": {
+   "lines": [
+    {"s": "seto", "p": "map", "t": "Willkommen am Ōte-mon, dem Haupttor der Burg! Jetzt weißt du, warum die Burg genau hier steht."},
+    {"s": "seto", "p": "book", "t": "Sie sitzt auf der Nordspitze der Uemachi-Hochebene. Vorher stand hier ein befestigter Tempel, der Ishiyama Hongan-ji."},
+    {"s": "seto", "p": "binoculars", "t": "Toyotomi Hideyoshi begann 1583 mit dem Bau. Er nutzte das Gelände geschickt – die Natur war Teil der Verteidigung."},
+    {"s": "seto", "p": "map", "t": "Schau dir die Steine im Wall an. Manche wiegen über hundert Tonnen. Und jetzt überleg: Was schützte die Burg im Norden?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bildete im Norden der Burg einen natürlichen Schutz?", "options": ["Ein hoher Berg", "Flüsse und sumpfiges Land", "Eine Wüste aus Sand", "Ein dichter Bambuswald"], "answer": 1, "explain": "Im Norden fließen der Ōkawa und der Neya-gawa. Zusammen mit dem Sumpfland waren sie ein natürlicher Graben."}
+   ],
+   "after": [
+    {"s": "seto", "p": "book", "t": "Genau. Hochebene im Süden, Wasser im Norden – ein idealer Ort für eine Festung."},
+    {"s": "seto", "p": "binoculars", "t": "Den ganzen Flusslauf sieht man nur von ganz oben. Aoi wartet auf der Aussichtsbrücke des Umeda Sky Building."}
+   ],
+   "hint": "Aoi auf der Aussichtsbrücke des Umeda Sky Building."
+  },
+  "7": {
+   "mood": "golden",
+   "lines": [
+    {"s": "aoi", "p": "map", "t": "Da bist du! Siehst du das breite Band dort im Norden? Das ist der Yodo-gawa."},
+    {"s": "aoi", "p": "note", "t": "Er kommt aus dem Biwa-See, dem größten See Japans. Unterwegs ändert er zweimal den Namen – erst Seta-gawa, dann Uji-gawa, und hier heißt er Yodo-gawa."},
+    {"s": "aoi", "p": "happy", "t": "Früher floss er mitten durch die Stadt. Um 1900 hat man ihm ein neues, gerades Bett gegraben, damit es weniger Überschwemmungen gibt."},
+    {"s": "me", "t": "Wie weit ist es bis zum Biwa-See?"}
+   ],
+   "tasks": [
+    {"type": "estimate", "q": "Wie lang ist der Yodo-gawa vom Biwa-See bis zur Bucht von Ōsaka?", "min": 10, "max": 300, "step": 1, "answer": 75, "unit": "km", "tol": 0.12}
+   ],
+   "after": [
+    {"s": "aoi", "p": "cheer", "t": "Rund 75 Kilometer! Am Ende lagert er Sand und Schlamm ab. Darum wächst die Küste immer weiter ins Meer."},
+    {"s": "aoi", "p": "map", "t": "Dr. Seto will dir das an der Bucht zeigen – am Hafen von Tempozan, ganz im Westen."}
+   ],
+   "hint": "Am Hafen von Tempozan an der Bucht von Ōsaka."
+  }
+ },
+ "STRANG_NATURE_RETREAT": {
+  "5": {
+   "lines": [
+    {"s": "goro", "t": "Miau. Du schon wieder. Maya ist nicht da – aber ich."},
+    {"s": "goro", "t": "Dieser Graben ist mein liebster Ort. Hier gibt es Enten, Karpfen und Kiefern, die älter sind als jeder Mensch hier."},
+    {"s": "goro", "t": "Und einen Konkurrenten. Er steht stundenlang still im Wasser und wartet auf Fische. Genau wie ich – nur mit nassen Füßen."},
+    {"s": "me", "t": "Ein Reiher?"},
+    {"s": "goro", "t": "Ein Graureiher. Zeig mir, wo er am liebsten steht."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Wo im Graben lauert ein Reiher am liebsten auf Fische?", "x": 70, "y": 62, "r": 9,
+     "closeup": {"art": "heron", "title": "Der Graureiher", "text": "Im flachen Wasser am Rand des Grabens steht ein Graureiher – auf Japanisch aosagi. Er wartet reglos, bis ein Fisch nah genug ist."}}
+   ],
+   "after": [
+    {"s": "goro", "t": "Siehst du? Geduld ist alles. Die Kiefern auf dem Wall wissen das auch – sie stehen seit Jahrhunderten."},
+    {"s": "goro", "t": "Maya sucht übrigens einen grünen Garten auf einem Dach. Im Süden, über einem großen Bahnhof."}
+   ],
+   "vocab": [{"jp": "とり", "ro": "tori", "de": "Vogel"}],
+   "hint": "Ein grüner Dachgarten über einem Bahnhof im Süden."
+  }
+ },
+ "STRANG_LANDMARKS_DISCOVERY": {
+  "1": {
+   "lines": [
+    {"s": "hina", "p": "phone", "t": "Entschuldigung! Kannst du kurz aus dem Bild gehen? … Ach, egal. Alle Fotos hier sehen sowieso gleich aus."},
+    {"s": "hina", "p": "note", "t": "Ich bin Hina, ich schreibe für die Uni-Zeitung. Ich suche ein Burgfoto, das nicht jeder Tourist macht."},
+    {"s": "hina", "p": "surprised", "t": "Wusstest du, dass dieser Hauptturm erst 1931 gebaut wurde? Das Original ist abgebrannt. Die Bürger von Ōsaka haben den neuen Turm mit Spenden bezahlt."},
+    {"s": "me", "t": "Und was willst du fotografieren?"},
+    {"s": "hina", "p": "phone", "t": "Die goldenen Fische auf dem Dach! Von unten sind sie winzig. Komm mit hoch auf die Aussichtsplattform."}
+   ],
+   "vocab": [{"jp": "しゃしん", "ro": "shashin", "de": "Foto"}],
+   "hint": "Hina oben auf der Aussichtsplattform des Hauptturms."
+  },
+  "2": {
+   "lines": [
+    {"s": "hina", "p": "surprised", "t": "Da! Siehst du sie? Die goldenen Shachihoko auf den Dachecken."},
+    {"s": "hina", "p": "note", "t": "Ein Fabelwesen: Kopf eines Tigers, Körper eines Fisches. Man glaubte, es spritzt Wasser und schützt so vor Feuer."},
+    {"s": "hina", "p": "phone", "t": "Hier, nimm meine Kamera. Der Fisch links soll groß ins Bild – aber nicht abgeschnitten!"}
+   ],
+   "tasks": [
+    {"type": "photo", "q": "Fotografiere den goldenen Fisch auf der linken Dachecke.", "target": {"x": 7, "y": 25}, "zoom": [3, 5], "title": "Shachihoko im Gegenlicht",
+     "text": "Perfekt im Bild: der goldene Shachihoko. Auf Burgdächern sitzen sie meist als Paar – ein Männchen und ein Weibchen."}
+   ],
+   "after": [
+    {"s": "hina", "p": "surprised", "t": "Wow! Das kommt auf die Titelseite."},
+    {"s": "hina", "p": "note", "t": "Nächstes Motiv: eine Brücke im Süden, unter riesigen Leuchtreklamen. Dort steht ein berühmter Läufer mit erhobenen Armen."}
+   ],
+   "hint": "Eine Brücke im Süden, unter riesigen Leuchtreklamen."
+  }
+ },
+ "STRANG_PHILOSOPHY_THEOLOGY": {
+  "10": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Dr. Kiryū hat mich gebeten, dir ein dunkles Kapitel zu zeigen. 1549 kam der Missionar Franz Xaver nach Japan."},
+    {"s": "takada", "p": "think", "t": "Bald gab es Zehntausende Christen, auch in Ōsaka. Die berühmteste war Hosokawa Gracia, eine Fürstin, die hier lebte."},
+    {"s": "takada", "p": "ponder", "t": "Doch 1587 wies Hideyoshi die Missionare aus, und ab 1614 verbot das Shōgunat den Glauben im ganzen Land."},
+    {"s": "takada", "p": "explain", "t": "Manche gaben nicht auf. Sie beteten heimlich weiter, über 250 Jahre lang – getarnt als Buddhisten."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wie nennt man die Christen, die ihren Glauben nach dem Verbot heimlich weiterlebten?", "options": ["Rōnin", "Kakure Kirishitan", "Yamabushi", "Ninja"], "answer": 1, "explain": "Kakure Kirishitan heißt „versteckte Christen“. Rōnin waren herrenlose Samurai, Yamabushi Bergasketen."}
+   ],
+   "after": [
+    {"s": "takada", "p": "think", "t": "Richtig. Erst 1873 wurde das Verbot aufgehoben."},
+    {"s": "takada", "p": "explain", "t": "Über Hideyoshi spricht Herr Yamada am liebsten selbst. Er ist am Hōkoku-Schrein im Burgpark."}
+   ],
+   "hint": "Herr Yamada am Hōkoku-Schrein im Burgpark."
+  },
+  "11": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Willkommen. Siehst du die Statue dort? Das ist Toyotomi Hideyoshi – der Mann, der diese Burg gebaut hat."},
+    {"s": "yamada", "p": "explain", "t": "Nach seinem Tod 1598 wurde er selbst zum Kami erklärt. Man verehrte ihn als Toyokuni Daimyōjin."},
+    {"s": "yamada", "p": "pray", "t": "Doch als die Tokugawa an die Macht kamen, ließen sie seine Verehrung unterdrücken. Erst in der Meiji-Zeit baute man wieder Schreine für ihn."},
+    {"s": "yamada", "p": "calm", "t": "Dieser Schrein stand zuerst auf Nakanoshima. 1961 zog er hierher, in den Schatten der Burg."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Unter welchem Namen wurde Hideyoshi nach seinem Tod verehrt?", "options": ["Amaterasu", "Toyokuni Daimyōjin", "Ebisu", "Tenjin"], "answer": 1},
+    {"type": "choice", "q": "Wer ließ seine Verehrung später unterdrücken?", "options": ["Die Tokugawa", "Die Kaufleute von Ōsaka", "Die Missionare", "Die Meiji-Regierung"], "answer": 0}
+   ],
+   "after": [
+    {"s": "yamada", "p": "pray", "t": "Gut zugehört. Macht und Glaube liegen in Japan oft nah beieinander."},
+    {"s": "yamada", "p": "explain", "t": "Dr. Kiryū denkt gerade über Moral im Handel nach. Im Universitätsviertel Ōtemae, südwestlich der Burg."}
+   ],
+   "hint": "Das Universitätsviertel Ōtemae, südwestlich der Burg."
+  },
+  "12": {
+   "lines": [
+    {"s": "kiryu", "p": "think", "t": "Ōsaka ist eine Stadt der Händler. Darf ein guter Händler nur an seinen Gewinn denken?"},
+    {"s": "me", "t": "Ein bisschen schon, oder? Sonst geht er pleite."},
+    {"s": "kiryu", "p": "explain", "t": "Die Kaufleute aus Ōmi am Biwa-See hatten dafür ein Motto. Es hängt sogar hier am schwarzen Brett. Lies es selbst."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Finde das Motto am schwarzen Brett.", "x": 88, "y": 72, "r": 8,
+     "closeup": {"art": "noticeboard", "title": "三方よし", "text": "Sanpō yoshi – „gut für drei Seiten“: gut für den Verkäufer, gut für den Käufer und gut für die Gesellschaft. Ein Leitsatz der Ōmi-Kaufleute."}}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "explain", "t": "Ein Geschäft ist erst dann gut, wenn auch die Nachbarn etwas davon haben. Erstaunlich modern, nicht?"},
+    {"s": "kiryu", "p": "doubt", "t": "Weiter südlich steht Japans ältester offizieller Tempel, mit einer fünfstöckigen Pagode. Dort begann die Frage nach Harmonie – vor 1400 Jahren."}
+   ],
+   "hint": "Ein uralter Tempel mit fünfstöckiger Pagode im Süden."
+  }
+ },
+ "STRANG_CAMPUS_EXPEDITION": {
+  "13": {
+   "lines": [
+    {"s": "otemon", "t": "Hallo! Du sammelst Stempel? Ich bin Mio. Willkommen in Ōtemae."},
+    {"s": "otemon", "t": "Der Name kommt von der Burg: Ōte ist ihr Haupttor. Ōtemae heißt also „vor dem Haupttor“."},
+    {"s": "otemon", "t": "Hier gibt es keinen großen Rasen. Die Uni steckt in Hochhäusern zwischen Büros – mitten in der Stadt."},
+    {"s": "otemon", "t": "Für den Stempel: Am Eingang steht ein Stein mit dem Namen. Lies die drei Kanji."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Finde den Stein mit dem Namen am Eingang.", "x": 70, "y": 82, "r": 7,
+     "closeup": {"art": "otemaesign", "title": "大手前", "text": "大 (groß) + 手 (Hand) + 前 (vor). 大手 meint hier das Haupttor der Burg – und 前 heißt „davor“."}}
+   ],
+   "after": [
+    {"s": "otemon", "t": "Genau! Hier ist dein Stempel – mit dem Hauptturm der Burg."},
+    {"s": "otemon", "t": "Den nächsten bekommst du dort, wo man Fische erforscht und Theater spielt … Mehr verrate ich nicht."}
+   ],
+   "vocab": [{"jp": "まえ", "ro": "mae", "de": "vor, vorne"}],
+   "hint": "Wo man Fische erforscht und Theater spielt …"
+  }
+ },
+ "STRANG_LANG_HIRAGANA": {
+  "11": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Du kannst jetzt fast alles lesen. Aber drei Zeichen spielen dir manchmal einen Streich."},
+    {"s": "takada", "p": "think", "jp": "わたしは がくせいです。", "ro": "Watashi wa gakusei desu.", "t": "Als Teilchen liest man は wie „wa“, nicht „ha“."},
+    {"s": "takada", "p": "ponder", "jp": "おおさかじょうへ いきます。", "ro": "Ōsaka-jō e ikimasu.", "t": "Und へ als Teilchen klingt wie „e“. Ich gehe zur Burg Ōsaka."},
+    {"s": "takada", "p": "explain", "jp": "しゃしんを とります。", "ro": "Shashin o torimasu.", "t": "を benutzt man nur als Teilchen. Man spricht es „o“. Ich mache ein Foto."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wie liest man は in わたしは?", "options": ["ha", "wa", "ba", "pa"], "answer": 1},
+    {"type": "input", "q": "Wie liest man を? (in Rōmaji)", "show": {"jp": "を"}, "placeholder": "Rōmaji", "accept": ["o", "wo"]},
+    {"type": "choice", "q": "Welches Zeichen klingt als Teilchen wie „e“?", "options": [{"jp": "え"}, {"jp": "へ"}, {"jp": "せ"}, {"jp": "け"}], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "think", "t": "Sehr gut. Damit sind die Hiragana-Regeln komplett."},
+    {"s": "takada", "p": "explain", "t": "Takeshi zeigt dir alte Ladenschilder. Er ist im Museum gleich südwestlich der Burg."}
+   ],
+   "hint": "Im Museum gleich südwestlich der Burg."
+  },
+  "12": {
+   "lines": [
+    {"s": "takeshi", "p": "newspaper", "t": "Hier, alte Ladenschilder! Und schon kommt die erste Falle: Früher schrieb man waagerechte Schilder oft von rechts nach links."},
+    {"s": "takeshi", "p": "explain", "jp": "きやこた", "ro": "→ たこやき", "t": "Von rechts gelesen: takoyaki. Erst nach dem Krieg setzte sich links nach rechts durch."},
+    {"s": "takeshi", "p": "think", "jp": "ゑ ・ ゐ", "ro": "we → e ・ wi → i", "t": "Und zwei Zeichen, die es heute fast nicht mehr gibt. Du siehst sie noch in alten Namen, zum Beispiel ゑびす (Ebisu)."}
+   ],
+   "tasks": [
+    {"type": "pairs", "q": "Verbinde alte Zeichen und Schilder mit ihrer heutigen Lesung.", "sets": [
+     [["ゑ", "e (alt: we)"], ["ゐ", "i (alt: wi)"], ["ゑびす", "Ebisu"], ["を", "o"]],
+     [["きやこた", "takoyaki"], ["んどう", "udon"], ["しす", "sushi"], ["ばそ", "soba"]]
+    ]}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Ha! Du liest jetzt sogar rückwärts. Damit kannst du jede Hiragana in der Stadt lesen."},
+    {"s": "takeshi", "p": "newspaper", "t": "Und dein nächster Halt? Dort, wo der Kanal nachts leuchtet und keiner nach Hause gehen will …"}
+   ],
+   "vocab": [{"jp": "うどん", "ro": "udon", "de": "dicke Weizennudeln"}, {"jp": "そば", "ro": "soba", "de": "Buchweizennudeln"}],
+   "hint": "Wo der Kanal nachts leuchtet und keiner nach Hause will …"
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "9": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Weißt du, welches Kanji in 大阪 steckt? Das erste: 大 – groß. Ein Mensch, der die Arme weit ausbreitet."},
+    {"s": "takada", "p": "think", "jp": "大きい ・ 小さい", "ro": "ōkii ・ chiisai", "t": "Groß und klein. 小 sieht aus wie drei kleine Krümel."},
+    {"s": "takada", "p": "ponder", "jp": "高い", "ro": "takai", "t": "Hoch – oder teuer. Ein hohes Gebäude mit Dach."},
+    {"s": "takada", "p": "explain", "jp": "国", "ro": "kuni", "t": "Land, Staat: ein Schatz in einem Rahmen. Wie eine Burg mit Mauer."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Welches Kanji steckt laut Prof. Takada am Anfang von 大阪?", "options": ["小", "大", "高", "国"], "answer": 1},
+     {"q": "Was bedeutet 小さい?", "options": ["groß", "klein", "hoch", "teuer"], "answer": 1},
+     {"q": "Welches Kanji bedeutet „Land“?", "options": ["国", "高", "大", "山"], "answer": 0}
+    ]}
+   ],
+   "after": [
+    {"s": "takada", "p": "think", "t": "Hervorragend. 大 und 小 siehst du bald überall – zum Beispiel auf Speisekarten bei der Portionsgröße."},
+    {"s": "takada", "p": "explain", "t": "Takeshi wartet im Inneren des großen Hauptturms, bei den Rüstungen. Er hat eine Aufgabe zu den Himmelsrichtungen."}
+   ],
+   "vocab": [{"jp": "おおきい", "ro": "ōkii", "de": "groß"}, {"jp": "ちいさい", "ro": "chiisai", "de": "klein"}, {"jp": "くに", "ro": "kuni", "de": "Land, Staat"}],
+   "hint": "Im großen Hauptturm, bei den Rüstungen."
+  },
+  "10": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "In alten Karten der Burg steht überall, wo welches Tor liegt. Ohne Himmelsrichtungen findest du hier nichts."},
+    {"s": "takeshi", "p": "think", "jp": "東 ・ 西", "ro": "higashi ・ nishi", "t": "Osten: die Sonne 日 geht hinter einem Baum 木 auf. Westen hat oben einen Deckel."},
+    {"s": "takeshi", "p": "newspaper", "jp": "南 ・ 北", "ro": "minami ・ kita", "t": "Süden und Norden. 北 sind zwei Menschen, die sich den Rücken zukehren."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["東", "西", "南", "北", "口", "大"], "prompts": [{"de": "Norden", "answer": "北"}, {"de": "Osten", "answer": "東"}, {"de": "Süden", "answer": "南"}, {"de": "Westen", "answer": "西"}]}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Und jetzt verstehst du auch die Ausgänge in Umeda: 北口, 南口 …"},
+    {"s": "takeshi", "p": "newspaper", "t": "Prof. Takada will mit dir über Jahreszahlen reden. Er ist im Ōsaka Museum of History."}
+   ],
+   "vocab": [{"jp": "ひがし", "ro": "higashi", "de": "Osten"}, {"jp": "にし", "ro": "nishi", "de": "Westen"}, {"jp": "みなみ", "ro": "minami", "de": "Süden"}, {"jp": "きた", "ro": "kita", "de": "Norden"}],
+   "hint": "Prof. Takada im Ōsaka Museum of History."
+  },
+  "11": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "In einem Museum dreht sich alles um Zeit. Darum: 年 – das Jahr. Auf jedem Schild hier steht eine Zahl mit 年."},
+    {"s": "takada", "p": "think", "jp": "今年 ・ 毎日", "ro": "kotoshi ・ mainichi", "t": "Dieses Jahr und jeden Tag. 今 kennst du schon – jetzt. 毎 heißt „jedes“."},
+    {"s": "takada", "p": "ponder", "jp": "先生", "ro": "sensei", "t": "Und 先 heißt „vorher, voraus“. Ein 先生 ist jemand, der vor dir geboren wurde – darum Lehrer."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet 年?", "show": {"jp": "年"}, "options": ["Monat", "Jahr", "Tag", "Stunde"], "answer": 1},
+    {"type": "choice", "q": "Wie erklärt Prof. Takada das Wort 先生?", "options": ["Jemand, der vor dir geboren wurde", "Jemand, der viel Geld hat", "Jemand, der schnell läuft", "Jemand, der im Tempel wohnt"], "answer": 0},
+    {"type": "input", "q": "Wie liest man 毎日? (in Rōmaji)", "show": {"jp": "毎日"}, "placeholder": "Rōmaji", "accept": ["mainichi"]}
+   ],
+   "after": [
+    {"s": "takada", "p": "think", "t": "Ausgezeichnet. 毎日 ein bisschen – so lernt man Kanji."},
+    {"s": "takada", "p": "explain", "t": "Die nächsten Zeichen findest du im Süden, in Minami. Dort dreht sich alles ums Essen."}
+   ],
+   "vocab": [{"jp": "ことし", "ro": "kotoshi", "de": "dieses Jahr"}, {"jp": "まいにち", "ro": "mainichi", "de": "jeden Tag"}, {"jp": "せんせい", "ro": "sensei", "de": "Lehrer/in"}],
+   "hint": "In Minami im Süden, wo sich alles ums Essen dreht."
+  }
+ }
+}
