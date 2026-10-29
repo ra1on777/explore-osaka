@@ -1,0 +1,866 @@
+{
+ "STRANG_NIGHTLIFE_ETIQUETTE": {
+  "10": {
+   "lines": [
+    {"s": "kenji", "p": "talk", "t": "Oh nein. Oh nein, nein, nein. Die Gruppenkasse ist weg!"},
+    {"s": "kenji", "p": "relaxed", "t": "Wir waren vorhin alle im großen Bad nebenan. Ich glaube, sie liegt noch im Schließfach."},
+    {"s": "kenji", "p": "hyped", "t": "Holst du sie? Ich passe hier auf die anderen auf – und auf das Shōgi-Spiel."}
+   ],
+   "fetch": {"item": "Gruppenkasse", "x": 80, "y": 86, "art": "purse", "find": "Ein lila Beutel mit einem Schlüsselanhänger: ロッカー 18 – Schließfach 18. Alles Geld ist noch da.", "hintOut": "Die Gruppenkasse liegt im Schließfach im großen Bad Spa World.", "hintBack": "Bring die Kasse zu Kenji in die Janjan-Gasse."},
+   "after": [
+    {"s": "kenji", "p": "hyped", "t": "Du bist ein Held! In Japan findet man verlorene Sachen fast immer wieder."},
+    {"s": "kenji", "p": "talk", "t": "Daiki ist schon oben auf dem eisernen Turm. Er sagt, man kann von dort das Wetter von morgen ablesen."}
+   ],
+   "hint": "Daiki oben auf dem eisernen Turm."
+  },
+  "11": {
+   "mood": "night",
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Siehst du das Licht oben am Turm? Das ist eine Wetteranzeige."},
+    {"s": "daiki", "p": "ready", "t": "Weiß heißt Sonne, Orange heißt Wolken, Blau heißt Regen. Morgen spielen wir Fußball – also hoffe ich auf Weiß."},
+    {"s": "daiki", "p": "cheer", "t": "Der Turm ist übrigens älter als meine Eltern. Rate mal, wann er gebaut wurde."}
+   ],
+   "tasks": [
+    {"type": "estimate", "q": "In welchem Jahr wurde der heutige Tsūtenkaku fertig?", "min": 1900, "max": 2020, "step": 1, "answer": 1956, "unit": "", "tol": 0.003}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cocky", "t": "1956. Und das Licht leuchtet heute weiß. Ha!"},
+    {"s": "daiki", "p": "ready", "t": "Ren hat eine Stehkneipe in Nakatsu entdeckt. Er sagt, dort trinkt man nach der Arbeit im Stehen."}
+   ],
+   "hint": "Eine Stehkneipe unter den Bahnbögen in Nakatsu."
+  },
+  "12": {
+   "mood": "night",
+   "lines": [
+    {"s": "ren", "p": "relaxed", "t": "Tachinomi – „im Stehen trinken“. Keine Stühle, kleine Teller, niedrige Preise."},
+    {"s": "ren", "p": "pour", "t": "Man kommt nach der Arbeit, trinkt ein Bier, isst zwei Spieße und geht nach zwanzig Minuten wieder."},
+    {"s": "ren", "p": "guitar", "t": "Und man kommt mit Fremden ins Gespräch. Weil alle so eng stehen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist eine „Tachinomi“?", "options": ["Ein teures Restaurant", "Eine Kneipe, in der man im Stehen trinkt", "Ein Karaoke-Raum", "Ein Café für Kinder"], "answer": 1},
+    {"type": "choice", "q": "Warum sind Stehkneipen nach der Arbeit so beliebt?", "options": ["Sie sind günstig und schnell", "Man darf dort schlafen", "Sie haben Live-Musik", "Sie öffnen nur am Morgen"], "answer": 0}
+   ],
+   "after": [
+    {"s": "ren", "p": "relaxed", "t": "Kurz, günstig, gesellig. Perfekt."},
+    {"s": "ren", "p": "pour", "t": "Oh – es ist schon fast Mitternacht. Kenji rennt gerade durch den Untergrund von Umeda zur letzten Bahn!"}
+   ],
+   "hint": "Der Untergrund von Umeda – schnell!"
+  },
+  "13": {
+   "mood": "night",
+   "lines": [
+    {"s": "kenji", "p": "hyped", "t": "23:45! Die letzte Hankyū-Bahn – shūden – fährt gleich!"},
+    {"s": "kenji", "p": "talk", "t": "Ich hab die Orientierung verloren. Lies du die Schilder, schnell!"}
+   ],
+   "tasks": [
+    {"type": "mapquiz", "map": "umeda", "q": "Sprint zur letzten Bahn",
+     "points": [{"id": "kita", "x": 50, "y": 10, "label": "北"}, {"id": "hankyu", "x": 75, "y": 20, "label": "阪急"}, {"id": "higashi", "x": 88, "y": 50, "label": "東"}, {"id": "minami", "x": 50, "y": 90, "label": "南"}, {"id": "nishi", "x": 12, "y": 50, "label": "西"}],
+     "rounds": [
+      {"q": "„Erst Richtung Norden – きた!“", "answer": "kita", "fb": "北 – kita, Norden."},
+      {"q": "„Nein, warte – da steht Osten, ひがし!“", "answer": "higashi", "fb": "東 – higashi, Osten."},
+      {"q": "„Da! Die Hankyū-Bahn – はんきゅう!“", "answer": "hankyu", "fb": "阪急 – geschafft!"}
+     ]}
+   ],
+   "after": [
+    {"s": "kenji", "p": "talk", "t": "Wir sind da und … die Türen schließen sich. Vor unserer Nase."},
+    {"s": "kenji", "p": "relaxed", "t": "Na toll. Ryō wartet oben am Uhrenplatz. Er weiß, was man in so einer Nacht macht."}
+   ],
+   "hint": "Ryō am Uhrenplatz im Bahnhof Ōsaka."
+  },
+  "14": {
+   "mood": "night",
+   "lines": [
+    {"s": "ryo", "p": "sly", "t": "Bahn verpasst? Willkommen im Club. Das passiert hier jede Nacht tausend Leuten."},
+    {"s": "ryo", "p": "point", "t": "Bis zur ersten Bahn um fünf hast du ein paar Möglichkeiten. Taxi ist teuer, sehr teuer."},
+    {"s": "ryo", "p": "phone", "t": "Manga-Café mit Nachtpaket, Karaoke bis zum Morgen oder ein Restaurant, das 24 Stunden offen hat."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Ihr seid müde und wollt wenig Geld ausgeben. Was ist am sinnvollsten?", "options": ["Ein Taxi bis nach Hause", "Ein Manga-Café mit Nachtpaket – Sessel, Decke, Getränke", "Auf der Bank schlafen", "Ein Luxushotel"], "answer": 1},
+    {"type": "choice", "q": "Im Manga-Café ist es ruhig. Was ist dort höflich?", "options": ["Laut telefonieren", "Leise sein und die Kabine sauber verlassen", "Die Schuhe auf den Tisch legen", "Musik ohne Kopfhörer"], "answer": 1}
+   ],
+   "after": [
+    {"s": "ryo", "p": "point", "t": "Gute Wahl. Und um fünf nehmen wir die erste Bahn."},
+    {"s": "ryo", "p": "sly", "t": "Yuki ist auf einem Festival, das die ganze Nacht geht. Am Wassergraben bei der großen Konzerthalle. Bis zum Morgen!"}
+   ],
+   "hint": "Ein Nachtfestival am Wassergraben bei der großen Konzerthalle."
+  },
+  "15": {
+   "mood": "morning",
+   "lines": [
+    {"s": "yuki", "p": "flustered", "t": "Guten Morgen … die Sonne geht auf und meine Ohren klingeln noch."},
+    {"s": "yuki", "p": "excited", "t": "Die ganze Nacht Musik! Aber ich hab mein Festival-Armband verloren. Das will ich als Andenken behalten."},
+    {"s": "yuki", "p": "phone", "t": "Ich saß zuletzt auf einer Bank am Weg. Siehst du es irgendwo?"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Bank links am Weg.", "x": 12, "y": 68, "r": 9,
+     "closeup": {"art": "wristband", "title": "Das Armband", "text": "Ein rotes Stoffarmband: ALL NIGHT FES. Ein bisschen schmutzig, aber noch ganz."}}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Mein Armband! Danke!"},
+    {"s": "yuki", "p": "flustered", "t": "Jetzt brauche ich Frühstück. Meister Gen kocht früh morgens Udon in der langen Einkaufsstraße."}
+   ],
+   "hint": "Meister Gen in der langen Einkaufsstraße – Frühstück!"
+  },
+  "16": {
+   "mood": "morning",
+   "lines": [
+    {"s": "gen", "p": "laugh", "t": "Eine lange Nacht, was? Setzt euch. Udon hilft gegen alles."},
+    {"s": "gen", "p": "ladle", "t": "Das hier ist Kitsune-Udon – mit süßem, frittiertem Tofu. Erfunden in Ōsaka, schon im 19. Jahrhundert."},
+    {"s": "gen", "p": "proud", "t": "„Kitsune“ heißt Fuchs. Füchse sollen frittierten Tofu lieben. Sagt man."},
+    {"s": "me", "t": "Das ist genau das, was ich jetzt brauche."}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Iss langsam. Daiki will euch zum Ausklang in eine Kneipengasse in Amagasaki mitnehmen. Junge Leute!"}
+   ],
+   "hint": "Eine Kneipengasse in Amagasaki."
+  },
+  "17": {
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Die Rechnung kommt. Jetzt wird's interessant."},
+    {"s": "daiki", "p": "ready", "t": "Warikan heißt: Jeder zahlt gleich viel. Aber wenn ein Senpai dabei ist – einer, der älter ist –, zahlt er oft mehr."},
+    {"s": "daiki", "p": "cheer", "t": "Und der Kōhai, der Jüngere, bedankt sich dafür. Am nächsten Tag noch einmal!"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „warikan“?", "options": ["Der Jüngste zahlt alles", "Die Rechnung wird gleich geteilt", "Man zahlt nur das Bier", "Man zahlt mit Karte"], "answer": 1},
+    {"type": "choice", "q": "Dein Senpai hat mehr bezahlt. Was sagst du am nächsten Tag?", "options": [{"jp": "きのうは ごちそうさまでした。", "ro": "Kinō wa gochisōsama deshita."}, {"jp": "おやすみなさい。", "ro": "Oyasuminasai."}, {"jp": "いただきます。", "ro": "Itadakimasu."}, {"jp": "はじめまして。", "ro": "Hajimemashite."}], "answer": 0, "explain": "„Danke für das Essen gestern.“ Man bedankt sich am nächsten Tag noch einmal."}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cheer", "t": "Siehst du. Gutes Benehmen ist mehr wert als Geld."},
+    {"s": "daiki", "p": "cocky", "t": "Kenji will die Nacht in der Mensa auswerten. Mit Tee und Misosuppe."}
+   ],
+   "hint": "Kenji in der Mensa Kasane."
+  },
+  "18": {
+   "lines": [
+    {"s": "kenji", "p": "relaxed", "t": "Grüner Tee, Misosuppe, und alle Knochen tun weh. Herrlich."},
+    {"s": "kenji", "p": "talk", "t": "Lass uns zusammenfassen, was wir gelernt haben. Sonst vergessen wir es."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wann stößt man mit „Kanpai!“ an?", "options": ["Sobald man selbst ein Glas hat", "Wenn alle ein Glas haben", "Nach dem Essen", "Nie"], "answer": 1},
+    {"type": "choice", "q": "Was ist „Otōshi“?", "options": ["Die letzte Bahn", "Eine kleine Vorspeise als Sitzgebühr", "Ein Trinkspiel", "Die Rechnung"], "answer": 1},
+    {"type": "choice", "q": "Wie heißt die letzte Bahn der Nacht?", "options": [{"jp": "しゅうでん", "ro": "shūden"}, {"jp": "しはつ", "ro": "shihatsu"}, {"jp": "とっきゅう", "ro": "tokkyū"}, {"jp": "かいそく", "ro": "kaisoku"}], "answer": 0}
+   ],
+   "after": [
+    {"s": "kenji", "p": "hyped", "t": "Alles richtig! Du bist jetzt ein Ōsaka-Nachtprofi."},
+    {"s": "kenji", "p": "talk", "t": "Uh-oh. Frau Morimoto steht im Flur vom Wohnheim. Sie sieht nicht froh aus."}
+   ],
+   "hint": "Frau Morimoto im Wohnheimflur."
+  },
+  "19": {
+   "lines": [
+    {"s": "morimoto", "p": "scold", "t": "Da seid ihr ja. Wisst ihr, wie spät ihr gestern NICHT nach Hause gekommen seid?"},
+    {"s": "morimoto", "p": "clipboard", "t": "Ich mache mir Sorgen, wenn jemand nicht kommt. Und wenn ihr um vier Uhr laut seid, weckt ihr das ganze Haus."},
+    {"s": "morimoto", "p": "smile", "t": "Also, noch einmal die Hausregeln."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Du kommst später als geplant. Was tust du?", "options": ["Nichts sagen", "Vorher kurz Bescheid geben", "Durchs Fenster klettern", "Laut klingeln"], "answer": 1},
+    {"type": "choice", "q": "Wie entschuldigst du dich höflich?", "options": [{"jp": "すみませんでした。", "ro": "Sumimasen deshita."}, {"jp": "かんぱい！", "ro": "Kanpai!"}, {"jp": "いってきます。", "ro": "Ittekimasu."}, {"jp": "おいしい！", "ro": "Oishii!"}], "answer": 0}
+   ],
+   "after": [
+    {"s": "morimoto", "p": "smile", "t": "Gut. Ich bin nicht böse. Ich will nur, dass ihr sicher seid."},
+    {"s": "morimoto", "p": "clipboard", "t": "Und jetzt ab ins Bett. Kenji wartet schon in eurem Zimmer."}
+   ],
+   "hint": "Kenji in eurem Zimmer im Wohnheim."
+  },
+  "20": {
+   "lines": [
+    {"s": "kenji", "p": "relaxed", "t": "Was für eine Zeit. Izakaya, Live House, Okinawa-Musik, die letzte Bahn verpasst, Udon zum Frühstück."},
+    {"s": "kenji", "p": "talk", "t": "Als du hier ankamst, wusstest du nicht mal, was Kanpai heißt."},
+    {"s": "me", "t": "Und jetzt kenne ich sogar die Wetterlampe vom Tsūtenkaku."},
+    {"s": "kenji", "p": "hyped", "t": "Ōsaka bei Nacht – du hast es gemeistert. Kanpai, mein Freund!"}
+   ],
+   "after": [
+    {"s": "kenji", "p": "relaxed", "t": "Und jetzt … schlafen. Mindestens bis Mittag."}
+   ],
+   "hint": "Strang abgeschlossen – Kenji schläft. Bis Mittag."
+  }
+ },
+ "STRANG_SHOPPING_BARGAINS": {
+  "6": {
+   "lines": [
+    {"s": "morimoto", "p": "smile", "t": "Madoka sagt, du lernst Einkaufen. Dann lernst du heute Geschenke."},
+    {"s": "morimoto", "p": "clipboard", "t": "In Japan ist die Verpackung fast so wichtig wie das Geschenk. Im Kaufhaus wird alles sorgfältig eingewickelt."},
+    {"s": "morimoto", "p": "smile", "t": "Für feierliche Anlässe gibt es ein besonderes Papier mit gebundenen Schnüren – Mizuhiki."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Welche Farben haben die Schnüre bei einem fröhlichen Anlass?", "options": ["Schwarz und Weiß", "Rot und Weiß", "Nur Grau", "Grün und Blau"], "answer": 1, "explain": "Rot-Weiß für Feste, Schwarz-Weiß oder Silber für traurige Anlässe."},
+    {"type": "choice", "q": "Wie überreicht man ein Geschenk höflich?", "options": ["Mit beiden Händen und einer kleinen Verbeugung", "Man wirft es zu", "Man legt es wortlos hin", "Mit einer Hand über die Schulter"], "answer": 0}
+   ],
+   "after": [
+    {"s": "morimoto", "p": "smile", "t": "Sehr schön. Mit beiden Händen zeigt man Respekt."},
+    {"s": "morimoto", "p": "clipboard", "t": "Madoka ist in der Einkaufsstraße in Amagasaki. Sie sucht etwas für unsere Küche im Wohnheim."}
+   ],
+   "hint": "Madoka in der Einkaufsstraße in Amagasaki."
+  },
+  "7": {
+   "lines": [
+    {"s": "madoka", "p": "search", "t": "Die Küchenreibe im Wohnheim ist kaputt. Und ohne Reibe kein geriebener Rettich!"},
+    {"s": "madoka", "p": "shopping", "t": "Hier gibt es keine gute. Aber ein alter Händler in der langen Einkaufsstraße hat welche aus Kupfer."},
+    {"s": "madoka", "p": "cheer", "t": "Holst du mir eine? Frag nach dem Preis – er gibt gern Rabatt!"}
+   ],
+   "fetch": {"item": "Kupfer-Reibe", "x": 85, "y": 82, "art": "grater", "find": "Eine handgemachte Reibe aus Kupfer. Der Händler lacht: „Für dich – ein bisschen billiger!“", "hintOut": "Die Kupfer-Reibe gibt es in der langen Einkaufsstraße Tenjinbashisuji.", "hintBack": "Bring die Reibe zu Madoka nach Amagasaki."},
+   "after": [
+    {"s": "madoka", "p": "cheer", "t": "Perfekt! Und billiger als im Internet. So muss das sein."},
+    {"s": "madoka", "p": "search", "t": "Komm mit zurück in die lange Einkaufsstraße. Ich hab dort einen Stand mit Keramik entdeckt."}
+   ],
+   "hint": "Madoka in der langen Einkaufsstraße."
+  },
+  "8": {
+   "lines": [
+    {"s": "madoka", "p": "search", "t": "Schau mal hier, der Stand rechts. Lauter alte Schalen, alle durcheinander."},
+    {"s": "madoka", "p": "shopping", "t": "Die meisten sind aus der Fabrik. Aber eine ist von Hand gemacht – man erkennt es an der unregelmäßigen Glasur."},
+    {"s": "madoka", "p": "cheer", "t": "Finde sie!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf den Keramikstand rechts.", "x": 86, "y": 78, "r": 10,
+     "closeup": {"art": "bowl", "title": "Ein echtes Schnäppchen", "text": "Eine blaue Schale mit ungleichmäßiger Glasur – handgemacht. Und das für 300 Yen!"}},
+    {"type": "choice", "q": "Wie fragst du nach dem Preis?", "options": [{"jp": "これは いくらですか。", "ro": "Kore wa ikura desu ka."}, {"jp": "これは なんですか。", "ro": "Kore wa nan desu ka."}, {"jp": "どこですか。", "ro": "Doko desu ka."}, {"jp": "おいしいですか。", "ro": "Oishii desu ka."}], "answer": 0}
+   ],
+   "after": [
+    {"s": "madoka", "p": "cheer", "t": "300 Yen! Das ist ein Fund."},
+    {"s": "madoka", "p": "shopping", "t": "Lass uns alles in deinem Zimmer im Wohnheim auspacken. Ich will sehen, was wir zusammen gefunden haben."}
+   ],
+   "hint": "Dein Zimmer im Wohnheim."
+  },
+  "9": {
+   "lines": [
+    {"s": "madoka", "p": "shopping", "t": "Also: eine Reibe, eine Schale, Stofftaschen, Geschenkpapier – und alles günstig."},
+    {"s": "madoka", "p": "cheer", "t": "Das ist die Ōsaka-Art zu shoppen. Gut, günstig, und man redet mit den Händlern."},
+    {"s": "madoka", "p": "search", "t": "In Ōsaka fragt man nicht „Wie teuer?“, sondern sagt stolz: „Rate mal, wie billig!“"},
+    {"s": "me", "t": "Ich glaube, ich bin jetzt auch so."}
+   ],
+   "after": [
+    {"s": "madoka", "p": "cheer", "t": "Dann bist du jetzt ein echter Ōsaka-Einkäufer. Ich bin stolz auf dich!"}
+   ],
+   "hint": "Strang abgeschlossen – Madoka jagt weiter Schnäppchen."
+  }
+ },
+ "STRANG_LITERATURE": {
+  "8": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Das Archiv von Shitennō-ji. Hier liegen Schriftrollen mit buddhistischen Texten und alten Geschichten."},
+    {"s": "takada", "p": "think", "t": "Solche kurzen Geschichten nennt man Setsuwa. Sie erzählen von Wundern, Belohnung und Strafe."},
+    {"s": "takada", "p": "ponder", "t": "Die älteste Sammlung stammt aus dem frühen 9. Jahrhundert. Schau dir die Rolle an der Wand an."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Schriftrollen im Raum.", "x": 25, "y": 24, "r": 12,
+     "closeup": {"art": "sutra", "title": "Eine Schriftrolle", "text": "Senkrechte Zeilen, von rechts nach links zu lesen. Unten ein roter Stempel des Tempels."}},
+    {"type": "choice", "q": "Wie liest man diese alten Texte?", "options": ["Von links nach rechts, waagerecht", "Senkrecht, von rechts nach links", "Von unten nach oben", "Im Kreis"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Richtig. Viele Geschichten haben später Theaterstücke inspiriert."},
+    {"s": "takada", "p": "think", "t": "Sensei Ogata wartet im Geschichtsmuseum neben der Burg. Sie will dir das Puppentheater zeigen."}
+   ],
+   "hint": "Sensei Ogata im Geschichtsmuseum neben der Burg."
+  },
+  "9": {
+   "lines": [
+    {"s": "ogata", "p": "read", "t": "Chikamatsu Monzaemon. Der größte Theaterautor Ōsakas. Viele seiner Stücke schrieb er für das Puppentheater."},
+    {"s": "ogata", "p": "explain", "t": "Am berühmtesten sind seine Liebes-Tragödien. Sie spielen unter einfachen Leuten aus Ōsaka – das war neu."},
+    {"s": "ogata", "p": "smile", "t": "Hier sind vier Stücke. Bring sie in die richtige Reihenfolge."}
+   ],
+   "tasks": [
+    {"type": "sort", "q": "Sortiere die Stücke von früh nach spät.", "items": [{"label": "Shusse Kagekiyo", "sub": "1685"}, {"label": "Sonezaki Shinjū", "sub": "1703"}, {"label": "Kokusen'ya Kassen", "sub": "1715"}, {"label": "Shinjū Ten no Amijima", "sub": "1720"}]}
+   ],
+   "after": [
+    {"s": "ogata", "p": "smile", "t": "Perfekt. „Sonezaki Shinjū“ beruht auf einer wahren Geschichte aus Ōsaka."},
+    {"s": "ogata", "p": "read", "t": "Prof. Takada erzählt dir oben in der Burg von Kriegsberichten. Ganz oben im Museum."}
+   ],
+   "hint": "Prof. Takada im Museum im Hauptturm der Burg."
+  },
+  "10": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "1614 und 1615 wurde die Burg Ōsaka belagert. Danach war die Macht der Toyotomi zu Ende."},
+    {"s": "takada", "p": "think", "t": "Die Geschichten darüber nennt man Kriegserzählungen. Ein Held ist Sanada Yukimura. Man nannte ihn den besten Krieger Japans."},
+    {"s": "takada", "p": "ponder", "t": "Er verteidigte die Burg mit einer kleinen Festung im Süden. Später wurde er zur Legende."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wann wurde die Burg Ōsaka belagert?", "options": ["1583", "1614 und 1615", "1868", "1945"], "answer": 1},
+    {"type": "choice", "q": "Wie nannte man Sanada Yukimura?", "options": ["Den besten Krieger Japans", "Den Gott des Handels", "Den Kaiser von Ōsaka", "Den Dichter der Burg"], "answer": 0}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Aus solchen Legenden werden später Romane und Filme."},
+    {"s": "takada", "p": "think", "t": "Sensei Ogata forscht gerade in der alten Bibliothek einer großen Uni im Süden. Mit einer Ginkgo-Allee davor."}
+   ],
+   "hint": "Die alte Bibliothek der Uni mit der Ginkgo-Allee."
+  },
+  "11": {
+   "lines": [
+    {"s": "ogata", "p": "read", "t": "Ich vergleiche moderne Kurzgeschichten über Ōsaka mit alten Notizen aus dem Archiv."},
+    {"s": "ogata", "p": "explain", "t": "Aber ein Notizbuch fehlt. Es liegt noch im Museum auf dem Campus in Toyonaka."},
+    {"s": "ogata", "p": "smile", "t": "Bist du so nett?"}
+   ],
+   "fetch": {"item": "Archiv-Notizbuch", "x": 55, "y": 82, "art": "notebook", "find": "Ein blaues Notizbuch: 研究ノート – Forschungsnotizen. Voller Zettel und Stichworte.", "hintOut": "Das Notizbuch liegt im Uni-Museum in Toyonaka.", "hintBack": "Bring das Notizbuch zu Sensei Ogata in die alte Bibliothek in Sugimoto."},
+   "after": [
+    {"s": "ogata", "p": "smile", "t": "Danke! Jetzt passt alles zusammen."},
+    {"s": "ogata", "p": "read", "t": "Maya liest gerade einen schweren Roman. „Wo ein Uhrturm über eine grüne Wiese schaut“, schrieb sie mir."}
+   ],
+   "hint": "„Wo ein Uhrturm über eine grüne Wiese schaut.“"
+  },
+  "12": {
+   "lines": [
+    {"s": "maya", "p": "coffee", "t": "Ich lese „Schweigen“ von Endō Shūsaku. Auf Deutsch – auf Japanisch ist es noch zu schwer."},
+    {"s": "maya", "p": "shy", "t": "Es geht um einen Missionar im 17. Jahrhundert. Das Christentum war damals in Japan verboten."},
+    {"s": "maya", "p": "wave", "t": "Endō war selbst Christ. Er fragt: Warum schweigt Gott, wenn Menschen leiden?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wovon handelt „Schweigen“?", "options": ["Von einem Koch in Ōsaka", "Von einem Missionar in der Zeit des Christentumsverbots", "Von einem Fußballspiel", "Von einer Reise zum Mond"], "answer": 1},
+    {"type": "choice", "q": "Welche Frage stellt der Roman?", "options": ["Wo ist der Bahnhof?", "Warum schweigt Gott, wenn Menschen leiden?", "Was kostet Reis?", "Wer gewinnt das Derby?"], "answer": 1}
+   ],
+   "after": [
+    {"s": "maya", "p": "shy", "t": "Ein trauriges, aber schönes Buch."},
+    {"s": "maya", "p": "coffee", "t": "Sensei Ogata wartet in der großen Bibliothek auf der Flussinsel. Sie hat ein letztes Rätsel für dich."}
+   ],
+   "hint": "Sensei Ogata in der Nakanoshima-Bibliothek."
+  },
+  "13": {
+   "lines": [
+    {"s": "ogata", "p": "explain", "t": "Das große Finale. Über 250 Jahre Literatur aus Ōsaka – in vier Werken."},
+    {"s": "ogata", "p": "read", "t": "Ein Händlerroman, ein Puppentheaterstück, Geistergeschichten und eine Erzählung über ein Ehepaar in Minami."},
+    {"s": "ogata", "p": "smile", "t": "Ordne sie."}
+   ],
+   "tasks": [
+    {"type": "sort", "q": "Sortiere die Werke von früh nach spät.", "items": [{"label": "Ihara Saikaku: Kōshoku Ichidai Otoko", "sub": "1682"}, {"label": "Chikamatsu: Sonezaki Shinjū", "sub": "1703"}, {"label": "Ueda Akinari: Ugetsu Monogatari", "sub": "1776"}, {"label": "Oda Sakunosuke: Meoto Zenzai", "sub": "1940"}]}
+   ],
+   "after": [
+    {"s": "ogata", "p": "smile", "t": "Ausgezeichnet. Du kennst jetzt die großen Namen Ōsakas."},
+    {"s": "ogata", "p": "read", "t": "Lass uns dort abschließen, wo wir die Druckstöcke angesehen haben: im Museum in Toyonaka."}
+   ],
+   "hint": "Das Uni-Museum in Toyonaka."
+  },
+  "14": {
+   "lines": [
+    {"s": "ogata", "p": "read", "t": "Hier hat unsere Reise begonnen. Haiku, Puppentheater, Romane über Händler und Liebende."},
+    {"s": "ogata", "p": "explain", "t": "Ōsaka war immer eine Stadt der Händler. Aber Händler erzählen auch gern Geschichten."},
+    {"s": "ogata", "p": "smile", "t": "Literatur ist das Gedächtnis einer Stadt. Und du trägst jetzt ein Stück davon mit dir."},
+    {"s": "me", "t": "Danke, Sensei. Ich lese weiter – versprochen."}
+   ],
+   "after": [
+    {"s": "ogata", "p": "smile", "t": "Dann habe ich alles richtig gemacht."}
+   ],
+   "hint": "Strang abgeschlossen – Sensei Ogata liest weiter im Museum."
+  }
+ },
+ "STRANG_PHILOSOPHY_THEOLOGY": {
+  "13": {
+   "lines": [
+    {"s": "kiryu", "p": "think", "t": "Shitennō-ji. Gegründet 593 von Prinz Shōtoku. Er gilt als einer der ersten großen Förderer des Buddhismus in Japan."},
+    {"s": "kiryu", "p": "explain", "t": "Ihm wird eine Verfassung mit siebzehn Artikeln zugeschrieben. Der erste Artikel beginnt mit einem Wort: Wa."},
+    {"s": "kiryu", "p": "doubt", "t": "Wa heißt Harmonie. Aber ist Harmonie immer gut? Oder schweigt man dann zu oft?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „Wa“?", "options": ["Krieg", "Harmonie", "Handel", "Wasser"], "answer": 1},
+    {"type": "choice", "q": "Wer gründete Shitennō-ji?", "options": ["Toyotomi Hideyoshi", "Prinz Shōtoku", "Oda Nobunaga", "Kaiser Meiji"], "answer": 1}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "think", "t": "Harmonie ist ein Ziel – aber man muss auch widersprechen dürfen. Daran denke ich oft."},
+    {"s": "kiryu", "p": "explain", "t": "Prof. Takada ist im Archiv des Tempels. Er sucht ein Buch über die Leerheit."}
+   ],
+   "hint": "Prof. Takada im Archiv von Shitennō-ji."
+  },
+  "14": {
+   "lines": [
+    {"s": "takada", "p": "ponder", "t": "Leerheit – das ist ein schwieriges Wort. Im Buddhismus heißt es: Nichts existiert ganz allein."},
+    {"s": "takada", "p": "explain", "t": "Ein Baum braucht Erde, Wasser, Sonne. Ohne sie gibt es keinen Baum. Alles hängt zusammen."},
+    {"s": "takada", "p": "think", "t": "Ich habe einen Kommentar dazu in der alten Bibliothek der Uni in Sugimoto bestellt. Holst du ihn mir?"}
+   ],
+   "fetch": {"item": "Kommentar zur Leerheit", "x": 60, "y": 88, "art": "bookspine", "find": "Ein dickes altes Buch mit Lesezeichen. Auf einem Zettel: „Für Prof. Takada – bitte bis Freitag zurück.“", "hintOut": "Das Buch liegt in der alten Bibliothek der OMU in Sugimoto.", "hintBack": "Bring das Buch zu Prof. Takada ins Archiv von Shitennō-ji."},
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Danke. Siehst du – auch dieses Buch kam nur durch dich hierher. Alles hängt zusammen."},
+    {"s": "takada", "p": "think", "t": "Dr. Kiryū ist schon in der alten Bibliothek in Sugimoto. Er will über Ordnung und Staat sprechen."}
+   ],
+   "hint": "Dr. Kiryū in der alten Bibliothek in Sugimoto."
+  },
+  "15": {
+   "lines": [
+    {"s": "kiryu", "p": "explain", "t": "In der Edo-Zeit stritten Gelehrte: Kommt die Ordnung aus der Natur – oder machen Menschen sie?"},
+    {"s": "kiryu", "p": "think", "t": "Die einen sagten: Es gibt ein natürliches Prinzip in allen Dingen. Ogyū Sorai sagte: Nein, die alten Weisen haben die Regeln gemacht."},
+    {"s": "kiryu", "p": "doubt", "t": "Und in Ōsaka? Dort diskutierten Händler in eigenen Schulen mit. Das war ziemlich modern."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was sagte Ogyū Sorai über die Ordnung?", "options": ["Sie kommt von den Sternen", "Menschen – die alten Weisen – haben sie gemacht", "Es gibt keine Ordnung", "Nur der Kaiser kennt sie"], "answer": 1},
+    {"type": "choice", "q": "Was war in Ōsaka besonders?", "options": ["Nur Samurai durften lernen", "Auch Händler diskutierten in eigenen Schulen", "Es gab keine Schulen", "Man lernte nur Rechnen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "think", "t": "Gute Antworten. Bald sprechen wir über Reinheit und das Heilige."},
+    {"s": "kiryu", "p": "explain", "t": "Herr Yamada lädt uns zu einem großen alten Schrein im Süden ein. Mit einer steilen roten Brücke."}
+   ],
+   "hint": "Ein großer alter Schrein mit steiler roter Brücke im Süden."
+  }
+ },
+ "STRANG_TEMPLE_PILGRIMAGE": {
+  "1": {
+   "lines": [
+    {"s": "clara", "p": "surprised", "t": "Oh, hallo! Du sprichst Deutsch? Ich bin Clara. Ich reise durch Japan und zeichne Tempel."},
+    {"s": "clara", "p": "calm", "t": "Das hier ist Shitennō-ji. Prinz Shōtoku hat ihn im Jahr 593 gegründet. Einer der ältesten Tempel Japans!"},
+    {"s": "clara", "p": "photo", "t": "Ich will alles richtig machen: leise sein, nichts anfassen, nicht einfach jeden fotografieren."},
+    {"s": "clara", "p": "calm", "t": "Begleitest du mich ein Stück? Allein verstehe ich die Schilder nicht."}
+   ],
+   "after": [
+    {"s": "clara", "p": "photo", "t": "Danke! Dann fangen wir gleich hier an. Schau dir mit mir die Anordnung der Gebäude an."}
+   ],
+   "hint": "Gleich hier am Südtor von Shitennō-ji."
+  },
+  "2": {
+   "lines": [
+    {"s": "clara", "p": "calm", "t": "Schau: Tor, Pagode, Haupthalle und Lehrhalle stehen genau hintereinander, von Süden nach Norden."},
+    {"s": "clara", "p": "photo", "t": "Diese Anordnung in einer Linie ist typisch für Shitennō-ji. Sie ist sehr alt."},
+    {"s": "clara", "p": "surprised", "t": "Tippst du die Pagode an? Ich will sie zuerst zeichnen."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die fünfstöckige Pagode.", "x": 86, "y": 38, "r": 12,
+     "closeup": {"art": "garan", "title": "Alles auf einer Linie", "text": "Von Süden nach Norden: Tor, Pagode, Haupthalle, Lehrhalle. Wie an einer Schnur aufgereiht."}},
+    {"type": "choice", "q": "Wie stehen die Hauptgebäude?", "options": ["Im Kreis", "In einer Linie von Süden nach Norden", "Zufällig verteilt", "Übereinander"], "answer": 1}
+   ],
+   "after": [
+    {"s": "clara", "p": "photo", "t": "Perfekt, das kommt in mein Skizzenbuch."},
+    {"s": "clara", "p": "calm", "t": "Prof. Takada ist im Archiv und Garten des Tempels. Er weiß mehr über Prinz Shōtoku."}
+   ],
+   "hint": "Prof. Takada im Archiv und Garten von Shitennō-ji."
+  },
+  "3": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Prinz Shōtoku wollte nicht nur einen Tempel. Er gründete vier Einrichtungen."},
+    {"s": "takada", "p": "think", "t": "Einen Ort zum Lernen und Beten, ein Haus für Arme und Alte, ein Krankenhaus und eine Apotheke für Heilpflanzen."},
+    {"s": "takada", "p": "ponder", "t": "Ein Tempel als Sozialzentrum – vor 1400 Jahren."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Welche Einrichtung gehörte NICHT dazu?", "options": ["Ein Krankenhaus", "Eine Apotheke", "Ein Haus für Arme", "Ein Theater"], "answer": 3},
+    {"type": "choice", "q": "Was zeigt das über den Tempel?", "options": ["Er war nur für Mönche", "Er half auch kranken und armen Menschen", "Er war eine Burg", "Er war ein Markt"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Richtig. Religion und Fürsorge gehörten zusammen."},
+    {"s": "takada", "p": "think", "t": "Clara sitzt gleich hier im Garten. Sie zeichnet gerade das Wasser."}
+   ],
+   "hint": "Clara hier im Garten von Shitennō-ji."
+  },
+  "4": {
+   "lines": [
+    {"s": "clara", "p": "calm", "t": "Dieser Garten soll das Reine Land darstellen. Ein Paradies, in das man nach dem Tod kommt."},
+    {"s": "clara", "p": "photo", "t": "Das Wasser fließt durch den Garten in einen Teich. Die Brücke führt hinüber – wie ein Weg ins Paradies."},
+    {"s": "clara", "p": "surprised", "t": "Weißt du noch, was ich vorhin über Tempel gesagt habe?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was stellt der Garten dar?", "options": ["Ein Schlachtfeld", "Das Reine Land, ein Paradies", "Einen Markt", "Einen Bahnhof"], "answer": 1},
+    {"type": "choice", "q": "Wie verhält man sich in einem Tempel?", "options": ["Laut rufen", "Leise sein und nichts anfassen", "Auf die Steine klettern", "Picknick auf dem Altar"], "answer": 1}
+   ],
+   "after": [
+    {"s": "clara", "p": "calm", "t": "Genau. So ruhig hier."},
+    {"s": "clara", "p": "photo", "t": "Als Nächstes will ich in die Berge. Zum Wasserfall im Norden. Dort soll ein Tempel stehen, wo die Lotterie erfunden wurde!"}
+   ],
+   "hint": "Der Tempel am Wasserfall im Norden."
+  },
+  "5": {
+   "lines": [
+    {"s": "clara", "p": "surprised", "t": "Hier im Tal steht der Tempel Ryūan-ji. Man sagt, hier begann eine der ältesten Lotterien Japans."},
+    {"s": "clara", "p": "calm", "t": "Früher bekamen die Leute Holztäfelchen mit Namen. Die Gewinner bekamen Glücksbringer für das neue Jahr."},
+    {"s": "clara", "p": "photo", "t": "Tippst du auf den Tempel? Ich will ihn mir genauer ansehen."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf den Tempel rechts im Wald.", "x": 78, "y": 40, "r": 12,
+     "closeup": {"art": "tomikuji", "title": "Glückstäfelchen", "text": "Holztäfelchen mit Zahlen. Wer gezogen wurde, bekam einen Glücksbringer."}}
+   ],
+   "after": [
+    {"s": "clara", "p": "surprised", "t": "Eine Lotterie im Tempel! Das hätte ich nie gedacht."},
+    {"s": "clara", "p": "calm", "t": "Prof. Takada ist auch hier am Wasserfall. Er erzählt von Mönchen, die in den Bergen trainierten."}
+   ],
+   "hint": "Prof. Takada hier am Minō-Wasserfall."
+  },
+  "6": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "In diesen Bergen trainierte der Legende nach En no Gyōja. Er gilt als Gründer des Shugendō."},
+    {"s": "takada", "p": "think", "t": "Shugendō verbindet Buddhismus und den Glauben an Berggötter. Die Mönche wandern, fasten und stehen unter Wasserfällen."},
+    {"s": "takada", "p": "ponder", "t": "Man nennt sie Yamabushi – „die in den Bergen schlafen“."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wo trainieren die Mönche des Shugendō?", "options": ["In der Stadt", "In den Bergen", "Auf Schiffen", "In Bibliotheken"], "answer": 1},
+    {"type": "choice", "q": "Wie nennt man diese Bergmönche?", "options": ["Samurai", "Yamabushi", "Ninja", "Geisha"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Richtig. Unter einem Wasserfall zu stehen – das ist eiskalt."},
+    {"s": "takada", "p": "think", "t": "Clara ist zurück in der Stadt, in den kleinen Gassen von Nakatsu. Sie hat dort eine Steinfigur entdeckt."}
+   ],
+   "hint": "Clara in den Gassen von Nakatsu."
+  },
+  "7": {
+   "lines": [
+    {"s": "clara", "p": "calm", "t": "Schau, eine kleine Steinfigur mit rotem Lätzchen. Ein Jizō. Er beschützt Kinder und Reisende."},
+    {"s": "clara", "p": "surprised", "t": "Ich wollte ihn zeichnen – aber mein Skizzenbuch ist weg! Ich war vorhin in der Bibliothek auf der Flussinsel."},
+    {"s": "clara", "p": "photo", "t": "Würdest du es holen? Bitte!"}
+   ],
+   "fetch": {"item": "Claras Skizzenbuch", "x": 40, "y": 84, "art": "sketchbook", "find": "Ein Skizzenbuch mit Spiralbindung. Auf der ersten Seite: eine Pagode und der Name „Clara“.", "hintOut": "Das Skizzenbuch liegt in der Nakanoshima-Bibliothek.", "hintBack": "Bring das Skizzenbuch zu Clara nach Nakatsu."},
+   "after": [
+    {"s": "clara", "p": "surprised", "t": "Mein Buch! Danke, danke. Jetzt zeichne ich den Jizō."},
+    {"s": "clara", "p": "calm", "t": "Prof. Takada will mir im Geschichtsmuseum neben der Burg einen Tempel zeigen, der eine Festung war."}
+   ],
+   "hint": "Prof. Takada im Geschichtsmuseum neben der Burg."
+  },
+  "8": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Bevor die Burg Ōsaka stand, gab es hier einen riesigen Tempel: Ishiyama Hongan-ji."},
+    {"s": "takada", "p": "think", "t": "Er war eine Festung mit Mauern und Gräben. Gläubige Kämpfer verteidigten ihn zehn Jahre lang gegen Oda Nobunaga."},
+    {"s": "takada", "p": "ponder", "t": "1580 gaben sie auf. Auf dem Gelände baute Hideyoshi später seine Burg. Schau dir das Modell an."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das Modell auf dem Tisch.", "x": 60, "y": 78, "r": 12,
+     "closeup": {"art": "honganji", "title": "Ein Tempel als Festung", "text": "Eine Hochfläche, umgeben von Wasser und Wällen. In der Mitte die große Halle."}},
+    {"type": "choice", "q": "Was wurde später auf dem Gelände gebaut?", "options": ["Ein Bahnhof", "Die Burg Ōsaka", "Ein Hafen", "Ein Stadion"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Ein Tempel, eine Festung, eine Burg – derselbe Ort."},
+    {"s": "takada", "p": "think", "t": "Clara macht Pause im Park Tenshiba. Von dort sieht man die Tempeldächer von Tennōji."}
+   ],
+   "hint": "Clara im Park Tenshiba."
+  },
+  "9": {
+   "lines": [
+    {"s": "clara", "p": "calm", "t": "Von hier sieht man Hochhäuser – und dazwischen alte Tempeldächer. Diese Mischung liebe ich."},
+    {"s": "clara", "p": "photo", "t": "Weißt du, warum der ganze Bezirk Tennōji heißt?"},
+    {"s": "clara", "p": "surprised", "t": "Ich glaube, es hat mit dem Tempel zu tun, den wir besucht haben."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Woher hat der Bezirk Tennōji seinen Namen?", "options": ["Von einem Kaiser", "Vom Tempel Shitennō-ji", "Von einem Fluss", "Von einem Zug"], "answer": 1},
+    {"type": "choice", "q": "Was heißt „ji“ (寺) am Ende eines Namens?", "options": ["Schrein", "Tempel", "Berg", "Brücke"], "answer": 1}
+   ],
+   "after": [
+    {"s": "clara", "p": "calm", "t": "Genau. 寺 – ji, oder tera. Tempel."},
+    {"s": "clara", "p": "photo", "t": "Herr Yamada wartet wieder am Südtor von Shitennō-ji. Er will mir ein Tor zeigen, das eigentlich zu einem Schrein gehört."}
+   ],
+   "hint": "Herr Yamada am Südtor von Shitennō-ji."
+  },
+  "10": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Am Westtor dieses Tempels steht ein Torii aus Stein. Ein Schreintor – an einem buddhistischen Tempel!"},
+    {"s": "yamada", "p": "explain", "t": "Früher waren Shintō und Buddhismus eng verbunden. Man verehrte Kami und Buddhas zusammen."},
+    {"s": "yamada", "p": "pray", "t": "Zur Tagundnachtgleiche geht die Sonne genau hinter diesem Tor unter. Viele Menschen kommen, um zu beten."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist ein Torii?", "options": ["Eine Tempelglocke", "Ein Tor, typisch für Shintō-Schreine", "Eine Pagode", "Ein Garten"], "answer": 1},
+    {"type": "choice", "q": "Warum steht ein Torii an einem Tempel?", "options": ["Es ist ein Fehler", "Früher waren Shintō und Buddhismus eng verbunden", "Es ist ein Eingang für Autos", "Es ist ein modernes Kunstwerk"], "answer": 1}
+   ],
+   "after": [
+    {"s": "yamada", "p": "pray", "t": "Zwei Glauben, ein Ort. So war Japan lange Zeit."},
+    {"s": "yamada", "p": "calm", "t": "Clara sitzt schon wieder im Tempelgarten. Sie betrachtet Moos und Kies."}
+   ],
+   "hint": "Clara im Garten von Shitennō-ji."
+  },
+  "11": {
+   "lines": [
+    {"s": "clara", "p": "calm", "t": "Moos, Steine und geharkter Kies. Die Linien sehen aus wie Wellen."},
+    {"s": "clara", "p": "photo", "t": "Die Mönche harken den Kies jeden Tag neu. Das ist auch eine Art Meditation."},
+    {"s": "clara", "p": "surprised", "t": "Tippst du die Kieswellen an? Ich will sie ganz genau sehen."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Kieswellen unten rechts.", "x": 84, "y": 86, "r": 12,
+     "closeup": {"art": "stone", "title": "Kies wie Wasser", "text": "Geharkte Linien im Kies stehen für Wasser. Ein großer Stein darin ist wie eine Insel."}}
+   ],
+   "after": [
+    {"s": "clara", "p": "calm", "t": "Wunderschön. Ich will noch ein Teehaus zeichnen."},
+    {"s": "clara", "p": "photo", "t": "Prof. Takada sagt: „Wo neben dem größten Grab Japans der Tee in Stille getrunken wird.“ Kommst du mit?"}
+   ],
+   "hint": "„Wo neben dem größten Grab Japans der Tee in Stille getrunken wird.“"
+  }
+ },
+ "STRANG_CULTURE_KANSAI": {
+  "10": {
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Siehst du die alten Männer dort? Die spielen jeden Tag Shōgi. Japanisches Schach."},
+    {"s": "daiki", "p": "ready", "t": "Der berühmteste Spieler aus der Gegend war Sakata Sankichi. Ein Straßenspieler, der zur Legende wurde. Es gibt sogar Lieder über ihn."},
+    {"s": "daiki", "p": "cheer", "t": "Schau dir mal das Brett an!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das Shōgi-Brett der alten Männer.", "x": 59, "y": 73, "r": 9,
+     "closeup": {"art": "shogiboard", "title": "Das Shōgi-Brett", "text": "Neun mal neun Felder, fünfeckige Holzsteine mit Kanji. Die Spitze zeigt zum Gegner."}},
+    {"type": "choice", "q": "Was ist besonders an Shōgi-Steinen?", "options": ["Sie sind rund", "Geschlagene Steine darf man selbst wieder einsetzen", "Sie haben keine Schrift", "Sie sind aus Glas"], "answer": 1, "explain": "Gefangene Steine wechseln die Seite – das gibt es im westlichen Schach nicht."}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cocky", "t": "Genau. Darum ist Shōgi so wild."},
+    {"s": "daiki", "p": "ready", "t": "Emi ist oben auf dem eisernen Turm. Sie zählt, wie viele Leute aus Kyōto und Nara herkommen."}
+   ],
+   "hint": "Emi oben auf dem eisernen Turm."
+  },
+  "11": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "Von hier sieht man bei klarem Wetter die Berge Richtung Nara und Kyōto."},
+    {"s": "emi", "p": "inspect", "t": "Kansai ist eng verbunden. Viele wohnen in Kyōto oder Nara und arbeiten in Ōsaka."},
+    {"s": "emi", "p": "wave", "t": "Wie lange, glaubst du, braucht der schnellste normale Zug von Ōsaka nach Kyōto?"}
+   ],
+   "tasks": [
+    {"type": "estimate", "q": "Wie viele Minuten fährt der JR-Spezial-Schnellzug von Ōsaka nach Kyōto?", "min": 5, "max": 180, "step": 1, "answer": 29, "unit": "min", "tol": 0.2}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Knapp eine halbe Stunde! Deshalb fühlt sich Kansai an wie eine große Stadt mit vielen Herzen."},
+    {"s": "emi", "p": "wave", "t": "Prof. Takada erklärt dir die Dialekte. „Ein Campus mit einer Ginkgo-Allee, wo man drei Sprachen hört, die eigentlich eine sind.“"}
+   ],
+   "hint": "„Ein Campus mit Ginkgo-Allee, wo man drei Sprachen hört, die eigentlich eine sind.“"
+  },
+  "12": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Ōsaka, Kyōto, Kōbe – drei Städte, drei Dialekte. Alle gehören zum Kansai-ben."},
+    {"s": "takada", "p": "think", "t": "In Ōsaka sagt man ほんま (honma) für „wirklich“ und あかん (akan) für „geht nicht“."},
+    {"s": "takada", "p": "ponder", "t": "In Kyōto klingt es weicher, mit おいでやす (oideyasu) – „Willkommen“. Und überall in Kansai sagt man おおきに (ōkini) für „danke“."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „honma“ auf Ōsaka-Dialekt?", "options": ["danke", "wirklich", "nein", "Hunger"], "answer": 1},
+    {"type": "choice", "q": "Wie sagt man in Kansai „danke“?", "options": [{"jp": "おおきに", "ro": "ōkini"}, {"jp": "あかん", "ro": "akan"}, {"jp": "なんでやねん", "ro": "nande ya nen"}, {"jp": "ほんま", "ro": "honma"}], "answer": 0}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Ōkini! Sehr gut."},
+    {"s": "takada", "p": "think", "t": "Daiki will dir das Derby der Stadt erklären. Im kleinen Fußballstadion im Nagai-Park, ganz im Süden."}
+   ],
+   "hint": "Das kleine Fußballstadion im Nagai-Park."
+  }
+ },
+ "STRANG_CULTURE_OSAKA": {
+  "5": {
+   "lines": [
+    {"s": "takeshi", "p": "newspaper", "t": "Ah, da bist du. Die alten Herren hier lösen jeden Morgen Shōgi-Rätsel. Tsume-Shōgi – Matt in einem Zug."},
+    {"s": "takeshi", "p": "explain", "t": "Die Steine: 王 ist der König, 金 der Gold-General, 歩 der Bauer. Der Gold-General zieht einen Schritt – nur nicht schräg nach hinten."},
+    {"s": "takeshi", "p": "think", "t": "Du hast einen Gold-General in der Hand. Setz ihn so ein, dass der König nicht mehr fliehen kann."}
+   ],
+   "tasks": [
+    {"type": "shogi", "q": "Matt in einem Zug: Setze den Gold-General ein.", "cols": 5, "rows": 4,
+     "pieces": [{"k": "王", "x": 3, "y": 1, "foe": true}, {"k": "歩", "x": 3, "y": 3}],
+     "hand": ["金"], "answer": [{"from": "hand:金", "to": "3,2"}],
+     "fb": "Atama-kin – „Gold auf den Kopf“! Der Bauer dahinter schützt den General."}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Atama-kin! Der älteste Trick der Welt. Die alten Herren nicken anerkennend."},
+    {"s": "takeshi", "p": "newspaper", "t": "Emi wartet oben auf dem eisernen Turm, bei einem kleinen goldenen Gott mit großen Füßen."}
+   ],
+   "hint": "Emi oben auf dem eisernen Turm, beim kleinen goldenen Gott."
+  },
+  "6": {
+   "lines": [
+    {"s": "emi", "p": "inspect", "t": "Das ist Billiken. Er kommt eigentlich aus Amerika – eine Künstlerin hat ihn 1908 erfunden."},
+    {"s": "emi", "p": "note", "t": "Man nennt ihn den „Gott der Dinge, wie sie sein sollten“. Seit 1912 lebt er hier in Shinsekai."},
+    {"s": "emi", "p": "wave", "t": "Wenn man ihm die Fußsohlen streichelt, bringt das Glück. Darum sind sie ganz blank."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Woher kommt Billiken ursprünglich?", "options": ["Aus China", "Aus Amerika", "Aus Okinawa", "Aus Kyōto"], "answer": 1},
+    {"type": "choice", "q": "Was macht man, um Glück zu bekommen?", "options": ["Ihm die Fußsohlen streicheln", "Ihm Geld in den Mund stecken", "Dreimal um ihn herumlaufen", "Ihn umarmen"], "answer": 0}
+   ],
+   "after": [
+    {"s": "emi", "p": "wave", "t": "Typisch Ōsaka: Ein amerikanischer Glücksgott wird zum Liebling der Stadt."},
+    {"s": "emi", "p": "note", "t": "Takeshi ist im Okinawa-Viertel im Westen. Er will dir zeigen, wie offen diese Hafenstadt ist."}
+   ],
+   "hint": "Takeshi im Okinawa-Viertel im Westen."
+  },
+  "7": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Ōsaka war immer ein Hafen. Menschen kamen aus Okinawa, Korea, China und vom Land, um hier zu arbeiten."},
+    {"s": "takeshi", "p": "think", "t": "In Okinawa isst man übrigens sehr viel Kombu – Seetang aus Hokkaidō, über Ōsaka gehandelt. Ein Kreis des Handels!"},
+    {"s": "takeshi", "p": "newspaper", "t": "Ich will heute ein Kombu-Gericht kochen. Holst du mir Kombu vom Kuromon-Markt?"}
+   ],
+   "fetch": {"item": "Kombu vom Markt", "x": 52, "y": 84, "art": "kombu", "find": "Ein Bündel getrockneter Seetang aus Hokkaidō: 昆布 – kombu. Der Händler sagt: „Der beste für Dashi!“", "hintOut": "Den Kombu gibt es auf dem Kuromon-Markt.", "hintBack": "Bring den Kombu zu Takeshi nach Taishō."},
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Wunderbar. Seetang aus dem Norden, ein Gericht aus dem Süden, gekocht in Ōsaka. Das ist diese Stadt."},
+    {"s": "takeshi", "p": "think", "t": "Meister Gen ist in der langen Einkaufsstraße. Dort hängen schon die Plakate für das große Sommerfest."}
+   ],
+   "hint": "Meister Gen in der langen Einkaufsstraße."
+  },
+  "8": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "Siehst du die Laternen und Plakate? Bald ist Tenjin Matsuri – eines der drei größten Feste Japans."},
+    {"s": "gen", "p": "ladle", "t": "Im Juli fahren über hundert Boote auf dem Fluss, mit Trommeln und Laternen. Abends gibt es Feuerwerk."},
+    {"s": "gen", "p": "laugh", "t": "Such mal ein Plakat zwischen den Laternen!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Laternen oben in der Einkaufsstraße.", "x": 45, "y": 20, "r": 12,
+     "closeup": {"art": "festivalposter", "title": "Tenjin Matsuri", "text": "Boote auf dem Fluss, Feuerwerk am Himmel. Das Fest findet jedes Jahr am 24. und 25. Juli statt."}},
+    {"type": "choice", "q": "Wo findet ein großer Teil des Tenjin Matsuri statt?", "options": ["Auf einem Berg", "Auf dem Fluss, mit Booten", "Im Bahnhof", "Unter der Erde"], "answer": 1}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Komm im Juli wieder. Dann ist hier kein Platz mehr frei!"},
+    {"s": "gen", "p": "proud", "t": "Emi ist im Museum mit der alten Edo-Straße. Sie will dir zeigen, wie die Händler damals lebten."}
+   ],
+   "hint": "Emi im Museum mit der Edo-Straße."
+  },
+  "9": {
+   "lines": [
+    {"s": "emi", "p": "inspect", "t": "Die einfachen Leute wohnten in Nagaya – langen Reihenhäusern. Ein Zimmer pro Familie."},
+    {"s": "emi", "p": "note", "t": "Brunnen und Toiletten teilten sich alle im Hof. Man kannte jeden Nachbarn."},
+    {"s": "emi", "p": "wave", "t": "Die Händler nannte man Chōnin – „Stadtleute“. Sie machten Ōsaka reich."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist ein Nagaya?", "options": ["Ein Schloss", "Ein langes Reihenhaus", "Ein Boot", "Ein Tempel"], "answer": 1},
+    {"type": "choice", "q": "Was teilten sich die Bewohner?", "options": ["Brunnen und Toiletten", "Pferde", "Schwerter", "Nichts"], "answer": 0}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Eng, aber herzlich. Das prägt Ōsaka bis heute."},
+    {"s": "emi", "p": "wave", "t": "Takeshi wartet am Flussufer in Kitahama. Dort wurde einmal Weltgeschichte des Handels geschrieben."}
+   ],
+   "hint": "Takeshi am Flussufer in Kitahama."
+  },
+  "10": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Ganz in der Nähe lag die Reisbörse von Dōjima. Dort wurde Reis gehandelt, noch bevor er geerntet war."},
+    {"s": "takeshi", "p": "think", "t": "1730 erlaubte die Regierung diesen Handel offiziell. Viele sagen: Das war der erste geregelte Terminmarkt der Welt."},
+    {"s": "takeshi", "p": "newspaper", "t": "Die Händler von Ōsaka waren ihrer Zeit voraus. Was weißt du noch?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was wurde in Dōjima gehandelt?", "options": ["Gold", "Reis", "Seide", "Pferde"], "answer": 1},
+    {"type": "choice", "q": "Was ist das Besondere an einem Terminmarkt?", "options": ["Man handelt Waren, die erst später geliefert werden", "Man tauscht nur Briefmarken", "Man kauft nur am Sonntag", "Man zahlt mit Muscheln"], "answer": 0}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Richtig. Handel mit der Zukunft – im 18. Jahrhundert."},
+    {"s": "takeshi", "p": "think", "t": "Prof. Takada will dir die gigantischen Steine in der Burgmauer zeigen. Am großen Platz vor dem Hauptturm."}
+   ],
+   "hint": "Prof. Takada am großen Platz vor dem Burg-Hauptturm."
+  },
+  "11": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Die Mauern der Burg bestehen aus riesigen Steinen. Der größte heißt Takoishi – „Oktopusstein“."},
+    {"s": "takada", "p": "think", "t": "Er wiegt über hundert Tonnen. Fürsten aus ganz Japan mussten solche Steine liefern – als Zeichen der Unterwerfung."},
+    {"s": "takada", "p": "ponder", "t": "Schau dir die Mauersteine unter dem Turm an."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die großen Mauersteine unter dem Hauptturm.", "x": 72, "y": 58, "r": 12,
+     "closeup": {"art": "stone", "title": "Riesige Mauersteine", "text": "Jeder Stein wurde ohne Mörtel eingepasst. Die größten sind so groß wie ein Zimmer."}},
+    {"type": "choice", "q": "Warum mussten Fürsten Steine liefern?", "options": ["Als Zeichen ihrer Treue zum Herrscher", "Weil sie Steine verkauften", "Für einen Wettbewerb", "Aus Spaß"], "answer": 0}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Macht, die man sehen und anfassen kann."},
+    {"s": "takada", "p": "think", "t": "Takeshi ist beim Schrein im Burgpark, der dem Mann geweiht ist, den in Ōsaka jeder kennt."}
+   ],
+   "hint": "Takeshi am Schrein im Burgpark."
+  },
+  "12": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Toyotomi Hideyoshi. In Ōsaka nennen ihn viele liebevoll „Taikō-san“."},
+    {"s": "takeshi", "p": "think", "t": "Er kam aus einer armen Familie und wurde zum mächtigsten Mann Japans. Er baute die Burg und machte Ōsaka groß."},
+    {"s": "takeshi", "p": "newspaper", "t": "„Taikō“ war sein Titel, nachdem er das Amt des Regenten abgegeben hatte."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Warum lieben viele in Ōsaka Hideyoshi?", "options": ["Er war ein Dichter", "Er stieg von ganz unten auf und machte die Stadt groß", "Er erfand Takoyaki", "Er war Baseballspieler"], "answer": 1},
+    {"type": "choice", "q": "Was bedeutet der Titel „Taikō“?", "options": ["Ein Regent im Ruhestand", "Ein Koch", "Ein Mönch", "Ein Kind"], "answer": 0}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Vom Bauernsohn zum Herrscher. Das gefällt den Leuten hier."},
+    {"s": "takeshi", "p": "think", "t": "Kenji hat ein zweites Rätsel für dich. „Wo alte Männer auf der Straße Könige jagen.“"}
+   ],
+   "hint": "„Wo alte Männer auf der Straße Könige jagen.“"
+  },
+  "13": {
+   "lines": [
+    {"s": "kenji", "p": "hyped", "t": "Ich hab von den alten Herren gelernt! Jetzt fordere ich dich heraus."},
+    {"s": "kenji", "p": "talk", "t": "Neuer Stein: 飛 ist der Turm. Er fährt beliebig weit gerade – vorwärts, rückwärts, zur Seite."},
+    {"s": "kenji", "p": "relaxed", "t": "Der König sitzt in der Ecke, sein eigener Bauer versperrt den Weg. Ein Zug mit dem Turm – und Matt!"}
+   ],
+   "tasks": [
+    {"type": "shogi", "q": "Matt in einem Zug: Ziehe den Turm.", "cols": 5, "rows": 4,
+     "pieces": [{"k": "王", "x": 1, "y": 1, "foe": true}, {"k": "歩", "x": 1, "y": 2, "foe": true}, {"k": "金", "x": 3, "y": 2}, {"k": "飛", "x": 5, "y": 4}],
+     "answer": [{"from": "5,4", "to": "5,1"}],
+     "fb": "Der Turm hält die oberste Reihe, der Gold-General die Felder daneben. Matt!"}
+   ],
+   "after": [
+    {"s": "kenji", "p": "hyped", "t": "Argh, du bist zu gut! Die alten Herren klatschen sogar."},
+    {"s": "kenji", "p": "talk", "t": "Emi ist im Dreieckspark in Amerikamura. Sie sagt, dort sieht man Ōsakas Humor auf der Straße."}
+   ],
+   "hint": "Emi im Dreieckspark in Amerikamura."
+  },
+  "14": {
+   "lines": [
+    {"s": "emi", "p": "wave", "t": "Ōsaka ist die Stadt des Humors. Sogar die Wände machen Witze!"},
+    {"s": "emi", "p": "inspect", "t": "Junge Künstler malen Comics und Sprüche auf die Häuser. Oft auf Ōsaka-Dialekt."},
+    {"s": "emi", "p": "note", "t": "Schau mal das Wandbild oben am Haus!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das bunte Wandbild oben am Haus.", "x": 54, "y": 8, "r": 9,
+     "closeup": {"art": "mural", "title": "Witz an der Wand", "text": "Ein grinsendes Gesicht und eine Sprechblase: なんでやねん! – „Wieso denn das?!“ Der typische Tsukkomi-Satz."}},
+    {"type": "choice", "q": "Was bedeutet „nande ya nen“?", "options": ["Guten Morgen", "Wieso denn das?! – die typische Reaktion im Manzai", "Danke schön", "Ich habe Hunger"], "answer": 1}
+   ],
+   "after": [
+    {"s": "emi", "p": "wave", "t": "Nande ya nen! Sag es mit Schwung."},
+    {"s": "emi", "p": "note", "t": "Meister Gen wartet in seiner Gasse in Dōtonbori. Er will dir sein Fazit über den Händlergeist sagen."}
+   ],
+   "hint": "Meister Gen in der Kuidaore-Gasse in Dōtonbori."
+  },
+  "15": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "In Ōsaka grüßt man unter Händlern nicht mit „Wie geht's?“, sondern mit „Mōkarimakka?“ – „Verdienst du gut?“"},
+    {"s": "gen", "p": "laugh", "t": "Und man antwortet: „Bochi-bochi denna.“ – „Geht so, so lala.“ Nie angeben!"},
+    {"s": "gen", "p": "ladle", "t": "Ein altes Sprichwort sagt: Handel ist wie der Speichel einer Kuh – lang und gleichmäßig. Geduld und Herz, das ist das Geheimnis."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Ein Händler fragt: „Mōkarimakka?“ Was antwortest du?", "options": ["„Bochi-bochi denna.“", "„Sayōnara.“", "„Itadakimasu.“", "„Kanpai!“"], "answer": 0},
+    {"type": "choice", "q": "Was ist laut Gen das Geheimnis des Handels?", "options": ["Schnell reich werden", "Geduld und ein warmes Herz", "Hohe Preise", "Viel Werbung"], "answer": 1}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Bochi-bochi! Du redest schon wie ein echter Händler."},
+    {"s": "gen", "p": "proud", "t": "Takeshi wartet dort, wo alles anfing: auf der Brücke unter den Neonreklamen."}
+   ],
+   "hint": "Takeshi auf der Ebisu-Brücke in Dōtonbori."
+  },
+  "16": {
+   "mood": "night",
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Hier haben wir angefangen. Manzai, Händlergeist, Feste, Shōgi, Billiken, Taikō-san."},
+    {"s": "takeshi", "p": "think", "t": "Ōsaka ist laut, lustig, praktisch – und hat ein großes Herz für Fremde. Du hast es selbst erlebt."},
+    {"s": "takeshi", "p": "newspaper", "t": "Die Seele dieser Stadt heißt: Lachen, handeln, teilen."},
+    {"s": "me", "t": "Ich glaube, ein bisschen Ōsaka steckt jetzt auch in mir."}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Das sieht man dir an. Ōkini – danke, dass du zugehört hast!"}
+   ],
+   "hint": "Strang abgeschlossen – Takeshi liest weiter Zeitung auf der Ebisu-Brücke."
+  }
+ },
+ "STRANG_FOOTBALL_DERBY": {
+  "12": {
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Da bist du ja. Revanche! Hier auf der Wiese, vor allen Leuten."},
+    {"s": "daiki", "p": "ready", "t": "Diesmal lese ich dich. Ich kenne deine Tricks."},
+    {"s": "daiki", "p": "cheer", "t": "Aber ich hab auch neue. Pass auf!"}
+   ],
+   "tasks": [
+    {"type": "rounds", "art": "soccer", "fixed": ["Tunnel (Ball durch die Beine)", "Übersteiger", "Ball abschirmen", "Doppelpass mit dem Parkpfosten"],
+     "rounds": [
+      {"q": "Daiki stellt sich breitbeinig hin und grinst.", "answer": 0, "fb": "Er hat nichts gelernt – Tunnel!"},
+      {"q": "Daiki drängt dich mit der Schulter zur Seite.", "answer": 2, "fb": "Körper dazwischen – abschirmen!"},
+      {"q": "Daiki macht die Beine zu und läuft frontal auf dich zu.", "answer": 1, "fb": "Übersteiger – und weg!"},
+      {"q": "Daiki stellt dich am Laternenpfahl. Kein Platz links und rechts.", "answer": 3, "fb": "Ball gegen den Pfosten, zurückprallen lassen – Doppelpass mit der Stadt!"}
+     ]}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cocky", "t": "Okay. Okay! Unentschieden. Sagen wir unentschieden."},
+    {"s": "daiki", "p": "ready", "t": "Coach Sakai will dich im großen Stadion im Nagai-Park sehen. Dort war sogar die Weltmeisterschaft 2002."}
+   ],
+   "hint": "Das große Stadion im Nagai-Park."
+  }
+ },
+ "STRANG_CAMPUS_EXPEDITION": {
+  "16": {
+   "lines": [
+    {"s": "omu", "t": "Hallo! Ich bin Nanami, Studentin hier. Frau Morimoto hat mir dein Stempelbuch angekündigt."},
+    {"s": "omu", "t": "Die OMU gibt es erst seit 2022. Zwei Unis haben sich zusammengeschlossen – die der Stadt und die der Präfektur."},
+    {"s": "omu", "t": "Jetzt ist sie die größte öffentliche Uni ihrer Art in Japan. Siehst du die großen Buchstaben auf der Wiese?"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die großen Buchstaben auf der Wiese.", "x": 80, "y": 72, "r": 10,
+     "closeup": {"art": "omusign", "title": "OMU", "text": "Ōsaka Metropolitan University – 大阪公立大学. Entstanden 2022 aus zwei Universitäten."}},
+    {"type": "choice", "q": "Wie entstand die OMU?", "options": ["Aus einem Krankenhaus", "Aus zwei Universitäten, die sich zusammenschlossen", "Aus einer Firma", "Aus einem Tempel"], "answer": 1}
+   ],
+   "after": [
+    {"s": "omu", "t": "Hier ist dein Stempel! Den nächsten bekommst du in unserer alten Bibliothek, gleich da drüben."}
+   ],
+   "hint": "Die alte Bibliothek der OMU, gleich nebenan."
+  },
+  "17": {
+   "lines": [
+    {"s": "omu", "t": "Die Wurzeln unserer Uni reichen bis ins 19. Jahrhundert. Es begann mit einer Schule für Handel."},
+    {"s": "omu", "t": "Mitgegründet hat sie Godai Tomoatsu. Er hat auch die Handelskammer von Ōsaka aufgebaut."},
+    {"s": "omu", "t": "Ōsaka wollte gut ausgebildete Kaufleute. Darum gab es hier früh eine Handelsschule."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Womit begann die Geschichte der Uni?", "options": ["Mit einer Kunstschule", "Mit einer Schule für Handel", "Mit einer Militärschule", "Mit einem Krankenhaus"], "answer": 1},
+    {"type": "choice", "q": "Was baute Godai Tomoatsu außerdem auf?", "options": ["Die Handelskammer von Ōsaka", "Den Tsūtenkaku", "Das Kōshien-Stadion", "Den Flughafen"], "answer": 0}
+   ],
+   "after": [
+    {"s": "omu", "t": "Super! Noch ein Stempel."},
+    {"s": "omu", "t": "Unser zweiter großer Campus liegt in Sakai, im Süden. Dort wachsen Pflanzen sogar in Fabriken!"}
+   ],
+   "hint": "Der OMU-Campus Nakamozu in Sakai."
+  }
+ }
+}

@@ -44,7 +44,12 @@
   "dome": "Kyocera Dome",
   "taisho": "Taishō",
   "tempozan": "Tempozan",
-  "kindai": "Kindai (Higashi-Ōsaka)"
+  "kindai": "Kindai (Higashi-Ōsaka)",
+  "shitennoji": "Shitennō-ji",
+  "shinsekai": "Shinsekai",
+  "tenshiba": "Tennōji-Park",
+  "harukas": "Abeno Harukas",
+  "omu": "OMU Sugimoto"
  },
  "screens": {
   "1": "Campus-Hauptachse (Machikaneyama-Pfad)",

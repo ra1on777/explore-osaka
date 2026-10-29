@@ -7,7 +7,7 @@ const world = j('src/data/world.json');
 const npcs = j('src/data/npcs.json');
 const lang = 'de';
 const stages = {};
-for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang'])
+for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang'])
   for (const [q, st] of Object.entries(j(`src/content/${lang}/${f}.json`))) stages[q] = { ...stages[q], ...st };
 const art = readFileSync('src/ui/art.ts', 'utf8');
 const hasArt = (k) => new RegExp(`\\b${k}\\s*:`).test(art);
@@ -48,7 +48,7 @@ for (const q of quests) {
     } else if ((c.tasks ?? []).length === 0 && !/PURE/.test(s.interaction_type)) err(`${key}: ${s.interaction_type} ohne Aufgabe`);
     const variants = c.variants ? Object.values(c.variants).map((v) => ({ ...c, ...v })) : [c];
     for (const v of variants) {
-      const all = [...(v.lines ?? []), ...(v.after ?? [])];
+      const all = [...(v.lines ?? []), ...(v.after ?? []), ...Object.values(v.afterBy?.lines ?? {}).flat()];
       lineCounts.push(all.length);
       for (const l of all) {
         if (!['me', 'nar', 'partner'].includes(l.s) && !short[l.s]) err(`${key}: unbekannter Sprecher ${l.s}`);
@@ -89,6 +89,16 @@ for (const q of quests) {
           if (!(t.target.x >= 0 && t.target.x <= 100 && t.target.y >= 0 && t.target.y <= 100)) err(`${key}: photo Ziel`);
           if (!(t.zoom[0] >= 1 && t.zoom[1] <= 6 && t.zoom[0] <= t.zoom[1])) err(`${key}: photo Zoom`);
         }
+        if (t.type === 'shogi') {
+          const occ = new Set(t.pieces.map((p) => `${p.x},${p.y}`));
+          for (const a of t.answer) {
+            if (a.from.startsWith('hand:')) { if (!(t.hand ?? []).includes(a.from.slice(5))) err(`${key}: shogi Handstein fehlt`); if (occ.has(a.to)) err(`${key}: shogi Einsetzfeld besetzt`); }
+            else if (!t.pieces.some((p) => !p.foe && `${p.x},${p.y}` === a.from)) err(`${key}: shogi Startstein fehlt`);
+            const [x, y] = a.to.split(',').map(Number);
+            if (!(x >= 1 && x <= t.cols && y >= 1 && y <= t.rows)) err(`${key}: shogi Ziel außerhalb`);
+          }
+        }
+        if (t.type === 'route' && v.afterBy && t.flag === v.afterBy.flag) for (const o of t.options) if (!v.afterBy.lines[o.value]) err(`${key}: afterBy ${o.value} fehlt`);
         if (t.type === 'sort' && t.items.length < 3) err(`${key}: sort zu kurz`);
         if (t.type === 'kanjigrid') for (const p of t.prompts) if (!t.grid.includes(p.answer)) err(`${key}: kanjigrid ${p.answer} fehlt`);
       }

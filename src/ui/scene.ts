@@ -56,7 +56,7 @@ function npcEl(screenId: string, p: Presence, onNpc: (p: Presence) => void) {
   const el = h('button', {
     class: `npc${ph === 'cat' ? ' small' : ''}`,
     'data-npc': p.npcId,
-    style: `left:${slot.x}%;bottom:${slot.bottom}%;height:${ph === 'cat' ? slot.h * 0.42 : slot.h}%`,
+    style: `left:${slot.x}%;bottom:${slot.bottom}%;height:${ph === 'cat' ? slot.h * 0.42 : slot.h}%;z-index:${100 - Math.round(slot.bottom)}`,
     'aria-label': `${npcName(p.npcId)} ansprechen`,
     onclick: () => onNpc(p),
   }, fig, svg(bubble, 'bubble'));

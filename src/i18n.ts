@@ -14,6 +14,10 @@ import deIntro from './content/de/intro.json';
 import deR4a from './content/de/stages_r4_story_a.json';
 import deR4b from './content/de/stages_r4_story_b.json';
 import deR4l from './content/de/stages_r4_lang.json';
+import deR5a from './content/de/stages_r5_a.json';
+import deR5b from './content/de/stages_r5_b.json';
+import deR5r from './content/de/stages_r5_romance.json';
+import deR5l from './content/de/stages_r5_lang.json';
 import type { Line, StageContent } from './types';
 
 export interface LangPack {
@@ -39,7 +43,7 @@ const packs: Record<string, LangPack> = {
     npcs: deNpcs,
     strands: deStrands,
     intro: deIntro as { kenji: Line[] },
-    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3, deR4a, deR4b, deR4l),
+    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3, deR4a, deR4b, deR4l, deR5a, deR5b, deR5r, deR5l),
   },
 };
 

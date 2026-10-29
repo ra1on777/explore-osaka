@@ -1,7 +1,18 @@
 # ExploreOsaka – Projektstatus
 
-Stand: Demo v0.4 – Regionen 1–4: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b) und „Minami & Bucht“ (37–52 inkl. 45a/45b).
-Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **222/222 Etappen spielbar, keine Laufzeitfehler** (Handy- und PC-Layout).
+Stand: Demo v0.5 – Regionen 1–5: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b) und „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b).
+Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **345/345 Etappen spielbar, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v0.5
+- Region 5 mit 10 Screens und 5 Orten auf eigener Karte (Shinsekai mit Tsūtenkaku und Spa World, Tennōji-Park, Abeno Harukas, Shitennō-ji, OMU Sugimoto).
+- 123 neue Etappen in 21 Strängen; zwei neue Stränge: Stadtentwicklung (1–14) und Tempelpfade (1–11, mit Clara).
+- Neun Stränge sind jetzt komplett: Bahnhöfe, Wahrzeichen, Nachtleben, Schnäppchen, Literatur, Osaka Tamashii, Romance (mit Finale), Katakana und Subkultur.
+- Neue Mechanik SHOGI_ONE_MOVE_PUZZLE: Tsume-Shōgi auf einem 5×4-Ausschnitt; Stein auf dem Brett oder aus der Hand antippen, dann das Zielfeld. Nach zwei Fehlversuchen werden Stein und Feld markiert.
+- Neue Mechanik FINAL_CONFESSION_CHOICE: Romance 28 mit Kokuhaku-Satz und freier Wahl (Kuss oder Freundschaft fürs Leben); der Abschluss-Dialog hängt von der Wahl und der Partnerin ab (`afterBy` in den Inhalten).
+- Romance 1: Kenji stellt Aoi und Maya ausführlicher vor, die Wahl zeigt zwei Steckbriefe mit Porträt (Studium, Wesen, Vorlieben, typische Ausflüge).
+- Fehlende Figurenbilder: Lädt ein Sprite nicht, erscheint die Platzhalter-Silhouette statt eines kaputten Bildsymbols. Der Testlauf meldet jetzt jede Datei, die nicht geladen werden kann.
+- Figuren-Slots aller Screens nachgemessen: Beide Füße stehen auf demselben Untergrund (Prüfwerkzeug `python3 tools/preview_slots.py <ordner> --feet [ids]`).
+- Faktencheck zu Region 4 eingearbeitet (Shīsā, Kanpai, Rapi:t, Namba Parks, Osaka Dome, Cheki).
 
 ### Neu in v0.4
 - Region 4 mit 17 Screens und 10 Orten auf eigener Karte (Dōtonbori, Amerikamura, Namba, Kuromon, Den Den Town, Kyocera Dome, Taishō, Tempozan, Kindai).
@@ -48,9 +59,9 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **222/222 Etappen spiel
 - Logo freigestellt, App-Icons 512/192/180 px, Titelbild aus „Logo mit Skyline“.
 
 ### Welt & Navigation
-- Weltkarte (auf dem oberen Bildschirm), eine Karte pro Region (Region 1: 13 Orte, Region 2: 8 Orte, Region 3: 6 Orte, Region 4: 10 Orte), Umschalten per Region-Tab, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
+- Weltkarte (auf dem oberen Bildschirm), eine Karte pro Region (Region 1: 13 Orte, Region 2: 8 Orte, Region 3: 6 Orte, Region 4: 10 Orte, Region 5: 5 Orte), Umschalten per Region-Tab, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
 - Wege zwischen Unter-Screens eines Ortes (z. B. Wohnheim: Flur ↔ Zimmer ↔ Küche) direkt im Erkunden-Menü.
-- NPC-Platzierung: Slots A/B/C mit Werten pro Screen (x, Fußhöhe, Größe in % der Bildhöhe) in `src/data/world.json`, für alle Screens der Regionen 1–4 einzeln eingemessen.
+- NPC-Platzierung: Slots A/B/C mit Werten pro Screen (x, Fußhöhe, Größe in % der Bildhöhe) in `src/data/world.json`, für alle Screens der Regionen 1–5 einzeln eingemessen.
 
 ### Quest-System
 - Alle Stränge von Beginn an offen; Fortschritt über Etappen-Freischaltung.
@@ -89,6 +100,8 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **222/222 Etappen spiel
 | DATING_ETIQUETTE_CHOICE | Situationsfragen mit Erklärung; Texte je nach Partnerin (Aoi/Maya) |
 | SECRET_INGREDIENT_GUESS | Gericht als Nahaufnahme, Antwortauswahl; jeder Fehltipp kostet einen Stern und deckt den nächsten Hinweis auf |
 | DRINK_ETIQUETTE_CHOICE | Situationsfragen in der Izakaya/Bar mit Erklärung |
+| SHOGI_ONE_MOVE_PUZZLE | Tsume-Shōgi (Matt in einem Zug) auf dem oberen Bildschirm, Steine aus der Hand auf dem unteren; jeder Fehlzug kostet einen Stern |
+| FINAL_CONFESSION_CHOICE | Steckbrief-Wahl am Ende der Romance; setzt ein Flag, das den Abschluss-Dialog bestimmt (keine Sterne) |
 | FRAMING_PHOTO_CHALLENGE | Sucher (4:3, Drittel-Raster) per Tippen setzen, Zoom 1–6×, Auslösen; Rückmeldung „nicht im Bild / angeschnitten / zu weit / zu nah“, jeder Fehlversuch kostet einen Stern |
 
 ### Sprache
@@ -105,34 +118,36 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **222/222 Etappen spiel
 - Bedienung per Touch, Maus und Tastatur: Enter/Leertaste = weiter, 1–9 = Antworten, Esc = zurück, M/Q/V/B = Karte/Quests/Vokabeln/Tasche.
 - `prefers-reduced-motion` wird respektiert.
 
-### Inhalte der Demo (222 Etappen in 22 Strängen)
+### Inhalte der Demo (345 Etappen in 24 Strängen)
 | Strang | Etappen in der Demo | Ende in der Demo führt nach |
 |---|---|---|
 | Geographie | 1–8 | 65 Sumiyoshi Taisha |
-| Natur & Stille | 1–6 | 57 Tenshiba |
-| Nachtleben | 1–9 | 53 Shinsekai |
-| Philosophie & Glaube | 1–12 | 58 Shitennō-ji |
+| Natur & Stille | 1–7 | 64 Nagai-Botanischer Garten |
+| Nachtleben | 1–20 | – (abgeschlossen) |
+| Philosophie & Glaube | 1–15 | 65 Sumiyoshi Taisha |
 | Kultur Japan | 1–2 | 65 Sumiyoshi Taisha |
-| Kansai Pride | 1–9 | 53 Shinsekai |
-| Fußball-Derby | 1–11 | 57 Tenshiba |
-| Campus-Atlas | 1–15 | 60 OMU Sugimoto |
-| Romance | 1–20 | 57 Tenshiba |
-| Hiragana | 1–16 | 53 Shinsekai |
-| Katakana | 1–18 | 56b Abeno Harukas |
-| Kanji | 1–15 | 58 Shitennō-ji |
-| Wortschatz | 1–16 | 53 Shinsekai |
-| Konversation | 1–18 | 53 Shinsekai |
-| Bahnhöfe & Gleise | 1–8 | 53 Shinsekai |
-| Café-Kultur | 1–7 | 57 Tenshiba |
-| Schnäppchen | 1–5 | 56b Abeno Harukas |
-| Literatur | 1–7 | 59 Shitennō-ji |
-| Wahrzeichen | 1–4 | 54 Tsūtenkaku |
-| Kuidaore | 1–3 | 53 Shinsekai |
+| Kansai Pride | 1–12 | 63 Yodoko Sakura Stadium |
+| Fußball-Derby | 1–12 | 62 Yanmar Stadium Nagai |
+| Campus-Atlas | 1–17 | 70 OMU Nakamozu |
+| Romance | 1–28 | – (abgeschlossen) |
+| Hiragana | 1–21 | 65 Sumiyoshi Taisha |
+| Katakana | 1–24 | – (abgeschlossen) |
+| Kanji | 1–16 | 65 Sumiyoshi Taisha |
+| Wortschatz | 1–21 | 65 Sumiyoshi Taisha |
+| Konversation | 1–22 | 65 Sumiyoshi Taisha |
+| Bahnhöfe & Gleise | 1–10 | – (abgeschlossen) |
+| Café-Kultur | 1–10 | 68 Daisen-Park |
+| Schnäppchen | 1–9 | – (abgeschlossen) |
+| Literatur | 1–14 | – (abgeschlossen) |
+| Wahrzeichen | 1–13 | – (abgeschlossen) |
+| Kuidaore | 1–14 | 69 Sakai |
 | Subkultur & Sammler | 1–9 | – (abgeschlossen) |
-| Osaka Tamashii | 1–4 | 53 Shinsekai |
+| Osaka Tamashii | 1–16 | – (abgeschlossen) |
+| Stadtentwicklung | 1–14 | 70 OMU Nakamozu |
+| Tempelpfade | 1–11 | 68 Daisen-Park |
 
-Drei Stränge (Stadtentwicklung, Tempelpfade, Schreine) beginnen in Region 5/6 und kommen noch nicht vor.
-Dialoge: Ø 5,3 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte.
+Der Strang „Schreine“ beginnt in Region 6 und kommt noch nicht vor.
+Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte.
 
 ---
 
@@ -144,21 +159,21 @@ Dialoge: Ø 5,3 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 - HANAFUDA_MATCH_MINI (Kultur Japan 2): Monat → Pflanze, mit einfacher SVG-Karte.
 - KARUTA_TOUCH_SLAP (Kansai 4, 7): Satz/Hinweis → Karte, mit 8-Sekunden-Zeitbalken.
 - SILHOUETTE_IDENTIFY (Natur 2): Blatt-Umriss → Baum.
-- Noch gar nicht umgesetzt (keine Etappe in den Regionen 1–4): SHOGI_ONE_MOVE_PUZZLE, FINAL_CONFESSION_CHOICE, ITEM_SUBMISSION.
+- Noch gar nicht umgesetzt (keine Etappe in den Regionen 1–5): ITEM_SUBMISSION.
 - KANJI_RADICAL_STROKE_PICK ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen), ohne echtes Strich- oder Radikal-Zerlegen.
 
 ### Grafik
-- Platzhalter-Figuren (Silhouette mit „?“): Ryōsuke / STUDENT_KANDAI_LAW, Tori / TORI_TETSU_TAKUMI, Haruto / STUDENT_KWANSEI_REP, Mio / STUDENT_OTEMON_BIZ; Kater Goro als gezeichnete SVG-Katze. Noch ohne Sprite und noch nicht im Spiel: STUDENT_OMU_LEAD.
-- Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner, Espresso, Ladenschild, Linienplan, Buchrücken, Bildband, Holzdruck, Torschild, Uhrturm, Wörterbuch, Register, Graureiher, Schwarzes Brett, Namensstein Ōtemae, Löwenzähne, Seil, Flyer, Shīsā, Spielmodule, Tour-Shirt, Bausatz, Mützenregal, Omamori, Momiji, Filter, Katsuobushi, Artbook, Bunraku-Heft, Kunstrasenschuhe, Comic, Wagashi, Takoyaki-Teller) und die Quizkarten (Kanäle, Monorail, Umeda-Ausgänge, Bucht von Ōsaka) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
+- Platzhalter-Figuren (Silhouette mit „?“): Ryōsuke / STUDENT_KANDAI_LAW, Tori / TORI_TETSU_TAKUMI, Haruto / STUDENT_KWANSEI_REP, Mio / STUDENT_OTEMON_BIZ, Nanami / STUDENT_OMU_LEAD; Kater Goro als gezeichnete SVG-Katze.
+- Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner, Espresso, Ladenschild, Linienplan, Buchrücken, Bildband, Holzdruck, Torschild, Uhrturm, Wörterbuch, Register, Graureiher, Schwarzes Brett, Namensstein Ōtemae, Löwenzähne, Seil, Flyer, Shīsā, Spielmodule, Tour-Shirt, Bausatz, Mützenregal, Omamori, Momiji, Filter, Katsuobushi, Artbook, Bunraku-Heft, Kunstrasenschuhe, Comic, Wagashi, Takoyaki-Teller, Thermometer, Senbei, roter Ingwer, Gruppenkasse, Festival-Armband, Reibe, Keramikschale, Schriftrolle, Notizbuch, Tempel-Grundriss, Glückstäfelchen, Skizzenbuch, Hongan-ji, Shōgi-Brett, Kombu, Festplakat, Wandbild, OMU-Schriftzug, Harukas am Abend, Halstuch, Fährplan, Bahnhofsschnitt, Röstgrade, Linse, Efeu) und die Quizkarten (Kanäle, Monorail, Umeda-Ausgänge, Bucht von Ōsaka) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
 - Partikeleffekte (Blüten, Regen, Laub) aus dem GDD fehlen noch.
-- Screen 53: Variante B ist als Standard eingetragen, A als Alternative (`variants` in `world.json`); die Rotation selbst ist noch nicht gebaut, da Region 5 außerhalb der Demo liegt.
+- Screen 53: Variante B (überdachte Janjan-Gasse) wird verwendet; Variante A (Straße mit Turmblick, abends) ist eingetragen, aber noch nicht eingebunden.
 - Screens 11–17 haben nur halbe Auflösung (bewusst so belassen).
 - Weltkarte ist schematisch gezeichnet (keine echte Kartengrundlage).
 
 ### Inhalte
-- Regionen 5–6: Bilder fertig konvertiert, aber keine Ortsdaten (japanische Schilder, Slots, Hotspots) und keine Dialoge.
-- 220 von 442 Etappen ohne Dialogtexte.
-- Kanji-Strang bis Etappe 15 auf N5 umgestellt (siehe `CHANGES.md`). Ab Etappe 16 stehen im Bundle noch Nicht-N5-Zeichen (u. a. 寺, 心, 神, 鳥, 地, 図, 館, 医, 院, 作, 工). Die Hentaigana-Etappe (Hiragana 12) ist ersetzt durch alte Schreibweisen (ゑ/ゐ, Schilder von rechts nach links).
+- Region 6: Bilder fertig konvertiert, aber keine Ortsdaten (japanische Schilder, Slots, Hotspots) und keine Dialoge.
+- 97 von 442 Etappen ohne Dialogtexte (alle in Region 6 oder dahinter).
+- Kanji-Strang bis Etappe 16 auf N5 umgestellt (siehe `CHANGES.md`). Ab Etappe 17 stehen im Bundle noch Nicht-N5-Zeichen (u. a. 神, 鳥, 地, 図, 館, 医, 院, 作, 工). Die Hentaigana-Etappe (Hiragana 12) ist ersetzt durch alte Schreibweisen (ゑ/ゐ, Schilder von rechts nach links).
 - Die gelieferten Sachquellen-PDFs decken nur Bundle 04 ab (beide Dateien identisch). Für Region 1 wurden die „200 Fakten“ und Allgemeinwissen genutzt; zu prüfen siehe `CHANGES.md` → „Zur Faktenprüfung“.
 
 ### Technik

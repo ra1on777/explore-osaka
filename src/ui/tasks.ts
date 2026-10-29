@@ -3,13 +3,15 @@
 import { sfx } from '../audio';
 import { t } from '../i18n';
 import { G } from '../state';
+import { NPCS } from '../data';
 import type { Option, Task } from '../types';
 import { closeups, hanafuda, icons, leaves, sports } from './art';
 import { h, shuffle, svg, wait } from './dom';
 import { mount, toast } from './layout';
+import { portrait } from './dialog';
 import { hot, showOverlay } from './scene';
 import { jpBlock, matches, rich } from './text';
-import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo, ingredient } from './tasks2';
+import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo, ingredient, shogi } from './tasks2';
 
 type El = HTMLElement;
 
@@ -26,6 +28,7 @@ export async function runTask(task: Task): Promise<number> {
     case 'build': return build(task);
     case 'rounds': return rounds(task);
     case 'route': return route(task);
+    case 'shogi': return shogi(task);
     case 'mapquiz': return mapquiz(task);
     case 'ticket': return ticket(task);
     case 'espresso': return espresso(task);
@@ -429,12 +432,16 @@ async function route(task: Extract<Task, { type: 'route' }>): Promise<number> {
   const grid = h('div', { class: 'options' });
   frame(task.q, grid);
   const value = await new Promise<string>((resolve) => {
+    if (task.options.some((o) => o.facts)) grid.className = 'options route-cards';
     task.options.forEach((o, i) => {
+      const body = o.facts
+        ? [NPCS[o.value] ? portrait(o.value, o.pose) : null, h('div', { class: 'rc-body' }, h('b', { html: rich(o.label) }), h('ul', {}, ...o.facts.map((f) => h('li', { html: rich(f) }))))]
+        : [h('span', {}, o.label)];
       grid.append(h('button', { class: 'opt', 'data-key': String(i + 1), onclick: () => resolve(o.value) },
-        h('span', { class: 'k' }, String(i + 1)), h('span', {}, o.label)));
+        h('span', { class: 'k' }, String(i + 1)), ...body));
     });
   });
-  G.flags.partner = value;
+  G.flags[task.flag ?? 'partner'] = value;
   sfx.done();
   toast('♥', 'good', 900);
   return 0;

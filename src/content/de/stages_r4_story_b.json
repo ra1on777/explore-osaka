@@ -120,12 +120,12 @@
     {
      "s": "aoi",
      "p": "note",
-     "t": "Ein Baseballstadion! Heute ist es dieser Dachgarten. Und direkt darunter liegt der Bahnhof Namba der Nankai-Bahn."
+     "t": "Ein Baseballstadion! Das Osaka-Stadion der Nankai Hawks, 1998 abgerissen. Heute steht hier dieser Dachgarten, Namba Parks – und direkt daneben der Bahnhof Namba der Nankai-Bahn."
     },
     {
      "s": "aoi",
      "p": "happy",
-     "t": "Von hier fährt man zum Flughafen Kansai, der auf einer künstlichen Insel im Meer liegt. Der schnellste Zug sieht aus wie ein blauer Roboter."
+     "t": "Von hier fährt man zum Flughafen Kansai, der auf einer künstlichen Insel im Meer liegt. Der schnellste Zug, der Rapi:t, sieht aus wie ein blauer Roboter und braucht 34 bis 39 Minuten."
     },
     {
      "s": "me",
@@ -139,7 +139,7 @@
      "min": 5,
      "max": 150,
      "step": 1,
-     "answer": 43,
+     "answer": 42,
      "unit": "km",
      "tol": 0.1
     }
@@ -148,7 +148,7 @@
     {
      "s": "aoi",
      "p": "cheer",
-     "t": "Gut 40 Kilometer! Der Express schafft das in etwas mehr als einer halben Stunde."
+     "t": "Rund 42 Kilometer! Der Rapi:t schafft das in gut einer halben Stunde."
     },
     {
      "s": "aoi",

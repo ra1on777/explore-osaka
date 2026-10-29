@@ -136,5 +136,10 @@
   "task.photo.missing": "Das Motiv ist gar nicht im Bild.",
   "task.photo.edge": "Angeschnitten – rück das Motiv mehr in die Mitte.",
   "task.photo.far": "Zu weit weg – das Motiv ist winzig. Zoom näher heran.",
-  "task.photo.near": "Zu nah – vom Motiv sieht man nur noch einen Teil."
+  "task.photo.near": "Zu nah – vom Motiv sieht man nur noch einen Teil.",
+  "task.shogi.hint": "Tippe einen deiner Steine (auf dem Brett oder in der Hand) an, dann das Zielfeld. Gegnerische Steine stehen auf dem Kopf.",
+  "task.shogi.hand": "Deine Hand (Steine zum Einsetzen):",
+  "task.shogi.foe": "↑ Gegner",
+  "task.shogi.wrong": "Kein Matt – der König kann noch entkommen. Versuch es nochmal.",
+  "task.shogi.tip": "Tipp: Schau dir die markierten Felder an."
 }

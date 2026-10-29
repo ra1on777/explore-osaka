@@ -790,12 +790,27 @@
     {
      "s": "kenji",
      "p": "hyped",
-     "t": "Eben! Du musst jemanden einladen. Ich kenne zwei Leute, die auch noch niemanden haben: Aoi aus der Verkehrsplanung und Maya, die Austauschstudentin."
+     "t": "Eben! Ich kenne zwei Leute, die auch noch niemanden haben. Erst mal Aoi: studiert Verkehrsplanung, hat immer einen Stadtplan dabei und weiß, welche Bahn wann fährt."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Mit Aoi bist du ständig unterwegs: Bahnhöfe, Hafen, Aussichtspunkte. Sie redet schnell, lacht laut und hört City Pop aus den 80ern."
     },
     {
      "s": "kenji",
      "p": "relaxed",
-     "t": "Also? Wen fragst du?"
+     "t": "Dann Maya: Austauschstudentin, eher still. Sie sitzt gern in Cafés, liest viel und bleibt bei jeder Katze stehen."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Mit Maya findest du die ruhigen Ecken: Gärten, Parks, kleine Buchläden. Sie lernt selbst Japanisch – ihr könnt also zusammen üben."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Beide sind nett. Es kommt drauf an, wie du Osaka erleben willst. Wen fragst du?"
     }
    ],
    "tasks": [
@@ -804,12 +819,26 @@
      "q": "Wen lädst du zum Frühlingsfest ein?",
      "options": [
       {
-       "label": "Aoi – sie kennt jede Bahnlinie der Stadt",
-       "value": "AOI_TRANSIT_STUDENT"
+       "label": "Aoi",
+       "value": "AOI_TRANSIT_STUDENT",
+       "pose": "cheer",
+       "facts": [
+        "Studiert Verkehrsplanung",
+        "Energisch, spontan, laut lachend",
+        "Mag Karten, Züge, City Pop",
+        "Ausflüge: Bahn, Hafen, Aussicht"
+       ]
       },
       {
-       "label": "Maya – mit ihr wird es ruhig und entspannt",
-       "value": "MAYA_EXCHANGE_STUDENT"
+       "label": "Maya",
+       "value": "MAYA_EXCHANGE_STUDENT",
+       "pose": "wave",
+       "facts": [
+        "Austauschstudentin, lernt Japanisch",
+        "Ruhig, nachdenklich, neugierig",
+        "Mag Kaffee, Bücher, Katzen",
+        "Ausflüge: Gärten, Parks, Cafés"
+       ]
       }
      ]
     }

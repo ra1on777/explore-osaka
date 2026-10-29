@@ -1,0 +1,1877 @@
+{
+ "STRANG_LANG_HIRAGANA": {
+  "17": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Shinsekai ist ein Lesebuch! Überall alte Schilder, viele in Hiragana."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "jp": "くしかつ ・ どてやき",
+     "ro": "kushikatsu ・ doteyaki",
+     "t": "Frittierte Spieße und geschmorte Sehnen."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "おみやげ ・ げーむ",
+     "ro": "omiyage ・ gēmu",
+     "t": "Mitbringsel und Spielhalle. Auf alten Schildern steht Gēmu manchmal sogar in Hiragana."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was steht auf dem Schild?",
+     "show": {
+      "jp": "くしかつ"
+     },
+     "options": [
+      "kushikatsu",
+      "takoyaki",
+      "okonomiyaki",
+      "kitsune"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und hier?",
+     "show": {
+      "jp": "おみやげ"
+     },
+     "options": [
+      "omamori",
+      "omiyage",
+      "onigiri",
+      "oyasumi"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was bedeutet „omiyage“?",
+     "options": [
+      "Mitbringsel / Souvenir",
+      "Frühstück",
+      "Bahnhof",
+      "Wetter"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Du liest wie ein Einheimischer!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Daiki ist oben auf dem Turm. Dort hängen Glückssprüche in schöner Schrift."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おみやげ",
+     "ro": "omiyage",
+     "de": "Mitbringsel, Souvenir"
+    }
+   ],
+   "hint": "Daiki oben auf dem eisernen Turm."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Neben Billiken hängen Glückwünsche. Die Leute schreiben sie auf kleine Karten."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "jp": "しあわせ ・ げんき",
+     "ro": "shiawase ・ genki",
+     "t": "Glück und Gesundheit, Energie."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "jp": "おめでとう ・ がんばって",
+     "ro": "omedetō ・ ganbatte",
+     "t": "Glückwunsch! Und: Gib alles! – das sagt man vor jedem Spiel."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde die Glückssprüche mit ihrer Lesung.",
+     "sets": [
+      [
+       [
+        "しあわせ",
+        "shiawase (Glück)"
+       ],
+       [
+        "げんき",
+        "genki (gesund, munter)"
+       ],
+       [
+        "おめでとう",
+        "omedetō (Glückwunsch)"
+       ],
+       [
+        "がんばって",
+        "ganbatte (Gib alles!)"
+       ],
+       [
+        "ありがとう",
+        "arigatō (danke)"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "がんばって! Das sag ich mir jeden Morgen."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Maya sitzt im Park Tenshiba. Sie lernt gerade Verben fürs Faulenzen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "しあわせ",
+     "ro": "shiawase",
+     "de": "Glück"
+    },
+    {
+     "jp": "がんばって",
+     "ro": "ganbatte",
+     "de": "Gib alles! Viel Erfolg!"
+    }
+   ],
+   "hint": "Maya im Park Tenshiba."
+  },
+  "19": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Im Park lerne ich am liebsten. Heute: Verben für freie Tage."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "jp": "やすみます ・ あるきます",
+     "ro": "yasumimasu ・ arukimasu",
+     "t": "Sich ausruhen und spazieren gehen."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "jp": "こうえんで やすみます。",
+     "ro": "Kōen de yasumimasu.",
+     "t": "Ich ruhe mich im Park aus."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet „arukimasu“?",
+     "show": {
+      "jp": "あるきます"
+     },
+     "options": [
+      "essen",
+      "spazieren gehen",
+      "schlafen",
+      "lesen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie liest man das?",
+     "show": {
+      "jp": "やすみます"
+     },
+     "options": [
+      "yasumimasu",
+      "yomimasu",
+      "yakimasu",
+      "yobimasu"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "やすみます – das ist mein Lieblingsverb."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Herr Yamada wartet am Südtor von Shitennō-ji. Er kennt alle Wörter rund um den Tempel."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "やすみます",
+     "ro": "yasumimasu",
+     "de": "sich ausruhen"
+    },
+    {
+     "jp": "あるきます",
+     "ro": "arukimasu",
+     "de": "gehen, spazieren"
+    }
+   ],
+   "hint": "Herr Yamada am Südtor von Shitennō-ji."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Tempelwörter klingen weich. Viele schreibt man im Alltag in Hiragana."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "jp": "おてら ・ もん ・ にわ",
+     "ro": "otera ・ mon ・ niwa",
+     "t": "Tempel, Tor, Garten."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "jp": "いけ ・ はし",
+     "ro": "ike ・ hashi",
+     "t": "Teich und Brücke."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde die Wörter mit ihrer Lesung.",
+     "sets": [
+      [
+       [
+        "おてら",
+        "otera (Tempel)"
+       ],
+       [
+        "もん",
+        "mon (Tor)"
+       ],
+       [
+        "にわ",
+        "niwa (Garten)"
+       ],
+       [
+        "いけ",
+        "ike (Teich)"
+       ],
+       [
+        "はし",
+        "hashi (Brücke)"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Sehr gut. Jetzt kannst du jeden Tempelplan lesen."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Nanami von der OMU zeigt dir Aushänge an ihrer Uni. Die Uni mit der Ginkgo-Allee in Sugimoto."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おてら",
+     "ro": "otera",
+     "de": "Tempel"
+    },
+    {
+     "jp": "にわ",
+     "ro": "niwa",
+     "de": "Garten"
+    },
+    {
+     "jp": "はし",
+     "ro": "hashi",
+     "de": "Brücke"
+    }
+   ],
+   "hint": "Nanami an der OMU in Sugimoto."
+  },
+  "21": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "Am schwarzen Brett hängen jeden Tag neue Zettel. Viele Wörter sind in Hiragana."
+    },
+    {
+     "s": "omu",
+     "jp": "じゅぎょう ・ しけん",
+     "ro": "jugyō ・ shiken",
+     "t": "Unterricht und Prüfung."
+    },
+    {
+     "s": "omu",
+     "jp": "やすみ ・ としょかん",
+     "ro": "yasumi ・ toshokan",
+     "t": "Pause oder freier Tag, und Bibliothek."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Auf dem Zettel steht: „あしたは やすみです。“ Was heißt das?",
+     "options": [
+      "Morgen ist Prüfung.",
+      "Morgen ist frei.",
+      "Morgen ist die Bibliothek zu.",
+      "Morgen regnet es."
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie liest man das?",
+     "show": {
+      "jp": "しけん"
+     },
+     "options": [
+      "shiken",
+      "jugyō",
+      "shigoto",
+      "shinbun"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Super! Morgen frei – das lesen alle am liebsten."
+    },
+    {
+     "s": "omu",
+     "t": "Herr Yamada hat noch Schilder an einem großen Schrein im Süden. Dort, wo eine steile rote Brücke steht."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "やすみ",
+     "ro": "yasumi",
+     "de": "Pause, freier Tag"
+    },
+    {
+     "jp": "しけん",
+     "ro": "shiken",
+     "de": "Prüfung"
+    }
+   ],
+   "hint": "Ein großer Schrein mit steiler roter Brücke im Süden."
+  }
+ },
+ "STRANG_LANG_KATAKANA": {
+  "19": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Die Feinkost-Etage! Hier sind die Desserts aus dem Westen fast alle in Katakana."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "jp": "ケーキ ・ プリン",
+     "ro": "kēki ・ purin",
+     "t": "Kuchen und Pudding. Der Strich ー macht den Vokal lang."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "jp": "チョコレート ・ アイス",
+     "ro": "chokorēto ・ aisu",
+     "t": "Schokolade und Eis."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was steht auf dem Schild?",
+     "show": {
+      "jp": "ケーキ"
+     },
+     "options": [
+      "kēki (Kuchen)",
+      "kōhī (Kaffee)",
+      "kukkī (Keks)",
+      "kēsu (Kiste)"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und das?",
+     "show": {
+      "jp": "チョコレート"
+     },
+     "options": [
+      "chīzu",
+      "chokorēto",
+      "kokoa",
+      "karē"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Richtig! Und alles im Angebot nach 19 Uhr – merk dir das."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Maya macht ein Picknick im Park Tenshiba. Sie hat Katakana-Schilder dabei."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ケーキ",
+     "ro": "kēki",
+     "de": "Kuchen"
+    },
+    {
+     "jp": "チョコレート",
+     "ro": "chokorēto",
+     "de": "Schokolade"
+    }
+   ],
+   "hint": "Maya im Park Tenshiba."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Am Eingang der Wiese stehen Schilder. Was man hier machen darf."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Das kleine ッ verdoppelt den nächsten Laut. So wie bei Hiragana."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Lies du sie mir vor?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Was steht auf dem ersten Schild?",
+     "sign": "ピクニック",
+     "tiles": [
+      "pi",
+      "ku",
+      "ni",
+      "kku",
+      "bi",
+      "nu"
+     ],
+     "answer": [
+      "pi",
+      "ku",
+      "ni",
+      "kku"
+     ],
+     "meaning": "Picknick"
+    },
+    {
+     "type": "decipher",
+     "q": "Und auf dem zweiten?",
+     "sign": "スポーツ",
+     "tiles": [
+      "su",
+      "pō",
+      "tsu",
+      "bō",
+      "zu"
+     ],
+     "answer": [
+      "su",
+      "pō",
+      "tsu"
+     ],
+     "meaning": "Sport"
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Picknick und Sport – beides erlaubt. Perfekt."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Daiki will dir Fußball-Katakana beibringen. Im großen Stadion in Suita."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ピクニック",
+     "ro": "pikunikku",
+     "de": "Picknick"
+    },
+    {
+     "jp": "スポーツ",
+     "ro": "supōtsu",
+     "de": "Sport"
+    }
+   ],
+   "hint": "Daiki im Fußballstadion in Suita."
+  },
+  "21": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Im Stadion schreit jeder Katakana. Fußball kommt aus dem Westen, die Wörter auch."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "jp": "サッカー ・ パス ・ ゴール",
+     "ro": "sakkā ・ pasu ・ gōru",
+     "t": "Fußball, Pass, Tor."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "jp": "コーナーキック",
+     "ro": "kōnā kikku",
+     "t": "Eckstoß. Das ist mein Lieblingswort!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Die Fans schreien: „ゴール！“ Was ist passiert?",
+     "options": [
+      "Ein Tor",
+      "Ein Foul",
+      "Eine Pause",
+      "Ein Eckstoß"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Wie liest man das?",
+     "show": {
+      "jp": "パス"
+     },
+     "options": [
+      "basu",
+      "pasu",
+      "pazu",
+      "hasu"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "ゴール！ Du kannst jetzt mitschreien."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Beim Baseball geht's weiter. Komm zum Stadion mit den grünen Mauern."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "サッカー",
+     "ro": "sakkā",
+     "de": "Fußball"
+    },
+    {
+     "jp": "ゴール",
+     "ro": "gōru",
+     "de": "Tor"
+    }
+   ],
+   "hint": "Das Baseballstadion mit den grünen Mauern."
+  },
+  "22": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Baseball ist in Japan riesig. Und die Schiedsrichter rufen alles auf Katakana-Englisch."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Das ラ in ストライク klingt wie „ra“. Im Japanischen gibt es kein richtiges L."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Lies die Anzeigetafel!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Was zeigt die Tafel?",
+     "sign": "ストライク",
+     "tiles": [
+      "su",
+      "to",
+      "ra",
+      "i",
+      "ku",
+      "ru",
+      "ta"
+     ],
+     "answer": [
+      "su",
+      "to",
+      "ra",
+      "i",
+      "ku"
+     ],
+     "meaning": "Strike"
+    },
+    {
+     "type": "decipher",
+     "q": "Und jetzt?",
+     "sign": "セーフ",
+     "tiles": [
+      "sē",
+      "fu",
+      "se",
+      "hu"
+     ],
+     "answer": [
+      "sē",
+      "fu"
+     ],
+     "meaning": "Safe"
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "セーフ! Gerade so geschafft."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Gen will dir Essens-Katakana zeigen. „Wo man unter zwei Türmen in einer Edo-Gasse isst.“"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ストライク",
+     "ro": "sutoraiku",
+     "de": "Strike"
+    },
+    {
+     "jp": "セーフ",
+     "ro": "sēfu",
+     "de": "safe"
+    }
+   ],
+   "hint": "„Wo man unter zwei Türmen in einer Edo-Gasse isst.“"
+  },
+  "23": {
+   "lines": [
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "In der Retro-Gasse gibt es westliches Essen auf japanische Art. Yōshoku nennt man das."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "jp": "カレー ・ コロッケ",
+     "ro": "karē ・ korokke",
+     "t": "Curry und Krokette."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "jp": "ハンバーグ ・ ビール",
+     "ro": "hanbāgu ・ bīru",
+     "t": "Hacksteak und Bier."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bestellst du hier?",
+     "show": {
+      "jp": "コロッケ"
+     },
+     "options": [
+      "korokke (Krokette)",
+      "kokoa (Kakao)",
+      "kōra (Cola)",
+      "kukkī (Keks)"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und dazu?",
+     "show": {
+      "jp": "ビール"
+     },
+     "options": [
+      "bīru (Bier)",
+      "biru (Gebäude)",
+      "pīru (Schale)",
+      "bōru (Ball)"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Korokke und Bīru – das perfekte Feierabendessen!"
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Sōta wartet auf dem Campus in Minō, wo du angefangen hast. Er hat eine Abschlussprüfung für dich."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "カレー",
+     "ro": "karē",
+     "de": "Curry"
+    },
+    {
+     "jp": "コロッケ",
+     "ro": "korokke",
+     "de": "Krokette"
+    },
+    {
+     "jp": "ビール",
+     "ro": "bīru",
+     "de": "Bier"
+    }
+   ],
+   "hint": "Sōta auf dem Campus in Minō."
+  },
+  "24": {
+   "lines": [
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Willkommen zurück! Am Anfang konntest du nicht mal ア lesen."
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Jetzt: Bahnhof, Café, Musik, Mode, Spiele, Sport, Essen. Du hast alles gesehen."
+    },
+    {
+     "s": "sota",
+     "p": "puzzled",
+     "t": "Letzte Prüfung. Drei Schilder aus deinem Alltag."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Schild 1 – im Kaufhaus:",
+     "sign": "エレベーター",
+     "tiles": [
+      "e",
+      "re",
+      "bē",
+      "tā",
+      "be",
+      "ta"
+     ],
+     "answer": [
+      "e",
+      "re",
+      "bē",
+      "tā"
+     ],
+     "meaning": "Aufzug"
+    },
+    {
+     "type": "decipher",
+     "q": "Schild 2 – an der Ecke:",
+     "sign": "コンビニ",
+     "tiles": [
+      "ko",
+      "n",
+      "bi",
+      "ni",
+      "pi",
+      "go"
+     ],
+     "answer": [
+      "ko",
+      "n",
+      "bi",
+      "ni"
+     ],
+     "meaning": "Supermarkt rund um die Uhr"
+    },
+    {
+     "type": "decipher",
+     "q": "Schild 3 – auf deinem Ausweis:",
+     "sign": "ドイツ",
+     "tiles": [
+      "do",
+      "i",
+      "tsu",
+      "to",
+      "su"
+     ],
+     "answer": [
+      "do",
+      "i",
+      "tsu"
+     ],
+     "meaning": "Deutschland"
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "p": "point",
+     "t": "Bestanden! Das Katakana-Meisterzertifikat gehört dir."
+    },
+    {
+     "s": "sota",
+     "p": "note",
+     "t": "Jetzt kannst du jedes Lehnwort in Japan lesen. Omedetō!"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "エレベーター",
+     "ro": "erebētā",
+     "de": "Aufzug"
+    },
+    {
+     "jp": "コンビニ",
+     "ro": "konbini",
+     "de": "24-Stunden-Laden"
+    },
+    {
+     "jp": "ドイツ",
+     "ro": "Doitsu",
+     "de": "Deutschland"
+    }
+   ],
+   "hint": "Strang abgeschlossen – Sōta stellt dir dein Zertifikat aus."
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "16": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "jp": "四天王寺",
+     "ro": "Shitennō-ji",
+     "t": "Der Name des Tempels besteht aus vier Kanji. Zwei davon kennst du bald."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "jp": "四 ・ 天",
+     "ro": "yon / shi ・ ten",
+     "t": "Vier und Himmel. 天気 – tenki – ist das Wetter, wörtlich „Himmels-Stimmung“."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "jp": "白 ・ 休",
+     "ro": "shiro ・ yasumu",
+     "t": "Weiß – wie die Tauben am Tor. Und ausruhen: ein Mensch 亻 lehnt an einem Baum 木."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "四",
+      "天",
+      "白",
+      "休",
+      "木",
+      "山"
+     ],
+     "prompts": [
+      {
+       "de": "vier",
+       "answer": "四"
+      },
+      {
+       "de": "Himmel",
+       "answer": "天"
+      },
+      {
+       "de": "weiß",
+       "answer": "白"
+      },
+      {
+       "de": "ausruhen",
+       "answer": "休"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Gut. 休 mag ich besonders – ein Mensch, der am Baum Pause macht."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Die nächsten Kanji zeige ich dir an einem großen Schrein im Süden. Mit einer steilen roten Brücke."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "てんき",
+     "ro": "tenki",
+     "de": "Wetter (天気)"
+    },
+    {
+     "jp": "しろ",
+     "ro": "shiro",
+     "de": "weiß (白)"
+    },
+    {
+     "jp": "やすみ",
+     "ro": "yasumi",
+     "de": "Pause (休み)"
+    }
+   ],
+   "hint": "Ein großer Schrein mit steiler roter Brücke im Süden."
+  }
+ },
+ "STRANG_LANG_VOCABULARY": {
+  "17": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Shinsekai schläft nie. Morgens Shōgi, mittags Kushikatsu, abends Neon."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "あさ ・ ひる ・ よる",
+     "ro": "asa ・ hiru ・ yoru",
+     "t": "Morgen, Mittag, Nacht."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "きのう ・ きょう ・ あした",
+     "ro": "kinō ・ kyō ・ ashita",
+     "t": "Gestern, heute, morgen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wann spielen die alten Männer Shōgi? „あさ です。“",
+     "options": [
+      "am Morgen",
+      "am Abend",
+      "in der Nacht",
+      "gestern"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt „ashita“?",
+     "show": {
+      "jp": "あした"
+     },
+     "options": [
+      "gestern",
+      "heute",
+      "morgen",
+      "jetzt"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Wie sagt man „Nacht“?",
+     "options": [
+      {
+       "jp": "よる",
+       "ro": "yoru"
+      },
+      {
+       "jp": "ひる",
+       "ro": "hiru"
+      },
+      {
+       "jp": "あさ",
+       "ro": "asa"
+      },
+      {
+       "jp": "きょう",
+       "ro": "kyō"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Genau! よる ist hier die beste Zeit."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Takeshi ist oben auf dem eisernen Turm. Er erklärt dir das Wetter."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あさ",
+     "ro": "asa",
+     "de": "Morgen"
+    },
+    {
+     "jp": "よる",
+     "ro": "yoru",
+     "de": "Nacht"
+    },
+    {
+     "jp": "あした",
+     "ro": "ashita",
+     "de": "morgen (Tag)"
+    }
+   ],
+   "hint": "Takeshi oben auf dem eisernen Turm."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Wetter ist in Japan immer ein gutes Gesprächsthema. Lerne die Wörter."
+    },
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "jp": "はれ ・ あめ ・ かぜ",
+     "ro": "hare ・ ame ・ kaze",
+     "t": "Sonnig, Regen, Wind."
+    },
+    {
+     "s": "takeshi",
+     "p": "think",
+     "jp": "あつい ・ さむい",
+     "ro": "atsui ・ samui",
+     "t": "Heiß und kalt."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wetterwörter zu.",
+     "items": [
+      {
+       "icon": "sun",
+       "label": "sonnig",
+       "answer": "hare"
+      },
+      {
+       "icon": "rain",
+       "label": "Regen",
+       "answer": "ame"
+      },
+      {
+       "icon": "wind",
+       "label": "Wind",
+       "answer": "kaze"
+      },
+      {
+       "icon": "hot",
+       "label": "heiß",
+       "answer": "atsui"
+      },
+      {
+       "icon": "cold",
+       "label": "kalt",
+       "answer": "samui"
+      }
+     ],
+     "words": [
+      {
+       "jp": "かぜ",
+       "ro": "kaze"
+      },
+      {
+       "jp": "さむい",
+       "ro": "samui"
+      },
+      {
+       "jp": "はれ",
+       "ro": "hare"
+      },
+      {
+       "jp": "あつい",
+       "ro": "atsui"
+      },
+      {
+       "jp": "あめ",
+       "ro": "ame"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Ausgezeichnet. „きょうは あついですね。“ – „Heiß heute, nicht?“ So beginnt jedes Gespräch."
+    },
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Maya sitzt im Park Tenshiba. Sie lernt Gefühlswörter."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "はれ",
+     "ro": "hare",
+     "de": "sonnig"
+    },
+    {
+     "jp": "あめ",
+     "ro": "ame",
+     "de": "Regen"
+    },
+    {
+     "jp": "あつい",
+     "ro": "atsui",
+     "de": "heiß"
+    },
+    {
+     "jp": "さむい",
+     "ro": "samui",
+     "de": "kalt"
+    }
+   ],
+   "hint": "Maya im Park Tenshiba."
+  },
+  "19": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Wie fühlst du dich heute? Dafür gibt es schöne Wörter."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "jp": "うれしい ・ たのしい",
+     "ro": "ureshii ・ tanoshii",
+     "t": "Froh und lustig, unterhaltsam."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "jp": "いそがしい ・ しずか",
+     "ro": "isogashii ・ shizuka",
+     "t": "Beschäftigt und ruhig, still."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Der Park ist am Abend sehr still. Welches Wort passt?",
+     "options": [
+      {
+       "jp": "しずか",
+       "ro": "shizuka"
+      },
+      {
+       "jp": "いそがしい",
+       "ro": "isogashii"
+      },
+      {
+       "jp": "たのしい",
+       "ro": "tanoshii"
+      },
+      {
+       "jp": "あつい",
+       "ro": "atsui"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt „ureshii“?",
+     "show": {
+      "jp": "うれしい"
+     },
+     "options": [
+      "traurig",
+      "froh",
+      "müde",
+      "hungrig"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Ich bin heute うれしい. Weil du da bist."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Clara wartet am Südtor von Shitennō-ji. Sie lernt Wörter für Gebäude."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "うれしい",
+     "ro": "ureshii",
+     "de": "froh"
+    },
+    {
+     "jp": "しずか",
+     "ro": "shizuka",
+     "de": "ruhig, still"
+    }
+   ],
+   "hint": "Clara am Südtor von Shitennō-ji."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Ich will meine Zeichnungen auf Japanisch beschriften. Hilfst du mir?"
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "jp": "てら ・ もん",
+     "ro": "tera ・ mon",
+     "t": "Tempel und Tor."
+    },
+    {
+     "s": "clara",
+     "p": "surprised",
+     "jp": "とりい ・ はし",
+     "ro": "torii ・ hashi",
+     "t": "Schreintor und Brücke."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Beschrifte Claras Zeichnungen.",
+     "items": [
+      {
+       "icon": "temple",
+       "label": "Tempel",
+       "answer": "tera"
+      },
+      {
+       "icon": "gate",
+       "label": "Tor",
+       "answer": "mon"
+      },
+      {
+       "icon": "torii",
+       "label": "Schreintor",
+       "answer": "torii"
+      },
+      {
+       "icon": "bridge",
+       "label": "Brücke",
+       "answer": "hashi"
+      }
+     ],
+     "words": [
+      {
+       "jp": "はし",
+       "ro": "hashi"
+      },
+      {
+       "jp": "とりい",
+       "ro": "torii"
+      },
+      {
+       "jp": "てら",
+       "ro": "tera"
+      },
+      {
+       "jp": "もん",
+       "ro": "mon"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Danke! Jetzt sieht mein Skizzenbuch richtig japanisch aus."
+    },
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Nanami von der OMU in Sugimoto will dir Uhrzeiten beibringen. Sie hat einen vollen Stundenplan."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "もん",
+     "ro": "mon",
+     "de": "Tor"
+    },
+    {
+     "jp": "とりい",
+     "ro": "torii",
+     "de": "Schreintor"
+    }
+   ],
+   "hint": "Nanami an der OMU in Sugimoto."
+  },
+  "21": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "An der Uni dreht sich alles um die Uhr. Wann ist Unterricht, wann Mittagspause?"
+    },
+    {
+     "s": "omu",
+     "jp": "なんじ ですか。",
+     "ro": "Nan-ji desu ka.",
+     "t": "Wie spät ist es? Und „han“ heißt halb: くじはん – halb zehn."
+    },
+    {
+     "s": "omu",
+     "jp": "あさごはん ・ ひるやすみ",
+     "ro": "asagohan ・ hiruyasumi",
+     "t": "Frühstück und Mittagspause."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was heißt „ku-ji han“?",
+     "show": {
+      "jp": "くじはん"
+     },
+     "options": [
+      "9:00",
+      "9:30",
+      "10:30",
+      "12:00"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie fragt man nach der Uhrzeit?",
+     "options": [
+      {
+       "jp": "なんじですか。",
+       "ro": "Nan-ji desu ka."
+      },
+      {
+       "jp": "いくらですか。",
+       "ro": "Ikura desu ka."
+      },
+      {
+       "jp": "どこですか。",
+       "ro": "Doko desu ka."
+      },
+      {
+       "jp": "だれですか。",
+       "ro": "Dare desu ka."
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was ist „hiruyasumi“?",
+     "options": [
+      "Frühstück",
+      "Mittagspause",
+      "Feierabend",
+      "Wochenende"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Perfekt! Jetzt verpasst du keine Vorlesung mehr."
+    },
+    {
+     "s": "omu",
+     "t": "Herr Yamada hat Festwörter für dich – an einem großen Schrein im Süden mit steiler roter Brücke."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "なんじ",
+     "ro": "nan-ji",
+     "de": "wie spät"
+    },
+    {
+     "jp": "はん",
+     "ro": "han",
+     "de": "halb"
+    },
+    {
+     "jp": "ひるやすみ",
+     "ro": "hiruyasumi",
+     "de": "Mittagspause"
+    }
+   ],
+   "hint": "Ein großer Schrein mit steiler roter Brücke im Süden."
+  }
+ },
+ "STRANG_LANG_CONVERSATION": {
+  "19": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Ich jobbe manchmal in einem Kushikatsu-Laden hier. Willst du wissen, wann?"
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "ごじ から じゅうじ まで はたらきます。",
+     "ro": "Go-ji kara jū-ji made hatarakimasu.",
+     "t": "Ich arbeite von fünf bis zehn Uhr. から = von, まで = bis."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "jp": "みせは なんじ から ですか。",
+     "ro": "Mise wa nan-ji kara desu ka.",
+     "t": "Ab wann hat der Laden auf?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet „kara“ in „go-ji kara“?",
+     "options": [
+      "bis",
+      "von / ab",
+      "und",
+      "nicht"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "„Ich arbeite von 9 bis 5.“ Welcher Satz passt?",
+     "options": [
+      {
+       "jp": "くじ から ごじ まで はたらきます。",
+       "ro": "Ku-ji kara go-ji made hatarakimasu."
+      },
+      {
+       "jp": "ごじ から くじ まで はたらきます。",
+       "ro": "Go-ji kara ku-ji made hatarakimasu."
+      },
+      {
+       "jp": "くじ まで ごじ から はたらきます。",
+       "ro": "Ku-ji made go-ji kara hatarakimasu."
+      },
+      {
+       "jp": "くじに はたらきません。",
+       "ro": "Ku-ji ni hatarakimasen."
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Genau! Komm vorbei – zwischen fünf und zehn."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Daiki will dir oben auf dem eisernen Turm von gestern erzählen. Er hat ein Spiel gesehen."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "から",
+     "ro": "kara",
+     "de": "von, ab"
+    },
+    {
+     "jp": "まで",
+     "ro": "made",
+     "de": "bis"
+    },
+    {
+     "jp": "はたらきます",
+     "ro": "hatarakimasu",
+     "de": "arbeiten"
+    }
+   ],
+   "hint": "Daiki oben auf dem eisernen Turm."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Gestern hab ich das Derby gesehen. Wie sagt man das? Mit ～ました."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "jp": "きのう しあいを みました。",
+     "ro": "Kinō shiai o mimashita.",
+     "t": "Gestern habe ich ein Spiel gesehen. みます wird zu みました."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "jp": "ともだちと いきました。",
+     "ro": "Tomodachi to ikimashita.",
+     "t": "Ich bin mit Freunden hingegangen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Gestern habe ich ein Spiel gesehen.“",
+     "tiles": [
+      {
+       "jp": "きのう",
+       "ro": "kinō"
+      },
+      {
+       "jp": "しあいを",
+       "ro": "shiai o"
+      },
+      {
+       "jp": "みました",
+       "ro": "mimashita"
+      },
+      {
+       "jp": "みます",
+       "ro": "mimasu"
+      },
+      {
+       "jp": "あした",
+       "ro": "ashita"
+      }
+     ],
+     "answer": [
+      "きのう",
+      "しあいを",
+      "みました"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Ich bin mit Freunden hingegangen.“",
+     "tiles": [
+      {
+       "jp": "ともだちと",
+       "ro": "tomodachi to"
+      },
+      {
+       "jp": "いきました",
+       "ro": "ikimashita"
+      },
+      {
+       "jp": "いきます",
+       "ro": "ikimasu"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      }
+     ],
+     "answer": [
+      "ともだちと",
+      "いきました"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Perfekt. Jetzt kannst du von gestern erzählen."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Maya sitzt im Park Tenshiba. Sie will wissen, wie dein Wochenende war."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "～ました",
+     "ro": "-mashita",
+     "de": "Vergangenheit (höflich)"
+    },
+    {
+     "jp": "しあい",
+     "ro": "shiai",
+     "de": "Spiel, Wettkampf"
+    }
+   ],
+   "hint": "Maya im Park Tenshiba."
+  },
+  "21": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Wie war dein Wochenende? Bei Adjektiven auf ～い geht die Vergangenheit anders."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "jp": "たのしい → たのしかったです。",
+     "ro": "tanoshii → tanoshikatta desu.",
+     "t": "Lustig → es war lustig. Das い wird zu かった."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "jp": "おいしかったです。",
+     "ro": "Oishikatta desu.",
+     "t": "Es war lecker."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "„Es war lustig.“",
+     "options": [
+      {
+       "jp": "たのしかったです。",
+       "ro": "Tanoshikatta desu."
+      },
+      {
+       "jp": "たのしいでした。",
+       "ro": "Tanoshii deshita."
+      },
+      {
+       "jp": "たのしいです。",
+       "ro": "Tanoshii desu."
+      },
+      {
+       "jp": "たのしくないです。",
+       "ro": "Tanoshikunai desu."
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "„さむかったです“ heißt …",
+     "options": [
+      "Es ist kalt.",
+      "Es war kalt.",
+      "Es wird kalt.",
+      "Es ist nicht kalt."
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Mein Wochenende? とても たのしかったです。"
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Clara wartet am Südtor von Shitennō-ji. Sie hat einen Satz, den sie nicht versteht."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "たのしかった",
+     "ro": "tanoshikatta",
+     "de": "war lustig"
+    }
+   ],
+   "hint": "Clara am Südtor von Shitennō-ji."
+  },
+  "22": {
+   "lines": [
+    {
+     "s": "clara",
+     "p": "surprised",
+     "t": "Gestern war ich so müde, ich bin nirgendwo hingegangen. Wie sagt man das?"
+    },
+    {
+     "s": "clara",
+     "p": "calm",
+     "jp": "どこにも いきませんでした。",
+     "ro": "Doko ni mo ikimasen deshita.",
+     "t": "Ich bin nirgendwohin gegangen. ～ませんでした ist die verneinte Vergangenheit."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "jp": "なにも たべませんでした。",
+     "ro": "Nani mo tabemasen deshita.",
+     "t": "Ich habe nichts gegessen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Ich bin nirgendwohin gegangen.“",
+     "tiles": [
+      {
+       "jp": "どこにも",
+       "ro": "doko ni mo"
+      },
+      {
+       "jp": "いきませんでした",
+       "ro": "ikimasen deshita"
+      },
+      {
+       "jp": "いきました",
+       "ro": "ikimashita"
+      },
+      {
+       "jp": "なにも",
+       "ro": "nani mo"
+      }
+     ],
+     "answer": [
+      "どこにも",
+      "いきませんでした"
+     ]
+    },
+    {
+     "type": "build",
+     "q": "Bilde: „Ich habe nichts gegessen.“",
+     "tiles": [
+      {
+       "jp": "なにも",
+       "ro": "nani mo"
+      },
+      {
+       "jp": "たべませんでした",
+       "ro": "tabemasen deshita"
+      },
+      {
+       "jp": "たべました",
+       "ro": "tabemashita"
+      },
+      {
+       "jp": "どこにも",
+       "ro": "doko ni mo"
+      }
+     ],
+     "answer": [
+      "なにも",
+      "たべませんでした"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Danke! Heute gehe ich aber überall hin."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Herr Yamada will dir erzählen, wie man Ausflüge beschreibt. „Wo ein steiler roter Bogen über das Wasser zu den Göttern führt.“"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "～ませんでした",
+     "ro": "-masen deshita",
+     "de": "verneinte Vergangenheit"
+    },
+    {
+     "jp": "どこにも",
+     "ro": "doko ni mo",
+     "de": "nirgendwohin"
+    }
+   ],
+   "hint": "„Wo ein steiler roter Bogen über das Wasser zu den Göttern führt.“"
+  }
+ }
+}

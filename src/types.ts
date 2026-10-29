@@ -33,7 +33,9 @@ export type Task =
   | { type: 'build'; q: string; tiles: { jp: string; ro: string }[]; answer: string[] }
   | { type: 'rounds'; art?: string; timed?: number; fixed?: string[];
       rounds: { q?: string; jp?: string; ro?: string; art?: string; options?: string[]; answer: number; fb?: string }[] }
-  | { type: 'route'; q: string; options: { label: string; value: string }[] }
+  | { type: 'route'; q: string; flag?: string; options: { label: string; value: string; facts?: string[]; pose?: string }[] }
+  | { type: 'shogi'; q: string; cols: number; rows: number; pieces: { k: string; x: number; y: number; foe?: boolean }[];
+      hand?: string[]; answer: { from: string; to: string }[]; fb?: string }
   | { type: 'mapquiz'; q?: string; map: string; points: { id: string; x: number; y: number; label?: string }[];
       rounds: { q: string; answer: string; fb?: string }[] }
   | { type: 'ticket'; q: string; fares: { jp: string; ro: string; price: number }[]; target: string }
@@ -52,10 +54,13 @@ export interface StageContent {
   after?: Line[];
   hint: string;
   vocab?: VocabEntry[];
-  variants?: Record<string, { lines?: Line[]; tasks?: Task[]; after?: Line[] }>;
+  variants?: Record<string, { lines?: Line[]; tasks?: Task[]; after?: Line[]; afterBy?: AfterBy }>;
+  /** Abschluss-Dialog abhängig von einer Entscheidung (Flag) in dieser Etappe. */
+  afterBy?: AfterBy;
   /** Holen-und-Zurückbringen: Gegenstand liegt auf dem Ziel-Screen an (x, y). */
   fetch?: { item: string; x: number; y: number; find: string; hintOut: string; hintBack: string; art?: string };
 }
+export interface AfterBy { flag: string; lines: Record<string, Line[]> }
 export type Mood = 'morning' | 'day' | 'golden' | 'night';
 
 // ---------- Spielstand ----------

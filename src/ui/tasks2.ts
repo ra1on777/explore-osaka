@@ -341,3 +341,73 @@ export async function ingredient(task: Extract<Task, { type: 'ingredient' }>): P
   showOverlay(null);
   return errors;
 }
+
+// ---------- Tsume-Shōgi: Matt in einem Zug (Brett oben, Steine aus der Hand unten) ----------
+export async function shogi(task: Extract<Task, { type: 'shogi' }>): Promise<number> {
+  let errors = 0;
+  let sel: string | null = null;
+  const cells = new Map<string, HTMLButtonElement>();
+  const board = h('div', { class: 'shogi-board', style: `grid-template-columns:repeat(${task.cols},1fr);grid-template-rows:repeat(${task.rows},1fr);aspect-ratio:${task.cols}/${task.rows}` });
+  const pieceAt = (x: number, y: number) => task.pieces.find((p) => p.x === x && p.y === y);
+  const handRow = h('div', { class: 'shogi-hand' });
+  const handBtns = new Map<string, HTMLButtonElement>();
+  const mark = () => {
+    for (const [k, b] of cells) b.classList.toggle('sel', k === sel);
+    for (const [k, b] of handBtns) b.classList.toggle('sel', k === sel);
+  };
+  for (let y = 1; y <= task.rows; y++) for (let x = 1; x <= task.cols; x++) {
+    const p = pieceAt(x, y);
+    const b = h('button', { class: 'sq', 'data-sq': `${x},${y}`, 'aria-label': `${x},${y}` },
+      p ? h('span', { class: `koma ${p.foe ? 'foe' : ''}`, lang: 'ja' }, p.k) : null) as HTMLButtonElement;
+    cells.set(`${x},${y}`, b);
+    board.append(b);
+  }
+  for (const k of task.hand ?? []) {
+    const b = h('button', { class: 'sq hand', 'data-sq': `hand:${k}` }, h('span', { class: 'koma', lang: 'ja' }, k)) as HTMLButtonElement;
+    handBtns.set(`hand:${k}`, b);
+    handRow.append(b);
+  }
+  showOverlay(h('div', { class: 'shogi-wrap' }, h('div', { class: 'shogi-label' }, t('task.shogi.foe')), board));
+  const { el, fb } = frame(task.q, h('div', { class: 'small' }, t('task.shogi.hint')),
+    task.hand?.length ? h('div', { class: 'shogi-hand-wrap' }, h('div', { class: 'small muted' }, t('task.shogi.hand')), handRow) : null);
+  await new Promise<void>((resolve) => {
+    const tryMove = (to: string) => {
+      const ok = task.answer.some((a) => a.from === sel && a.to === to);
+      if (ok) {
+        const target = cells.get(to)!;
+        const src = sel!.startsWith('hand:') ? handBtns.get(sel!)! : cells.get(sel!)!;
+        const piece = src.querySelector('.koma');
+        if (piece) { target.replaceChildren(piece); piece.classList.add('placed'); }
+        target.classList.add('mate');
+        sel = null; mark();
+        for (const b of [...cells.values(), ...handBtns.values()]) b.disabled = true;
+        rightFx(fb, task.fb ? `${t('task.right')} ${task.fb}` : t('task.right'));
+        resolve();
+        return;
+      }
+      errors++;
+      sel = null; mark();
+      if (errors >= 2) {
+        const a = task.answer[0];
+        (a.from.startsWith('hand:') ? handBtns.get(a.from) : cells.get(a.from))?.classList.add('tip');
+        cells.get(a.to)?.classList.add('tip');
+      }
+      wrongFx(el, fb, errors >= 2 ? t('task.shogi.tip') : t('task.shogi.wrong'));
+    };
+    const pick = (k: string, own: boolean) => {
+      if (sel && sel !== k) { tryMove(k); return; }
+      if (!own) return;
+      sel = sel === k ? null : k;
+      mark();
+    };
+    for (const [k, b] of cells) {
+      const [x, y] = k.split(',').map(Number);
+      const p = pieceAt(x, y);
+      b.onclick = () => (p && !p.foe ? (sel && sel !== k ? tryMove(k) : pick(k, true)) : sel ? tryMove(k) : undefined);
+    }
+    for (const [k, b] of handBtns) b.onclick = () => pick(k, true);
+  });
+  await continueBtn(el);
+  showOverlay(null);
+  return errors;
+}

@@ -57,30 +57,70 @@ Still korrigiert (wie vereinbart) und hier dokumentiert.
 - Geographie 8: Kartenquiz zur Bucht (Tempozan, Yodo-Mündung, Sturmflut-Tor, künstliche Insel).
 - Wahrzeichen 3 / Hinweise: Die Läufer-Reklame und das Riesenrad werden ohne Markennamen beschrieben.
 
-## Zur Faktenprüfung (Region 4)
-- Kuidaore-Sprichwort (Kyōto Kleidung, Ōsaka Essen); Takoyaki in den 1930ern in Ōsaka erfunden; Dashi aus Kombu (aus Hokkaidō) und Bonito.
-- Kuromon-Markt seit fast 200 Jahren, Name nach dem schwarzen Tor eines Tempels.
-- Amerikamura: Name von Läden mit US-Kleidung in den 1970ern; Sankaku-kōen.
-- Live Houses mit Pflichtgetränk; Kanpai-Regel, Oshaku, Otōshi/Tsukidashi als Sitzgebühr.
-- Ebisu-bashi = „Hikkake-bashi“; Fans springen 1985 in den Kanal.
-- Den Den Town von „denki“; Karaoke in Kansai erfunden (Inoue Daisuke, Kōbe, Anfang der 1970er).
-- Taishō: Zuwanderung aus Okinawa ab den 1920ern, rund ein Viertel der Bewohner mit Wurzeln in Okinawa; Shīsā paarweise, ein Maul offen, eins geschlossen; Sanshin; Sātā andagī.
-- Namba Yasaka: Löwenkopf rund 12 m hoch; Tsunahiki-Ritual (Bezug zu Susanoo und Yamata no Orochi), im Januar.
-- Manzai: Boke und Tsukkomi; „Tenka no daidokoro“ als Reishandelszentrum der Edo-Zeit.
-- Kyocera Dome 1997 eröffnet, rund 36.000 Plätze beim Baseball.
-- Kindai Academic Theater mit über 20.000 Comics; vollständige Zucht des Pazifischen Blauflossen-Thunfischs 2002 nach über 30 Jahren Forschung.
-- Tempozan 1831 aus Baggersand des Aji-gawa, 4,53 m; Sturmflut-Bogentore 1970; Weltausstellung 2025 auf einer künstlichen Insel; Riesenrad über 100 m, Umlauf rund 15 min.
-- Namba Parks auf dem Gelände eines früheren Baseballstadions; Nankai-Strecke Namba – Kansai-Flughafen gut 40 km, Express gut eine halbe Stunde.
-- Oda Sakunosuke, „Meoto Zenzai“ (1940); Lokal gleichen Namens in Minami.
-- Bunraku: drei Spieler pro Hauptpuppe; UNESCO-Kulturerbe.
-- Ōsaka-jō Hall 1983 eröffnet (400 Jahre nach Baubeginn der Burg).
-- Panna (Straßenfußball aus den Niederlanden); Kunstrasenschuhe mit Noppen.
-- Roter Faden am kleinen Finger (akai ito), En-musubi.
-- Concept-Café-Regeln (Fotos nur offiziell, Zeitlimit).
+## Faktencheck Region 4 – bestätigt
+Alle Punkte bestätigt. Präzisierungen eingearbeitet:
+- Shīsā: rechte Figur mit offenem Maul (hält Glück fest), linke geschlossen (sperrt Böses aus).
+- Kanpai: eigenes Glas etwas tiefer halten als das des Gegenübers.
+- Live House: Pflichtgetränk meist 500–600 ¥.
+- Kyocera Dome: im März 1997 als „Osaka Dome“ eröffnet.
+- Namba Parks: auf dem Gelände des 1998 abgerissenen Osaka-Stadions (Nankai Hawks); Strecke Namba–KIX rund 42 km (Schätzaufgabe von 43 auf 42 korrigiert), Rapi:t 34–39 min.
+- Concept-Café: Fotos des Personals nur als bezahltes „Cheki“.
+
+## Region 5
+- Stadtentwicklung 5: Statt der „Bodenversiegelung“ (keine verlässliche Zahl) Schätzfrage zur Höhe von Abeno Harukas (300 m). Stadtentwicklung 14: Schätzfrage zum Jahrzehnt der nachgebauten Straße (1830er).
+- Stadtentwicklung 6: Ren braucht den Fahrplan der kostenlosen Fähren (Fetch-Ziel 50 Tempozan wie im Bundle).
+- Wahrzeichen 6: Der Glasboden ist im Artwork nicht zu sehen; Fotomotiv ist stattdessen die winzige Burg im Fenster. Wahrzeichen 11: Die Schwarze Sonne auf der Rückseite ist im Artwork nicht sichtbar; fotografiert wird das goldene Gesicht an der Spitze.
+- Nachtleben 11: Schätzfrage zum Baujahr des heutigen Turms (1956) statt zu den Neonfarben; die Wetterfarben werden im Dialog erklärt.
+- Kansai 11: Statt Besucherzahlen aus Nachbarpräfekturen (keine verlässliche Zahl) Fahrzeit Ōsaka–Kyōto mit dem JR-Spezial-Schnellzug (rund 29 min).
+- Kuidaore 8: Okinawa-Soba-Brühe aus Schwein und Katsuobushi (das Bundle nennt Kombu; Kombu taucht stattdessen in Osaka Tamashii 7 auf).
+- Kanji 16: 寺, 心, 手 (nicht N5) ersetzt durch 四, 天, 白, 休; 寺 nur im Dialog als Teil von 四天王寺.
+- Shōgi-Rätsel: zwei klassische Matt-in-einem-Zug-Stellungen (Gold-Abwurf vor den König, „atama-kin“; Turm auf die oberste Reihe bei eingesperrtem König).
+- STUDENT_OMU_LEAD heißt im Spiel „Nanami“. TOURIST_CLARA stammt aus Deutschland und spricht den Spieler auf Deutsch an.
+- Romance 22: Für Aoi ist der „Dämpfer“ ein einjähriges Praktikum in Yokohama, für Maya das Ende ihres Austauschsemesters; in beiden Fällen geht auch der Spieler zurück nach Deutschland.
+- Romance 28: Die Wahl (Kuss / Freundschaft) wird als Flag `ending` gespeichert.
+- Café-Kultur 6 („Dende Town“) und Fußball 12 („Revanchmatch“) erscheinen im Spiel korrekt geschrieben.
+
+## Zur Faktenprüfung (Region 5)
+Nach bestem Wissen geschrieben; bitte gegenprüfen:
+- Midō-suji 1937 auf 44 m verbreitert, U-Bahn darunter seit 1933.
+- Shinsekai 1912: Nordteil nach Pariser Vorbild, Vergnügungspark „Luna Park“ nach Coney Island; erster Tsūtenkaku 1912 (Eiffelturm-Anklang), im Krieg abgebaut; heutiger Turm 1956, rund 103 m (108 m mit Blitzableiter).
+- Wetterlicht des Tsūtenkaku: Weiß = sonnig, Orange = bewölkt, Blau = Regen.
+- Riesenrad Tempozan: Beleuchtung als Wettervorhersage für den nächsten Tag (Rot = sonnig, Grün = bewölkt, Blau = Regen).
+- Billiken: 1908 von einer amerikanischen Künstlerin (Florence Pretz) erfunden, „God of things as they ought to be“, seit 1912 in Shinsekai; Fußsohlen streicheln bringt Glück.
+- Abeno Harukas 300 m, eröffnet 2014, lange höchstes Gebäude Japans.
+- Kostenlose Stadtfähren (渡船) vor allem in Taishō, seit über hundert Jahren städtisch betrieben.
+- Kyocera Dome auf dem Gelände eines ehemaligen Gaswerks.
+- Stadthalle Nakanoshima (1918), gestiftet vom Börsenmakler Iwamoto Einosuke (1 Million Yen).
+- Osaka Station City 2011; Umekita auf dem Gelände des früheren Güterbahnhofs Umeda, mit großem Park.
+- Museum of Housing and Living: nachgebaute Straße der 1830er Jahre (Tenpō-Zeit).
+- Hankai-Tram: letzte Straßenbahnlinie Ōsakas, seit über hundert Jahren, von Ebisuchō bis Sakai.
+- Umeda Sky Building 1993 mit „schwebender Rolltreppe“ und Floating Garden.
+- Turm der Sonne (Okamoto Tarō, 1970): goldenes Gesicht = Zukunft, Mitte = Gegenwart, Schwarze Sonne hinten = Vergangenheit.
+- Kōshien-Efeu 1924 gepflanzt, beim Umbau entfernt und aus Ablegern neu gepflanzt.
+- Kushikatsu: nido-zuke kinshi, Kohlblatt als Löffel. Doteyaki mit (weißer) Miso. Milch aus der Glasflasche nach dem Bad.
+- Okinawa-Soba-Brühe aus Schweinefleisch und Katsuobushi. Bukubuku-chā mit Schaum aus Reis-Röstwasser und Erdnüssen.
+- Chicken Ramen 1958, Cup Noodle 1971 (Andō Momofuku, Ikeda). Momiji-Tempura: Blätter rund ein Jahr in Salz eingelegt.
+- Kitsune-Udon in Ōsaka im 19. Jahrhundert erfunden.
+- Mizuhiki: Rot-Weiß für freudige, Schwarz-Weiß/Silber für traurige Anlässe.
+- Setsuwa-Sammlung (Nihon Ryōiki) aus dem frühen 9. Jahrhundert.
+- Chikamatsu: Shusse Kagekiyo 1685, Sonezaki Shinjū 1703, Kokusen'ya Kassen 1715, Shinjū Ten no Amijima 1720. Saikaku: Kōshoku Ichidai Otoko 1682. Ueda Akinari: Ugetsu Monogatari 1776.
+- Sanada Yukimura als „bester Krieger Japans“ (日本一の兵), Sanada-maru im Süden der Burg.
+- Endō Shūsaku, „Schweigen“ (1966), selbst Katholik.
+- Shitennō-ji 593 von Prinz Shōtoku gegründet; Anordnung Tor–Pagode–Haupthalle–Lehrhalle in einer Süd-Nord-Linie; vier Einrichtungen (Kyōden-in, Hiden-in, Ryōbyō-in, Seyaku-in); Garten des Reinen Landes; steinernes Torii am Westtor, Sonnenuntergang zur Tagundnachtgleiche.
+- Ryūan-ji in Minō als Ursprung einer der ältesten Lotterien Japans (Minō-tomi); En no Gyōja / Shugendō / Yamabushi.
+- Ishiyama Hongan-ji: zehnjähriger Krieg gegen Oda Nobunaga, Aufgabe 1580; später Burg Ōsaka auf dem Gelände.
+- Siebzehn-Artikel-Verfassung, Artikel 1 „Wa“. Ogyū Sorai: Ordnung von den alten Weisen gemacht.
+- Sakata Sankichi als legendärer Shōgi-Spieler aus der Gegend.
+- JR-Spezial-Schnellzug Ōsaka–Kyōto rund 29 Minuten.
+- Kansai-ben: honma, akan, ōkini; Kyōto: oideyasu.
+- Tenjin Matsuri am 24./25. Juli mit über hundert Booten und Feuerwerk, eines der drei großen Feste Japans.
+- Takoishi über hundert Tonnen.
+- Hideyoshi „Taikō“: Titel eines Regenten im Ruhestand.
+- Mōkarimakka / Bochi-bochi denna; Sprichwort „Handel ist wie der Speichel einer Kuh“ (商いは牛の涎).
+- OMU 2022 aus Ōsaka City University und Ōsaka Prefecture University; Wurzeln in einer Handelsschule, die Godai Tomoatsu mitgegründet hat; Godai baute auch die Handelskammer auf.
+- Weltmeisterschaft 2002 im Nagai-Stadion.
 
 ## Noch zu korrigieren (außerhalb der Demo, betrifft spätere Regionen)
-- „Dende Town“ → „Den Den Town“ (Café-Kultur, Etappe 6).
-- „Revanchmatch“ → „Revanchematch“ (Fußball, Etappe 12).
 - „Makerte ya!“ → „Makete ya!“ (Shopping, Etappe 4).
 
 ## Zur Faktenprüfung (Region 1)

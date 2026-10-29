@@ -64,6 +64,15 @@ export const icons: Record<string, string> = {
   eye: I('<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'),
   ear: I('<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1"/><rect x="17" y="14" width="4" height="7" rx="1"/>'),
   run: I('<circle cx="15" cy="4" r="2"/><path d="M7 21l4-6 3 2 2 5M10 10l3-3 3 3 3 1M13 7l-2 6"/>'),
+  sun: I('<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/>'),
+  rain: I('<path d="M6 14a4 4 0 0 1 1-8 5 5 0 0 1 10 1 3.5 3.5 0 0 1 0 7z"/><path d="M8 17l-1 3M12 17l-1 3M16 17l-1 3"/>'),
+  wind: I('<path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h7"/>'),
+  hot: I('<path d="M10 4a2 2 0 0 1 4 0v10a4 4 0 1 1-4 0z"/><path d="M12 9v7"/><path d="M18 5l2-1M18 9h2"/>'),
+  cold: I('<path d="M12 2v20M4 7l16 10M20 7L4 17"/><path d="M9 3l3 2 3-2M9 21l3-2 3 2"/>'),
+  temple: I('<path d="M2 9l10-5 10 5z"/><path d="M5 9v10M19 9v10M3 21h18M9 21v-6h6v6"/>'),
+  gate: I('<path d="M3 7h18M5 4h14l2 3M5 7v14M19 7v14M5 13h14M10 13v8M14 13v8"/>'),
+  torii: I('<path d="M2 5c6 2 14 2 20 0M4 9h16M7 6v15M17 6v15"/>'),
+  bridge: I('<path d="M2 18c4-8 16-8 20 0M2 18h20M7 13v5M12 11v7M17 13v5"/>'),
   gear: I('<circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>'),
 };
 
@@ -525,6 +534,145 @@ export const mapBaseR4 = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <text x="608" y="800" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Midō-suji ↕</text>
   <text x="985" y="180" font-size="18" text-anchor="end" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Higashi-Ōsaka →</text>
   <text x="620" y="30" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">↑ Burg / Kita</text>`);
+
+// ---------- Region 5: Nahaufnahmen ----------
+Object.assign(closeups, {
+  thermo: C(`
+    <rect x="10" y="80" width="80" height="56" fill="#9aa1a8" stroke="${O}" stroke-width="2"/><text x="50" y="112" font-size="11" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Beton</text>
+    <rect x="110" y="80" width="80" height="56" fill="#6fa56a" stroke="${O}" stroke-width="2"/><text x="150" y="112" font-size="11" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Grün</text>
+    <rect x="44" y="14" width="12" height="56" rx="6" fill="#fff" stroke="${O}" stroke-width="2"/><rect x="47" y="22" width="6" height="46" fill="${RED}"/>
+    <rect x="144" y="14" width="12" height="56" rx="6" fill="#fff" stroke="${O}" stroke-width="2"/><rect x="147" y="46" width="6" height="22" fill="${BLUE}"/>`),
+  senbei: C(`
+    <rect x="16" y="20" width="168" height="110" rx="8" fill="#f6efe0" stroke="${O}" stroke-width="2"/>
+    <circle cx="62" cy="62" r="26" fill="#c98b45" stroke="${O}" stroke-width="2"/><rect x="50" y="56" width="24" height="12" fill="#1d2a22"/>
+    <circle cx="136" cy="62" r="26" fill="#d9a35a" stroke="${O}" stroke-width="2"/><path d="M118 56c10 6 26 6 36 0" stroke="${O}" stroke-width="2" fill="none"/>
+    <rect x="50" y="98" width="100" height="22" rx="4" fill="#f4c7cf" stroke="${O}" stroke-width="2"/><circle cx="74" cy="109" r="6" fill="#fff"/><circle cx="100" cy="109" r="6" fill="#9ccf8c"/><circle cx="126" cy="109" r="6" fill="#f7e38a"/>`),
+  benishoga: C(`
+    <path d="M60 30h80v12H60z" fill="#d7c9a8" stroke="${O}" stroke-width="2"/>
+    <path d="M54 42h92l-6 88H60z" fill="#f3d9da" stroke="${O}" stroke-width="2"/>
+    <path d="M68 70l60-10M66 86l66-6M70 104l58-4M72 118l52 2" stroke="#d6324a" stroke-width="7"/>
+    <rect x="78" y="48" width="44" height="14" fill="#fff" stroke="${O}"/><text x="100" y="59" font-size="9" text-anchor="middle" fill="${O}">紅しょうが</text>`),
+  purse: C(`
+    <path d="M40 54h120v70H40z" fill="#7a4b8c" stroke="${O}" stroke-width="2"/>
+    <path d="M40 54c0-22 120-22 120 0" fill="#8c5ca0" stroke="${O}" stroke-width="2"/>
+    <circle cx="92" cy="38" r="6" fill="${GOLD}" stroke="${O}" stroke-width="2"/><circle cx="108" cy="38" r="6" fill="${GOLD}" stroke="${O}" stroke-width="2"/>
+    <rect x="66" y="76" width="68" height="26" rx="4" fill="#fff" stroke="${O}"/><text x="100" y="93" font-size="10" text-anchor="middle" fill="${O}">ロッカー 18</text>`),
+  wristband: C(`
+    <ellipse cx="100" cy="76" rx="72" ry="30" fill="none" stroke="${RED}" stroke-width="16"/>
+    <ellipse cx="100" cy="76" rx="72" ry="30" fill="none" stroke="${O}" stroke-width="2"/>
+    <text x="100" y="54" font-size="10" text-anchor="middle" fill="#fff" font-family="Manrope, sans-serif">ALL NIGHT FES</text>`),
+  grater: C(`
+    <rect x="70" y="16" width="60" height="96" rx="6" fill="#c8a46a" stroke="${O}" stroke-width="2"/>
+    <g fill="${O}">${Array.from({ length: 8 }, (_, r) => Array.from({ length: 5 }, (_, c) => `<circle cx="${80 + c * 10}" cy="${26 + r * 10}" r="1.6"/>`).join('')).join('')}</g>
+    <rect x="88" y="112" width="24" height="28" rx="4" fill="#8c6a3a" stroke="${O}" stroke-width="2"/>`),
+  bowl: C(`
+    <path d="M34 60h132c0 40-30 62-66 62S34 100 34 60z" fill="#5c7f9a" stroke="${O}" stroke-width="2"/>
+    <path d="M40 72c40 14 80 14 120 0" stroke="#d9e4ea" stroke-width="5" fill="none"/>
+    <ellipse cx="100" cy="60" rx="66" ry="12" fill="#e9e1cf" stroke="${O}" stroke-width="2"/>
+    <rect x="120" y="100" width="54" height="22" fill="#fff" stroke="${O}"/><text x="147" y="115" font-size="10" text-anchor="middle" fill="${RED}">300円</text>`),
+  sutra: C(`
+    <rect x="18" y="30" width="164" height="90" fill="#efe3c2" stroke="${O}" stroke-width="2"/>
+    <rect x="10" y="26" width="10" height="98" rx="4" fill="#7a5230"/><rect x="180" y="26" width="10" height="98" rx="4" fill="#7a5230"/>
+    <g stroke="${O}" stroke-width="2">${Array.from({ length: 12 }, (_, i) => `<path d="M${168 - i * 12} 40v${50 + (i % 3) * 8}" stroke-dasharray="4 3"/>`).join('')}</g>
+    <circle cx="44" cy="104" r="8" fill="${RED}" opacity=".8"/>`),
+  notebook: C(`
+    <rect x="44" y="18" width="112" height="116" rx="4" fill="#2f4b6e" stroke="${O}" stroke-width="2"/>
+    <rect x="56" y="30" width="88" height="40" fill="${PAPER}" stroke="${O}"/>
+    <text x="100" y="47" font-size="10" text-anchor="middle" fill="${O}">研究ノート</text><text x="100" y="62" font-size="8" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Archiv · Bd. 3</text>
+    <path d="M60 18v116" stroke="#1b2f47" stroke-width="4"/>`),
+  garan: C(`
+    <rect x="70" y="10" width="60" height="130" fill="#e6dccb" stroke="${O}" stroke-width="2"/>
+    <rect x="84" y="118" width="32" height="14" fill="${RED}" stroke="${O}"/><text x="140" y="129" font-size="9" fill="${O}">Tor</text>
+    <rect x="90" y="86" width="20" height="20" fill="${RED}" stroke="${O}"/><text x="140" y="99" font-size="9" fill="${O}">Pagode</text>
+    <rect x="80" y="52" width="40" height="22" fill="${RED}" stroke="${O}"/><text x="140" y="66" font-size="9" fill="${O}">Haupthalle</text>
+    <rect x="76" y="18" width="48" height="22" fill="${RED}" stroke="${O}"/><text x="140" y="32" font-size="9" fill="${O}">Lehrhalle</text>
+    <path d="M100 8v134" stroke="${GOLD}" stroke-width="2" stroke-dasharray="4 4"/><text x="40" y="20" font-size="10" fill="${O}">N ↑</text>`),
+  tomikuji: C(`
+    <rect x="30" y="20" width="140" height="110" rx="8" fill="#8c6a3a" stroke="${O}" stroke-width="2"/>
+    ${[0, 1, 2, 3, 4].map((i) => `<rect x="${44 + i * 24}" y="40" width="16" height="70" fill="#efe3c2" stroke="${O}"/><text x="${52 + i * 24}" y="80" font-size="10" text-anchor="middle" fill="${O}">${'一二三四五'[i]}</text>`).join('')}`),
+  sketchbook: C(`
+    <rect x="36" y="20" width="128" height="112" rx="4" fill="#fff" stroke="${O}" stroke-width="2"/>
+    <path d="M36 32h128" stroke="${O}" stroke-width="2"/>${Array.from({ length: 8 }, (_, i) => `<circle cx="${48 + i * 15}" cy="26" r="3" fill="none" stroke="${O}"/>`).join('')}
+    <path d="M70 110V64l30-20 30 20v46M62 64h76M78 78h44M84 92h32" stroke="${O}" stroke-width="2" fill="none"/>
+    <text x="150" y="126" font-size="9" text-anchor="end" fill="${O}" font-family="Manrope, sans-serif">Clara</text>`),
+  honganji: C(`
+    <rect width="200" height="150" fill="#cfd9c6"/>
+    <path d="M20 120c20-60 140-60 160 0z" fill="#b59a6a" stroke="${O}" stroke-width="2"/>
+    <path d="M30 118c18-48 122-48 140 0" fill="none" stroke="#5f97c9" stroke-width="6"/>
+    <path d="M76 80l24-14 24 14v20H76z" fill="#8c6a3a" stroke="${O}" stroke-width="2"/><path d="M70 82l30-20 30 20" fill="none" stroke="${O}" stroke-width="3"/>
+    <path d="M40 112v-16h8v16M152 112v-16h8v16" stroke="${O}" stroke-width="2" fill="#8c6a3a"/>`),
+  shogiboard: C(`
+    <rect x="30" y="16" width="140" height="118" fill="#e8c27a" stroke="#6b4a1f" stroke-width="4"/>
+    ${Array.from({ length: 8 }, (_, i) => `<path d="M${30 + (i + 1) * 15.5} 16v118M30 ${16 + (i + 1) * 13}h140" stroke="#8a6427"/>`).join('')}
+    <path d="M88 60l6-4 6 4 2 12H86z" fill="#f6e3b4" stroke="${O}"/><path d="M104 86l6-4 6 4 2 12h-16z" fill="#f6e3b4" stroke="${O}"/>`),
+  kombu: C(`
+    <path d="M30 40c40-20 100 20 140-6v76c-40 22-100-18-140 6z" fill="#2f3b2a" stroke="${O}" stroke-width="2"/>
+    <path d="M40 60c40-14 80 14 120-4M40 84c40-14 80 14 120-4" stroke="#56684a" stroke-width="3" fill="none"/>
+    <rect x="70" y="118" width="60" height="20" fill="#fff" stroke="${O}"/><text x="100" y="132" font-size="10" text-anchor="middle" fill="${O}">昆布</text>`),
+  festivalposter: C(`
+    <rect x="44" y="10" width="112" height="130" fill="#1f3b73" stroke="${O}" stroke-width="2"/>
+    <path d="M44 110c30-10 80-10 112 0v30H44z" fill="#2E5BA6"/>
+    <path d="M70 108h60l-6 10H76z" fill="${RED}" stroke="${O}"/><circle cx="80" cy="44" r="16" fill="none" stroke="${GOLD}" stroke-width="3"/><circle cx="124" cy="36" r="10" fill="none" stroke="#f4c7cf" stroke-width="3"/>
+    <text x="100" y="80" font-size="16" font-weight="700" text-anchor="middle" fill="#fff">天神祭</text><text x="100" y="96" font-size="9" text-anchor="middle" fill="#fff" font-family="Manrope, sans-serif">24.–25. Juli</text>`),
+  mural: C(`
+    <rect width="200" height="150" fill="#e7d7b8"/>
+    <circle cx="70" cy="70" r="36" fill="${GOLD}" stroke="${O}" stroke-width="3"/><circle cx="58" cy="62" r="5" fill="${O}"/><circle cx="82" cy="62" r="5" fill="${O}"/><path d="M52 82c10 12 26 12 36 0" stroke="${O}" stroke-width="3" fill="none"/>
+    <path d="M118 40h62v44h-40l-14 12v-12h-8z" fill="#fff" stroke="${O}" stroke-width="2"/><text x="149" y="67" font-size="13" font-weight="700" text-anchor="middle" fill="${RED}">なんでやねん</text>`),
+  omusign: C(`
+    <rect width="200" height="150" fill="#bfe0a8"/>
+    <text x="100" y="98" font-size="56" font-weight="800" text-anchor="middle" fill="#fff" stroke="${O}" stroke-width="3" font-family="Manrope, sans-serif">OMU</text>
+    <text x="100" y="126" font-size="11" text-anchor="middle" fill="${O}">大阪公立大学 · 2022</text>`),
+  harukas: C(`
+    <rect width="200" height="150" fill="#2a2f5a"/>
+    <path d="M78 140V40h18V20h14v20h12v30h8v70z" fill="#8fb4e0" stroke="${O}" stroke-width="2"/>
+    ${Array.from({ length: 9 }, (_, i) => `<path d="M82 ${50 + i * 10}h44" stroke="#f7e8a0" stroke-width="2" opacity=".8"/>`).join('')}
+    <circle cx="160" cy="30" r="10" fill="#f7e8a0"/>`),
+  scarf: C(`
+    <path d="M40 40c40 20 80 20 120 0l6 24c-40 22-92 22-132 0z" fill="#e7a0b3" stroke="${O}" stroke-width="2"/>
+    <path d="M120 58l20 70-20 6-12-66z" fill="#e7a0b3" stroke="${O}" stroke-width="2"/>
+    <path d="M60 52l4 10M80 56l4 10M100 58v10M120 56l-2 10" stroke="#fff" stroke-width="3"/>`),
+  ferrymap: C(`
+    <rect width="200" height="150" fill="#d9e4ea"/>
+    <path d="M0 50h200M0 104h200M66 0v150" stroke="#5f97c9" stroke-width="16"/>
+    ${[[66, 50], [66, 104], [150, 50], [30, 104]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="7" fill="#fff" stroke="${RED}" stroke-width="3"/>`).join('')}
+    <text x="140" y="140" font-size="10" text-anchor="middle" fill="${O}">渡船 · 無料</text>`),
+  todplan: C(`
+    <rect width="200" height="150" fill="#e8e2d0"/>
+    <rect x="20" y="96" width="160" height="22" fill="#9aa1a8" stroke="${O}" stroke-width="2"/><text x="100" y="111" font-size="9" text-anchor="middle" fill="${O}">Gleise · Bahnhof</text>
+    <rect x="26" y="30" width="40" height="66" fill="#c9ced6" stroke="${O}" stroke-width="2"/><rect x="134" y="20" width="40" height="76" fill="#c9ced6" stroke="${O}" stroke-width="2"/>
+    <path d="M66 50h68" stroke="${O}" stroke-width="6"/><text x="100" y="44" font-size="8" text-anchor="middle" fill="${O}">Dach · Brücke</text>
+    <rect x="20" y="120" width="160" height="16" fill="#7c6d5a"/><text x="100" y="132" font-size="8" text-anchor="middle" fill="#fff">U-Bahn · Ladenpassage</text>`),
+  roastchart: C(`
+    <rect x="22" y="12" width="156" height="126" fill="#24322c" stroke="#7a5230" stroke-width="6"/>
+    ${[['#c69a5e', '浅煎り'], ['#8a5a32', '中煎り'], ['#3e2617', '深煎り']].map(([c, l], i) => `<ellipse cx="${60 + i * 40}" cy="58" rx="12" ry="16" fill="${c}"/><text x="${60 + i * 40}" y="96" font-size="10" text-anchor="middle" fill="#fff">${l}</text>`).join('')}
+    <text x="100" y="124" font-size="9" text-anchor="middle" fill="#ddd" font-family="Manrope, sans-serif">hell · mittel · dunkel</text>`),
+  lens: C(`
+    <circle cx="100" cy="74" r="50" fill="#a9c7e8" stroke="${O}" stroke-width="4"/><circle cx="100" cy="74" r="40" fill="#cfe2f5" opacity=".8"/>
+    <path d="M80 54c10-8 24-8 32 0" stroke="#fff" stroke-width="5" fill="none"/>
+    <text x="100" y="140" font-size="9" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">ND-Filter 52 mm</text>`),
+  ivy: C(`
+    <rect width="200" height="150" fill="#c98b5a"/>
+    ${Array.from({ length: 7 }, (_, r) => `<path d="M0 ${r * 22 + 10}h200" stroke="#a86d42" stroke-width="2"/>`).join('')}
+    <path d="M20 150c20-50 40-80 80-100s60-40 80-50" stroke="#3d5a2a" stroke-width="3" fill="none"/>
+    ${[[40, 110], [60, 86], [86, 64], [112, 46], [140, 30], [164, 16]].map(([x, y]) => `<path d="M${x} ${y}l8-8 8 8-8 10z" fill="#5c8a3a" stroke="${O}"/>`).join('')}`),
+});
+
+export const mapBaseR5 = wrap('0 0 1000 820" preserveAspectRatio="none', `
+  <rect width="1000" height="820" fill="#12213F"/>
+  <path d="M0 0h90c-10 260 0 540 30 820H0z" fill="#1c3b5e"/>
+  <path d="M520 60C700 70 760 160 760 300" fill="none" stroke="#2a3d5c" stroke-width="120" opacity=".55"/>
+  <ellipse cx="500" cy="370" rx="150" ry="95" fill="#1f4a3a" opacity=".9"/>
+  <path d="M760 0V820" stroke="#5a6570" stroke-width="10" stroke-dasharray="26 10" opacity=".6"/>
+  <path d="M0 470H1000" stroke="#5a6570" stroke-width="9" stroke-dasharray="22 10" opacity=".5"/>
+  <path d="M400 0C410 200 430 330 470 470S520 700 540 820" stroke="#5a6570" stroke-width="8" stroke-dasharray="20 10" opacity=".55"/>
+  <path d="M300 340C300 480 340 640 380 820" stroke="#c9a15a" stroke-width="5" stroke-dasharray="6 8" fill="none" opacity=".7"/>
+  <text x="40" y="220" font-size="22" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif" transform="rotate(-86 40 220)">Richtung Bucht</text>
+  <text x="500" y="440" font-size="16" text-anchor="middle" fill="rgba(243,241,234,.4)" font-family="Fredoka, sans-serif">Tennōji-Park</text>
+  <text x="780" y="120" font-size="16" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Uemachi-Hochebene</text>
+  <text x="250" y="560" font-size="15" fill="rgba(201,161,90,.6)" font-family="Fredoka, sans-serif" transform="rotate(78 250 560)">Hankai-Tram</text>
+  <text x="985" y="460" font-size="16" text-anchor="end" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">JR-Ringlinie</text>
+  <text x="420" y="30" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">↑ Namba / Burg</text>
+  <text x="560" y="800" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Sumiyoshi ↓</text>`);
 
 export const pickupIcon = wrap('0 0 40 48', `
   <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>

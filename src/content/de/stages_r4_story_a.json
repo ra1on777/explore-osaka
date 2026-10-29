@@ -79,7 +79,7 @@
    ],
    "tasks": [
     {"type": "inspect", "q": "Finde den Konzert-Flyer oben links an der Wand.", "x": 6, "y": 10, "r": 7,
-     "closeup": {"art": "flyer", "title": "Indie-Nacht", "text": "Live-Musik an den Naniwa-Docks, Samstag 19 Uhr. Darunter klein: „1 Drink“ – das Pflichtgetränk zum Eintritt."}}
+     "closeup": {"art": "flyer", "title": "Indie-Nacht", "text": "Live-Musik an den Naniwa-Docks, Samstag 19 Uhr. Darunter klein: „1 Drink“ – das Pflichtgetränk zum Eintritt, meist 500 bis 600 Yen."}}
    ],
    "after": [
     {"s": "yuki", "p": "excited", "t": "Samstag! Bis dahin gehen wir erst mal essen. Kenji wartet schon in der Kuidaore-Gasse in einer Izakaya."}
@@ -96,7 +96,7 @@
     {"s": "kenji", "p": "relaxed", "t": "Und? Was machst du jetzt?"}
    ],
    "tasks": [
-    {"type": "choice", "q": "Dein Getränk ist da, die anderen haben noch keins. Was tust du?", "options": ["Sofort trinken, solange es kalt ist", "Warten, bis alle ein Glas haben, und dann zusammen „Kanpai!“ rufen", "Allein anstoßen", "Das Glas zurückgeben"], "answer": 1, "explain": "Man wartet, bis alle ein Getränk haben. Dann stößt man gemeinsam an: „Kanpai!“ – „trockenes Glas“."}
+    {"type": "choice", "q": "Dein Getränk ist da, die anderen haben noch keins. Was tust du?", "options": ["Sofort trinken, solange es kalt ist", "Warten, bis alle ein Glas haben, und dann zusammen „Kanpai!“ rufen", "Allein anstoßen", "Das Glas zurückgeben"], "answer": 1, "explain": "Man wartet, bis alle ein Getränk haben. Dann stößt man gemeinsam an: „Kanpai!“ – „trockenes Glas“. Höflich: das eigene Glas etwas tiefer halten als das des anderen."}
    ],
    "after": [
     {"s": "kenji", "p": "hyped", "jp": "かんぱい！", "ro": "Kanpai!", "t": "Prost!"},
@@ -161,7 +161,7 @@
    ],
    "tasks": [
     {"type": "inspect", "q": "Finde den Wächter aus Okinawa über dem Laden.", "x": 22, "y": 18, "r": 8,
-     "closeup": {"art": "shisa", "title": "Shīsā", "text": "Ein Shīsā – halb Löwe, halb Hund. Paarweise auf Dächern oder an Toren halten sie böse Geister fern. Einer hat das Maul offen, der andere geschlossen."}}
+     "closeup": {"art": "shisa", "title": "Shīsā", "text": "Ein Shīsā – halb Löwe, halb Hund. Paarweise auf Dächern oder an Toren halten sie böse Geister fern. Der rechte hat das Maul offen und hält das Glück fest, der linke hält es geschlossen und sperrt das Böse aus."}}
    ],
    "after": [
     {"s": "ren", "p": "relaxed", "t": "Gut gesehen. Zu Okinawa gehört auch das Gebäck da drüben: Sātā andagī, frittierte Zuckerbällchen."},
@@ -231,7 +231,7 @@
   },
   "4": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Willkommen im Concept-Café! Hier ist alles Theater: Die Bedienung spielt eine Rolle, und man spielt ein bisschen mit."},
+    {"s": "yuki", "p": "excited", "t": "Willkommen im Concept-Café! Hier ist alles Theater: Die Bedienung spielt eine Rolle, und man spielt ein bisschen mit. Fotos vom Personal gibt es nur als bezahltes Sofortbild, „Cheki“."},
     {"s": "yuki", "p": "phone", "t": "Aber es gibt Regeln. Viele Gäste kennen sie nicht."},
     {"s": "yuki", "p": "flustered", "t": "Zum Beispiel: Ein Foto mit der Bedienung kostet extra – heimlich fotografieren ist streng verboten."}
    ],
@@ -283,7 +283,7 @@
   "7": {
    "lines": [
     {"s": "yuki", "p": "excited", "t": "Der Kyocera Dome! Hier spielt eigentlich Baseball – aber manchmal kommen Fans in Massen zu Konzerten und Messen."},
-    {"s": "yuki", "p": "phone", "t": "Er wurde 1997 eröffnet. Das Dach sieht aus wie eine riesige silberne Welle."},
+    {"s": "yuki", "p": "phone", "t": "Er wurde im März 1997 als „Osaka Dome“ eröffnet. Das Dach sieht aus wie eine riesige silberne Welle."},
     {"s": "yuki", "p": "flustered", "t": "Rate mal, wie viele Leute bei einem Baseballspiel reinpassen!"}
    ],
    "tasks": [

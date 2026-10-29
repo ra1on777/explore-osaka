@@ -13,6 +13,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
   const page = await browser.newPage({ viewport: VP });
   const errors = [];
   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+  page.on('response', (r) => { if (r.status() >= 400) errors.push(`HTTP ${r.status()} ${r.url()}`); });
   page.on('console', (m) => { if (m.type() === 'error' && !m.text().includes('ERR_TUNNEL')) errors.push(m.text()); });
   await page.goto(url);
   await page.waitForTimeout(500);
@@ -37,6 +38,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
 
   const total = await page.evaluate(() => window.__eo.data.QUESTS.reduce((a, q) => a + q.stages.length, 0));
   let played = 0;
+  const listClicks = [];
   let shots = 0;
   let pickedMenus = 0;
   const introStages = [];
@@ -115,8 +117,13 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
       await page.waitForTimeout(300);
       continue;
     }
-    try { await page.click(`.npc[data-npc="${next.npc}"]`, { timeout: 4000 }); }
-    catch (e) { await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` }); console.log('FAIL', JSON.stringify(next), await page.evaluate(() => document.querySelector('.panel').innerText.slice(0, 400))); throw e; }
+    try { await page.click(`.npc[data-npc="${next.npc}"]`, { timeout: 1500 }); }
+    catch (e0) {
+      // Verdeckte Figur: über die Liste „Hier“ ansprechen (so wie Spieler es auch können)
+      const ok = await page.evaluate((id) => { const n = window.__eo.data.npcName(id); const b = [...document.querySelectorAll('.people .person')].find((x) => x.textContent.trim() === n); if (b) { b.click(); return true; } return false; }, next.npc);
+      if (ok) { listClicks.push(`${next.q}#${next.i}@${await page.evaluate(() => window.__eo.G.screen)}`); }
+      else try { throw e0; }
+    catch (e) { await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` }); console.log('FAIL', JSON.stringify(next), await page.evaluate(() => document.querySelector('.panel').innerText.slice(0, 400))); throw e; } }
     await page.waitForTimeout(100);
     if (await page.$('.offer-pick')) { pickedMenus++; await page.click(`.offer-pick [data-quest="${next.q}"]`); await page.waitForTimeout(80); }
     await runStage(next);
@@ -130,7 +137,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
   await page.click('[data-esc]');
   await page.click('[data-hotkey="v"]');
   await shot('vocab');
-  console.log(JSON.stringify({ played, total, pickedMenus, introStages, state, errors }, null, 1));
+  console.log(JSON.stringify({ played, total, pickedMenus, introStages, listClicks, state, errors }, null, 1));
   await browser.close();
 })();
 
@@ -250,6 +257,18 @@ async function solve(page, t) {
       await page.mouse.click(box.x + (box.width * t.target.x) / 100, box.y + (box.height * t.target.y) / 100);
       await page.waitForTimeout(200);
       await S('.task .row .btn.primary');
+      break;
+    }
+    case 'shogi': {
+      const a = t.answer[0];
+      const own = t.pieces.find((p) => !p.foe && `${p.x},${p.y}` !== a.from && `${p.x},${p.y}` !== a.to);
+      const free = [];
+      for (let y = 1; y <= t.rows; y++) for (let x = 1; x <= t.cols; x++) if (!t.pieces.some((p) => p.x === x && p.y === y) && !t.answer.some((q) => q.to === `${x},${y}`)) free.push(`${x},${y}`);
+      await page.click(`[data-sq="${a.from}"]`); // falscher Zug zuerst
+      await page.click(`[data-sq="${free[0]}"]`);
+      await page.waitForTimeout(80);
+      await page.click(`[data-sq="${a.from}"]`);
+      await page.click(`.shogi-board [data-sq="${a.to}"]`);
       break;
     }
     case 'kanjigrid':

@@ -13,7 +13,7 @@ import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4 } from './art';
+import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
@@ -266,7 +266,9 @@ async function playStage(questId: string, idx: number) {
     errors += await runTask(task);
   }
   // Nach der Routenwahl kann sich der Gesprächspartner ändern
-  const after = stageContent(questId, idx, G.flags.partner)?.after ?? c.after;
+  const sc = stageContent(questId, idx, G.flags.partner) ?? c;
+  const by = sc.afterBy;
+  const after = (by && by.lines[G.flags[by.flag]]) || sc.after || c.after;
   await runLines(after);
   const res = completeStage(questId, idx, errors);
   save();
@@ -306,7 +308,7 @@ function mapScreen(regionId?: string) {
       onclick: () => pick(c.id),
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
   });
-  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4 };
+  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4, R5: mapBaseR5 };
   showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();

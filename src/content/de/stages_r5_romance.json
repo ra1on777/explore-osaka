@@ -1,0 +1,249 @@
+{
+ "STRANG_ROMANCE_MEMORIES": {
+  "21": {
+   "mood": "golden",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "happy", "t": "Die Sonne geht unter. Und schau – gleich gehen die Lichter am Hochhaus an!"},
+      {"s": "partner", "p": "note", "t": "Ich wollte schon immer mal hier spazieren, wenn es dunkel wird. Mit jemandem, der nicht ständig auf sein Handy schaut."},
+      {"s": "partner", "p": "map", "t": "Zeig mal, wo du zuerst hinschaust."}
+     ],
+     "after": [
+      {"s": "partner", "p": "happy", "t": "Wie ein riesiger Leuchtturm. Ich mag es, wenn eine Stadt nachts noch atmet."},
+      {"s": "partner", "p": "worried", "t": "Komm morgen mit nach ganz oben. Ich … muss dir dort etwas sagen."}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "wave", "t": "Die Wiese ist abends viel ruhiger. Nur ein paar Jogger und Kinder mit Laternen."},
+      {"s": "partner", "p": "coffee", "t": "Ich hab uns zwei Kaffee aus dem Parkcafé geholt. Asairi, natürlich."},
+      {"s": "partner", "p": "shy", "t": "Schau mal nach oben. Was siehst du?"}
+     ],
+     "after": [
+      {"s": "partner", "p": "shy", "t": "Schön, oder? Ich werde das vermissen."},
+      {"s": "partner", "p": "coffee", "t": "Kommst du morgen mit nach ganz oben? Ich möchte dir dort etwas sagen."}
+     ]
+    }
+   },
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das leuchtende Hochhaus über den Bäumen.", "x": 60, "y": 20, "r": 12,
+     "closeup": {"art": "harukas", "title": "Abeno Harukas am Abend", "text": "Streifen aus Licht, Stockwerk für Stockwerk. 300 Meter über der Wiese."}}
+   ],
+   "hint": "Ganz oben im höchsten Hochhaus – auf dem Aussichtsdeck."
+  },
+  "22": {
+   "mood": "golden",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "worried", "t": "Ich hab eine Zusage bekommen. Ein Praktikum bei einer Bahnplanung in Yokohama. Ein ganzes Jahr."},
+      {"s": "partner", "p": "note", "t": "Das ist mein Traum, weißt du. Aber dein Austausch endet auch bald. Dann bist du in Deutschland und ich in Yokohama."},
+      {"s": "me", "t": "Das ist weit. Sehr weit."},
+      {"s": "partner", "p": "worried", "t": "Ich hab Angst, dass alles einfach … aufhört. Wie eine Linie, die stillgelegt wird."},
+      {"s": "partner", "p": "map", "t": "Sag jetzt nichts. Denk einfach darüber nach, ja?"}
+     ],
+     "after": [
+      {"s": "partner", "p": "worried", "t": "Ich fahre heute allein nach Hause. Bis bald, {{name}}."}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "shy", "t": "Mein Semester ist bald vorbei. In ein paar Wochen fliege ich zurück nach Hause."},
+      {"s": "partner", "p": "coffee", "t": "Und du gehst auch zurück nach Deutschland. Zwei Orte, ganz weit auseinander."},
+      {"s": "me", "t": "Daran hab ich gar nicht denken wollen."},
+      {"s": "partner", "p": "shy", "t": "Ich auch nicht. Von hier oben sieht alles so nah aus. Aber das ist es nicht."},
+      {"s": "partner", "p": "wave", "t": "Lass uns heute nicht mehr darüber reden. Ich brauche ein bisschen Zeit."}
+     ],
+     "after": [
+      {"s": "partner", "p": "shy", "t": "Ich gehe jetzt. Gute Nacht, {{name}}."}
+     ]
+    }
+   },
+   "hint": "Kenji in der Wohnheimküche – er ist noch wach."
+  },
+  "23": {
+   "mood": "night",
+   "lines": [
+    {"s": "kenji", "p": "relaxed", "t": "Du siehst aus, als hättest du einen Geist gesehen. Instant-Nudeln? Hilft immer."},
+    {"s": "me", "t": "{{partner}} hat Angst, dass alles aufhört, wenn wir weit weg sind."},
+    {"s": "kenji", "p": "talk", "t": "Und du? Hast du ihr gesagt, was du fühlst? So richtig?"},
+    {"s": "kenji", "p": "hyped", "t": "In Japan gibt es dafür ein Wort: Kokuhaku. Das Geständnis. Man sagt es einmal, klar und ehrlich."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was rät dir Kenji?", "options": ["Nichts sagen und abwarten", "Ehrlich sagen, was du fühlst", "Per Nachricht Schluss machen", "Das Thema wechseln"], "answer": 1},
+    {"type": "choice", "q": "Was bedeutet „Kokuhaku“?", "options": ["Ein Abschiedsessen", "Ein Liebesgeständnis", "Ein Streit", "Ein Geschenk"], "answer": 1}
+   ],
+   "after": [
+    {"s": "kenji", "p": "talk", "t": "Genau. Mut zum Risiko. Schlimmstenfalls bist du ehrlich gewesen."},
+    {"s": "kenji", "p": "relaxed", "t": "Lad {{partner}} zu einem Spaziergang an der Burg ein. Abends, wenn die Mauern beleuchtet sind."}
+   ],
+   "hint": "Der große Platz vor der Burg – am Abend."
+  },
+  "24": {
+   "mood": "night",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "note", "t": "Du hast geschrieben. Ich bin gekommen."},
+      {"s": "partner", "p": "map", "t": "Hier sind so viele Leute mit Kameras. Gibt es keinen ruhigen Platz?"},
+      {"s": "partner", "p": "worried", "t": "Such du einen aus. Ich folge dir."}
+     ],
+     "after": [
+      {"s": "partner", "p": "happy", "t": "Ja, bei den Laternen ist es ruhig. Gute Wahl."},
+      {"s": "partner", "p": "note", "t": "Ich hab vorhin oben am Hauptturm mein Halstuch vergessen … Gehen wir hoch?"}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "wave", "t": "Danke für die Nachricht. Ich wollte dich auch sehen."},
+      {"s": "partner", "p": "shy", "t": "Die Mauern leuchten so schön. Aber überall sind Leute."},
+      {"s": "partner", "p": "coffee", "t": "Weißt du eine stillere Ecke?"}
+     ],
+     "after": [
+      {"s": "partner", "p": "wave", "t": "Die Steinlaternen. Perfekt."},
+      {"s": "partner", "p": "shy", "t": "Oh nein – mein Halstuch! Ich glaube, ich hab es vorhin oben am Hauptturm abgelegt."}
+     ]
+    }
+   },
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die ruhigen Steinlaternen rechts am Platz.", "x": 91, "y": 68, "r": 9,
+     "closeup": {"art": "stone", "title": "Ein stiller Ort", "text": "Zwei alte Steinlaternen, ein wenig abseits. Hier hört man nur noch den Wind."}}
+   ],
+   "hint": "Oben auf dem Hauptturm der Burg."
+  },
+  "25": {
+   "mood": "night",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "worried", "t": "Hier oben ist es nicht. Dabei war es ein Geschenk von meiner Oma aus Wakayama."},
+      {"s": "partner", "p": "note", "t": "Vielleicht ist es mir unten am großen Tor aus der Tasche gefallen. Die Tore schließen gleich!"}
+     ],
+     "after": [
+      {"s": "partner", "p": "happy", "t": "Mein Halstuch! Du bist gerannt, oder? Du bist ganz außer Atem."},
+      {"s": "partner", "p": "note", "t": "Morgen fahre ich mit dir zum großen Bahnhof. Ich will dir am Uhrenplatz etwas zeigen."}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "shy", "t": "Es ist nicht hier. Es ist das Halstuch, das meine Oma gestrickt hat."},
+      {"s": "partner", "p": "coffee", "t": "Vielleicht beim großen Tor am Eingang. Die Wächter schließen bald ab!"}
+     ],
+     "after": [
+      {"s": "partner", "p": "wave", "t": "Du hast es gefunden! Danke. Das bedeutet mir viel."},
+      {"s": "partner", "p": "shy", "t": "Morgen treffen wir uns am Uhrenplatz im großen Bahnhof, ja? Ich hab dort nachgedacht."}
+     ]
+    }
+   },
+   "fetch": {"item": "Rosa Halstuch", "x": 50, "y": 86, "art": "scarf", "find": "Ein weiches rosa Halstuch, sorgfältig gefaltet auf einem Stein am Tor.", "hintOut": "Das Halstuch liegt am großen Ōte-mon-Tor der Burg.", "hintBack": "Bring das Halstuch zu {{partner}} oben auf den Hauptturm."},
+   "hint": "Der Uhrenplatz im Bahnhof Ōsaka."
+  },
+  "26": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "map", "t": "Toki no Hiroba – der Platz der Zeit. Hier fahren jeden Tag über tausend Züge ab."},
+      {"s": "partner", "p": "note", "t": "Weißt du, was mir aufgefallen ist? Jede Linie, die wegfährt, kommt auch wieder zurück. Das ist ein Fahrplan, kein Abschied."},
+      {"s": "partner", "p": "happy", "t": "Vielleicht ist das mit uns auch so. Wenn wir einen Fahrplan haben."}
+     ],
+     "after": [
+      {"s": "partner", "p": "happy", "t": "Mata aimashō. Ja. Das gefällt mir."},
+      {"s": "partner", "p": "cheer", "t": "Treffen wir uns morgen Abend auf dem Hügelpfad am Campus in Toyonaka? Dort, wo alles anfing."}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "coffee", "t": "Toki no Hiroba – der Platz der Zeit. Ich sitze oft hier und schaue den Zügen nach."},
+      {"s": "partner", "p": "shy", "t": "Jeder Zug fährt woanders hin. Aber die Gleise bleiben verbunden. Das tröstet mich."},
+      {"s": "partner", "p": "wave", "t": "Wie sagt man auf Japanisch, dass man sich wiedersieht?"}
+     ],
+     "after": [
+      {"s": "partner", "p": "wave", "t": "Mata aimashō. Ich schreibe es mir in mein Notizbuch."},
+      {"s": "partner", "p": "shy", "t": "Morgen Abend, auf dem Hügelpfad am Campus in Toyonaka. Da, wo wir uns kennengelernt haben."}
+     ]
+    }
+   },
+   "tasks": [
+    {"type": "choice", "q": "Wie sagt man „Lass uns uns wiedersehen“?", "options": [{"jp": "また あいましょう。", "ro": "Mata aimashō."}, {"jp": "さようなら。", "ro": "Sayōnara."}, {"jp": "いただきます。", "ro": "Itadakimasu."}, {"jp": "すみません。", "ro": "Sumimasen."}], "answer": 0},
+    {"type": "choice", "q": "Was bedeutet „Toki no Hiroba“?", "options": ["Platz der Zeit", "Bahnsteig 1", "Großer Markt", "Brücke der Liebe"], "answer": 0}
+   ],
+   "hint": "Der Hügelpfad am Campus in Toyonaka – am Abend."
+  },
+  "27": {
+   "mood": "night",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "note", "t": "Hier haben wir uns zum ersten Mal richtig unterhalten. Du hattest Angst vor der Monorail-Karte."},
+      {"s": "partner", "p": "happy", "t": "Morgen ist das Abschiedsfest des Semesters. Danach wird alles anders."},
+      {"s": "me", "t": "Ich weiß. Aber ich will vorher noch etwas sagen."},
+      {"s": "partner", "p": "worried", "t": "Dann sag es morgen. Hier, unter den Laternen am Aussichtspunkt. Ich komme bestimmt."}
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "wave", "t": "Weißt du noch? Hier hast du mich gefragt, ob ich mit zum Fest komme. Ich war so nervös."},
+      {"s": "partner", "p": "coffee", "t": "Morgen ist das Abschiedsfest. Und dann bin ich bald weg."},
+      {"s": "me", "t": "Bevor du gehst, möchte ich dir etwas sagen."},
+      {"s": "partner", "p": "shy", "t": "Morgen. Am Aussichtspunkt unter den Laternen. Ich warte dort auf dich."}
+     ]
+    }
+   },
+   "hint": "Der Aussichtspunkt auf dem Machikaneyama – morgen Abend."
+  },
+  "28": {
+   "mood": "night",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "note", "t": "Die Laternen, die Lichter von ganz Ōsaka da unten … und du."},
+      {"s": "partner", "p": "worried", "t": "Du wolltest mir etwas sagen. Ich höre zu."}
+     ],
+     "afterBy": {"flag": "ending", "lines": {
+      "kiss": [
+       {"s": "partner", "p": "happy", "t": "Watashi mo … suki desu. Ich auch. Schon lange."},
+       {"s": "nar", "t": "Unter den Laternen beugt ihr euch zueinander. Ein kurzer, warmer Kuss. Unten in der Stadt fährt ein Zug vorbei."},
+       {"s": "partner", "p": "cheer", "t": "Dann machen wir einen Fahrplan. Yokohama, Deutschland, Ōsaka – jede Linie kommt zurück!"}
+      ],
+      "friend": [
+       {"s": "partner", "p": "happy", "t": "Freunde für immer? … Ja. Das ist ehrlich, und das ist schön."},
+       {"s": "nar", "t": "Ihr haltet euch kurz an den Händen und schaut gemeinsam auf die Lichter der Stadt."},
+       {"s": "partner", "p": "cheer", "t": "Versprochen: Wenn du zurückkommst, zeige ich dir jede neue Bahnlinie zuerst!"}
+      ]
+     }}
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {"s": "partner", "p": "shy", "t": "Die Laternen sind an. Von hier sieht man die ganze Stadt."},
+      {"s": "partner", "p": "coffee", "t": "Du wolltest mir etwas sagen. Ich bin da."}
+     ],
+     "afterBy": {"flag": "ending", "lines": {
+      "kiss": [
+       {"s": "partner", "p": "shy", "t": "Watashi mo … suki desu. Ich hab mich nur nicht getraut."},
+       {"s": "nar", "t": "Unter den Laternen kommt ihr euch ganz nah. Ein leiser, kurzer Kuss. Irgendwo im Wald ruft eine Eule."},
+       {"s": "partner", "p": "wave", "t": "Dann schreiben wir uns jeden Tag. Und nächsten Frühling sitzen wir wieder hier."}
+      ],
+      "friend": [
+       {"s": "partner", "p": "wave", "t": "Freunde für immer. Ja. Das wünsche ich mir auch."},
+       {"s": "nar", "t": "Ihr sitzt nebeneinander unter den Laternen und schaut schweigend auf die Stadt. Es ist ein gutes Schweigen."},
+       {"s": "partner", "p": "shy", "t": "Versprochen: Jedes Buch, das ich übersetze, schicke ich dir zuerst."}
+      ]
+     }}
+    }
+   },
+   "tasks": [
+    {"type": "choice", "q": "Wie sagst du ehrlich, dass du jemanden magst?", "options": [{"jp": "すきです。", "ro": "Suki desu."}, {"jp": "おいしいです。", "ro": "Oishii desu."}, {"jp": "いそがしいです。", "ro": "Isogashii desu."}, {"jp": "さむいです。", "ro": "Samui desu."}], "answer": 0},
+    {"type": "route", "flag": "ending", "q": "Was sagst du {{partner}} unter den Laternen?", "options": [
+     {"label": "Ein Kuss unter den Laternen", "value": "kiss", "facts": ["„Suki desu – ich liebe dich.“", "Ihr bleibt zusammen, trotz Entfernung"]},
+     {"label": "Freundschaft fürs Leben", "value": "friend", "facts": ["„Du bist mir sehr wichtig.“", "Ein Versprechen, immer befreundet zu bleiben"]}
+    ]}
+   ],
+   "afterBy": {"flag": "ending", "lines": {
+    "kiss": [{"s": "partner", "t": "Watashi mo suki desu."}],
+    "friend": [{"s": "partner", "t": "Freunde für immer."}]
+   }},
+   "hint": "Strang abgeschlossen – eine Erinnerung, die bleibt."
+  }
+ }
+}

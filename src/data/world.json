@@ -18,7 +18,7 @@
   },
   {
    "id": "R5",
-   "playable": false
+   "playable": true
   },
   {
    "id": "R6",
@@ -405,6 +405,58 @@
    "screens": [
     "51",
     "52"
+   ],
+   "flip": true
+  },
+  {
+   "id": "shitennoji",
+   "region": "R5",
+   "x": 640,
+   "y": 170,
+   "screens": [
+    "58",
+    "59"
+   ]
+  },
+  {
+   "id": "shinsekai",
+   "region": "R5",
+   "x": 330,
+   "y": 330,
+   "screens": [
+    "53",
+    "54",
+    "55"
+   ],
+   "flip": true
+  },
+  {
+   "id": "tenshiba",
+   "region": "R5",
+   "x": 520,
+   "y": 380,
+   "screens": [
+    "57"
+   ]
+  },
+  {
+   "id": "harukas",
+   "region": "R5",
+   "x": 650,
+   "y": 480,
+   "screens": [
+    "56a",
+    "56b"
+   ]
+  },
+  {
+   "id": "omu",
+   "region": "R5",
+   "x": 520,
+   "y": 720,
+   "screens": [
+    "60",
+    "61"
    ],
    "flip": true
   }
@@ -1784,34 +1836,249 @@
    "variants": [
     "53-b",
     "53-a"
-   ]
+   ],
+   "jp": "ジャンジャン横丁",
+   "kana": "じゃんじゃんよこちょう",
+   "ro": "Janjan Yokochō",
+   "cluster": "shinsekai",
+   "slots": {
+    "A": {
+     "x": 44,
+     "bottom": 2,
+     "h": 50
+    },
+    "B": {
+     "x": 56,
+     "bottom": 12,
+     "h": 40
+    },
+    "C": {
+     "x": 33,
+     "bottom": 6,
+     "h": 46
+    }
+   }
   },
   "54": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "通天閣",
+   "kana": "つうてんかく",
+   "ro": "Tsūtenkaku",
+   "cluster": "shinsekai",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 50,
+     "bottom": 2,
+     "h": 48
+    },
+    "B": {
+     "x": 66,
+     "bottom": 10,
+     "h": 40
+    },
+    "C": {
+     "x": 32,
+     "bottom": 9,
+     "h": 40
+    }
+   }
   },
   "55": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "スパワールド",
+   "kana": "すぱわーるど",
+   "ro": "Supa Wārudo",
+   "cluster": "shinsekai",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 50,
+     "bottom": 3,
+     "h": 44
+    },
+    "B": {
+     "x": 30,
+     "bottom": 12,
+     "h": 34
+    },
+    "C": {
+     "x": 68,
+     "bottom": 12,
+     "h": 34
+    }
+   }
   },
   "56a": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "展望台",
+   "kana": "てんぼうだい",
+   "ro": "Tenbōdai",
+   "cluster": "harukas",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 70,
+     "bottom": 3,
+     "h": 52
+    },
+    "B": {
+     "x": 86,
+     "bottom": 12,
+     "h": 44
+    },
+    "C": {
+     "x": 52,
+     "bottom": 2,
+     "h": 50
+    }
+   }
   },
   "56b": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "デパ地下",
+   "kana": "でぱちか",
+   "ro": "Depachika",
+   "cluster": "harukas",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 60,
+     "bottom": 2,
+     "h": 52
+    },
+    "B": {
+     "x": 70,
+     "bottom": 12,
+     "h": 44
+    },
+    "C": {
+     "x": 46,
+     "bottom": 5,
+     "h": 48
+    }
+   }
   },
   "57": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "てんしば",
+   "kana": "てんしば",
+   "ro": "Tenshiba",
+   "cluster": "tenshiba",
+   "slots": {
+    "A": {
+     "x": 50,
+     "bottom": 4,
+     "h": 40
+    },
+    "B": {
+     "x": 80,
+     "bottom": 10,
+     "h": 36
+    },
+    "C": {
+     "x": 22,
+     "bottom": 3,
+     "h": 40
+    }
+   }
   },
   "58": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "四天王寺",
+   "kana": "してんのうじ",
+   "ro": "Shitennō-ji",
+   "cluster": "shitennoji",
+   "slots": {
+    "A": {
+     "x": 42,
+     "bottom": 4,
+     "h": 40
+    },
+    "B": {
+     "x": 60,
+     "bottom": 7,
+     "h": 36
+    },
+    "C": {
+     "x": 74,
+     "bottom": 9,
+     "h": 34
+    }
+   }
   },
   "59": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "庭園",
+   "kana": "ていえん",
+   "ro": "Teien",
+   "cluster": "shitennoji",
+   "slots": {
+    "A": {
+     "x": 27,
+     "bottom": 26,
+     "h": 38
+    },
+    "B": {
+     "x": 12,
+     "bottom": 13,
+     "h": 44
+    },
+    "C": {
+     "x": 41,
+     "bottom": 39,
+     "h": 30
+    }
+   }
   },
   "60": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "大阪公立大学",
+   "kana": "おおさかこうりつだいがく",
+   "ro": "Ōsaka Kōritsu Daigaku",
+   "cluster": "omu",
+   "slots": {
+    "A": {
+     "x": 62,
+     "bottom": 3,
+     "h": 46
+    },
+    "B": {
+     "x": 47,
+     "bottom": 13,
+     "h": 36
+    },
+    "C": {
+     "x": 80,
+     "bottom": 10,
+     "h": 38
+    }
+   }
   },
   "61": {
-   "region": "R5"
+   "region": "R5",
+   "jp": "図書館",
+   "kana": "としょかん",
+   "ro": "Toshokan",
+   "cluster": "omu",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 48,
+     "bottom": 1,
+     "h": 50
+    },
+    "B": {
+     "x": 80,
+     "bottom": 2,
+     "h": 44
+    },
+    "C": {
+     "x": 20,
+     "bottom": 1,
+     "h": 46
+    }
+   }
   },
   "62": {
    "region": "R6"
