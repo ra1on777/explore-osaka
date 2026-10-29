@@ -1,0 +1,10 @@
+{
+ "kenji": [
+  {"s": "kenji", "p": "hyped", "t": "Du bist also mein neuer Zimmernachbar! Ich bin Kenji. Willkommen in Ōsaka, {{name}}!"},
+  {"s": "me", "t": "Danke! Ehrlich gesagt weiß ich noch gar nicht, wo ich anfangen soll."},
+  {"s": "kenji", "p": "talk", "t": "Ganz einfach: rausgehen und Leute ansprechen. Wer gerade Zeit für dich hat, hat so ein „!“ über dem Kopf."},
+  {"s": "kenji", "p": "relaxed", "t": "Meistens schicken sie dich irgendwohin weiter. Den letzten Hinweis findest du im Quest-Log – den Weg dahin suchst du dir auf der Karte selbst."},
+  {"s": "kenji", "p": "talk", "t": "Viele stellen dir unterwegs eine kleine Aufgabe. Je weniger Fehler, desto mehr Sterne. Und wenn's nicht klappt, versuchst du's einfach nochmal."},
+  {"s": "kenji", "p": "hyped", "t": "Neue Wörter landen automatisch in deinem Vokabelheft. Mit den ersten fangen wir gleich hier an!"}
+ ]
+}

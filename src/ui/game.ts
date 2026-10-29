@@ -8,12 +8,12 @@ import {
   completeStage, discoveredStrands, isStrandComplete, isStrandDemoFinished, lastHint, peekProgress, pickUp, pickups,
   presence, resolveNpc, startFetch, strandStars, type Presence,
 } from '../engine';
-import { t } from '../i18n';
+import { pack, t } from '../i18n';
 import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { closeups, icons, mapBase, mapBaseR2, mapBaseR3 } from './art';
+import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
@@ -102,6 +102,15 @@ async function intro() {
     { s: 'nar', t: t('intro.3') },
   ]);
   setMood(null);
+  // Einzige Ausnahme von der Strang-Auswahl: Kenji erklärt das Spiel, dann folgen seine ersten
+  // beiden Etappen im Wohnheimzimmer direkt hintereinander (nicht überspringbar).
+  const kenji = 'KENJI_DORM_MATE';
+  renderScene(G.screen, [], () => undefined);
+  ensureNpc(G.screen, kenji);
+  await runLines(pack().intro.kenji);
+  for (const [q, i] of [['STRANG_LANG_VOCABULARY', 1], ['STRANG_NIGHTLIFE_ETIQUETTE', 1]] as const) {
+    if (peekProgress(q).done < i) await playStage(q, i);
+  }
   explore();
 }
 
@@ -297,7 +306,7 @@ function mapScreen(regionId?: string) {
       onclick: () => pick(c.id),
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
   });
-  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3 };
+  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4 };
   showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();

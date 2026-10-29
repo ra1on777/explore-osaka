@@ -1,0 +1,1805 @@
+{
+ "STRANG_GEOGRAPHY": {
+  "8": {
+   "lines": [
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Willkommen an der Bucht! Und willkommen auf einem Berg. Du stehst gerade auf dem Tempozan."
+    },
+    {
+     "s": "me",
+     "t": "Welcher Berg? Hier ist doch alles flach."
+    },
+    {
+     "s": "seto",
+     "p": "book",
+     "t": "Ha! 1831 hat man den Aji-gawa ausgebaggert, damit Schiffe besser einfahren konnten. Mit dem Sand schüttete man hier einen Hügel auf – nur 4,53 Meter hoch."
+    },
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Die Flüsse bringen ständig Sand und Schlamm mit. Darum wächst das Land ins Meer. Viele Inseln da draußen sind künstlich aufgeschüttet."
+    },
+    {
+     "s": "seto",
+     "p": "map",
+     "t": "Aber die Bucht ist auch gefährlich: Taifune drücken das Meer in die Flüsse. Nach schweren Sturmfluten baute man 1970 riesige Tore in die Flussmündungen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "bay",
+     "points": [
+      {
+       "id": "tempozan",
+       "x": 36,
+       "y": 50
+      },
+      {
+       "id": "yodo",
+       "x": 34,
+       "y": 22
+      },
+      {
+       "id": "gate",
+       "x": 56,
+       "y": 49
+      },
+      {
+       "id": "kizu",
+       "x": 38,
+       "y": 81
+      },
+      {
+       "id": "island",
+       "x": 19,
+       "y": 71
+      },
+      {
+       "id": "sakishima",
+       "x": 21,
+       "y": 46
+      }
+     ],
+     "rounds": [
+      {
+       "q": "Wo liegt der Tempozan – an der Mündung des mittleren Flusses?",
+       "answer": "tempozan",
+       "fb": "An der Mündung des Aji-gawa."
+      },
+      {
+       "q": "Wo mündet der große Yodo-gawa, der vom Biwa-See kommt?",
+       "answer": "yodo",
+       "fb": "Ganz im Norden – das neue, gerade Flussbett."
+      },
+      {
+       "q": "Wo würdest du ein Sturmflut-Tor bauen, um die Innenstadt am Aji-gawa zu schützen?",
+       "answer": "gate",
+       "fb": "Ein Stück flussaufwärts. Dort schließt ein riesiges Bogentor, wenn das Meer steigt."
+      },
+      {
+       "q": "Und welche Insel im Süden ist komplett künstlich?",
+       "answer": "island",
+       "fb": "Eine aufgeschüttete Insel aus Erde und Müll. Auf so einer Insel fand 2025 die Weltausstellung statt."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "seto",
+     "p": "book",
+     "t": "Ausgezeichnet. Ōsaka kämpft seit Jahrhunderten mit dem Wasser – und gewinnt Land dazu."
+    },
+    {
+     "s": "seto",
+     "p": "binoculars",
+     "t": "Früher lag die Küste viel weiter im Osten. Das sieht man noch an einem uralten Schrein im Süden, der einst direkt am Meer stand."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "うみ",
+     "ro": "umi",
+     "de": "Meer"
+    }
+   ],
+   "hint": "Ein uralter Schrein im Süden, der einst direkt am Meer stand."
+  }
+ },
+ "STRANG_TRANSIT_STATIONS": {
+  "8": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Tori hat mir erzählt, dass du jetzt Bahnhöfe sammelst. Weißt du, was hier früher war?"
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Ein Baseballstadion! Heute ist es dieser Dachgarten. Und direkt darunter liegt der Bahnhof Namba der Nankai-Bahn."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Von hier fährt man zum Flughafen Kansai, der auf einer künstlichen Insel im Meer liegt. Der schnellste Zug sieht aus wie ein blauer Roboter."
+    },
+    {
+     "s": "me",
+     "t": "Wie weit ist das?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie lang ist die Bahnstrecke von Namba bis zum Flughafen Kansai?",
+     "min": 5,
+     "max": 150,
+     "step": 1,
+     "answer": 43,
+     "unit": "km",
+     "tol": 0.1
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Gut 40 Kilometer! Der Express schafft das in etwas mehr als einer halben Stunde."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Tori sucht übrigens ein altes Fahrplanheft – irgendwo, wo noch eine Straßenbahn klingelt. Mehr hat er nicht verraten."
+    }
+   ],
+   "hint": "Irgendwo, wo noch eine alte Straßenbahn klingelt …"
+  }
+ },
+ "STRANG_NATURE_RETREAT": {
+  "6": {
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Du hast den Garten gefunden! Ist das nicht verrückt? Mitten über einem Einkaufszentrum."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Im Sommer ist Ōsaka eine Hitzeinsel. Beton und Asphalt speichern die Wärme, nachts kühlt es kaum ab."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Hier oben ist es spürbar kühler. Die Pflanzen verdunsten Wasser, und die Erde schützt das Dach vor der Sonne."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Warum helfen Dachgärten gegen die Hitze in der Stadt?",
+     "options": [
+      "Sie machen die Dächer dunkler",
+      "Pflanzen verdunsten Wasser und Erde schützt vor der Sonne",
+      "Sie halten den Wind ab",
+      "Sie locken Regenwolken an"
+     ],
+     "answer": 1,
+     "explain": "Verdunstung kühlt die Luft, und begrünte Dächer heizen sich viel weniger auf als nackter Beton."
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Genau. Ein kleiner Wald für die Stadt."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Weiter im Süden gibt es einen Park mit einer großen Wiese – Tenshiba. Dort treffe ich Goro wieder, glaube ich."
+    }
+   ],
+   "hint": "Der Park Tenshiba mit der großen Wiese."
+  }
+ },
+ "STRANG_CAFE_CULTURE": {
+  "5": {
+   "lines": [
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Kaffee-Tour? Hier in Amerikamura trinkt man Kaffee nicht, man trägt ihn – als Accessoire!"
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Cold Brew im Glasbecher, Latte mit Bildchen im Schaum … Hauptsache, es sieht gut auf Fotos aus."
+    },
+    {
+     "s": "me",
+     "t": "Und schmeckt es auch?"
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Manchmal! Aber dafür ist Shizuku zuständig. Sie prüft gerade die Maschine in einem Themencafé in Den Den Town – die Bedienung dort klagt über sauren Espresso."
+    }
+   ],
+   "hint": "Shizuku im Themencafé in Den Den Town."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Du. Gut. Hier ist ein Problem: Mahlgrad und Temperatur stimmen, aber der Kaffee läuft ungleichmäßig."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Wenn das Kaffeemehl zu locker gepresst ist, sucht sich das Wasser Kanäle. Man nennt das Channeling."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Dann schmeckt ein Teil wässrig, ein Teil bitter. Finde den Fehler."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "espresso",
+     "q": "Korrigiere die Einstellung, damit der Espresso gleichmäßig läuft.",
+     "start": {
+      "grind": 3,
+      "temp": 92,
+      "tamp": 6
+     },
+     "ok": {
+      "grind": [
+       2,
+       4
+      ],
+      "temp": [
+       90,
+       94
+      ],
+      "tamp": [
+       12,
+       20
+      ]
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Gleichmäßig. So soll es sein."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Ren hat einen Stand im Dachgarten über dem Bahnhof Namba. Er braucht Hilfe."
+    }
+   ],
+   "hint": "Ren im Dachgarten über dem Bahnhof Namba."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Endlich jemand Bekanntes! Ich habe hier heute einen Pop-up-Stand."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Problem: Mir gehen die Filter aus. Die kleinen, für ein bis zwei Tassen."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "In meiner Werkstatt unter den Bahnbögen in Nakatsu liegt noch ein Päckchen. Holst du es? Ich halte so lange die Schlange bei Laune."
+    }
+   ],
+   "fetch": {
+    "item": "Päckchen Kaffeefilter",
+    "x": 10,
+    "y": 74,
+    "art": "filterpaper",
+    "find": "Ein Päckchen Papierfilter, Größe 1–2 Tassen. Daneben ein Zettel: „Nicht für Tee benutzen! – Ren“.",
+    "hintOut": "Die Filter liegen in Rens Werkstatt unter den Bahnbögen in Nakatsu.",
+    "hintBack": "Bring die Filter zu Ren in den Dachgarten über dem Bahnhof Namba."
+   },
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Rettung in letzter Minute! Die Schlange war schon bis zur Rolltreppe."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Maya will dir ein Parkcafé zeigen – im großen Park Tenshiba, weiter im Süden."
+    }
+   ],
+   "hint": "Ein Café im Park Tenshiba im Süden."
+  }
+ },
+ "STRANG_LITERATURE": {
+  "7": {
+   "lines": [
+    {
+     "s": "ogata",
+     "p": "read",
+     "t": "Willkommen in der Academic Theater der Kindai. Bücher und Comics – unter einem Dach."
+    },
+    {
+     "s": "ogata",
+     "p": "explain",
+     "t": "Ōsaka hat einen Schriftsteller, der seine Stadt liebte wie kein anderer: Oda Sakunosuke."
+    },
+    {
+     "s": "ogata",
+     "p": "smile",
+     "t": "1940 schrieb er über ein Paar aus einfachen Verhältnissen, das sich durchs Leben kämpft. Der Titel ist der Name einer Süßspeise: zwei Schälchen roter Bohnensuppe."
+    },
+    {
+     "s": "ogata",
+     "p": "read",
+     "t": "Die kleine Gaststätte mit diesem Namen gibt es noch heute, in einer Gasse in Minami."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt Oda Sakunosukes berühmte Erzählung über ein Paar aus Ōsaka?",
+     "options": [
+      "Sonezaki Shinjū",
+      "Meoto Zenzai",
+      "Hōjōki",
+      "Oku no Hosomichi"
+     ],
+     "answer": 1,
+     "explain": "„Meoto Zenzai“ heißt etwa „Ehepaar-Zenzai“. Sonezaki Shinjū ist von Chikamatsu, Hōjōki von Kamo no Chōmei, Oku no Hosomichi von Bashō."
+    }
+   ],
+   "after": [
+    {
+     "s": "ogata",
+     "p": "smile",
+     "t": "Richtig. Odas Figuren sind keine Helden – sie essen, streiten und versöhnen sich. Wie echte Ōsaka-Leute."
+    },
+    {
+     "s": "ogata",
+     "p": "read",
+     "t": "Prof. Takada forscht im Süden über ganz alte Geschichten – im Archiv eines Tempels mit fünfstöckiger Pagode."
+    }
+   ],
+   "hint": "Das Archiv eines Tempels mit fünfstöckiger Pagode im Süden."
+  }
+ },
+ "STRANG_CULTURE_KANSAI": {
+  "8": {
+   "lines": [
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Hier im Museum gibt es eine Bunraku-Puppe. Siehst du, wie groß sie ist? Fast so groß wie ein Kind."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Bunraku ist Puppentheater aus Ōsaka. Eine Hauptpuppe führen drei Leute: einer den Kopf und die rechte Hand, einer die linke Hand, einer die Füße."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Für meine Notizen brauche ich das Programmheft vom Theater. Takeshi hat es in der Kuidaore-Gasse beim Essen liegen lassen – typisch! Holst du es?"
+    }
+   ],
+   "fetch": {
+    "item": "Bunraku-Programmheft",
+    "x": 88,
+    "y": 72,
+    "art": "program",
+    "find": "Ein Programmheft mit Fettfleck. Auf der ersten Seite: „Sonezaki Shinjū“ von Chikamatsu – und eine Skizze der drei Puppenspieler.",
+    "hintOut": "Das Programmheft liegt in der Kuidaore-Gasse.",
+    "hintBack": "Bring das Programmheft zu Emi ins Museum of History."
+   },
+   "after": [
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Danke! Bunraku gehört übrigens zum immateriellen Kulturerbe der UNESCO."
+    },
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Takeshi wartet vor der großen Konzerthalle am Fluss, nördlich der Burg. Er will dir zeigen, wie laut Kansai klatscht."
+    }
+   ],
+   "hint": "Die große Konzerthalle am Fluss nördlich der Burg."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Die Ōsaka-jō Hall! Hier spielen die größten Bands. Und das Publikum aus Kansai ist berühmt."
+    },
+    {
+     "s": "takeshi",
+     "p": "think",
+     "t": "In Tōkyō hört man höflich zu. Hier ruft man dazwischen, lacht, antwortet dem Sänger – wie bei einem Manzai-Duo."
+    },
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Und die Halle ist kein Zufall: Sie wurde zum 400. Geburtstag der Burg eröffnet."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Die Burg wurde ab 1583 gebaut. Wann wurde die Ōsaka-jō Hall eröffnet?",
+     "options": [
+      "1883",
+      "1945",
+      "1983",
+      "2003"
+     ],
+     "answer": 2,
+     "explain": "Genau 400 Jahre nach Baubeginn der Burg: 1983."
+    }
+   ],
+   "after": [
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Richtig gerechnet! 1583 plus 400."
+    },
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Daiki will dir als Nächstes ein Spiel zeigen, bei dem Kansai unschlagbar ist: Shōgi. Im Vergnügungsviertel unter dem eisernen Turm."
+    }
+   ],
+   "hint": "Das Vergnügungsviertel unter dem eisernen Turm im Süden."
+  }
+ },
+ "STRANG_FOOTBALL_DERBY": {
+  "9": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Unter dieser Kuppel spielt man Baseball. Aber nächste Woche trainieren wir hier auf Kunstrasen."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Dafür brauchst du andere Schuhe. Mit Stollen rutschst du auf Kunstrasen weg oder verletzt dich."
+    },
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Ich habe ein Paar im Sportladen im Dachgarten über dem Bahnhof Namba bestellt. Hol sie ab!"
+    }
+   ],
+   "fetch": {
+    "item": "Kunstrasenschuhe",
+    "x": 45,
+    "y": 86,
+    "art": "shoes",
+    "find": "Ein Paar blaue Schuhe mit vielen kleinen Noppen statt langer Stollen – gemacht für Kunstrasen.",
+    "hintOut": "Die Schuhe liegen beim Sportladen im Dachgarten über dem Bahnhof Namba.",
+    "hintBack": "Bring die Schuhe zu Coach Sakai an den Kyocera Dome."
+   },
+   "after": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Gut. Jetzt hast du keine Ausrede mehr."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Kenji spielt heute Straßenfußball im Viertel mit dem Dreieckspark. Zeig ihm, was du gelernt hast."
+    }
+   ],
+   "hint": "Kenji spielt Straßenfußball im Viertel mit dem Dreieckspark."
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Panna! Kennst du das? Eins gegen eins, kleiner Kreis. Wer den Ball dem anderen durch die Beine spielt, gewinnt sofort."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Das kommt aus den Niederlanden. Hier in Amerikamura spielen das jeden Abend ein paar Jungs."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Ich verteidige. Lies meine Beine!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Tunnel (Ball durch die Beine)",
+      "Übersteiger",
+      "Ball abschirmen",
+      "Rückzug und Tempo rausnehmen"
+     ],
+     "rounds": [
+      {
+       "q": "Kenji steht breitbeinig und schaut nur auf deinen Oberkörper.",
+       "answer": 0,
+       "fb": "Offene Beine – Tunnel! Panna!"
+      },
+      {
+       "q": "Kenji schließt die Beine und kommt schnell auf dich zu.",
+       "answer": 1,
+       "fb": "Eine Finte mit dem Übersteiger bringt ihn aus dem Gleichgewicht."
+      },
+      {
+       "q": "Kenji drückt mit der Schulter gegen dich und will den Ball.",
+       "answer": 2,
+       "fb": "Körper zwischen Gegner und Ball – abschirmen!"
+      },
+      {
+       "q": "Kenji wartet tief und lauert auf einen Fehler.",
+       "answer": 3,
+       "fb": "Keine Hektik: Tempo rausnehmen, auf die Lücke warten."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Autsch, mein Stolz! Okay, du bist bereit."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Coach Sakai baut Mini-Tore an der großen Konzerthalle am Fluss auf. Schusstraining!"
+    }
+   ],
+   "hint": "Coach Sakai an der großen Konzerthalle am Fluss."
+  },
+  "11": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Drei Mini-Tore, kein Torwart. Hier zählt nur Präzision."
+    },
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Ich sag dir, wo der Wind herkommt und wie der Boden ist. Du entscheidest, wie du schießt."
+    },
+    {
+     "s": "me",
+     "t": "Und wenn ich daneben schieße?"
+    },
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Dann holst du den Ball aus dem Fluss. Also triff!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "penalty",
+     "rounds": [
+      {
+       "q": "Starker Wind von links, das Tor steht weit rechts.",
+       "options": [
+        "Hoch und hart nach rechts",
+        "Flach und kontrolliert, etwas links anvisieren",
+        "Mit der Hacke",
+        "Gar nicht schießen"
+       ],
+       "answer": 1,
+       "fb": "Flach schießen – der Wind trägt den Ball von selbst nach rechts."
+      },
+      {
+       "q": "Der Boden ist nass und rutschig.",
+       "options": [
+        "Volle Kraft mit Anlauf",
+        "Kurzer Anlauf, sicherer Stand, Innenseite",
+        "Springen und mit dem Kopf",
+        "Mit links blind"
+       ],
+       "answer": 1,
+       "fb": "Auf nassem Boden zählt der sichere Stand."
+      },
+      {
+       "q": "Das letzte Tor ist sehr klein, aber nah.",
+       "options": [
+        "Spannstoß mit voller Kraft",
+        "Innenseite, ruhig platzieren",
+        "Über das Tor lupfen",
+        "Weit links vorbei"
+       ],
+       "answer": 1,
+       "fb": "Nah und klein: Genauigkeit vor Kraft."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Drei von drei! Der Fluss bleibt trocken."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Daiki wartet auf eine Revanche. Auf der großen Rasenfläche im Park Tenshiba im Süden."
+    }
+   ],
+   "hint": "Daiki auf der Rasenfläche im Park Tenshiba im Süden."
+  }
+ },
+ "STRANG_CAMPUS_EXPEDITION": {
+  "14": {
+   "lines": [
+    {
+     "s": "kindai",
+     "p": "laptop",
+     "t": "Hi! Ich bin Kōta, Informatik. Du sammelst Stempel? Den gibt's bei uns nur gegen eine kleine Gefälligkeit."
+    },
+    {
+     "s": "kindai",
+     "p": "thumbs",
+     "t": "Wir haben hier über 20.000 Comics. Mir fehlt ein Band für mein Referat: ein Comic über unseren berühmten Thunfisch."
+    },
+    {
+     "s": "kindai",
+     "p": "puzzled",
+     "t": "Er liegt bestimmt noch im Aqua-Labor nebenan. Holst du ihn?"
+    }
+   ],
+   "fetch": {
+    "item": "Comic „Kindai-Thunfisch“",
+    "x": 64,
+    "y": 62,
+    "art": "manga",
+    "find": "Ein Comic über Forscher, die jahrzehntelang versuchten, Thunfische vom Ei bis zum erwachsenen Fisch zu züchten.",
+    "hintOut": "Der Comic liegt im Aqua-Labor der Kindai.",
+    "hintBack": "Bring den Comic zu Kōta in die Academic Theater."
+   },
+   "after": [
+    {
+     "s": "kindai",
+     "p": "thumbs",
+     "t": "Danke! Hier ist dein Stempel – mit einem kleinen Fisch drauf."
+    },
+    {
+     "s": "kindai",
+     "p": "laptop",
+     "t": "Wenn du wissen willst, was in dem Comic steckt: Komm mit ins Labor. Ich hab eine Frage für dich."
+    }
+   ],
+   "hint": "Kōta im Aqua-Labor der Kindai."
+  },
+  "15": {
+   "lines": [
+    {
+     "s": "kindai",
+     "p": "laptop",
+     "t": "Das hier ist der Stolz der Kindai: der Pazifische Blauflossen-Thunfisch."
+    },
+    {
+     "s": "kindai",
+     "p": "thumbs",
+     "t": "Wilde Thunfische werden immer weniger. Unsere Forscher haben über dreißig Jahre gebraucht, bis sie ihn komplett züchten konnten – vom Ei bis zum Ei."
+    },
+    {
+     "s": "kindai",
+     "p": "puzzled",
+     "t": "Man nennt ihn „Kindai-Maguro“. Es gibt sogar Restaurants, die nur ihn servieren."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "In welchem Jahr gelang der Kindai die vollständige Zucht des Pazifischen Blauflossen-Thunfischs?",
+     "options": [
+      "1970",
+      "1985",
+      "2002",
+      "2020"
+     ],
+     "answer": 2
+    }
+   ],
+   "after": [
+    {
+     "s": "kindai",
+     "p": "thumbs",
+     "t": "2002 – eine Weltpremiere."
+    },
+    {
+     "s": "kindai",
+     "p": "laptop",
+     "t": "Den nächsten Stempel bekommst du an der größten städtischen Uni Japans. Im Süden, mit einer langen Ginkgo-Allee."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "さかな",
+     "ro": "sakana",
+     "de": "Fisch"
+    }
+   ],
+   "hint": "Eine große Uni im Süden mit einer langen Ginkgo-Allee."
+  }
+ },
+ "STRANG_ROMANCE_MEMORIES": {
+  "8": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Amerikamura! Hier war ich das letzte Mal mit der Mittelstufe. Damals fand ich alles hier so erwachsen."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Ich hab eine Idee: Jeder sucht für den anderen einen kleinen Glücksbringer. Höchstens 500 Yen!"
+      },
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Du fängst an. Schau mal in das Schaufenster vom Vintage-Laden da drüben."
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Hier ist es so bunt! Ein bisschen zu laut für mich – aber mit dir geht's."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Lass uns etwas Kleines füreinander aussuchen. Einen Glücksbringer. Nicht teuer – es geht um die Idee."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Im Schaufenster vom Vintage-Laden hab ich vorhin etwas gesehen …"
+      }
+     ]
+    }
+   },
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Schau ins Schaufenster des Vintage-Ladens.",
+     "x": 78,
+     "y": 48,
+     "r": 7,
+     "closeup": {
+      "art": "charm",
+      "title": "Ein kleiner Glücksbringer",
+      "text": "Zwischen alten Jeans hängt ein rotes Stoffamulett: ein Omamori. Auf dem Zettel steht 300円."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "partner",
+     "t": "Ein Omamori? Das ist süß. Ich häng es an meine Tasche."
+    },
+    {
+     "s": "partner",
+     "t": "Komm, im Plattenladen nebenan will ich wissen, welche Musik du hörst."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おまもり",
+     "ro": "omamori",
+     "de": "Glücksbringer, Amulett"
+    }
+   ],
+   "hint": "{{partner}} im Vintage- und Plattenladen nebenan."
+  },
+  "9": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Ich hör am liebsten City Pop aus den 80ern. Das klingt wie eine Nachtfahrt mit dem Zug durch eine leuchtende Stadt."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Mein Papa hat die Platten früher immer im Auto laufen lassen, wenn wir zu Oma nach Wakayama gefahren sind."
+      },
+      {
+       "s": "partner",
+       "p": "map",
+       "t": "Und du? Woran denkst du, wenn du an zu Hause denkst?"
+      },
+      {
+       "s": "me",
+       "t": "An den Bäcker an der Ecke. Und an Sonntage, an denen alles geschlossen hat."
+      }
+     ],
+     "tasks": [
+      {
+       "type": "choice",
+       "q": "Welche Musik hört Aoi am liebsten?",
+       "options": [
+        "Jazz",
+        "City Pop aus den 80ern",
+        "Rock",
+        "Klassik"
+       ],
+       "answer": 1
+      },
+      {
+       "type": "choice",
+       "q": "Wohin ist Aoi als Kind mit ihrer Familie gefahren?",
+       "options": [
+        "Nach Kyōto",
+        "Nach Kōbe",
+        "Nach Wakayama zur Oma",
+        "Nach Tōkyō"
+       ],
+       "answer": 2
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Ich liebe alten Jazz mit Klavier. Ruhig, ein bisschen traurig. So wie ein Regentag mit einem guten Buch."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Meine Oma hat jeden Abend Klavier gespielt. Wenn ich Jazz höre, bin ich wieder in ihrer Küche."
+      },
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Und du? Was vermisst du von zu Hause?"
+      },
+      {
+       "s": "me",
+       "t": "Den Bäcker an der Ecke. Und Sonntage, an denen alles geschlossen hat."
+      }
+     ],
+     "tasks": [
+      {
+       "type": "choice",
+       "q": "Welche Musik hört Maya am liebsten?",
+       "options": [
+        "City Pop",
+        "Alten Jazz mit Klavier",
+        "Hip-Hop",
+        "Volksmusik"
+       ],
+       "answer": 1
+      },
+      {
+       "type": "choice",
+       "q": "An wen erinnert sie die Musik?",
+       "options": [
+        "An ihren Bruder",
+        "An ihre Oma",
+        "An ihre Lehrerin",
+        "An Kenji"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   },
+   "after": [
+    {
+     "s": "partner",
+     "t": "Sonntage, an denen alles zu hat? In Japan unvorstellbar!"
+    },
+    {
+     "s": "partner",
+     "t": "Komm, wir laufen zum Kanal mit den Leuchtreklamen. Ich hab Hunger auf Takoyaki."
+    }
+   ],
+   "hint": "Die Brücke über den Kanal mit den Leuchtreklamen.",
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welche Musik hört Aoi am liebsten?",
+     "options": [
+      "Jazz",
+      "City Pop aus den 80ern",
+      "Rock",
+      "Klassik"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wohin ist Aoi als Kind mit ihrer Familie gefahren?",
+     "options": [
+      "Nach Kyōto",
+      "Nach Kōbe",
+      "Nach Wakayama zur Oma",
+      "Nach Tōkyō"
+     ],
+     "answer": 2
+    }
+   ]
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Na, wen haben wir denn da? Zu zweit unterwegs, hm?"
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Hier, eine Portion für euch. Geht aufs Haus. Acht Stück – vier für jeden. Gerecht ist gerecht!"
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Ein Tipp vom alten Gen: Pusten, bevor du reinbeißt. Innen sind sie heiß wie Lava. Wer zu schnell ist, weint."
+    },
+    {
+     "s": "nar",
+     "t": "{{partner}} lacht, als du trotzdem zu schnell reinbeißt."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Wie viele Takoyaki schenkt Gen euch?",
+       "options": [
+        "Sechs",
+        "Acht",
+        "Zehn",
+        "Zwölf"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was soll man laut Gen vor dem Reinbeißen tun?",
+       "options": [
+        "Soße nachgießen",
+        "Pusten",
+        "Schütteln",
+        "Ein Foto machen"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Ha! Jetzt weinst du. Ich hab's ja gesagt."
+    },
+    {
+     "s": "partner",
+     "t": "Lass uns zum Dachgarten über dem Bahnhof Namba. Da ist es abends ruhiger."
+    }
+   ],
+   "hint": "Der Dachgarten über dem Bahnhof Namba."
+  },
+  "11": {
+   "mood": "golden",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "worried",
+       "t": "Du, {{name}} … darf ich was sagen? Vorhin bei Gen, als er gewitzelt hat, ich würde nur über Züge reden – da hast du laut zugestimmt. Vor allen."
+      },
+      {
+       "s": "me",
+       "t": "Das war doch ein Witz! Ich finde das eigentlich toll."
+      },
+      {
+       "s": "partner",
+       "p": "worried",
+       "t": "Ich weiß. Aber hier sagt man so etwas nicht vor anderen. Man liest die Stimmung – kūki o yomu. Das war mir peinlich."
+      },
+      {
+       "s": "me",
+       "t": "Das wollte ich nicht. Es tut mir leid."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Schon gut … ich brauche nur ein bisschen Zeit. Lass uns ein paar Tage Pause machen, okay?"
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "{{name}} … vorhin hab ich gesagt, dass ich müde bin. Mehrmals."
+      },
+      {
+       "s": "me",
+       "t": "Ja, aber du hast nicht gesagt, dass du nach Hause willst."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Ich hab's versucht. Hier sagt man selten direkt Nein. Man sagt „chotto …“ und hofft, dass der andere versteht. Kūki o yomu – die Luft lesen."
+      },
+      {
+       "s": "me",
+       "t": "Oh. Das habe ich nicht gemerkt. Es tut mir leid."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Ich weiß, du hast es nicht böse gemeint. Ich brauche nur ein paar Tage für mich, ja?"
+      }
+     ]
+    }
+   },
+   "after": [
+    {
+     "s": "nar",
+     "t": "{{partner}} geht allein zum Bahnhof. Du bleibst noch eine Weile zwischen den Pflanzen sitzen."
+    },
+    {
+     "s": "nar",
+     "t": "Vielleicht weiß jemand im Wohnheim Rat."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "くうきをよむ",
+     "ro": "kūki o yomu",
+     "de": "die Stimmung lesen (wörtl. „die Luft lesen“)"
+    }
+   ],
+   "hint": "Zu Hause im Wohnheim-Flur."
+  },
+  "12": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Na, du siehst aus wie ein Regentag. Ärger mit {{partner}}?"
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Hör zu. In Japan macht man es nicht mit großen Worten wieder gut. Man zeigt es mit einer kleinen Geste."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Bring ihr etwas Süßes mit, schön verpackt. Und sag einfach: „Gomen ne.“ Dann warte. Geduld ist auch eine Entschuldigung."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Madoka kennt den besten Süßwarenladen der Stadt. Sie ist oft in der langen Einkaufsstraße in Kita."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Was rät Frau Morimoto statt großer Worte?",
+       "options": [
+        "Eine lange Rede",
+        "Eine kleine Geste",
+        "Gar nichts",
+        "Einen Brief an Kenji"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was soll man mitbringen?",
+       "options": [
+        "Blumen",
+        "Etwas Süßes, schön verpackt",
+        "Ein Buch",
+        "Bier"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Und was ist laut ihr „auch eine Entschuldigung“?",
+       "options": [
+        "Geduld",
+        "Geld",
+        "Ein Foto",
+        "Ein Lied"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Na also. Jetzt geh."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ごめんね",
+     "ro": "gomen ne",
+     "de": "Entschuldige (vertraut)"
+    }
+   ],
+   "hint": "Madoka in der langen Einkaufsstraße in Kita."
+  },
+  "13": {
+   "lines": [
+    {
+     "s": "madoka",
+     "p": "search",
+     "t": "Etwas Süßes zur Versöhnung? Das ist Chefsache."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Du brauchst Wagashi – japanische Süßigkeiten. Auf dem Kuromon-Markt macht ein alter Mann sie jeden Morgen von Hand."
+    },
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Ich hab für dich eins reservieren lassen. Hol es ab, ich pack es dir dann hübsch ein!"
+    }
+   ],
+   "fetch": {
+    "item": "Wagashi in Kirschblütenform",
+    "x": 12,
+    "y": 66,
+    "art": "wagashi",
+    "find": "Ein kleines, rosa Wagashi in Form einer Kirschblüte, gefüllt mit süßer Bohnenpaste. Fast zu schön zum Essen.",
+    "hintOut": "Das Wagashi liegt auf dem Kuromon-Markt bereit.",
+    "hintBack": "Bring das Wagashi zu Madoka nach Tenjinbashisuji."
+   },
+   "after": [
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "Perfekt! Ein bisschen Papier, eine Schleife … fertig."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "{{partner}} sitzt übrigens oft in den kleinen Cafés unter den Bahnbögen von Nakatsu. Viel Glück!"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "わがし",
+     "ro": "wagashi",
+     "de": "japanische Süßigkeit"
+    }
+   ],
+   "hint": "Die kleinen Cafés unter den Bahnbögen von Nakatsu."
+  },
+  "14": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "worried",
+       "t": "Oh … {{name}}. Hallo."
+      },
+      {
+       "s": "me",
+       "t": "Gomen ne. Für das, was ich bei Gen gesagt habe. Das hier ist für dich."
+      },
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Ein Wagashi … in Kirschblütenform. Du hast dir Mühe gegeben."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Weißt du, ich mag es eigentlich, wie direkt du bist. Ich muss mich nur daran gewöhnen. Und du dich an mich."
+      },
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Lass uns am Wochenende rausfahren. Zum Wasserfall in Minō – da ist es jetzt wunderschön."
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Hey … du hast mich gefunden."
+      },
+      {
+       "s": "me",
+       "t": "Gomen ne. Ich hätte besser zuhören sollen. Das hier ist für dich."
+      },
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Ein Wagashi! Wie eine kleine Kirschblüte. Danke."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Ich muss auch lernen, deutlicher zu sagen, was ich brauche. Wir lernen beide noch."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Fahren wir am Wochenende zum Wasserfall in Minō? Da ist es ruhig. Nur wir zwei."
+      }
+     ]
+    }
+   },
+   "after": [
+    {
+     "s": "nar",
+     "t": "Ihr teilt das Wagashi in zwei Hälften. Draußen rattert ein Zug über die Bögen."
+    }
+   ],
+   "hint": "Der Wasserfall in Minō."
+  },
+  "15": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Hör mal, wie laut der Wasserfall ist! Dr. Seto hat mir erklärt, dass er sich jedes Jahr ein kleines Stück zurückfrisst."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Im Herbst werden die Blätter hier knallrot. Dann kommen Tausende Leute."
+      },
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Siehst du den Ast da oben rechts? Die ersten Blätter färben sich schon!"
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Hier hat alles angefangen – hier hab ich Goro zum ersten Mal gesehen."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Im Herbst werden die Ahornblätter rot. Momiji nennt man sie. Man geht extra raus, um sie anzuschauen."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Schau mal, oben rechts am Ast. Da färben sich die ersten schon."
+      }
+     ]
+    }
+   },
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde die ersten roten Blätter oben rechts.",
+     "x": 85,
+     "y": 15,
+     "r": 10,
+     "closeup": {
+      "art": "momiji",
+      "title": "Momiji",
+      "text": "Ahornblätter mit fünf bis sieben Spitzen. Im Herbst werden sie leuchtend rot. Das Anschauen nennt man momijigari – „Ahornjagd“."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "partner",
+     "t": "Momijigari – Ahornjagd. Mit dir ist das schöner."
+    },
+    {
+     "s": "partner",
+     "t": "Morgen machen wir ein Picknick. Auf der großen Wiese, wo der Turm mit dem goldenen Gesicht steht."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "もみじ",
+     "ro": "momiji",
+     "de": "(roter) Ahorn"
+    }
+   ],
+   "hint": "Die große Wiese am Turm mit dem goldenen Gesicht."
+  },
+  "16": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Picknick! Ich hab Onigiri gemacht. Die schiefen sind von mir, die runden aus dem Konbini."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Weißt du, was ich als Kind werden wollte? Lokführerin bei der Monorail! Ich hab jeden Tag am Fenster gewartet."
+      },
+      {
+       "s": "partner",
+       "p": "map",
+       "t": "Heute will ich Bahnhöfe planen, in denen sich niemand verläuft. Nicht so wie in Umeda!"
+      },
+      {
+       "s": "me",
+       "t": "Und ich wollte Astronaut werden. Jetzt bin ich wenigstens weit weg von zu Hause."
+      }
+     ],
+     "tasks": [
+      {
+       "type": "choice",
+       "q": "Was wollte Aoi als Kind werden?",
+       "options": [
+        "Ärztin",
+        "Lokführerin bei der Monorail",
+        "Sängerin",
+        "Köchin"
+       ],
+       "answer": 1
+      },
+      {
+       "type": "choice",
+       "q": "Welche Onigiri hat Aoi selbst gemacht?",
+       "options": [
+        "Die runden",
+        "Die schiefen",
+        "Keine",
+        "Alle"
+       ],
+       "answer": 1
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Ich hab Tee und Sandwiches mitgebracht. Und für Goro ein bisschen Fisch, falls er auftaucht."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Als Kind wollte ich Tierärztin werden. Ich hab alle Katzen in unserer Straße gefüttert."
+      },
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Heute will ich Bücher übersetzen. Das ist auch ein bisschen wie Tiere verstehen – man muss genau hinhören."
+      },
+      {
+       "s": "me",
+       "t": "Und ich wollte Astronaut werden. Jetzt bin ich wenigstens weit weg von zu Hause."
+      }
+     ],
+     "tasks": [
+      {
+       "type": "choice",
+       "q": "Was wollte Maya als Kind werden?",
+       "options": [
+        "Tierärztin",
+        "Pilotin",
+        "Lehrerin",
+        "Fußballerin"
+       ],
+       "answer": 0
+      },
+      {
+       "type": "choice",
+       "q": "Was will sie heute machen?",
+       "options": [
+        "Cafés eröffnen",
+        "Bücher übersetzen",
+        "Bahnhöfe planen",
+        "Filme drehen"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   },
+   "after": [
+    {
+     "s": "partner",
+     "t": "Astronaut! Dann ist Ōsaka dein erster fremder Planet."
+    },
+    {
+     "s": "partner",
+     "t": "Nächstes Wochenende zeig ich dir einen Campus, der aussieht wie in Spanien – in Nishinomiya, mit dem weißen Uhrturm."
+    }
+   ],
+   "hint": "Ein Campus in Nishinomiya mit weißem Uhrturm.",
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was wollte Aoi als Kind werden?",
+     "options": [
+      "Ärztin",
+      "Lokführerin bei der Monorail",
+      "Sängerin",
+      "Köchin"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welche Onigiri hat Aoi selbst gemacht?",
+     "options": [
+      "Die runden",
+      "Die schiefen",
+      "Keine",
+      "Alle"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  "17": {
+   "mood": "golden",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Schau, wie das Licht auf die weißen Wände fällt. Hier haben schon viele Paare Fotos gemacht."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Die Uhr am Turm geht übrigens genau. Ich hab's mit meiner Bahn-App geprüft."
+      },
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Wie spät ist es eigentlich? Lies mal die Uhr oben am Turm."
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Wie still es hier ist. Nur die Uhr und die Vögel."
+      },
+      {
+       "s": "partner",
+       "p": "coffee",
+       "t": "Ich mag Orte, an denen die Zeit langsamer läuft."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Wie spät ist es? Schau mal zur Uhr am Turm."
+      }
+     ]
+    }
+   },
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Uhr am Turm.",
+     "x": 50,
+     "y": 38,
+     "r": 7,
+     "closeup": {
+      "art": "clocktower",
+      "title": "Der Uhrturm am Nachmittag",
+      "text": "Kurz nach vier. Die Sonne steht schon tief über dem Kabutoyama."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "nar",
+     "t": "Auf dem Rückweg über den Rasen nimmt {{partner}} vorsichtig deine Hand. Keiner von euch sagt etwas."
+    },
+    {
+     "s": "partner",
+     "t": "Unten in Nishinomiya ist der große Schrein. Herr Yamada ist heute dort, glaube ich."
+    }
+   ],
+   "hint": "Herr Yamada am roten Haupttor in Nishinomiya."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Ihr zwei? Wie schön. Ich sehe schon, worum es geht."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "In Japan sagt man, dass Menschen, die füreinander bestimmt sind, durch einen unsichtbaren roten Faden verbunden sind. Am kleinen Finger."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Viele Schreine helfen dabei, solche Bande zu knüpfen. Man nennt das en-musubi – „das Knüpfen von Verbindungen“."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Und auf den Glückslosen gibt es eine eigene Zeile für die Liebe. Lest sie, aber glaubt eurem Herzen mehr als dem Papier."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Womit sind laut Yamada füreinander bestimmte Menschen verbunden?",
+       "options": [
+        "Mit einer goldenen Kette",
+        "Mit einem roten Faden",
+        "Mit einem Seil",
+        "Mit einem Band aus Papier"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "An welchem Finger?",
+       "options": [
+        "Am Daumen",
+        "Am Zeigefinger",
+        "Am kleinen Finger",
+        "Am Ringfinger"
+       ],
+       "answer": 2
+      },
+      {
+       "q": "Wie nennt man das Knüpfen solcher Verbindungen?",
+       "options": [
+        "En-musubi",
+        "Omamori",
+        "Momijigari",
+        "Kanpai"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Mögen eure Fäden fest bleiben."
+    },
+    {
+     "s": "partner",
+     "t": "Fahren wir nächstes Mal ans Meer? Am Hafen von Tempozan gibt es ein riesiges Riesenrad."
+    }
+   ],
+   "hint": "Das Riesenrad am Hafen von Tempozan."
+  },
+  "19": {
+   "mood": "golden",
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "cheer",
+       "t": "Da oben sieht man die ganze Bucht! Und die Brücken, die Inseln, die Containerschiffe!"
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Ich wette, du weißt nicht, wie lange eine Runde dauert."
+      },
+      {
+       "s": "me",
+       "t": "Wetten wir?"
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Es ist so hoch … aber die Gondel ist gemütlich. Und du bist ja da."
+      },
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Wie lange sind wir hier oben eigentlich unterwegs, was meinst du?"
+      },
+      {
+       "s": "me",
+       "t": "Lass mich schätzen."
+      }
+     ]
+    }
+   },
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie lange dauert eine Runde im Riesenrad von Tempozan?",
+     "min": 2,
+     "max": 60,
+     "step": 1,
+     "answer": 15,
+     "unit": "min",
+     "tol": 0.2
+    }
+   ],
+   "after": [
+    {
+     "s": "partner",
+     "t": "Rund eine Viertelstunde – und über 100 Meter hoch."
+    },
+    {
+     "s": "partner",
+     "t": "Ich will ein Foto von uns beiden. Vor dem Schrein mit dem riesigen Löwenkopf!"
+    }
+   ],
+   "hint": "Der Schrein mit dem riesigen Löwenkopf."
+  },
+  "20": {
+   "variants": {
+    "AOI_TRANSIT_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "happy",
+       "t": "Hier! Vor dem Löwen. Aber Selfies kann ich nicht, mein Arm ist zu kurz."
+      },
+      {
+       "s": "partner",
+       "p": "note",
+       "t": "Frag doch jemanden, ob er uns fotografiert. Auf Japanisch!"
+      }
+     ]
+    },
+    "MAYA_EXCHANGE_STUDENT": {
+     "lines": [
+      {
+       "s": "partner",
+       "p": "wave",
+       "t": "Ein Foto vor dem Löwen, das will ich schon lange."
+      },
+      {
+       "s": "partner",
+       "p": "shy",
+       "t": "Fragst du jemanden? Ich trau mich nicht."
+      }
+     ]
+    }
+   },
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Ein älterer Herr steht in der Nähe. Wie sprichst du ihn an?",
+     "options": [
+      "„Hey, du! Foto!“",
+      "„Sumimasen …“ und dann freundlich fragen",
+      "Ihm einfach das Handy hinhalten",
+      "Laut winken"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welcher Satz passt?",
+     "options": [
+      {
+       "jp": "しゃしんを とって ください。",
+       "ro": "Shashin o totte kudasai."
+      },
+      {
+       "jp": "しゃしんを たべて ください。",
+       "ro": "Shashin o tabete kudasai."
+      },
+      {
+       "jp": "しゃしんは いくらですか。",
+       "ro": "Shashin wa ikura desu ka."
+      },
+      {
+       "jp": "しゃしんが すきです。",
+       "ro": "Shashin ga suki desu."
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Er gibt dir das Handy zurück. Was sagst du?",
+     "options": [
+      "Nichts",
+      "„Arigatō gozaimasu!“ mit einer kleinen Verbeugung",
+      "„Kanpai!“",
+      "„Itadakimasu!“"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "partner",
+     "t": "Das Foto ist perfekt. Der Löwe sieht aus, als würde er uns gleich verschlucken."
+    },
+    {
+     "s": "partner",
+     "t": "Lass uns bald im Park Tenshiba spazieren gehen. Von dort sieht man das höchste Hochhaus der Stadt leuchten."
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "とってください",
+     "ro": "totte kudasai",
+     "de": "bitte (ein Foto) machen"
+    }
+   ],
+   "hint": "Der Park Tenshiba im Süden."
+  }
+ }
+}

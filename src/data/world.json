@@ -14,7 +14,7 @@
   },
   {
    "id": "R4",
-   "playable": false
+   "playable": true
   },
   {
    "id": "R5",
@@ -306,6 +306,107 @@
    "screens": [
     "36"
    ]
+  },
+  {
+   "id": "amemura",
+   "region": "R4",
+   "x": 540,
+   "y": 230,
+   "screens": [
+    "39",
+    "40"
+   ],
+   "flip": true
+  },
+  {
+   "id": "dotonbori",
+   "region": "R4",
+   "x": 640,
+   "y": 300,
+   "screens": [
+    "37",
+    "38"
+   ]
+  },
+  {
+   "id": "kuromon",
+   "region": "R4",
+   "x": 760,
+   "y": 380,
+   "screens": [
+    "43"
+   ]
+  },
+  {
+   "id": "namba",
+   "region": "R4",
+   "x": 610,
+   "y": 450,
+   "screens": [
+    "41"
+   ]
+  },
+  {
+   "id": "yasaka",
+   "region": "R4",
+   "x": 470,
+   "y": 500,
+   "screens": [
+    "42"
+   ],
+   "flip": true
+  },
+  {
+   "id": "denden",
+   "region": "R4",
+   "x": 720,
+   "y": 560,
+   "screens": [
+    "44",
+    "45a",
+    "45b",
+    "46"
+   ]
+  },
+  {
+   "id": "dome",
+   "region": "R4",
+   "x": 330,
+   "y": 300,
+   "screens": [
+    "47",
+    "48"
+   ],
+   "flip": true
+  },
+  {
+   "id": "taisho",
+   "region": "R4",
+   "x": 300,
+   "y": 560,
+   "screens": [
+    "49"
+   ]
+  },
+  {
+   "id": "tempozan",
+   "region": "R4",
+   "x": 110,
+   "y": 400,
+   "screens": [
+    "50"
+   ]
+  },
+  {
+   "id": "kindai",
+   "region": "R4",
+   "x": 900,
+   "y": 200,
+   "screens": [
+    "51",
+    "52"
+   ],
+   "flip": true
   }
  ],
  "screens": {
@@ -1262,55 +1363,421 @@
    }
   },
   "37": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "dotonbori",
+   "jp": "道頓堀",
+   "kana": "どうとんぼり",
+   "ro": "Dōtonbori",
+   "slots": {
+    "A": {
+     "x": 62,
+     "bottom": 2,
+     "h": 22
+    },
+    "B": {
+     "x": 72,
+     "bottom": 14,
+     "h": 17
+    },
+    "C": {
+     "x": 88,
+     "bottom": 2,
+     "h": 22
+    }
+   },
+   "night": true
   },
   "38": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "dotonbori",
+   "jp": "くいだおれ",
+   "kana": "くいだおれ",
+   "ro": "Kuidaore",
+   "slots": {
+    "A": {
+     "x": 30,
+     "bottom": 2,
+     "h": 42
+    },
+    "B": {
+     "x": 62,
+     "bottom": 10,
+     "h": 32
+    },
+    "C": {
+     "x": 80,
+     "bottom": 2,
+     "h": 42
+    }
+   },
+   "night": true
   },
   "39": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "amemura",
+   "jp": "三角公園",
+   "kana": "さんかくこうえん",
+   "ro": "Sankaku-kōen",
+   "slots": {
+    "A": {
+     "x": 38,
+     "bottom": 3,
+     "h": 34
+    },
+    "B": {
+     "x": 52,
+     "bottom": 18,
+     "h": 27
+    },
+    "C": {
+     "x": 90,
+     "bottom": 30,
+     "h": 20
+    }
+   }
   },
   "40": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "amemura",
+   "jp": "アメリカ村",
+   "kana": "アメリカむら",
+   "ro": "Amerika-mura",
+   "slots": {
+    "A": {
+     "x": 66,
+     "bottom": 2,
+     "h": 50
+    },
+    "B": {
+     "x": 60,
+     "bottom": 30,
+     "h": 30
+    },
+    "C": {
+     "x": 46,
+     "bottom": 1,
+     "h": 52
+    }
+   },
+   "indoor": true
   },
   "41": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "namba",
+   "jp": "なんばパークス",
+   "kana": "なんばパークス",
+   "ro": "Nanba Pākusu",
+   "slots": {
+    "A": {
+     "x": 66,
+     "bottom": 4,
+     "h": 22
+    },
+    "B": {
+     "x": 90,
+     "bottom": 24,
+     "h": 18
+    },
+    "C": {
+     "x": 26,
+     "bottom": 13,
+     "h": 19
+    }
+   }
   },
   "42": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "yasaka",
+   "jp": "難波八阪神社",
+   "kana": "なんばやさかじんじゃ",
+   "ro": "Nanba Yasaka-jinja",
+   "slots": {
+    "A": {
+     "x": 15,
+     "bottom": 4,
+     "h": 30
+    },
+    "B": {
+     "x": 35,
+     "bottom": 2,
+     "h": 30
+    },
+    "C": {
+     "x": 82,
+     "bottom": 4,
+     "h": 30
+    }
+   }
   },
   "43": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "kuromon",
+   "jp": "黒門市場",
+   "kana": "くろもんいちば",
+   "ro": "Kuromon ichiba",
+   "slots": {
+    "A": {
+     "x": 32,
+     "bottom": 2,
+     "h": 40
+    },
+    "B": {
+     "x": 55,
+     "bottom": 8,
+     "h": 34
+    },
+    "C": {
+     "x": 70,
+     "bottom": 2,
+     "h": 40
+    }
+   }
   },
   "44": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "denden",
+   "jp": "でんでんタウン",
+   "kana": "でんでんタウン",
+   "ro": "Den Den Taun",
+   "slots": {
+    "A": {
+     "x": 40,
+     "bottom": 3,
+     "h": 33
+    },
+    "B": {
+     "x": 56,
+     "bottom": 8,
+     "h": 28
+    },
+    "C": {
+     "x": 75,
+     "bottom": 3,
+     "h": 34
+    }
+   }
   },
   "45a": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "denden",
+   "jp": "レトロゲーム",
+   "kana": "レトロゲーム",
+   "ro": "Retoro gēmu",
+   "slots": {
+    "A": {
+     "x": 62,
+     "bottom": 1,
+     "h": 50
+    },
+    "B": {
+     "x": 78,
+     "bottom": 4,
+     "h": 46
+    },
+    "C": {
+     "x": 30,
+     "bottom": 2,
+     "h": 50
+    }
+   },
+   "indoor": true
   },
   "45b": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "denden",
+   "jp": "コレクション",
+   "kana": "コレクション",
+   "ro": "Korekushon",
+   "slots": {
+    "A": {
+     "x": 40,
+     "bottom": 3,
+     "h": 58
+    },
+    "B": {
+     "x": 52,
+     "bottom": 8,
+     "h": 52
+    },
+    "C": {
+     "x": 80,
+     "bottom": 3,
+     "h": 58
+    }
+   },
+   "indoor": true
   },
   "46": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "denden",
+   "jp": "コンセプトカフェ",
+   "kana": "コンセプトカフェ",
+   "ro": "Konseputo kafe",
+   "slots": {
+    "A": {
+     "x": 47,
+     "bottom": 2,
+     "h": 55
+    },
+    "B": {
+     "x": 40,
+     "bottom": 20,
+     "h": 44
+    },
+    "C": {
+     "x": 90,
+     "bottom": 2,
+     "h": 55
+    }
+   },
+   "indoor": true
   },
   "47": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "dome",
+   "jp": "京セラドーム",
+   "kana": "きょうセラドーム",
+   "ro": "Kyōsera Dōmu",
+   "slots": {
+    "A": {
+     "x": 12,
+     "bottom": 3,
+     "h": 26
+    },
+    "B": {
+     "x": 26,
+     "bottom": 12,
+     "h": 22
+    },
+    "C": {
+     "x": 70,
+     "bottom": 8,
+     "h": 12
+    }
+   }
   },
   "48": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "dome",
+   "jp": "ドーム",
+   "kana": "ドーム",
+   "ro": "Dōmu",
+   "slots": {
+    "A": {
+     "x": 54,
+     "bottom": 2,
+     "h": 30
+    },
+    "B": {
+     "x": 30,
+     "bottom": 6,
+     "h": 22
+    },
+    "C": {
+     "x": 78,
+     "bottom": 4,
+     "h": 26
+    }
+   },
+   "indoor": true
   },
   "49": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "taisho",
+   "jp": "大正",
+   "kana": "たいしょう",
+   "ro": "Taishō",
+   "slots": {
+    "A": {
+     "x": 60,
+     "bottom": 3,
+     "h": 38
+    },
+    "B": {
+     "x": 68,
+     "bottom": 22,
+     "h": 26
+    },
+    "C": {
+     "x": 82,
+     "bottom": 3,
+     "h": 38
+    }
+   }
   },
   "50": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "tempozan",
+   "jp": "天保山",
+   "kana": "てんぽうざん",
+   "ro": "Tenpōzan",
+   "slots": {
+    "A": {
+     "x": 15,
+     "bottom": 3,
+     "h": 30
+    },
+    "B": {
+     "x": 28,
+     "bottom": 12,
+     "h": 24
+    },
+    "C": {
+     "x": 62,
+     "bottom": 2,
+     "h": 32
+    }
+   }
   },
   "51": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "kindai",
+   "jp": "近畿大学",
+   "kana": "きんきだいがく",
+   "ro": "Kinki daigaku",
+   "slots": {
+    "A": {
+     "x": 26,
+     "bottom": 3,
+     "h": 40
+    },
+    "B": {
+     "x": 40,
+     "bottom": 16,
+     "h": 30
+    },
+    "C": {
+     "x": 88,
+     "bottom": 3,
+     "h": 40
+    }
+   },
+   "indoor": true
   },
   "52": {
-   "region": "R4"
+   "region": "R4",
+   "cluster": "kindai",
+   "jp": "水産研究所",
+   "kana": "すいさんけんきゅうじょ",
+   "ro": "Suisan kenkyūjo",
+   "slots": {
+    "A": {
+     "x": 30,
+     "bottom": 3,
+     "h": 45
+    },
+    "B": {
+     "x": 45,
+     "bottom": 14,
+     "h": 36
+    },
+    "C": {
+     "x": 92,
+     "bottom": 2,
+     "h": 46
+    }
+   },
+   "indoor": true
   },
   "53": {
    "region": "R5",

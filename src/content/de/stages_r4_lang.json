@@ -1,0 +1,517 @@
+{
+ "STRANG_LANG_HIRAGANA": {
+  "13": {
+   "lines": [
+    {"s": "gen", "p": "laugh", "t": "Du willst Schilder lesen? Dann fang mit dem Wichtigsten an: dem Essen!"},
+    {"s": "gen", "p": "proud", "jp": "たこやき", "ro": "takoyaki", "t": "Tako heißt Oktopus, yaki heißt gebraten."},
+    {"s": "gen", "p": "ladle", "jp": "おこのみやき", "ro": "okonomiyaki", "t": "Okonomi heißt „wie du magst“. Ein Pfannkuchen mit allem, was du willst."},
+    {"s": "gen", "p": "laugh", "jp": "いかやき", "ro": "ikayaki", "t": "Und ika ist Tintenfisch. Siehst du? yaki, yaki, yaki – in Ōsaka wird alles gebraten!"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet やき (yaki) laut Gen?", "options": ["gekocht", "gebraten", "roh", "süß"], "answer": 1},
+    {"type": "input", "q": "Wie liest man おこのみやき? (in Rōmaji)", "show": {"jp": "おこのみやき"}, "placeholder": "Rōmaji", "accept": ["okonomiyaki"]},
+    {"type": "choice", "q": "Was ist いか (ika)?", "options": ["Oktopus", "Tintenfisch", "Garnele", "Krabbe"], "answer": 1}
+   ],
+   "after": [
+    {"s": "gen", "p": "proud", "t": "Wunderbar! Komm mit in meine Gasse. Dort lernst du, was man beim Essen sagt."}
+   ],
+   "vocab": [{"jp": "おこのみやき", "ro": "okonomiyaki", "de": "herzhafter Pfannkuchen"}, {"jp": "いか", "ro": "ika", "de": "Tintenfisch"}],
+   "hint": "Meister Gen in der Kuidaore-Gasse."
+  },
+  "14": {
+   "lines": [
+    {"s": "gen", "p": "ladle", "t": "Wenn du hier reinkommst, ruft jeder Koch dasselbe:"},
+    {"s": "gen", "p": "laugh", "jp": "いらっしゃいませ！", "ro": "Irasshaimase!", "t": "Willkommen! Man muss nicht antworten – ein Nicken reicht."},
+    {"s": "gen", "p": "proud", "jp": "ありがとうございます", "ro": "arigatō gozaimasu", "t": "Danke – die höfliche Form."},
+    {"s": "gen", "p": "ladle", "jp": "ごちそうさまでした", "ro": "gochisōsama deshita", "t": "Und das sagst du nach dem Essen. Dann strahlt jeder Koch."}
+   ],
+   "tasks": [
+    {"type": "pairs", "q": "Verbinde die Ausdrücke mit ihrer Lesung.", "sets": [[["いらっしゃいませ", "irasshaimase"], ["ありがとうございます", "arigatō gozaimasu"], ["ごちそうさまでした", "gochisōsama deshita"], ["いただきます", "itadakimasu"], ["おいしい", "oishii"]]]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Ha! Du liest wie ein Einheimischer."},
+    {"s": "gen", "p": "proud", "t": "Aoi wartet im Dachgarten über dem Bahnhof Namba. Dort gibt es viele Wegweiser in Hiragana."}
+   ],
+   "vocab": [{"jp": "いらっしゃいませ", "ro": "irasshaimase", "de": "Willkommen (im Laden)"}],
+   "hint": "Aoi im Dachgarten über dem Bahnhof Namba."
+  },
+  "15": {
+   "lines": [
+    {"s": "aoi", "p": "map", "t": "Im Kaufhaus steht überall, wohin es geht. Lern diese vier Wörter, dann verläufst du dich nie."},
+    {"s": "aoi", "p": "note", "jp": "うえ ・ した", "ro": "ue ・ shita", "t": "Oben und unten. Die Kanji kennst du schon: 上 und 下."},
+    {"s": "aoi", "p": "happy", "jp": "みぎ ・ ひだり", "ro": "migi ・ hidari", "t": "Rechts und links. Achtung: In Japan sagt man oft zuerst links, dann rechts – ひだり, みぎ."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Was heißt みぎ?", "options": ["links", "rechts", "oben", "unten"], "answer": 1},
+     {"q": "Was heißt ひだり?", "options": ["links", "rechts", "vorne", "hinten"], "answer": 0},
+     {"q": "Der Dachgarten liegt ganz …", "options": ["した", "うえ", "みぎ", "ひだり"], "answer": 1}
+    ]}
+   ],
+   "after": [
+    {"s": "aoi", "p": "cheer", "t": "うえ – genau, wir sind ganz oben!"},
+    {"s": "aoi", "p": "map", "t": "Meister Gen zählt auf dem großen Markt seine Ware. Dort lernst du das Zählen in Hiragana."}
+   ],
+   "vocab": [{"jp": "みぎ", "ro": "migi", "de": "rechts"}, {"jp": "ひだり", "ro": "hidari", "de": "links"}],
+   "hint": "Der große überdachte Markt in Minami."
+  },
+  "16": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "Auf dem Markt zählt man anders. Für kleine Dinge gibt es eigene Zahlwörter."},
+    {"s": "gen", "p": "ladle", "jp": "ひとつ ・ ふたつ ・ みっつ", "ro": "hitotsu ・ futatsu ・ mittsu", "t": "Eins, zwei, drei Stück."},
+    {"s": "gen", "p": "laugh", "jp": "よっつ ・ いつつ", "ro": "yottsu ・ itsutsu", "t": "Vier und fünf. Damit kannst du fast alles bestellen."}
+   ],
+   "tasks": [
+    {"type": "pairs", "q": "Verbinde die Zahlwörter mit ihrer Lesung.", "sets": [[["ひとつ", "hitotsu (1)"], ["ふたつ", "futatsu (2)"], ["みっつ", "mittsu (3)"], ["よっつ", "yottsu (4)"], ["いつつ", "itsutsu (5)"]]]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Na also! みっつ Takoyaki – äh, Portionen! – für dich."},
+    {"s": "gen", "p": "proud", "t": "Für die nächsten Schilder geh ins alte Viertel unter dem eisernen Turm. Dort ist alles noch handgeschrieben."}
+   ],
+   "vocab": [{"jp": "ひとつ", "ro": "hitotsu", "de": "eins (Stück)"}, {"jp": "ふたつ", "ro": "futatsu", "de": "zwei (Stück)"}, {"jp": "みっつ", "ro": "mittsu", "de": "drei (Stück)"}],
+   "hint": "Das alte Viertel unter dem eisernen Turm."
+  }
+ },
+ "STRANG_LANG_KATAKANA": {
+  "10": {
+   "lines": [
+    {"s": "yuki", "p": "excited", "t": "Mode in Japan ist voller Katakana! Fast alle Kleidungsstücke sind Fremdwörter."},
+    {"s": "yuki", "p": "phone", "t": "Ein Trick: Bei Tシャツ ist das T einfach ein lateinischer Buchstabe. Den Rest liest du normal."},
+    {"s": "yuki", "p": "flustered", "t": "Und ジ ist „ji“, ジャ ist „ja“ – wie in Jacke."}
+   ],
+   "tasks": [
+    {"type": "decipher", "q": "Was steht auf dem Schild am Kleiderständer?", "sign": "ジーンズ", "tiles": ["jī", "n", "zu", "ji", "su"], "answer": ["jī", "n", "zu"], "meaning": "Jeans"},
+    {"type": "decipher", "q": "Und hier?", "sign": "ジャケット", "tiles": ["ja", "ke", "tto", "ji", "ko", "to"], "answer": ["ja", "ke", "tto"], "meaning": "Jacke"}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Super! Komm mit in den Plattenladen. Da gibt's noch mehr Katakana."}
+   ],
+   "vocab": [{"jp": "ジーンズ", "ro": "jīnzu", "de": "Jeans"}, {"jp": "ジャケット", "ro": "jaketto", "de": "Jacke"}, {"jp": "Tシャツ", "ro": "tīshatsu", "de": "T-Shirt"}],
+   "hint": "Yuki im Plattenladen in Amerikamura."
+  },
+  "11": {
+   "lines": [
+    {"s": "yuki", "p": "excited", "t": "Hier ist alles Katakana! Schallplatten heißen レコード – von „record“."},
+    {"s": "yuki", "p": "phone", "jp": "ポスター", "ro": "posutā", "t": "Poster. Der lange Strich am Ende macht das „ā“."},
+    {"s": "yuki", "p": "flustered", "jp": "ポップ", "ro": "poppu", "t": "Und Pop-Musik. Das kleine ッ ist die kleine Pause."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist eine レコード?", "show": {"jp": "レコード"}, "options": ["Ein Rekord", "Eine Schallplatte", "Ein Radio", "Ein Konzert"], "answer": 1},
+    {"type": "input", "q": "Wie liest man ポスター? (in Rōmaji)", "show": {"jp": "ポスター"}, "placeholder": "Rōmaji", "accept": ["posutaa", "posutā", "posuta"]}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Genau! Kazu im Elektronikviertel kennt noch viel schwierigere Wörter."}
+   ],
+   "vocab": [{"jp": "レコード", "ro": "rekōdo", "de": "Schallplatte"}, {"jp": "ポスター", "ro": "posutā", "de": "Poster"}],
+   "hint": "Kazu im Elektronikviertel Den Den Town."
+  },
+  "12": {
+   "lines": [
+    {"s": "kazu", "p": "game", "t": "Elektronik-Katakana? Die Japaner kürzen gern ab. Aus „personal computer“ wurde パソコン."},
+    {"s": "kazu", "p": "card", "t": "Und aus „animation“ wurde アニメ. Kurz und knackig."},
+    {"s": "kazu", "p": "thumbs", "t": "Lies mal die Schilder an den Läden."}
+   ],
+   "tasks": [
+    {"type": "decipher", "q": "Was steht über diesem Laden?", "sign": "パソコン", "tiles": ["pa", "so", "ko", "n", "ba", "su"], "answer": ["pa", "so", "ko", "n"], "meaning": "Computer"},
+    {"type": "decipher", "q": "Und hier?", "sign": "カメラ", "tiles": ["ka", "me", "ra", "ga", "mu"], "answer": ["ka", "me", "ra"], "meaning": "Kamera"},
+    {"type": "decipher", "q": "Und das große Schild?", "sign": "アニメ", "tiles": ["a", "ni", "me", "o", "nu"], "answer": ["a", "ni", "me"], "meaning": "Anime (Zeichentrick)"}
+   ],
+   "after": [
+    {"s": "kazu", "p": "thumbs", "t": "Perfekt. In meinem Laden wartet die Prüfung für echte Gamer."}
+   ],
+   "vocab": [{"jp": "パソコン", "ro": "pasokon", "de": "Computer"}, {"jp": "カメラ", "ro": "kamera", "de": "Kamera"}, {"jp": "アニメ", "ro": "anime", "de": "Anime"}],
+   "hint": "Ein Laden voller alter Spiele …"
+  },
+  "13": {
+   "lines": [
+    {"s": "kazu", "p": "game", "t": "Willkommen im Laden! Hier steht über jedem Regal ゲーム – Spiel."},
+    {"s": "kazu", "p": "card", "jp": "コントローラー", "ro": "kontorōrā", "t": "Controller. Gleich zwei lange Striche!"},
+    {"s": "kazu", "p": "thumbs", "jp": "ヒーロー", "ro": "hīrō", "t": "Und der Held. In jedem Spiel gibt es einen."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Was steht über jedem Regal?", "options": ["ゲーム", "カメラ", "ポップ", "ホテル"], "answer": 0},
+     {"q": "Was ist eine ヒーロー?", "options": ["Ein Held", "Ein Hotel", "Ein Hut", "Ein Heft"], "answer": 0},
+     {"q": "Wie viele lange Striche ー hat コントローラー?", "options": ["Keinen", "Einen", "Zwei", "Drei"], "answer": 2}
+    ]}
+   ],
+   "after": [
+    {"s": "kazu", "p": "thumbs", "t": "Du bist bereit für Level zwei. Yuki wartet im Themencafé nebenan."}
+   ],
+   "vocab": [{"jp": "ゲーム", "ro": "gēmu", "de": "Spiel"}, {"jp": "ヒーロー", "ro": "hīrō", "de": "Held"}],
+   "hint": "Yuki im Themencafé in Den Den Town."
+  },
+  "14": {
+   "lines": [
+    {"s": "yuki", "p": "excited", "t": "Die Speisekarte hier ist komplett in Katakana! Ich bestell für uns – aber erst musst du lesen."},
+    {"s": "yuki", "p": "phone", "jp": "メニュー", "ro": "menyū", "t": "Das ist die Karte selbst. Das kleine ュ macht aus ニ ein „nyu“."},
+    {"s": "yuki", "p": "flustered", "t": "Und hier gibt's Omelett-Reis und Eisbecher mit Herzchen. Natürlich."}
+   ],
+   "tasks": [
+    {"type": "decipher", "q": "Was steht ganz oben auf der Karte?", "sign": "オムライス", "tiles": ["o", "mu", "ra", "i", "su", "ru"], "answer": ["o", "mu", "ra", "i", "su"], "meaning": "Omelett-Reis"},
+    {"type": "decipher", "q": "Und beim Nachtisch?", "sign": "パフェ", "tiles": ["pa", "fe", "fu", "ha"], "answer": ["pa", "fe"], "meaning": "Eisbecher (Parfait)"},
+    {"type": "decipher", "q": "Und bei den Getränken?", "sign": "ジュース", "tiles": ["jū", "su", "ju", "zu"], "answer": ["jū", "su"], "meaning": "Saft"}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Bestellt! Coach Sakai hat übrigens geschrieben – er ist an der großen Kuppel im Westen."}
+   ],
+   "vocab": [{"jp": "メニュー", "ro": "menyū", "de": "Speisekarte"}, {"jp": "ジュース", "ro": "jūsu", "de": "Saft"}],
+   "hint": "Coach Sakai an der großen Kuppel im Westen."
+  },
+  "15": {
+   "lines": [
+    {"s": "sakai", "p": "arms", "t": "Sport auf Japanisch? Fast alles Katakana. Das Gebäude hier ist eine ドーム – Kuppel."},
+    {"s": "sakai", "p": "point", "jp": "チーム ・ ボール", "ro": "chīmu ・ bōru", "t": "Mannschaft und Ball."},
+    {"s": "sakai", "p": "shout", "jp": "スタジアム", "ro": "sutajiamu", "t": "Und das Stadion. Merk dir das – ich frag gleich ab!"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was heißt チーム?", "show": {"jp": "チーム"}, "options": ["Ball", "Mannschaft", "Tor", "Trainer"], "answer": 1},
+    {"type": "choice", "q": "Wie nennt Sakai das Gebäude hinter euch?", "options": ["スタジアム", "ドーム", "ホテル", "カフェ"], "answer": 1}
+   ],
+   "after": [
+    {"s": "sakai", "p": "shout", "t": "Gut! Ren spielt in Taishō Musik. Geh hin, dann lernst du die Wörter für Instrumente."}
+   ],
+   "vocab": [{"jp": "チーム", "ro": "chīmu", "de": "Mannschaft"}, {"jp": "ボール", "ro": "bōru", "de": "Ball"}, {"jp": "ドーム", "ro": "dōmu", "de": "Kuppel(halle)"}],
+   "hint": "Ren im Stadtteil Taishō."
+  },
+  "16": {
+   "lines": [
+    {"s": "ren", "p": "guitar", "t": "Meine Gitarre heißt auf Japanisch einfach ギター."},
+    {"s": "ren", "p": "relaxed", "t": "Und hier in Taishō gibt es ein Gericht aus Okinawa mit einem lustigen Namen: Taco-Reis. Taco wie in Mexiko – nicht Oktopus!"},
+    {"s": "ren", "p": "pour", "t": "Lies die Tafel vor der Bar."}
+   ],
+   "tasks": [
+    {"type": "decipher", "q": "Was steht auf der Tafel?", "sign": "タコライス", "tiles": ["ta", "ko", "ra", "i", "su", "ku"], "answer": ["ta", "ko", "ra", "i", "su"], "meaning": "Taco-Reis"},
+    {"type": "decipher", "q": "Und auf dem Plakat?", "sign": "ピアノ", "tiles": ["pi", "a", "no", "bi", "na"], "answer": ["pi", "a", "no"], "meaning": "Klavier"}
+   ],
+   "after": [
+    {"s": "ren", "p": "relaxed", "t": "Genau. Aoi wartet am Hafen von Tempozan – dort gibt's Schilder für Schiffe und Hotels."}
+   ],
+   "vocab": [{"jp": "ギター", "ro": "gitā", "de": "Gitarre"}, {"jp": "ピアノ", "ro": "piano", "de": "Klavier"}],
+   "hint": "Aoi am Hafen von Tempozan."
+  },
+  "17": {
+   "lines": [
+    {"s": "aoi", "p": "map", "t": "Am Hafen ist alles Katakana. Siehst du das Schiff? Das ist eine フェリー – Fähre."},
+    {"s": "aoi", "p": "note", "jp": "クルーズ", "ro": "kurūzu", "t": "Eine Rundfahrt mit dem Schiff."},
+    {"s": "aoi", "p": "happy", "jp": "ホテル", "ro": "hoteru", "t": "Und Hotel. Das „l“ wird im Japanischen zum „r“."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist eine フェリー?", "show": {"jp": "フェリー"}, "options": ["Ein Riesenrad", "Eine Fähre", "Ein Flughafen", "Ein Fisch"], "answer": 1},
+    {"type": "input", "q": "Wie liest man ホテル? (in Rōmaji)", "show": {"jp": "ホテル"}, "placeholder": "Rōmaji", "accept": ["hoteru"]}
+   ],
+   "after": [
+    {"s": "aoi", "p": "cheer", "t": "Richtig! Kōta an der Kindai im Osten hat die letzten Katakana für heute: Computer-Wörter."}
+   ],
+   "vocab": [{"jp": "フェリー", "ro": "ferī", "de": "Fähre"}, {"jp": "ホテル", "ro": "hoteru", "de": "Hotel"}],
+   "hint": "Die Universität mit der großen Comic-Bibliothek im Osten."
+  },
+  "18": {
+   "lines": [
+    {"s": "kindai", "p": "laptop", "t": "In der Bibliothek steht auf jedem Bildschirm Katakana. Daten, Medien, alles."},
+    {"s": "kindai", "p": "thumbs", "t": "Das kleine ィ macht aus デ ein „di“. So schreibt man Laute, die es im Japanischen eigentlich nicht gibt."},
+    {"s": "kindai", "p": "puzzled", "t": "Lies mal, was hier auf dem Schild steht."}
+   ],
+   "tasks": [
+    {"type": "decipher", "q": "Was steht auf dem Schild über den Computern?", "sign": "データ", "tiles": ["dē", "ta", "de", "da"], "answer": ["dē", "ta"], "meaning": "Daten"},
+    {"type": "decipher", "q": "Und über der Videoecke?", "sign": "メディア", "tiles": ["me", "di", "a", "de", "i"], "answer": ["me", "di", "a"], "meaning": "Medien"}
+   ],
+   "after": [
+    {"s": "kindai", "p": "thumbs", "t": "Du kannst jetzt sogar IT-Katakana. Respekt!"},
+    {"s": "kindai", "p": "laptop", "t": "Süßes auf Katakana findest du in der Feinkost-Etage unter dem höchsten Hochhaus der Stadt."}
+   ],
+   "vocab": [{"jp": "データ", "ro": "dēta", "de": "Daten"}, {"jp": "メディア", "ro": "media", "de": "Medien"}],
+   "hint": "Die Feinkost-Etage unter dem höchsten Hochhaus der Stadt."
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "12": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "Kanji fürs Essen? Die musst du in Ōsaka als Erstes können!"},
+    {"s": "gen", "p": "ladle", "jp": "食 ・ 飲", "ro": "taberu ・ nomu", "t": "Essen und trinken. Beide haben links das Zeichen für Nahrung."},
+    {"s": "gen", "p": "laugh", "jp": "魚", "ro": "sakana", "t": "Und der Fisch: oben der Kopf, in der Mitte die Schuppen, unten die Schwanzflosse."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["食", "飲", "魚", "水", "口", "日"], "prompts": [{"de": "Fisch", "answer": "魚"}, {"de": "essen", "answer": "食"}, {"de": "trinken", "answer": "飲"}, {"de": "Wasser", "answer": "水"}]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Perfekt! Mit 食 und 飲 findest du jede Kneipe."},
+    {"s": "gen", "p": "proud", "t": "Den nächsten Teil lernst du dort, wo Züge unter einem Garten ankommen …"}
+   ],
+   "vocab": [{"jp": "たべます", "ro": "tabemasu", "de": "essen"}, {"jp": "のみます", "ro": "nomimasu", "de": "trinken"}],
+   "hint": "Wo Züge unter einem Garten ankommen …"
+  },
+  "13": {
+   "lines": [
+    {"s": "aoi", "p": "map", "t": "Bahnhofs-Kanji! Mein Lieblingsthema. 駅 heißt Bahnhof – links steckt ein Pferd drin, aus der Zeit der Poststationen."},
+    {"s": "aoi", "p": "note", "jp": "電車", "ro": "densha", "t": "Zug. 車 ist ein Wagen – von oben gesehen, mit Achse und zwei Rädern."},
+    {"s": "aoi", "p": "happy", "jp": "行きます ・ 来ます", "ro": "ikimasu ・ kimasu", "t": "Gehen und kommen. Damit liest du jede Anzeigetafel."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was steckt laut Aoi links im Kanji 駅?", "options": ["Ein Fisch", "Ein Pferd", "Ein Baum", "Ein Mensch"], "answer": 1},
+    {"type": "choice", "q": "Was bedeutet 車?", "show": {"jp": "車"}, "options": ["Wagen", "Straße", "Bahnhof", "Brücke"], "answer": 0},
+    {"type": "input", "q": "Wie liest man 来ます? (in Rōmaji)", "show": {"jp": "来ます"}, "placeholder": "Rōmaji", "accept": ["kimasu"]}
+   ],
+   "after": [
+    {"s": "aoi", "p": "cheer", "t": "Du kannst jetzt Fahrpläne lesen! Meister Gen auf dem Kuromon-Markt zeigt dir die Kanji fürs Einkaufen."}
+   ],
+   "vocab": [{"jp": "えき", "ro": "eki", "de": "Bahnhof"}, {"jp": "いきます", "ro": "ikimasu", "de": "gehen"}, {"jp": "きます", "ro": "kimasu", "de": "kommen"}],
+   "hint": "Meister Gen auf dem Kuromon-Markt."
+  },
+  "14": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "Einkaufen! Das Kanji 買 ist ein Netz über einer Muschel – früher war die Muschel das Geld."},
+    {"s": "gen", "p": "ladle", "jp": "何円ですか。", "ro": "Nan-en desu ka.", "t": "Wie viel Yen? 何 heißt „was“."},
+    {"s": "gen", "p": "laugh", "t": "Und 千 kennst du schon. Bei mir kostet fast alles unter 千円!"}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["買", "何", "円", "千", "魚", "大"], "prompts": [{"de": "kaufen", "answer": "買"}, {"de": "was?", "answer": "何"}, {"de": "Yen", "answer": "円"}, {"de": "tausend", "answer": "千"}]}
+   ],
+   "after": [
+    {"s": "gen", "p": "proud", "t": "Jetzt kannst du hier ganz allein einkaufen."},
+    {"s": "gen", "p": "laugh", "t": "Für die Kanji der Schule geh zu dem Ort mit der riesigen Comic-Bibliothek. Kōta weiß Bescheid."}
+   ],
+   "vocab": [{"jp": "かいます", "ro": "kaimasu", "de": "kaufen"}, {"jp": "なん", "ro": "nan", "de": "was"}],
+   "hint": "Der Ort mit der riesigen Comic-Bibliothek."
+  },
+  "15": {
+   "lines": [
+    {"s": "kindai", "p": "laptop", "t": "Uni-Kanji! Die siehst du hier jeden Tag. 学 heißt lernen – ein Kind 子 unter einem Dach."},
+    {"s": "kindai", "p": "thumbs", "jp": "学校 ・ 大学", "ro": "gakkō ・ daigaku", "t": "Schule und Universität. 大学 ist eine „große Lernstätte“."},
+    {"s": "kindai", "p": "puzzled", "jp": "学生 ・ 先生", "ro": "gakusei ・ sensei", "t": "Student und Lehrer. Beide enden auf 生 – Leben, geboren."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Was steckt laut Kōta im Kanji 学?", "options": ["Ein Kind unter einem Dach", "Ein Baum im Feld", "Ein Fisch im Wasser", "Ein Mensch am Tor"], "answer": 0},
+     {"q": "Was bedeutet 大学?", "options": ["Schule", "Universität", "Bibliothek", "Lehrer"], "answer": 1},
+     {"q": "Welches Kanji haben 学生 und 先生 gemeinsam?", "options": ["学", "先", "生", "大"], "answer": 2}
+    ]}
+   ],
+   "after": [
+    {"s": "kindai", "p": "thumbs", "t": "Perfekt! Du bist ein echter 学生."},
+    {"s": "kindai", "p": "laptop", "t": "Die nächsten Kanji findest du an Japans ältestem offiziellen Tempel im Süden."}
+   ],
+   "vocab": [{"jp": "がっこう", "ro": "gakkō", "de": "Schule"}, {"jp": "だいがく", "ro": "daigaku", "de": "Universität"}, {"jp": "がくせい", "ro": "gakusei", "de": "Student/in"}],
+   "hint": "Japans ältester offizieller Tempel im Süden."
+  }
+ },
+ "STRANG_LANG_VOCABULARY": {
+  "12": {
+   "lines": [
+    {"s": "gen", "p": "laugh", "t": "Im Restaurant brauchst du vier Verben. Pass auf!"},
+    {"s": "gen", "p": "proud", "jp": "たべます ・ のみます", "ro": "tabemasu ・ nomimasu", "t": "Essen und trinken."},
+    {"s": "gen", "p": "ladle", "jp": "かいます ・ はらいます", "ro": "kaimasu ・ haraimasu", "t": "Kaufen und bezahlen. Das Letzte ist das Wichtigste – für mich!"}
+   ],
+   "tasks": [
+    {"type": "slots", "q": "Ordne die Verben zu.", "items": [{"icon": "eat", "label": "essen", "answer": "tabemasu"}, {"icon": "drink", "label": "trinken", "answer": "nomimasu"}, {"icon": "cart", "label": "kaufen", "answer": "kaimasu"}, {"icon": "wallet", "label": "bezahlen", "answer": "haraimasu"}],
+     "words": [{"jp": "はらいます", "ro": "haraimasu"}, {"jp": "たべます", "ro": "tabemasu"}, {"jp": "かいます", "ro": "kaimasu"}, {"jp": "のみます", "ro": "nomimasu"}]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Sehr gut. Und jetzt: はらいます! Nur Spaß."},
+    {"s": "gen", "p": "proud", "t": "Die Farben lernst du dort, wo die Jugend auf Treppenstufen sitzt und bunte Klamotten trägt …"}
+   ],
+   "vocab": [{"jp": "はらいます", "ro": "haraimasu", "de": "bezahlen"}],
+   "hint": "Wo die Jugend auf Treppenstufen sitzt und bunte Klamotten trägt …"
+  },
+  "13": {
+   "lines": [
+    {"s": "yuki", "p": "excited", "t": "Farben! Schau dich um, hier ist alles bunt."},
+    {"s": "yuki", "p": "phone", "jp": "あか ・ あお", "ro": "aka ・ ao", "t": "Rot und Blau. Achtung: Ampelgrün heißt in Japan auch あお!"},
+    {"s": "yuki", "p": "flustered", "jp": "しろ ・ くろ", "ro": "shiro ・ kuro", "t": "Weiß und Schwarz. Und Kleidung allgemein heißt ふく."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Was heißt あか?", "options": ["Blau", "Rot", "Weiß", "Schwarz"], "answer": 1},
+     {"q": "Welche Farbe hat die Ampel laut Yuki in Japan, wenn man gehen darf?", "options": ["あか", "あお", "しろ", "くろ"], "answer": 1},
+     {"q": "Was heißt ふく?", "options": ["Kleidung", "Schuh", "Farbe", "Laden"], "answer": 0}
+    ]}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Super! Herr Yamada ist am Schrein mit dem Löwenkopf. Er zeigt dir, wo was steht."}
+   ],
+   "vocab": [{"jp": "あか", "ro": "aka", "de": "Rot"}, {"jp": "あお", "ro": "ao", "de": "Blau (auch Ampelgrün)"}, {"jp": "しろ", "ro": "shiro", "de": "Weiß"}, {"jp": "くろ", "ro": "kuro", "de": "Schwarz"}, {"jp": "ふく", "ro": "fuku", "de": "Kleidung"}],
+   "hint": "Herr Yamada am Schrein mit dem Löwenkopf."
+  },
+  "14": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Am Schrein ist es wichtig zu wissen, wo man steht. Vor dem Löwen, nicht in seinem Maul!"},
+    {"s": "yamada", "p": "explain", "jp": "まえ ・ うしろ", "ro": "mae ・ ushiro", "t": "Vorne und hinten."},
+    {"s": "yamada", "p": "pray", "jp": "となり ・ ちかく", "ro": "tonari ・ chikaku", "t": "Neben und in der Nähe. „Der Laden ist ちかく“ – nicht weit."}
+   ],
+   "tasks": [
+    {"type": "slots", "q": "Ordne die Wörter zu.", "items": [{"icon": "front", "label": "vorne", "answer": "mae"}, {"icon": "behind", "label": "hinten", "answer": "ushiro"}, {"icon": "beside", "label": "neben", "answer": "tonari"}, {"icon": "near", "label": "in der Nähe", "answer": "chikaku"}],
+     "words": [{"jp": "となり", "ro": "tonari"}, {"jp": "うしろ", "ro": "ushiro"}, {"jp": "ちかく", "ro": "chikaku"}, {"jp": "まえ", "ro": "mae"}]}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Gut. Der Kuromon-Markt ist ちかく. Meister Gen bringt dir dort das Zählen bei."}
+   ],
+   "vocab": [{"jp": "うしろ", "ro": "ushiro", "de": "hinten"}, {"jp": "となり", "ro": "tonari", "de": "neben"}, {"jp": "ちかく", "ro": "chikaku", "de": "in der Nähe"}],
+   "hint": "Meister Gen auf dem Kuromon-Markt."
+  },
+  "15": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "In Japan zählt man je nach Form anders. Klingt verrückt, ist aber einfach."},
+    {"s": "gen", "p": "ladle", "jp": "～ほん ・ ～まい", "ro": "-hon ・ -mai", "t": "Für lange Dinge wie Flaschen: ほん. Für flache Dinge wie Papier oder Teller: まい."},
+    {"s": "gen", "p": "laugh", "jp": "～こ ・ ～さつ", "ro": "-ko ・ -satsu", "t": "Für kleine runde Dinge wie Äpfel: こ. Und für Bücher: さつ."}
+   ],
+   "tasks": [
+    {"type": "rounds", "rounds": [
+     {"q": "Du zählst Flaschen. Welches Zählwort?", "options": ["ほん", "まい", "こ", "さつ"], "answer": 0},
+     {"q": "Du zählst Teller.", "options": ["ほん", "まい", "こ", "さつ"], "answer": 1},
+     {"q": "Du zählst Bücher.", "options": ["ほん", "まい", "こ", "さつ"], "answer": 3},
+     {"q": "Du zählst Äpfel.", "options": ["ほん", "まい", "こ", "さつ"], "answer": 2}
+    ]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Du kannst zählen wie ein Händler! Daiki wartet an der großen Kuppel. Er bringt dir Freizeit-Verben bei."}
+   ],
+   "vocab": [{"jp": "～ほん", "ro": "-hon", "de": "Zählwort für lange Dinge"}, {"jp": "～まい", "ro": "-mai", "de": "Zählwort für flache Dinge"}, {"jp": "～さつ", "ro": "-satsu", "de": "Zählwort für Bücher"}],
+   "hint": "Daiki an der großen Kuppel im Westen."
+  },
+  "16": {
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Freizeit? Ich hab keine. Ich trainiere. Aber gut, für dich:"},
+    {"s": "daiki", "p": "ready", "jp": "あそびます ・ はしります", "ro": "asobimasu ・ hashirimasu", "t": "Spielen und laufen."},
+    {"s": "daiki", "p": "cheer", "jp": "みます ・ ききます", "ro": "mimasu ・ kikimasu", "t": "Sehen und hören. Ein Spiel ansehen, Musik hören."}
+   ],
+   "tasks": [
+    {"type": "slots", "q": "Ordne die Verben zu.", "items": [{"icon": "play", "label": "spielen", "answer": "asobimasu"}, {"icon": "run", "label": "laufen", "answer": "hashirimasu"}, {"icon": "eye", "label": "sehen", "answer": "mimasu"}, {"icon": "ear", "label": "hören", "answer": "kikimasu"}],
+     "words": [{"jp": "みます", "ro": "mimasu"}, {"jp": "はしります", "ro": "hashirimasu"}, {"jp": "ききます", "ro": "kikimasu"}, {"jp": "あそびます", "ro": "asobimasu"}]}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cheer", "t": "Nicht schlecht. Du lernst schneller, als du rennst."},
+    {"s": "daiki", "p": "cocky", "t": "Die nächsten Wörter gibt's im alten Viertel unter dem eisernen Turm."}
+   ],
+   "vocab": [{"jp": "あそびます", "ro": "asobimasu", "de": "spielen"}, {"jp": "はしります", "ro": "hashirimasu", "de": "laufen, rennen"}, {"jp": "みます", "ro": "mimasu", "de": "sehen"}, {"jp": "ききます", "ro": "kikimasu", "de": "hören"}],
+   "hint": "Das alte Viertel unter dem eisernen Turm."
+  }
+ },
+ "STRANG_LANG_CONVERSATION": {
+  "11": {
+   "lines": [
+    {"s": "gen", "p": "laugh", "t": "Wo isst du? Mit で sagst du, wo etwas passiert."},
+    {"s": "gen", "p": "proud", "jp": "みせで たこやきを たべます。", "ro": "Mise de takoyaki o tabemasu.", "t": "Ich esse im Laden Takoyaki. Ort + で, Sache + を, dann das Verb."},
+    {"s": "gen", "p": "ladle", "jp": "うちで ばんごはんを たべます。", "ro": "Uchi de bangohan o tabemasu.", "t": "Ich esse zu Hause zu Abend."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Welches Teilchen steht laut Gen hinter dem Ort, an dem etwas passiert?", "options": [{"jp": "を"}, {"jp": "で"}, {"jp": "が"}, {"jp": "は"}], "answer": 1},
+    {"type": "choice", "q": "Was bedeutet うちで ばんごはんを たべます?", "options": ["Ich koche im Laden.", "Ich esse zu Hause zu Abend.", "Ich kaufe Reis.", "Ich gehe nach Hause."], "answer": 1}
+   ],
+   "after": [
+    {"s": "gen", "p": "proud", "t": "Prima! In der Kuidaore-Gasse übst du gleich, ein Lokal zu loben."}
+   ],
+   "vocab": [{"jp": "みせ", "ro": "mise", "de": "Laden, Lokal"}, {"jp": "うち", "ro": "uchi", "de": "Zuhause"}, {"jp": "ばんごはん", "ro": "bangohan", "de": "Abendessen"}],
+   "hint": "In der Kuidaore-Gasse."
+  },
+  "12": {
+   "lines": [
+    {"s": "gen", "p": "laugh", "t": "Wenn dir ein Lokal gefällt, sag es! Köche hören das gern."},
+    {"s": "gen", "p": "proud", "jp": "あのみせは とても おいしいです。", "ro": "Ano mise wa totemo oishii desu.", "t": "Das Lokal da ist sehr lecker. あの heißt „das da drüben“, とても heißt „sehr“."},
+    {"s": "gen", "p": "ladle", "t": "Natürlich meinst du damit meinen Stand."}
+   ],
+   "tasks": [
+    {"type": "build", "q": "Bilde: „Das Lokal da drüben ist sehr lecker.“", "tiles": [{"jp": "とても", "ro": "totemo"}, {"jp": "あのみせ", "ro": "ano mise"}, {"jp": "おいしいです", "ro": "oishii desu"}, {"jp": "は", "ro": "wa"}, {"jp": "を", "ro": "o"}], "answer": ["あのみせ", "は", "とても", "おいしいです"]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Hah! Das schreib ich mir an die Wand."},
+    {"s": "gen", "p": "proud", "t": "Die nächste Lektion gibt es bei der Jugend, die auf den Stufen eines kleinen Parks sitzt …"}
+   ],
+   "vocab": [{"jp": "とても", "ro": "totemo", "de": "sehr"}, {"jp": "あの", "ro": "ano", "de": "jener, das da drüben"}],
+   "hint": "Bei der Jugend auf den Stufen eines kleinen Parks …"
+  },
+  "13": {
+   "lines": [
+    {"s": "yuki", "p": "excited", "t": "Ich will alles hier! Auf Japanisch sagt man das mit ほしい."},
+    {"s": "yuki", "p": "phone", "jp": "あたらしい ふくが ほしいです。", "ro": "Atarashii fuku ga hoshii desu.", "t": "Ich möchte neue Kleidung. Das Ding + が + ほしいです."},
+    {"s": "yuki", "p": "flustered", "t": "Aber mein Geldbeutel sagt: いいえ. Nein."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was möchte Yuki?", "options": ["Neue Schuhe", "Neue Kleidung", "Ein neues Handy", "Essen"], "answer": 1},
+    {"type": "choice", "q": "Welches Teilchen steht vor ほしいです?", "options": [{"jp": "を"}, {"jp": "で"}, {"jp": "が"}, {"jp": "に"}], "answer": 2}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Richtig! Komm mit in den Plattenladen – da reden wir über freie Tage."}
+   ],
+   "vocab": [{"jp": "ほしい", "ro": "hoshii", "de": "haben wollen"}, {"jp": "あたらしい", "ro": "atarashii", "de": "neu"}],
+   "hint": "Yuki im Plattenladen in Amerikamura."
+  },
+  "14": {
+   "lines": [
+    {"s": "yuki", "p": "phone", "t": "Was machst du an freien Tagen? Ich höre zu Hause Musik. Stundenlang."},
+    {"s": "yuki", "p": "excited", "jp": "うちで おんがくを ききます。", "ro": "Uchi de ongaku o kikimasu.", "t": "Ich höre zu Hause Musik. Wieder: Ort + で, Sache + を."},
+    {"s": "yuki", "p": "flustered", "t": "Und manchmal tanze ich dazu. Aber das bleibt unter uns!"}
+   ],
+   "tasks": [
+    {"type": "build", "q": "Bilde: „Ich höre zu Hause Musik.“", "tiles": [{"jp": "おんがく", "ro": "ongaku"}, {"jp": "うち", "ro": "uchi"}, {"jp": "で", "ro": "de"}, {"jp": "を", "ro": "o"}, {"jp": "ききます", "ro": "kikimasu"}, {"jp": "が", "ro": "ga"}], "answer": ["うち", "で", "おんがく", "を", "ききます"]}
+   ],
+   "after": [
+    {"s": "yuki", "p": "excited", "t": "Perfekt! Aoi wartet im Dachgarten über dem Bahnhof Namba. Sie zeigt dir, wie man sagt, womit man fährt."}
+   ],
+   "vocab": [{"jp": "おんがく", "ro": "ongaku", "de": "Musik"}],
+   "hint": "Aoi im Dachgarten über dem Bahnhof Namba."
+  },
+  "15": {
+   "lines": [
+    {"s": "aoi", "p": "map", "t": "Womit fährst du? Auch dafür nimmt man で!"},
+    {"s": "aoi", "p": "note", "jp": "でんしゃで なんばへ いきます。", "ro": "Densha de Namba e ikimasu.", "t": "Ich fahre mit dem Zug nach Namba. Verkehrsmittel + で, Ziel + へ."},
+    {"s": "aoi", "p": "happy", "jp": "バスで いきます。", "ro": "Basu de ikimasu.", "t": "Ich fahre mit dem Bus. Ganz einfach."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Welches Teilchen steht laut Aoi hinter dem Ziel?", "options": [{"jp": "で"}, {"jp": "へ"}, {"jp": "を"}, {"jp": "が"}], "answer": 1},
+    {"type": "choice", "q": "Was bedeutet でんしゃで いきます?", "options": ["Ich fahre mit dem Zug.", "Ich kaufe einen Zug.", "Ich warte auf den Zug.", "Ich mag Züge."], "answer": 0}
+   ],
+   "after": [
+    {"s": "aoi", "p": "cheer", "t": "Genau! Meister Gen auf dem Kuromon-Markt zeigt dir, wie man höflich bestellt."}
+   ],
+   "vocab": [{"jp": "へ", "ro": "e", "de": "nach, zu (Richtung)"}],
+   "hint": "Meister Gen auf dem Kuromon-Markt."
+  },
+  "16": {
+   "lines": [
+    {"s": "gen", "p": "proud", "t": "Bestellen kannst du schon mit ください. Noch höflicher ist おねがいします."},
+    {"s": "gen", "p": "ladle", "jp": "たこやきを みっつ おねがいします。", "ro": "Takoyaki o mittsu onegaishimasu.", "t": "Drei Portionen Takoyaki, bitte. Die Zahl steht direkt vor dem Verb."},
+    {"s": "gen", "p": "laugh", "t": "Probier's aus – ich hab Hunger auf Umsatz!"}
+   ],
+   "tasks": [
+    {"type": "build", "q": "Bilde: „Drei Takoyaki, bitte.“", "tiles": [{"jp": "みっつ", "ro": "mittsu"}, {"jp": "たこやき", "ro": "takoyaki"}, {"jp": "を", "ro": "o"}, {"jp": "おねがいします", "ro": "onegaishimasu"}, {"jp": "で", "ro": "de"}], "answer": ["たこやき", "を", "みっつ", "おねがいします"]}
+   ],
+   "after": [
+    {"s": "gen", "p": "laugh", "t": "Kommt sofort! Coach Sakai ist an der großen Kuppel – er will dich zu etwas einladen."}
+   ],
+   "hint": "Coach Sakai an der großen Kuppel im Westen."
+  },
+  "17": {
+   "lines": [
+    {"s": "sakai", "p": "arms", "t": "Ich lade dich ein. Auf Japanisch: Verb + ませんか – „Wollen wir nicht …?“"},
+    {"s": "sakai", "p": "point", "jp": "いっしょに サッカーを みに いきませんか。", "ro": "Issho ni sakkā o mi ni ikimasen ka.", "t": "Wollen wir nicht zusammen Fußball schauen gehen? いっしょに heißt „zusammen“."},
+    {"s": "sakai", "p": "shout", "t": "Das klingt freundlicher als ein Befehl. Sogar bei mir."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was heißt いっしょに?", "options": ["allein", "zusammen", "schnell", "morgen"], "answer": 1},
+    {"type": "choice", "q": "Mit welcher Endung lädt man höflich ein?", "options": ["～ません", "～ませんか", "～ました", "～です"], "answer": 1}
+   ],
+   "after": [
+    {"s": "sakai", "p": "arms", "t": "Gut. Ren in Taishō bringt dir bei, wie man auf so eine Einladung antwortet."}
+   ],
+   "vocab": [{"jp": "いっしょに", "ro": "issho ni", "de": "zusammen"}],
+   "hint": "Ren im Stadtteil Taishō."
+  },
+  "18": {
+   "lines": [
+    {"s": "ren", "p": "relaxed", "t": "Jemand lädt dich ein? Dann sag ja – mit Schwung!"},
+    {"s": "ren", "p": "guitar", "jp": "ええ、いきましょう！", "ro": "Ē, ikimashō!", "t": "Ja, lass uns gehen! ～ましょう heißt „lass uns …“."},
+    {"s": "ren", "p": "pour", "jp": "いっしょに たべましょう。", "ro": "Issho ni tabemashō.", "t": "Lass uns zusammen essen."}
+   ],
+   "tasks": [
+    {"type": "build", "q": "Antworte: „Ja, lass uns gehen!“", "tiles": [{"jp": "ええ、", "ro": "ē,"}, {"jp": "いきましょう", "ro": "ikimashō"}, {"jp": "いきません", "ro": "ikimasen"}, {"jp": "いいえ、", "ro": "iie,"}], "answer": ["ええ、", "いきましょう"]},
+    {"type": "build", "q": "Bilde: „Lass uns zusammen essen.“", "tiles": [{"jp": "いっしょに", "ro": "issho ni"}, {"jp": "たべましょう", "ro": "tabemashō"}, {"jp": "たべます", "ro": "tabemasu"}, {"jp": "を", "ro": "o"}], "answer": ["いっしょに", "たべましょう"]}
+   ],
+   "after": [
+    {"s": "ren", "p": "relaxed", "t": "Perfekt. Dann gehen wir!"},
+    {"s": "ren", "p": "guitar", "t": "Die nächsten Sätze lernst du im alten Viertel unter dem eisernen Turm im Süden."}
+   ],
+   "vocab": [{"jp": "～ましょう", "ro": "-mashō", "de": "lass uns …"}],
+   "hint": "Das alte Viertel unter dem eisernen Turm im Süden."
+  }
+ }
+}

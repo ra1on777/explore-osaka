@@ -303,3 +303,41 @@ export async function photo(task: Extract<Task, { type: 'photo' }>): Promise<num
   showOverlay(null);
   return errors;
 }
+
+// ---------- Geheime Zutat: Hinweise kosten – jeder Fehltipp deckt den nächsten Geschmackshinweis auf ----------
+export async function ingredient(task: Extract<Task, { type: 'ingredient' }>): Promise<number> {
+  let errors = 0;
+  let shown = 1;
+  showOverlay(h('div', { class: 'closeup' }, h('div', { class: 'closeup-card' },
+    h('div', { class: 'closeup-head' }, task.dish), svg(closeups[task.art ?? 'dish'] ?? closeups.dish, 'closeup-art'))));
+  const clues = h('ol', { class: 'clues' });
+  const draw = () => clues.replaceChildren(...task.clues.slice(0, shown).map((c) => h('li', { html: rich(c) })));
+  draw();
+  const grid = h('div', { class: 'options' });
+  const { el, fb } = frame(task.q, h('div', { class: 'small' }, t('task.ingredient.hint')), clues, grid);
+  await new Promise<void>((resolve) => {
+    task.options.forEach((o, i) => {
+      const b = h('button', { class: 'opt', 'data-key': String(i + 1) }, h('span', { class: 'k' }, String(i + 1)), h('span', { html: rich(o) }));
+      b.onclick = () => {
+        if (b.disabled) return;
+        if (i === task.answer) {
+          b.classList.add('right');
+          grid.querySelectorAll('button').forEach((x) => (x.disabled = true));
+          shown = task.clues.length; draw();
+          rightFx(fb, task.fb ? `${t('task.right')} ${task.fb}` : t('task.right'));
+          resolve();
+        } else {
+          errors++;
+          b.classList.add('wrong');
+          b.disabled = true;
+          if (shown < task.clues.length) { shown++; draw(); }
+          wrongFx(el, fb, t('task.ingredient.more'));
+        }
+      };
+      grid.append(b);
+    });
+  });
+  await continueBtn(el);
+  showOverlay(null);
+  return errors;
+}

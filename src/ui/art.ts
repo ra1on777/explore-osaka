@@ -52,6 +52,18 @@ export const icons: Record<string, string> = {
   cake: I('<path d="M4 20h16v-7H4z"/><path d="M4 13c2-2 4-2 6 0s4 2 6 0 3-1 4 0M12 9V6"/><path d="M12 6c-1-1 0-3 0-3s1 2 0 3z"/>'),
   pepper: I('<path d="M15 6c-6 0-10 6-10 13 5-2 12-6 12-12z"/><path d="M15 6c1-2 3-3 4-3"/>'),
   coffee: I('<path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 11h2a2 2 0 0 1 0 4h-2M8 3c0 2 2 2 2 4M12 3c0 2 2 2 2 4"/>'),
+  eat: I('<path d="M5 3v8a3 3 0 0 0 6 0V3M8 3v18"/><path d="M17 3c-2 2-2 6 0 8v10"/>'),
+  drink: I('<path d="M6 3h12l-2 18H8z"/><path d="M7 8h10"/>'),
+  cart: I('<path d="M3 4h3l3 11h9l3-8H7"/><circle cx="10" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/>'),
+  wallet: I('<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 14h2"/>'),
+  front: I('<circle cx="12" cy="7" r="3"/><path d="M12 10v6M8 21l4-5 4 5"/><path d="M12 2v0M4 13h4"/><path d="M5 11l-2 2 2 2"/>'),
+  behind: I('<rect x="4" y="4" width="10" height="16" rx="1"/><circle cx="18" cy="9" r="2"/><path d="M18 11v5M16 20l2-4 2 4"/>'),
+  beside: I('<rect x="3" y="8" width="8" height="12" rx="1"/><circle cx="17" cy="9" r="2"/><path d="M17 11v5M15 20l2-4 2 4"/><path d="M12 14h2"/>'),
+  near: I('<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" stroke-dasharray="2 3"/>'),
+  play: I('<circle cx="12" cy="12" r="9"/><path d="M12 3l3 5-3 4-3-4zM3.5 10l5.5 2-1 5M20.5 10l-5.5 2 1 5"/>'),
+  eye: I('<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'),
+  ear: I('<path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1"/><rect x="17" y="14" width="4" height="7" rx="1"/>'),
+  run: I('<circle cx="15" cy="4" r="2"/><path d="M7 21l4-6 3 2 2 5M10 10l3-3 3 3 3 1M13 7l-2 6"/>'),
   gear: I('<circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>'),
 };
 
@@ -297,6 +309,115 @@ Object.assign(closeups, {
     <rect x="178" y="26" width="12" height="98" rx="5" fill="#7a3b22" stroke="${O}" stroke-width="2"/>
     ${[0,1,2,3,4,5,6,7].map((i) => `<path d="M${160 - i * 17} 42v64" stroke="#3b3a36" stroke-width="3" stroke-dasharray="6 4"/>`).join('')}
     <rect x="34" y="88" width="18" height="18" fill="none" stroke="${RED}" stroke-width="3"/>`),
+  liontooth: C(`
+    <rect width="200" height="150" fill="#7d9585"/>
+    <path d="M0 0h200v60c-30 10-70 10-100 0S30 50 0 60z" fill="#8fa898"/>
+    <circle cx="60" cy="30" r="16" fill="${GOLD}" stroke="${O}" stroke-width="3"/><circle cx="60" cy="30" r="6" fill="${O}"/>
+    <circle cx="140" cy="30" r="16" fill="${GOLD}" stroke="${O}" stroke-width="3"/><circle cx="140" cy="30" r="6" fill="${O}"/>
+    <rect x="20" y="78" width="160" height="72" fill="#2a2420"/>
+    <path d="M30 76l14 44 14-44zM142 76l14 44 14-44z" fill="#e2c46a" stroke="${O}" stroke-width="3"/>
+    <path d="M70 76l8 22 8-22zM114 76l8 22 8-22z" fill="#e2c46a" stroke="${O}" stroke-width="2"/>`),
+  tsuna: C(`
+    <rect width="200" height="150" fill="#2a2420"/>
+    <path d="M0 40c40 18 160 18 200 0" stroke="#d9c48a" stroke-width="16" fill="none"/>
+    <path d="M0 40c40 18 160 18 200 0" stroke="#a88d4c" stroke-width="3" stroke-dasharray="10 8" fill="none"/>
+    ${[40, 80, 120, 160].map((x) => `<path d="M${x} 52l-6 12 12 8-12 8 12 8" stroke="#fff" stroke-width="5" fill="none"/>`).join('')}
+    <path d="M20 120c50-12 110-12 160 0" stroke="#d9c48a" stroke-width="10" fill="none"/>
+    <circle cx="30" cy="120" r="8" fill="${RED}"/><circle cx="170" cy="120" r="8" fill="${BLUE}"/>`),
+  flyer: C(`
+    <rect x="45" y="8" width="110" height="134" fill="#1f1b2e" stroke="${O}" stroke-width="3"/>
+    <text x="100" y="34" font-size="15" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${GOLD}">LIVE</text>
+    <text x="100" y="52" font-size="12" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="#fff">ライブ</text>
+    <path d="M70 110l20-40 20 40M84 96h12" stroke="#ff6b8b" stroke-width="5" fill="none"/>
+    <path d="M118 70v40l18-8" stroke="#62d2ff" stroke-width="5" fill="none"/>
+    <text x="100" y="132" font-size="10" text-anchor="middle" font-family="Manrope, sans-serif" fill="#fff">NANIWA DOCKS · SA 19:00</text>`),
+  shisa: C(`
+    <rect width="200" height="150" fill="#d7c9a8"/>
+    <rect x="40" y="110" width="120" height="30" fill="#b35a3a" stroke="${O}" stroke-width="3"/>
+    <path d="M70 110c-10-30 0-70 30-74 30 4 40 44 30 74z" fill="#c9783e" stroke="${O}" stroke-width="3"/>
+    <path d="M66 50c-6-14 2-24 12-22M134 50c6-14-2-24-12-22" stroke="${O}" stroke-width="4" fill="none"/>
+    <circle cx="88" cy="60" r="7" fill="#fff" stroke="${O}" stroke-width="2"/><circle cx="112" cy="60" r="7" fill="#fff" stroke="${O}" stroke-width="2"/>
+    <circle cx="88" cy="60" r="3" fill="${O}"/><circle cx="112" cy="60" r="3" fill="${O}"/>
+    <path d="M82 80h36c-4 14-32 14-36 0z" fill="${RED}" stroke="${O}" stroke-width="2"/><path d="M88 80v6M112 80v6" stroke="#fff" stroke-width="3"/>`),
+  cartridge: C(`
+    <rect width="200" height="150" fill="#b48a58"/>
+    ${[0, 1, 2].map((i) => `<rect x="${24 + i * 54}" y="${46 + (i % 2) * 6}" width="46" height="62" rx="4" fill="#9a9a9a" stroke="${O}" stroke-width="2"/><rect x="${30 + i * 54}" y="${54 + (i % 2) * 6}" width="34" height="26" fill="${['#e85a5a', '#5a8ae8', '#e8c05a'][i]}"/>`).join('')}
+    <text x="100" y="134" font-size="12" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${O}">BARGAIN ¥500</text>`),
+  tshirt: C(`
+    <rect width="200" height="150" fill="#6b4a32"/>
+    <path d="M60 30l-30 20 14 22 16-8v66h80V64l16 8 14-22-30-20c-8 10-22 14-40 14s-32-4-40-14z" fill="#f2d14a" stroke="${O}" stroke-width="3"/>
+    <circle cx="100" cy="82" r="18" fill="#fff" stroke="${O}" stroke-width="2"/>
+    <circle cx="94" cy="80" r="3" fill="${O}"/><circle cx="106" cy="80" r="3" fill="${O}"/><path d="M93 89c4 4 10 4 14 0" stroke="${O}" stroke-width="2" fill="none"/>
+    <text x="100" y="120" font-size="9" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${O}">1994 TOUR</text>`),
+  modelkit: C(`
+    <rect width="200" height="150" fill="#cfe0ea"/>
+    <rect x="30" y="30" width="140" height="90" fill="#fff" stroke="${O}" stroke-width="3"/>
+    <rect x="30" y="30" width="140" height="22" fill="${RED}"/>
+    <text x="100" y="46" font-size="12" text-anchor="middle" font-family="Fredoka, sans-serif" fill="#fff">1/100 · 1982</text>
+    <path d="M80 110l10-40h20l10 40M90 70l-14-10M110 70l14-10M95 58h10v12H95z" stroke="${BLUE}" stroke-width="6" fill="none"/>`),
+  capshelf: C(`
+    <rect width="200" height="150" fill="#7a5235"/>
+    <path d="M10 70h180M10 120h180" stroke="#4d3220" stroke-width="6"/>
+    <path d="M30 66c0-20 40-20 40 0z" fill="#3f8c6b" stroke="${O}" stroke-width="2"/><path d="M66 66h18" stroke="${O}" stroke-width="5"/>
+    <path d="M110 66c0-22 44-22 44 0h-44z" fill="#d35f3a" stroke="${O}" stroke-width="2"/>
+    <path d="M40 116V88h40v28zM40 88c4-10 36-10 40 0" fill="#e9dfc7" stroke="${O}" stroke-width="2"/>
+    <text x="60" y="108" font-size="10" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${O}">BAG</text>
+    <text x="140" y="108" font-size="14" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${GOLD}">¥300</text>`),
+  charm: C(`
+    <rect width="200" height="150" fill="#efe3c8"/>
+    <path d="M100 18v22" stroke="${O}" stroke-width="3"/><circle cx="100" cy="16" r="6" fill="none" stroke="${RED}" stroke-width="3"/>
+    <rect x="70" y="40" width="60" height="90" rx="10" fill="${RED}" stroke="${O}" stroke-width="3"/>
+    <rect x="80" y="54" width="40" height="62" fill="#f6e3a6"/>
+    <text x="100" y="80" font-size="14" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">お</text>
+    <text x="100" y="102" font-size="14" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">まもり</text>`),
+  momiji: C(`
+    <rect width="200" height="150" fill="#3e6b4a"/>
+    ${[[60, 60, 1.2, '#d6402b'], [130, 50, 1, '#e8862e'], [100, 105, 1.4, '#c8331f']].map(([x, y, k, c]) => `<path transform="translate(${x} ${y}) scale(${k})" d="M0 -30l6 18 18-10-8 18 20 2-18 10 6 14-16-8-8 16-8-16-16 8 6-14-18-10 20-2-8-18 18 10z" fill="${c}" stroke="${O}" stroke-width="1.5"/>`).join('')}`),
+  filterpaper: C(`
+    <rect width="200" height="150" fill="#e9e4da"/>
+    ${[0, 1, 2].map((i) => `<path d="M${50 + i * 8} ${40 + i * 6}l50 0 -10 60h-30z" fill="#fffdf6" stroke="${O}" stroke-width="2"/>`).join('')}
+    <text x="100" y="134" font-size="11" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${O}">FILTER · 1–2 CUPS</text>`),
+  katsuobushi: C(`
+    <rect width="200" height="150" fill="#d9c7a3"/>
+    <path d="M40 90c20-40 100-40 120 0-20 20-100 20-120 0z" fill="#6b3f1f" stroke="${O}" stroke-width="3"/>
+    ${[0, 1, 2, 3, 4, 5].map((i) => `<path d="M${50 + i * 18} 120c6-10 14-10 18 0" fill="#f1c99a" stroke="#b88552" stroke-width="2"/>`).join('')}
+    <text x="100" y="40" font-size="13" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">かつおぶし</text>`),
+  artbook: C(`
+    <rect width="200" height="150" fill="#2a2c44"/>
+    <rect x="50" y="20" width="100" height="112" fill="#111" stroke="${GOLD}" stroke-width="3"/>
+    <circle cx="100" cy="66" r="26" fill="none" stroke="#62d2ff" stroke-width="4"/>
+    <path d="M74 66h52M100 40v52" stroke="#62d2ff" stroke-width="2"/>
+    <text x="100" y="118" font-size="11" text-anchor="middle" font-family="Fredoka, sans-serif" fill="${GOLD}">SPACE · ARTBOOK</text>`),
+  program: C(`
+    <rect width="200" height="150" fill="#3b1f1a"/>
+    <rect x="50" y="18" width="100" height="116" fill="#f3ead2" stroke="${O}" stroke-width="3"/>
+    <text x="100" y="44" font-size="14" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${RED}">ぶんらく</text>
+    <circle cx="100" cy="78" r="12" fill="#f7efe0" stroke="${O}" stroke-width="2"/>
+    <path d="M70 120c4-24 56-24 60 0" fill="#7a2d2d" stroke="${O}" stroke-width="2"/>
+    <path d="M60 92c10-8 14-8 18 0M140 92c-10-8-14-8-18 0" stroke="#222" stroke-width="6"/>`),
+  shoes: C(`
+    <rect width="200" height="150" fill="#cfd9cc"/>
+    <path d="M30 100c0-24 20-34 40-30l30 14c20 4 40 8 50 16v14H30z" fill="#1F4B8F" stroke="${O}" stroke-width="3"/>
+    <path d="M30 114h120" stroke="${O}" stroke-width="3"/>
+    ${[0, 1, 2, 3, 4, 5, 6].map((i) => `<path d="M${40 + i * 16} 114v8" stroke="${O}" stroke-width="4"/>`).join('')}
+    <path d="M60 82l40 18" stroke="#fff" stroke-width="4"/>`),
+  manga: C(`
+    <rect width="200" height="150" fill="#0f3550"/>
+    <rect x="55" y="16" width="90" height="120" fill="#fff" stroke="${O}" stroke-width="3"/>
+    <path d="M60 30h80v40H60zM60 76h38v54H60zM104 76h36v54h-36z" fill="none" stroke="${O}" stroke-width="2"/>
+    <path d="M70 52c20-12 40-12 60 0-20 12-40 12-60 0z" fill="#8aa7c2" stroke="${O}" stroke-width="2"/>
+    <text x="100" y="146" font-size="9" text-anchor="middle" font-family="Fredoka, sans-serif" fill="#fff">KINDAI MAGURO</text>`),
+  wagashi: C(`
+    <rect width="200" height="150" fill="#e9dcc4"/>
+    <ellipse cx="100" cy="100" rx="70" ry="22" fill="#fff" stroke="${O}" stroke-width="2"/>
+    <path d="M64 96c0-26 20-36 36-36s36 10 36 36z" fill="#f2b8c6" stroke="${O}" stroke-width="2"/>
+    <path d="M86 70c6 6 22 6 28 0" stroke="#3e6b4a" stroke-width="4" fill="none"/>
+    <text x="100" y="36" font-size="13" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">わがし</text>`),
+  dish: C(`
+    <rect width="200" height="150" fill="#3b2a20"/>
+    <ellipse cx="100" cy="100" rx="78" ry="26" fill="#f3ead2" stroke="${O}" stroke-width="3"/>
+    ${[[70, 88], [100, 82], [130, 88], [85, 104], [115, 104]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="15" fill="#c98a3a" stroke="${O}" stroke-width="2"/><path d="M${x - 9} ${y - 4}c6 -6 12 -6 18 0" stroke="#5a2a14" stroke-width="3" fill="none"/>`).join('')}
+    <path d="M60 60c4-12 10-12 14 0M120 54c4-12 10-12 14 0" stroke="#e8e2d0" stroke-width="2" fill="none" opacity=".7"/>`),
   gateplaque: C(`
     <rect width="200" height="150" fill="#a5532d"/>
     ${[0, 1, 2, 3, 4, 5, 6].map((i) => `<path d="M0 ${i * 22}h200" stroke="#8c4122" stroke-width="2"/>`).join('')}
@@ -339,6 +460,15 @@ export const quizMaps: Record<string, string> = {
     <path d="M10 108C50 92 80 90 120 84s50-20 70-26" stroke="#1F4B8F" stroke-width="6" fill="none"/>
     <path d="M142 80c-4-20-6-40-2-64" stroke="#3A72C8" stroke-width="5" fill="none" stroke-dasharray="1 0"/>
     <text x="100" y="140" font-size="8" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Ōsaka Monorail · Hauptlinie (dunkel) · Saito-Linie (hell)</text>`),
+  bay: wrap('0 0 200 150" preserveAspectRatio="none', `
+    <rect width="200" height="150" fill="#e8e2d0"/>
+    <path d="M0 0h70c-6 30-4 70 8 150H0z" fill="#8fb8cf"/>
+    <path d="M200 26C140 30 100 30 66 34" stroke="#5f97c9" stroke-width="9" fill="none"/>
+    <path d="M200 74C150 70 110 72 72 76" stroke="#5f97c9" stroke-width="5" fill="none"/>
+    <path d="M200 118C150 112 110 116 76 122" stroke="#5f97c9" stroke-width="5" fill="none"/>
+    <path d="M30 60h26v18H30zM24 96h30v22H24z" fill="#cfc39f" stroke="${O}" stroke-width="1"/>
+    <text x="196" y="146" font-size="7" text-anchor="end" fill="${O}" font-family="Manrope, sans-serif">Innenstadt →</text>
+    <text x="6" y="146" font-size="7" fill="${O}" font-family="Manrope, sans-serif">Bucht von Ōsaka</text>`),
   umeda: wrap('0 0 200 150" preserveAspectRatio="none', `
     <rect width="200" height="150" fill="#3b3428"/>
     <path d="M100 10v130M20 75h160M50 30l100 90M150 30L50 120" stroke="#d7c9a8" stroke-width="12" stroke-linecap="square"/>
@@ -379,6 +509,22 @@ export const mapBaseR3 = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <text x="70" y="300" font-size="20" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif" transform="rotate(-80 70 300)">Uemachi-Hochebene</text>
   <text x="570" y="510" font-size="18" text-anchor="middle" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Burggraben</text>
   <text x="20" y="40" font-size="20" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">↖ Kita / Nakanoshima</text>`);
+
+export const mapBaseR4 = wrap('0 0 1000 820" preserveAspectRatio="none', `
+  <rect width="1000" height="820" fill="#12213F"/>
+  <path d="M0 0h130c-20 200-10 500 40 820H0z" fill="#1c3b5e"/>
+  <path d="M130 400C260 380 330 340 420 300" stroke="#2E5BA6" stroke-width="22" fill="none" opacity=".85"/>
+  <path d="M420 300c-20 120-70 260-140 520" stroke="#2E5BA6" stroke-width="18" fill="none" opacity=".75"/>
+  <path d="M420 300C560 300 700 300 790 296" stroke="#2E5BA6" stroke-width="12" fill="none" opacity=".8"/>
+  <path d="M600 0v820" stroke="#5a6570" stroke-width="10" stroke-dasharray="26 10" opacity=".6"/>
+  <path d="M820 200H1000" stroke="#5a6570" stroke-width="8" stroke-dasharray="20 10" opacity=".55"/>
+  <text x="30" y="200" font-size="22" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif" transform="rotate(-84 30 200)">Bucht von Ōsaka</text>
+  <text x="200" y="365" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Aji-gawa</text>
+  <text x="300" y="720" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Kizu-gawa</text>
+  <text x="690" y="286" font-size="16" text-anchor="middle" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif">Dōtonbori-Kanal</text>
+  <text x="608" y="800" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Midō-suji ↕</text>
+  <text x="985" y="180" font-size="18" text-anchor="end" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Higashi-Ōsaka →</text>
+  <text x="620" y="30" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">↑ Burg / Kita</text>`);
 
 export const pickupIcon = wrap('0 0 40 48', `
   <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>

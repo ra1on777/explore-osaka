@@ -10,7 +10,11 @@ import deLang from './content/de/stages_lang.json';
 import deR2Story from './content/de/stages_r2_story.json';
 import deR2Lang from './content/de/stages_r2_lang.json';
 import deR3 from './content/de/stages_r3.json';
-import type { StageContent } from './types';
+import deIntro from './content/de/intro.json';
+import deR4a from './content/de/stages_r4_story_a.json';
+import deR4b from './content/de/stages_r4_story_b.json';
+import deR4l from './content/de/stages_r4_lang.json';
+import type { Line, StageContent } from './types';
 
 export interface LangPack {
   ui: Record<string, string>;
@@ -18,6 +22,7 @@ export interface LangPack {
   npcs: Record<string, string>;
   strands: Record<string, string>;
   stages: Record<string, Record<string, StageContent>>;
+  intro: { kenji: Line[] };
 }
 
 /** Inhalte sind pro Region in Dateien aufgeteilt; Stränge werden etappenweise zusammengeführt. */
@@ -33,7 +38,8 @@ const packs: Record<string, LangPack> = {
     world: deWorld,
     npcs: deNpcs,
     strands: deStrands,
-    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3),
+    intro: deIntro as { kenji: Line[] },
+    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3, deR4a, deR4b, deR4l),
   },
 };
 

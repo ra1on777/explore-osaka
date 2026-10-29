@@ -9,7 +9,7 @@ import { h, shuffle, svg, wait } from './dom';
 import { mount, toast } from './layout';
 import { hot, showOverlay } from './scene';
 import { jpBlock, matches, rich } from './text';
-import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo } from './tasks2';
+import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo, ingredient } from './tasks2';
 
 type El = HTMLElement;
 
@@ -31,6 +31,7 @@ export async function runTask(task: Task): Promise<number> {
     case 'espresso': return espresso(task);
     case 'sort': return sortTask(task);
     case 'photo': return photo(task);
+    case 'ingredient': return ingredient(task);
     case 'kanjigrid': return kanjigrid(task);
   }
 }

@@ -40,6 +40,7 @@ export type Task =
   | { type: 'espresso'; q: string; start: { grind: number; temp: number; tamp: number };
       ok: { grind: [number, number]; temp: [number, number]; tamp: [number, number] } }
   | { type: 'sort'; q: string; items: { label: string; sub?: string }[] }
+  | { type: 'ingredient'; q: string; dish: string; art?: string; clues: string[]; options: string[]; answer: number; fb?: string }
   | { type: 'photo'; q: string; target: { x: number; y: number }; zoom: [number, number]; title: string; text: string }
   | { type: 'kanjigrid'; q: string; grid: string[]; prompts: { de: string; answer: string }[] };
 

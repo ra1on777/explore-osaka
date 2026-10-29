@@ -32,7 +32,7 @@ Still korrigiert (wie vereinbart) und hier dokumentiert.
 - Geographie 7: Schätzfrage zur Länge des Yodo-gawa (rund 75 km) statt „fluviale Prozesse“ allgemein.
 - Wahrzeichen 2: Der berühmte Läufer an der Ebisu-Brücke wird im Hinweis nur beschrieben, ohne Markennamen.
 
-## Zur Faktenprüfung (Region 3)
+## Faktenprüfung Region 3 (vom Nutzer bestätigt, Präzisierungen eingearbeitet)
 - Uemachi-Hochebene rund 12 km lang (Burg bis Sumiyoshi); vor rund 6000 Jahren Meeresbuchten im Westen und Osten (Kawachi).
 - Naniwa-Palast (7. Jh.) direkt neben dem Museum of History.
 - Burgbau ab 1583 durch Hideyoshi auf dem Gelände des Ishiyama Hongan-ji; Mauersteine teils über 100 Tonnen.
@@ -44,11 +44,44 @@ Still korrigiert (wie vereinbart) und hier dokumentiert.
 - „Sanpō yoshi“ als Leitsatz der Ōmi-Kaufleute.
 - Waagerechte Schilder vor dem Krieg oft von rechts nach links; ゑびす als alte Schreibung.
 
+## Region 4
+- Kuidaore 3: Start (Markt 43) und Fetch-Ziel (Gasse 38) bleiben wie im Bundle; erzählt wird es so, dass Gen am Markt einkauft und die Bonitoflocken an seinem Stand in der Gasse vergessen hat.
+- Kanji 12: 肉 (nicht N5) entfällt; Etappe behandelt 食 飲 魚 (+ 水). Kanji 14: 店 und 物 (nicht N5) ersetzt durch 何 円 千 neben 買.
+- Wortschatz 12–16, Konversation 11–18, Hiragana 13–16, Katakana 10–18 wie im Bundle; nur Formen auf N5-Niveau (ません か / ましょう, ～で, ～へ, ほしい).
+- Romance 9 und 16: Die Fragen beziehen sich auf das, was die jeweilige Partnerin erzählt (Aoi bzw. Maya), daher pro Route eigene Aufgaben.
+- Romance 11: Das „Missverständnis über kulturelle Direktheit“ ist für Aoi ein vor anderen ausgesprochener Witz, für Maya ein überhörtes indirektes Nein („chotto …“) – beides zum Thema kūki o yomu.
+- STUDENT_KINDAI_DEV heißt im Spiel „Kōta“.
+- Bahnhöfe 8: Statt Passagierzahlen (keine verlässliche Zahl) Schätzfrage zur Streckenlänge Namba – Flughafen Kansai.
+- Subkultur 7: Statt Messe-Besucherzahlen die Zuschauerkapazität des Kyocera Dome beim Baseball.
+- Romance 19: Schätzfrage zur Umlaufzeit des Riesenrads (rund 15 Minuten).
+- Geographie 8: Kartenquiz zur Bucht (Tempozan, Yodo-Mündung, Sturmflut-Tor, künstliche Insel).
+- Wahrzeichen 3 / Hinweise: Die Läufer-Reklame und das Riesenrad werden ohne Markennamen beschrieben.
+
+## Zur Faktenprüfung (Region 4)
+- Kuidaore-Sprichwort (Kyōto Kleidung, Ōsaka Essen); Takoyaki in den 1930ern in Ōsaka erfunden; Dashi aus Kombu (aus Hokkaidō) und Bonito.
+- Kuromon-Markt seit fast 200 Jahren, Name nach dem schwarzen Tor eines Tempels.
+- Amerikamura: Name von Läden mit US-Kleidung in den 1970ern; Sankaku-kōen.
+- Live Houses mit Pflichtgetränk; Kanpai-Regel, Oshaku, Otōshi/Tsukidashi als Sitzgebühr.
+- Ebisu-bashi = „Hikkake-bashi“; Fans springen 1985 in den Kanal.
+- Den Den Town von „denki“; Karaoke in Kansai erfunden (Inoue Daisuke, Kōbe, Anfang der 1970er).
+- Taishō: Zuwanderung aus Okinawa ab den 1920ern, rund ein Viertel der Bewohner mit Wurzeln in Okinawa; Shīsā paarweise, ein Maul offen, eins geschlossen; Sanshin; Sātā andagī.
+- Namba Yasaka: Löwenkopf rund 12 m hoch; Tsunahiki-Ritual (Bezug zu Susanoo und Yamata no Orochi), im Januar.
+- Manzai: Boke und Tsukkomi; „Tenka no daidokoro“ als Reishandelszentrum der Edo-Zeit.
+- Kyocera Dome 1997 eröffnet, rund 36.000 Plätze beim Baseball.
+- Kindai Academic Theater mit über 20.000 Comics; vollständige Zucht des Pazifischen Blauflossen-Thunfischs 2002 nach über 30 Jahren Forschung.
+- Tempozan 1831 aus Baggersand des Aji-gawa, 4,53 m; Sturmflut-Bogentore 1970; Weltausstellung 2025 auf einer künstlichen Insel; Riesenrad über 100 m, Umlauf rund 15 min.
+- Namba Parks auf dem Gelände eines früheren Baseballstadions; Nankai-Strecke Namba – Kansai-Flughafen gut 40 km, Express gut eine halbe Stunde.
+- Oda Sakunosuke, „Meoto Zenzai“ (1940); Lokal gleichen Namens in Minami.
+- Bunraku: drei Spieler pro Hauptpuppe; UNESCO-Kulturerbe.
+- Ōsaka-jō Hall 1983 eröffnet (400 Jahre nach Baubeginn der Burg).
+- Panna (Straßenfußball aus den Niederlanden); Kunstrasenschuhe mit Noppen.
+- Roter Faden am kleinen Finger (akai ito), En-musubi.
+- Concept-Café-Regeln (Fotos nur offiziell, Zeitlimit).
+
 ## Noch zu korrigieren (außerhalb der Demo, betrifft spätere Regionen)
 - „Dende Town“ → „Den Den Town“ (Café-Kultur, Etappe 6).
 - „Revanchmatch“ → „Revanchematch“ (Fußball, Etappe 12).
 - „Makerte ya!“ → „Makete ya!“ (Shopping, Etappe 4).
-- Food, Etappe 3: Oktopus wird in der Garküche (38) geholt statt am Markt (43) – Start und Ziel scheinen vertauscht.
 
 ## Zur Faktenprüfung (Region 1)
 Nach bestem Wissen geschrieben; bitte bei Gelegenheit gegenprüfen:
