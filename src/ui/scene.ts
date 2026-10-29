@@ -49,9 +49,10 @@ function npcEl(screenId: string, p: Presence, onNpc: (p: Presence) => void) {
   const slot = SCREENS[screenId]?.slots?.[p.slot] ?? SLOT_DEFAULTS[p.slot];
   const src = imgChar(p.npcId);
   const ph = NPCS[p.npcId]?.placeholder;
-  const fig = src
-    ? h('img', { class: 'fig', src, alt: npcName(p.npcId), draggable: 'false' })
-    : svg(placeholders[ph ?? 'person'], `fig ph-${ph ?? 'person'}`);
+  const fallback = () => svg(placeholders[ph ?? 'person'], `fig ph-${ph ?? 'person'}`);
+  const fig = src ? h('img', { class: 'fig', src, alt: '', draggable: 'false' }) : fallback();
+  // Fehlt eine Sprite-Datei, erscheint die Silhouette statt eines kaputten Bildsymbols.
+  if (src) (fig as HTMLImageElement).onerror = () => fig.replaceWith(fallback());
   const el = h('button', {
     class: `npc${ph === 'cat' ? ' small' : ''}`,
     'data-npc': p.npcId,

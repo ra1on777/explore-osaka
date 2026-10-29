@@ -18,7 +18,12 @@ export function speakerId(s: string): string | null {
 
 export function portrait(npcId: string, pose?: string): HTMLElement {
   const src = imgChar(npcId, pose);
-  if (src) return h('div', { class: 'portrait' }, h('img', { src, alt: '' }));
+  if (src) {
+    const img = h('img', { src, alt: '' }) as HTMLImageElement;
+    const box = h('div', { class: 'portrait' }, img);
+    img.onerror = () => { box.className = 'portrait ph'; img.replaceWith(svg(placeholders[NPCS[npcId]?.placeholder ?? 'person'])); };
+    return box;
+  }
   return h('div', { class: 'portrait ph' }, svg(placeholders[NPCS[npcId]?.placeholder ?? 'person']));
 }
 
