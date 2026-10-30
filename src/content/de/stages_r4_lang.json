@@ -426,7 +426,7 @@
     {"s": "yuki", "p": "flustered", "t": "Aber mein Geldbeutel sagt: いいえ. Nein."}
    ],
    "tasks": [
-    {"type": "choice", "q": "Was möchte Yuki?", "options": ["Neue Schuhe", "Neue Kleidung", "Ein neues Handy", "Essen"], "answer": 1},
+    {"type": "choice", "q": "Was möchte Yuki?", "options": ["Neue Schuhe", "Neue Kleidung", "Ein neues Handy", "Neue Manga"], "answer": 1},
     {"type": "choice", "q": "Welches Teilchen steht vor ほしいです?", "options": [{"jp": "を"}, {"jp": "で"}, {"jp": "が"}, {"jp": "に"}], "answer": 2}
    ],
    "after": [
@@ -458,7 +458,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Welches Teilchen steht laut Aoi hinter dem Ziel?", "options": [{"jp": "で"}, {"jp": "へ"}, {"jp": "を"}, {"jp": "が"}], "answer": 1},
-    {"type": "choice", "q": "Was bedeutet でんしゃで いきます?", "options": ["Ich fahre mit dem Zug.", "Ich kaufe einen Zug.", "Ich warte auf den Zug.", "Ich mag Züge."], "answer": 0}
+    {"type": "choice", "q": "Was bedeutet でんしゃで いきます?", "options": ["Ich fahre mit dem Zug.", "Ich fahre zum Bahnhof.", "Ich warte auf den Zug.", "Ich steige aus dem Zug aus."], "answer": 0}
    ],
    "after": [
     {"s": "aoi", "p": "cheer", "t": "Genau! Meister Gen auf dem Kuromon-Markt zeigt dir, wie man höflich bestellt."}

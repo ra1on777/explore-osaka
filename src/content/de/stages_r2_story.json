@@ -656,8 +656,8 @@
      "options": [
       "Karaoke singen",
       "Okonomiyaki essen",
-      "Joggen",
-      "Zeitung lesen"
+      "Ramen essen gehen",
+      "Noch eine Stunde weiterlernen"
      ],
      "answer": 1
     }
@@ -825,8 +825,8 @@
      "options": [
       "Du nimmst selbst den ruhigen Platz",
       "Du bietest den ruhigen Platz weiter weg von der Tür an",
-      "Ihr setzt euch beide auf eine Seite",
-      "Ihr bleibt lieber stehen"
+      "Ihr setzt euch nebeneinander auf die Fensterseite",
+      "Du fragst, ob ihr lieber an die Theke geht"
      ],
      "answer": 1,
      "explain": "Der Platz weit weg vom Eingang heißt kamiza – der Ehrenplatz. Den bietet man dem Gast an."
@@ -1045,7 +1045,7 @@
       "10 Prozent",
       "Aufrunden auf den nächsten Tausender",
       "Gar keins – das ist hier nicht üblich",
-      "Einen Schein unter dem Teller"
+      "Das Wechselgeld liegen lassen"
      ],
      "answer": 2,
      "explain": "In Japan gibt man im Restaurant normalerweise kein Trinkgeld. Guter Service ist selbstverständlich."
@@ -1716,8 +1716,8 @@
      "options": [
       "Kaffee, dicker Toast und ein gekochtes Ei",
       "Misosuppe und Reis",
-      "Ein großes Stück Torte",
-      "Nur ein Glas Wasser"
+      "Kaffee mit einem Stück Torte",
+      "Kaffee, Croissant und Joghurt"
      ],
      "answer": 0
     }

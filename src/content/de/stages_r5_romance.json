@@ -166,7 +166,7 @@
    },
    "tasks": [
     {"type": "choice", "q": "Wie sagt man „Lass uns uns wiedersehen“?", "options": [{"jp": "また あいましょう。", "ro": "Mata aimashō."}, {"jp": "さようなら。", "ro": "Sayōnara."}, {"jp": "いただきます。", "ro": "Itadakimasu."}, {"jp": "すみません。", "ro": "Sumimasen."}], "answer": 0},
-    {"type": "choice", "q": "Was bedeutet „Toki no Hiroba“?", "options": ["Platz der Zeit", "Bahnsteig 1", "Großer Markt", "Brücke der Liebe"], "answer": 0}
+    {"type": "choice", "q": "Was bedeutet „Toki no Hiroba“?", "options": ["Platz der Zeit", "Platz der Begegnung", "Platz der Reisenden", "Turm der Zeit"], "answer": 0}
    ],
    "hint": "Der Hügelpfad am Campus in Toyonaka – am Abend."
   },

@@ -34,10 +34,10 @@
      "type": "choice",
      "q": "Was kann man im Nagai-Stadion außer Fußball noch machen?",
      "options": [
-      "Skifahren",
+      "Baseball",
       "Leichtathletik",
-      "Schwimmen im Meer",
-      "Bergsteigen"
+      "Sumō",
+      "Eishockey"
      ],
      "answer": 1
     }
@@ -246,9 +246,9 @@
      "q": "Warum stellt ein Trainer auf drei Verteidiger um?",
      "options": [
       "Um mehr Spieler im Mittelfeld und Angriff zu haben",
-      "Weil ein Spieler müde ist",
-      "Aus Langeweile",
-      "Damit das Spiel endet"
+      "Weil ein Verteidiger eine Gelbe Karte hat",
+      "Um Zeit zu schinden",
+      "Weil es regnet"
      ],
      "answer": 0
     },
@@ -313,10 +313,10 @@
      "type": "choice",
      "q": "Was machen viele japanische Fans nach dem Spiel?",
      "options": [
-      "Sie werfen Becher aufs Feld",
+      "Sie warten auf Autogramme",
       "Sie räumen ihren Müll weg",
-      "Sie bleiben die Nacht im Stadion",
-      "Sie gehen ohne Schuhe"
+      "Sie singen noch eine Stunde weiter",
+      "Sie gehen sofort, das Personal räumt auf"
      ],
      "answer": 1
     },
@@ -471,10 +471,10 @@
      "type": "choice",
      "q": "Was ist eine Pflanzenfabrik?",
      "options": [
-      "Eine Fabrik für Plastikblumen",
+      "Ein Gewächshaus mit viel Sonnenlicht",
       "Gemüse wächst drinnen in Regalen unter Kunstlicht",
-      "Ein Gewächshaus für Bäume",
-      "Ein Blumenladen"
+      "Ein Feld mit Bewässerungsmaschinen",
+      "Eine Fabrik, die Gemüse in Dosen abfüllt"
      ],
      "answer": 1
     },
@@ -482,10 +482,10 @@
      "type": "choice",
      "q": "Was ist ein Vorteil davon?",
      "options": [
-      "Man braucht viel mehr Land",
+      "Es ist billiger als Gemüse vom Feld",
       "Man ist unabhängig vom Wetter",
-      "Es schmeckt nach Plastik",
-      "Man braucht keinen Strom"
+      "Das Gemüse wird größer",
+      "Man braucht keine Pflege"
      ],
      "answer": 1
     }
@@ -627,9 +627,9 @@
      "q": "Welches Wasser passt gut zu grünem Tee?",
      "options": [
       "Weiches Wasser mit wenig Mineralien",
-      "Salzwasser",
+      "Kalkreiches Leitungswasser",
       "Sehr hartes Wasser",
-      "Kohlensäure"
+      "Mineralwasser mit viel Magnesium"
      ],
      "answer": 0
     }
@@ -860,7 +860,7 @@
       "Der Espresso ist perfekt",
       "Er ist zu schnell durchgelaufen, zu wenig extrahiert",
       "Er ist verbrannt",
-      "Es ist Tee"
+      "Die Bohnen sind zu dunkel geröstet"
      ],
      "answer": 1
     }
@@ -961,9 +961,9 @@
      "q": "Wonach schmecken Bohnen aus Äthiopien oft?",
      "options": [
       "Nach Beeren und Blüten",
-      "Nach Rauch",
-      "Nach Salz",
-      "Nach Fisch"
+      "Nach Schokolade und Nüssen",
+      "Nach Erde und Gewürzen",
+      "Nach Karamell"
      ],
      "answer": 0
     },
@@ -973,8 +973,8 @@
      "options": [
       "Ein altes japanisches Café",
       "Ein Teehaus aus Okinawa",
-      "Eine Kaffeemaschine",
-      "Eine Bohnensorte"
+      "Ein modernes Kettencafé",
+      "Ein Café nur für Studenten"
      ],
      "answer": 0
     }
@@ -1256,9 +1256,9 @@
      "q": "Woraus macht man die klassische Kansai-Brühe?",
      "options": [
       "Kombu und Bonitoflocken",
-      "Tomaten und Käse",
-      "Milch und Zucker",
-      "Kaffee"
+      "Hühnerknochen und Lauch",
+      "Schweineknochen (Tonkotsu)",
+      "Miso und Sojasoße"
      ],
      "answer": 0
     },
@@ -1268,8 +1268,8 @@
      "options": [
       "Nudelgerichte",
       "Mehlspeisen (Konamon)",
-      "Süßigkeiten",
-      "Getränke"
+      "Gerichte mit Reis",
+      "Fischgerichte"
      ],
      "answer": 1
     },
@@ -1277,10 +1277,10 @@
      "type": "choice",
      "q": "Was ist die dritte Säule laut Gen?",
      "options": [
-      "Viel Geld",
+      "Die beste Lage",
       "Herz und Hingabe",
       "Eine große Küche",
-      "Ein Fernseher"
+      "Ein geheimes Rezept"
      ],
      "answer": 1
     }
@@ -1366,10 +1366,10 @@
      "type": "choice",
      "q": "Welches Problem haben viele New Towns heute?",
      "options": [
-      "Zu viele Kinder",
+      "Die Häuser sind zu neu",
       "Die Bewohner werden älter, viele junge Leute ziehen weg",
-      "Zu viele Fabriken",
-      "Keine Bahn"
+      "Es gibt zu viele Touristen",
+      "Die Mieten sind zu hoch"
      ],
      "answer": 1
     }
@@ -1445,9 +1445,9 @@
      "q": "Wo lernte Rikyū Zen?",
      "options": [
       "In einem Tempel in Kyōto",
-      "In China",
+      "Am Kōya-san",
       "In Tōkyō",
-      "Auf dem Meer"
+      "In Nara"
      ],
      "answer": 0
     },
@@ -1455,10 +1455,10 @@
      "type": "choice",
      "q": "Was verbindet Tee und Zen?",
      "options": [
-      "Beide sind sehr schnell",
+      "Beide kommen aus Indien",
       "Volle Aufmerksamkeit für den Augenblick",
-      "Beide brauchen Zucker",
-      "Beide sind verboten"
+      "Beide brauchen einen Meister",
+      "Beide feiern den Reichtum"
      ],
      "answer": 1
     }
@@ -1501,9 +1501,9 @@
      "q": "Warum ragen die Dächer weit über die Veranda?",
      "options": [
       "Als Schutz vor Regen und starker Sonne",
-      "Damit Vögel darauf wohnen",
-      "Nur zur Deko",
-      "Gegen Schnee aus dem Garten"
+      "Damit man den Garten nicht sieht",
+      "Gegen Erdbeben",
+      "Damit mehr Gäste darunter sitzen"
      ],
      "answer": 0
     },
@@ -1511,10 +1511,10 @@
      "type": "choice",
      "q": "Wie verbindet man die Holzbalken traditionell?",
      "options": [
-      "Mit Klebeband",
+      "Mit Eisennägeln",
       "Mit Holzverbindungen, oft ohne Nägel",
-      "Mit Beton",
-      "Mit Seilen"
+      "Mit Lehm",
+      "Mit Bambusstiften und Leim"
      ],
      "answer": 1
     }
@@ -1716,7 +1716,7 @@
       "Stark geschwungene Dächer",
       "Gerade Dächer und der Eingang an der Giebelseite",
       "Pagoden mit fünf Stockwerken",
-      "Beton und Glas"
+      "Rot-goldene Dächer mit Drachen"
      ],
      "answer": 1
     },
@@ -1725,9 +1725,9 @@
      "q": "Woher stammt dieser Baustil?",
      "options": [
       "Aus der Zeit vor dem Einfluss des Buddhismus",
-      "Aus Europa",
-      "Aus dem 20. Jahrhundert",
-      "Aus China, ganz neu"
+      "Aus Korea, mit dem Buddhismus",
+      "Aus der Edo-Zeit",
+      "Aus China, mit der Tang-Kultur"
      ],
      "answer": 0
     }
@@ -1771,8 +1771,8 @@
      "options": [
       "Vor Erdbeben",
       "Auf dem Meer und bei der Seefahrt",
-      "Vor Krankheiten der Augen",
-      "Beim Kochen"
+      "Vor Feuer",
+      "Bei der Reisernte"
      ],
      "answer": 1
     },
@@ -1884,8 +1884,8 @@
      "options": [
       "Ein Schwert und einen Spiegel",
       "Eine Angel und einen Fisch",
-      "Ein Buch und eine Feder",
-      "Eine Laterne"
+      "Einen Hammer und einen Sack",
+      "Einen Fächer und eine Schriftrolle"
      ],
      "answer": 1
     },
@@ -1894,9 +1894,9 @@
      "q": "Wofür betet man zu Ebisu?",
      "options": [
       "Für gute Geschäfte",
-      "Für Regen",
-      "Für schöne Haare",
-      "Für schnelles Laufen"
+      "Für Gesundheit",
+      "Für eine gute Ehe",
+      "Für Erfolg in Prüfungen"
      ],
      "answer": 0
     }
@@ -2082,9 +2082,9 @@
      "q": "Was bedeutet „Ema“?",
      "options": [
       "Bild-Pferd",
-      "Gold-Münze",
-      "Feuer-Tor",
-      "Meer-Gott"
+      "Pferde-Tor",
+      "Wunsch-Holz",
+      "Götter-Bild"
      ],
      "answer": 0
     },
@@ -2092,10 +2092,10 @@
      "type": "choice",
      "q": "Was schreibt man heute auf ein Ema?",
      "options": [
-      "Seine Einkaufsliste",
+      "Den Namen eines Verstorbenen",
       "Einen Wunsch oder ein Gebet",
-      "Seine Telefonnummer",
-      "Nichts"
+      "Ein Gedicht für den Kaiser",
+      "Seine Sünden"
      ],
      "answer": 1
     }
@@ -2149,10 +2149,10 @@
      "type": "choice",
      "q": "Woran erkennt man einen heiligen Baum?",
      "options": [
-      "Er ist blau angemalt",
+      "An einem Holzzaun ringsum",
       "An einem Strohseil mit Papierstreifen",
-      "An einem Schild mit Preis",
-      "Er hat keine Blätter"
+      "An roten Bändern in den Ästen",
+      "An einer Steinlaterne davor"
      ],
      "answer": 1
     }
@@ -2195,9 +2195,9 @@
      "q": "Was verehrte man vor den Schreinen?",
      "options": [
       "Ahnen und Herrscher an ihren Gräbern",
-      "Computer",
-      "Nur Tiere",
-      "Nichts"
+      "Die Götter des Buddhismus",
+      "Nur die Sonne",
+      "Den Kaiser in Kyōto"
      ],
      "answer": 0
     },
@@ -2205,10 +2205,10 @@
      "type": "choice",
      "q": "Was ist Shintō?",
      "options": [
-      "Eine Sportart",
+      "Ein Zweig des Buddhismus",
       "Die einheimische Religion Japans mit Kami und Schreinen",
-      "Ein Gericht",
-      "Eine Schrift"
+      "Eine Philosophie aus China",
+      "Ein Weg der Kampfkunst"
      ],
      "answer": 1
     }
@@ -2263,9 +2263,9 @@
      "q": "Wer stiftete die meisten Laternen?",
      "options": [
       "Händler und Seeleute",
-      "Kinder",
-      "Ausländische Touristen",
-      "Fußballvereine"
+      "Der Kaiserhof",
+      "Die Tokugawa-Shōgune",
+      "Die Mönche des Shitennō-ji"
      ],
      "answer": 0
     }

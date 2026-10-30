@@ -177,8 +177,8 @@
      "options": [
       "Von einem amerikanischen Bürgermeister",
       "Von Läden, die in den 1970ern Kleidung aus den USA verkauften",
-      "Von einer US-Botschaft",
-      "Von einem Freizeitpark"
+      "Vom amerikanischen Konsulat in der Nähe",
+      "Von amerikanischen Soldaten nach dem Krieg"
      ],
      "answer": 1
     },
@@ -282,8 +282,8 @@
      "options": [
       "Sofort trinken, solange es kalt ist",
       "Warten, bis alle ein Glas haben, und dann zusammen „Kanpai!“ rufen",
-      "Allein anstoßen",
-      "Das Glas zurückgeben"
+      "Einen kleinen Schluck nehmen, damit nichts überläuft",
+      "Den anderen dein Glas anbieten"
      ],
      "answer": 1,
      "explain": "Man wartet, bis alle ein Getränk haben. Dann stößt man gemeinsam an: „Kanpai!“ – „trockenes Glas“. Höflich: das eigene Glas etwas tiefer halten als das des anderen."
@@ -340,7 +340,7 @@
       "Dir selbst nachschenken",
       "Ryō nachschenken",
       "Die Flasche zu Ryō schieben",
-      "Nichts tun"
+      "Warten, bis Ryō sich selbst nachschenkt"
      ],
      "answer": 1,
      "explain": "Das Einschenken für andere heißt oshaku. Dein eigenes Glas füllt dann meist jemand anderes."
@@ -351,8 +351,8 @@
      "options": [
       "Gar nicht – es bleibt auf dem Tisch",
       "Mit beiden Händen, etwas angehoben",
-      "Mit einer Hand hinter dem Rücken",
-      "Hoch über den Kopf"
+      "Mit einer Hand, schräg gehalten wie beim Zapfen",
+      "Du legst die Hand über das Glas"
      ],
      "answer": 1
     }
@@ -440,8 +440,8 @@
      "options": [
       "Auf einer großen Bühne vor Fremden",
       "In einem kleinen gemieteten Raum nur mit der eigenen Gruppe",
-      "Im Zug",
-      "Im Tempel"
+      "In einer Bar mit Bühne für alle Gäste",
+      "Zu Hause an der Spielkonsole"
      ],
      "answer": 1
     },
@@ -452,7 +452,7 @@
       "Von „denki“ – Elektrizität",
       "Von einem Spielhallen-Besitzer",
       "Vom Geräusch der Trommeln",
-      "Von einem Comic-Helden"
+      "Von „den-en“ – Felder, die früher hier lagen"
      ],
      "answer": 0
     }
@@ -555,8 +555,8 @@
      "options": [
       "Ein Trinkgeld für den Koch",
       "Eine kleine Vorspeise, die als Sitzgebühr berechnet wird",
-      "Ein kostenloses Dessert",
-      "Ein Fehler in der Küche"
+      "Eine Probierportion, die man ablehnen sollte",
+      "Ein Gruß des Hauses, der immer gratis ist"
      ],
      "answer": 1
     },
@@ -564,10 +564,10 @@
      "type": "choice",
      "q": "Was tust du am besten?",
      "options": [
-      "Laut reklamieren",
+      "Höflich fragen, ob man sie abbestellen kann",
       "Sie essen und dich nicht wundern – sie gehört dazu",
       "Sie zurückschicken",
-      "Sie dem Nachbartisch geben"
+      "Sie stehen lassen, dann wird sie nicht berechnet"
      ],
      "answer": 1
     }
@@ -685,8 +685,8 @@
      "options": [
       "Teure Profi-Comics",
       "Hefte, die Fans selbst zeichnen und drucken",
-      "Alte Zeitungen",
-      "Spielanleitungen"
+      "Offizielle Sonderhefte der Verlage",
+      "Gesammelte Zeitungscomics"
      ],
      "answer": 1
     },
@@ -696,8 +696,8 @@
      "options": [
       "Eine große Auflage",
       "Eine kleine Auflage und gut erhaltene Verpackung",
-      "Ein Knick im Karton",
-      "Ein neuer Aufkleber"
+      "Ein möglichst neues Erscheinungsdatum",
+      "Eine Neuauflage in besserer Qualität"
      ],
      "answer": 1
     }
@@ -734,10 +734,10 @@
      "type": "choice",
      "q": "Du möchtest ein Foto von der Bedienung. Was tust du?",
      "options": [
-      "Heimlich ein Foto machen",
+      "Schnell ein Foto, solange sie lächelt",
       "Fragen bzw. das offizielle Foto bestellen",
       "Durchs Fenster von draußen fotografieren",
-      "Ein Video statt eines Fotos drehen"
+      "Ein Selfie mit ihr im Hintergrund"
      ],
      "answer": 1
     },
@@ -747,7 +747,7 @@
      "options": [
       "Man darf nur eine bestimmte Zeit bleiben",
       "Das Essen kommt pünktlich",
-      "Man muss schnell reden",
+      "Man muss in einer bestimmten Zeit bestellen",
       "Man muss zu einer festen Uhrzeit kommen"
      ],
      "answer": 0

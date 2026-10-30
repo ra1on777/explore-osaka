@@ -49,14 +49,15 @@ function npcEl(screenId: string, p: Presence, onNpc: (p: Presence) => void) {
   const slot = SCREENS[screenId]?.slots?.[p.slot] ?? SLOT_DEFAULTS[p.slot];
   const src = imgChar(p.npcId);
   const ph = NPCS[p.npcId]?.placeholder;
+  const scale = NPCS[p.npcId]?.scale ?? (ph === 'cat' ? 0.42 : 1);
   const fallback = () => svg(placeholders[ph ?? 'person'], `fig ph-${ph ?? 'person'}`);
   const fig = src ? h('img', { class: 'fig', src, alt: '', draggable: 'false' }) : fallback();
   // Fehlt eine Sprite-Datei, erscheint die Silhouette statt eines kaputten Bildsymbols.
   if (src) (fig as HTMLImageElement).onerror = () => fig.replaceWith(fallback());
   const el = h('button', {
-    class: `npc${ph === 'cat' ? ' small' : ''}`,
+    class: `npc${scale < 1 ? ' small' : ''}`,
     'data-npc': p.npcId,
-    style: `left:${slot.x}%;bottom:${slot.bottom}%;height:${ph === 'cat' ? slot.h * 0.42 : slot.h}%;z-index:${100 - Math.round(slot.bottom)}`,
+    style: `left:${slot.x}%;bottom:${slot.bottom}%;height:${slot.h * scale}%;z-index:${100 - Math.round(slot.bottom)}`,
     'aria-label': `${npcName(p.npcId)} ansprechen`,
     onclick: () => onNpc(p),
   }, fig, svg(bubble, 'bubble'));

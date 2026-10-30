@@ -80,8 +80,9 @@ async function choice(task: Extract<Task, { type: 'choice' }>): Promise<number> 
   const grid = h('div', { class: `options ${task.options.some((o) => typeof o !== 'string') ? 'jp-options' : ''}` });
   const { el, fb } = frame(task.q, showJp(task.show?.jp), grid);
   await new Promise<void>((resolve) => {
-    task.options.forEach((o, i) => {
-      const b = h('button', { class: 'opt', 'data-key': String(i + 1) }, h('span', { class: 'k' }, String(i + 1)), optionLabel(o));
+    // Reihenfolge mischen, damit die Position der richtigen Antwort nichts verrät
+    shuffle(task.options.map((o, i) => [o, i] as const)).forEach(([o, i], pos) => {
+      const b = h('button', { class: 'opt', 'data-key': String(pos + 1), 'data-opt': String(i) }, h('span', { class: 'k' }, String(pos + 1)), optionLabel(o));
       b.addEventListener('click', () => {
         if (b.disabled) return;
         if (i === task.answer) {

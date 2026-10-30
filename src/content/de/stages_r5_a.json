@@ -105,10 +105,10 @@
      "type": "choice",
      "q": "Was ist ein Problem, wenn sehr viele Touristen kommen?",
      "options": [
-      "Die Straßen werden breiter",
+      "Es gibt zu wenige Parkplätze",
       "Mieten steigen, alte Läden müssen schließen",
-      "Es gibt weniger Essen",
-      "Der Markt wird kleiner"
+      "Die Läden schließen früher",
+      "Die Preise für Fisch sinken"
      ],
      "answer": 1,
      "explain": "Man nennt das Overtourism: Die Gegend wird beliebt, aber für Einheimische und alte Läden zu teuer."
@@ -117,10 +117,10 @@
      "type": "choice",
      "q": "Wer kaufte früher vor allem hier ein?",
      "options": [
-      "Schulkinder",
+      "Großhändler aus Kōbe",
       "Touristen aus dem Ausland",
       "Köche und Restaurants aus Minami",
-      "Bauern"
+      "Fischer aus der Bucht"
      ],
      "answer": 2
     }
@@ -175,8 +175,8 @@
      "options": [
       "Wegen der neuen Hochhäuser",
       "Wegen des Retro-Charmes alter Läden und Schilder",
-      "Wegen des Strandes",
-      "Wegen der Universität"
+      "Wegen des neuen Einkaufszentrums",
+      "Wegen des Freizeitparks Luna Park"
      ],
      "answer": 1
     }
@@ -306,7 +306,7 @@
       "Kaufhäuser und Neon",
       "Kanäle, Werften und Lagerhallen",
       "Tempel und Gärten",
-      "Universitäten"
+      "Hochhäuser und Büros"
      ],
      "answer": 1
     },
@@ -314,8 +314,8 @@
      "type": "choice",
      "q": "Und was ist typisch für Minami?",
      "options": [
-      "Stille Wälder",
-      "Felder",
+      "Alte Tempel und Friedhöfe",
+      "Bürotürme und Banken",
       "Einkaufsstraßen, Neon und viele Menschen",
       "Kostenlose Fähren"
      ],
@@ -371,9 +371,9 @@
      "q": "Wie nennt man es, wenn ein altes Industriegelände neu genutzt wird?",
      "options": [
       "Umnutzung / Stadterneuerung",
-      "Aufforstung",
-      "Abriss ohne Plan",
-      "Landwirtschaft"
+      "Zersiedelung",
+      "Denkmalschutz",
+      "Aufforstung"
      ],
      "answer": 0
     }
@@ -415,10 +415,10 @@
      "type": "choice",
      "q": "Wo liegt Nakanoshima?",
      "options": [
-      "Auf einem Berg",
+      "Auf aufgeschüttetem Land in der Bucht",
       "Auf einer Insel zwischen zwei Flüssen",
-      "Am Meer",
-      "Unter der Erde"
+      "Auf einer Hochebene",
+      "Am Meer"
      ],
      "answer": 1
     },
@@ -517,7 +517,7 @@
       "Mehr Parkplätze bauen",
       "Wohnen, Arbeiten und Einkaufen direkt am Bahnhof",
       "Bahnhöfe an den Stadtrand verlegen",
-      "Nur Autobahnen bauen"
+      "Große Parkhäuser an jedem Bahnhof"
      ],
      "answer": 1
     }
@@ -649,8 +649,8 @@
      "options": [
       "Ein Güterbahnhof",
       "Ein Flughafen",
-      "Ein Reisfeld",
-      "Ein Schloss"
+      "Ein Busbahnhof",
+      "Ein Hafenbecken"
      ],
      "answer": 0
     },
@@ -660,8 +660,8 @@
      "options": [
       "Damit es mehr Parkplätze gibt",
       "Er kühlt die Stadt und gibt den Menschen Platz",
-      "Nur für Touristen",
-      "Für Züge"
+      "Als Platz für ein neues Stadion",
+      "Damit der Bahnhof später wachsen kann"
      ],
      "answer": 1
     }
@@ -1037,7 +1037,7 @@
      "options": [
       "Eine Seilbahn",
       "Eine Aussichtsplattform mit Garten",
-      "Ein Schwimmbad",
+      "Eine geschlossene Glasbrücke mit Café",
       "Ein Hubschrauberlandeplatz"
      ],
      "answer": 1
@@ -1046,10 +1046,10 @@
      "type": "choice",
      "q": "Was ist das Besondere an der Rolltreppe?",
      "options": [
-      "Sie ist aus Holz",
-      "Sie fährt rückwärts",
+      "Sie ist die schnellste Rolltreppe Japans",
+      "Sie führt durch ein Aquarium",
       "Sie schwebt in einer Glasröhre zwischen den Türmen",
-      "Sie ist 1 km lang"
+      "Sie ist komplett unterirdisch"
      ],
      "answer": 2
     }
@@ -1452,8 +1452,8 @@
      "options": [
       "Den angebissenen Spieß nochmal eintunken",
       "Mit einem Kohlblatt Soße schöpfen und darüber träufeln",
-      "Den Topf trinken",
-      "Den Kellner anschreien"
+      "Um eine eigene Schale Soße bitten",
+      "Den Spieß umdrehen und mit der anderen Seite eintunken"
      ],
      "answer": 1,
      "explain": "Das Kohlblatt ist gratis und dient als Löffel für die Soße."
@@ -1562,8 +1562,8 @@
      "options": [
       "Langsam mit Strohhalm",
       "Mit einer Hand an der Hüfte in einem Zug",
-      "Im Sitzen mit Löffel",
-      "Gar nicht, man schaut sie nur an"
+      "Gekühlt in kleinen Schlucken",
+      "Gemischt mit Kaffee"
      ],
      "answer": 1
     }
@@ -1814,9 +1814,9 @@
      "q": "Wie bereitet man eine Instant-Nudel zu?",
      "options": [
       "Kochendes Wasser drauf und kurz warten",
-      "Drei Stunden kochen",
-      "Im Ofen backen",
-      "Kalt essen"
+      "In der Pfanne anbraten",
+      "Zehn Minuten im Topf kochen",
+      "Mit kalter Milch übergießen"
      ],
      "answer": 0
     }
@@ -1918,7 +1918,7 @@
       "Rohes Fleisch",
       "Paniertes, frittiertes Fleisch",
       "Eine Suppe",
-      "Ein Reisgericht ohne Fleisch"
+      "Gegrilltes Fleisch am Spieß"
      ],
      "answer": 1
     },
@@ -1985,8 +1985,8 @@
      "options": [
       "Damit der Fisch billiger wird",
       "Damit man wilde Thunfische im Meer schont",
-      "Weil er besser schwimmt",
-      "Für ein Aquarium"
+      "Damit er schneller wächst",
+      "Damit er das ganze Jahr Saison hat"
      ],
      "answer": 1
     },

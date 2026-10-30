@@ -16,7 +16,7 @@ export interface ScreenDef {
   indoor?: boolean; night?: boolean; slots?: Partial<Record<'A' | 'B' | 'C', Slot>>; variants?: string[];
 }
 export interface ClusterDef { id: string; region: string; x: number; y: number; screens: string[]; flip?: boolean }
-export interface NpcDef { short: string; default?: string; poses?: string[]; placeholder?: 'cat' | 'person' }
+export interface NpcDef { short: string; default?: string; poses?: string[]; placeholder?: 'cat' | 'person'; /** Höhe relativ zum Slot (z. B. Katze 0.42) */ scale?: number }
 
 // ---------- Inhalte (übersetzbar) ----------
 export interface Line { s: string; p?: string; t?: string; jp?: string; ro?: string }

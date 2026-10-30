@@ -146,8 +146,8 @@ async function solve(page, t) {
   switch (t.type) {
     case 'choice': {
       const wrong = (t.answer + 1) % t.options.length;
-      await S(`.task [data-key="${wrong + 1}"]`);
-      await S(`.task [data-key="${t.answer + 1}"]`);
+      await S(`.task [data-opt="${wrong}"]`);
+      await S(`.task [data-opt="${t.answer}"]`);
       break;
     }
     case 'input':

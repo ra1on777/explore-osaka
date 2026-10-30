@@ -32,10 +32,10 @@
      "type": "choice",
      "q": "Was lag vor etwa 6000 Jahren östlich der Uemachi-Hochebene?",
      "options": [
-      "Ein Gebirge",
+      "Ein Sumpf mit Reisfeldern",
       "Eine Meeresbucht (Kawachi)",
-      "Ein Vulkan",
-      "Eine Wüste"
+      "Ein breiter Flusslauf des Yodo",
+      "Ein Kiefernwald auf Sanddünen"
      ],
      "answer": 1
     },
@@ -95,7 +95,7 @@
      "options": [
       "Ein hoher Berg",
       "Flüsse und sumpfiges Land",
-      "Eine Wüste aus Sand",
+      "Ein tiefer, gemauerter Graben",
       "Ein dichter Bambuswald"
      ],
      "answer": 1,
@@ -934,9 +934,9 @@
      "q": "Wie erklärt Prof. Takada das Wort 先生?",
      "options": [
       "Jemand, der vor dir geboren wurde",
-      "Jemand, der viel Geld hat",
-      "Jemand, der schnell läuft",
-      "Jemand, der im Tempel wohnt"
+      "Jemand, der viel gelesen hat",
+      "Jemand, der als Erster lernt",
+      "Jemand, der sein Leben lang lehrt"
      ],
      "answer": 0
     },

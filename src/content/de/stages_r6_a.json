@@ -34,7 +34,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf die Steintafel mit dem Grundriss links.", "x": 13, "y": 78, "r": 11,
      "closeup": {"art": "keyhole", "title": "Ein Grab wie ein Schlüsselloch", "text": "Vorne eckig, hinten rund, umgeben von Wassergräben. Seit 2019 gehören die Grabhügel von Mozu und Furuichi zum Welterbe."}},
-    {"type": "choice", "q": "Welche Form hat der Grabhügel von oben?", "options": ["Kreis", "Quadrat", "Schlüsselloch", "Stern"], "answer": 2}
+    {"type": "choice", "q": "Welche Form hat der Grabhügel von oben?", "options": ["Kreis", "Quadrat", "Schlüsselloch", "Rechteck mit Graben"], "answer": 2}
    ],
    "after": [
     {"s": "seto", "p": "map", "t": "Tausende Menschen haben jahrelang Erde getragen. Geographie und Geschichte – hier sieht man beides."},
@@ -98,7 +98,7 @@
    "tasks": [
     {"type": "choice", "q": "Welcher Baum färbt sich hier im Herbst leuchtend rot?", "options": ["Ahorn (Momiji)", "Kiefer", "Bambus", "Kamelie"], "answer": 0},
     {"type": "choice", "q": "Welcher Vogel wartet am Burggraben reglos auf Fische?", "options": ["Krähe", "Graureiher", "Taube", "Spatz"], "answer": 1},
-    {"type": "choice", "q": "Was macht man am besten in der Natur?", "options": ["Laut Musik hören", "Langsam gehen und genau hinsehen", "Blumen pflücken", "Rennen"], "answer": 1}
+    {"type": "choice", "q": "Was macht man am besten in der Natur?", "options": ["Möglichst viele Fotos machen", "Langsam gehen und genau hinsehen", "Die Tiere füttern", "Früh losgehen und viele Orte schaffen"], "answer": 1}
    ],
    "after": [
     {"s": "goro", "t": "Du hast es verstanden. Ich bin zufrieden."},
@@ -129,7 +129,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf das geflochtene Seil am großen Tor.", "x": 52, "y": 21, "r": 10,
      "closeup": {"art": "shimenawa", "title": "Shimenawa", "text": "Ein Seil aus Reisstroh mit weißen Papierstreifen. Es markiert die Grenze zum Heiligen."}},
-    {"type": "choice", "q": "Was ist „Misogi“?", "options": ["Ein Fest mit Feuer", "Reinigung mit Wasser", "Ein Gebet für Geld", "Ein Tanz"], "answer": 1}
+    {"type": "choice", "q": "Was ist „Misogi“?", "options": ["Reinigung mit Salz", "Reinigung mit Wasser", "Reinigung mit Rauch", "Fasten vor einem Fest"], "answer": 1}
    ],
    "after": [
     {"s": "yamada", "p": "calm", "t": "Richtig. Rein sein heißt hier: frisch und offen sein."},
@@ -144,8 +144,8 @@
     {"s": "yamada", "p": "pray", "t": "Wie Kirschblüten, die schon nach einer Woche fallen."}
    ],
    "tasks": [
-    {"type": "choice", "q": "Was beschreibt „mono no aware“?", "options": ["Wut über Ungerechtigkeit", "Leise Traurigkeit über die Vergänglichkeit", "Freude am Essen", "Angst vor Geistern"], "answer": 1},
-    {"type": "choice", "q": "Welches Bild passt dazu?", "options": ["Fallende Kirschblüten", "Ein neues Hochhaus", "Ein Fußballtor", "Ein voller Kühlschrank"], "answer": 0}
+    {"type": "choice", "q": "Was beschreibt „mono no aware“?", "options": ["Wut über Ungerechtigkeit", "Leise Traurigkeit über die Vergänglichkeit", "Stolz auf die Heimat", "Sehnsucht nach der Ferne"], "answer": 1},
+    {"type": "choice", "q": "Welches Bild passt dazu?", "options": ["Fallende Kirschblüten", "Eine Kiefer, die seit Jahrhunderten steht", "Ein Sumōringer", "Eine laute Festparade"], "answer": 0}
    ],
    "after": [
     {"s": "yamada", "p": "calm", "t": "Schön ist, was nicht bleibt. Das denken viele hier."},
@@ -160,8 +160,8 @@
     {"s": "takada", "p": "ponder", "t": "Bis heute darf niemand den Hügel betreten. Er gilt als Grab eines Kaisers."}
    ],
    "tasks": [
-    {"type": "choice", "q": "Was sind Haniwa?", "options": ["Tonfiguren rund um alte Gräber", "Japanische Süßigkeiten", "Holzschwerter", "Tempelglocken"], "answer": 0},
-    {"type": "choice", "q": "Warum darf man den Hügel nicht betreten?", "options": ["Er ist zu steil", "Er gilt als heiliges Kaisergrab", "Dort leben Bären", "Er ist privat verkauft"], "answer": 1}
+    {"type": "choice", "q": "Was sind Haniwa?", "options": ["Tonfiguren rund um alte Gräber", "Bronzespiegel als Grabbeigaben", "Steinfiguren an Schreinen", "Holzpuppen fürs Mädchenfest"], "answer": 0},
+    {"type": "choice", "q": "Warum darf man den Hügel nicht betreten?", "options": ["Er ist zu steil", "Er gilt als heiliges Kaisergrab", "Er ist ein Schutzgebiet für Vögel", "Er wird gerade ausgegraben"], "answer": 1}
    ],
    "after": [
     {"s": "takada", "p": "explain", "t": "Ein Wald, ein Grab, ein heiliger Ort. Drei Dinge in einem."},
@@ -178,7 +178,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf die Teeschale in den Händen der Frau auf der Veranda.", "x": 55, "y": 46, "r": 9,
      "closeup": {"art": "chawan", "title": "Eine Teeschale", "text": "Dunkel, ein wenig schief, mit grünem Matcha. Gerade weil sie unperfekt ist, ist sie wertvoll."}},
-    {"type": "choice", "q": "Was ist das Ideal von „Wabi“?", "options": ["Gold und Pracht", "Schlichtheit und Unvollkommenheit", "Schnelligkeit", "Lautstärke"], "answer": 1}
+    {"type": "choice", "q": "Was ist das Ideal von „Wabi“?", "options": ["Gold und Pracht", "Schlichtheit und Unvollkommenheit", "Strenge Regeln und Ordnung", "Farbenfrohe Fröhlichkeit"], "answer": 1}
    ],
    "after": [
     {"s": "maya", "p": "shy", "t": "Ein schöner Gedanke, oder? Nicht alles muss perfekt sein."},
@@ -193,8 +193,8 @@
     {"s": "kiryu", "p": "doubt", "t": "Gibt es also nur eine richtige Deutung? Oder viele?"}
    ],
    "tasks": [
-    {"type": "choice", "q": "Was ist Hermeneutik?", "options": ["Die Lehre vom Verstehen von Texten", "Eine Kampfkunst", "Eine Kochtechnik", "Ein Rechtsgebiet"], "answer": 0},
-    {"type": "choice", "q": "Was bringt jeder Leser in einen Text mit?", "options": ["Nichts", "Seine eigene Erfahrung und Welt", "Nur Wörterbücher", "Den Autor"], "answer": 1}
+    {"type": "choice", "q": "Was ist Hermeneutik?", "options": ["Die Lehre vom Verstehen von Texten", "Die Lehre vom richtigen Schließen (Logik)", "Die Lehre von den Zeichen (Semiotik)", "Die Lehre vom Sein (Ontologie)"], "answer": 0},
+    {"type": "choice", "q": "Was bringt jeder Leser in einen Text mit?", "options": ["Die Absicht des Autors", "Seine eigene Erfahrung und Welt", "Nur seine Sprachkenntnisse", "Gar nichts – der Text spricht für sich"], "answer": 1}
    ],
    "after": [
     {"s": "kiryu", "p": "think", "t": "Gut. Lesen ist ein Gespräch, kein Befehl."},
@@ -222,8 +222,8 @@
     {"s": "takada", "p": "ponder", "t": "Was hast du dir gemerkt?"}
    ],
    "tasks": [
-    {"type": "choice", "q": "Wer gründete das Kaitokudō?", "options": ["Samurai", "Händler aus Ōsaka", "Mönche", "Ausländer"], "answer": 1},
-    {"type": "choice", "q": "Was lernte man im Tekijuku?", "options": ["Schwertkampf", "Westliche Medizin und Wissenschaft", "Teezeremonie", "Kalligraphie"], "answer": 1}
+    {"type": "choice", "q": "Wer gründete das Kaitokudō?", "options": ["Die Tokugawa-Regierung", "Händler aus Ōsaka", "Konfuzianische Gelehrte aus Kyōto", "Der Kaiserhof"], "answer": 1},
+    {"type": "choice", "q": "Was lernte man im Tekijuku?", "options": ["Konfuzianische Klassiker", "Westliche Medizin und Wissenschaft", "Chinesische Medizin", "Handel und Buchhaltung"], "answer": 1}
    ],
    "after": [
     {"s": "takada", "p": "explain", "t": "Sehr gut. Eine Universität wächst aus Neugier, nicht aus Befehlen."},
@@ -240,7 +240,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf die Uhr am Turm.", "x": 50, "y": 38, "r": 10,
      "closeup": {"art": "clocktower", "title": "Die Uhr am Turm", "text": "Die Zeiger laufen weiter. Kulturen übersetzen sich – langsam, aber stetig."}},
-    {"type": "choice", "q": "Was ist das Ziel von Übersetzung zwischen Kulturen?", "options": ["Eine Kultur über die andere stellen", "Sich gegenseitig verstehen", "Alles gleich machen", "Nichts mehr fragen"], "answer": 1}
+    {"type": "choice", "q": "Was ist das Ziel von Übersetzung zwischen Kulturen?", "options": ["Eine Kultur über die andere stellen", "Sich gegenseitig verstehen", "Alles gleich machen", "Fremde Wörter vermeiden"], "answer": 1}
    ],
    "after": [
     {"s": "kiryu", "p": "explain", "t": "Ja. Verstehen heißt nicht, gleich zu werden."},
@@ -271,7 +271,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf den kleinen Schrein-Schalter rechts.", "x": 80, "y": 56, "r": 10,
      "closeup": {"art": "omikuji", "title": "Dein Glückslos", "text": "大吉 – daikichi, großes Glück! Dieses Los darf man mitnehmen."}},
-    {"type": "choice", "q": "Was macht man mit einem schlechten Los?", "options": ["Wegwerfen", "Am Schrein festbinden", "Aufessen", "Verkaufen"], "answer": 1}
+    {"type": "choice", "q": "Was macht man mit einem schlechten Los?", "options": ["Wegwerfen", "Am Schrein festbinden", "Zu Hause aufbewahren", "Im Fluss treiben lassen"], "answer": 1}
    ],
    "after": [
     {"s": "yamada", "p": "calm", "t": "Großes Glück! Heb es gut auf."},
@@ -287,7 +287,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Wie betet man an einem Shintō-Schrein?", "options": ["Einmal klatschen, dreimal verbeugen", "Zweimal verbeugen, zweimal klatschen, einmal verbeugen", "Hände falten und singen", "Nur still stehen"], "answer": 1},
-    {"type": "choice", "q": "Du hast jemandem den Weg versperrt. Wie tief verbeugst du dich?", "options": ["Gar nicht", "Leicht, etwa 15 Grad", "Bis zum Boden", "Nur mit den Augen"], "answer": 1}
+    {"type": "choice", "q": "Du hast jemandem den Weg versperrt. Wie tief verbeugst du dich?", "options": ["Tief, etwa 45 Grad", "Leicht, etwa 15 Grad", "Mittel, etwa 30 Grad", "Gar nicht, ein Lächeln reicht"], "answer": 1}
    ],
    "after": [
     {"s": "takeshi", "p": "explain", "t": "Sehr schön. Die Verbeugung ist ein stilles Wort."},
@@ -304,7 +304,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf das Dach über dem großen Tor.", "x": 64, "y": 38, "r": 12,
      "closeup": {"art": "kamon", "title": "Familienwappen", "text": "Links das Paulownienblatt der Toyotomi, rechts ein Blütenwappen. Kreise um einfache Formen – erkennbar von weitem."}},
-    {"type": "choice", "q": "Welches Motiv nutzten die Toyotomi?", "options": ["Einen Drachen", "Ein Blatt der Paulownie (Kiri)", "Eine Sonne", "Ein Schwert"], "answer": 1}
+    {"type": "choice", "q": "Welches Motiv nutzten die Toyotomi?", "options": ["Eine Chrysantheme", "Ein Blatt der Paulownie (Kiri)", "Drei Malvenblätter (Aoi)", "Eine Kiefer"], "answer": 1}
    ],
    "after": [
     {"s": "takeshi", "p": "explain", "t": "Richtig. Das Kiri-Wappen sieht man übrigens bis heute auf offiziellen Dokumenten der Regierung."},
@@ -320,7 +320,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Was heißt „Bushidō“?", "options": ["Weg des Tees", "Weg des Kriegers", "Weg der Schrift", "Weg des Handels"], "answer": 1},
-    {"type": "choice", "q": "Warum übten viele Samurai Zen?", "options": ["Um ruhig und konzentriert zu bleiben", "Um reich zu werden", "Um schneller zu laufen", "Um besser zu kochen"], "answer": 0}
+    {"type": "choice", "q": "Warum übten viele Samurai Zen?", "options": ["Um ruhig und konzentriert zu bleiben", "Um gute Gedichte zu schreiben", "Um den Kaiser zu ehren", "Um ihre Schwerter zu segnen"], "answer": 0}
    ],
    "after": [
     {"s": "takada", "p": "explain", "t": "Gut. Ruhe ist auch eine Waffe."},
@@ -348,8 +348,8 @@
     {"s": "emi", "p": "wave", "t": "Viele Japaner fahren zu O-Bon zu ihren Familien. Dann sind alle Züge voll!"}
    ],
    "tasks": [
-    {"type": "choice", "q": "Wann ist O-Bon?", "options": ["Im Januar", "Mitte August", "Im Oktober", "An Weihnachten"], "answer": 1},
-    {"type": "choice", "q": "Wozu dienen die Laternen auf dem Wasser?", "options": ["Sie beleuchten den Fluss für Boote", "Sie begleiten die Seelen der Ahnen zurück", "Sie sind ein Wettbewerb", "Sie vertreiben Mücken"], "answer": 1}
+    {"type": "choice", "q": "Wann ist O-Bon?", "options": ["Anfang Mai", "Mitte August", "Ende Oktober", "Zu Neujahr"], "answer": 1},
+    {"type": "choice", "q": "Wozu dienen die Laternen auf dem Wasser?", "options": ["Sie beleuchten den Fluss für Boote", "Sie begleiten die Seelen der Ahnen zurück", "Sie bringen Wünsche zu den Göttern", "Sie markieren den Weg der Mikoshi"], "answer": 1}
    ],
    "after": [
     {"s": "emi", "p": "note", "t": "Genau. Ein trauriges, aber warmes Fest."},
@@ -385,7 +385,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Woraus sind Haniwa gemacht?", "options": ["Aus Holz", "Aus Ton", "Aus Bronze", "Aus Stein"], "answer": 1},
-    {"type": "choice", "q": "Was zeigten spätere Haniwa?", "options": ["Autos", "Häuser, Pferde und Menschen", "Nur Blumen", "Schriftzeichen"], "answer": 1}
+    {"type": "choice", "q": "Was zeigten spätere Haniwa?", "options": ["Buddha-Figuren", "Häuser, Pferde und Menschen", "Drachen und Fabelwesen", "Nur Krüge und Gefäße"], "answer": 1}
    ],
    "after": [
     {"s": "takada", "p": "explain", "t": "Richtig. Wächter aus Erde."},
@@ -402,7 +402,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf die Vitrine mit den Messern links.", "x": 10, "y": 54, "r": 10,
      "closeup": {"art": "sakaicraft", "title": "Handwerk aus Sakai", "text": "Messer in allen Formen, daneben Räucherstäbchen. Jedes Stück geht durch mehrere Meisterhände."}},
-    {"type": "choice", "q": "Wie entsteht ein traditionelles Sakai-Messer?", "options": ["Eine Maschine macht alles", "Mehrere Meister übernehmen je einen Arbeitsschritt", "Es wird gegossen", "Es wird aus Plastik gedruckt"], "answer": 1}
+    {"type": "choice", "q": "Wie entsteht ein traditionelles Sakai-Messer?", "options": ["Ein Meister macht alles allein", "Mehrere Meister übernehmen je einen Arbeitsschritt", "Die Klinge wird in einem Stück gegossen", "Geschmiedet wird in Kōbe, in Sakai nur geschärft"], "answer": 1}
    ],
    "after": [
     {"s": "takeshi", "p": "explain", "t": "Richtig. Teamarbeit über Generationen."},
@@ -418,7 +418,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Was bedeutet „Jaku“?", "options": ["Harmonie", "Respekt", "Reinheit", "Stille"], "answer": 3},
-    {"type": "choice", "q": "Warum hatte der Teeraum eine niedrige Tür?", "options": ["Damit es warm bleibt", "Damit alle sich beugen müssen und gleich sind", "Gegen Diebe", "Aus Holzmangel"], "answer": 1}
+    {"type": "choice", "q": "Warum hatte der Teeraum eine niedrige Tür?", "options": ["Damit kein Licht hineinfällt", "Damit alle sich beugen müssen und gleich sind", "Gegen Erdbeben", "Weil Teehäuser im Garten klein sein mussten"], "answer": 1}
    ],
    "after": [
     {"s": "emi", "p": "note", "t": "Schön, oder? Ein Raum, in dem Rang keine Rolle spielt."},
@@ -450,7 +450,7 @@
    "tasks": [
     {"type": "inspect", "q": "Tippe auf das Gesicht in der Mitte des Turms.", "x": 61, "y": 38, "r": 10,
      "closeup": {"art": "jomon", "title": "Jōmon-Kraft", "text": "Ein Gefäß mit Wellen- und Flammenmustern. Solche Formen haben Okamoto Tarō zu seinem Turm inspiriert."}},
-    {"type": "choice", "q": "Was inspirierte Okamoto Tarō?", "options": ["Moderne Autos", "Die uralte Jōmon-Keramik", "Europäische Kirchen", "Comics"], "answer": 1}
+    {"type": "choice", "q": "Was inspirierte Okamoto Tarō?", "options": ["Die Buddha-Statuen von Nara", "Die uralte Jōmon-Keramik", "Die Tempeltürme Chinas", "Moderne Autos"], "answer": 1}
    ],
    "after": [
     {"s": "emi", "p": "note", "t": "Vergangenheit und Zukunft in einem Turm. Das ist Japan."},

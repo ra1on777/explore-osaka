@@ -162,7 +162,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Was bedeutet „電車“?", "show": {"jp": "電車"}, "options": ["Auto", "Zug (elektrisch)", "Fahrrad", "Flugzeug"], "answer": 1},
-    {"type": "choice", "q": "Das Labor ist „午後“ offen. Wann?", "options": ["Am Vormittag", "Am Nachmittag", "Nachts", "Nie"], "answer": 1},
+    {"type": "choice", "q": "Das Labor ist „午後“ offen. Wann?", "options": ["Am Vormittag", "Am Nachmittag", "Mittags", "Nachts"], "answer": 1},
     {"type": "choice", "q": "Welches Kanji steckt oben in 電?", "options": ["雨 (Regen)", "山 (Berg)", "木 (Baum)", "口 (Mund)"], "answer": 0}
    ],
    "after": [
@@ -215,7 +215,7 @@
    ],
    "tasks": [
     {"type": "choice", "q": "Was ist „ほうちょう“?", "show": {"jp": "ほうちょう"}, "options": ["Schere", "Küchenmesser", "Hammer", "Löffel"], "answer": 1},
-    {"type": "choice", "q": "Du willst Papier schneiden. Was brauchst du?", "options": [{"jp": "はさみ", "ro": "hasami"}, {"jp": "き", "ro": "ki"}, {"jp": "みず", "ro": "mizu"}, {"jp": "ほん", "ro": "hon"}], "answer": 0}
+    {"type": "choice", "q": "Du willst Papier schneiden. Was brauchst du?", "options": [{"jp": "はさみ", "ro": "hasami"}, {"jp": "ほうちょう", "ro": "hōchō"}, {"jp": "えんぴつ", "ro": "enpitsu"}, {"jp": "のり", "ro": "nori"}], "answer": 0}
    ],
    "after": [
     {"s": "takeshi", "p": "explain", "t": "Sehr gut. Ein Handwerker ist nur so gut wie seine Werkzeuge – und seine Wörter."},

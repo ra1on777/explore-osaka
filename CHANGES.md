@@ -86,6 +86,9 @@ Alle Punkte bestätigt. Präzisierungen eingearbeitet:
 - Chikamatsu: Shusse Kagekiyo 1686 (statt 1685).
 - Kitsune-Udon 1893 (Matsubaya), Nihon Ryōiki um 822 (Keikai), Takoishi rund 108–130 t, Kyocera Dome auf dem Gelände des Gaswerks Iwasakibashi.
 
+## v1.2 – Antwortmöglichkeiten
+- 135 Auswahlfragen (v. a. Dialog-Abfragen und Wissensfragen der Regionen 2–6) mit neuen, plausibleren falschen Antworten; die richtige Antwort ist unverändert. Antworten werden jetzt gemischt angezeigt.
+
 ## v1.1 – Slots, Innenräume, Test-Strang
 - **Figurengrößen und Plätze überarbeitet:** Alle Screens wurden gegen die gezeichneten Passanten geprüft. Vor allem Region 4–6 (Screens 49–70) waren deutlich zu groß; die Höhen richten sich jetzt nach Menschen auf gleicher Fußhöhe (z. B. Shitennō-ji 40 % → 22 %, Sumiyoshi 46 % → 30 %, Yodoko-Stadion 42 % → 26 %). Figuren, die auf Personen, im Teich, auf Bänken oder an der Bildkante standen, wurden versetzt (u. a. 2a, 2c, 3, 6, 24, 38, 39, 40, 45b, 46, 47, 59, 63, 67, 69).
 - **Innenraum-Hintergründe:** eigene Platzierung je Hintergrund (Café, Zug, Izakaya, Regen-Dōtonbori) statt einheitlich 78 % Höhe; jetzt 50–60 %, Füße auf dem Boden statt auf Tresen oder Geländer.

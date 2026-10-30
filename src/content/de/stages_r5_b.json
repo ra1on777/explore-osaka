@@ -114,7 +114,7 @@
       "Ein teures Restaurant",
       "Eine Kneipe, in der man im Stehen trinkt",
       "Ein Karaoke-Raum",
-      "Ein Café für Kinder"
+      "Ein Imbiss am Bahnhof ohne Alkohol"
      ],
      "answer": 1
     },
@@ -123,9 +123,9 @@
      "q": "Warum sind Stehkneipen nach der Arbeit so beliebt?",
      "options": [
       "Sie sind günstig und schnell",
-      "Man darf dort schlafen",
+      "Sie servieren nur Bier",
       "Sie haben Live-Musik",
-      "Sie öffnen nur am Morgen"
+      "Man darf dort rauchen"
      ],
      "answer": 0
     }
@@ -254,8 +254,8 @@
      "options": [
       "Ein Taxi bis nach Hause",
       "Ein Manga-Café mit Nachtpaket – Sessel, Decke, Getränke",
-      "Auf der Bank schlafen",
-      "Ein Luxushotel"
+      "Ein Business-Hotel",
+      "Bis zur ersten Bahn im Izakaya bleiben"
      ],
      "answer": 1
     },
@@ -263,10 +263,10 @@
      "type": "choice",
      "q": "Im Manga-Café ist es ruhig. Was ist dort höflich?",
      "options": [
-      "Laut telefonieren",
+      "Kurz telefonieren, wenn es wichtig ist",
       "Leise sein und die Kabine sauber verlassen",
-      "Die Schuhe auf den Tisch legen",
-      "Musik ohne Kopfhörer"
+      "Das Geschirr stehen lassen, das räumt das Personal auf",
+      "Die Kabine offen lassen, damit Luft reinkommt"
      ],
      "answer": 1
     }
@@ -391,7 +391,7 @@
       "Der Jüngste zahlt alles",
       "Die Rechnung wird gleich geteilt",
       "Man zahlt nur das Bier",
-      "Man zahlt mit Karte"
+      "Jeder zahlt genau, was er bestellt hat"
      ],
      "answer": 1
     },
@@ -455,7 +455,7 @@
       "Sobald man selbst ein Glas hat",
       "Wenn alle ein Glas haben",
       "Nach dem Essen",
-      "Nie"
+      "Nach dem ersten Bissen"
      ],
      "answer": 1
     },
@@ -465,8 +465,8 @@
      "options": [
       "Die letzte Bahn",
       "Eine kleine Vorspeise als Sitzgebühr",
-      "Ein Trinkspiel",
-      "Die Rechnung"
+      "Ein kleiner Nachtisch zum Schluss",
+      "Der erste Krug Bier"
      ],
      "answer": 1
     },
@@ -533,8 +533,8 @@
      "options": [
       "Nichts sagen",
       "Vorher kurz Bescheid geben",
-      "Durchs Fenster klettern",
-      "Laut klingeln"
+      "Bei der Ankunft ausführlich entschuldigen, vorher nichts sagen",
+      "Ein kleines Geschenk mitbringen und nichts sagen"
      ],
      "answer": 1
     },
@@ -634,8 +634,8 @@
      "options": [
       "Schwarz und Weiß",
       "Rot und Weiß",
-      "Nur Grau",
-      "Grün und Blau"
+      "Gelb und Weiß",
+      "Blau und Silber"
      ],
      "answer": 1,
      "explain": "Rot-Weiß für Feste, Schwarz-Weiß oder Silber für traurige Anlässe."
@@ -645,9 +645,9 @@
      "q": "Wie überreicht man ein Geschenk höflich?",
      "options": [
       "Mit beiden Händen und einer kleinen Verbeugung",
-      "Man wirft es zu",
+      "Mit der rechten Hand, die linke grüßt",
       "Man legt es wortlos hin",
-      "Mit einer Hand über die Schulter"
+      "Ausgepackt, damit man es gleich sieht"
      ],
      "answer": 0
     }
@@ -846,8 +846,8 @@
      "options": [
       "Von links nach rechts, waagerecht",
       "Senkrecht, von rechts nach links",
-      "Von unten nach oben",
-      "Im Kreis"
+      "Senkrecht, von links nach rechts",
+      "Senkrecht, von unten nach oben"
      ],
      "answer": 1
     }
@@ -957,9 +957,9 @@
      "q": "Wie nannte man Sanada Yukimura?",
      "options": [
       "Den besten Krieger Japans",
-      "Den Gott des Handels",
-      "Den Kaiser von Ōsaka",
-      "Den Dichter der Burg"
+      "Den treuesten Diener Hideyoshis",
+      "Den klügsten Strategen der Tokugawa",
+      "Den letzten Samurai"
      ],
      "answer": 0
     }
@@ -1042,10 +1042,10 @@
      "type": "choice",
      "q": "Wovon handelt „Schweigen“?",
      "options": [
-      "Von einem Koch in Ōsaka",
+      "Von einem Mönch, der ein Schweigegelübde ablegt",
       "Von einem Missionar in der Zeit des Christentumsverbots",
-      "Von einem Fußballspiel",
-      "Von einer Reise zum Mond"
+      "Von einem Samurai im Bürgerkrieg",
+      "Von einer Familie nach dem Erdbeben"
      ],
      "answer": 1
     },
@@ -1053,10 +1053,10 @@
      "type": "choice",
      "q": "Welche Frage stellt der Roman?",
      "options": [
-      "Wo ist der Bahnhof?",
+      "Wie lebt man nach dem Krieg weiter?",
       "Warum schweigt Gott, wenn Menschen leiden?",
-      "Was kostet Reis?",
-      "Wer gewinnt das Derby?"
+      "Darf man aus Liebe lügen?",
+      "Was macht einen guten Herrscher aus?"
      ],
      "answer": 1
     }
@@ -1189,8 +1189,8 @@
      "options": [
       "Krieg",
       "Harmonie",
-      "Handel",
-      "Wasser"
+      "Pflicht",
+      "Ehre"
      ],
      "answer": 1
     },
@@ -1284,10 +1284,10 @@
      "type": "choice",
      "q": "Was sagte Ogyū Sorai über die Ordnung?",
      "options": [
-      "Sie kommt von den Sternen",
+      "Sie liegt in der Natur aller Dinge",
       "Menschen – die alten Weisen – haben sie gemacht",
-      "Es gibt keine Ordnung",
-      "Nur der Kaiser kennt sie"
+      "Sie kommt vom Himmel und gilt ewig",
+      "Jeder Mensch trägt sie im Herzen"
      ],
      "answer": 1
     },
@@ -1297,8 +1297,8 @@
      "options": [
       "Nur Samurai durften lernen",
       "Auch Händler diskutierten in eigenen Schulen",
-      "Es gab keine Schulen",
-      "Man lernte nur Rechnen"
+      "Händler lernten nur in den Tempeln",
+      "Die Schulen gehörten den Tokugawa"
      ],
      "answer": 1
     }
@@ -1388,8 +1388,8 @@
      "options": [
       "Im Kreis",
       "In einer Linie von Süden nach Norden",
-      "Zufällig verteilt",
-      "Übereinander"
+      "Um einen Teich herum",
+      "Von Osten nach Westen, zur Sonne hin"
      ],
      "answer": 1
     }
@@ -1444,8 +1444,8 @@
      "options": [
       "Er war nur für Mönche",
       "Er half auch kranken und armen Menschen",
-      "Er war eine Burg",
-      "Er war ein Markt"
+      "Er war vor allem eine Schule für Adlige",
+      "Er sammelte Steuern für den Hof"
      ],
      "answer": 1
     }
@@ -1487,10 +1487,10 @@
      "type": "choice",
      "q": "Was stellt der Garten dar?",
      "options": [
-      "Ein Schlachtfeld",
+      "Den Berg Fuji",
       "Das Reine Land, ein Paradies",
-      "Einen Markt",
-      "Einen Bahnhof"
+      "Das Meer mit seinen Inseln",
+      "Den Weg Buddhas nach Indien"
      ],
      "answer": 1
     },
@@ -1498,10 +1498,10 @@
      "type": "choice",
      "q": "Wie verhält man sich in einem Tempel?",
      "options": [
-      "Laut rufen",
+      "Fotos mit Blitz in der Halle machen",
       "Leise sein und nichts anfassen",
-      "Auf die Steine klettern",
-      "Picknick auf dem Altar"
+      "Die Statuen berühren, das bringt Glück",
+      "Mit Schuhen in die Halle gehen"
      ],
      "answer": 1
     }
@@ -1589,10 +1589,10 @@
      "type": "choice",
      "q": "Wo trainieren die Mönche des Shugendō?",
      "options": [
-      "In der Stadt",
+      "In Tempeln mitten in der Stadt",
       "In den Bergen",
-      "Auf Schiffen",
-      "In Bibliotheken"
+      "An der Küste",
+      "In Zen-Klöstern in Kyōto"
      ],
      "answer": 1
     },
@@ -1600,10 +1600,10 @@
      "type": "choice",
      "q": "Wie nennt man diese Bergmönche?",
      "options": [
-      "Samurai",
+      "Rōnin",
       "Yamabushi",
-      "Ninja",
-      "Geisha"
+      "Sōhei (Kriegermönche)",
+      "Komusō"
      ],
      "answer": 1
     }
@@ -1698,10 +1698,10 @@
      "type": "choice",
      "q": "Was wurde später auf dem Gelände gebaut?",
      "options": [
-      "Ein Bahnhof",
+      "Der Shitennō-ji",
       "Die Burg Ōsaka",
-      "Ein Hafen",
-      "Ein Stadion"
+      "Der Hōkoku-Schrein",
+      "Der Kaiserpalast Naniwa"
      ],
      "answer": 1
     }
@@ -1746,7 +1746,7 @@
       "Von einem Kaiser",
       "Vom Tempel Shitennō-ji",
       "Von einem Fluss",
-      "Von einem Zug"
+      "Von einem Schrein"
      ],
      "answer": 1
     },
@@ -1799,10 +1799,10 @@
      "type": "choice",
      "q": "Was ist ein Torii?",
      "options": [
-      "Eine Tempelglocke",
+      "Ein Tor, typisch für buddhistische Tempel",
       "Ein Tor, typisch für Shintō-Schreine",
-      "Eine Pagode",
-      "Ein Garten"
+      "Ein Wächterlöwe aus Stein",
+      "Eine Steinlaterne"
      ],
      "answer": 1
     },
@@ -1810,10 +1810,10 @@
      "type": "choice",
      "q": "Warum steht ein Torii an einem Tempel?",
      "options": [
-      "Es ist ein Fehler",
+      "Der Tempel wurde später zum Schrein",
       "Früher waren Shintō und Buddhismus eng verbunden",
-      "Es ist ein Eingang für Autos",
-      "Es ist ein modernes Kunstwerk"
+      "Ein Kaiser hat es so befohlen",
+      "Es zeigt, dass hier ein Fürst begraben ist"
      ],
      "answer": 1
     }
@@ -1915,10 +1915,10 @@
      "type": "choice",
      "q": "Was ist besonders an Shōgi-Steinen?",
      "options": [
-      "Sie sind rund",
+      "Jeder Stein kann in alle Richtungen ziehen",
       "Geschlagene Steine darf man selbst wieder einsetzen",
-      "Sie haben keine Schrift",
-      "Sie sind aus Glas"
+      "Der König darf geschlagen werden",
+      "Es gibt keine Bauern"
      ],
      "answer": 1,
      "explain": "Gefangene Steine wechseln die Seite – das gibt es im westlichen Schach nicht."
@@ -2152,7 +2152,7 @@
       "Ihm die Fußsohlen streicheln",
       "Ihm Geld in den Mund stecken",
       "Dreimal um ihn herumlaufen",
-      "Ihn umarmen"
+      "Seinen Bauch reiben"
      ],
      "answer": 0
     }
@@ -2247,10 +2247,10 @@
      "type": "choice",
      "q": "Wo findet ein großer Teil des Tenjin Matsuri statt?",
      "options": [
-      "Auf einem Berg",
+      "Auf dem Meer vor Tempozan",
       "Auf dem Fluss, mit Booten",
-      "Im Bahnhof",
-      "Unter der Erde"
+      "Nur im Hof des Schreins",
+      "Auf der Burgmauer"
      ],
      "answer": 1
     }
@@ -2304,9 +2304,9 @@
      "q": "Was teilten sich die Bewohner?",
      "options": [
       "Brunnen und Toiletten",
-      "Pferde",
-      "Schwerter",
-      "Nichts"
+      "Ein Gemeinschaftsbad im Haus",
+      "Eine große Küche",
+      "Einen Pferdestall"
      ],
      "answer": 0
     }
@@ -2360,9 +2360,9 @@
      "q": "Was ist das Besondere an einem Terminmarkt?",
      "options": [
       "Man handelt Waren, die erst später geliefert werden",
-      "Man tauscht nur Briefmarken",
-      "Man kauft nur am Sonntag",
-      "Man zahlt mit Muscheln"
+      "Man handelt nur mit Bargeld",
+      "Man versteigert Reis an den Höchstbietenden",
+      "Man kauft Reis direkt beim Bauern"
      ],
      "answer": 0
     }
@@ -2418,8 +2418,8 @@
      "options": [
       "Als Zeichen ihrer Treue zum Herrscher",
       "Weil sie Steine verkauften",
-      "Für einen Wettbewerb",
-      "Aus Spaß"
+      "Als Steuer anstelle von Reis",
+      "Als Strafe für einen Aufstand"
      ],
      "answer": 0
     }
@@ -2461,10 +2461,10 @@
      "type": "choice",
      "q": "Warum lieben viele in Ōsaka Hideyoshi?",
      "options": [
-      "Er war ein Dichter",
+      "Er war in Ōsaka geboren",
       "Er stieg von ganz unten auf und machte die Stadt groß",
-      "Er erfand Takoyaki",
-      "Er war Baseballspieler"
+      "Er schützte die Christen",
+      "Er senkte die Steuern für alle Bauern"
      ],
      "answer": 1
     },
@@ -2473,9 +2473,9 @@
      "q": "Was bedeutet der Titel „Taikō“?",
      "options": [
       "Ein Regent im Ruhestand",
-      "Ein Koch",
-      "Ein Mönch",
-      "Ein Kind"
+      "Ein oberster Feldherr (Shōgun)",
+      "Ein kaiserlicher Prinz",
+      "Ein Kanzler (Kampaku) im Amt"
      ],
      "answer": 0
     }
@@ -2600,10 +2600,10 @@
      "type": "choice",
      "q": "Was bedeutet „nande ya nen“?",
      "options": [
-      "Guten Morgen",
+      "Wie geht's?",
       "Wieso denn das?! – die typische Reaktion im Manzai",
-      "Danke schön",
-      "Ich habe Hunger"
+      "Na und?",
+      "Wirklich?"
      ],
      "answer": 1
     }
@@ -2656,10 +2656,10 @@
      "type": "choice",
      "q": "Was ist laut Gen das Geheimnis des Handels?",
      "options": [
-      "Schnell reich werden",
+      "Niedrige Preise um jeden Preis",
       "Geduld und ein warmes Herz",
-      "Hohe Preise",
-      "Viel Werbung"
+      "Gute Kontakte zur Politik",
+      "Ein Laden an der besten Ecke"
      ],
      "answer": 1
     }
@@ -2812,10 +2812,10 @@
      "type": "choice",
      "q": "Wie entstand die OMU?",
      "options": [
-      "Aus einem Krankenhaus",
+      "Aus der Handai, die umzog",
       "Aus zwei Universitäten, die sich zusammenschlossen",
-      "Aus einer Firma",
-      "Aus einem Tempel"
+      "Aus einer privaten Handelsschule",
+      "Aus der Kindai"
      ],
      "answer": 1
     }
@@ -2848,10 +2848,10 @@
      "type": "choice",
      "q": "Womit begann die Geschichte der Uni?",
      "options": [
-      "Mit einer Kunstschule",
+      "Mit einer Schule für Medizin",
       "Mit einer Schule für Handel",
-      "Mit einer Militärschule",
-      "Mit einem Krankenhaus"
+      "Mit einer Schule für Ingenieure",
+      "Mit einer Lehrerschule"
      ],
      "answer": 1
     },
@@ -2860,9 +2860,9 @@
      "q": "Was baute Godai Tomoatsu außerdem auf?",
      "options": [
       "Die Handelskammer von Ōsaka",
-      "Den Tsūtenkaku",
-      "Das Kōshien-Stadion",
-      "Den Flughafen"
+      "Die Burg Ōsaka neu",
+      "Die erste Bahnlinie nach Kōbe",
+      "Die Bank von Japan"
      ],
      "answer": 0
     }

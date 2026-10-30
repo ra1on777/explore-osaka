@@ -186,7 +186,7 @@
       "Sie machen die Dächer dunkler",
       "Pflanzen verdunsten Wasser und Erde schützt vor der Sonne",
       "Sie halten den Wind ab",
-      "Sie locken Regenwolken an"
+      "Sie spiegeln das Sonnenlicht zurück in den Himmel"
      ],
      "answer": 1,
      "explain": "Verdunstung kühlt die Luft, und begrünte Dächer heizen sich viel weniger auf als nackter Beton."
@@ -1741,10 +1741,10 @@
      "type": "choice",
      "q": "Ein älterer Herr steht in der Nähe. Wie sprichst du ihn an?",
      "options": [
-      "„Hey, du! Foto!“",
+      "„Konnichiwa!“ und ihm sofort das Handy geben",
       "„Sumimasen …“ und dann freundlich fragen",
       "Ihm einfach das Handy hinhalten",
-      "Laut winken"
+      "Auf Englisch: „Photo, please!“"
      ],
      "answer": 1
     },
@@ -1775,10 +1775,10 @@
      "type": "choice",
      "q": "Er gibt dir das Handy zurück. Was sagst du?",
      "options": [
-      "Nichts",
+      "„Dōzo!“ mit einem Nicken",
       "„Arigatō gozaimasu!“ mit einer kleinen Verbeugung",
       "„Kanpai!“",
-      "„Itadakimasu!“"
+      "„Otsukaresama!“"
      ],
      "answer": 1
     }
