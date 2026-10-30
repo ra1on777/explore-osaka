@@ -1,0 +1,563 @@
+{
+ "STRANG_GEOGRAPHY": {
+  "9": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Willkommen in Sumiyoshi Taisha. Einer der ältesten Schreine Japans. Hier verehrt man Götter des Meeres."},
+    {"s": "yamada", "p": "explain", "t": "Früher lag der Schrein direkt an der Küste. Die Schiffe fuhren fast bis vor das Tor."},
+    {"s": "yamada", "p": "pray", "t": "Heute ist das Meer kilometerweit entfernt. Flüsse brachten Sand, und die Menschen gewannen Land dazu."},
+    {"s": "me", "t": "Der Schrein ist geblieben – und das Meer ist gegangen."}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Schön gesagt. Dr. Seto wartet im botanischen Garten im Nagai-Park. Sie will Erde vergleichen."}
+   ],
+   "hint": "Dr. Seto im botanischen Garten im Nagai-Park."
+  },
+  "10": {
+   "lines": [
+    {"s": "seto", "p": "book", "t": "Ich vergleiche den Boden hier mit der Erde an den alten Grabhügeln in Sakai."},
+    {"s": "seto", "p": "map", "t": "Die Hügel wurden vor rund 1600 Jahren aufgeschüttet. Die Erde dort ist anders geschichtet als natürlicher Boden."},
+    {"s": "seto", "p": "binoculars", "t": "Ein Kollege hat an der Aussichtsplattform beim größten Grabhügel eine Probe für mich vorbereitet. Holst du sie?"}
+   ],
+   "fetch": {"item": "Bodenprobe", "x": 70, "y": 90, "art": "soil", "find": "Ein Röhrchen mit zwei Schichten: oben dunkle, unten helle, festgestampfte Erde. Beschriftet: „Probe 67“.", "hintOut": "Die Bodenprobe liegt an der Aussichtsplattform beim Daisen-Kofun in Sakai.", "hintBack": "Bring die Probe zu Dr. Seto in den botanischen Garten Nagai."},
+   "after": [
+    {"s": "seto", "p": "book", "t": "Perfekt. Siehst du die Schichten? Das ist Menschenwerk – Lage für Lage festgestampft."},
+    {"s": "seto", "p": "map", "t": "Komm mit nach Sakai. Ich zeige dir den Grabhügel selbst, von der Plattform aus."}
+   ],
+   "hint": "Die Aussichtsplattform am Daisen-Kofun in Sakai."
+  },
+  "11": {
+   "lines": [
+    {"s": "seto", "p": "binoculars", "t": "Der Daisen-Kofun. Fast 500 Meter lang – das größte Grab Japans. Vom Boden aus sieht man nur einen Wald."},
+    {"s": "seto", "p": "map", "t": "Von oben hat er die Form eines Schlüssellochs. Ringsum liegen Wassergräben."},
+    {"s": "seto", "p": "book", "t": "Auf der Steintafel links ist der Grundriss eingraviert. Schau ihn dir an."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Steintafel mit dem Grundriss links.", "x": 13, "y": 78, "r": 11,
+     "closeup": {"art": "keyhole", "title": "Ein Grab wie ein Schlüsselloch", "text": "Vorne eckig, hinten rund, umgeben von Wassergräben. Seit 2019 gehören die Grabhügel von Mozu und Furuichi zum Welterbe."}},
+    {"type": "choice", "q": "Welche Form hat der Grabhügel von oben?", "options": ["Kreis", "Quadrat", "Schlüsselloch", "Stern"], "answer": 2}
+   ],
+   "after": [
+    {"s": "seto", "p": "map", "t": "Tausende Menschen haben jahrelang Erde getragen. Geographie und Geschichte – hier sieht man beides."},
+    {"s": "seto", "p": "binoculars", "t": "Zum Abschluss: „Wo alles begann – auf dem Hügel, nach dem dein Campus benannt ist.“"}
+   ],
+   "hint": "„Wo alles begann – auf dem Hügel, nach dem dein Campus benannt ist.“"
+  },
+  "12": {
+   "lines": [
+    {"s": "seto", "p": "map", "t": "Machikaneyama. Hier haben wir angefangen: Hügel, Schichten, ein Krokodil im Stein."},
+    {"s": "seto", "p": "book", "t": "Dann Wasserfälle, Flüsse, Kanäle, die Hochebene unter der Burg, das Delta, die Bucht, die alte Küste und die Grabhügel."},
+    {"s": "seto", "p": "binoculars", "t": "Ōsaka ist eine Stadt aus Wasser und Erde. Die Menschen haben beides immer wieder neu geformt."},
+    {"s": "me", "t": "Jetzt sehe ich die Stadt mit anderen Augen. Danke, Dr. Seto."}
+   ],
+   "after": [
+    {"s": "seto", "p": "map", "t": "Das freut eine Geographin am meisten. Du bist jetzt mein bester Assistent."}
+   ],
+   "hint": "Strang abgeschlossen – Dr. Seto vermisst weiter die Hügel von Machikaneyama."
+  }
+ },
+ "STRANG_NATURE_RETREAT": {
+  "8": {
+   "lines": [
+    {"s": "maya", "p": "wave", "t": "Schau, die Seerosen und der Lotus! Ich will alle Wasserpflanzen hier bestimmen."},
+    {"s": "maya", "p": "shy", "t": "Aber mein Bestimmungsbuch … ich hab es im Teehaus im Daisen-Park in Sakai liegen lassen."},
+    {"s": "maya", "p": "coffee", "t": "Holst du es mir? Ich warte hier am Teich."}
+   ],
+   "fetch": {"item": "Mayas Bestimmungsbuch", "x": 35, "y": 56, "art": "plantbook", "find": "Ein Pflanzenbuch mit vielen Lesezeichen. Auf einer Seite eine gepresste Lotusblüte.", "hintOut": "Das Buch liegt im Teehaus im Daisen-Park in Sakai.", "hintBack": "Bring das Buch zu Maya in den botanischen Garten Nagai."},
+   "after": [
+    {"s": "maya", "p": "wave", "t": "Danke! Siehst du: Der Lotus hebt seine Blätter über das Wasser, die Seerose legt sie flach darauf."},
+    {"s": "maya", "p": "coffee", "t": "Goro wartet übrigens im Teehausgarten in Sakai. Er hat dort Moos und Steine entdeckt."}
+   ],
+   "hint": "Goro im Teehausgarten im Daisen-Park."
+  },
+  "9": {
+   "lines": [
+    {"s": "goro", "t": "Miau. In diesem Garten wächst alles langsam. Moos, Kamelien, Bambus."},
+    {"s": "goro", "t": "Ich lege mich auf jedes Moospolster einmal. Wissenschaftlich."},
+    {"s": "goro", "t": "Erkennst du die Umrisse? Ich frage dich ab."}
+   ],
+   "tasks": [
+    {"type": "rounds", "art": "leaf", "rounds": [
+     {"q": "Lange, schmale Blätter, wie Schwerter. Welche Pflanze?", "art": "bamboo", "options": ["Bambus", "Ahorn", "Kamelie", "Ginkgo"], "answer": 0},
+     {"q": "Ein glänzendes ovales Blatt. Im Winter blüht die Pflanze rot.", "art": "tsubaki", "options": ["Kiefer", "Kamelie (Tsubaki)", "Bambus", "Moos"], "answer": 1},
+     {"q": "Winzige Stängel, dicht an dicht – wie ein grüner Teppich.", "art": "moss", "options": ["Ginkgo", "Ahorn", "Moos (Koke)", "Kamelie"], "answer": 2},
+     {"q": "Feine Nadeln, immer zu zweit.", "art": "pine", "options": ["Kiefer (Matsu)", "Bambus", "Kamelie", "Moos"], "answer": 0}
+    ]}
+   ],
+   "after": [
+    {"s": "goro", "t": "Nicht schlecht für einen Menschen."},
+    {"s": "goro", "t": "Ich gehe jetzt zurück nach Hause. Zur alten Holzbrücke am Wasserfall im Norden. Besuch mich dort."}
+   ],
+   "hint": "Die alte Holzbrücke am Minō-Wasserfall."
+  },
+  "10": {
+   "lines": [
+    {"s": "goro", "t": "Da bist du. Hier hast du mich zum ersten Mal gesehen, erinnerst du dich?"},
+    {"s": "goro", "t": "Damals hast du nur Fotos gemacht. Jetzt schaust du richtig hin."},
+    {"s": "goro", "t": "Beweis es mir. Drei Fragen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Welcher Baum färbt sich hier im Herbst leuchtend rot?", "options": ["Ahorn (Momiji)", "Kiefer", "Bambus", "Kamelie"], "answer": 0},
+    {"type": "choice", "q": "Welcher Vogel wartet am Burggraben reglos auf Fische?", "options": ["Krähe", "Graureiher", "Taube", "Spatz"], "answer": 1},
+    {"type": "choice", "q": "Was macht man am besten in der Natur?", "options": ["Laut Musik hören", "Langsam gehen und genau hinsehen", "Blumen pflücken", "Rennen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "goro", "t": "Du hast es verstanden. Ich bin zufrieden."},
+    {"s": "goro", "t": "Maya wartet auf dem Waldweg am Campus. Geh zu ihr. Ich bleibe hier – das ist mein Revier."}
+   ],
+   "hint": "Maya auf dem Waldweg am Campus Machikaneyama."
+  },
+  "11": {
+   "lines": [
+    {"s": "maya", "p": "wave", "t": "Weißt du noch? Hier wollte ich einfach nur Ruhe vom vollen Campus."},
+    {"s": "maya", "p": "coffee", "t": "Und dann haben wir Wasserfälle, Gärten, Parks und einen sprechenden Kater gefunden."},
+    {"s": "maya", "p": "shy", "t": "Ich glaube, langsam sein ist auch eine Fähigkeit. Man muss sie üben."},
+    {"s": "me", "t": "Mit dir habe ich sie gelernt."}
+   ],
+   "after": [
+    {"s": "maya", "p": "wave", "t": "Dann lass uns weiter üben. Jeden Tag ein bisschen."}
+   ],
+   "hint": "Strang abgeschlossen – Maya liest auf dem Waldweg am Campus."
+  }
+ },
+ "STRANG_PHILOSOPHY_THEOLOGY": {
+  "16": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Siehst du das Tor und die Brücke dahinter? Hier beginnt der heilige Bezirk."},
+    {"s": "yamada", "p": "explain", "t": "Im Shintō gibt es Kegare – Unreinheit. Nicht Sünde, eher wie Staub auf der Seele."},
+    {"s": "yamada", "p": "pray", "t": "Man reinigt sich mit Wasser. Das nennt man Misogi. Am Eingang wäscht man Hände und Mund."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das geflochtene Seil am großen Tor.", "x": 52, "y": 21, "r": 10,
+     "closeup": {"art": "shimenawa", "title": "Shimenawa", "text": "Ein Seil aus Reisstroh mit weißen Papierstreifen. Es markiert die Grenze zum Heiligen."}},
+    {"type": "choice", "q": "Was ist „Misogi“?", "options": ["Ein Fest mit Feuer", "Reinigung mit Wasser", "Ein Gebet für Geld", "Ein Tanz"], "answer": 1}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Richtig. Rein sein heißt hier: frisch und offen sein."},
+    {"s": "yamada", "p": "explain", "t": "Komm zur Haupthalle. Dort erzähle ich dir von einem Gelehrten, der über Gefühle nachdachte."}
+   ],
+   "hint": "Die Haupthalle von Sumiyoshi Taisha."
+  },
+  "17": {
+   "lines": [
+    {"s": "yamada", "p": "explain", "t": "Motoori Norinaga lebte im 18. Jahrhundert. Er las alte japanische Texte, um herauszufinden, was „typisch japanisch“ ist."},
+    {"s": "yamada", "p": "calm", "t": "Er fand ein Gefühl: Mono no aware – die leise Traurigkeit, wenn etwas Schönes vergeht."},
+    {"s": "yamada", "p": "pray", "t": "Wie Kirschblüten, die schon nach einer Woche fallen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was beschreibt „mono no aware“?", "options": ["Wut über Ungerechtigkeit", "Leise Traurigkeit über die Vergänglichkeit", "Freude am Essen", "Angst vor Geistern"], "answer": 1},
+    {"type": "choice", "q": "Welches Bild passt dazu?", "options": ["Fallende Kirschblüten", "Ein neues Hochhaus", "Ein Fußballtor", "Ein voller Kühlschrank"], "answer": 0}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Schön ist, was nicht bleibt. Das denken viele hier."},
+    {"s": "yamada", "p": "explain", "t": "Prof. Takada wartet bei den großen Grabhügeln in Sakai. Er spricht über heilige Orte der Toten."}
+   ],
+   "hint": "Prof. Takada an der Plattform beim Daisen-Kofun."
+  },
+  "18": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Die Grabhügel waren heilige Landschaften. Hier wurden mächtige Herrscher bestattet."},
+    {"s": "takada", "p": "think", "t": "Rund um den Hügel standen Tonfiguren, Haniwa – Krieger, Häuser, Pferde. Sie sollten das Grab schützen."},
+    {"s": "takada", "p": "ponder", "t": "Bis heute darf niemand den Hügel betreten. Er gilt als Grab eines Kaisers."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was sind Haniwa?", "options": ["Tonfiguren rund um alte Gräber", "Japanische Süßigkeiten", "Holzschwerter", "Tempelglocken"], "answer": 0},
+    {"type": "choice", "q": "Warum darf man den Hügel nicht betreten?", "options": ["Er ist zu steil", "Er gilt als heiliges Kaisergrab", "Dort leben Bären", "Er ist privat verkauft"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Ein Wald, ein Grab, ein heiliger Ort. Drei Dinge in einem."},
+    {"s": "takada", "p": "think", "t": "Maya ist im Teehaus nebenan. Sie hat über die Ästhetik des Tees gelesen."}
+   ],
+   "hint": "Maya im Teehaus im Daisen-Park."
+  },
+  "19": {
+   "lines": [
+    {"s": "maya", "p": "coffee", "t": "Sen no Rikyū kam aus Sakai. Er hat die Teezeremonie geprägt wie kein anderer."},
+    {"s": "maya", "p": "shy", "t": "Die Herrscher liebten Gold und Pracht. Rikyū wollte das Gegenteil: einfache, raue Schalen, ein kleiner, stiller Raum."},
+    {"s": "maya", "p": "wave", "t": "Das nennt man Wabi. Schön ist, was schlicht und unvollkommen ist. Schau dir die Teeschale an!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Teeschale in den Händen der Frau auf der Veranda.", "x": 55, "y": 46, "r": 9,
+     "closeup": {"art": "chawan", "title": "Eine Teeschale", "text": "Dunkel, ein wenig schief, mit grünem Matcha. Gerade weil sie unperfekt ist, ist sie wertvoll."}},
+    {"type": "choice", "q": "Was ist das Ideal von „Wabi“?", "options": ["Gold und Pracht", "Schlichtheit und Unvollkommenheit", "Schnelligkeit", "Lautstärke"], "answer": 1}
+   ],
+   "after": [
+    {"s": "maya", "p": "shy", "t": "Ein schöner Gedanke, oder? Nicht alles muss perfekt sein."},
+    {"s": "maya", "p": "coffee", "t": "Dr. Kiryū sagt: „Wo man Comics wie Bibeln studiert, sprechen wir über das Lesen selbst.“"}
+   ],
+   "hint": "„Wo man Comics wie Bibeln studiert.“"
+  },
+  "20": {
+   "lines": [
+    {"s": "kiryu", "p": "think", "t": "Eine Bibliothek mit über 20.000 Comics. Ist das Kultur oder Unterhaltung? Wer entscheidet das?"},
+    {"s": "kiryu", "p": "explain", "t": "Hermeneutik ist die Kunst des Verstehens. Jeder Leser bringt seine eigene Welt in einen Text mit."},
+    {"s": "kiryu", "p": "doubt", "t": "Gibt es also nur eine richtige Deutung? Oder viele?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist Hermeneutik?", "options": ["Die Lehre vom Verstehen von Texten", "Eine Kampfkunst", "Eine Kochtechnik", "Ein Rechtsgebiet"], "answer": 0},
+    {"type": "choice", "q": "Was bringt jeder Leser in einen Text mit?", "options": ["Nichts", "Seine eigene Erfahrung und Welt", "Nur Wörterbücher", "Den Autor"], "answer": 1}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "think", "t": "Gut. Lesen ist ein Gespräch, kein Befehl."},
+    {"s": "kiryu", "p": "explain", "t": "Ich bin bald im Uni-Zentrum auf der Flussinsel. Dort reden wir über Wissenschaft und Glauben."}
+   ],
+   "hint": "Dr. Kiryū im Uni-Zentrum auf Nakanoshima."
+  },
+  "21": {
+   "lines": [
+    {"s": "kiryu", "p": "explain", "t": "In Japan leben Wissenschaft und alte Bräuche nebeneinander. Ein Forscher baut Roboter – und kauft am Neujahrstag ein Omamori."},
+    {"s": "kiryu", "p": "doubt", "t": "Widerspruch? Oder einfach menschlich?"},
+    {"s": "kiryu", "p": "think", "t": "Ich habe dazu einen Brief von einem Kollegen in Kwansei bekommen. Er liegt noch dort auf dem Campus. Holst du ihn?"}
+   ],
+   "fetch": {"item": "Brief aus Kwansei", "x": 40, "y": 86, "art": "letter", "find": "Ein Umschlag mit rotem Siegel. Darauf: „Für Dr. Kiryū – Gedanken zu Glaube und Vernunft“.", "hintOut": "Der Brief liegt auf dem Campus der Kwansei Gakuin in Nishinomiya.", "hintBack": "Bring den Brief zu Dr. Kiryū ins Uni-Zentrum auf Nakanoshima."},
+   "after": [
+    {"s": "kiryu", "p": "explain", "t": "Er schreibt: „Die Vernunft erklärt die Welt. Das Ritual hilft, in ihr zu leben.“ Schön."},
+    {"s": "kiryu", "p": "think", "t": "Prof. Takada wartet im Uni-Museum in Toyonaka. Er will die Wurzeln unserer Universität zeigen."}
+   ],
+   "hint": "Prof. Takada im Uni-Museum in Toyonaka."
+  },
+  "22": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Erinnerst du dich an die Händlerschule Kaitokudō und an die Schule für westliche Medizin, das Tekijuku?"},
+    {"s": "takada", "p": "think", "t": "Aus diesen freien Schulen der Händlerstadt ist später unsere Universität gewachsen."},
+    {"s": "takada", "p": "ponder", "t": "Was hast du dir gemerkt?"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wer gründete das Kaitokudō?", "options": ["Samurai", "Händler aus Ōsaka", "Mönche", "Ausländer"], "answer": 1},
+    {"type": "choice", "q": "Was lernte man im Tekijuku?", "options": ["Schwertkampf", "Westliche Medizin und Wissenschaft", "Teezeremonie", "Kalligraphie"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Sehr gut. Eine Universität wächst aus Neugier, nicht aus Befehlen."},
+    {"s": "takada", "p": "think", "t": "Dr. Kiryū will mit dir zum Uhrturm in Kwansei. Dort begann euer Gespräch."}
+   ],
+   "hint": "Der Uhrturm in Kwansei Gakuin."
+  },
+  "23": {
+   "lines": [
+    {"s": "kiryu", "p": "think", "t": "Hier haben wir über Ost und West gesprochen. Weißt du noch?"},
+    {"s": "kiryu", "p": "explain", "t": "Shintō, Buddhismus, Christentum, Konfuzius, die Kyōto-Schule. Und du hast überall Fragen gestellt."},
+    {"s": "kiryu", "p": "doubt", "t": "Schau noch einmal auf den Turm. Was sagt dir die Uhr?"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Uhr am Turm.", "x": 50, "y": 38, "r": 10,
+     "closeup": {"art": "clocktower", "title": "Die Uhr am Turm", "text": "Die Zeiger laufen weiter. Kulturen übersetzen sich – langsam, aber stetig."}},
+    {"type": "choice", "q": "Was ist das Ziel von Übersetzung zwischen Kulturen?", "options": ["Eine Kultur über die andere stellen", "Sich gegenseitig verstehen", "Alles gleich machen", "Nichts mehr fragen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "explain", "t": "Ja. Verstehen heißt nicht, gleich zu werden."},
+    {"s": "kiryu", "p": "think", "t": "Lass uns zum Schluss dorthin gehen, wo du angekommen bist: zum Campus in Toyonaka."}
+   ],
+   "hint": "Der Campus in Toyonaka."
+  },
+  "24": {
+   "lines": [
+    {"s": "kiryu", "p": "think", "t": "Du bist als Gast gekommen. Mit einem Kopf voller Bilder von Japan."},
+    {"s": "kiryu", "p": "explain", "t": "Jetzt hast du Fragen statt Bildern. Das ist besser."},
+    {"s": "me", "t": "Ich glaube, ich verstehe Japan nicht ganz. Aber mich selbst etwas besser."},
+    {"s": "kiryu", "p": "doubt", "t": "Das ist der Anfang jeder Philosophie. Willkommen."}
+   ],
+   "after": [
+    {"s": "kiryu", "p": "think", "t": "Meine Tür steht dir immer offen. Für jede Frage."}
+   ],
+   "hint": "Strang abgeschlossen – Dr. Kiryū denkt weiter auf dem Campus Toyonaka."
+  }
+ },
+ "STRANG_CULTURE_JAPAN": {
+  "3": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Emi hat dich geschickt? Gut. Hier am Schrein zieht man Omikuji – Glückslose aus Papier."},
+    {"s": "yamada", "p": "explain", "t": "Von daikichi, großes Glück, über kichi und shōkichi bis kyō, Unglück."},
+    {"s": "yamada", "p": "pray", "t": "Ein schlechtes Los bindet man an einen Ständer am Schrein. So bleibt das Pech hier. Zieh eins am Schalter rechts!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf den kleinen Schrein-Schalter rechts.", "x": 80, "y": 56, "r": 10,
+     "closeup": {"art": "omikuji", "title": "Dein Glückslos", "text": "大吉 – daikichi, großes Glück! Dieses Los darf man mitnehmen."}},
+    {"type": "choice", "q": "Was macht man mit einem schlechten Los?", "options": ["Wegwerfen", "Am Schrein festbinden", "Aufessen", "Verkaufen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Großes Glück! Heb es gut auf."},
+    {"s": "yamada", "p": "explain", "t": "Takeshi wartet vor der Haupthalle. Er will dir zeigen, wie man sich hier richtig verbeugt."}
+   ],
+   "hint": "Takeshi vor der Haupthalle von Sumiyoshi."
+  },
+  "4": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Rei – die Verbeugung. Leicht, etwa 15 Grad, zum Grüßen. 30 Grad aus Respekt. 45 Grad für eine tiefe Entschuldigung."},
+    {"s": "takeshi", "p": "think", "t": "Am Schrein: zweimal verbeugen, zweimal klatschen, beten, einmal verbeugen."},
+    {"s": "takeshi", "p": "newspaper", "t": "Probieren wir es."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wie betet man an einem Shintō-Schrein?", "options": ["Einmal klatschen, dreimal verbeugen", "Zweimal verbeugen, zweimal klatschen, einmal verbeugen", "Hände falten und singen", "Nur still stehen"], "answer": 1},
+    {"type": "choice", "q": "Du hast jemandem den Weg versperrt. Wie tief verbeugst du dich?", "options": ["Gar nicht", "Leicht, etwa 15 Grad", "Bis zum Boden", "Nur mit den Augen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Sehr schön. Die Verbeugung ist ein stilles Wort."},
+    {"s": "takeshi", "p": "think", "t": "Wappen erzählen auch ohne Worte. Ich warte am großen Tor der Burg."}
+   ],
+   "hint": "Takeshi am großen Tor der Burg."
+  },
+  "5": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Jede Samurai-Familie hatte ein Wappen, ein Kamon. Pflanzen, Tiere, Werkzeuge – immer im Kreis."},
+    {"s": "takeshi", "p": "think", "t": "Die Toyotomi trugen ein Blatt des Kiri-Baums, der Paulownie."},
+    {"s": "takeshi", "p": "newspaper", "t": "Am Tor sind Wappen zu sehen. Such sie!"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das Dach über dem großen Tor.", "x": 64, "y": 38, "r": 12,
+     "closeup": {"art": "kamon", "title": "Familienwappen", "text": "Links das Paulownienblatt der Toyotomi, rechts ein Blütenwappen. Kreise um einfache Formen – erkennbar von weitem."}},
+    {"type": "choice", "q": "Welches Motiv nutzten die Toyotomi?", "options": ["Einen Drachen", "Ein Blatt der Paulownie (Kiri)", "Eine Sonne", "Ein Schwert"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Richtig. Das Kiri-Wappen sieht man übrigens bis heute auf offiziellen Dokumenten der Regierung."},
+    {"s": "takeshi", "p": "think", "t": "Prof. Takada wartet im Museum im Hauptturm. Er erzählt vom Weg der Krieger."}
+   ],
+   "hint": "Prof. Takada im Museum im Hauptturm der Burg."
+  },
+  "6": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Bushidō – der Weg des Kriegers. Treue, Mut, Selbstbeherrschung."},
+    {"s": "takada", "p": "think", "t": "Viele Samurai übten Zen-Meditation. Ruhig bleiben, auch wenn das Leben auf dem Spiel steht."},
+    {"s": "takada", "p": "ponder", "t": "Die Rüstungen hier sind aus Lack, Eisen und Seidenschnüren. Leicht und beweglich."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was heißt „Bushidō“?", "options": ["Weg des Tees", "Weg des Kriegers", "Weg der Schrift", "Weg des Handels"], "answer": 1},
+    {"type": "choice", "q": "Warum übten viele Samurai Zen?", "options": ["Um ruhig und konzentriert zu bleiben", "Um reich zu werden", "Um schneller zu laufen", "Um besser zu kochen"], "answer": 0}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Gut. Ruhe ist auch eine Waffe."},
+    {"s": "takada", "p": "think", "t": "Emi forscht gerade im Geschichtsmuseum neben der Burg. Es geht um Neujahr."}
+   ],
+   "hint": "Emi im Geschichtsmuseum neben der Burg."
+  },
+  "7": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "Neujahr ist das wichtigste Fest in Japan. Man isst Osechi – viele kleine Gerichte in Lackkästen. Jedes hat eine Bedeutung."},
+    {"s": "emi", "p": "inspect", "t": "Vor die Tür stellt man Kadomatsu: Kiefer und Bambus. Sie laden die Götter des neuen Jahres ein."},
+    {"s": "emi", "p": "wave", "t": "Im Museum mit der alten Edo-Straße steht ein Modell davon. Holst du mir eine Skizze?"}
+   ],
+   "fetch": {"item": "Kadomatsu-Skizze", "x": 75, "y": 82, "art": "kadomatsu", "find": "Eine Zeichnung: drei schräg geschnittene Bambusrohre, Kiefernzweige, ein Strohmantel.", "hintOut": "Das Modell steht im Museum mit der Edo-Straße.", "hintBack": "Bring die Skizze zu Emi ins Geschichtsmuseum neben der Burg."},
+   "after": [
+    {"s": "emi", "p": "note", "t": "Perfekt! Kiefer steht für langes Leben, Bambus für Stärke."},
+    {"s": "emi", "p": "wave", "t": "Im Sommer gibt es ein anderes großes Fest. Ich erkläre es dir an Japans ältestem offiziellen Tempel."}
+   ],
+   "hint": "Emi am Südtor von Shitennō-ji."
+  },
+  "8": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "O-Bon, Mitte August. Man glaubt, die Seelen der Vorfahren kommen für ein paar Tage nach Hause."},
+    {"s": "emi", "p": "inspect", "t": "Man putzt die Gräber, tanzt im Kreis und am Ende setzt man Laternen auf das Wasser. Sie bringen die Seelen zurück."},
+    {"s": "emi", "p": "wave", "t": "Viele Japaner fahren zu O-Bon zu ihren Familien. Dann sind alle Züge voll!"}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Wann ist O-Bon?", "options": ["Im Januar", "Mitte August", "Im Oktober", "An Weihnachten"], "answer": 1},
+    {"type": "choice", "q": "Wozu dienen die Laternen auf dem Wasser?", "options": ["Sie beleuchten den Fluss für Boote", "Sie begleiten die Seelen der Ahnen zurück", "Sie sind ein Wettbewerb", "Sie vertreiben Mücken"], "answer": 1}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Genau. Ein trauriges, aber warmes Fest."},
+    {"s": "emi", "p": "wave", "t": "Takeshi wartet im Tempelgarten. Er hat Hanafuda-Karten für Herbst und Winter dabei."}
+   ],
+   "hint": "Takeshi im Garten von Shitennō-ji."
+  },
+  "9": {
+   "lines": [
+    {"s": "takeshi", "p": "newspaper", "t": "Emi hat dir Frühling und Sommer gezeigt. Jetzt die zweite Hälfte des Jahres."},
+    {"s": "takeshi", "p": "explain", "t": "Jeder Monat hat seine Pflanze. Manche Karten haben auch Tiere: einen Hirsch, einen Kranich, einen Phönix."},
+    {"s": "takeshi", "p": "think", "t": "Ordne die Karten zu."}
+   ],
+   "tasks": [
+    {"type": "rounds", "art": "hanafuda", "rounds": [
+     {"q": "Rote Blätter und ein Hirsch. Welcher Monat?", "art": "hf-10", "options": ["Oktober – Ahorn", "Mai – Schwertlilie", "Februar – Pflaume", "Juni – Pfingstrose"], "answer": 0},
+     {"q": "Gelbe Blüten und ein Sake-Becher.", "art": "hf-9", "options": ["Januar – Kiefer", "September – Chrysantheme", "April – Glyzinie", "Dezember – Paulownie"], "answer": 1},
+     {"q": "Eine Weide im Regen, ein Mann mit Schirm.", "art": "hf-11", "options": ["November – Weide", "August – Pampasgras", "März – Kirsche", "Juli – Buschklee"], "answer": 0},
+     {"q": "Kiefer, rote Sonne und ein Kranich.", "art": "hf-1", "options": ["Oktober – Ahorn", "Januar – Kiefer", "Mai – Schwertlilie", "September – Chrysantheme"], "answer": 1}
+    ]}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Ausgezeichnet. Jetzt kennst du fast das ganze Jahr in Karten."},
+    {"s": "takeshi", "p": "think", "t": "Prof. Takada ist an den Grabhügeln in Sakai. Er spricht über die Tonfiguren dort."}
+   ],
+   "hint": "Prof. Takada am Daisen-Kofun in Sakai."
+  },
+  "10": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Haniwa – Tonfiguren aus dem 3. bis 6. Jahrhundert. Sie standen in Reihen um die Grabhügel."},
+    {"s": "takada", "p": "think", "t": "Zuerst waren es einfache Röhren. Später Häuser, Pferde, Krieger, Tänzerinnen."},
+    {"s": "takada", "p": "ponder", "t": "Sie markierten die Grenze zwischen der Welt der Lebenden und dem Grab."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Woraus sind Haniwa gemacht?", "options": ["Aus Holz", "Aus Ton", "Aus Bronze", "Aus Stein"], "answer": 1},
+    {"type": "choice", "q": "Was zeigten spätere Haniwa?", "options": ["Autos", "Häuser, Pferde und Menschen", "Nur Blumen", "Schriftzeichen"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Richtig. Wächter aus Erde."},
+    {"s": "takada", "p": "think", "t": "Takeshi ist im Handwerksmuseum in der Altstadt von Sakai. Dort lebt das Handwerk weiter."}
+   ],
+   "hint": "Takeshi im Handwerksmuseum in Sakai."
+  },
+  "11": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Sakai ist eine Stadt der Handwerker. Messer, aber auch Räucherstäbchen werden hier seit Jahrhunderten gemacht."},
+    {"s": "takeshi", "p": "think", "t": "Ein Meister macht nur einen Teil der Arbeit: der eine schmiedet, der andere schleift, der dritte macht den Griff."},
+    {"s": "takeshi", "p": "newspaper", "t": "Schau dir die Vitrinen links an."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf die Vitrine mit den Messern links.", "x": 10, "y": 54, "r": 10,
+     "closeup": {"art": "sakaicraft", "title": "Handwerk aus Sakai", "text": "Messer in allen Formen, daneben Räucherstäbchen. Jedes Stück geht durch mehrere Meisterhände."}},
+    {"type": "choice", "q": "Wie entsteht ein traditionelles Sakai-Messer?", "options": ["Eine Maschine macht alles", "Mehrere Meister übernehmen je einen Arbeitsschritt", "Es wird gegossen", "Es wird aus Plastik gedruckt"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Richtig. Teamarbeit über Generationen."},
+    {"s": "takeshi", "p": "think", "t": "Emi wartet im Teehaus im Daisen-Park. Sie will über den Weg des Tees sprechen."}
+   ],
+   "hint": "Emi im Teehaus im Daisen-Park."
+  },
+  "12": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "Der Teeweg, Chadō, hat vier Grundsätze. Sen no Rikyū hat sie geprägt."},
+    {"s": "emi", "p": "inspect", "t": "Wa – Harmonie. Kei – Respekt. Sei – Reinheit. Jaku – Stille."},
+    {"s": "emi", "p": "wave", "t": "Im Teeraum sind alle gleich. Sogar ein Fürst musste durch eine niedrige Tür kriechen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „Jaku“?", "options": ["Harmonie", "Respekt", "Reinheit", "Stille"], "answer": 3},
+    {"type": "choice", "q": "Warum hatte der Teeraum eine niedrige Tür?", "options": ["Damit es warm bleibt", "Damit alle sich beugen müssen und gleich sind", "Gegen Diebe", "Aus Holzmangel"], "answer": 1}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Schön, oder? Ein Raum, in dem Rang keine Rolle spielt."},
+    {"s": "emi", "p": "wave", "t": "Takeshi sagt nur: „Wo eine Nudel die Welt eroberte.“"}
+   ],
+   "hint": "„Wo eine Nudel die Welt eroberte.“"
+  },
+  "13": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Japan nach dem Krieg: arm, hungrig, aber voller Ideen. Andō Momofuku sah lange Schlangen vor den Nudelständen."},
+    {"s": "takeshi", "p": "think", "t": "Er erfand die Instant-Nudel. Später, auf einer Reise in die USA, sah er Leute Nudeln aus Bechern essen."},
+    {"s": "takeshi", "p": "newspaper", "t": "So entstand der Cup Noodle. Rate mal, in welchem Jahr."}
+   ],
+   "tasks": [
+    {"type": "estimate", "q": "In welchem Jahr kam der Cup Noodle auf den Markt?", "min": 1940, "max": 2010, "step": 1, "answer": 1971, "unit": "", "tol": 0.003}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "1971! Erfindergeist ist auch ein Teil der japanischen Kultur."},
+    {"s": "takeshi", "p": "think", "t": "Emi wartet am Turm der Sonne im Expo-Park. Sie will über die ganz alte Kunst Japans sprechen."}
+   ],
+   "hint": "Emi am Turm der Sonne im Expo-Park."
+  },
+  "14": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "Okamoto Tarō liebte die Jōmon-Keramik. Sie ist über 10.000 Jahre alt – mit wilden Mustern wie Flammen."},
+    {"s": "emi", "p": "inspect", "t": "Er sagte: Das ist die Urkraft Japans. Sein Turm verbindet diese alte Kraft mit der Zukunft."},
+    {"s": "emi", "p": "wave", "t": "Schau dir das Gesicht in der Mitte an. Erkennst du die Wildheit?"}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf das Gesicht in der Mitte des Turms.", "x": 61, "y": 38, "r": 10,
+     "closeup": {"art": "jomon", "title": "Jōmon-Kraft", "text": "Ein Gefäß mit Wellen- und Flammenmustern. Solche Formen haben Okamoto Tarō zu seinem Turm inspiriert."}},
+    {"type": "choice", "q": "Was inspirierte Okamoto Tarō?", "options": ["Moderne Autos", "Die uralte Jōmon-Keramik", "Europäische Kirchen", "Comics"], "answer": 1}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Vergangenheit und Zukunft in einem Turm. Das ist Japan."},
+    {"s": "emi", "p": "wave", "t": "Takeshi hat sein letztes Hanafuda-Spiel vorbereitet. Im Uni-Museum in Toyonaka, wo alles begann."}
+   ],
+   "hint": "Takeshi im Uni-Museum in Toyonaka."
+  },
+  "15": {
+   "lines": [
+    {"s": "takeshi", "p": "newspaper", "t": "Das Meisterstück: Gokō – die fünf hellen Karten. Wer alle fünf sammelt, gewinnt fast immer."},
+    {"s": "takeshi", "p": "explain", "t": "Kranich, Vorhang unter Kirschblüten, Vollmond, der Mann im Regen und der Phönix."},
+    {"s": "takeshi", "p": "think", "t": "Finde ihre Monate!"}
+   ],
+   "tasks": [
+    {"type": "rounds", "art": "hanafuda", "rounds": [
+     {"q": "Der Kranich unter der Kiefer.", "art": "hf-1", "options": ["Januar", "April", "Juli", "Oktober"], "answer": 0},
+     {"q": "Der Vorhang unter Kirschblüten.", "art": "hf-3", "options": ["Februar", "März", "Juni", "November"], "answer": 1},
+     {"q": "Der volle Mond über dem Pampasgras.", "art": "hf-8", "options": ["Mai", "August", "September", "Dezember"], "answer": 1},
+     {"q": "Der Mann mit Schirm unter der Weide.", "art": "hf-11", "options": ["Januar", "Juni", "November", "März"], "answer": 2},
+     {"q": "Der Phönix in der Paulownie.", "art": "hf-12", "options": ["Dezember", "August", "Mai", "Februar"], "answer": 0}
+    ]}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Gokō! Alle fünf hellen Karten. Ich verneige mich vor dir."},
+    {"s": "takeshi", "p": "think", "t": "Emi wartet auf dem Campus in Toyonaka, um alles zusammenzufassen."}
+   ],
+   "hint": "Emi auf dem Campus in Toyonaka."
+  },
+  "16": {
+   "lines": [
+    {"s": "emi", "p": "note", "t": "Mondkalender, Glückstage, Hanafuda, Neujahr, O-Bon, Teeweg, Haniwa, Jōmon."},
+    {"s": "emi", "p": "inspect", "t": "Japan verändert sich ständig – aber es nimmt das Alte immer mit."},
+    {"s": "emi", "p": "wave", "t": "Wie ein Baum mit tiefen Wurzeln und neuen Blättern jedes Jahr."},
+    {"s": "me", "t": "Das merke ich mir: Wurzeln und neue Blätter."}
+   ],
+   "after": [
+    {"s": "emi", "p": "note", "t": "Danke für deine Neugier. Du bist jetzt selbst ein kleiner Volkskundler."}
+   ],
+   "hint": "Strang abgeschlossen – Emi forscht weiter auf dem Campus Toyonaka."
+  }
+ },
+ "STRANG_CULTURE_KANSAI": {
+  "13": {
+   "lines": [
+    {"s": "daiki", "p": "cocky", "t": "Das Ōsaka-Derby! Gamba aus Suita in Blau-Schwarz gegen Cerezo hier aus Nagai in Pink."},
+    {"s": "daiki", "p": "ready", "t": "„Cerezo“ ist Spanisch und heißt Kirschbaum. Die Kirschblüte ist die Blume der Stadt Ōsaka."},
+    {"s": "daiki", "p": "cheer", "t": "Norden gegen Süden. Die halbe Stadt ist an dem Tag im Stadion."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „Cerezo“?", "options": ["Löwe", "Kirschbaum", "Feuer", "Fluss"], "answer": 1},
+    {"type": "choice", "q": "Welche Farben trägt Gamba Ōsaka?", "options": ["Pink", "Blau-Schwarz", "Rot-Weiß", "Grün"], "answer": 1}
+   ],
+   "after": [
+    {"s": "daiki", "p": "cocky", "t": "Ich bin natürlich für … das verrate ich nicht."},
+    {"s": "daiki", "p": "ready", "t": "Takeshi ist im Handwerksmuseum in Sakai. Sakai war früher eine freie Stadt – fast wie eine eigene Republik."}
+   ],
+   "hint": "Takeshi im Handwerksmuseum in Sakai."
+  },
+  "14": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Im 16. Jahrhundert regierten in Sakai die reichen Händler selbst. Die Stadt war von Wassergräben umgeben."},
+    {"s": "takeshi", "p": "think", "t": "Europäische Missionare verglichen sie mit Venedig. Hier wurden auch Gewehre gebaut – nach europäischem Vorbild."},
+    {"s": "takeshi", "p": "newspaper", "t": "Schau dir den Schmied an der Esse an. Die Technik ist uralt."}
+   ],
+   "tasks": [
+    {"type": "inspect", "q": "Tippe auf den Schmied am Amboss.", "x": 84, "y": 46, "r": 11,
+     "closeup": {"art": "teppo", "title": "Eisen aus Sakai", "text": "Erst Gewehre, später Tabakmesser, heute Küchenmesser. Sakai schmiedet seit Jahrhunderten."}},
+    {"type": "choice", "q": "Mit welcher Stadt verglichen Missionare Sakai?", "options": ["Rom", "Venedig", "Paris", "London"], "answer": 1}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Eine freie Händlerstadt. Kansai war immer selbstbewusst."},
+    {"s": "takeshi", "p": "think", "t": "Emi veranstaltet ein großes Karuta-Turnier am Schrein in Nishinomiya. Bist du bereit?"}
+   ],
+   "hint": "Emi am Schrein in Nishinomiya."
+  },
+  "15": {
+   "lines": [
+    {"s": "emi", "p": "wave", "t": "Das große Kansai-Karuta-Turnier! Alles, was du gelernt hast."},
+    {"s": "emi", "p": "note", "t": "Ich lese, du tippst die Bedeutung. Aber schnell!"}
+   ],
+   "tasks": [
+    {"type": "rounds", "art": "karuta", "timed": 8, "rounds": [
+     {"jp": "おおきに", "ro": "ōkini", "options": ["Danke", "Wirklich?", "Tschüss", "Lecker"], "answer": 0},
+     {"jp": "あかん", "ro": "akan", "options": ["Gut", "Das geht nicht!", "Später", "Hallo"], "answer": 1},
+     {"jp": "ほんま", "ro": "honma", "options": ["wirklich", "danke", "nein", "billig"], "answer": 0},
+     {"jp": "ぼちぼち でんな", "ro": "bochi-bochi denna", "options": ["Sehr schlecht!", "Super!", "Geht so", "Keine Ahnung"], "answer": 2},
+     {"jp": "なんでやねん", "ro": "nande ya nen", "options": ["Guten Appetit", "Wieso das denn?!", "Gute Nacht", "Bis morgen"], "answer": 1},
+     {"jp": "おいでやす", "ro": "oideyasu", "options": ["Willkommen (Kyōto)", "Danke (Kōbe)", "Tschüss (Nara)", "Hilfe!"], "answer": 0}
+    ]}
+   ],
+   "after": [
+    {"s": "emi", "p": "wave", "t": "Turniersieg! Du bist jetzt ein Ehren-Kansaier."},
+    {"s": "emi", "p": "note", "t": "Takeshi wartet zum Abschluss am Stadion mit den grünen Mauern. Dort hat alles angefangen."}
+   ],
+   "hint": "Takeshi am Kōshien-Stadion."
+  },
+  "16": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Hier habe ich dir zuerst vom Kansai-Stolz erzählt. Tigers, Dialekt, Theater, Handel."},
+    {"s": "takeshi", "p": "think", "t": "Tōkyō ist die Hauptstadt. Aber Kansai hat das Herz – das sagen wir hier jedenfalls."},
+    {"s": "takeshi", "p": "newspaper", "t": "Wir lachen laut, reden direkt und halten zusammen. Das ist unser Geist."},
+    {"s": "me", "t": "Ōkini, Takeshi. Ich bin jetzt auch ein bisschen Kansai."}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Ha! Das hört man. Willkommen in der Familie."}
+   ],
+   "hint": "Strang abgeschlossen – Takeshi liest am Kōshien-Stadion Zeitung."
+  }
+ }
+}

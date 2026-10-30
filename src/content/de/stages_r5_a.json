@@ -2,219 +2,725 @@
  "STRANG_URBAN_PLANNING": {
   "1": {
    "lines": [
-    {"s": "aoi", "p": "map", "t": "Willkommen an der OMU in Sugimoto! Hier studiere ich manchmal mit. Die haben die beste Stadtplanungs-Bibliothek."},
-    {"s": "aoi", "p": "note", "t": "Schau auf den Stadtplan: Ōsaka wächst seit Jahrhunderten entlang einer Linie von Norden nach Süden."},
-    {"s": "aoi", "p": "happy", "t": "Das Rückgrat ist der Midō-suji. 1937 wurde die Straße auf 44 Meter verbreitert, darunter fährt seit 1933 die U-Bahn."},
-    {"s": "me", "t": "Und wozu brauchst du mich?"},
-    {"s": "aoi", "p": "cheer", "t": "Ich mache ein Portfolio: Wie verändert sich Ōsaka? Du kommst überall hin. Sammelst du Eindrücke für mich?"}
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Willkommen an der OMU in Sugimoto! Hier studiere ich manchmal mit. Die haben die beste Stadtplanungs-Bibliothek."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Schau auf den Stadtplan: Ōsaka wächst seit Jahrhunderten entlang einer Linie von Norden nach Süden."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Das Rückgrat ist der Midō-suji. 1937 wurde die Straße auf 44 Meter verbreitert, darunter fährt seit 1933 die U-Bahn."
+    },
+    {
+     "s": "me",
+     "t": "Und wozu brauchst du mich?"
+    },
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Ich mache ein Portfolio: Wie verändert sich Ōsaka? Du kommst überall hin. Sammelst du Eindrücke für mich?"
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "map", "t": "Super! Erster Halt: der Dachgarten über dem Bahnhof Namba. Grün auf Beton – ich will wissen, ob das wirklich hilft."}
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Super! Erster Halt: der Dachgarten über dem Bahnhof Namba. Grün auf Beton – ich will wissen, ob das wirklich hilft."
+    }
    ],
    "hint": "Namba Parks – der Dachgarten über dem Bahnhof Namba."
   },
   "2": {
    "lines": [
-    {"s": "aoi", "p": "map", "t": "Namba Parks. Terrassen voller Bäume, mitten zwischen Hochhäusern."},
-    {"s": "aoi", "p": "worried", "t": "Im Sommer heizt sich die Stadt extrem auf. Beton und Asphalt speichern die Hitze bis in die Nacht. Man nennt das Wärmeinsel."},
-    {"s": "aoi", "p": "note", "t": "Pflanzen verdunsten Wasser und spenden Schatten. Such mal die Stelle, wo es am grünsten ist."}
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Namba Parks. Terrassen voller Bäume, mitten zwischen Hochhäusern."
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Im Sommer heizt sich die Stadt extrem auf. Beton und Asphalt speichern die Hitze bis in die Nacht. Man nennt das Wärmeinsel."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Pflanzen verdunsten Wasser und spenden Schatten. Such mal die Stelle, wo es am grünsten ist."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf die dichteste grüne Terrasse.", "x": 60, "y": 42, "r": 12,
-     "closeup": {"art": "thermo", "title": "Beton gegen Grün", "text": "Auf der Betonfläche ist es an einem Sommertag deutlich heißer als zwischen den Pflanzen. Gründächer kühlen die Umgebung."}}
+    {
+     "type": "inspect",
+     "q": "Tippe auf die dichteste grüne Terrasse.",
+     "x": 60,
+     "y": 42,
+     "r": 12,
+     "closeup": {
+      "art": "thermo",
+      "title": "Beton gegen Grün",
+      "text": "Auf der Betonfläche ist es an einem Sommertag deutlich heißer als zwischen den Pflanzen. Gründächer kühlen die Umgebung."
+     }
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "happy", "t": "Siehst du? Grün ist nicht nur hübsch. Es ist eine Klimaanlage ohne Strom."},
-    {"s": "aoi", "p": "map", "t": "Meister Gen hat mir vom Markt erzählt, der sich gerade stark verändert. Sprich mal mit ihm."}
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Siehst du? Grün ist nicht nur hübsch. Es ist eine Klimaanlage ohne Strom."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Meister Gen hat mir vom Markt erzählt, der sich gerade stark verändert. Sprich mal mit ihm."
+    }
    ],
    "hint": "Ein Markt in Minami, der sich stark verändert – frag Meister Gen."
   },
   "3": {
    "lines": [
-    {"s": "gen", "p": "proud", "t": "Der Kuromon-Markt? Den gibt es seit fast 200 Jahren. Früher kauften hier Köche aus ganz Minami ein."},
-    {"s": "gen", "p": "ladle", "t": "Heute kommen jeden Tag Busse voller Touristen. Gut fürs Geschäft – aber die Mieten steigen."},
-    {"s": "gen", "p": "laugh", "t": "Manche alte Fischhändler sind weg. Jetzt gibt's Spieße zum Mitnehmen und Erdbeeren für 500 Yen das Stück."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Der Kuromon-Markt? Den gibt es seit fast 200 Jahren. Früher kauften hier Köche aus ganz Minami ein."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Heute kommen jeden Tag Busse voller Touristen. Gut fürs Geschäft – aber die Mieten steigen."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Manche alte Fischhändler sind weg. Jetzt gibt's Spieße zum Mitnehmen und Erdbeeren für 500 Yen das Stück."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was ist ein Problem, wenn sehr viele Touristen kommen?", "options": ["Die Straßen werden breiter", "Mieten steigen, alte Läden müssen schließen", "Es gibt weniger Essen", "Der Markt wird kleiner"], "answer": 1, "explain": "Man nennt das Overtourism: Die Gegend wird beliebt, aber für Einheimische und alte Läden zu teuer."},
-    {"type": "choice", "q": "Wer kaufte früher vor allem hier ein?", "options": ["Schulkinder", "Touristen aus dem Ausland", "Köche und Restaurants aus Minami", "Bauern"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Was ist ein Problem, wenn sehr viele Touristen kommen?",
+     "options": [
+      "Die Straßen werden breiter",
+      "Mieten steigen, alte Läden müssen schließen",
+      "Es gibt weniger Essen",
+      "Der Markt wird kleiner"
+     ],
+     "answer": 1,
+     "explain": "Man nennt das Overtourism: Die Gegend wird beliebt, aber für Einheimische und alte Läden zu teuer."
+    },
+    {
+     "type": "choice",
+     "q": "Wer kaufte früher vor allem hier ein?",
+     "options": [
+      "Schulkinder",
+      "Touristen aus dem Ausland",
+      "Köche und Restaurants aus Minami",
+      "Bauern"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Ich sag immer: Ein Markt muss für die Leute da sein, die hier wohnen."},
-    {"s": "gen", "p": "laugh", "t": "Aoi sucht noch einen Fachmann? Architekt Kuroda zeichnet oft im alten Vergnügungsviertel südlich von hier. Da hat sich auch viel verändert."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Ich sag immer: Ein Markt muss für die Leute da sein, die hier wohnen."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Aoi sucht noch einen Fachmann? Architekt Kuroda zeichnet oft im alten Vergnügungsviertel südlich von hier. Da hat sich auch viel verändert."
+    }
    ],
    "hint": "Das alte Vergnügungsviertel südlich von Minami."
   },
   "4": {
    "lines": [
-    {"s": "kuroda", "p": "plan", "t": "Ah, Aois Assistent. Shinsekai heißt „Neue Welt“. Das Viertel wurde 1912 geplant – als Zukunft."},
-    {"s": "kuroda", "p": "think", "t": "Der Nordteil war nach dem Vorbild von Paris angelegt, der Süden hatte einen Vergnügungspark nach dem Vorbild von Coney Island in New York."},
-    {"s": "kuroda", "p": "calm", "t": "Später war es ein einfaches Arbeiterviertel. Heute kommen die Leute wegen des Retro-Charmes."}
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Ah, Aois Assistent. Shinsekai heißt „Neue Welt“. Das Viertel wurde 1912 geplant – als Zukunft."
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Der Nordteil war nach dem Vorbild von Paris angelegt, der Süden hatte einen Vergnügungspark nach dem Vorbild von Coney Island in New York."
+    },
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Später war es ein einfaches Arbeiterviertel. Heute kommen die Leute wegen des Retro-Charmes."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Welche Städte waren 1912 das Vorbild für Shinsekai?", "options": ["Tōkyō und Kyōto", "Paris und New York", "London und Berlin", "Rom und Wien"], "answer": 1},
-    {"type": "choice", "q": "Warum kommen heute viele Besucher nach Shinsekai?", "options": ["Wegen der neuen Hochhäuser", "Wegen des Retro-Charmes alter Läden und Schilder", "Wegen des Strandes", "Wegen der Universität"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Welche Städte waren 1912 das Vorbild für Shinsekai?",
+     "options": [
+      "Tōkyō und Kyōto",
+      "Paris und New York",
+      "London und Berlin",
+      "Rom und Wien"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Warum kommen heute viele Besucher nach Shinsekai?",
+     "options": [
+      "Wegen der neuen Hochhäuser",
+      "Wegen des Retro-Charmes alter Läden und Schilder",
+      "Wegen des Strandes",
+      "Wegen der Universität"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "kuroda", "p": "plan", "t": "Die „Neue Welt“ ist heute die alte Welt. So ist das mit Stadtplanung."},
-    {"s": "kuroda", "p": "think", "t": "Komm mit nach oben. Ganz nach oben – ins höchste Hochhaus hier im Süden. Von dort sieht man, wie dicht Ōsaka gebaut ist."}
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Die „Neue Welt“ ist heute die alte Welt. So ist das mit Stadtplanung."
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Komm mit nach oben. Ganz nach oben – ins höchste Hochhaus hier im Süden. Von dort sieht man, wie dicht Ōsaka gebaut ist."
+    }
    ],
    "hint": "Das Aussichtsdeck im höchsten Hochhaus im Süden."
   },
   "5": {
    "lines": [
-    {"s": "kuroda", "p": "calm", "t": "Abeno Harukas. Seit 2014 steht er hier. Lange war er das höchste Gebäude Japans."},
-    {"s": "kuroda", "p": "plan", "t": "Sieh hinunter: Dächer bis zum Horizont. Fast kein Fleck Erde ist noch frei. Regenwasser kann kaum versickern."},
-    {"s": "kuroda", "p": "think", "t": "Bevor wir weiterreden: Weißt du, wie hoch wir hier sind?"}
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Abeno Harukas. Seit 2014 steht er hier. Lange war er das höchste Gebäude Japans."
+    },
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Sieh hinunter: Dächer bis zum Horizont. Fast kein Fleck Erde ist noch frei. Regenwasser kann kaum versickern."
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Bevor wir weiterreden: Weißt du, wie hoch wir hier sind?"
+    }
    ],
    "tasks": [
-    {"type": "estimate", "q": "Wie hoch ist Abeno Harukas?", "min": 50, "max": 600, "step": 5, "answer": 300, "unit": "m", "tol": 0.08}
+    {
+     "type": "estimate",
+     "q": "Wie hoch ist Abeno Harukas?",
+     "min": 50,
+     "max": 600,
+     "step": 5,
+     "answer": 300,
+     "unit": "m",
+     "tol": 0.08
+    }
    ],
    "after": [
-    {"s": "kuroda", "p": "calm", "t": "Genau 300 Meter. Und unter uns: eine fast geschlossene Decke aus Beton."},
-    {"s": "kuroda", "p": "plan", "t": "Ganz anders ist es im Westen, wo Kanäle und Fabriken das Bild prägen. Ren hat dort einen Stand – im Viertel mit der Okinawa-Musik."}
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Genau 300 Meter. Und unter uns: eine fast geschlossene Decke aus Beton."
+    },
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Ganz anders ist es im Westen, wo Kanäle und Fabriken das Bild prägen. Ren hat dort einen Stand – im Viertel mit der Okinawa-Musik."
+    }
    ],
    "hint": "Rens Stand im Okinawa-Viertel im Westen."
   },
   "6": {
    "lines": [
-    {"s": "ren", "p": "relaxed", "t": "Taishō ist von Wasser umgeben. Früher Werften, heute Lagerhallen, Ateliers und kleine Bars."},
-    {"s": "ren", "p": "pour", "t": "Und hier gibt es noch kostenlose Fähren über die Kanäle. Die Stadt betreibt sie seit über hundert Jahren."},
-    {"s": "ren", "p": "guitar", "t": "Ich will Aoi den Fahrplan zeigen. Den aktuellen gibt es am Hafen bei Tempozan. Holst du mir einen?"}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Taishō ist von Wasser umgeben. Früher Werften, heute Lagerhallen, Ateliers und kleine Bars."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Und hier gibt es noch kostenlose Fähren über die Kanäle. Die Stadt betreibt sie seit über hundert Jahren."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Ich will Aoi den Fahrplan zeigen. Den aktuellen gibt es am Hafen bei Tempozan. Holst du mir einen?"
+    }
    ],
-   "fetch": {"item": "Fährplan", "x": 60, "y": 82, "art": "ferrymap", "find": "Ein Faltplan aller kostenlosen Fähren der Stadt. Darauf steht: 渡船 – tosen, Fähre.", "hintOut": "Der Fährplan liegt am Hafen bei Tempozan.", "hintBack": "Bring den Plan zu Ren ins Okinawa-Viertel Taishō."},
+   "fetch": {
+    "item": "Fährplan",
+    "x": 60,
+    "y": 82,
+    "art": "ferrymap",
+    "find": "Ein Faltplan aller kostenlosen Fähren der Stadt. Darauf steht: 渡船 – tosen, Fähre.",
+    "hintOut": "Der Fährplan liegt am Hafen bei Tempozan.",
+    "hintBack": "Bring den Plan zu Ren ins Okinawa-Viertel Taishō."
+   },
    "after": [
-    {"s": "ren", "p": "relaxed", "t": "Danke! Schau: Die meisten Fähren fahren hier in Taishō. Pendler, Kinder, Fahrräder – alle umsonst."},
-    {"s": "ren", "p": "pour", "t": "Bring Aoi doch das Foto vom Plan. Sie wartet wieder im Dachgarten über dem Bahnhof Namba."}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Danke! Schau: Die meisten Fähren fahren hier in Taishō. Pendler, Kinder, Fahrräder – alle umsonst."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Bring Aoi doch das Foto vom Plan. Sie wartet wieder im Dachgarten über dem Bahnhof Namba."
+    }
    ],
    "hint": "Aoi im Dachgarten über dem Bahnhof Namba."
   },
   "7": {
    "lines": [
-    {"s": "aoi", "p": "happy", "t": "Fähren umsonst? Das ist Stadtplanung, wie ich sie mag!"},
-    {"s": "aoi", "p": "note", "t": "Vergleich mal: Taishō hat Kanäle, Werkstätten und ruhige Ecken. Minami hier hat Kaufhäuser, Neon und Menschenmassen."},
-    {"s": "aoi", "p": "map", "t": "Beides ist Ōsaka. Was hast du dir gemerkt?"}
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Fähren umsonst? Das ist Stadtplanung, wie ich sie mag!"
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Vergleich mal: Taishō hat Kanäle, Werkstätten und ruhige Ecken. Minami hier hat Kaufhäuser, Neon und Menschenmassen."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Beides ist Ōsaka. Was hast du dir gemerkt?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was prägt das Viertel Taishō?", "options": ["Kaufhäuser und Neon", "Kanäle, Werften und Lagerhallen", "Tempel und Gärten", "Universitäten"], "answer": 1},
-    {"type": "choice", "q": "Und was ist typisch für Minami?", "options": ["Stille Wälder", "Felder", "Einkaufsstraßen, Neon und viele Menschen", "Kostenlose Fähren"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Was prägt das Viertel Taishō?",
+     "options": [
+      "Kaufhäuser und Neon",
+      "Kanäle, Werften und Lagerhallen",
+      "Tempel und Gärten",
+      "Universitäten"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Und was ist typisch für Minami?",
+     "options": [
+      "Stille Wälder",
+      "Felder",
+      "Einkaufsstraßen, Neon und viele Menschen",
+      "Kostenlose Fähren"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "cheer", "t": "Gut beobachtet! Ich schreibe: „Eine Stadt, viele Gesichter.“"},
-    {"s": "aoi", "p": "map", "t": "Kuroda will dir zeigen, was eine große Halle für ein Viertel bewirken kann. Er wartet vor der silbernen Kuppel im Westen."}
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Gut beobachtet! Ich schreibe: „Eine Stadt, viele Gesichter.“"
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Kuroda will dir zeigen, was eine große Halle für ein Viertel bewirken kann. Er wartet vor der silbernen Kuppel im Westen."
+    }
    ],
    "hint": "Vor der silbernen Kuppel im Westen."
   },
   "8": {
    "lines": [
-    {"s": "kuroda", "p": "plan", "t": "Der Dome. 1997 eröffnet. Wusstest du, was hier vorher war?"},
-    {"s": "kuroda", "p": "think", "t": "Ein Gaswerk. Große Tanks, Zäune, keiner wollte hier wohnen."},
-    {"s": "kuroda", "p": "calm", "t": "Dann kam die Halle, ein neuer U-Bahnhof, Einkaufszentren. So ein Großprojekt zieht ein ganzes Viertel mit."}
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Der Dome. 1997 eröffnet. Wusstest du, was hier vorher war?"
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Ein Gaswerk. Große Tanks, Zäune, keiner wollte hier wohnen."
+    },
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Dann kam die Halle, ein neuer U-Bahnhof, Einkaufszentren. So ein Großprojekt zieht ein ganzes Viertel mit."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was stand früher auf dem Gelände des Domes?", "options": ["Ein Tempel", "Ein Gaswerk", "Ein Bahnhof", "Ein Stadion"], "answer": 1},
-    {"type": "choice", "q": "Wie nennt man es, wenn ein altes Industriegelände neu genutzt wird?", "options": ["Umnutzung / Stadterneuerung", "Aufforstung", "Abriss ohne Plan", "Landwirtschaft"], "answer": 0}
+    {
+     "type": "choice",
+     "q": "Was stand früher auf dem Gelände des Domes?",
+     "options": [
+      "Ein Tempel",
+      "Ein Gaswerk",
+      "Ein Bahnhof",
+      "Ein Stadion"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie nennt man es, wenn ein altes Industriegelände neu genutzt wird?",
+     "options": [
+      "Umnutzung / Stadterneuerung",
+      "Aufforstung",
+      "Abriss ohne Plan",
+      "Landwirtschaft"
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "kuroda", "p": "calm", "t": "Richtig. Aber Erneuerung braucht Zeit. Zwanzig Jahre sind in der Stadtplanung nichts."},
-    {"s": "kuroda", "p": "plan", "t": "Prof. Takada erklärt dir gern die Flussinsel mit dem Rathaus und den alten Prachtbauten. Er ist im Uni-Zentrum dort."}
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Richtig. Aber Erneuerung braucht Zeit. Zwanzig Jahre sind in der Stadtplanung nichts."
+    },
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Prof. Takada erklärt dir gern die Flussinsel mit dem Rathaus und den alten Prachtbauten. Er ist im Uni-Zentrum dort."
+    }
    ],
    "hint": "Prof. Takada im Uni-Zentrum auf der Flussinsel."
   },
   "9": {
    "lines": [
-    {"s": "takada", "p": "explain", "t": "Nakanoshima. Rathaus, Bibliothek, Bank, Konzerthalle – alles auf einer schmalen Insel zwischen zwei Flüssen."},
-    {"s": "takada", "p": "think", "t": "Die rote Stadthalle von 1918 bezahlte übrigens ein Börsenhändler, Iwamoto Einosuke. Er schenkte der Stadt eine Million Yen."},
-    {"s": "takada", "p": "ponder", "t": "Bürger, die ihrer Stadt etwas schenken – das ist sehr typisch für Ōsaka."}
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Nakanoshima. Rathaus, Bibliothek, Bank, Konzerthalle – alles auf einer schmalen Insel zwischen zwei Flüssen."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Die rote Stadthalle von 1918 bezahlte übrigens ein Börsenhändler, Iwamoto Einosuke. Er schenkte der Stadt eine Million Yen."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Bürger, die ihrer Stadt etwas schenken – das ist sehr typisch für Ōsaka."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Wo liegt Nakanoshima?", "options": ["Auf einem Berg", "Auf einer Insel zwischen zwei Flüssen", "Am Meer", "Unter der Erde"], "answer": 1},
-    {"type": "choice", "q": "Wer bezahlte die rote Stadthalle?", "options": ["Der Kaiser", "Eine Bahngesellschaft", "Ein Börsenhändler aus Ōsaka", "Die Universität"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Wo liegt Nakanoshima?",
+     "options": [
+      "Auf einem Berg",
+      "Auf einer Insel zwischen zwei Flüssen",
+      "Am Meer",
+      "Unter der Erde"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wer bezahlte die rote Stadthalle?",
+     "options": [
+      "Der Kaiser",
+      "Eine Bahngesellschaft",
+      "Ein Börsenhändler aus Ōsaka",
+      "Die Universität"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "takada", "p": "explain", "t": "Prachtbauten sind schön. Aber Städte leben auch in den kleinen Ecken."},
-    {"s": "takada", "p": "think", "t": "Ren sorgt sich um sein Viertel unter den Bahnbögen. Besuch ihn doch in Nakatsu."}
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Prachtbauten sind schön. Aber Städte leben auch in den kleinen Ecken."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Ren sorgt sich um sein Viertel unter den Bahnbögen. Besuch ihn doch in Nakatsu."
+    }
    ],
    "hint": "Ren unter den Bahnbögen in Nakatsu."
   },
   "10": {
    "lines": [
-    {"s": "ren", "p": "guitar", "t": "Unter diesen Bögen sind Werkstätten, Bars, mein kleines Café. Billige Mieten, viel Freiheit."},
-    {"s": "ren", "p": "relaxed", "t": "Aber nebenan in Umeda wird gebaut wie verrückt. Wenn die Bahn neu plant, sind wir vielleicht weg."},
-    {"s": "me", "t": "Kann man da nichts tun?"},
-    {"s": "ren", "p": "pour", "t": "Mitreden. Zeigen, dass hier Leben ist. Aoi schreibt darüber – vielleicht hört jemand zu."}
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Unter diesen Bögen sind Werkstätten, Bars, mein kleines Café. Billige Mieten, viel Freiheit."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Aber nebenan in Umeda wird gebaut wie verrückt. Wenn die Bahn neu plant, sind wir vielleicht weg."
+    },
+    {
+     "s": "me",
+     "t": "Kann man da nichts tun?"
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Mitreden. Zeigen, dass hier Leben ist. Aoi schreibt darüber – vielleicht hört jemand zu."
+    }
    ],
    "after": [
-    {"s": "ren", "p": "relaxed", "t": "Danke fürs Zuhören. Aoi ist jetzt am großen Bahnhof Ōsaka. Sie will dir zeigen, wie man um einen Bahnhof herum baut."}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Danke fürs Zuhören. Aoi ist jetzt am großen Bahnhof Ōsaka. Sie will dir zeigen, wie man um einen Bahnhof herum baut."
+    }
    ],
    "hint": "Aoi am großen Bahnhof Ōsaka."
   },
   "11": {
    "lines": [
-    {"s": "aoi", "p": "cheer", "t": "Osaka Station City! Seit 2011 ist der Bahnhof nicht nur ein Bahnhof."},
-    {"s": "aoi", "p": "note", "t": "Über den Gleisen ein riesiges Dach, daneben Kaufhäuser und Büros, darunter Ladenpassagen. Alles verbunden."},
-    {"s": "aoi", "p": "map", "t": "Das nennt man TOD – Transit Oriented Development. Bauen rund um den Bahnhof. Schau dir die Gleise an!"}
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Osaka Station City! Seit 2011 ist der Bahnhof nicht nur ein Bahnhof."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Über den Gleisen ein riesiges Dach, daneben Kaufhäuser und Büros, darunter Ladenpassagen. Alles verbunden."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Das nennt man TOD – Transit Oriented Development. Bauen rund um den Bahnhof. Schau dir die Gleise an!"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf die Gleise hinter der Glasfront.", "x": 40, "y": 62, "r": 12,
-     "closeup": {"art": "todplan", "title": "Bauen um den Bahnhof", "text": "Oben Dach und Brücken, daneben Türme, unten U-Bahn und Läden. Wer mit der Bahn kommt, braucht kein Auto."}},
-    {"type": "choice", "q": "Was ist die Idee von TOD?", "options": ["Mehr Parkplätze bauen", "Wohnen, Arbeiten und Einkaufen direkt am Bahnhof", "Bahnhöfe an den Stadtrand verlegen", "Nur Autobahnen bauen"], "answer": 1}
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Gleise hinter der Glasfront.",
+     "x": 40,
+     "y": 62,
+     "r": 12,
+     "closeup": {
+      "art": "todplan",
+      "title": "Bauen um den Bahnhof",
+      "text": "Oben Dach und Brücken, daneben Türme, unten U-Bahn und Läden. Wer mit der Bahn kommt, braucht kein Auto."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Was ist die Idee von TOD?",
+     "options": [
+      "Mehr Parkplätze bauen",
+      "Wohnen, Arbeiten und Einkaufen direkt am Bahnhof",
+      "Bahnhöfe an den Stadtrand verlegen",
+      "Nur Autobahnen bauen"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "happy", "t": "Genau! Weniger Autos, kürzere Wege."},
-    {"s": "aoi", "p": "map", "t": "Jetzt der Härtetest: das Labyrinth unter Umeda. Treffen wir uns unten!"}
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Genau! Weniger Autos, kürzere Wege."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Jetzt der Härtetest: das Labyrinth unter Umeda. Treffen wir uns unten!"
+    }
    ],
    "hint": "Das unterirdische Labyrinth unter Umeda."
   },
   "12": {
    "lines": [
-    {"s": "aoi", "p": "map", "t": "Willkommen im Umeda-Dungeon. Kilometer an Gängen, damit man bei Regen und Hitze trocken bleibt."},
-    {"s": "aoi", "p": "note", "t": "Die Schilder zeigen die Bahnlinien. Ich sag dir, wohin – du findest den Weg."}
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Willkommen im Umeda-Dungeon. Kilometer an Gängen, damit man bei Regen und Hitze trocken bleibt."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Die Schilder zeigen die Bahnlinien. Ich sag dir, wohin – du findest den Weg."
+    }
    ],
    "tasks": [
-    {"type": "mapquiz", "map": "umeda", "q": "Unterirdische Wege",
-     "points": [{"id": "hankyu", "x": 75, "y": 20, "label": "阪急"}, {"id": "jr", "x": 50, "y": 10, "label": "JR"}, {"id": "hanshin", "x": 25, "y": 80, "label": "阪神"}, {"id": "subway", "x": 50, "y": 90, "label": "地下鉄"}, {"id": "shop", "x": 88, "y": 50, "label": "ショップ"}],
+    {
+     "type": "mapquiz",
+     "map": "umeda",
+     "q": "Unterirdische Wege",
+     "points": [
+      {
+       "id": "hankyu",
+       "x": 75,
+       "y": 20,
+       "label": "阪急"
+      },
+      {
+       "id": "jr",
+       "x": 50,
+       "y": 10,
+       "label": "JR"
+      },
+      {
+       "id": "hanshin",
+       "x": 25,
+       "y": 80,
+       "label": "阪神"
+      },
+      {
+       "id": "subway",
+       "x": 50,
+       "y": 90,
+       "label": "地下鉄"
+      },
+      {
+       "id": "shop",
+       "x": 88,
+       "y": 50,
+       "label": "ショップ"
+      }
+     ],
      "rounds": [
-      {"q": "„Zuerst zur JR-Linie.“", "answer": "jr", "fb": "JR – leicht zu erkennen."},
-      {"q": "„Jetzt zur U-Bahn – ちかてつ.“", "answer": "subway", "fb": "地下鉄 – chikatetsu, wörtlich „Untergrund-Eisen“."},
-      {"q": "„Und zur Hankyū-Bahn – はんきゅう.“", "answer": "hankyu", "fb": "阪急 – Hankyū."},
-      {"q": "„Zum Schluss zu den Läden – ショップ.“", "answer": "shop", "fb": "ショップ – shoppu."}
-     ]}
+      {
+       "q": "„Zuerst zur JR-Linie.“",
+       "answer": "jr",
+       "fb": "JR – leicht zu erkennen."
+      },
+      {
+       "q": "„Jetzt zur U-Bahn – ちかてつ.“",
+       "answer": "subway",
+       "fb": "地下鉄 – chikatetsu, wörtlich „Untergrund-Eisen“."
+      },
+      {
+       "q": "„Und zur Hankyū-Bahn – はんきゅう.“",
+       "answer": "hankyu",
+       "fb": "阪急 – Hankyū."
+      },
+      {
+       "q": "„Zum Schluss zu den Läden – ショップ.“",
+       "answer": "shop",
+       "fb": "ショップ – shoppu."
+      }
+     ]
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "cheer", "t": "Du hast dich nicht verlaufen! Das schaffen nicht mal alle Einheimischen."},
-    {"s": "aoi", "p": "map", "t": "Kuroda wartet oben am Uhrenplatz. Er will dir von der riesigen Baustelle nebenan erzählen."}
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Du hast dich nicht verlaufen! Das schaffen nicht mal alle Einheimischen."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Kuroda wartet oben am Uhrenplatz. Er will dir von der riesigen Baustelle nebenan erzählen."
+    }
    ],
    "hint": "Kuroda am Uhrenplatz im Bahnhof Ōsaka."
   },
   "13": {
    "lines": [
-    {"s": "kuroda", "p": "plan", "t": "Nördlich vom Bahnhof lag früher ein riesiger Güterbahnhof. Heute heißt das Gebiet Umekita."},
-    {"s": "kuroda", "p": "think", "t": "Dort entstehen Hochhäuser – und ein großer Park mitten in der Stadt. Grün direkt am Bahnhof, das ist selten."},
-    {"s": "kuroda", "p": "calm", "t": "Erinnerst du dich, was Aoi über Grün auf Beton gesagt hat?"}
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Nördlich vom Bahnhof lag früher ein riesiger Güterbahnhof. Heute heißt das Gebiet Umekita."
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Dort entstehen Hochhäuser – und ein großer Park mitten in der Stadt. Grün direkt am Bahnhof, das ist selten."
+    },
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Erinnerst du dich, was Aoi über Grün auf Beton gesagt hat?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was war früher auf dem Gelände von Umekita?", "options": ["Ein Güterbahnhof", "Ein Flughafen", "Ein Reisfeld", "Ein Schloss"], "answer": 0},
-    {"type": "choice", "q": "Warum ist ein Park dort wichtig?", "options": ["Damit es mehr Parkplätze gibt", "Er kühlt die Stadt und gibt den Menschen Platz", "Nur für Touristen", "Für Züge"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Was war früher auf dem Gelände von Umekita?",
+     "options": [
+      "Ein Güterbahnhof",
+      "Ein Flughafen",
+      "Ein Reisfeld",
+      "Ein Schloss"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Warum ist ein Park dort wichtig?",
+     "options": [
+      "Damit es mehr Parkplätze gibt",
+      "Er kühlt die Stadt und gibt den Menschen Platz",
+      "Nur für Touristen",
+      "Für Züge"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "kuroda", "p": "calm", "t": "Gut. Jetzt verstehst du, wie Stadtplaner denken."},
-    {"s": "kuroda", "p": "think", "t": "Zum Vergleich müssen wir in die Vergangenheit. In einem Museum steht eine ganze Straße aus der Edo-Zeit – unter einem Dach."}
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Gut. Jetzt verstehst du, wie Stadtplaner denken."
+    },
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Zum Vergleich müssen wir in die Vergangenheit. In einem Museum steht eine ganze Straße aus der Edo-Zeit – unter einem Dach."
+    }
    ],
    "hint": "Ein Museum mit einer ganzen Edo-Straße unter einem Dach."
   },
   "14": {
    "lines": [
-    {"s": "kuroda", "p": "think", "t": "Holzhäuser, schmal und tief, eng an eng. So wohnten Händler und Handwerker in Ōsaka."},
-    {"s": "kuroda", "p": "plan", "t": "Die Läden waren vorne zur Straße, gewohnt wurde hinten. Viel Leben auf wenig Platz."},
-    {"s": "kuroda", "p": "calm", "t": "Diese Straße zeigt eine ganz bestimmte Zeit. Rate mal: aus welchem Jahrzehnt?"}
+    {
+     "s": "kuroda",
+     "p": "think",
+     "t": "Holzhäuser, schmal und tief, eng an eng. So wohnten Händler und Handwerker in Ōsaka."
+    },
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Die Läden waren vorne zur Straße, gewohnt wurde hinten. Viel Leben auf wenig Platz."
+    },
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Diese Straße zeigt eine ganz bestimmte Zeit. Rate mal: aus welchem Jahrzehnt?"
+    }
    ],
    "tasks": [
-    {"type": "estimate", "q": "Aus welchem Jahrzehnt stammt die nachgebaute Straße?", "min": 1600, "max": 1900, "step": 10, "answer": 1830, "unit": "(Jahrzehnt)", "tol": 0.012}
+    {
+     "type": "estimate",
+     "q": "Aus welchem Jahrzehnt stammt die nachgebaute Straße?",
+     "min": 1600,
+     "max": 1900,
+     "step": 10,
+     "answer": 1830,
+     "unit": "(Jahrzehnt)",
+     "tol": 0.012
+    }
    ],
    "after": [
-    {"s": "kuroda", "p": "calm", "t": "Die 1830er Jahre. Damals war Ōsaka „die Küche des Reiches“ – dicht, laut und voller Handel."},
-    {"s": "kuroda", "p": "plan", "t": "Aoi will die moderne Gegenseite zeigen: die Trabantenstädte im Süden. Sie wartet am Technologie-Campus in Sakai."}
+    {
+     "s": "kuroda",
+     "p": "calm",
+     "t": "Die 1830er Jahre. Damals war Ōsaka „die Küche des Reiches“ – dicht, laut und voller Handel."
+    },
+    {
+     "s": "kuroda",
+     "p": "plan",
+     "t": "Aoi will die moderne Gegenseite zeigen: die Trabantenstädte im Süden. Sie wartet am Technologie-Campus in Sakai."
+    }
    ],
    "hint": "Der Technologie-Campus der OMU in Sakai."
   }
@@ -222,26 +728,64 @@
  "STRANG_TRANSIT_STATIONS": {
   "9": {
    "lines": [
-    {"s": "tori", "t": "Da bist du ja! Hörst du das Klingeln? Die Hankai-Tram. Die letzte Straßenbahnlinie von Ōsaka."},
-    {"s": "tori", "t": "Sie fährt seit über hundert Jahren von hier bis nach Sakai. Ich will sie mit einem alten Fahrplan fotografieren."},
-    {"s": "tori", "t": "Das Heft habe ich einem Bahn-Club an der Uni in Sugimoto geliehen. Holst du es mir zurück?"}
+    {
+     "s": "tori",
+     "t": "Da bist du ja! Hörst du das Klingeln? Die Hankai-Tram. Die letzte Straßenbahnlinie von Ōsaka."
+    },
+    {
+     "s": "tori",
+     "t": "Sie fährt seit über hundert Jahren von hier bis nach Sakai. Ich will sie mit einem alten Fahrplan fotografieren."
+    },
+    {
+     "s": "tori",
+     "t": "Das Heft habe ich einem Bahn-Club an der Uni in Sugimoto geliehen. Holst du es mir zurück?"
+    }
    ],
-   "fetch": {"item": "Altes Fahrplanheft", "x": 30, "y": 86, "art": "schedule", "find": "Ein vergilbtes Heft: „阪堺線 時刻表“. Ein Zettel klebt darauf: „Danke, Tori!“", "hintOut": "Das Fahrplanheft ist beim Bahn-Club an der OMU in Sugimoto.", "hintBack": "Bring das Heft zu Tori an der Tram-Haltestelle in Shinsekai."},
+   "fetch": {
+    "item": "Altes Fahrplanheft",
+    "x": 30,
+    "y": 86,
+    "art": "schedule",
+    "find": "Ein vergilbtes Heft: „阪堺線 時刻表“. Ein Zettel klebt darauf: „Danke, Tori!“",
+    "hintOut": "Das Fahrplanheft ist beim Bahn-Club an der OMU in Sugimoto.",
+    "hintBack": "Bring das Heft zu Tori an der Tram-Haltestelle in Shinsekai."
+   },
    "after": [
-    {"s": "tori", "t": "Perfekt! Fahrplan in der Hand, Tram im Hintergrund – das wird das letzte Bild für mein Album."},
-    {"s": "tori", "t": "Weißt du was? Das Album will ich dort fertig machen, wo wir uns kennengelernt haben: am Uhrenplatz im Bahnhof Ōsaka."}
+    {
+     "s": "tori",
+     "t": "Perfekt! Fahrplan in der Hand, Tram im Hintergrund – das wird das letzte Bild für mein Album."
+    },
+    {
+     "s": "tori",
+     "t": "Weißt du was? Das Album will ich dort fertig machen, wo wir uns kennengelernt haben: am Uhrenplatz im Bahnhof Ōsaka."
+    }
    ],
    "hint": "Der Uhrenplatz im Bahnhof Ōsaka."
   },
   "10": {
    "lines": [
-    {"s": "tori", "t": "Hier hat alles angefangen. Weißt du noch? Ich hab auf einen Sonderzug gewartet."},
-    {"s": "tori", "t": "Jetzt habe ich Bahnhöfe aus der ganzen Stadt: Umeda, Tenroku, Kōshien, Namba – und die alte Tram."},
-    {"s": "tori", "t": "Ohne dich hätte ich die Hälfte nicht. Hier, die erste Seite ist für dich."},
-    {"s": "me", "t": "Danke, Tori. Das ist ein schönes Album."}
+    {
+     "s": "tori",
+     "t": "Hier hat alles angefangen. Weißt du noch? Ich hab auf einen Sonderzug gewartet."
+    },
+    {
+     "s": "tori",
+     "t": "Jetzt habe ich Bahnhöfe aus der ganzen Stadt: Umeda, Tenroku, Kōshien, Namba – und die alte Tram."
+    },
+    {
+     "s": "tori",
+     "t": "Ohne dich hätte ich die Hälfte nicht. Hier, die erste Seite ist für dich."
+    },
+    {
+     "s": "me",
+     "t": "Danke, Tori. Das ist ein schönes Album."
+    }
    ],
    "after": [
-    {"s": "tori", "t": "Wenn du wieder einen Zug hörst, denk an mich. Mata ne!"}
+    {
+     "s": "tori",
+     "t": "Wenn du wieder einen Zug hörst, denk an mich. Mata ne!"
+    }
    ],
    "hint": "Strang abgeschlossen – Tori fotografiert weiter am Uhrenplatz."
   }
@@ -249,13 +793,28 @@
  "STRANG_NATURE_RETREAT": {
   "7": {
    "lines": [
-    {"s": "goro", "t": "Miau. Du schon wieder. Setz dich. Hier im Gras ist es warm."},
-    {"s": "goro", "t": "Siehst du die Leute? Familien mit Decken, Kinder mit Bällen, alte Männer auf der Bank. Mitten in der Stadt."},
-    {"s": "goro", "t": "Menschen brauchen so eine Wiese genauso wie Katzen. Sie wissen es nur nicht immer."},
-    {"s": "me", "t": "Du bist ein kluger Kater, Goro."}
+    {
+     "s": "goro",
+     "t": "Miau. Du schon wieder. Setz dich. Hier im Gras ist es warm."
+    },
+    {
+     "s": "goro",
+     "t": "Siehst du die Leute? Familien mit Decken, Kinder mit Bällen, alte Männer auf der Bank. Mitten in der Stadt."
+    },
+    {
+     "s": "goro",
+     "t": "Menschen brauchen so eine Wiese genauso wie Katzen. Sie wissen es nur nicht immer."
+    },
+    {
+     "s": "me",
+     "t": "Du bist ein kluger Kater, Goro."
+    }
    ],
    "after": [
-    {"s": "goro", "t": "Ich weiß. Maya will dir einen Garten mit vielen Pflanzen zeigen. Weiter im Süden, bei einem großen Stadion."}
+    {
+     "s": "goro",
+     "t": "Ich weiß. Maya will dir einen Garten mit vielen Pflanzen zeigen. Weiter im Süden, bei einem großen Stadion."
+    }
    ],
    "hint": "Ein botanischer Garten bei einem großen Stadion im Süden."
   }
@@ -263,134 +822,415 @@
  "STRANG_LANDMARKS_DISCOVERY": {
   "5": {
    "lines": [
-    {"s": "daiki", "p": "cocky", "t": "Hina hat mich geschickt. Ich soll dir den Tsūtenkaku erklären. Als ob ich Fremdenführer wäre."},
-    {"s": "daiki", "p": "ready", "t": "Der erste Turm stand schon 1912 hier, nach dem Vorbild des Eiffelturms. Er wurde im Krieg abgebaut."},
-    {"s": "daiki", "p": "cheer", "t": "Der heutige Turm ist von 1956. Wie hoch, glaubst du, ist er?"}
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Hina hat mich geschickt. Ich soll dir den Tsūtenkaku erklären. Als ob ich Fremdenführer wäre."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Der erste Turm stand schon 1912 hier, nach dem Vorbild des Eiffelturms. Er wurde im Krieg abgebaut."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Der heutige Turm ist von 1956. Wie hoch, glaubst du, ist er?"
+    }
    ],
    "tasks": [
-    {"type": "estimate", "q": "Wie hoch ist der heutige Tsūtenkaku (ohne Blitzableiter)?", "min": 20, "max": 300, "step": 1, "answer": 103, "unit": "m", "tol": 0.1}
+    {
+     "type": "estimate",
+     "q": "Wie hoch ist der heutige Tsūtenkaku (ohne Blitzableiter)?",
+     "min": 20,
+     "max": 300,
+     "step": 1,
+     "answer": 103,
+     "unit": "m",
+     "tol": 0.1
+    }
    ],
    "after": [
-    {"s": "daiki", "p": "cocky", "t": "Rund 103 Meter. Klein im Vergleich zum Hochhaus nebenan – aber älter und mit mehr Charakter."},
-    {"s": "daiki", "p": "ready", "t": "Aoi wartet ganz oben im höchsten Hochhaus der Gegend. Da soll das nächste Foto entstehen."}
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Rund 103 Meter. Klein im Vergleich zum Hochhaus nebenan – aber älter und mit mehr Charakter."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Aoi wartet ganz oben im höchsten Hochhaus der Gegend. Da soll das nächste Foto entstehen."
+    }
    ],
    "hint": "Ganz oben im höchsten Hochhaus der Gegend."
   },
   "6": {
    "lines": [
-    {"s": "aoi", "p": "cheer", "t": "300 Meter! Ich hab ein bisschen Angst und gleichzeitig will ich nie wieder runter."},
-    {"s": "aoi", "p": "map", "t": "Hina will ein Bild, das zeigt, wie hoch wir sind. Etwas Großes, das von hier oben winzig aussieht."},
-    {"s": "aoi", "p": "note", "t": "Rechts im Fenster siehst du die Burg Ōsaka. Fang sie ein!"}
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "300 Meter! Ich hab ein bisschen Angst und gleichzeitig will ich nie wieder runter."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Hina will ein Bild, das zeigt, wie hoch wir sind. Etwas Großes, das von hier oben winzig aussieht."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Rechts im Fenster siehst du die Burg Ōsaka. Fang sie ein!"
+    }
    ],
    "tasks": [
-    {"type": "photo", "q": "Fotografiere die winzige Burg rechts im Fenster.", "target": {"x": 80, "y": 46}, "zoom": [4, 5], "title": "Die Burg – von ganz oben", "text": "Die mächtige Burg Ōsaka, klein wie ein Spielzeug. So hoch ist das Aussichtsdeck."}
+    {
+     "type": "photo",
+     "q": "Fotografiere die winzige Burg rechts im Fenster.",
+     "target": {
+      "x": 80,
+      "y": 46
+     },
+     "zoom": [
+      4,
+      5
+     ],
+     "title": "Die Burg – von ganz oben",
+     "text": "Die mächtige Burg Ōsaka, klein wie ein Spielzeug. So hoch ist das Aussichtsdeck."
+    }
    ],
    "after": [
-    {"s": "aoi", "p": "happy", "t": "Wow, wie ein Modell! Hina wird das lieben."},
-    {"s": "aoi", "p": "map", "t": "Hina ist jetzt am Hafen, beim großen Riesenrad. Sie hat dort eine Frage an dich."}
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Wow, wie ein Modell! Hina wird das lieben."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Hina ist jetzt am Hafen, beim großen Riesenrad. Sie hat dort eine Frage an dich."
+    }
    ],
    "hint": "Hina am Hafen beim großen Riesenrad."
   },
   "7": {
    "lines": [
-    {"s": "hina", "p": "note", "t": "Toll, das Bild von oben! Jetzt eine Frage für meinen Artikel."},
-    {"s": "hina", "p": "phone", "t": "Abends leuchtet das Riesenrad in verschiedenen Farben. Das ist nicht nur Deko."},
-    {"s": "hina", "p": "surprised", "t": "Rot, Grün, Blau – die Farben haben eine Bedeutung für den nächsten Tag. Was meinst du?"}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Toll, das Bild von oben! Jetzt eine Frage für meinen Artikel."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Abends leuchtet das Riesenrad in verschiedenen Farben. Das ist nicht nur Deko."
+    },
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "Rot, Grün, Blau – die Farben haben eine Bedeutung für den nächsten Tag. Was meinst du?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was zeigen die Farben des Riesenrads an?", "options": ["Die Uhrzeit", "Das Wetter für den nächsten Tag", "Die Zahl der Fahrgäste", "Den Wochentag"], "answer": 1, "explain": "Die Beleuchtung ist eine Wettervorhersage: Rot heißt sonnig, Grün bewölkt, Blau Regen."},
-    {"type": "choice", "q": "Morgen soll es regnen. Welche Farbe leuchtet heute Abend?", "options": ["Rot", "Grün", "Blau", "Gold"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Was zeigen die Farben des Riesenrads an?",
+     "options": [
+      "Die Uhrzeit",
+      "Das Wetter für den nächsten Tag",
+      "Die Zahl der Fahrgäste",
+      "Den Wochentag"
+     ],
+     "answer": 1,
+     "explain": "Die Beleuchtung ist eine Wettervorhersage: Rot heißt sonnig, Grün bewölkt, Blau Regen."
+    },
+    {
+     "type": "choice",
+     "q": "Morgen soll es regnen. Welche Farbe leuchtet heute Abend?",
+     "options": [
+      "Rot",
+      "Grün",
+      "Blau",
+      "Gold"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "hina", "p": "note", "t": "Richtig! So eine Wetter-Leuchte gibt es auch auf dem eisernen Turm in Shinsekai."},
-    {"s": "hina", "p": "phone", "t": "Tori fotografiert gerade die silberne Kuppel im Westen. Er braucht Hilfe mit dem Bildausschnitt."}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Richtig! So eine Wetter-Leuchte gibt es auch auf dem eisernen Turm in Shinsekai."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Tori fotografiert gerade die silberne Kuppel im Westen. Er braucht Hilfe mit dem Bildausschnitt."
+    }
    ],
    "hint": "Tori an der silbernen Kuppel im Westen."
   },
   "8": {
    "lines": [
-    {"s": "tori", "t": "Hey! Ich will die Wellenform des Dachs zusammen mit einer Laterne. Aber ich krieg's nicht hin."},
-    {"s": "tori", "t": "Links steht eine Straßenlaterne. Ihr Kopf sitzt genau unter der Dachkante."},
-    {"s": "tori", "t": "Mach du das Foto. Laterne und Dachkante, ganz nah."}
+    {
+     "s": "tori",
+     "t": "Hey! Ich will die Wellenform des Dachs zusammen mit einer Laterne. Aber ich krieg's nicht hin."
+    },
+    {
+     "s": "tori",
+     "t": "Links steht eine Straßenlaterne. Ihr Kopf sitzt genau unter der Dachkante."
+    },
+    {
+     "s": "tori",
+     "t": "Mach du das Foto. Laterne und Dachkante, ganz nah."
+    }
    ],
    "tasks": [
-    {"type": "photo", "q": "Fotografiere die Laterne links vor der Dachkante.", "target": {"x": 14, "y": 38}, "zoom": [3, 5], "title": "Laterne und Welle", "text": "Der Laternenkopf direkt unter der geschwungenen Dachkante. Silber, Grau und Himmelblau."}
+    {
+     "type": "photo",
+     "q": "Fotografiere die Laterne links vor der Dachkante.",
+     "target": {
+      "x": 14,
+      "y": 38
+     },
+     "zoom": [
+      3,
+      5
+     ],
+     "title": "Laterne und Welle",
+     "text": "Der Laternenkopf direkt unter der geschwungenen Dachkante. Silber, Grau und Himmelblau."
+    }
    ],
    "after": [
-    {"s": "tori", "t": "Genau so! Du hast ein Auge für Linien."},
-    {"s": "tori", "t": "Hina ist im Norden, bei dem Hochhaus mit zwei Türmen und dem Garten im Himmel. Sie will dir etwas erzählen."}
+    {
+     "s": "tori",
+     "t": "Genau so! Du hast ein Auge für Linien."
+    },
+    {
+     "s": "tori",
+     "t": "Hina ist im Norden, bei dem Hochhaus mit zwei Türmen und dem Garten im Himmel. Sie will dir etwas erzählen."
+    }
    ],
    "hint": "Das Hochhaus mit zwei Türmen und dem Garten im Himmel."
   },
   "9": {
    "lines": [
-    {"s": "hina", "p": "note", "t": "Das Umeda Sky Building. Zwei Türme, oben verbunden. Und dazwischen …"},
-    {"s": "hina", "p": "surprised", "t": "… eine Rolltreppe in einer Glasröhre, frei schwebend über dem Abgrund! Die Leute nennen sie die schwebende Rolltreppe."},
-    {"s": "hina", "p": "phone", "t": "Das Gebäude ist von 1993. Erinnerst du dich, was du hier oben schon gesehen hast?"}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Das Umeda Sky Building. Zwei Türme, oben verbunden. Und dazwischen …"
+    },
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "… eine Rolltreppe in einer Glasröhre, frei schwebend über dem Abgrund! Die Leute nennen sie die schwebende Rolltreppe."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Das Gebäude ist von 1993. Erinnerst du dich, was du hier oben schon gesehen hast?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was verbindet die beiden Türme ganz oben?", "options": ["Eine Seilbahn", "Eine Aussichtsplattform mit Garten", "Ein Schwimmbad", "Ein Hubschrauberlandeplatz"], "answer": 1},
-    {"type": "choice", "q": "Was ist das Besondere an der Rolltreppe?", "options": ["Sie ist aus Holz", "Sie fährt rückwärts", "Sie schwebt in einer Glasröhre zwischen den Türmen", "Sie ist 1 km lang"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Was verbindet die beiden Türme ganz oben?",
+     "options": [
+      "Eine Seilbahn",
+      "Eine Aussichtsplattform mit Garten",
+      "Ein Schwimmbad",
+      "Ein Hubschrauberlandeplatz"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was ist das Besondere an der Rolltreppe?",
+     "options": [
+      "Sie ist aus Holz",
+      "Sie fährt rückwärts",
+      "Sie schwebt in einer Glasröhre zwischen den Türmen",
+      "Sie ist 1 km lang"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "hina", "p": "note", "t": "Super. Das kommt in den Fotoband."},
-    {"s": "hina", "p": "phone", "t": "Aoi hat mir geschrieben: Ihr fehlt eine besondere Linse. Sie wartet am Uhrenplatz im Bahnhof Ōsaka."}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Super. Das kommt in den Fotoband."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Aoi hat mir geschrieben: Ihr fehlt eine besondere Linse. Sie wartet am Uhrenplatz im Bahnhof Ōsaka."
+    }
    ],
    "hint": "Aoi am Uhrenplatz im Bahnhof Ōsaka."
   },
   "10": {
    "lines": [
-    {"s": "aoi", "p": "worried", "t": "Katastrophe! Für das nächste Motiv brauche ich einen Graufilter. Gegen grelles Sonnenlicht."},
-    {"s": "aoi", "p": "note", "t": "Ich hab ihn im Uni-Zentrum auf der Flussinsel liegen lassen. Nach dem Vortrag."},
-    {"s": "aoi", "p": "map", "t": "Holst du ihn? Ich halte hier die Stellung."}
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Katastrophe! Für das nächste Motiv brauche ich einen Graufilter. Gegen grelles Sonnenlicht."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Ich hab ihn im Uni-Zentrum auf der Flussinsel liegen lassen. Nach dem Vortrag."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Holst du ihn? Ich halte hier die Stellung."
+    }
    ],
-   "fetch": {"item": "Graufilter-Linse", "x": 70, "y": 82, "art": "lens", "find": "Eine kleine runde Linse in einer Hülle: ND-Filter 52 mm. Aois Name steht darauf.", "hintOut": "Die Linse liegt im Uni-Zentrum auf der Flussinsel Nakanoshima.", "hintBack": "Bring die Linse zu Aoi am Uhrenplatz im Bahnhof Ōsaka."},
+   "fetch": {
+    "item": "Graufilter-Linse",
+    "x": 70,
+    "y": 82,
+    "art": "lens",
+    "find": "Eine kleine runde Linse in einer Hülle: ND-Filter 52 mm. Aois Name steht darauf.",
+    "hintOut": "Die Linse liegt im Uni-Zentrum auf der Flussinsel Nakanoshima.",
+    "hintBack": "Bring die Linse zu Aoi am Uhrenplatz im Bahnhof Ōsaka."
+   },
    "after": [
-    {"s": "aoi", "p": "happy", "t": "Gerettet! Mit dem Filter kann man direkt gegen die Sonne fotografieren."},
-    {"s": "aoi", "p": "map", "t": "Hina sagt nur: „Ein Gesicht aus Gold, das in die Zukunft schaut.“ Keine Ahnung, was sie meint. Du vielleicht?"}
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Gerettet! Mit dem Filter kann man direkt gegen die Sonne fotografieren."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Hina sagt nur: „Ein Gesicht aus Gold, das in die Zukunft schaut.“ Keine Ahnung, was sie meint. Du vielleicht?"
+    }
    ],
    "hint": "„Ein Gesicht aus Gold, das in die Zukunft schaut.“"
   },
   "11": {
    "lines": [
-    {"s": "hina", "p": "surprised", "t": "Du hast es erraten! Der Turm der Sonne von Okamoto Tarō, gebaut für die Expo 1970."},
-    {"s": "hina", "p": "note", "t": "Er hat mehrere Gesichter: oben das goldene für die Zukunft, in der Mitte die Gegenwart, und hinten eine schwarze Sonne für die Vergangenheit."},
-    {"s": "hina", "p": "phone", "t": "Die schwarze Sonne sieht man von hier nicht. Also: das goldene Gesicht ganz oben, bitte!"}
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "Du hast es erraten! Der Turm der Sonne von Okamoto Tarō, gebaut für die Expo 1970."
+    },
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Er hat mehrere Gesichter: oben das goldene für die Zukunft, in der Mitte die Gegenwart, und hinten eine schwarze Sonne für die Vergangenheit."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Die schwarze Sonne sieht man von hier nicht. Also: das goldene Gesicht ganz oben, bitte!"
+    }
    ],
    "tasks": [
-    {"type": "photo", "q": "Fotografiere das goldene Gesicht an der Spitze des Turms.", "target": {"x": 61, "y": 8}, "zoom": [4, 5], "title": "Das Gesicht der Zukunft", "text": "Das goldene Gesicht an der Spitze glänzt in der Sonne. Es schaut seit 1970 in die Zukunft."}
+    {
+     "type": "photo",
+     "q": "Fotografiere das goldene Gesicht an der Spitze des Turms.",
+     "target": {
+      "x": 61,
+      "y": 8
+     },
+     "zoom": [
+      4,
+      5
+     ],
+     "title": "Das Gesicht der Zukunft",
+     "text": "Das goldene Gesicht an der Spitze glänzt in der Sonne. Es schaut seit 1970 in die Zukunft."
+    }
    ],
    "after": [
-    {"s": "hina", "p": "note", "t": "Großartig. Mein Fotoband ist fast fertig."},
-    {"s": "hina", "p": "phone", "t": "Daiki will dir noch etwas an einem berühmten Baseballstadion zeigen. Die Mauern dort sind ganz grün."}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Großartig. Mein Fotoband ist fast fertig."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Daiki will dir noch etwas an einem berühmten Baseballstadion zeigen. Die Mauern dort sind ganz grün."
+    }
    ],
    "hint": "Ein Baseballstadion mit grünen Mauern."
   },
   "12": {
    "lines": [
-    {"s": "daiki", "p": "cocky", "t": "Kōshien. Die Mauern sind mit Efeu bewachsen. Das ist sein Markenzeichen."},
-    {"s": "daiki", "p": "ready", "t": "Der Efeu wurde 1924 gepflanzt, als das Stadion neu war. Beim Umbau wurde er entfernt und mit Ablegern neu angepflanzt."},
-    {"s": "daiki", "p": "cheer", "t": "Such mal die Stelle, wo er am dichtesten ist."}
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Kōshien. Die Mauern sind mit Efeu bewachsen. Das ist sein Markenzeichen."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Der Efeu wurde 1924 gepflanzt, als das Stadion neu war. Beim Umbau wurde er entfernt und mit Ablegern neu angepflanzt."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Such mal die Stelle, wo er am dichtesten ist."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf das dichteste Efeu an der Ziegelmauer.", "x": 55, "y": 24, "r": 12,
-     "closeup": {"art": "ivy", "title": "Kōshiens Efeu", "text": "Die Ranken klettern über die alten Ziegel. Im Herbst färben sich die Blätter rot."}}
+    {
+     "type": "inspect",
+     "q": "Tippe auf das dichteste Efeu an der Ziegelmauer.",
+     "x": 55,
+     "y": 24,
+     "r": 12,
+     "closeup": {
+      "art": "ivy",
+      "title": "Kōshiens Efeu",
+      "text": "Die Ranken klettern über die alten Ziegel. Im Herbst färben sich die Blätter rot."
+     }
+    }
    ],
    "after": [
-    {"s": "daiki", "p": "cocky", "t": "Siehst du. Selbst die Mauern hier haben Geschichte."},
-    {"s": "daiki", "p": "ready", "t": "Hina wartet dort, wo ihr angefangen habt: auf dem großen Platz vor der Burg."}
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Siehst du. Selbst die Mauern hier haben Geschichte."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Hina wartet dort, wo ihr angefangen habt: auf dem großen Platz vor der Burg."
+    }
    ],
    "hint": "Der große Platz vor der Burg."
   },
   "13": {
    "lines": [
-    {"s": "hina", "p": "surprised", "t": "Da bist du! Schau – der Fotoband ist fertig."},
-    {"s": "hina", "p": "note", "t": "Burg, Läufer, Löwenkopf, eiserner Turm, Kuppel, Turm der Sonne … und alle Bilder zeigen etwas, das Touristen übersehen."},
-    {"s": "hina", "p": "phone", "t": "Auf der letzten Seite steht dein Name. Als Co-Fotograf!"},
-    {"s": "me", "t": "Wirklich? Danke, Hina!"}
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "Da bist du! Schau – der Fotoband ist fertig."
+    },
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Burg, Läufer, Löwenkopf, eiserner Turm, Kuppel, Turm der Sonne … und alle Bilder zeigen etwas, das Touristen übersehen."
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Auf der letzten Seite steht dein Name. Als Co-Fotograf!"
+    },
+    {
+     "s": "me",
+     "t": "Wirklich? Danke, Hina!"
+    }
    ],
    "after": [
-    {"s": "hina", "p": "note", "t": "Ich danke dir. Wenn du je wieder ein Motiv suchst – du weißt, wo ich bin."}
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Ich danke dir. Wenn du je wieder ein Motiv suchst – du weißt, wo ich bin."
+    }
    ],
    "hint": "Strang abgeschlossen – Hina sucht weiter Motive vor der Burg."
   }
@@ -398,49 +1238,179 @@
  "STRANG_CAFE_CULTURE": {
   "8": {
    "lines": [
-    {"s": "maya", "p": "wave", "t": "Hier, das Parkcafé. Ich sitze gern draußen und schaue auf die Wiese."},
-    {"s": "maya", "p": "coffee", "t": "Auf der Tafel stehen drei Röstungen. Ich kann sie nie auseinanderhalten."},
-    {"s": "maya", "p": "shy", "t": "Liest du sie mir vor?"}
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Hier, das Parkcafé. Ich sitze gern draußen und schaue auf die Wiese."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Auf der Tafel stehen drei Röstungen. Ich kann sie nie auseinanderhalten."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Liest du sie mir vor?"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf die Kreidetafel vor dem Café.", "x": 23, "y": 83, "r": 8,
-     "closeup": {"art": "roastchart", "title": "Röstgrade", "text": "浅煎り asairi – hell, fruchtig. 中煎り chūiri – mittel, rund. 深煎り fukairi – dunkel, bitter."}},
-    {"type": "choice", "q": "Maya mag es mild und fruchtig. Welche Röstung passt?", "options": [{"jp": "あさいり", "ro": "asairi (hell)"}, {"jp": "ちゅういり", "ro": "chūiri (mittel)"}, {"jp": "ふかいり", "ro": "fukairi (dunkel)"}], "answer": 0}
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Kreidetafel vor dem Café.",
+     "x": 23,
+     "y": 83,
+     "r": 8,
+     "closeup": {
+      "art": "roastchart",
+      "title": "Röstgrade",
+      "text": "浅煎り asairi – hell, fruchtig. 中煎り chūiri – mittel, rund. 深煎り fukairi – dunkel, bitter."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Maya mag es mild und fruchtig. Welche Röstung passt?",
+     "options": [
+      {
+       "jp": "あさいり",
+       "ro": "asairi (hell)"
+      },
+      {
+       "jp": "ちゅういり",
+       "ro": "chūiri (mittel)"
+      },
+      {
+       "jp": "ふかいり",
+       "ro": "fukairi (dunkel)"
+      }
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "maya", "p": "coffee", "t": "Asairi. Das merke ich mir."},
-    {"s": "maya", "p": "wave", "t": "Shizuku ist heute im Kaufhaus unter dem höchsten Hochhaus. Ihr Espresso dort schmeckt komisch, hat sie geschrieben."}
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Asairi. Das merke ich mir."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Shizuku ist heute im Kaufhaus unter dem höchsten Hochhaus. Ihr Espresso dort schmeckt komisch, hat sie geschrieben."
+    }
    ],
    "hint": "Shizuku in der Feinkost-Etage unter dem höchsten Hochhaus."
   },
   "9": {
    "lines": [
-    {"s": "shizuku", "p": "calm", "t": "Gut, dass du kommst. Der Espresso hier ist bitter und trocken im Mund."},
-    {"s": "shizuku", "p": "pour", "t": "Die Maschine ist neu. Ich glaube, das Wasser ist zu heiß."},
-    {"s": "shizuku", "p": "serve", "t": "Stell die Werte ein. Mahlgrad und Tampen sind fast in Ordnung."}
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Gut, dass du kommst. Der Espresso hier ist bitter und trocken im Mund."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Die Maschine ist neu. Ich glaube, das Wasser ist zu heiß."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Stell die Werte ein. Mahlgrad und Tampen sind fast in Ordnung."
+    }
    ],
    "tasks": [
-    {"type": "espresso", "q": "Der Espresso ist bitter. Korrigiere die Brühtemperatur.", "start": {"grind": 5, "temp": 97, "tamp": 15}, "ok": {"grind": [4, 6], "temp": [90, 93], "tamp": [13, 17]}}
+    {
+     "type": "espresso",
+     "q": "Der Espresso ist bitter. Korrigiere die Brühtemperatur.",
+     "start": {
+      "grind": 5,
+      "temp": 97,
+      "tamp": 15
+     },
+     "ok": {
+      "grind": [
+       4,
+       6
+      ],
+      "temp": [
+       90,
+       93
+      ],
+      "tamp": [
+       13,
+       17
+      ]
+     }
+    }
    ],
    "after": [
-    {"s": "shizuku", "p": "serve", "t": "Viel besser. Süß, rund, kein Brennen. Zu heißes Wasser zieht die bitteren Stoffe heraus."},
-    {"s": "shizuku", "p": "calm", "t": "Ren hat aus Taishō geschrieben. Dort gibt es einen Tee mit Schaum – er ist ganz aufgeregt."}
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Viel besser. Süß, rund, kein Brennen. Zu heißes Wasser zieht die bitteren Stoffe heraus."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Ren hat aus Taishō geschrieben. Dort gibt es einen Tee mit Schaum – er ist ganz aufgeregt."
+    }
    ],
    "hint": "Ren im Okinawa-Viertel Taishō."
   },
   "10": {
    "lines": [
-    {"s": "ren", "p": "relaxed", "t": "Bukubuku-chā! Ein Tee aus Okinawa. Man schlägt ihn mit einem großen Besen, bis oben ein dicker Schaum steht."},
-    {"s": "ren", "p": "pour", "t": "Der Schaum wird mit Wasser von geröstetem Reis gemacht. Darüber kommen Erdnüsse."},
-    {"s": "ren", "p": "guitar", "t": "Ich versuche, so einen Schaum mit Kaffee zu machen. Klappt noch nicht."}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Bukubuku-chā! Ein Tee aus Okinawa. Man schlägt ihn mit einem großen Besen, bis oben ein dicker Schaum steht."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Der Schaum wird aus Wasser von geröstetem Reis geschlagen. Obendrauf streut man fein zerstoßene Erdnüsse."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Ich versuche, so einen Schaum mit Kaffee zu machen. Klappt noch nicht."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Woher kommt Bukubuku-chā?", "options": ["Hokkaidō", "Kyōto", "Okinawa", "Tōkyō"], "answer": 2},
-    {"type": "choice", "q": "Was ist das Besondere an diesem Tee?", "options": ["Er ist eiskalt", "Ein dicker Schaum obendrauf", "Er ist rot", "Er wird mit Milch gekocht"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Woher kommt Bukubuku-chā?",
+     "options": [
+      "Hokkaidō",
+      "Kyōto",
+      "Okinawa",
+      "Tōkyō"
+     ],
+     "answer": 2
+    },
+    {
+     "type": "choice",
+     "q": "Was ist das Besondere an diesem Tee?",
+     "options": [
+      "Er ist eiskalt",
+      "Ein dicker Schaum obendrauf",
+      "Er ist rot",
+      "Er wird mit Milch gekocht"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "ren", "p": "relaxed", "t": "Shizuku sagt, das Wasser macht den Unterschied. Bei Tee wie bei Kaffee."},
-    {"s": "ren", "p": "pour", "t": "Sie will dir das in einem Teehaus in einem großen Park in Sakai erklären. Ganz im Süden."}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Shizuku sagt, das Wasser macht den Unterschied. Bei Tee wie bei Kaffee."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Sie will dir das in einem Teehaus in einem großen Park in Sakai erklären. Ganz im Süden."
+    }
    ],
    "hint": "Ein Teehaus in einem großen Park in Sakai."
   }
@@ -448,177 +1418,601 @@
  "STRANG_FOOD_CULTURE": {
   "4": {
    "lines": [
-    {"s": "kenji", "p": "hyped", "t": "Kushikatsu! Frittierte Spieße. Fleisch, Gemüse, Käse, sogar Banane."},
-    {"s": "kenji", "p": "talk", "t": "Aber pass auf: Die Soße im Topf teilen sich alle Gäste. Deshalb gibt es eine goldene Regel."},
-    {"s": "kenji", "p": "relaxed", "t": "Auf jedem Schild hier steht: 二度づけ禁止 – nido-zuke kinshi."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Kushikatsu! Frittierte Spieße. Fleisch, Gemüse, Käse, sogar Banane."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Aber pass auf: Die Soße im Topf teilen sich alle Gäste. Deshalb gibt es eine goldene Regel."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Auf jedem Schild hier steht: 二度づけ禁止 – nido-zuke kinshi."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was bedeutet „nido-zuke kinshi“?", "options": ["Nur mit Stäbchen essen", "Nicht zweimal in die Soße tunken", "Kein Bier zum Essen", "Höchstens zwei Spieße"], "answer": 1},
-    {"type": "choice", "q": "Du willst mehr Soße. Was machst du?", "options": ["Den angebissenen Spieß nochmal eintunken", "Mit einem Kohlblatt Soße schöpfen und darüber träufeln", "Den Topf trinken", "Den Kellner anschreien"], "answer": 1, "explain": "Das Kohlblatt ist gratis und dient als Löffel für die Soße."}
+    {
+     "type": "choice",
+     "q": "Was bedeutet „nido-zuke kinshi“?",
+     "options": [
+      "Nur mit Stäbchen essen",
+      "Nicht zweimal in die Soße tunken",
+      "Kein Bier zum Essen",
+      "Höchstens zwei Spieße"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Du willst mehr Soße. Was machst du?",
+     "options": [
+      "Den angebissenen Spieß nochmal eintunken",
+      "Mit einem Kohlblatt Soße schöpfen und darüber träufeln",
+      "Den Topf trinken",
+      "Den Kellner anschreien"
+     ],
+     "answer": 1,
+     "explain": "Das Kohlblatt ist gratis und dient als Löffel für die Soße."
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "t": "Genau! Das Kohlblatt rettet dich. Und es ist gratis."},
-    {"s": "kenji", "p": "talk", "t": "Meister Gen steht gleich hier drüben. Er hat einen Topf mit etwas Geheimnisvollem."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Genau! Das Kohlblatt rettet dich. Und es ist gratis."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Meister Gen steht gleich hier drüben. Er hat einen Topf mit etwas Geheimnisvollem."
+    }
    ],
    "hint": "Meister Gen hier in Shinsekai."
   },
   "5": {
    "lines": [
-    {"s": "gen", "p": "ladle", "t": "Doteyaki. Rindersehnen, stundenlang geschmort, bis sie weich wie Butter sind."},
-    {"s": "gen", "p": "proud", "t": "Die Soße ist dunkel und süßlich. Eine Zutat macht sie typisch für Kansai."},
-    {"s": "gen", "p": "laugh", "t": "Probier und rate!"}
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Doteyaki. Rindersehnen, stundenlang geschmort, bis sie weich wie Butter sind."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Die Soße ist dunkel und süßlich. Eine Zutat macht sie typisch für Kansai."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Probier und rate!"
+    }
    ],
    "tasks": [
-    {"type": "ingredient", "q": "Was ist die süßliche Hauptzutat der Soße?", "dish": "Doteyaki", "art": "dish",
-     "clues": ["Sie besteht aus fermentierten Sojabohnen.", "Man macht daraus auch eine Suppe, die es fast zu jedem Essen gibt.", "In Kansai mag man sie hell und leicht süß."],
-     "options": ["Ketchup", "Weiße Miso-Paste", "Honig", "Sojamilch"], "answer": 1, "fb": "Miso – in Kansai oft die helle, süßliche shiro-miso."}
+    {
+     "type": "ingredient",
+     "q": "Was ist die süßliche Hauptzutat der Soße?",
+     "dish": "Doteyaki",
+     "art": "dish",
+     "clues": [
+      "Sie besteht aus fermentierten Sojabohnen.",
+      "Man macht daraus auch eine Suppe, die es fast zu jedem Essen gibt.",
+      "In Kansai mag man sie hell und leicht süß."
+     ],
+     "options": [
+      "Ketchup",
+      "Weiße Miso-Paste",
+      "Honig",
+      "Sojamilch"
+     ],
+     "answer": 1,
+     "fb": "Miso – in Kansai oft die helle, süßliche shiro-miso."
+    }
    ],
    "after": [
-    {"s": "gen", "p": "laugh", "t": "Miso! Du hast eine gute Zunge."},
-    {"s": "gen", "p": "proud", "t": "Kenji ist schon im großen Bad nebenan. Nach dem Baden trinkt man dort etwas ganz Bestimmtes."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Miso! Du hast eine gute Zunge."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Kenji ist schon im großen Bad nebenan. Nach dem Baden trinkt man dort etwas ganz Bestimmtes."
+    }
    ],
    "hint": "Kenji im großen Bad in Shinsekai."
   },
   "6": {
    "lines": [
-    {"s": "kenji", "p": "relaxed", "t": "Spa World! Riesige Bäder, die ganze Etagen haben ein Thema – Europa oder Asien."},
-    {"s": "kenji", "p": "hyped", "t": "Und nach dem Bad: Milch aus der Glasflasche. Mit Fruchtgeschmack oder Kaffee. Eine Hand an der Hüfte, und dann in einem Zug!"},
-    {"s": "kenji", "p": "talk", "t": "Das machen in Japan alle so. Ehrlich."}
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Spa World! Riesige Bäder, die ganze Etagen haben ein Thema – Europa oder Asien."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Und nach dem Bad: Milch aus der Glasflasche. Mit Fruchtgeschmack oder Kaffee. Eine Hand an der Hüfte, und dann in einem Zug!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Das machen in Japan alle so. Ehrlich."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was trinkt man traditionell nach dem Bad?", "options": ["Heißen Tee", "Milch aus der Glasflasche", "Sake", "Tomatensaft"], "answer": 1},
-    {"type": "choice", "q": "Wie trinkt man sie laut Kenji?", "options": ["Langsam mit Strohhalm", "Mit einer Hand an der Hüfte in einem Zug", "Im Sitzen mit Löffel", "Gar nicht, man schaut sie nur an"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Was trinkt man traditionell nach dem Bad?",
+     "options": [
+      "Heißen Tee",
+      "Milch aus der Glasflasche",
+      "Sake",
+      "Tomatensaft"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie trinkt man sie laut Kenji?",
+     "options": [
+      "Langsam mit Strohhalm",
+      "Mit einer Hand an der Hüfte in einem Zug",
+      "Im Sitzen mit Löffel",
+      "Gar nicht, man schaut sie nur an"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "t": "Kanpai mit Milch! Ahh, herrlich."},
-    {"s": "kenji", "p": "talk", "t": "Frau Morimoto kauft gerade Süßigkeiten in der Feinkost-Etage unter dem höchsten Hochhaus. Sie will dir was zeigen."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Kanpai mit Milch! Ahh, herrlich."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Frau Morimoto kauft gerade Süßigkeiten in der Feinkost-Etage unter dem höchsten Hochhaus. Sie will dir was zeigen."
+    }
    ],
    "hint": "Frau Morimoto in der Feinkost-Etage unter dem höchsten Hochhaus."
   },
   "7": {
    "lines": [
-    {"s": "morimoto", "p": "smile", "t": "Ah, da bist du ja. Hier unten im Kaufhaus gibt es die schönsten Süßigkeiten der Stadt."},
-    {"s": "morimoto", "p": "clipboard", "t": "Wagashi aus Bohnenpaste, bunt wie Blumen. Und Senbei – knusprige Reiscracker mit Sojasoße."},
-    {"s": "morimoto", "p": "smile", "t": "Schau dir die Auslage an. Für den Tee im Wohnheim."}
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Ah, da bist du ja. Hier unten im Kaufhaus gibt es die schönsten Süßigkeiten der Stadt."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Wagashi aus Bohnenpaste, bunt wie Blumen. Und Senbei – knusprige Reiscracker mit Sojasoße."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Schau dir die Auslage an. Für den Tee im Wohnheim."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf die Auslage mit den Süßigkeiten.", "x": 13, "y": 58, "r": 12,
-     "closeup": {"art": "senbei", "title": "Senbei und Wagashi", "text": "Oben knusprige Senbei, eine mit Nori umwickelt. Unten bunte Wagashi-Kugeln für den Tee."}},
-    {"type": "choice", "q": "Woraus macht man Senbei?", "options": ["Aus Reis", "Aus Weizen und Zucker", "Aus Kartoffeln", "Aus Fisch"], "answer": 0}
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Auslage mit den Süßigkeiten.",
+     "x": 13,
+     "y": 58,
+     "r": 12,
+     "closeup": {
+      "art": "senbei",
+      "title": "Senbei und Wagashi",
+      "text": "Oben knusprige Senbei, eine mit Nori umwickelt. Unten bunte Wagashi-Kugeln für den Tee."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Woraus macht man Senbei?",
+     "options": [
+      "Aus Reis",
+      "Aus Weizen und Zucker",
+      "Aus Kartoffeln",
+      "Aus Fisch"
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "morimoto", "p": "smile", "t": "Genau. Ich nehme beides – für jeden im Wohnheim etwas."},
-    {"s": "morimoto", "p": "clipboard", "t": "Meister Gen kocht heute im Viertel mit der Okinawa-Musik. Er will dir eine besondere Suppe zeigen."}
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Genau. Ich nehme beides – für jeden im Wohnheim etwas."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Meister Gen kocht heute im Viertel mit der Okinawa-Musik. Er will dir eine besondere Suppe zeigen."
+    }
    ],
    "hint": "Meister Gen im Okinawa-Viertel im Westen."
   },
   "8": {
    "lines": [
-    {"s": "gen", "p": "ladle", "t": "Okinawa-Soba! Dicke Weizennudeln, ein Stück Schweinebauch obendrauf."},
-    {"s": "gen", "p": "proud", "t": "Die Brühe ist klar und tief. Schweineknochen allein reichen nicht."},
-    {"s": "gen", "p": "laugh", "t": "Was gehört noch hinein? Du kennst es von den Takoyaki!"}
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Okinawa-Soba! Dicke Weizennudeln, ein Stück Schweinebauch obendrauf."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Die Brühe ist klar und tief. Schweineknochen allein reichen nicht."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Was gehört noch hinein? Du kennst es von den Takoyaki!"
+    }
    ],
    "tasks": [
-    {"type": "ingredient", "q": "Was kommt neben Schweinefleisch in die Brühe?", "dish": "Okinawa-Soba", "art": "dish",
-     "clues": ["Es kommt aus dem Meer.", "Es ist ein Fisch, der getrocknet und geräuchert wird.", "Man hobelt ihn in hauchdünne Flocken."],
-     "options": ["Katsuobushi (Bonitoflocken)", "Käse", "Tomaten", "Kokosmilch"], "answer": 0, "fb": "Bonitoflocken geben der Schweinebrühe ihren tiefen Geschmack."}
+    {
+     "type": "ingredient",
+     "q": "Was kommt neben Schweinefleisch in die Brühe?",
+     "dish": "Okinawa-Soba",
+     "art": "dish",
+     "clues": [
+      "Es kommt aus dem Meer.",
+      "Es ist ein Fisch, der getrocknet und geräuchert wird.",
+      "Man hobelt ihn in hauchdünne Flocken."
+     ],
+     "options": [
+      "Katsuobushi (Bonitoflocken)",
+      "Käse",
+      "Tomaten",
+      "Kokosmilch"
+     ],
+     "answer": 0,
+     "fb": "Bonitoflocken geben der Schweinebrühe ihren tiefen Geschmack."
+    }
    ],
    "after": [
-    {"s": "gen", "p": "laugh", "t": "Katsuobushi! Wie bei mir zu Hause."},
-    {"s": "gen", "p": "proud", "t": "Kenji hat Hunger auf Okonomiyaki. Er wartet in der Retro-Gasse unter dem Hochhaus mit dem Garten im Himmel."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Katsuobushi! Wie bei mir zu Hause."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Kenji hat Hunger auf Okonomiyaki. Er wartet in der Retro-Gasse unter dem Hochhaus mit dem Garten im Himmel."
+    }
    ],
    "hint": "Kenji in der Retro-Gasse unter dem Umeda Sky Building."
   },
   "9": {
+   "bg": "gen_bg_izakaya_warm_blur_v2",
    "lines": [
-    {"s": "kenji", "p": "hyped", "t": "Okonomiyaki! „Okonomi“ heißt „wie du magst“. Kohl, Teig, und dann alles, was du willst."},
-    {"s": "kenji", "p": "talk", "t": "Hier gibt es ein Menü: ein Okonomiyaki mit Schwein, dazu ein Getränk."},
-    {"s": "kenji", "p": "relaxed", "t": "Was schätzt du, wie viel das kostet?"}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Okonomiyaki! „Okonomi“ heißt „wie du magst“. Kohl, Teig, und dann alles, was du willst."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Hier gibt es ein Menü: ein Okonomiyaki mit Schwein, dazu ein Getränk."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Was schätzt du, wie viel das kostet?"
+    }
    ],
    "tasks": [
-    {"type": "estimate", "q": "Wie viel kostet ein einfaches Okonomiyaki-Menü ungefähr?", "min": 100, "max": 5000, "step": 50, "answer": 1100, "unit": "円", "tol": 0.3}
+    {
+     "type": "estimate",
+     "q": "Wie viel kostet ein einfaches Okonomiyaki-Menü ungefähr?",
+     "min": 100,
+     "max": 5000,
+     "step": 50,
+     "answer": 1100,
+     "unit": "円",
+     "tol": 0.3
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "t": "So um die tausend Yen. Satt wird man auf jeden Fall!"},
-    {"s": "kenji", "p": "talk", "t": "Gen braucht eingelegten roten Ingwer. Er wartet in der langen überdachten Einkaufsstraße."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "So um die tausend Yen. Satt wird man auf jeden Fall!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Gen braucht eingelegten roten Ingwer. Er wartet in der langen überdachten Einkaufsstraße."
+    }
    ],
    "hint": "Gen in der langen überdachten Einkaufsstraße."
   },
   "10": {
    "lines": [
-    {"s": "gen", "p": "proud", "t": "Mir ist der rote Ingwer ausgegangen! Beni shōga. Ohne den sind Takoyaki nur halb so gut."},
-    {"s": "gen", "p": "ladle", "t": "Ein Händler auf dem Kuromon-Markt legt ihn selbst ein. Leuchtend rot, schön sauer."},
-    {"s": "gen", "p": "laugh", "t": "Holst du mir ein Glas? Ich halte die Pfanne warm."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Mir ist der rote Ingwer ausgegangen! Beni shōga. Ohne den sind Takoyaki nur halb so gut."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Ein Händler auf dem Kuromon-Markt legt ihn selbst ein. Leuchtend rot, schön sauer."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Holst du mir ein Glas? Ich halte die Pfanne warm."
+    }
    ],
-   "fetch": {"item": "Glas roter Ingwer", "x": 50, "y": 84, "art": "benishoga", "find": "Ein Glas mit leuchtend rotem Ingwer, in dünne Streifen geschnitten: 紅しょうが – beni shōga.", "hintOut": "Den roten Ingwer gibt es auf dem Kuromon-Markt.", "hintBack": "Bring den Ingwer zu Gen in die lange Einkaufsstraße."},
+   "fetch": {
+    "item": "Glas roter Ingwer",
+    "x": 50,
+    "y": 84,
+    "art": "benishoga",
+    "find": "Ein Glas mit leuchtend rotem Ingwer, in dünne Streifen geschnitten: 紅しょうが – beni shōga.",
+    "hintOut": "Den roten Ingwer gibt es auf dem Kuromon-Markt.",
+    "hintBack": "Bring den Ingwer zu Gen in die lange Einkaufsstraße."
+   },
    "after": [
-    {"s": "gen", "p": "laugh", "t": "Wunderbar! Jetzt sind meine Takoyaki wieder komplett."},
-    {"s": "gen", "p": "proud", "t": "Kenji ist im Museum der Instant-Nudeln in Ikeda. Er hat eine Frage an dich."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Wunderbar! Jetzt sind meine Takoyaki wieder komplett."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Kenji ist im Museum der Instant-Nudeln in Ikeda. Er hat eine Frage an dich."
+    }
    ],
    "hint": "Kenji im Museum der Instant-Nudeln in Ikeda."
   },
   "11": {
    "lines": [
-    {"s": "kenji", "p": "talk", "t": "Ohne diesen Mann würde ich verhungern: Andō Momofuku."},
-    {"s": "kenji", "p": "hyped", "t": "In einem kleinen Schuppen hier in Ikeda erfand er die erste Instant-Nudel. Später kam der Cup Noodle."},
-    {"s": "kenji", "p": "relaxed", "t": "Weißt du, wann das war?"}
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Ohne diesen Mann würde ich verhungern: Andō Momofuku."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "In einem kleinen Schuppen hier in Ikeda erfand er die erste Instant-Nudel. Später kam der Cup Noodle."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Weißt du, wann das war?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "In welchem Jahr kam die erste Instant-Nudel auf den Markt?", "options": ["1912", "1958", "1985", "2001"], "answer": 1, "explain": "1958 die Chicken Ramen, 1971 dann der Cup Noodle."},
-    {"type": "choice", "q": "Wie bereitet man eine Instant-Nudel zu?", "options": ["Kochendes Wasser drauf und kurz warten", "Drei Stunden kochen", "Im Ofen backen", "Kalt essen"], "answer": 0}
+    {
+     "type": "choice",
+     "q": "In welchem Jahr kam die erste Instant-Nudel auf den Markt?",
+     "options": [
+      "1912",
+      "1958",
+      "1985",
+      "2001"
+     ],
+     "answer": 1,
+     "explain": "1958 die Chicken Ramen, 1971 dann der Cup Noodle."
+    },
+    {
+     "type": "choice",
+     "q": "Wie bereitet man eine Instant-Nudel zu?",
+     "options": [
+      "Kochendes Wasser drauf und kurz warten",
+      "Drei Stunden kochen",
+      "Im Ofen backen",
+      "Kalt essen"
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "t": "Drei Minuten Geduld. Das ist die ganze Kunst."},
-    {"s": "kenji", "p": "talk", "t": "Frau Morimoto ist am Wasserfall im Norden. Dort gibt es frittierte Blätter – kein Witz!"}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Drei Minuten Geduld. Das ist die ganze Kunst."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Frau Morimoto ist am Wasserfall im Norden. Dort gibt es frittierte Blätter – kein Witz!"
+    }
    ],
    "hint": "Frau Morimoto am Wasserfall im Norden."
   },
   "12": {
    "lines": [
-    {"s": "morimoto", "p": "smile", "t": "Hier am Minō-Wasserfall verkauft man Momiji-Tempura. Frittierte Ahornblätter!"},
-    {"s": "morimoto", "p": "clipboard", "t": "Die Blätter werden ein ganzes Jahr in Salz eingelegt. Dann kommen sie in süßen Teig mit Sesam."},
-    {"s": "morimoto", "p": "smile", "t": "Such mal die Ahornbüsche am Wegrand."}
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Hier am Minō-Wasserfall verkauft man Momiji-Tempura. Frittierte Ahornblätter!"
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Die Blätter werden ein ganzes Jahr in Salz eingelegt. Dann kommen sie in süßen Teig mit Sesam."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Such mal die Ahornbüsche am Wegrand."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf die Ahornbüsche unten links am Weg.", "x": 14, "y": 78, "r": 12,
-     "closeup": {"art": "momiji", "title": "Ahornblätter", "text": "Fünf spitze Finger, wie eine kleine Hand. Im Herbst werden sie leuchtend rot."}},
-    {"type": "choice", "q": "Wie lange werden die Blätter eingelegt?", "options": ["Eine Stunde", "Einen Tag", "Etwa ein Jahr", "Zehn Jahre"], "answer": 2}
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Ahornbüsche unten links am Weg.",
+     "x": 14,
+     "y": 78,
+     "r": 12,
+     "closeup": {
+      "art": "momiji",
+      "title": "Ahornblätter",
+      "text": "Fünf spitze Finger, wie eine kleine Hand. Im Herbst werden sie leuchtend rot."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wie lange werden die Blätter eingelegt?",
+     "options": [
+      "Eine Stunde",
+      "Einen Tag",
+      "Etwa ein Jahr",
+      "Zehn Jahre"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "morimoto", "p": "smile", "t": "Süß und knusprig. Probier!"},
-    {"s": "morimoto", "p": "clipboard", "t": "Kenji wartet in der Mensa. Er will dir das berühmteste Gericht des Campus zeigen."}
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Süß und knusprig. Probier!"
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Kenji wartet in der Mensa. Er will dir das berühmteste Gericht des Campus zeigen."
+    }
    ],
    "hint": "Kenji in der Mensa Kasane."
   },
   "13": {
    "lines": [
-    {"s": "kenji", "p": "hyped", "t": "Das Handai-Katsu-Curry! Paniertes Schnitzel, Reis, ganz viel Curry. Billig und riesig."},
-    {"s": "kenji", "p": "talk", "t": "In der Prüfungswoche stehen hier alle Schlange. Curry ist Gehirnfutter, sage ich."},
-    {"s": "kenji", "p": "relaxed", "t": "Was ist eigentlich Katsu?"}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Das Handai-Katsu-Curry! Paniertes Schnitzel, Reis, ganz viel Curry. Billig und riesig."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "In der Prüfungswoche stehen hier alle Schlange. Curry ist Gehirnfutter, sage ich."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Was ist eigentlich Katsu?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was ist „Katsu“?", "options": ["Rohes Fleisch", "Paniertes, frittiertes Fleisch", "Eine Suppe", "Ein Reisgericht ohne Fleisch"], "answer": 1},
-    {"type": "choice", "q": "Wie sagt man vor dem Essen?", "options": [{"jp": "いただきます", "ro": "Itadakimasu"}, {"jp": "ごちそうさま", "ro": "Gochisōsama"}, {"jp": "おやすみ", "ro": "Oyasumi"}, {"jp": "さようなら", "ro": "Sayōnara"}], "answer": 0}
+    {
+     "type": "choice",
+     "q": "Was ist „Katsu“?",
+     "options": [
+      "Rohes Fleisch",
+      "Paniertes, frittiertes Fleisch",
+      "Eine Suppe",
+      "Ein Reisgericht ohne Fleisch"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie sagt man vor dem Essen?",
+     "options": [
+      {
+       "jp": "いただきます",
+       "ro": "Itadakimasu"
+      },
+      {
+       "jp": "ごちそうさま",
+       "ro": "Gochisōsama"
+      },
+      {
+       "jp": "おやすみ",
+       "ro": "Oyasumi"
+      },
+      {
+       "jp": "さようなら",
+       "ro": "Sayōnara"
+      }
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "t": "Itadakimasu! Und danach: Gochisōsama."},
-    {"s": "kenji", "p": "talk", "t": "Gen sagt: „Wo die Wissenschaft Fische großzieht, wartet mein nächstes Geheimnis.“ Was auch immer das heißt."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Itadakimasu! Und danach: Gochisōsama."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Gen sagt: „Wo die Wissenschaft Fische großzieht, wartet mein nächstes Geheimnis.“ Was auch immer das heißt."
+    }
    ],
    "hint": "„Wo die Wissenschaft Fische großzieht.“"
   },
   "14": {
    "lines": [
-    {"s": "gen", "p": "proud", "t": "Das Fischlabor der Kindai-Universität. Hier haben sie etwas geschafft, was keiner für möglich hielt."},
-    {"s": "gen", "p": "ladle", "t": "Den Blauflossen-Thunfisch komplett zu züchten – vom Ei bis zum großen Fisch, und dann wieder Eier."},
-    {"s": "gen", "p": "laugh", "t": "Das heißt Kindai-Maguro. Man kann ihn sogar in Restaurants essen."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Das Fischlabor der Kindai-Universität. Hier haben sie etwas geschafft, was keiner für möglich hielt."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Den Blauflossen-Thunfisch komplett zu züchten – vom Ei bis zum großen Fisch, und dann wieder Eier."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Das heißt Kindai-Maguro. Man kann ihn sogar in Restaurants essen."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Warum ist die Zucht so wichtig?", "options": ["Damit der Fisch billiger wird", "Damit man wilde Thunfische im Meer schont", "Weil er besser schwimmt", "Für ein Aquarium"], "answer": 1},
-    {"type": "choice", "q": "Wann gelang die vollständige Zucht?", "options": ["1950", "1970", "2002", "2020"], "answer": 2}
+    {
+     "type": "choice",
+     "q": "Warum ist die Zucht so wichtig?",
+     "options": [
+      "Damit der Fisch billiger wird",
+      "Damit man wilde Thunfische im Meer schont",
+      "Weil er besser schwimmt",
+      "Für ein Aquarium"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wann gelang die vollständige Zucht?",
+     "options": [
+      "1950",
+      "1970",
+      "2002",
+      "2020"
+     ],
+     "answer": 2
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Nach über dreißig Jahren Forschung. Geduld ist auch eine Zutat."},
-    {"s": "gen", "p": "ladle", "t": "Für guten Fisch braucht man ein gutes Messer. Die besten kommen aus Sakai, ganz im Süden. Dort wartet ein Handwerksmuseum."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Nach über dreißig Jahren Forschung. Geduld ist auch eine Zutat."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Für guten Fisch braucht man ein gutes Messer. Die besten kommen aus Sakai, ganz im Süden. Dort wartet ein Handwerksmuseum."
+    }
    ],
    "hint": "Ein Handwerksmuseum in Sakai."
   }

@@ -1226,6 +1226,7 @@
    "hint": "Die kleinen Cafés unter den Bahnbögen von Nakatsu."
   },
   "14": {
+   "bg": "gen_bg_cafe_modern_blur",
    "variants": {
     "AOI_TRANSIT_STUDENT": {
      "lines": [

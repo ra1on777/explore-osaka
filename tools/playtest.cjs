@@ -81,7 +81,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
     await runStage({ ...cur, intro: true });
     introStages.push(`${cur.q}#${cur.i}`);
   }
-  for (let guard = 0; guard < 800 && played < total; guard++) {
+  for (let guard = 0; guard < 3000 && played < total; guard++) {
     // Nächste spielbare Etappe bestimmen
     const next = await page.evaluate(() => {
       const { engine, data, G } = window.__eo;

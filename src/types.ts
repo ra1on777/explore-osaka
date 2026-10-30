@@ -49,6 +49,8 @@ export type Task =
 export interface VocabEntry { jp: string; ro: string; de: string }
 export interface StageContent {
   mood?: Mood;
+  /** Optionaler Innenraum-Hintergrund aus img/bg (z. B. gen_bg_izakaya_warm_blur_v2) während der Etappe. */
+  bg?: string;
   lines?: Line[];
   tasks?: Task[];
   after?: Line[];

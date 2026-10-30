@@ -2,52 +2,141 @@
  "STRANG_FOOD_CULTURE": {
   "1": {
    "lines": [
-    {"s": "gen", "p": "laugh", "t": "Hungrig siehst du aus! Ich bin Meister Gen. Seit vierzig Jahren mache ich hier Takoyaki."},
-    {"s": "gen", "p": "proud", "t": "Kennst du das Sprichwort? In Kyōto ruiniert man sich für Kleidung, in Ōsaka fürs Essen. Kuidaore – essen, bis man umfällt."},
-    {"s": "me", "t": "Klingt nach einem guten Plan."},
-    {"s": "gen", "p": "ladle", "t": "Takoyaki wurden übrigens hier in Ōsaka erfunden, in den 1930ern. Teig, ein Stück Oktopus, und alles dreht sich auf der heißen Platte."},
-    {"s": "gen", "p": "laugh", "t": "Aber das Geheimnis ist nicht der Oktopus. Komm mit in meine Gasse, dann zeig ich's dir."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Hungrig siehst du aus! Ich bin Meister Gen. Seit vierzig Jahren mache ich hier Takoyaki."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Kennst du das Sprichwort? In Kyōto ruiniert man sich für Kleidung, in Ōsaka fürs Essen. Kuidaore – essen, bis man umfällt."
+    },
+    {
+     "s": "me",
+     "t": "Klingt nach einem guten Plan."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Takoyaki wurden übrigens hier in Ōsaka erfunden, in den 1930ern. Teig, ein Stück Oktopus, und alles dreht sich auf der heißen Platte."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Aber das Geheimnis ist nicht der Oktopus. Komm mit in meine Gasse, dann zeig ich's dir."
+    }
    ],
-   "vocab": [{"jp": "たこやき", "ro": "takoyaki", "de": "Teigbällchen mit Oktopus"}],
+   "vocab": [
+    {
+     "jp": "たこやき",
+     "ro": "takoyaki",
+     "de": "Teigbällchen mit Oktopus"
+    }
+   ],
    "hint": "Meister Gen in der Kuidaore-Gasse."
   },
   "2": {
    "lines": [
-    {"s": "gen", "p": "ladle", "t": "Probier diesen Teig. Pur, ohne Soße. Was schmeckst du?"},
-    {"s": "me", "t": "Hm … irgendwie nach Meer. Und ganz tief, fast wie Fleisch."},
-    {"s": "gen", "p": "proud", "t": "Gute Zunge! Das nennt man Umami. Es kommt aus der Brühe, mit der ich den Teig anrühre."},
-    {"s": "gen", "p": "laugh", "t": "Errätst du die Zutat? Jeder falsche Tipp kostet dich – aber ich verrate dir dann ein bisschen mehr."}
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Probier diesen Teig. Pur, ohne Soße. Was schmeckst du?"
+    },
+    {
+     "s": "me",
+     "t": "Hm … irgendwie nach Meer. Und ganz tief, fast wie Fleisch."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Gute Zunge! Das nennt man Umami. Es kommt aus der Brühe, mit der ich den Teig anrühre."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Errätst du die Zutat? Jeder falsche Tipp kostet dich – aber ich verrate dir dann ein bisschen mehr."
+    }
    ],
    "tasks": [
-    {"type": "ingredient", "q": "Welche Brühe steckt im Takoyaki-Teig?", "dish": "Gens Takoyaki-Teig",
-     "clues": ["Sie riecht leicht nach Meer.", "Man kocht sie aus getrocknetem Seetang (Kombu).", "Dazu kommen hauchdünne Flocken von getrocknetem Bonito-Fisch."],
-     "options": ["Hühnerbrühe", "Dashi aus Kombu und Bonito", "Misosuppe", "Rinderbrühe"], "answer": 1,
-     "fb": "Dashi ist die Grundlage der Kansai-Küche. Der Kombu kam früher per Schiff aus dem fernen Hokkaidō nach Ōsaka."}
+    {
+     "type": "ingredient",
+     "q": "Welche Brühe steckt im Takoyaki-Teig?",
+     "dish": "Gens Takoyaki-Teig",
+     "clues": [
+      "Sie riecht leicht nach Meer.",
+      "Man kocht sie aus getrocknetem Seetang (Kombu).",
+      "Dazu kommen hauchdünne Flocken von getrocknetem Bonito-Fisch."
+     ],
+     "options": [
+      "Hühnerbrühe",
+      "Dashi aus Kombu und Bonito",
+      "Misosuppe",
+      "Rinderbrühe"
+     ],
+     "answer": 1,
+     "fb": "Dashi ist die Grundlage der Kansai-Küche. Der Kombu kam früher per Schiff aus dem fernen Hokkaidō nach Ōsaka."
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Genau! In Ōsaka kocht man mit viel Dashi und eher heller Sojasoße. In Tōkyō ist alles dunkler und kräftiger."},
-    {"s": "gen", "p": "ladle", "t": "Morgen früh kaufe ich frischen Oktopus auf dem großen Markt. Komm zum Kuromon-Markt!"}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Genau! In Ōsaka kocht man mit viel Dashi und eher heller Sojasoße. In Tōkyō ist alles dunkler und kräftiger."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Morgen früh kaufe ich frischen Oktopus auf dem großen Markt. Komm zum Kuromon-Markt!"
+    }
    ],
-   "vocab": [{"jp": "だし", "ro": "dashi", "de": "Brühe (Kombu/Bonito)"}],
+   "vocab": [
+    {
+     "jp": "だし",
+     "ro": "dashi",
+     "de": "Brühe (Kombu/Bonito)"
+    }
+   ],
    "hint": "Meister Gen auf dem Kuromon-Markt."
   },
   "3": {
    "lines": [
-    {"s": "gen", "p": "laugh", "t": "Schau dir diesen Oktopus an! Frischer geht's nicht."},
-    {"s": "gen", "p": "proud", "t": "Den Kuromon-Markt gibt es seit fast 200 Jahren. Er heißt „schwarzes Tor“ – nach dem Tor eines Tempels, der früher hier stand."},
-    {"s": "gen", "p": "ladle", "t": "Mist, ich hab die Bonitoflocken an meinem Stand in der Kuidaore-Gasse vergessen. Ohne die kein Dashi. Holst du sie mir?"}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Schau dir diesen Oktopus an! Frischer geht's nicht."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Den Kuromon-Markt gibt es seit fast 200 Jahren. Er heißt „schwarzes Tor“ – nach dem Tor eines Tempels, der früher hier stand."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Mist, ich hab die Bonitoflocken an meinem Stand in der Kuidaore-Gasse vergessen. Ohne die kein Dashi. Holst du sie mir?"
+    }
    ],
    "fetch": {
     "item": "Tüte Bonitoflocken (Katsuobushi)",
-    "x": 14, "y": 76,
+    "x": 14,
+    "y": 76,
     "art": "katsuobushi",
     "find": "Eine Tüte voller rosa-brauner Flocken. Katsuobushi ist getrockneter, geräucherter Bonito – hart wie Holz, darum wird er gehobelt.",
     "hintOut": "Die Bonitoflocken liegen an Gens Stand in der Kuidaore-Gasse.",
     "hintBack": "Bring die Bonitoflocken zu Meister Gen auf den Kuromon-Markt."
    },
    "after": [
-    {"s": "gen", "p": "proud", "t": "Danke! Siehst du, wie sie auf den heißen Takoyaki tanzen? Das ist die Hitze, nicht der Geist des Fisches."},
-    {"s": "gen", "p": "laugh", "t": "Mein nächster Halt ist das alte Vergnügungsviertel unter dem Turm im Süden. Dort gibt es die frittierten Spieße, die man nur einmal tunken darf."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Danke! Siehst du, wie sie auf den heißen Takoyaki tanzen? Das ist die Hitze, nicht der Geist des Fisches."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Mein nächster Halt ist das alte Vergnügungsviertel unter dem Turm im Süden. Dort gibt es die frittierten Spieße, die man nur einmal tunken darf."
+    }
    ],
    "hint": "Das alte Vergnügungsviertel unter dem Turm im Süden."
   }
@@ -56,268 +145,826 @@
   "2": {
    "mood": "golden",
    "lines": [
-    {"s": "ryo", "p": "point", "t": "Du bist Kenjis Mitbewohner? Ich bin Ryō. Ich organisiere Konzerte hier in Amerikamura."},
-    {"s": "ryo", "p": "sly", "t": "In den 1970ern verkauften hier ein paar Läden Kleidung aus den USA. Daher der Name: Amerika-mura, das Amerika-Dorf."},
-    {"s": "ryo", "p": "phone", "t": "Heute ist das hier das Wohnzimmer der Jugend. Abends sitzen alle auf den Stufen dieses Parks – sie heißen Sankaku-kōen, Dreieckspark."},
-    {"s": "me", "t": "Und wo ist heute Abend Musik?"},
-    {"s": "ryo", "p": "sly", "t": "Das steht auf einem Flyer im Plattenladen um die Ecke. Hör mal kurz zu, bevor du losrennst."}
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Du bist Kenjis Mitbewohner? Ich bin Ryō. Ich organisiere Konzerte hier in Amerikamura."
+    },
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "In den 1970ern verkauften hier ein paar Läden Kleidung aus den USA. Daher der Name: Amerika-mura, das Amerika-Dorf."
+    },
+    {
+     "s": "ryo",
+     "p": "phone",
+     "t": "Heute ist das hier das Wohnzimmer der Jugend. Abends sitzen alle auf den Stufen dieses Parks – sie heißen Sankaku-kōen, Dreieckspark."
+    },
+    {
+     "s": "me",
+     "t": "Und wo ist heute Abend Musik?"
+    },
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "Das steht auf einem Flyer im Plattenladen um die Ecke. Hör mal kurz zu, bevor du losrennst."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Woher hat Amerikamura seinen Namen?", "options": ["Von einem amerikanischen Bürgermeister", "Von Läden, die in den 1970ern Kleidung aus den USA verkauften", "Von einer US-Botschaft", "Von einem Freizeitpark"], "answer": 1},
-    {"type": "choice", "q": "Wie heißt der Park, in dem alle abends sitzen?", "options": ["Tenshiba", "Sankaku-kōen", "Nakanoshima-kōen", "Banpaku-kōen"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Woher hat Amerikamura seinen Namen?",
+     "options": [
+      "Von einem amerikanischen Bürgermeister",
+      "Von Läden, die in den 1970ern Kleidung aus den USA verkauften",
+      "Von einer US-Botschaft",
+      "Von einem Freizeitpark"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt der Park, in dem alle abends sitzen?",
+     "options": [
+      "Tenshiba",
+      "Sankaku-kōen",
+      "Nakanoshima-kōen",
+      "Banpaku-kōen"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "ryo", "p": "point", "t": "Gut aufgepasst. Yuki hängt im Vintage- und Plattenladen nebenan. Sie weiß, welcher Flyer der richtige ist."}
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Gut aufgepasst. Yuki hängt im Vintage- und Plattenladen nebenan. Sie weiß, welcher Flyer der richtige ist."
+    }
    ],
    "hint": "Yuki im Vintage- und Plattenladen in Amerikamura."
   },
   "3": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Ryō schickt dich? Dann suchst du den Flyer fürs Indie-Konzert! Hier hängen hundert Stück."},
-    {"s": "yuki", "p": "phone", "t": "Konzertclubs heißen in Japan „Live House“. Klein, laut, eng – und man kauft oft ein Getränk zum Eintritt dazu."},
-    {"s": "yuki", "p": "flustered", "t": "Der Flyer hängt ganz oben links an der Wand. Ich bin zu klein, um ranzukommen!"}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Ryō schickt dich? Dann suchst du den Flyer fürs Indie-Konzert! Hier hängen hundert Stück."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Konzertclubs heißen in Japan „Live House“. Klein, laut, eng – und man kauft oft ein Getränk zum Eintritt dazu."
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Der Flyer hängt ganz oben links an der Wand. Ich bin zu klein, um ranzukommen!"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde den Konzert-Flyer oben links an der Wand.", "x": 6, "y": 10, "r": 7,
-     "closeup": {"art": "flyer", "title": "Indie-Nacht", "text": "Live-Musik an den Naniwa-Docks, Samstag 19 Uhr. Darunter klein: „1 Drink“ – das Pflichtgetränk zum Eintritt, meist 500 bis 600 Yen."}}
+    {
+     "type": "inspect",
+     "q": "Finde den Konzert-Flyer oben links an der Wand.",
+     "x": 6,
+     "y": 10,
+     "r": 7,
+     "closeup": {
+      "art": "flyer",
+      "title": "Indie-Nacht",
+      "text": "Live-Musik an den Naniwa-Docks, Samstag 19 Uhr. Darunter klein: „1 Drink“ – das Pflichtgetränk zum Eintritt, meist 500 bis 600 Yen."
+     }
+    }
    ],
    "after": [
-    {"s": "yuki", "p": "excited", "t": "Samstag! Bis dahin gehen wir erst mal essen. Kenji wartet schon in der Kuidaore-Gasse in einer Izakaya."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Samstag! Bis dahin gehen wir erst mal essen. Kenji wartet schon in der Kuidaore-Gasse in einer Izakaya."
+    }
    ],
-   "vocab": [{"jp": "ライブ", "ro": "raibu", "de": "Konzert"}],
+   "vocab": [
+    {
+     "jp": "ライブ",
+     "ro": "raibu",
+     "de": "Konzert"
+    }
+   ],
    "hint": "Kenji in einer Izakaya in der Kuidaore-Gasse."
   },
   "4": {
+   "bg": "gen_bg_izakaya_warm_blur_v2",
    "mood": "night",
    "lines": [
-    {"s": "kenji", "p": "hyped", "t": "Da bist du! Setz dich. Ich hab schon bestellt: Bier für uns, Oolong-Tee für Yuki."},
-    {"s": "kenji", "p": "talk", "t": "Eine Izakaya ist eine japanische Kneipe. Man bestellt viele kleine Teller und teilt alles."},
-    {"s": "nar", "t": "Dein Glas kommt zuerst. Die anderen warten noch auf ihre Getränke."},
-    {"s": "kenji", "p": "relaxed", "t": "Und? Was machst du jetzt?"}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Da bist du! Setz dich. Ich hab schon bestellt: Bier für uns, Oolong-Tee für Yuki."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Eine Izakaya ist eine japanische Kneipe. Man bestellt viele kleine Teller und teilt alles."
+    },
+    {
+     "s": "nar",
+     "t": "Dein Glas kommt zuerst. Die anderen warten noch auf ihre Getränke."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Und? Was machst du jetzt?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Dein Getränk ist da, die anderen haben noch keins. Was tust du?", "options": ["Sofort trinken, solange es kalt ist", "Warten, bis alle ein Glas haben, und dann zusammen „Kanpai!“ rufen", "Allein anstoßen", "Das Glas zurückgeben"], "answer": 1, "explain": "Man wartet, bis alle ein Getränk haben. Dann stößt man gemeinsam an: „Kanpai!“ – „trockenes Glas“. Höflich: das eigene Glas etwas tiefer halten als das des anderen."}
+    {
+     "type": "choice",
+     "q": "Dein Getränk ist da, die anderen haben noch keins. Was tust du?",
+     "options": [
+      "Sofort trinken, solange es kalt ist",
+      "Warten, bis alle ein Glas haben, und dann zusammen „Kanpai!“ rufen",
+      "Allein anstoßen",
+      "Das Glas zurückgeben"
+     ],
+     "answer": 1,
+     "explain": "Man wartet, bis alle ein Getränk haben. Dann stößt man gemeinsam an: „Kanpai!“ – „trockenes Glas“. Höflich: das eigene Glas etwas tiefer halten als das des anderen."
+    }
    ],
    "after": [
-    {"s": "kenji", "p": "hyped", "jp": "かんぱい！", "ro": "Kanpai!", "t": "Prost!"},
-    {"s": "kenji", "p": "talk", "t": "Ryō ist auch gleich da. Bleib sitzen – er erklärt dir den nächsten Trick."}
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "jp": "かんぱい！",
+     "ro": "Kanpai!",
+     "t": "Prost!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Ryō ist auch gleich da. Bleib sitzen – er erklärt dir den nächsten Trick."
+    }
    ],
-   "vocab": [{"jp": "かんぱい", "ro": "kanpai", "de": "Prost!"}],
+   "vocab": [
+    {
+     "jp": "かんぱい",
+     "ro": "kanpai",
+     "de": "Prost!"
+    }
+   ],
    "hint": "Ryō kommt gleich in die Izakaya in der Kuidaore-Gasse."
   },
   "5": {
+   "bg": "gen_bg_izakaya_warm_blur_v2",
    "mood": "night",
    "lines": [
-    {"s": "ryo", "p": "sly", "t": "Kenji hat dich schon angelernt? Dann kommt Lektion zwei."},
-    {"s": "ryo", "p": "point", "t": "Siehst du mein leeres Glas? In Japan schenkt man sich nicht selbst ein. Man achtet auf die Gläser der anderen."},
-    {"s": "ryo", "p": "phone", "t": "Und wenn dir jemand einschenkt, hältst du dein Glas mit beiden Händen ein bisschen hoch."}
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "Kenji hat dich schon angelernt? Dann kommt Lektion zwei."
+    },
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Siehst du mein leeres Glas? In Japan schenkt man sich nicht selbst ein. Man achtet auf die Gläser der anderen."
+    },
+    {
+     "s": "ryo",
+     "p": "phone",
+     "t": "Und wenn dir jemand einschenkt, hältst du dein Glas mit beiden Händen ein bisschen hoch."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Ryōs Glas ist leer, die Flasche steht vor dir. Was ist höflich?", "options": ["Dir selbst nachschenken", "Ryō nachschenken", "Die Flasche zu Ryō schieben", "Nichts tun"], "answer": 1, "explain": "Das Einschenken für andere heißt oshaku. Dein eigenes Glas füllt dann meist jemand anderes."},
-    {"type": "choice", "q": "Jetzt schenkt Ryō dir ein. Wie hältst du dein Glas?", "options": ["Gar nicht – es bleibt auf dem Tisch", "Mit beiden Händen, etwas angehoben", "Mit einer Hand hinter dem Rücken", "Hoch über den Kopf"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Ryōs Glas ist leer, die Flasche steht vor dir. Was ist höflich?",
+     "options": [
+      "Dir selbst nachschenken",
+      "Ryō nachschenken",
+      "Die Flasche zu Ryō schieben",
+      "Nichts tun"
+     ],
+     "answer": 1,
+     "explain": "Das Einschenken für andere heißt oshaku. Dein eigenes Glas füllt dann meist jemand anderes."
+    },
+    {
+     "type": "choice",
+     "q": "Jetzt schenkt Ryō dir ein. Wie hältst du dein Glas?",
+     "options": [
+      "Gar nicht – es bleibt auf dem Tisch",
+      "Mit beiden Händen, etwas angehoben",
+      "Mit einer Hand hinter dem Rücken",
+      "Hoch über den Kopf"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "ryo", "p": "sly", "t": "Du lernst schnell. Jetzt raus an die frische Luft."},
-    {"s": "ryo", "p": "point", "t": "Daiki steht an der Brücke unter den großen Leuchtreklamen. Nach jedem Sieg der Tigers ist da die Hölle los."}
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "Du lernst schnell. Jetzt raus an die frische Luft."
+    },
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Daiki steht an der Brücke unter den großen Leuchtreklamen. Nach jedem Sieg der Tigers ist da die Hölle los."
+    }
    ],
-   "vocab": [{"jp": "おしゃく", "ro": "oshaku", "de": "einem anderen einschenken"}],
+   "vocab": [
+    {
+     "jp": "おしゃく",
+     "ro": "oshaku",
+     "de": "einem anderen einschenken"
+    }
+   ],
    "hint": "Daiki an der Brücke unter den großen Leuchtreklamen."
   },
   "6": {
+   "bg": "loading_screen_dotonbori_rain",
    "mood": "night",
    "lines": [
-    {"s": "daiki", "p": "cheer", "t": "Hörst du die Gesänge? Die Tigers haben gewonnen!"},
-    {"s": "daiki", "p": "cocky", "t": "Diese Brücke heißt Ebisu-bashi. Die Leute nennen sie auch „Hikkake-bashi“ – die Anmach-Brücke. Hier spricht jeder jeden an."},
-    {"s": "daiki", "p": "ready", "t": "1985, als die Tigers Meister wurden, sind die Fans vor Freude in den Kanal gesprungen. Bitte nicht nachmachen!"},
-    {"s": "me", "t": "Keine Sorge. Ich mag mein Handy trocken."},
-    {"s": "daiki", "p": "cocky", "t": "Komm, Yuki will dir zeigen, wo man nach Mitternacht hingeht. Im Elektronikviertel im Süden schlafen die Spielhallen nie."}
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Hörst du die Gesänge? Die Tigers haben gewonnen!"
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Diese Brücke heißt Ebisu-bashi. Die Leute nennen sie auch „Hikkake-bashi“ – die Anmach-Brücke. Hier spricht jeder jeden an."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "1985, als die Tigers Meister wurden, sind die Fans vor Freude in den Kanal gesprungen. Bitte nicht nachmachen!"
+    },
+    {
+     "s": "me",
+     "t": "Keine Sorge. Ich mag mein Handy trocken."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Komm, Yuki will dir zeigen, wo man nach Mitternacht hingeht. Im Elektronikviertel im Süden schlafen die Spielhallen nie."
+    }
    ],
    "hint": "Das Elektronikviertel im Süden, wo die Spielhallen nie schlafen."
   },
   "7": {
    "mood": "night",
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Willkommen in Den Den Town! Der Name kommt von „denki“ – Elektrizität. Früher gab es hier nur Elektronikläden."},
-    {"s": "yuki", "p": "phone", "t": "Heute: Spielhallen, Figuren, Comics – und Karaoke-Boxen, die die ganze Nacht offen haben."},
-    {"s": "yuki", "p": "flustered", "t": "Man mietet einen kleinen Raum nur für die eigene Gruppe. Niemand Fremdes hört dich schief singen."},
-    {"s": "yuki", "p": "excited", "t": "Und weißt du was? Karaoke wurde hier in Kansai erfunden!"}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Willkommen in Den Den Town! Der Name kommt von „denki“ – Elektrizität. Früher gab es hier nur Elektronikläden."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Heute: Spielhallen, Figuren, Comics – und Karaoke-Boxen, die die ganze Nacht offen haben."
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Man mietet einen kleinen Raum nur für die eigene Gruppe. Niemand Fremdes hört dich schief singen."
+    },
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Und weißt du was? Karaoke wurde hier in Kansai erfunden!"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Wo singt man in Japan meistens Karaoke?", "options": ["Auf einer großen Bühne vor Fremden", "In einem kleinen gemieteten Raum nur mit der eigenen Gruppe", "Im Zug", "Im Tempel"], "answer": 1},
-    {"type": "choice", "q": "Woher kommt der Name „Den Den Town“?", "options": ["Von „denki“ – Elektrizität", "Von einem Spielhallen-Besitzer", "Vom Geräusch der Trommeln", "Von einem Comic-Helden"], "answer": 0}
+    {
+     "type": "choice",
+     "q": "Wo singt man in Japan meistens Karaoke?",
+     "options": [
+      "Auf einer großen Bühne vor Fremden",
+      "In einem kleinen gemieteten Raum nur mit der eigenen Gruppe",
+      "Im Zug",
+      "Im Tempel"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Woher kommt der Name „Den Den Town“?",
+     "options": [
+      "Von „denki“ – Elektrizität",
+      "Von einem Spielhallen-Besitzer",
+      "Vom Geräusch der Trommeln",
+      "Von einem Comic-Helden"
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "yuki", "p": "excited", "t": "Richtig! Jetzt singen wir bis zwei Uhr. Und danach?"},
-    {"s": "yuki", "p": "phone", "t": "Ren spielt in Taishō in einer kleinen Bar. Dort leben viele Familien mit Wurzeln in Okinawa – die Musik klingt ganz anders."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Richtig! Jetzt singen wir bis zwei Uhr. Und danach?"
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Ren spielt in Taishō in einer kleinen Bar. Dort leben viele Familien mit Wurzeln in Okinawa – die Musik klingt ganz anders."
+    }
    ],
-   "vocab": [{"jp": "カラオケ", "ro": "karaoke", "de": "Karaoke"}],
+   "vocab": [
+    {
+     "jp": "カラオケ",
+     "ro": "karaoke",
+     "de": "Karaoke"
+    }
+   ],
    "hint": "Eine kleine Bar im Stadtteil Taishō."
   },
   "8": {
    "lines": [
-    {"s": "ren", "p": "guitar", "t": "Ihr habt es geschafft! Hörst du die Saiten? Das ist ein Sanshin, die Laute aus Okinawa."},
-    {"s": "ren", "p": "relaxed", "t": "In den 1920ern kamen viele Menschen aus Okinawa hierher, um in den Fabriken zu arbeiten. Rund ein Viertel der Leute in Taishō hat heute Wurzeln dort."},
-    {"s": "ren", "p": "pour", "t": "Siehst du den Wächter über dem Laden? Den hat jedes Haus in Okinawa. Finde ihn."}
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Ihr habt es geschafft! Hörst du die Saiten? Das ist ein Sanshin, die Laute aus Okinawa."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "In den 1920ern kamen viele Menschen aus Okinawa hierher, um in den Fabriken zu arbeiten. Rund ein Viertel der Leute in Taishō hat heute Wurzeln dort."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Siehst du den Wächter über dem Laden? Den hat jedes Haus in Okinawa. Finde ihn."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde den Wächter aus Okinawa über dem Laden.", "x": 22, "y": 18, "r": 8,
-     "closeup": {"art": "shisa", "title": "Shīsā", "text": "Ein Shīsā – halb Löwe, halb Hund. Paarweise auf Dächern oder an Toren halten sie böse Geister fern. Der rechte hat das Maul offen und hält das Glück fest, der linke hält es geschlossen und sperrt das Böse aus."}}
+    {
+     "type": "inspect",
+     "q": "Finde den Wächter aus Okinawa über dem Laden.",
+     "x": 22,
+     "y": 18,
+     "r": 8,
+     "closeup": {
+      "art": "shisa",
+      "title": "Shīsā",
+      "text": "Ein Shīsā – halb Löwe, halb Hund. Paarweise auf Dächern oder an Toren halten sie böse Geister fern. Der rechte hat das Maul offen und hält das Glück fest, der linke hält es geschlossen und sperrt das Böse aus."
+     }
+    }
    ],
    "after": [
-    {"s": "ren", "p": "relaxed", "t": "Gut gesehen. Zu Okinawa gehört auch das Gebäck da drüben: Sātā andagī, frittierte Zuckerbällchen."},
-    {"s": "ren", "p": "guitar", "t": "Ryō hat uns einen Tisch in der Bar reserviert. Bleib noch, gleich kommt die nächste Lektion."}
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Gut gesehen. Zu Okinawa gehört auch das Gebäck da drüben: Sātā andagī, frittierte Zuckerbällchen."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Ryō hat uns einen Tisch in der Bar reserviert. Bleib noch, gleich kommt die nächste Lektion."
+    }
    ],
    "hint": "Ryō in der Bar in Taishō."
   },
   "9": {
+   "bg": "gen_bg_izakaya_warm_blur_v2",
    "mood": "night",
    "lines": [
-    {"s": "ryo", "p": "sly", "t": "Letzte Lektion für heute. Wir haben noch nichts bestellt – und trotzdem steht schon ein Schälchen vor dir."},
-    {"s": "me", "t": "Ein Geschenk des Hauses?"},
-    {"s": "ryo", "p": "point", "t": "Fast. Das ist die Otōshi – in Kansai sagt man oft Tsukidashi. Eine kleine Vorspeise, die auf der Rechnung steht."},
-    {"s": "ryo", "p": "phone", "t": "Sie ersetzt die Sitzplatzgebühr. Viele Ausländer wundern sich – aber es ist ganz normal."}
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "Letzte Lektion für heute. Wir haben noch nichts bestellt – und trotzdem steht schon ein Schälchen vor dir."
+    },
+    {
+     "s": "me",
+     "t": "Ein Geschenk des Hauses?"
+    },
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Fast. Das ist die Otōshi – in Kansai sagt man oft Tsukidashi. Eine kleine Vorspeise, die auf der Rechnung steht."
+    },
+    {
+     "s": "ryo",
+     "p": "phone",
+     "t": "Sie ersetzt die Sitzplatzgebühr. Viele Ausländer wundern sich – aber es ist ganz normal."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was ist die Otōshi (Tsukidashi)?", "options": ["Ein Trinkgeld für den Koch", "Eine kleine Vorspeise, die als Sitzgebühr berechnet wird", "Ein kostenloses Dessert", "Ein Fehler in der Küche"], "answer": 1},
-    {"type": "choice", "q": "Was tust du am besten?", "options": ["Laut reklamieren", "Sie essen und dich nicht wundern – sie gehört dazu", "Sie zurückschicken", "Sie dem Nachbartisch geben"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Was ist die Otōshi (Tsukidashi)?",
+     "options": [
+      "Ein Trinkgeld für den Koch",
+      "Eine kleine Vorspeise, die als Sitzgebühr berechnet wird",
+      "Ein kostenloses Dessert",
+      "Ein Fehler in der Küche"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was tust du am besten?",
+     "options": [
+      "Laut reklamieren",
+      "Sie essen und dich nicht wundern – sie gehört dazu",
+      "Sie zurückschicken",
+      "Sie dem Nachbartisch geben"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "ryo", "p": "sly", "t": "Du bist jetzt offiziell nachtfit."},
-    {"s": "ryo", "p": "point", "t": "Unser nächstes Abenteuer? Im alten Vergnügungsviertel unter dem eisernen Turm im Süden. Dort spielt man Shōgi auf der Straße."}
+    {
+     "s": "ryo",
+     "p": "sly",
+     "t": "Du bist jetzt offiziell nachtfit."
+    },
+    {
+     "s": "ryo",
+     "p": "point",
+     "t": "Unser nächstes Abenteuer? Im alten Vergnügungsviertel unter dem eisernen Turm im Süden. Dort spielt man Shōgi auf der Straße."
+    }
    ],
-   "vocab": [{"jp": "おとおし", "ro": "otōshi", "de": "kleine Vorspeise (Sitzgebühr)"}],
+   "vocab": [
+    {
+     "jp": "おとおし",
+     "ro": "otōshi",
+     "de": "kleine Vorspeise (Sitzgebühr)"
+    }
+   ],
    "hint": "Das alte Vergnügungsviertel unter dem eisernen Turm im Süden."
   }
  },
  "STRANG_OTAKU_CULTURE": {
   "1": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Hi! Ich bin Yuki – Anime, Comics, Figuren, alles! Und du siehst aus, als bräuchtest du eine Führung."},
-    {"s": "yuki", "p": "phone", "t": "Mein Freund Kazu sammelt alte Videospiele und Modellbausätze. Er sucht seit Jahren einen ganz bestimmten Bausatz."},
-    {"s": "me", "t": "Und ich soll suchen helfen?"},
-    {"s": "yuki", "p": "flustered", "t": "Genau! Kazu wartet im Retro-Laden hier um die Ecke. Sag einfach, dass ich dich schicke."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Hi! Ich bin Yuki – Anime, Comics, Figuren, alles! Und du siehst aus, als bräuchtest du eine Führung."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Mein Freund Kazu sammelt alte Videospiele und Modellbausätze. Er sucht seit Jahren einen ganz bestimmten Bausatz."
+    },
+    {
+     "s": "me",
+     "t": "Und ich soll suchen helfen?"
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Genau! Kazu wartet im Retro-Laden hier um die Ecke. Sag einfach, dass ich dich schicke."
+    }
    ],
    "hint": "Kazu im Retro-Spieleladen in Den Den Town."
   },
   "2": {
    "lines": [
-    {"s": "kazu", "p": "game", "t": "Yuki schickt dich? Willkommen im Paradies. Hier steht Spielegeschichte im Regal."},
-    {"s": "kazu", "p": "card", "t": "Ich suche ein bestimmtes Modul für eine 16-Bit-Konsole von 1990. In den Grabbelkisten liegen manchmal Schätze für 500 Yen."},
-    {"s": "kazu", "p": "thumbs", "t": "Schau mal in die Kiste mit den Angeboten in der Mitte."}
+    {
+     "s": "kazu",
+     "p": "game",
+     "t": "Yuki schickt dich? Willkommen im Paradies. Hier steht Spielegeschichte im Regal."
+    },
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Ich suche ein bestimmtes Modul für eine 16-Bit-Konsole von 1990. In den Grabbelkisten liegen manchmal Schätze für 500 Yen."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Schau mal in die Kiste mit den Angeboten in der Mitte."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Durchsuche die Angebotskiste in der Mitte des Ladens.", "x": 50, "y": 80, "r": 8,
-     "closeup": {"art": "cartridge", "title": "Fund in der Grabbelkiste", "text": "Drei alte Spielmodule, je 500 Yen. Eines davon ist genau das, was Kazu gesucht hat – noch mit Originaletikett."}}
+    {
+     "type": "inspect",
+     "q": "Durchsuche die Angebotskiste in der Mitte des Ladens.",
+     "x": 50,
+     "y": 80,
+     "r": 8,
+     "closeup": {
+      "art": "cartridge",
+      "title": "Fund in der Grabbelkiste",
+      "text": "Drei alte Spielmodule, je 500 Yen. Eines davon ist genau das, was Kazu gesucht hat – noch mit Originaletikett."
+     }
+    }
    ],
    "after": [
-    {"s": "kazu", "p": "thumbs", "t": "Das ist es! Unglaublich. Komm mit nach hinten, ich zeig dir die richtigen Schätze."}
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Das ist es! Unglaublich. Komm mit nach hinten, ich zeig dir die richtigen Schätze."
+    }
    ],
    "hint": "Kazu im Hinterzimmer des Ladens."
   },
   "3": {
    "lines": [
-    {"s": "kazu", "p": "card", "t": "Hier hinten liegt alles, was selten ist. Siehst du die Figuren? Manche gibt es nur in Auflagen von hundert Stück."},
-    {"s": "kazu", "p": "game", "t": "Und das hier sind Dōjinshi: Hefte, die Fans selbst zeichnen und drucken. Manche Profis haben genau so angefangen."},
-    {"s": "kazu", "p": "thumbs", "t": "Je kleiner die Auflage und je besser erhalten die Verpackung, desto wertvoller. Ein Knick kann den Preis halbieren."}
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Hier hinten liegt alles, was selten ist. Siehst du die Figuren? Manche gibt es nur in Auflagen von hundert Stück."
+    },
+    {
+     "s": "kazu",
+     "p": "game",
+     "t": "Und das hier sind Dōjinshi: Hefte, die Fans selbst zeichnen und drucken. Manche Profis haben genau so angefangen."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Je kleiner die Auflage und je besser erhalten die Verpackung, desto wertvoller. Ein Knick kann den Preis halbieren."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was sind Dōjinshi?", "options": ["Teure Profi-Comics", "Hefte, die Fans selbst zeichnen und drucken", "Alte Zeitungen", "Spielanleitungen"], "answer": 1},
-    {"type": "choice", "q": "Was macht ein Sammlerstück laut Kazu wertvoller?", "options": ["Eine große Auflage", "Eine kleine Auflage und gut erhaltene Verpackung", "Ein Knick im Karton", "Ein neuer Aufkleber"], "answer": 1}
+    {
+     "type": "choice",
+     "q": "Was sind Dōjinshi?",
+     "options": [
+      "Teure Profi-Comics",
+      "Hefte, die Fans selbst zeichnen und drucken",
+      "Alte Zeitungen",
+      "Spielanleitungen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was macht ein Sammlerstück laut Kazu wertvoller?",
+     "options": [
+      "Eine große Auflage",
+      "Eine kleine Auflage und gut erhaltene Verpackung",
+      "Ein Knick im Karton",
+      "Ein neuer Aufkleber"
+     ],
+     "answer": 1
+    }
    ],
    "after": [
-    {"s": "kazu", "p": "card", "t": "Du hast das Sammlerherz. Yuki wartet übrigens im Themencafé zwei Häuser weiter."}
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Du hast das Sammlerherz. Yuki wartet übrigens im Themencafé zwei Häuser weiter."
+    }
    ],
    "hint": "Yuki im Themencafé in Den Den Town."
   },
   "4": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Willkommen im Concept-Café! Hier ist alles Theater: Die Bedienung spielt eine Rolle, und man spielt ein bisschen mit. Fotos vom Personal gibt es nur als bezahltes Sofortbild, „Cheki“."},
-    {"s": "yuki", "p": "phone", "t": "Aber es gibt Regeln. Viele Gäste kennen sie nicht."},
-    {"s": "yuki", "p": "flustered", "t": "Zum Beispiel: Ein Foto mit der Bedienung kostet extra – heimlich fotografieren ist streng verboten."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Willkommen im Concept-Café! Hier ist alles Theater: Die Bedienung spielt eine Rolle, und man spielt ein bisschen mit. Fotos vom Personal gibt es nur als bezahltes Sofortbild, „Cheki“."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Aber es gibt Regeln. Viele Gäste kennen sie nicht."
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Zum Beispiel: Ein Foto mit der Bedienung kostet extra – heimlich fotografieren ist streng verboten."
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Du möchtest ein Foto von der Bedienung. Was tust du?", "options": ["Heimlich ein Foto machen", "Fragen bzw. das offizielle Foto bestellen", "Durchs Fenster von draußen fotografieren", "Ein Video statt eines Fotos drehen"], "answer": 1},
-    {"type": "choice", "q": "Viele Concept-Cafés haben ein Zeitlimit. Was bedeutet das?", "options": ["Man darf nur eine bestimmte Zeit bleiben", "Das Essen kommt pünktlich", "Man muss schnell reden", "Man muss zu einer festen Uhrzeit kommen"], "answer": 0}
+    {
+     "type": "choice",
+     "q": "Du möchtest ein Foto von der Bedienung. Was tust du?",
+     "options": [
+      "Heimlich ein Foto machen",
+      "Fragen bzw. das offizielle Foto bestellen",
+      "Durchs Fenster von draußen fotografieren",
+      "Ein Video statt eines Fotos drehen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Viele Concept-Cafés haben ein Zeitlimit. Was bedeutet das?",
+     "options": [
+      "Man darf nur eine bestimmte Zeit bleiben",
+      "Das Essen kommt pünktlich",
+      "Man muss schnell reden",
+      "Man muss zu einer festen Uhrzeit kommen"
+     ],
+     "answer": 0
+    }
    ],
    "after": [
-    {"s": "yuki", "p": "excited", "t": "Perfekt! Du darfst wiederkommen."},
-    {"s": "yuki", "p": "phone", "t": "Ich will dir noch Anime-Shirts zeigen – im Vintage-Viertel mit dem Dreieckspark."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Perfekt! Du darfst wiederkommen."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Ich will dir noch Anime-Shirts zeigen – im Vintage-Viertel mit dem Dreieckspark."
+    }
    ],
    "hint": "Ein Vintage-Laden im Viertel mit dem Dreieckspark."
   },
   "5": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Hier mischt sich alles: Streetwear aus den 90ern und Anime-Motive. Das ist gerade total angesagt."},
-    {"s": "yuki", "p": "phone", "t": "Am Kleiderständer hängt ein altes Tour-Shirt mit einem gezeichneten Gesicht. Finde es – ich will es haben!"}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Hier mischt sich alles: Streetwear aus den 90ern und Anime-Motive. Das ist gerade total angesagt."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Am Kleiderständer hängt ein altes Tour-Shirt mit einem gezeichneten Gesicht. Finde es – ich will es haben!"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde das Shirt am Kleiderständer.", "x": 22, "y": 42, "r": 8,
-     "closeup": {"art": "tshirt", "title": "Tour-Shirt von 1994", "text": "Ein gelbes Shirt mit gezeichnetem Gesicht, gedruckt 1994. Damals Merchandise, heute ein Sammlerstück."}}
+    {
+     "type": "inspect",
+     "q": "Finde das Shirt am Kleiderständer.",
+     "x": 22,
+     "y": 42,
+     "r": 8,
+     "closeup": {
+      "art": "tshirt",
+      "title": "Tour-Shirt von 1994",
+      "text": "Ein gelbes Shirt mit gezeichnetem Gesicht, gedruckt 1994. Damals Merchandise, heute ein Sammlerstück."
+     }
+    }
    ],
    "after": [
-    {"s": "yuki", "p": "flustered", "t": "Gefunden! Leider viel zu teuer für mich …"},
-    {"s": "yuki", "p": "phone", "t": "Kazu ist übrigens zur Kindai im Osten gefahren. Dort gibt es eine riesige Comic-Bibliothek."}
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Gefunden! Leider viel zu teuer für mich …"
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Kazu ist übrigens zur Kindai im Osten gefahren. Dort gibt es eine riesige Comic-Bibliothek."
+    }
    ],
    "hint": "Die Kindai-Universität im Osten der Stadt."
   },
   "6": {
    "lines": [
-    {"s": "kazu", "p": "card", "t": "Hier in der Academic Theater gibt es über 20.000 Comics – zum Lesen und zum Forschen."},
-    {"s": "kazu", "p": "game", "t": "Ich brauche für meinen Vergleich ein altes Science-Fiction-Artbook. Ich hab's im Hinterzimmer des Retro-Ladens liegen lassen."},
-    {"s": "kazu", "p": "thumbs", "t": "Holst du es mir? Den Weg kennst du ja."}
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Hier in der Academic Theater gibt es über 20.000 Comics – zum Lesen und zum Forschen."
+    },
+    {
+     "s": "kazu",
+     "p": "game",
+     "t": "Ich brauche für meinen Vergleich ein altes Science-Fiction-Artbook. Ich hab's im Hinterzimmer des Retro-Ladens liegen lassen."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Holst du es mir? Den Weg kennst du ja."
+    }
    ],
    "fetch": {
     "item": "Science-Fiction-Artbook",
-    "x": 50, "y": 76,
+    "x": 50,
+    "y": 76,
     "art": "artbook",
     "find": "Ein schwerer Bildband mit Raumschiffen und Planeten – vergriffen seit über dreißig Jahren.",
     "hintOut": "Das Artbook liegt im Hinterzimmer des Retro-Ladens in Den Den Town.",
     "hintBack": "Bring das Artbook zu Kazu in die Bibliothek der Kindai."
    },
    "after": [
-    {"s": "kazu", "p": "thumbs", "t": "Danke! Damit kann ich die Zeichnungen vergleichen."},
-    {"s": "kazu", "p": "card", "t": "Yuki ist zur großen Kuppel am Wasser gefahren. Dort finden manchmal riesige Fan-Messen statt."}
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Danke! Damit kann ich die Zeichnungen vergleichen."
+    },
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Yuki ist zur großen Kuppel am Wasser gefahren. Dort finden manchmal riesige Fan-Messen statt."
+    }
    ],
    "hint": "Yuki an der großen Kuppel im Westen."
   },
   "7": {
    "lines": [
-    {"s": "yuki", "p": "excited", "t": "Der Kyocera Dome! Hier spielt eigentlich Baseball – aber manchmal kommen Fans in Massen zu Konzerten und Messen."},
-    {"s": "yuki", "p": "phone", "t": "Er wurde im März 1997 als „Osaka Dome“ eröffnet. Das Dach sieht aus wie eine riesige silberne Welle."},
-    {"s": "yuki", "p": "flustered", "t": "Rate mal, wie viele Leute bei einem Baseballspiel reinpassen!"}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Der Kyocera Dome! Hier spielt eigentlich Baseball – aber manchmal kommen Fans in Massen zu Konzerten und Messen."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Er wurde im März 1997 als „Osaka Dome“ eröffnet. Das Dach sieht aus wie eine riesige silberne Welle."
+    },
+    {
+     "s": "yuki",
+     "p": "flustered",
+     "t": "Rate mal, wie viele Leute bei einem Baseballspiel reinpassen!"
+    }
    ],
    "tasks": [
-    {"type": "estimate", "q": "Wie viele Zuschauer passen bei einem Baseballspiel in den Kyocera Dome?", "min": 5000, "max": 100000, "step": 500, "answer": 36000, "unit": "Personen", "tol": 0.12}
+    {
+     "type": "estimate",
+     "q": "Wie viele Zuschauer passen bei einem Baseballspiel in den Kyocera Dome?",
+     "min": 5000,
+     "max": 100000,
+     "step": 500,
+     "answer": 36000,
+     "unit": "Personen",
+     "tol": 0.12
+    }
    ],
    "after": [
-    {"s": "yuki", "p": "excited", "t": "Rund 36.000! Bei Konzerten noch mehr, weil dann auch auf dem Spielfeld Leute stehen."},
-    {"s": "yuki", "p": "phone", "t": "Kazu hat geschrieben: Er hat einen Hinweis auf seinen Bausatz! Er wartet in Den Den Town."}
+    {
+     "s": "yuki",
+     "p": "excited",
+     "t": "Rund 36.000! Bei Konzerten noch mehr, weil dann auch auf dem Spielfeld Leute stehen."
+    },
+    {
+     "s": "yuki",
+     "p": "phone",
+     "t": "Kazu hat geschrieben: Er hat einen Hinweis auf seinen Bausatz! Er wartet in Den Den Town."
+    }
    ],
    "hint": "Kazu in Den Den Town."
   },
   "8": {
    "lines": [
-    {"s": "kazu", "p": "card", "t": "Ein Freund sagt, der Bausatz steht in einem Schaufenster hier an der Straße. Aber welches?"},
-    {"s": "kazu", "p": "game", "t": "Er ist von 1982, Maßstab 1:100, mit rotem Streifen auf der Schachtel."},
-    {"s": "kazu", "p": "thumbs", "t": "Schau dir die Schaufenster genau an!"}
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Ein Freund sagt, der Bausatz steht in einem Schaufenster hier an der Straße. Aber welches?"
+    },
+    {
+     "s": "kazu",
+     "p": "game",
+     "t": "Er ist von 1982, Maßstab 1:100, mit rotem Streifen auf der Schachtel."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Schau dir die Schaufenster genau an!"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde das Schaufenster mit dem Bausatz.", "x": 54, "y": 60, "r": 8,
-     "closeup": {"art": "modelkit", "title": "Der Bausatz von 1982", "text": "Da steht er: originalverpackt, Maßstab 1:100. Auf der Schachtel noch der alte Preis in Yen."}}
+    {
+     "type": "inspect",
+     "q": "Finde das Schaufenster mit dem Bausatz.",
+     "x": 54,
+     "y": 60,
+     "r": 8,
+     "closeup": {
+      "art": "modelkit",
+      "title": "Der Bausatz von 1982",
+      "text": "Da steht er: originalverpackt, Maßstab 1:100. Auf der Schachtel noch der alte Preis in Yen."
+     }
+    }
    ],
    "after": [
-    {"s": "kazu", "p": "thumbs", "t": "DA IST ER! Zwanzig Jahre Suche!"},
-    {"s": "kazu", "p": "card", "t": "Komm mit in meinen Laden. Das muss gefeiert werden."}
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "DA IST ER! Zwanzig Jahre Suche!"
+    },
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Komm mit in meinen Laden. Das muss gefeiert werden."
+    }
    ],
    "hint": "Kazu im Retro-Spieleladen."
   },
   "9": {
    "lines": [
-    {"s": "kazu", "p": "game", "t": "Er steht jetzt hier im Regal. Nicht zum Verkaufen – zum Anschauen."},
-    {"s": "kazu", "p": "card", "t": "Weißt du, warum ich sammle? Nicht wegen des Geldes. Diese Dinge erzählen, wie Menschen früher gespielt und geträumt haben."},
-    {"s": "kazu", "p": "thumbs", "t": "Wenn sie keiner aufhebt, sind sie irgendwann einfach weg. Sammler sind ein bisschen wie Archivare."},
-    {"s": "me", "t": "Dann bist du der Bibliothekar von Den Den Town."},
-    {"s": "kazu", "p": "thumbs", "t": "Das gefällt mir! Danke für deine Hilfe, {{name}}. Hier ist immer ein Platz für dich."}
+    {
+     "s": "kazu",
+     "p": "game",
+     "t": "Er steht jetzt hier im Regal. Nicht zum Verkaufen – zum Anschauen."
+    },
+    {
+     "s": "kazu",
+     "p": "card",
+     "t": "Weißt du, warum ich sammle? Nicht wegen des Geldes. Diese Dinge erzählen, wie Menschen früher gespielt und geträumt haben."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Wenn sie keiner aufhebt, sind sie irgendwann einfach weg. Sammler sind ein bisschen wie Archivare."
+    },
+    {
+     "s": "me",
+     "t": "Dann bist du der Bibliothekar von Den Den Town."
+    },
+    {
+     "s": "kazu",
+     "p": "thumbs",
+     "t": "Das gefällt mir! Danke für deine Hilfe, {{name}}. Hier ist immer ein Platz für dich."
+    }
    ],
    "hint": "Strang abgeschlossen – Kazu freut sich über jeden Besuch."
   }
@@ -326,61 +973,193 @@
   "1": {
    "mood": "golden",
    "lines": [
-    {"s": "takeshi", "p": "explain", "t": "Willkommen im Herzen von Ōsaka! Was fällt dir hier zuerst auf?"},
-    {"s": "me", "t": "Es ist laut. Und alle lachen."},
-    {"s": "takeshi", "p": "think", "t": "Genau. Die Seele dieser Stadt hat drei Teile: Händlergeist, Humor – und keine Angst, sich zu blamieren."},
-    {"s": "takeshi", "p": "newspaper", "t": "Hier wurde das Comedy-Duo groß: Manzai. Zwei Leute, einer redet Unsinn, der andere schlägt ihm auf den Kopf."},
-    {"s": "takeshi", "p": "explain", "t": "Meister Gen erklärt dir das besser als jeder Professor. Er sitzt in der Kuidaore-Gasse."}
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Willkommen im Herzen von Ōsaka! Was fällt dir hier zuerst auf?"
+    },
+    {
+     "s": "me",
+     "t": "Es ist laut. Und alle lachen."
+    },
+    {
+     "s": "takeshi",
+     "p": "think",
+     "t": "Genau. Die Seele dieser Stadt hat drei Teile: Händlergeist, Humor – und keine Angst, sich zu blamieren."
+    },
+    {
+     "s": "takeshi",
+     "p": "newspaper",
+     "t": "Hier wurde das Comedy-Duo groß: Manzai. Zwei Leute, einer redet Unsinn, der andere schlägt ihm auf den Kopf."
+    },
+    {
+     "s": "takeshi",
+     "p": "explain",
+     "t": "Meister Gen erklärt dir das besser als jeder Professor. Er sitzt in der Kuidaore-Gasse."
+    }
    ],
    "hint": "Meister Gen in der Kuidaore-Gasse."
   },
   "2": {
    "lines": [
-    {"s": "gen", "p": "laugh", "t": "Manzai? Ha! Ganz einfach. Es gibt den Boke – der sagt Unsinn. Und den Tsukkomi – der korrigiert ihn."},
-    {"s": "gen", "p": "proud", "t": "Pass auf: „Ich hab gestern zehn Takoyaki gegessen … in einer Sekunde!“"},
-    {"s": "gen", "p": "ladle", "jp": "なんでやねん！", "ro": "Nande ya nen!", "t": "Das ist der Tsukkomi. „Wieso das denn?!“ – mit einem Klaps auf den Hinterkopf."},
-    {"s": "gen", "p": "laugh", "t": "In Ōsaka spielt jeder diese Rollen, jeden Tag. Wer einen Witz macht, erwartet, dass du ihn korrigierst!"}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Manzai? Ha! Ganz einfach. Es gibt den Boke – der sagt Unsinn. Und den Tsukkomi – der korrigiert ihn."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Pass auf: „Ich hab gestern zehn Takoyaki gegessen … in einer Sekunde!“"
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "jp": "なんでやねん！",
+     "ro": "Nande ya nen!",
+     "t": "Das ist der Tsukkomi. „Wieso das denn?!“ – mit einem Klaps auf den Hinterkopf."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "In Ōsaka spielt jeder diese Rollen, jeden Tag. Wer einen Witz macht, erwartet, dass du ihn korrigierst!"
+    }
    ],
    "tasks": [
-    {"type": "rounds", "rounds": [
-     {"q": "Wer sagt im Manzai den Unsinn?", "options": ["Der Tsukkomi", "Der Boke", "Das Publikum", "Der Regisseur"], "answer": 1},
-     {"q": "Was macht der Tsukkomi?", "options": ["Er singt", "Er korrigiert den Unsinn", "Er tanzt", "Er schweigt"], "answer": 1},
-     {"q": "Was ruft er laut Gen dabei?", "options": ["おおきに", "なんでやねん！", "いただきます", "ありがとう"], "answer": 1}
-    ]}
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Wer sagt im Manzai den Unsinn?",
+       "options": [
+        "Der Tsukkomi",
+        "Der Boke",
+        "Das Publikum",
+        "Der Regisseur"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was macht der Tsukkomi?",
+       "options": [
+        "Er singt",
+        "Er korrigiert den Unsinn",
+        "Er tanzt",
+        "Er schweigt"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "Was ruft er laut Gen dabei?",
+       "options": [
+        "おおきに",
+        "なんでやねん！",
+        "いただきます",
+        "ありがとう"
+       ],
+       "answer": 1
+      }
+     ]
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Sehr gut! Emi will dir zeigen, wie ernst man hier Glück nimmt. Beim Schrein mit dem riesigen Löwenkopf."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Sehr gut! Emi will dir zeigen, wie ernst man hier Glück nimmt. Beim Schrein mit dem riesigen Löwenkopf."
+    }
    ],
    "hint": "Der Schrein mit dem riesigen Löwenkopf."
   },
   "3": {
    "lines": [
-    {"s": "emi", "p": "wave", "t": "Ist er nicht großartig? Der Löwenkopf ist rund zwölf Meter hoch. Er verschluckt böse Geister – und schnappt sich das Glück."},
-    {"s": "emi", "p": "note", "t": "Darum kommen Schüler vor Prüfungen und Geschäftsleute vor großen Deals hierher."},
-    {"s": "emi", "p": "inspect", "t": "Dieser Schrein ist auch für ein Fest mit einem riesigen Seil bekannt. Im Maul hängt ein Stück davon – siehst du es?"}
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Ist er nicht großartig? Der Löwenkopf ist rund zwölf Meter hoch. Er verschluckt böse Geister – und schnappt sich das Glück."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Darum kommen Schüler vor Prüfungen und Geschäftsleute vor großen Deals hierher."
+    },
+    {
+     "s": "emi",
+     "p": "inspect",
+     "t": "Dieser Schrein ist auch für ein Fest mit einem riesigen Seil bekannt. Im Maul hängt ein Stück davon – siehst du es?"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde die geflochtenen Seile im Maul des Löwen.", "x": 48, "y": 58, "r": 9,
-     "closeup": {"art": "tsuna", "title": "Das Tauziehen", "text": "Beim Tsunahiki-Fest ziehen die Leute an einem riesigen Seil – es erinnert an die Legende, wie der Gott Susanoo die achtköpfige Schlange Yamata no Orochi besiegte. Das Seil bringt Glück."}}
+    {
+     "type": "inspect",
+     "q": "Finde die geflochtenen Seile im Maul des Löwen.",
+     "x": 48,
+     "y": 58,
+     "r": 9,
+     "closeup": {
+      "art": "tsuna",
+      "title": "Das Tauziehen",
+      "text": "Beim Tsunahiki-Fest ziehen die Leute an einem riesigen Seil – es erinnert an die Legende, wie der Gott Susanoo die achtköpfige Schlange Yamata no Orochi besiegte. Das Seil bringt Glück."
+     }
+    }
    ],
    "after": [
-    {"s": "emi", "p": "wave", "t": "Gefunden! In Ōsaka zieht man das Glück eben gemeinsam an Land."},
-    {"s": "emi", "p": "note", "t": "Meister Gen ist auf dem Kuromon-Markt. Er erzählt dir, warum Ōsaka die „Küche der Nation“ hieß."}
+    {
+     "s": "emi",
+     "p": "wave",
+     "t": "Gefunden! In Ōsaka zieht man das Glück eben gemeinsam an Land."
+    },
+    {
+     "s": "emi",
+     "p": "note",
+     "t": "Meister Gen ist auf dem Kuromon-Markt. Er erzählt dir, warum Ōsaka die „Küche der Nation“ hieß."
+    }
    ],
    "hint": "Meister Gen auf dem Kuromon-Markt."
   },
   "4": {
    "lines": [
-    {"s": "gen", "p": "proud", "t": "In der Edo-Zeit schickten fast alle Fürstentümer ihren Reis nach Ōsaka. Hier wurde er gelagert, gehandelt und verteilt."},
-    {"s": "gen", "p": "ladle", "t": "Mit dem Reis kamen Fisch, Kombu und Sake. Darum gibt es hier bis heute so viele Köche und Märkte."},
-    {"s": "gen", "p": "laugh", "t": "Man nannte die Stadt darum ehrfürchtig „Tenka no daidokoro“. Weißt du, was das heißt?"}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "In der Edo-Zeit schickten fast alle Fürstentümer ihren Reis nach Ōsaka. Hier wurde er gelagert, gehandelt und verteilt."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Mit dem Reis kamen Fisch, Kombu und Sake. Darum gibt es hier bis heute so viele Köche und Märkte."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Man nannte die Stadt darum ehrfürchtig „Tenka no daidokoro“. Weißt du, was das heißt?"
+    }
    ],
    "tasks": [
-    {"type": "choice", "q": "Was bedeutet „Tenka no daidokoro“?", "options": ["Hauptstadt des Kaisers", "Küche der Nation", "Hafen der Samurai", "Stadt der Brücken"], "answer": 1, "explain": "Daidokoro heißt Küche. Ōsaka versorgte als Handelszentrum das ganze Land."}
+    {
+     "type": "choice",
+     "q": "Was bedeutet „Tenka no daidokoro“?",
+     "options": [
+      "Hauptstadt des Kaisers",
+      "Küche der Nation",
+      "Hafen der Samurai",
+      "Stadt der Brücken"
+     ],
+     "answer": 1,
+     "explain": "Daidokoro heißt Küche. Ōsaka versorgte als Handelszentrum das ganze Land."
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Genau! Wir sind die Küche. Tōkyō ist nur das Esszimmer – ha!"},
-    {"s": "gen", "p": "laugh", "t": "Takeshi wartet im alten Vergnügungsviertel unter dem eisernen Turm. Dort spielen alte Männer auf der Straße Shōgi."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Genau! Wir sind die Küche. Tōkyō ist nur das Esszimmer – ha!"
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Takeshi wartet im alten Vergnügungsviertel unter dem eisernen Turm. Dort spielen alte Männer auf der Straße Shōgi."
+    }
    ],
    "hint": "Das alte Vergnügungsviertel unter dem eisernen Turm im Süden."
   }
@@ -388,36 +1167,118 @@
  "STRANG_SHOPPING_BARGAINS": {
   "4": {
    "lines": [
-    {"s": "gen", "p": "laugh", "t": "Madoka schickt dich? Die feilscht sogar mit mir. Und ich hab ein Herz aus Gold!"},
-    {"s": "gen", "p": "proud", "t": "Hör zu, wie die Händler hier rufen: „Irasshai! Yasui de!“ – Kommt rein, ist billig!"},
-    {"s": "gen", "p": "ladle", "t": "Und wer etwas Rabatt will, sagt auf Kansai-Art: „Makete ya!“ – Lass mir was nach! Mit einem Lächeln, nie böse."},
-    {"s": "gen", "p": "laugh", "t": "Wenn der Händler dann „Shanai na!“ sagt – „Na gut, was soll's“ – hast du gewonnen."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Madoka schickt dich? Die feilscht sogar mit mir. Und ich hab ein Herz aus Gold!"
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Hör zu, wie die Händler hier rufen: „Irasshai! Yasui de!“ – Kommt rein, ist billig!"
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Und wer etwas Rabatt will, sagt auf Kansai-Art: „Makete ya!“ – Lass mir was nach! Mit einem Lächeln, nie böse."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Wenn der Händler dann „Shanai na!“ sagt – „Na gut, was soll's“ – hast du gewonnen."
+    }
    ],
    "tasks": [
-    {"type": "rounds", "rounds": [
-     {"q": "Was rufen die Händler laut Gen?", "options": ["„Irasshai! Yasui de!“", "„Sayōnara!“", "„Itadakimasu!“", "„Kanpai!“"], "answer": 0},
-     {"q": "Wie bittet man auf Kansai-Art um Rabatt?", "options": ["„Makete ya!“", "„Nande ya nen!“", "„Ōkini!“", "„Honma?“"], "answer": 0},
-     {"q": "Wie sollte man dabei auftreten?", "options": ["Laut und böse", "Mit einem Lächeln", "Schweigend", "Mit verschränkten Armen"], "answer": 1}
-    ]}
+    {
+     "type": "rounds",
+     "rounds": [
+      {
+       "q": "Was rufen die Händler laut Gen?",
+       "options": [
+        "„Irasshai! Yasui de!“",
+        "„Sayōnara!“",
+        "„Itadakimasu!“",
+        "„Kanpai!“"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Wie bittet man auf Kansai-Art um Rabatt?",
+       "options": [
+        "„Makete ya!“",
+        "„Nande ya nen!“",
+        "„Ōkini!“",
+        "„Honma?“"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Wie sollte man dabei auftreten?",
+       "options": [
+        "Laut und böse",
+        "Mit einem Lächeln",
+        "Schweigend",
+        "Mit verschränkten Armen"
+       ],
+       "answer": 1
+      }
+     ]
+    }
    ],
    "after": [
-    {"s": "gen", "p": "proud", "t": "Du bist ein Naturtalent. Madoka sucht jetzt Vintage-Taschen im Viertel mit dem Dreieckspark."}
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Du bist ein Naturtalent. Madoka sucht jetzt Vintage-Taschen im Viertel mit dem Dreieckspark."
+    }
    ],
-   "vocab": [{"jp": "まけてや", "ro": "makete ya", "de": "Gib mir Rabatt! (Kansai-ben)"}],
+   "vocab": [
+    {
+     "jp": "まけてや",
+     "ro": "makete ya",
+     "de": "Gib mir Rabatt! (Kansai-ben)"
+    }
+   ],
    "hint": "Madoka im Vintage-Laden im Viertel mit dem Dreieckspark."
   },
   "5": {
    "lines": [
-    {"s": "madoka", "p": "shopping", "t": "Endlich! Hier gibt's die besten gebrauchten Sachen der Stadt. Ich suche eine Stofftasche fürs Wohnheim."},
-    {"s": "madoka", "p": "search", "t": "Taschen und Mützen liegen meistens am Rand, nicht bei den teuren Jacken. Schau mal ganz links!"}
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Endlich! Hier gibt's die besten gebrauchten Sachen der Stadt. Ich suche eine Stofftasche fürs Wohnheim."
+    },
+    {
+     "s": "madoka",
+     "p": "search",
+     "t": "Taschen und Mützen liegen meistens am Rand, nicht bei den teuren Jacken. Schau mal ganz links!"
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Finde das Regal mit Mützen und Taschen ganz links.", "x": 5, "y": 52, "r": 7,
-     "closeup": {"art": "capshelf", "title": "Schnäppchen-Ecke", "text": "Mützen, Caps und eine bedruckte Stofftasche – für 300 Yen. Genau das richtige für Madoka."}}
+    {
+     "type": "inspect",
+     "q": "Finde das Regal mit Mützen und Taschen ganz links.",
+     "x": 5,
+     "y": 52,
+     "r": 7,
+     "closeup": {
+      "art": "capshelf",
+      "title": "Schnäppchen-Ecke",
+      "text": "Mützen, Caps und eine bedruckte Stofftasche – für 300 Yen. Genau das richtige für Madoka."
+     }
+    }
    ],
    "after": [
-    {"s": "madoka", "p": "cheer", "t": "300 Yen! Das erzähl ich allen."},
-    {"s": "madoka", "p": "shopping", "t": "Als Nächstes will ich in die Feinkost-Etage im Keller des höchsten Hochhauses der Stadt. Dort lernst du, wie man Geschenke einpacken lässt."}
+    {
+     "s": "madoka",
+     "p": "cheer",
+     "t": "300 Yen! Das erzähl ich allen."
+    },
+    {
+     "s": "madoka",
+     "p": "shopping",
+     "t": "Als Nächstes will ich in die Feinkost-Etage im Keller des höchsten Hochhauses der Stadt. Dort lernst du, wie man Geschenke einpacken lässt."
+    }
    ],
    "hint": "Die Feinkost-Etage im Keller des höchsten Hochhauses."
   }
@@ -426,33 +1287,95 @@
   "3": {
    "mood": "golden",
    "lines": [
-    {"s": "gen", "p": "laugh", "t": "Hina hat gesagt, du fotografierst für sie? Dann musst du den Läufer hinkriegen!"},
-    {"s": "gen", "p": "proud", "t": "Die Leuchtreklame mit dem Läufer mit den hochgerissenen Armen hängt schon seit den 1930ern hier. Jeder Tourist macht davor die gleiche Pose."},
-    {"s": "gen", "p": "ladle", "t": "Mach du ein richtiges Foto. Der Läufer soll groß und ganz im Bild sein."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Hina hat gesagt, du fotografierst für sie? Dann musst du den Läufer hinkriegen!"
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Die Leuchtreklame mit dem Läufer mit den hochgerissenen Armen hängt schon seit den 1930ern hier. Jeder Tourist macht davor die gleiche Pose."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Mach du ein richtiges Foto. Der Läufer soll groß und ganz im Bild sein."
+    }
    ],
    "tasks": [
-    {"type": "photo", "q": "Fotografiere die Läufer-Reklame links über dem Kanal.", "target": {"x": 32, "y": 35}, "zoom": [3, 4], "title": "Der Läufer über dem Kanal",
-     "text": "Voll im Bild: der Läufer über dem Dōtonbori. Abends spiegeln sich die Lichter im Kanal."}
+    {
+     "type": "photo",
+     "q": "Fotografiere die Läufer-Reklame links über dem Kanal.",
+     "target": {
+      "x": 32,
+      "y": 35
+     },
+     "zoom": [
+      3,
+      4
+     ],
+     "title": "Der Läufer über dem Kanal",
+     "text": "Voll im Bild: der Läufer über dem Dōtonbori. Abends spiegeln sich die Lichter im Kanal."
+    }
    ],
    "after": [
-    {"s": "gen", "p": "laugh", "t": "Hina wird begeistert sein!"},
-    {"s": "gen", "p": "proud", "t": "Sie wartet übrigens bei einem Schrein, der aussieht wie ein riesiges Tier mit offenem Maul."}
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Hina wird begeistert sein!"
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Sie wartet übrigens bei einem Schrein, der aussieht wie ein riesiges Tier mit offenem Maul."
+    }
    ],
    "hint": "Ein Schrein, der aussieht wie ein riesiges Tier mit offenem Maul."
   },
   "4": {
    "lines": [
-    {"s": "hina", "p": "surprised", "t": "Dein Foto vom Läufer ist super! Jetzt kommt das schwierigste Motiv: dieser Löwe."},
-    {"s": "hina", "p": "note", "t": "Für ein Weitwinkelfoto brauche ich einen Punkt, an dem das Auge hängen bleibt. Die riesigen goldenen Zähne!"},
-    {"s": "hina", "p": "phone", "t": "Zeig mir den größten Zahn links."}
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "Dein Foto vom Läufer ist super! Jetzt kommt das schwierigste Motiv: dieser Löwe."
+    },
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Für ein Weitwinkelfoto brauche ich einen Punkt, an dem das Auge hängen bleibt. Die riesigen goldenen Zähne!"
+    },
+    {
+     "s": "hina",
+     "p": "phone",
+     "t": "Zeig mir den größten Zahn links."
+    }
    ],
    "tasks": [
-    {"type": "inspect", "q": "Tippe auf den großen goldenen Zahn auf der linken Seite.", "x": 32, "y": 52, "r": 7,
-     "closeup": {"art": "liontooth", "title": "Die goldenen Zähne", "text": "Goldene Eckzähne, so lang wie ein Arm. Im Maul darunter liegt die kleine Bühne des Schreins."}}
+    {
+     "type": "inspect",
+     "q": "Tippe auf den großen goldenen Zahn auf der linken Seite.",
+     "x": 32,
+     "y": 52,
+     "r": 7,
+     "closeup": {
+      "art": "liontooth",
+      "title": "Die goldenen Zähne",
+      "text": "Goldene Eckzähne, so lang wie ein Arm. Im Maul darunter liegt die kleine Bühne des Schreins."
+     }
+    }
    ],
    "after": [
-    {"s": "hina", "p": "surprised", "t": "Perfekt. Von unten wirkt er noch viel gefährlicher."},
-    {"s": "hina", "p": "note", "t": "Nächstes Motiv: der eiserne Turm im Süden, ein Nachbau eines berühmten Pariser Turms. Ich warte auf der Aussichtsplattform."}
+    {
+     "s": "hina",
+     "p": "surprised",
+     "t": "Perfekt. Von unten wirkt er noch viel gefährlicher."
+    },
+    {
+     "s": "hina",
+     "p": "note",
+     "t": "Nächstes Motiv: der eiserne Turm im Süden, ein Nachbau eines berühmten Pariser Turms. Ich warte auf der Aussichtsplattform."
+    }
    ],
    "hint": "Die Aussichtsplattform des eisernen Turms im Süden."
   }

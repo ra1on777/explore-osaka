@@ -1,0 +1,2319 @@
+{
+ "STRANG_FOOTBALL_DERBY": {
+  "13": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Das Nagai-Stadion. Hier wurden 2002 Spiele der Weltmeisterschaft ausgetragen – in Japan und Korea."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Japan hat hier gegen Tunesien gewonnen und ist ins Achtelfinale eingezogen. Die Stadt stand Kopf."
+    },
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Und heute? Leichtathletik, Schulsport, Marathon. Ein Stadion für alle."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welche Länder richteten die WM 2002 gemeinsam aus?",
+     "options": [
+      "Japan und China",
+      "Japan und Südkorea",
+      "Japan und Australien",
+      "Japan und die USA"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was kann man im Nagai-Stadion außer Fußball noch machen?",
+     "options": [
+      "Skifahren",
+      "Leichtathletik",
+      "Schwimmen im Meer",
+      "Bergsteigen"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Gut. Große Bühne – aber Fußball lebt vom Alltag."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Daiki wartet nebenan im reinen Fußballstadion. Dem Stadion der Kirschblüten."
+    }
+   ],
+   "hint": "Daiki im Fußballstadion nebenan."
+  },
+  "14": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Hier spielt Cerezo. Pink überall – Kirschblüten-Farbe."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Cerezo setzt auf eigene Jugendspieler. Viele Stars kamen aus der eigenen Schule."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Und gegen Gamba gibt es kein Freundschaftsspiel. Weißt du noch, was die Farben bedeuten?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welche Farbe hat Cerezo Ōsaka?",
+     "options": [
+      "Blau-Schwarz",
+      "Pink",
+      "Gelb",
+      "Rot"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Woher kommt Gamba Ōsaka?",
+     "options": [
+      "Aus Suita im Norden",
+      "Aus Sakai im Süden",
+      "Aus Kyōto",
+      "Aus Kōbe"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Richtig. Norden gegen Süden."
+    },
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Coach Sakai hat das Flutlicht angemacht. Elfmeter! Gleich hier."
+    }
+   ],
+   "hint": "Coach Sakai hier im Fußballstadion – Elfmeter unter Flutlicht."
+  },
+  "15": {
+   "mood": "night",
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Elfmeterschießen! Flutlicht, enges Stadion, die Fans ganz nah. Das ist Druck."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Lies den Torwart. Wohin bewegt er sich?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "penalty",
+     "rounds": [
+      {
+       "q": "Der Torwart springt schon vor dem Schuss nach rechts.",
+       "options": [
+        "Rechtes Eck",
+        "Linkes Eck",
+        "Drüber",
+        "Abbrechen"
+       ],
+       "answer": 1,
+       "fb": "Er ist weg – ab ins andere Eck."
+      },
+      {
+       "q": "Der Torwart bleibt ruhig in der Mitte und wartet.",
+       "options": [
+        "Hart und hoch ins Eck",
+        "Lupfer in die Mitte",
+        "Flach in die Mitte",
+        "Ganz langsam"
+       ],
+       "answer": 0,
+       "fb": "Gegen einen geduldigen Torwart hilft nur Präzision."
+      },
+      {
+       "q": "Der Torwart macht sich breit und tanzt auf der Linie.",
+       "options": [
+        "Ablenken lassen",
+        "Nicht hinschauen, sauber flach ins Eck",
+        "Mitten auf ihn",
+        "In die Wolken"
+       ],
+       "answer": 1,
+       "fb": "Ruhe bewahren. Flach ins Eck."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Drei von drei. Unter Flutlicht. Ich bin beeindruckt."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Nächster Schritt: Daten. „Wo eine riesige Comic-Bibliothek steht, analysieren wir das Spiel.“"
+    }
+   ],
+   "hint": "„Wo eine riesige Comic-Bibliothek steht.“"
+  },
+  "16": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Heute misst man alles: Laufwege, Sprints, Pässe. Daten aus der ganzen Uni-Liga."
+    },
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Ein Student der OMU in Sugimoto hat die Daten für mich gesammelt. Auf einem Stick."
+    },
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Holst du ihn? Ich warte hier."
+    }
+   ],
+   "fetch": {
+    "item": "Daten-Stick",
+    "x": 35,
+    "y": 86,
+    "art": "usb",
+    "find": "Ein blauer USB-Stick: LIGA-DATEN. Ein Zettel: „Viel Erfolg beim Derby!“",
+    "hintOut": "Der Stick liegt an der OMU in Sugimoto.",
+    "hintBack": "Bring den Stick zu Coach Sakai ins Kindai Academic Theater."
+   },
+   "after": [
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Interessant: Du läufst viel, aber deine Sprints kommen spät. Daran arbeiten wir."
+    },
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Kenji sitzt im Stadion in Suita auf der Bank. Das Derby läuft gleich!"
+    }
+   ],
+   "hint": "Kenji im Stadion in Suita."
+  },
+  "17": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Wir dürfen auf der Ersatzbank zuschauen! Das Derby, live!"
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Pass auf: In der zweiten Halbzeit stellt der Trainer um. Drei Verteidiger statt vier."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Was hast du gesehen?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Warum stellt ein Trainer auf drei Verteidiger um?",
+     "options": [
+      "Um mehr Spieler im Mittelfeld und Angriff zu haben",
+      "Weil ein Spieler müde ist",
+      "Aus Langeweile",
+      "Damit das Spiel endet"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Ein Spieler wird eingewechselt. Wie sagt man „Wechsel“ auf Japanisch?",
+     "options": [
+      {
+       "jp": "こうたい",
+       "ro": "kōtai"
+      },
+      {
+       "jp": "ゴール",
+       "ro": "gōru"
+      },
+      {
+       "jp": "パス",
+       "ro": "pasu"
+      },
+      {
+       "jp": "セーフ",
+       "ro": "sēfu"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Unentschieden! Aber was für ein Spiel."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Coach Sakai erklärt dir draußen vor dem Stadion die Fankultur."
+    }
+   ],
+   "hint": "Coach Sakai vor dem Stadion in Suita."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "shout",
+     "t": "Hörst du die Gesänge? Die Fankurve singt 90 Minuten lang. Fahnen, Trommeln, Choreografien."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Und nach dem Spiel? Viele Fans sammeln ihren Müll ein und lassen die Tribüne sauber zurück."
+    },
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Das hat 2002 sogar die Welt überrascht."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was machen viele japanische Fans nach dem Spiel?",
+     "options": [
+      "Sie werfen Becher aufs Feld",
+      "Sie räumen ihren Müll weg",
+      "Sie bleiben die Nacht im Stadion",
+      "Sie gehen ohne Schuhe"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was gehört NICHT zur Fankurve?",
+     "options": [
+      "Gesänge",
+      "Fahnen",
+      "Trommeln",
+      "Stilles Lesen"
+     ],
+     "answer": 3
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Leidenschaft und Respekt. Das ist Fußball."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Daiki wartet auf dem Campus in Toyonaka. Das letzte Duell – um den inoffiziellen Titel."
+    }
+   ],
+   "hint": "Daiki auf dem Campus Toyonaka."
+  },
+  "19": {
+   "lines": [
+    {
+     "s": "daiki",
+     "p": "ready",
+     "t": "Hier hat Kenji dich zum ersten Mal herausgefordert. Jetzt bin ich dran. Zum letzten Mal."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Wer gewinnt, ist der Champion der Kansai-Unis. Inoffiziell."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Los!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Tunnel (Ball durch die Beine)",
+      "Übersteiger",
+      "Ball abschirmen",
+      "Tempo rausnehmen und abwarten"
+     ],
+     "rounds": [
+      {
+       "q": "Daiki kommt mit vollem Tempo und offenen Beinen.",
+       "answer": 0,
+       "fb": "Tunnel – wie beim ersten Mal!"
+      },
+      {
+       "q": "Daiki stellt sich seitlich und wartet tief.",
+       "answer": 3,
+       "fb": "Geduld. Er wird ungeduldig und macht den ersten Fehler."
+      },
+      {
+       "q": "Daiki drückt mit dem Körper gegen dich.",
+       "answer": 2,
+       "fb": "Körper zwischen ihn und den Ball."
+      },
+      {
+       "q": "Daiki schließt die Beine und schaut nur auf den Ball.",
+       "answer": 1,
+       "fb": "Übersteiger – und vorbei!"
+      },
+      {
+       "q": "Letzte Chance: Daiki ist müde und wackelt.",
+       "answer": 0,
+       "fb": "Panna! Durch die Beine. Spiel, Satz, Sieg."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Okay. Du hast gewonnen. Ehrlich."
+    },
+    {
+     "s": "daiki",
+     "p": "cocky",
+     "t": "Coach Sakai lädt alle in die Mensa ein. Zum Sieger-Essen. Sogar mich."
+    }
+   ],
+   "hint": "Die Mensa Kasane – Sieger-Essen."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Katsu-Curry für alle! Auf die Ehre, auf das Derby und auf euch."
+    },
+    {
+     "s": "daiki",
+     "p": "cheer",
+     "t": "Ich gebe es zu: Ihr Handai-Leute könnt kicken."
+    },
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Und du, Daiki, darfst nächste Woche bei uns mitspielen."
+    },
+    {
+     "s": "sakai",
+     "p": "point",
+     "t": "Seht ihr? Rivalität auf dem Platz, Freundschaft am Tisch. Das ist der Sinn."
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "p": "arms",
+     "t": "Ich bin stolz auf euch. Training ist trotzdem morgen um sieben."
+    }
+   ],
+   "hint": "Strang abgeschlossen – das Team trainiert weiter auf dem Campus."
+  }
+ },
+ "STRANG_CAMPUS_EXPEDITION": {
+  "18": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "Willkommen in Nakamozu! Hier studiert man Technik, Landwirtschaft und Umweltwissenschaften."
+    },
+    {
+     "s": "omu",
+     "t": "Wir haben eine Pflanzenfabrik: Salat wächst in Regalen unter LED-Licht, ohne Erde und ohne Sonne."
+    },
+    {
+     "s": "omu",
+     "t": "Und heute ist Campusfest. Siehst du die Stände?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was ist eine Pflanzenfabrik?",
+     "options": [
+      "Eine Fabrik für Plastikblumen",
+      "Gemüse wächst drinnen in Regalen unter Kunstlicht",
+      "Ein Gewächshaus für Bäume",
+      "Ein Blumenladen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was ist ein Vorteil davon?",
+     "options": [
+      "Man braucht viel mehr Land",
+      "Man ist unabhängig vom Wetter",
+      "Es schmeckt nach Plastik",
+      "Man braucht keinen Strom"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Stempel Nummer 18! Fast fertig."
+    },
+    {
+     "s": "omu",
+     "t": "Prof. Takada will alle Stempel im Uni-Museum in Toyonaka prüfen."
+    }
+   ],
+   "hint": "Prof. Takada im Uni-Museum in Toyonaka."
+  },
+  "19": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Zeig mal dein Stempelbuch. Handai, Kandai, Kwansei, Ōtemon, Kindai, OMU …"
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "In der Vitrine rechts liegen die Gründungsurkunden der Unis. Vergleichen wir!"
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Tippe auf die Vitrine."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Vitrine mit den Urkunden rechts.",
+     "x": 82,
+     "y": 72,
+     "r": 10,
+     "closeup": {
+      "art": "stampbook",
+      "title": "Das Stempelbuch",
+      "text": "Neun rote Stempel. Nur ein Feld ist noch frei – für die Unterschrift von Frau Morimoto."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Welche Uni wurde als Rechtsschule gegründet?",
+     "options": [
+      "Kandai (Kansai-Universität)",
+      "Kindai",
+      "Kwansei Gakuin",
+      "OMU"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Alles stimmt. Ein vollständiger Atlas der Campus von Ōsaka."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Den letzten Stempel gibt Frau Morimoto. Sie wartet in deinem Zimmer."
+    }
+   ],
+   "hint": "Frau Morimoto in deinem Zimmer im Wohnheim."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Da bist du. Zeig her. … Alle Stempel. Ich bin stolz auf dich."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Hier ist dein Austausch-Zertifikat. Mit meiner Unterschrift und dem Siegel des Wohnheims."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Du hast mehr Unis gesehen als die meisten Studenten in vier Jahren."
+    },
+    {
+     "s": "me",
+     "t": "Danke, Frau Morimoto. Ohne Ihr Stempelbuch hätte ich nie angefangen."
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Und jetzt ab in die Küche, es gibt Tee."
+    }
+   ],
+   "hint": "Strang abgeschlossen – das Zertifikat hängt in deinem Zimmer."
+  }
+ },
+ "STRANG_CAFE_CULTURE": {
+  "11": {
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Tee und Kaffee bestehen zu fast 99 Prozent aus Wasser. Also ist Wasser die wichtigste Zutat."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Weiches Wasser hat wenig Mineralien. Grüner Tee schmeckt damit zart und süß."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Für Espresso darf es ein bisschen mehr sein. Sonst schmeckt er flach. Was hast du verstanden?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Woraus bestehen Tee und Kaffee zum größten Teil?",
+     "options": [
+      "Aus Milch",
+      "Aus Wasser",
+      "Aus Zucker",
+      "Aus Öl"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welches Wasser passt gut zu grünem Tee?",
+     "options": [
+      "Weiches Wasser mit wenig Mineralien",
+      "Salzwasser",
+      "Sehr hartes Wasser",
+      "Kohlensäure"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Gut. Ab heute schmeckst du das Wasser mit."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Maya sitzt im Bibliothekscafé auf dem Campus in Minō. Sie hat dort Freunde aus aller Welt."
+    }
+   ],
+   "hint": "Maya im Bibliothekscafé in Minō."
+  },
+  "12": {
+   "bg": "gen_bg_cafe_modern_blur",
+   "lines": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Hier treffen sich Studierende aus der ganzen Welt. Man hört zehn Sprachen gleichzeitig."
+    },
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Und alle bestellen anders. Die einen Matcha-Latte, die anderen schwarzen Kaffee, die nächsten Chai."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Ein Café ist wie ein kleines Land, in dem alle willkommen sind."
+    },
+    {
+     "s": "me",
+     "t": "Dann ist das hier mein Lieblingsland."
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Meins auch. Shizuku wartet übrigens im Museum der Instant-Nudeln in Ikeda. Mit einer Stoppuhr!"
+    }
+   ],
+   "hint": "Shizuku im Museum der Instant-Nudeln in Ikeda."
+  },
+  "13": {
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Hier wartet man drei Minuten auf Nudeln. Beim Filterkaffee wartet man auch – aber anders."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Zuerst gießt man nur ein wenig Wasser auf. Das Pulver bläht sich auf, Gase entweichen. Das nennt man Bloom."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Wie lange wartet man dabei, bevor man weitergießt?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie viele Sekunden dauert der Bloom ungefähr?",
+     "min": 0,
+     "max": 300,
+     "step": 5,
+     "answer": 30,
+     "unit": "s",
+     "tol": 0.34
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Etwa 30 Sekunden, manche warten bis 45. Geduld macht den Geschmack."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Ren braucht für unseren Wettbewerb eine Präzisionswaage. Er wartet in Kandai Senriyama."
+    }
+   ],
+   "hint": "Ren an der Kandai in Senriyama."
+  },
+  "14": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Shizuku und ich machen einen Espresso-Wettbewerb. Auf dem Rasen in Kwansei."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Ohne Waage geht nichts. Achtzehn Gramm Kaffee – nicht siebzehn, nicht neunzehn."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Meine Waage steht noch in eurer Wohnheimküche. Holst du sie?"
+    }
+   ],
+   "fetch": {
+    "item": "Präzisionswaage",
+    "x": 70,
+    "y": 82,
+    "art": "scale",
+    "find": "Eine kleine schwarze Waage mit grüner Anzeige: 18,0 g. Ein Aufkleber: „Ren – nicht für Reis!“",
+    "hintOut": "Die Waage steht in der Küche im Wohnheim.",
+    "hintBack": "Bring die Waage zu Ren an die Kandai."
+   },
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Rettung! Jetzt kann der Wettbewerb beginnen."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Shizuku hat ihren Wagen schon aufgebaut. „Wo ein Uhrturm über eine grüne Wiese schaut.“"
+    }
+   ],
+   "hint": "„Wo ein Uhrturm über eine grüne Wiese schaut.“"
+  },
+  "15": {
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Heute ist die Luft feucht. Das Kaffeepulver saugt Wasser auf und klumpt."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Der Espresso läuft viel zu langsam durch. Er wird bitter."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Stell den Mahlgrad richtig ein. Temperatur und Tampen passen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "espresso",
+     "q": "Bei feuchter Luft läuft der Espresso zu langsam. Korrigiere den Mahlgrad.",
+     "start": {
+      "grind": 2,
+      "temp": 92,
+      "tamp": 15
+     },
+     "ok": {
+      "grind": [
+       4,
+       6
+      ],
+      "temp": [
+       90,
+       94
+      ],
+      "tamp": [
+       13,
+       17
+      ]
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Gröber gemahlen, und schon läuft er gleichmäßig. 25 Sekunden – perfekt."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Ren will dir die Crema zeigen. Im Uni-Zentrum auf der Flussinsel gibt es ein kleines Café."
+    }
+   ],
+   "hint": "Ren im Uni-Zentrum auf Nakanoshima."
+  },
+  "16": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Im Café im Erdgeschoss machen sie Espresso im Glas. Da sieht man alles."
+    },
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Oben die Crema: haselnussbraun, mit feinen Streifen. Darunter der dunkle Kaffee."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Tippe auf den Eingang – wir schauen es uns an."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf den Eingang des Gebäudes.",
+     "x": 52,
+     "y": 58,
+     "r": 12,
+     "closeup": {
+      "art": "crema",
+      "title": "Espresso im Glas",
+      "text": "Eine dicke, haselnussbraune Crema mit hellen Streifen. So sieht ein gelungener Espresso aus."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Die Crema ist ganz hell und dünn. Was bedeutet das?",
+     "options": [
+      "Der Espresso ist perfekt",
+      "Er ist zu schnell durchgelaufen, zu wenig extrahiert",
+      "Er ist verbrannt",
+      "Es ist Tee"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Genau. Hell und dünn heißt: zu schnell."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Shizuku röstet heute in Nakatsu ihren eigenen Blend. Das große Finale!"
+    }
+   ],
+   "hint": "Shizuku in ihrer Rösterei in Nakatsu."
+  },
+  "17": {
+   "bg": "gen_bg_cafe_modern_blur",
+   "lines": [
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Mein Signature-Blend. Drei Bohnen: eine fruchtige, eine nussige, eine schokoladige."
+    },
+    {
+     "s": "shizuku",
+     "p": "pour",
+     "t": "Beim Probieren ist er sauer und spitz. Das Wasser war zu kalt."
+    },
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Ein letztes Mal: Stell die Temperatur richtig ein."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "espresso",
+     "q": "Der Blend schmeckt sauer. Korrigiere die Brühtemperatur.",
+     "start": {
+      "grind": 5,
+      "temp": 85,
+      "tamp": 15
+     },
+     "ok": {
+      "grind": [
+       4,
+       6
+      ],
+      "temp": [
+       90,
+       93
+      ],
+      "tamp": [
+       13,
+       17
+      ]
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "p": "serve",
+     "t": "Rund, süß, lang im Abgang. Das ist er. Ich nenne ihn … „Kasane“. Wie eure Mensa."
+    },
+    {
+     "s": "shizuku",
+     "p": "calm",
+     "t": "Ren wartet am Flussufer in Kitahama, wo wir uns kennengelernt haben."
+    }
+   ],
+   "hint": "Ren am Flussufer in Kitahama."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Hier hab ich dir Shizuku vorgestellt. Weißt du noch?"
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Bohnen aus Äthiopien schmecken oft nach Beeren und Blüten. Aus Brasilien eher nach Nuss und Schokolade."
+    },
+    {
+     "s": "ren",
+     "p": "guitar",
+     "t": "Und Kissaten, Espresso, Pour-over, Bukubuku – alles hat seinen Platz."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wonach schmecken Bohnen aus Äthiopien oft?",
+     "options": [
+      "Nach Beeren und Blüten",
+      "Nach Rauch",
+      "Nach Salz",
+      "Nach Fisch"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was ist ein Kissaten?",
+     "options": [
+      "Ein altes japanisches Café",
+      "Ein Teehaus aus Okinawa",
+      "Eine Kaffeemaschine",
+      "Eine Bohnensorte"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "p": "relaxed",
+     "t": "Du bist jetzt ein echter Kaffee-Mensch."
+    },
+    {
+     "s": "ren",
+     "p": "pour",
+     "t": "Maya wartet mit Shizukus neuem Blend in eurer Wohnheimküche. Morgenkaffee!"
+    }
+   ],
+   "hint": "Maya in der Wohnheimküche."
+  },
+  "19": {
+   "mood": "morning",
+   "lines": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Guten Morgen! Ich hab Shizukus Blend mitgebracht. „Kasane“."
+    },
+    {
+     "s": "maya",
+     "p": "wave",
+     "t": "Achtzehn Gramm, 92 Grad, dreißig Sekunden Bloom. Ich hab alles gelernt."
+    },
+    {
+     "s": "maya",
+     "p": "shy",
+     "t": "Der erste Schluck des Tages ist der schönste. Besonders zusammen."
+    },
+    {
+     "s": "me",
+     "t": "Der beste Kaffee, den ich je in einer Wohnheimküche getrunken habe."
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "p": "coffee",
+     "t": "Dann machen wir das ab jetzt jeden Morgen."
+    }
+   ],
+   "hint": "Strang abgeschlossen – Morgenkaffee in der Wohnheimküche."
+  }
+ },
+ "STRANG_FOOD_CULTURE": {
+  "15": {
+   "lines": [
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Sakai! Hier werden die besten Kochmesser Japans gemacht. Viele Profiköche schwören darauf."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Mein Sashimi-Messer, ein Yanagiba, ist stumpf geworden. Ich brauche meinen Schleifstein."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Den hab ich dem Teemeister im Daisen-Park geliehen. Holst du ihn?"
+    }
+   ],
+   "fetch": {
+    "item": "Schleifstein",
+    "x": 20,
+    "y": 84,
+    "art": "whetstone",
+    "find": "Ein rötlicher Schleifstein in einem Holzkasten. Daneben ein Zettel: „Danke, Gen! – Der Teemeister“.",
+    "hintOut": "Der Schleifstein liegt im Teehaus im Daisen-Park.",
+    "hintBack": "Bring den Stein zu Gen ins Handwerksmuseum in Sakai."
+   },
+   "after": [
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Wasser drauf, ganz flacher Winkel, lange Züge. Ein Sashimi-Messer schneidet in einem Zug."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Frau Morimoto ist im Teehaus geblieben. Sie will dir ein Gewürz zeigen, das die Zunge kitzelt."
+    }
+   ],
+   "hint": "Frau Morimoto im Teehaus im Daisen-Park."
+  },
+  "16": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Zur Teezeremonie gibt es kleine, feine Gerichte. Kaiseki nennt man so eine Speisenfolge."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "In diesem Gericht ist ein Gewürz, das man nur in Japan so benutzt."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Probier und sag mir, was es ist."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "ingredient",
+     "q": "Welches Gewürz kribbelt auf der Zunge?",
+     "dish": "Kaiseki-Beilage",
+     "art": "dish",
+     "clues": [
+      "Es kommt von kleinen grünen Beeren.",
+      "Es kribbelt und betäubt die Zunge ein wenig.",
+      "Man streut es gern auf gegrillten Aal."
+     ],
+     "options": [
+      "Wasabi",
+      "Sanshō-Pfeffer",
+      "Ingwer",
+      "Senf"
+     ],
+     "answer": 1,
+     "fb": "Sanshō, der japanische Pfeffer – zitronig und prickelnd."
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Sanshō. Du hast eine feine Zunge."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Kenji ist in der Einkaufsstraße in Amagasaki. Er riecht schon Yakisoba."
+    }
+   ],
+   "hint": "Kenji in der Einkaufsstraße in Amagasaki."
+  },
+  "17": {
+   "lines": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Yakisoba! Gebratene Nudeln mit Kohl und Schweinefleisch auf einer großen heißen Platte."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Das Geheimnis ist die Soße. Dunkel, süß-säuerlich. Jeder Laden mischt seine eigene."
+    },
+    {
+     "s": "kenji",
+     "p": "relaxed",
+     "t": "Der Stand links hat die beste. Schau mal!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf den Imbissstand links.",
+     "x": 12,
+     "y": 62,
+     "r": 11,
+     "closeup": {
+      "art": "yakisoba",
+      "title": "Yakisoba auf der Platte",
+      "text": "Nudeln, Kohl, ein bisschen Fleisch – und viel dunkle Soße aus der Flasche."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt „yaki“ in Yakisoba?",
+     "options": [
+      "gekocht",
+      "gebraten / gegrillt",
+      "roh",
+      "süß"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "p": "hyped",
+     "t": "Genau – wie bei Takoyaki und Okonomiyaki."
+    },
+    {
+     "s": "kenji",
+     "p": "talk",
+     "t": "Meister Gen will dir seine Meister-Soße verraten. In seiner Gasse in Dōtonbori."
+    }
+   ],
+   "hint": "Meister Gen in der Kuidaore-Gasse in Dōtonbori."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Meine Meister-Soße. Dreißig Jahre hab ich daran gearbeitet."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Sie ist süß, würzig und hat eine frische, fruchtige Säure."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Welche Frucht ist drin? Wenn du es errätst, bist du mein Erbe!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "ingredient",
+     "q": "Welche Frucht gibt der Soße ihre Säure?",
+     "dish": "Gens Meister-Soße",
+     "art": "dish",
+     "clues": [
+      "Sie wächst an Bäumen.",
+      "Die besten in Japan kommen aus Aomori im Norden.",
+      "Rot, rund und knackig."
+     ],
+     "options": [
+      "Banane",
+      "Apfel",
+      "Mango",
+      "Ananas"
+     ],
+     "answer": 1,
+     "fb": "Äpfel aus Aomori – fein gerieben."
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Ha! Erraten. Jetzt bist du offiziell mein Lehrling."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Komm mit auf die Brücke unter den Neonreklamen. Dort fassen wir alles zusammen."
+    }
+   ],
+   "hint": "Meister Gen auf der Ebisu-Brücke."
+  },
+  "19": {
+   "mood": "night",
+   "lines": [
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Hier haben wir angefangen. Kuidaore – essen, bis man umfällt."
+    },
+    {
+     "s": "gen",
+     "p": "ladle",
+     "t": "Die Ōsaka-Küche ruht auf drei Säulen: gute Brühe, Mehlspeisen und Herz."
+    },
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Mal sehen, ob du aufgepasst hast!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Woraus macht man die klassische Kansai-Brühe?",
+     "options": [
+      "Kombu und Bonitoflocken",
+      "Tomaten und Käse",
+      "Milch und Zucker",
+      "Kaffee"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Takoyaki und Okonomiyaki sind beide …",
+     "options": [
+      "Nudelgerichte",
+      "Mehlspeisen (Konamon)",
+      "Süßigkeiten",
+      "Getränke"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Was ist die dritte Säule laut Gen?",
+     "options": [
+      "Viel Geld",
+      "Herz und Hingabe",
+      "Eine große Küche",
+      "Ein Fernseher"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "p": "laugh",
+     "t": "Perfekt! Mein bester Schüler."
+    },
+    {
+     "s": "gen",
+     "p": "proud",
+     "t": "Frau Morimoto plant ein Takoyaki-Fest in eurer Wohnheimküche. Alle sind eingeladen!"
+    }
+   ],
+   "hint": "Die Wohnheimküche – Takoyaki-Fest!"
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Tako-pa! Takoyaki-Party. Alle machen mit, jeder dreht seine Bällchen selbst."
+    },
+    {
+     "s": "morimoto",
+     "p": "clipboard",
+     "t": "Gen hat den Teig gemacht, Kenji hat den Oktopus geschnitten, und du hast die Soße von Meister Gen dabei."
+    },
+    {
+     "s": "me",
+     "t": "Ich hätte nie gedacht, dass ich mal Takoyaki in einem Wohnheim in Ōsaka drehe."
+    },
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Willkommen in Ōsaka. Hier isst man zusammen – das macht uns zur Familie."
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "p": "smile",
+     "t": "Itadakimasu, alle zusammen!"
+    }
+   ],
+   "hint": "Strang abgeschlossen – das Takoyaki-Fest im Wohnheim."
+  }
+ },
+ "STRANG_URBAN_PLANNING": {
+  "15": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Südlich von hier liegt Senboku New Town. Ab den 1960er Jahren wurde sie am Reißbrett geplant."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Hunderttausende zogen hin. Die meisten pendelten jeden Tag mit der Bahn nach Ōsaka."
+    },
+    {
+     "s": "aoi",
+     "p": "worried",
+     "t": "Heute sind die ersten Bewohner alt geworden, die Kinder weggezogen. Was macht man mit so einer Stadt?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was ist eine „New Town“?",
+     "options": [
+      "Eine alte Burgstadt",
+      "Eine am Reißbrett geplante Wohnstadt",
+      "Ein Einkaufszentrum",
+      "Ein Hafen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welches Problem haben viele New Towns heute?",
+     "options": [
+      "Zu viele Kinder",
+      "Die Bewohner werden älter, viele junge Leute ziehen weg",
+      "Zu viele Fabriken",
+      "Keine Bahn"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Manche Städte bauen jetzt Wohnungen für Studierende und Familien um. Neues Leben in alten Häusern."
+    },
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Komm mit nach Sugimoto. Ich will dir mein Portfolio zeigen – dort, wo wir angefangen haben."
+    }
+   ],
+   "hint": "Aoi an der OMU in Sugimoto."
+  },
+  "16": {
+   "lines": [
+    {
+     "s": "aoi",
+     "p": "cheer",
+     "t": "Mein Portfolio ist fertig! Namba Parks, Kuromon, Shinsekai, Harukas, Taishō, der Dome, Nakanoshima, Umeda, Umekita, New Town."
+    },
+    {
+     "s": "aoi",
+     "p": "note",
+     "t": "Mein Fazit: Eine gute Stadt braucht Grün, gute Bahnen – und Platz für kleine Läden und Menschen ohne viel Geld."
+    },
+    {
+     "s": "aoi",
+     "p": "happy",
+     "t": "Ohne deine Notizen hätte ich nie so viel gesehen. Du stehst als Mitautor drauf."
+    },
+    {
+     "s": "me",
+     "t": "Dann hoffe ich, dass die Planer es lesen."
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "p": "map",
+     "t": "Das werden sie. Und irgendwann plane ich selbst einen Bahnhof, in dem sich niemand verläuft!"
+    }
+   ],
+   "hint": "Strang abgeschlossen – Aois Portfolio liegt in der OMU-Bibliothek."
+  }
+ },
+ "STRANG_TEMPLE_PILGRIMAGE": {
+  "12": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Sen no Rikyū lernte Zen im Tempel Daitoku-ji in Kyōto. Das ist eine Schule des Rinzai-Zen."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Man sagt: Tee und Zen haben denselben Geschmack. Beide verlangen volle Aufmerksamkeit für den Augenblick."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Einen Tee zu bereiten wird so zur Meditation."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wo lernte Rikyū Zen?",
+     "options": [
+      "In einem Tempel in Kyōto",
+      "In China",
+      "In Tōkyō",
+      "Auf dem Meer"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was verbindet Tee und Zen?",
+     "options": [
+      "Beide sind sehr schnell",
+      "Volle Aufmerksamkeit für den Augenblick",
+      "Beide brauchen Zucker",
+      "Beide sind verboten"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Richtig. Hier und jetzt."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Clara sitzt im Garten des Teehauses und zeichnet die Dächer."
+    }
+   ],
+   "hint": "Clara hier im Teehausgarten."
+  },
+  "13": {
+   "lines": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Diese Dächer! Sie ragen weit über die Veranda hinaus."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "So bleiben Regen und Sommersonne draußen, aber man kann trotzdem in den Garten sehen."
+    },
+    {
+     "s": "clara",
+     "p": "surprised",
+     "t": "Und alles ist aus Holz, ohne einen einzigen Nagel – nur verzapft. Was meinst du?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Warum ragen die Dächer weit über die Veranda?",
+     "options": [
+      "Als Schutz vor Regen und starker Sonne",
+      "Damit Vögel darauf wohnen",
+      "Nur zur Deko",
+      "Gegen Schnee aus dem Garten"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Wie verbindet man die Holzbalken traditionell?",
+     "options": [
+      "Mit Klebeband",
+      "Mit Holzverbindungen, oft ohne Nägel",
+      "Mit Beton",
+      "Mit Seilen"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Mein Skizzenbuch ist fast voll."
+    },
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Ein letzter Wunsch: Ich will die große Glocke in Shitennō-ji hören. Kommst du mit zum Südtor?"
+    }
+   ],
+   "hint": "Clara am Südtor von Shitennō-ji."
+  },
+  "14": {
+   "mood": "golden",
+   "lines": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Am späten Nachmittag läutet hier die Tempelglocke. Hinter dem Tor, im Glockenturm."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Der Ton ist tief und lang. Er schwingt noch, wenn man schon nichts mehr hört."
+    },
+    {
+     "s": "clara",
+     "p": "surprised",
+     "t": "Tippst du auf das Tor? Ich will genau zuhören."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf das große Tor des Tempels.",
+     "x": 35,
+     "y": 45,
+     "r": 12,
+     "closeup": {
+      "art": "bell",
+      "title": "Die Tempelglocke",
+      "text": "Ein Holzbalken schlägt gegen die schwere Bronzeglocke. Gooong … der Ton hängt lange in der Luft."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Ich hab Gänsehaut."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Komm mit ins Archiv und in den Garten. Ich will mein Album dort abschließen, wo wir es angefangen haben."
+    }
+   ],
+   "hint": "Clara im Archiv und Garten von Shitennō-ji."
+  },
+  "15": {
+   "lines": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Fertig. Shitennō-ji, Ryūan-ji, Jizō-Figuren, Hongan-ji, Teehaus, Glocke – alles gezeichnet."
+    },
+    {
+     "s": "clara",
+     "p": "photo",
+     "t": "Ich bin als Touristin gekommen. Jetzt fühle ich mich wie eine Pilgerin."
+    },
+    {
+     "s": "clara",
+     "p": "surprised",
+     "t": "Und du hast mir alle Schilder vorgelesen. Danke!"
+    },
+    {
+     "s": "me",
+     "t": "Und du hast mir gezeigt, wie man richtig hinsieht."
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "p": "calm",
+     "t": "Die letzte Seite ist für dich. Eine Zeichnung von uns beiden vor der Pagode."
+    }
+   ],
+   "hint": "Strang abgeschlossen – Claras Album über Ōsakas Tempel ist fertig."
+  }
+ },
+ "STRANG_SHRINE_HERITAGE": {
+  "1": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Im Shintō sagen wir: Es gibt acht Millionen Kami. Das heißt: unzählig viele."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Ein Kami ist eine Kraft in der Natur. In einem alten Baum, einem Berg, einem Fluss, im Meer."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Hier in Sumiyoshi verehrt man die Götter des Meeres. Sie beschützen die Seefahrer."
+    },
+    {
+     "s": "me",
+     "t": "Also ist ein Schrein ein Ort, an dem man diese Kräfte besucht?"
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Genau. Komm, ich zeige dir die berühmte Brücke dahinter."
+    }
+   ],
+   "hint": "Herr Yamada hier am Tor von Sumiyoshi Taisha."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Siehst du die rote Brücke hinter dem Tor? Sie ist so steil gewölbt, dass man fast klettern muss."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Man sagt: Wer sie überquert, lässt das Alltägliche hinter sich und kommt gereinigt bei den Göttern an."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Tippe auf die Brücke."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die rote Brücke hinter dem Tor.",
+     "x": 45,
+     "y": 56,
+     "r": 8,
+     "closeup": {
+      "art": "taikobashi",
+      "title": "Die Bogenbrücke",
+      "text": "Ein halber Kreis aus rotem Holz über dem Teich. Sie verbindet die Welt der Menschen mit der Welt der Götter."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Ein Bogen wie ein Regenbogen zwischen zwei Welten."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Prof. Takada wartet an der Haupthalle. Er erklärt dir ihren uralten Baustil."
+    }
+   ],
+   "hint": "Prof. Takada an der Haupthalle von Sumiyoshi."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Sumiyoshi-zukuri. Einer der ältesten Baustile Japans – noch ohne Einfluss buddhistischer Tempel."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Gerade Dächer statt geschwungener, der Eingang an der Giebelseite, rote Säulen und weiße Wände."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Die Haupthallen gelten als Nationalschätze."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was ist typisch für den Sumiyoshi-Stil?",
+     "options": [
+      "Stark geschwungene Dächer",
+      "Gerade Dächer und der Eingang an der Giebelseite",
+      "Pagoden mit fünf Stockwerken",
+      "Beton und Glas"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Woher stammt dieser Baustil?",
+     "options": [
+      "Aus der Zeit vor dem Einfluss des Buddhismus",
+      "Aus Europa",
+      "Aus dem 20. Jahrhundert",
+      "Aus China, ganz neu"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Richtig. Ein Fenster in die frühe Geschichte Japans."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Herr Yamada erzählt dir gleich hier, wer in diesen Hallen verehrt wird."
+    }
+   ],
+   "hint": "Herr Yamada hier an der Haupthalle."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Hier wohnen die drei Götter von Sumiyoshi. Sie entstanden der Sage nach aus dem Meer."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Dazu kommt die Kaiserin Jingū. Zusammen beschützen sie Seefahrt, Handel – und die Dichtkunst."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Früher beteten hier Kapitäne vor großen Reisen. Und Dichter für gute Gedichte."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wovor schützen die Götter von Sumiyoshi vor allem?",
+     "options": [
+      "Vor Erdbeben",
+      "Auf dem Meer und bei der Seefahrt",
+      "Vor Krankheiten der Augen",
+      "Beim Kochen"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Welche Kunst ist ihnen auch geweiht?",
+     "options": [
+      "Die Dichtkunst",
+      "Der Schwertkampf",
+      "Die Malerei",
+      "Der Tanz"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Richtig. Meer und Worte."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Weiter geht es zu einem anderen Gott des Meeres und des Handels. Am roten Tor in Nishinomiya."
+    }
+   ],
+   "hint": "Das rote Tor des Schreins in Nishinomiya."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Am 10. Januar um sechs Uhr morgens öffnet sich dieses rote Tor. Hunderte Männer warten davor."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Dann rennen alle zur Haupthalle. Die ersten drei sind die „Glücksmänner“ des Jahres – Fukuotoko."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Schau dir das Tor an."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf das große rote Tor.",
+     "x": 35,
+     "y": 40,
+     "r": 14,
+     "closeup": {
+      "art": "akamon",
+      "title": "Das rote Tor",
+      "text": "Rote Säulen, ein schweres Ziegeldach. Hier beginnt jedes Jahr am 10. Januar der große Lauf."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wann findet der Lauf statt?",
+     "options": [
+      "Am 10. Januar früh morgens",
+      "Am 24. Juli abends",
+      "Im August zu O-Bon",
+      "An Silvester um Mitternacht"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Wer gewinnt, bekommt ein Jahr Glück. Und eine Menge Fotos in der Zeitung."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Prof. Takada erklärt dir gleich hier, welcher Gott hier wohnt."
+    }
+   ],
+   "hint": "Prof. Takada hier am Schrein in Nishinomiya."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Ebisu. Er ist einer der sieben Glücksgötter – und der einzige, der ursprünglich aus Japan stammt."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Er trägt eine Angel und einen roten Fisch, eine Meerbrasse. Er ist der Gott der Fischer und der Händler."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Im Januar kommen zum Ebisu-Fest Hunderttausende, um für gute Geschäfte zu beten."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was hält Ebisu in der Hand?",
+     "options": [
+      "Ein Schwert und einen Spiegel",
+      "Eine Angel und einen Fisch",
+      "Ein Buch und eine Feder",
+      "Eine Laterne"
+     ],
+     "answer": 1
+    },
+    {
+     "type": "choice",
+     "q": "Wofür betet man zu Ebisu?",
+     "options": [
+      "Für gute Geschäfte",
+      "Für Regen",
+      "Für schöne Haare",
+      "Für schnelles Laufen"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Genau. Kein Wunder, dass die Händlerstadt Ōsaka ihn liebt."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Herr Yamada wartet am Schrein mit dem riesigen Löwenkopf in Namba."
+    }
+   ],
+   "hint": "Herr Yamada am Löwenkopf-Schrein in Namba."
+  },
+  "7": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Der Löwe verschluckt böse Geister und bringt Glück. Viele Schüler beten hier vor Prüfungen – er „beißt“ sich den Erfolg."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Ein Mädchen hat hier ihr Glücksamulett verloren. Sie hat es im Dachgarten über dem Bahnhof Namba gesucht."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Schaust du dort nach? Ich bewahre es dann für sie auf."
+    }
+   ],
+   "fetch": {
+    "item": "Glücksamulett",
+    "x": 60,
+    "y": 86,
+    "art": "charm",
+    "find": "Ein kleines rotes Omamori mit goldener Schrift: 合格 – „Prüfung bestanden“.",
+    "hintOut": "Das Amulett liegt im Dachgarten Namba Parks.",
+    "hintBack": "Bring das Amulett zu Herrn Yamada am Löwenkopf-Schrein."
+   },
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Danke. Das Mädchen wird sich freuen. Sie hat morgen ihre Prüfung."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Schau dir den Löwen jetzt noch einmal genau an. Hier, gleich vor dir."
+    }
+   ],
+   "hint": "Hier am Löwenkopf-Schrein in Namba."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Sieh in die Augen des Löwen. Sie sind golden und schauen weit über die Straße."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Die Augen sollen alles Böse schon von Weitem entdecken. Und das Maul verschluckt es dann."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Tippe auf die Augen."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die goldenen Augen des Löwen.",
+     "x": 33,
+     "y": 32,
+     "r": 10,
+     "closeup": {
+      "art": "lioneyes",
+      "title": "Die Augen des Löwen",
+      "text": "Zwei große goldene Augen unter buschigen Brauen. Nichts entgeht ihnen."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Ein Wächter, der nie schläft."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Prof. Takada wartet am Schrein im Burgpark. Dort geht es um einen Menschen, der zum Gott wurde."
+    }
+   ],
+   "hint": "Prof. Takada am Hōkoku-Schrein im Burgpark."
+  },
+  "9": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Toyotomi Hideyoshi wurde nach seinem Tod als Gott verehrt. Doch die Tokugawa ließen seinen Kult unterdrücken."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "In der Meiji-Zeit holte man ihn zurück. Dieser Schrein wurde für ihn gegründet."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Die neue Regierung brauchte Helden. Hideyoshi passte gut."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wer unterdrückte den Hideyoshi-Kult?",
+     "options": [
+      "Die Tokugawa",
+      "Die Händler",
+      "Die Mönche",
+      "Die Kaiser"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "In welcher Zeit wurde der Kult wiederbelebt?",
+     "options": [
+      "Edo-Zeit",
+      "Meiji-Zeit",
+      "Heute",
+      "Jōmon-Zeit"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Religion und Politik sind oft eng verbunden."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Herr Yamada zeigt dir gleich hier die Holztäfelchen, auf die Menschen ihre Wünsche schreiben."
+    }
+   ],
+   "hint": "Herr Yamada hier am Hōkoku-Schrein."
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Diese Holztäfelchen heißen Ema. „E“ heißt Bild, „ma“ heißt Pferd."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Früher schenkte man dem Schrein echte Pferde. Später nur noch Bilder von Pferden. Heute schreibt man Wünsche darauf."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Hier bitten viele um Erfolg – Hideyoshi stieg ja vom Bauernsohn ganz nach oben."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet „Ema“?",
+     "options": [
+      "Bild-Pferd",
+      "Gold-Münze",
+      "Feuer-Tor",
+      "Meer-Gott"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was schreibt man heute auf ein Ema?",
+     "options": [
+      "Seine Einkaufsliste",
+      "Einen Wunsch oder ein Gebet",
+      "Seine Telefonnummer",
+      "Nichts"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Schreib auch einen. Ich verrate niemandem, was draufsteht."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Für die nächste Station: „Wo ein heiliger Baum im Wald neben deinem Campus steht.“"
+    }
+   ],
+   "hint": "„Wo ein heiliger Baum im Wald neben deinem Campus steht.“"
+  },
+  "11": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Auch auf eurem Campus gibt es heiliges Grün. Jeder Schrein hatte früher seinen Wald – Chinju no mori."
+    },
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Besonders alte Bäume bekommen ein Strohseil um den Stamm. Dann weiß man: Hier wohnt ein Kami."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Tippe auf den großen Baum."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf den großen Baum rechts.",
+     "x": 72,
+     "y": 50,
+     "r": 12,
+     "closeup": {
+      "art": "sacredtree",
+      "title": "Ein heiliger Baum",
+      "text": "Ein dicker Stamm mit einem Strohseil und weißen Papierstreifen. Hier ist die Natur selbst ein Schrein."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Woran erkennt man einen heiligen Baum?",
+     "options": [
+      "Er ist blau angemalt",
+      "An einem Strohseil mit Papierstreifen",
+      "An einem Schild mit Preis",
+      "Er hat keine Blätter"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Jetzt siehst du deinen Campus mit anderen Augen."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Prof. Takada wartet bei den großen Grabhügeln in Sakai. Dort beginnt die Geschichte vor dem Shintō."
+    }
+   ],
+   "hint": "Prof. Takada am Daisen-Kofun in Sakai."
+  },
+  "12": {
+   "lines": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Bevor es Schreine gab, verehrte man Ahnen und Herrscher an ihren Gräbern. Wie hier."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Erst später wurden Mythen, Rituale und Schreine zu dem geordnet, was wir heute Shintō nennen."
+    },
+    {
+     "s": "takada",
+     "p": "ponder",
+     "t": "Ein Grab wie dieses war also auch ein heiliger Ort."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was verehrte man vor den Schreinen?",
+     "options": [
+      "Ahnen und Herrscher an ihren Gräbern",
+      "Computer",
+      "Nur Tiere",
+      "Nichts"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was ist Shintō?",
+     "options": [
+      "Eine Sportart",
+      "Die einheimische Religion Japans mit Kami und Schreinen",
+      "Ein Gericht",
+      "Eine Schrift"
+     ],
+     "answer": 1
+    }
+   ],
+   "after": [
+    {
+     "s": "takada",
+     "p": "explain",
+     "t": "Gut. Religion wächst langsam, wie ein Wald."
+    },
+    {
+     "s": "takada",
+     "p": "think",
+     "t": "Herr Yamada wartet wieder in Sumiyoshi, zwischen den Steinlaternen."
+    }
+   ],
+   "hint": "Herr Yamada am Tor von Sumiyoshi Taisha."
+  },
+  "13": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Über 600 Steinlaternen stehen hier. Gestiftet von Händlern, Reedern und Seeleuten."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Auf jeder steht der Name des Stifters. Ein Dankeschön für eine sichere Reise."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Schau dir die Laterne links vom Tor an."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die Steinlaterne links vom großen Tor.",
+     "x": 21,
+     "y": 52,
+     "r": 10,
+     "closeup": {
+      "art": "lanterns",
+      "title": "Steinlaternen",
+      "text": "Eine Reihe grauer Laternen, jede mit einem eingemeißelten Namen. Zusammen erzählen sie von Jahrhunderten Seehandel."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wer stiftete die meisten Laternen?",
+     "options": [
+      "Händler und Seeleute",
+      "Kinder",
+      "Ausländische Touristen",
+      "Fußballvereine"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Richtig. Ōsaka verdankt dem Meer viel."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Komm mit zur Haupthalle. Dort schließen wir ab."
+    }
+   ],
+   "hint": "Die Haupthalle von Sumiyoshi Taisha."
+  },
+  "14": {
+   "lines": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Zu Neujahr kommen über zwei Millionen Menschen hierher. Im Sommer gibt es große Feste mit Tragschreinen."
+    },
+    {
+     "s": "yamada",
+     "p": "explain",
+     "t": "Shintō ist kein Buch voller Regeln. Es ist Dank an die Natur, Feste mit den Nachbarn und Respekt vor dem Alten."
+    },
+    {
+     "s": "yamada",
+     "p": "pray",
+     "t": "Du hast Kami in Bäumen, Brücken, Löwen und im Meer kennengelernt."
+    },
+    {
+     "s": "me",
+     "t": "Ich glaube, ich verbeuge mich jetzt automatisch an jedem Tor."
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "p": "calm",
+     "t": "Dann hat der Weg dich gefunden. Komm zu jedem Fest wieder."
+    }
+   ],
+   "hint": "Strang abgeschlossen – Herr Yamada fegt die Wege von Sumiyoshi."
+  }
+ }
+}

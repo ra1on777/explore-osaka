@@ -1,0 +1,281 @@
+{
+ "STRANG_LANG_HIRAGANA": {
+  "22": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Am Schreinweg stehen kleine Schilder an den Bäumen. Alles in weichen Hiragana."},
+    {"s": "yamada", "p": "explain", "jp": "き ・ もり ・ とり", "ro": "ki ・ mori ・ tori", "t": "Baum, Wald, Vogel."},
+    {"s": "yamada", "p": "pray", "jp": "かみさま ・ おまもり", "ro": "kamisama ・ omamori", "t": "Die Götter und ein Glücksamulett."}
+   ],
+   "tasks": [
+    {"type": "pairs", "q": "Verbinde die Schilder mit ihrer Lesung.", "sets": [[["き", "ki (Baum)"], ["もり", "mori (Wald)"], ["とり", "tori (Vogel)"], ["かみさま", "kamisama (Götter)"], ["おまもり", "omamori (Amulett)"]]]}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Sehr gut. Du liest jetzt auch den Wald."},
+    {"s": "yamada", "p": "explain", "t": "Sōta sagt: „Wo man drei Minuten wartet, steht die letzte Leseprobe.“"}
+   ],
+   "vocab": [{"jp": "もり", "ro": "mori", "de": "Wald"}, {"jp": "とり", "ro": "tori", "de": "Vogel"}, {"jp": "おまもり", "ro": "omamori", "de": "Glücksamulett"}],
+   "hint": "„Wo man drei Minuten wartet.“"
+  },
+  "23": {
+   "lines": [
+    {"s": "sota", "p": "point", "t": "Hier im Nudelmuseum kann man seinen eigenen Becher gestalten. Die Anleitung ist in Hiragana!"},
+    {"s": "sota", "p": "note", "jp": "おゆを いれて ください。", "ro": "Oyu o irete kudasai.", "t": "Bitte heißes Wasser hineingeben."},
+    {"s": "sota", "p": "puzzled", "jp": "さんぷん まちます。", "ro": "Sanpun machimasu.", "t": "Drei Minuten warten."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist „おゆ“?", "show": {"jp": "おゆ"}, "options": ["kaltes Wasser", "heißes Wasser", "Tee", "Suppe"], "answer": 1},
+    {"type": "choice", "q": "Wie lange wartet man?", "show": {"jp": "さんぷん"}, "options": ["eine Minute", "drei Minuten", "dreißig Minuten", "drei Stunden"], "answer": 1},
+    {"type": "choice", "q": "Wie liest man „まちます“?", "options": ["machimasu", "mochimasu", "michimasu", "mazimasu"], "answer": 0}
+   ],
+   "after": [
+    {"s": "sota", "p": "point", "t": "Perfekt! Du hast eine ganze Anleitung gelesen."},
+    {"s": "sota", "p": "note", "t": "Die große Abschlussprüfung wartet dort, wo du angefangen hast: auf dem Campus in Minō."}
+   ],
+   "vocab": [{"jp": "おゆ", "ro": "oyu", "de": "heißes Wasser"}, {"jp": "まちます", "ro": "machimasu", "de": "warten"}],
+   "hint": "Sōta auf dem Campus in Minō."
+  },
+  "24": {
+   "lines": [
+    {"s": "sota", "p": "note", "t": "Am ersten Tag hast du hier あいうえお gelernt. Weißt du noch?"},
+    {"s": "sota", "p": "point", "t": "Jetzt die große Abschluss-Tafel: Wörter aus all deinen Reisen."},
+    {"s": "sota", "p": "puzzled", "t": "Zwei Runden. Los geht's!"}
+   ],
+   "tasks": [
+    {"type": "pairs", "q": "Verbinde die Wörter mit ihrer Lesung.", "sets": [
+     [["たこやき", "takoyaki"], ["ありがとう", "arigatō"], ["きっぷ", "kippu"], ["おおさか", "Ōsaka"], ["しゃしん", "shashin"]],
+     [["がっこう", "gakkō"], ["おてら", "otera"], ["ちゃわん", "chawan"], ["きょう", "kyō"], ["じゅぎょう", "jugyō"]]
+    ]}
+   ],
+   "after": [
+    {"s": "sota", "p": "point", "t": "Bestanden! Du liest jetzt alle Hiragana – auch kleine っ, ゃ, ゅ, ょ und lange Vokale."},
+    {"s": "sota", "p": "note", "t": "Hier ist deine Hiragana-Meisterurkunde. おめでとう！"}
+   ],
+   "vocab": [{"jp": "おめでとう", "ro": "omedetō", "de": "Glückwunsch"}],
+   "hint": "Strang abgeschlossen – deine Hiragana-Urkunde hängt in Minō."
+  }
+ },
+ "STRANG_LANG_KANJI": {
+  "17": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Auf ein Ema schreibt man seinen Namen. Dafür gibt es zwei Kanji."},
+    {"s": "yamada", "p": "explain", "jp": "名前", "ro": "namae", "t": "Name. 名 heißt Name, 前 heißt „vor“ oder „vorne“."},
+    {"s": "yamada", "p": "pray", "jp": "前 ・ 後", "ro": "mae ・ ushiro / ato", "t": "Vorne und hinten – oder vorher und nachher."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „名前“?", "show": {"jp": "名前"}, "options": ["Name", "Schrein", "Morgen", "Freund"], "answer": 0},
+    {"type": "choice", "q": "Welches Kanji heißt „hinten / nachher“?", "options": ["前", "後", "名", "上"], "answer": 1}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Gut. Dann schreib jetzt deinen 名前 auf das Ema."},
+    {"s": "yamada", "p": "explain", "t": "An der Haupthalle zeige ich dir Kanji für Höhe und Länge."}
+   ],
+   "vocab": [{"jp": "なまえ", "ro": "namae", "de": "Name (名前)"}, {"jp": "まえ", "ro": "mae", "de": "vorne, vor (前)"}],
+   "hint": "Die Haupthalle von Sumiyoshi."
+  },
+  "18": {
+   "lines": [
+    {"s": "yamada", "p": "explain", "t": "Diese Halle ist sehr alt, aber nicht sehr hoch. Japaner sagen: 古い, aber nicht 高い."},
+    {"s": "yamada", "p": "calm", "jp": "高い ・ 長い", "ro": "takai ・ nagai", "t": "Hoch oder teuer – und lang."},
+    {"s": "yamada", "p": "pray", "jp": "外 ・ 国", "ro": "soto ・ kuni", "t": "Draußen und Land. 外国 – gaikoku – heißt Ausland."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["高", "長", "外", "国", "大", "山"], "prompts": [{"de": "hoch / teuer", "answer": "高"}, {"de": "lang", "answer": "長"}, {"de": "draußen", "answer": "外"}, {"de": "Land", "answer": "国"}]}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Du bist ein 外国人 – ein Ausländer. Aber einer, der Kanji liest!"},
+    {"s": "yamada", "p": "explain", "t": "Dr. Seto zeigt dir an den Grabhügeln in Sakai die nächsten Zeichen."}
+   ],
+   "vocab": [{"jp": "たかい", "ro": "takai", "de": "hoch, teuer (高い)"}, {"jp": "ながい", "ro": "nagai", "de": "lang (長い)"}, {"jp": "がいこく", "ro": "gaikoku", "de": "Ausland (外国)"}],
+   "hint": "Dr. Seto am Daisen-Kofun in Sakai."
+  },
+  "19": {
+   "lines": [
+    {"s": "seto", "p": "map", "t": "Das hier ist das größte Grab in 日本. Kennst du die Zeichen?"},
+    {"s": "seto", "p": "book", "jp": "日本", "ro": "Nihon", "t": "Japan. 日 Sonne, 本 Ursprung. Das Land, wo die Sonne aufgeht."},
+    {"s": "seto", "p": "binoculars", "jp": "本 ・ 間", "ro": "hon ・ aida", "t": "本 heißt auch Buch. 間 heißt „zwischen“ – eine Sonne 日 zwischen zwei Torflügeln 門."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „日本“?", "show": {"jp": "日本"}, "options": ["China", "Japan", "Sonne", "Buch"], "answer": 1},
+    {"type": "choice", "q": "Welches Kanji kann „Buch“ heißen?", "options": ["本", "間", "日", "長"], "answer": 0}
+   ],
+   "after": [
+    {"s": "seto", "p": "map", "t": "Richtig. Ein Kanji, viele Bedeutungen – wie bei Landschaften."},
+    {"s": "seto", "p": "book", "t": "Takeshi zeigt dir im Handwerksmuseum in Sakai Kanji für Tätigkeiten."}
+   ],
+   "vocab": [{"jp": "にほん", "ro": "Nihon", "de": "Japan (日本)"}, {"jp": "ほん", "ro": "hon", "de": "Buch (本)"}],
+   "hint": "Takeshi im Handwerksmuseum in Sakai."
+  },
+  "20": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "Ein Handwerker muss zuerst sehen und hören. Dann lesen und schreiben."},
+    {"s": "takeshi", "p": "think", "jp": "見る ・ 聞く", "ro": "miru ・ kiku", "t": "Sehen – mit einem Auge 目 auf Beinen. Hören – ein Ohr 耳 im Tor 門."},
+    {"s": "takeshi", "p": "newspaper", "jp": "読む ・ 書く", "ro": "yomu ・ kaku", "t": "Lesen und schreiben."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["見", "聞", "読", "書", "話", "食"], "prompts": [{"de": "sehen", "answer": "見"}, {"de": "hören", "answer": "聞"}, {"de": "lesen", "answer": "読"}, {"de": "schreiben", "answer": "書"}]}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Ausgezeichnet. Sehen, hören, lesen, schreiben – das ganze Lernen."},
+    {"s": "takeshi", "p": "think", "t": "Nanami zeigt dir an der OMU in Sugimoto Kanji für Sprachen."}
+   ],
+   "vocab": [{"jp": "みる", "ro": "miru", "de": "sehen (見る)"}, {"jp": "きく", "ro": "kiku", "de": "hören (聞く)"}, {"jp": "よむ", "ro": "yomu", "de": "lesen (読む)"}, {"jp": "かく", "ro": "kaku", "de": "schreiben (書く)"}],
+   "hint": "Nanami an der OMU in Sugimoto."
+  },
+  "21": {
+   "lines": [
+    {"s": "omu", "t": "Auf dem Stundenplan steht überall 語. Das heißt Sprache."},
+    {"s": "omu", "jp": "日本語 ・ 英語", "ro": "Nihongo ・ Eigo", "t": "Japanisch und Englisch."},
+    {"s": "omu", "jp": "日本語を 話します。", "ro": "Nihongo o hanashimasu.", "t": "Ich spreche Japanisch. 話 heißt sprechen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „日本語“?", "show": {"jp": "日本語"}, "options": ["Japan", "japanische Sprache", "Japaner", "Tagebuch"], "answer": 1},
+    {"type": "choice", "q": "Welches Kanji heißt „sprechen“?", "options": ["読", "話", "語", "書"], "answer": 1}
+   ],
+   "after": [
+    {"s": "omu", "t": "Super! Und du 話します jeden Tag besser."},
+    {"s": "omu", "t": "Haruka wartet auf dem Campus in Suita. Sie hat Kanji aus der Medizin."}
+   ],
+   "vocab": [{"jp": "にほんご", "ro": "Nihongo", "de": "Japanisch (日本語)"}, {"jp": "はなします", "ro": "hanashimasu", "de": "sprechen (話します)"}],
+   "hint": "Haruka auf dem Campus in Suita."
+  },
+  "22": {
+   "lines": [
+    {"s": "haruka", "p": "clipboard", "t": "Im Krankenhaus fragt man zuerst: お元気ですか – Wie geht es Ihnen?"},
+    {"s": "haruka", "p": "think", "jp": "元気 ・ 天気", "ro": "genki ・ tenki", "t": "気 heißt Energie, Geist, Stimmung. Gesund – und das Wetter."},
+    {"s": "haruka", "p": "wave", "jp": "父 ・ 母 ・ 友", "ro": "chichi ・ haha ・ tomo", "t": "Vater, Mutter, Freund. Die fragt man auch."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["気", "父", "母", "友", "女", "男"], "prompts": [{"de": "Energie / Stimmung", "answer": "気"}, {"de": "Vater", "answer": "父"}, {"de": "Mutter", "answer": "母"}, {"de": "Freund", "answer": "友"}]}
+   ],
+   "after": [
+    {"s": "haruka", "p": "wave", "t": "Super! お元気で – bleib gesund!"},
+    {"s": "haruka", "p": "clipboard", "t": "„Wo Roboter rechnen, wartet Strom in Kanji.“ Komm mit ins Labor!"}
+   ],
+   "vocab": [{"jp": "げんき", "ro": "genki", "de": "gesund, munter (元気)"}, {"jp": "ともだち", "ro": "tomodachi", "de": "Freund (友達)"}],
+   "hint": "„Wo Roboter rechnen.“"
+  },
+  "23": {
+   "lines": [
+    {"s": "haruka", "p": "think", "t": "Im Robotik-Labor ist alles 電気 – Strom. 電 sieht aus wie Regen 雨 über einem Blitz."},
+    {"s": "haruka", "p": "clipboard", "jp": "電車 ・ 雨", "ro": "densha ・ ame", "t": "Zug – ein „Strom-Wagen“ – und Regen."},
+    {"s": "haruka", "p": "wave", "jp": "午前 ・ 午後", "ro": "gozen ・ gogo", "t": "Vormittag und Nachmittag. Das Labor ist 午後 offen."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „電車“?", "show": {"jp": "電車"}, "options": ["Auto", "Zug (elektrisch)", "Fahrrad", "Flugzeug"], "answer": 1},
+    {"type": "choice", "q": "Das Labor ist „午後“ offen. Wann?", "options": ["Am Vormittag", "Am Nachmittag", "Nachts", "Nie"], "answer": 1},
+    {"type": "choice", "q": "Welches Kanji steckt oben in 電?", "options": ["雨 (Regen)", "山 (Berg)", "木 (Baum)", "口 (Mund)"], "answer": 0}
+   ],
+   "after": [
+    {"s": "haruka", "p": "wave", "t": "Toll! Jetzt fehlt nur noch die große Prüfung."},
+    {"s": "haruka", "p": "clipboard", "t": "Prof. Takada wartet im Uni-Museum in Toyonaka, wo du deine ersten Kanji gelernt hast."}
+   ],
+   "vocab": [{"jp": "でんしゃ", "ro": "densha", "de": "Zug (電車)"}, {"jp": "ごご", "ro": "gogo", "de": "Nachmittag (午後)"}, {"jp": "あめ", "ro": "ame", "de": "Regen (雨)"}],
+   "hint": "Prof. Takada im Uni-Museum in Toyonaka."
+  },
+  "24": {
+   "lines": [
+    {"s": "takada", "p": "explain", "t": "Am Anfang konntest du 一, 二, 三. Jetzt kennst du die Grund-Kanji der Stufe N5."},
+    {"s": "takada", "p": "think", "t": "Zahlen, Zeit, Richtungen, Menschen, Natur, Orte, Tätigkeiten."},
+    {"s": "takada", "p": "ponder", "t": "Die große Abschlussprüfung. Acht Zeichen."}
+   ],
+   "tasks": [
+    {"type": "kanjigrid", "q": "Tippe das passende Kanji an.", "grid": ["山", "駅", "学", "時", "東", "休", "雨", "読", "円", "友"], "prompts": [{"de": "Berg", "answer": "山"}, {"de": "Bahnhof", "answer": "駅"}, {"de": "lernen", "answer": "学"}, {"de": "Uhr / Stunde", "answer": "時"}, {"de": "Osten", "answer": "東"}, {"de": "ausruhen", "answer": "休"}, {"de": "Regen", "answer": "雨"}, {"de": "lesen", "answer": "読"}]}
+   ],
+   "after": [
+    {"s": "takada", "p": "explain", "t": "Ausgezeichnet. Alle N5-Kanji, die du brauchst. Ich bin stolz auf dich."},
+    {"s": "takada", "p": "think", "t": "Hier ist deine Kanji-Urkunde. Der nächste Schritt ist N4 – aber das ist eine andere Reise."}
+   ],
+   "vocab": [{"jp": "かんじ", "ro": "kanji", "de": "Kanji"}],
+   "hint": "Strang abgeschlossen – deine Kanji-Urkunde liegt im Uni-Museum."
+  }
+ },
+ "STRANG_LANG_VOCABULARY": {
+  "22": {
+   "lines": [
+    {"s": "yamada", "p": "explain", "t": "Am Schrein gibt es eigene Wörter. Die brauchst du für jedes Fest."},
+    {"s": "yamada", "p": "calm", "jp": "まつり ・ じんじゃ", "ro": "matsuri ・ jinja", "t": "Fest und Schrein."},
+    {"s": "yamada", "p": "pray", "jp": "おまもり ・ おみくじ", "ro": "omamori ・ omikuji", "t": "Amulett und Glückslos."}
+   ],
+   "tasks": [
+    {"type": "slots", "q": "Ordne die Wörter zu.", "items": [{"icon": "lantern", "label": "Fest", "answer": "matsuri"}, {"icon": "torii", "label": "Schrein", "answer": "jinja"}, {"icon": "amulet", "label": "Amulett", "answer": "omamori"}, {"icon": "fortune", "label": "Glückslos", "answer": "omikuji"}],
+     "words": [{"jp": "おみくじ", "ro": "omikuji"}, {"jp": "まつり", "ro": "matsuri"}, {"jp": "おまもり", "ro": "omamori"}, {"jp": "じんじゃ", "ro": "jinja"}]}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Gut. Jetzt bist du bereit für jedes まつり."},
+    {"s": "yamada", "p": "explain", "t": "Takeshi sagt: „Wo man Eisen hämmert, lernst du die Werkzeuge.“"}
+   ],
+   "vocab": [{"jp": "まつり", "ro": "matsuri", "de": "Fest"}, {"jp": "じんじゃ", "ro": "jinja", "de": "Schrein"}, {"jp": "おみくじ", "ro": "omikuji", "de": "Glückslos"}],
+   "hint": "„Wo man Eisen hämmert.“"
+  },
+  "23": {
+   "lines": [
+    {"s": "takeshi", "p": "explain", "t": "In der Werkstatt braucht man Werkzeuge. Lerne ihre Namen."},
+    {"s": "takeshi", "p": "think", "jp": "はさみ ・ ほうちょう", "ro": "hasami ・ hōchō", "t": "Schere und Küchenmesser."},
+    {"s": "takeshi", "p": "newspaper", "jp": "かみ ・ き", "ro": "kami ・ ki", "t": "Papier und Holz. かみ heißt auch Gott – man hört den Unterschied nur im Zusammenhang."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was ist „ほうちょう“?", "show": {"jp": "ほうちょう"}, "options": ["Schere", "Küchenmesser", "Hammer", "Löffel"], "answer": 1},
+    {"type": "choice", "q": "Du willst Papier schneiden. Was brauchst du?", "options": [{"jp": "はさみ", "ro": "hasami"}, {"jp": "き", "ro": "ki"}, {"jp": "みず", "ro": "mizu"}, {"jp": "ほん", "ro": "hon"}], "answer": 0}
+   ],
+   "after": [
+    {"s": "takeshi", "p": "explain", "t": "Sehr gut. Ein Handwerker ist nur so gut wie seine Werkzeuge – und seine Wörter."},
+    {"s": "takeshi", "p": "think", "t": "Kenji wartet in eurem Zimmer. Er hat die große Abschlussprüfung vorbereitet."}
+   ],
+   "vocab": [{"jp": "はさみ", "ro": "hasami", "de": "Schere"}, {"jp": "ほうちょう", "ro": "hōchō", "de": "Küchenmesser"}, {"jp": "かみ", "ro": "kami", "de": "Papier"}],
+   "hint": "Kenji in eurem Zimmer im Wohnheim."
+  },
+  "24": {
+   "lines": [
+    {"s": "kenji", "p": "hyped", "t": "Weißt du noch? Hier hast du „konnichiwa“ gelernt. Jetzt machen wir die große Prüfung!"},
+    {"s": "kenji", "p": "talk", "t": "Wörter aus all unseren Ausflügen: Essen, Bahn, Wetter, Feste."},
+    {"s": "kenji", "p": "relaxed", "t": "Ordne sie zu. Ich glaube an dich."}
+   ],
+   "tasks": [
+    {"type": "slots", "q": "Die große Wortschatz-Prüfung.", "items": [{"icon": "train", "label": "Zug", "answer": "densha"}, {"icon": "coffee", "label": "Kaffee", "answer": "kōhī"}, {"icon": "rain", "label": "Regen", "answer": "ame"}, {"icon": "lantern", "label": "Fest", "answer": "matsuri"}, {"icon": "book", "label": "Buch", "answer": "hon"}, {"icon": "friends", "label": "Freund", "answer": "tomodachi"}],
+     "words": [{"jp": "ほん", "ro": "hon"}, {"jp": "あめ", "ro": "ame"}, {"jp": "ともだち", "ro": "tomodachi"}, {"jp": "でんしゃ", "ro": "densha"}, {"jp": "まつり", "ro": "matsuri"}, {"jp": "コーヒー", "ro": "kōhī"}]}
+   ],
+   "after": [
+    {"s": "kenji", "p": "hyped", "t": "Alles richtig! Du hast den A1-Wortschatz geschafft."},
+    {"s": "kenji", "p": "talk", "t": "Und das Wichtigste: ともだち. Das sind wir."}
+   ],
+   "vocab": [{"jp": "ともだち", "ro": "tomodachi", "de": "Freund"}],
+   "hint": "Strang abgeschlossen – Kenji ist stolz auf dich."
+  }
+ },
+ "STRANG_LANG_CONVERSATION": {
+  "23": {
+   "lines": [
+    {"s": "yamada", "p": "calm", "t": "Wenn du von einem Ausflug erzählst, brauchst du ein Wort für „danach“."},
+    {"s": "yamada", "p": "explain", "jp": "じんじゃを みました。それから、おみやげを かいました。", "ro": "Jinja o mimashita. Sorekara, omiyage o kaimashita.", "t": "Ich habe den Schrein angesehen. Danach habe ich Mitbringsel gekauft."},
+    {"s": "yamada", "p": "pray", "t": "それから verbindet zwei Handlungen nacheinander."}
+   ],
+   "tasks": [
+    {"type": "choice", "q": "Was bedeutet „それから“?", "options": ["aber", "danach / und dann", "weil", "vielleicht"], "answer": 1},
+    {"type": "choice", "q": "Welcher Satz passt: „Ich habe gegessen. Danach bin ich nach Hause gegangen.“", "options": [{"jp": "たべました。それから、かえりました。", "ro": "Tabemashita. Sorekara, kaerimashita."}, {"jp": "たべます。でも、かえります。", "ro": "Tabemasu. Demo, kaerimasu."}, {"jp": "たべませんでした。", "ro": "Tabemasen deshita."}, {"jp": "かえりたいです。", "ro": "Kaeritai desu."}], "answer": 0}
+   ],
+   "after": [
+    {"s": "yamada", "p": "calm", "t": "Gut. Jetzt kannst du ganze Geschichten erzählen."},
+    {"s": "yamada", "p": "explain", "t": "Kenji wartet in eurem Zimmer. Er will deinen letzten Satz hören."}
+   ],
+   "vocab": [{"jp": "それから", "ro": "sorekara", "de": "danach, und dann"}],
+   "hint": "Kenji in eurem Zimmer im Wohnheim."
+  },
+  "24": {
+   "lines": [
+    {"s": "kenji", "p": "relaxed", "t": "Du hast so viel gesehen. Und was kommt als Nächstes?"},
+    {"s": "kenji", "p": "talk", "jp": "つぎは きょうとに いきたいです。", "ro": "Tsugi wa Kyōto ni ikitai desu.", "t": "Als Nächstes möchte ich nach Kyōto fahren. ～たい heißt „ich möchte“."},
+    {"s": "kenji", "p": "hyped", "t": "Sag mir deinen Wunsch – auf Japanisch!"}
+   ],
+   "tasks": [
+    {"type": "build", "q": "Bilde: „Als Nächstes möchte ich nach Kyōto fahren.“", "tiles": [{"jp": "つぎは", "ro": "tsugi wa"}, {"jp": "きょうとに", "ro": "Kyōto ni"}, {"jp": "いきたいです", "ro": "ikitai desu"}, {"jp": "いきました", "ro": "ikimashita"}, {"jp": "を", "ro": "o"}], "answer": ["つぎは", "きょうとに", "いきたいです"]},
+    {"type": "build", "q": "Bilde: „Ich möchte mehr Japanisch lernen.“", "tiles": [{"jp": "もっと", "ro": "motto"}, {"jp": "にほんごを", "ro": "nihongo o"}, {"jp": "べんきょうしたいです", "ro": "benkyō shitai desu"}, {"jp": "べんきょうしました", "ro": "benkyō shimashita"}], "answer": ["もっと", "にほんごを", "べんきょうしたいです"]}
+   ],
+   "after": [
+    {"s": "kenji", "p": "hyped", "t": "Perfekt! Du sprichst jetzt richtig Japanisch. A1 – geschafft!"},
+    {"s": "kenji", "p": "relaxed", "t": "Und wenn du nach Kyōto fährst … nimm mich mit. Abgemacht?"}
+   ],
+   "vocab": [{"jp": "～たい", "ro": "-tai", "de": "möchte …"}, {"jp": "つぎ", "ro": "tsugi", "de": "nächstes"}],
+   "hint": "Strang abgeschlossen – A1-Konversation geschafft!"
+  }
+ }
+}

@@ -758,6 +758,7 @@
  },
  "STRANG_ROMANCE_MEMORIES": {
   "3": {
+   "bg": "gen_bg_cafe_modern_blur",
    "variants": {
     "AOI_TRANSIT_STUDENT": {
      "lines": [
@@ -975,6 +976,7 @@
    "hint": "Im Keller des Sky Building, in der Gasse im alten Stil."
   },
   "6": {
+   "bg": "gen_bg_izakaya_warm_blur_v2",
    "variants": {
     "AOI_TRANSIT_STUDENT": {
      "lines": [
@@ -1603,6 +1605,7 @@
    "hint": "Shizuku in den Gassen unter den Bahnbögen von Nakatsu."
   },
   "2": {
+   "bg": "gen_bg_cafe_modern_blur",
    "lines": [
     {
      "s": "shizuku",
@@ -1672,6 +1675,7 @@
    "hint": "Maya in der alten Bibliothek auf Nakanoshima."
   },
   "3": {
+   "bg": "gen_bg_cafe_modern_blur",
    "lines": [
     {
      "s": "maya",

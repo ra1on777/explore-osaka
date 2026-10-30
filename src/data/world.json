@@ -22,7 +22,7 @@
   },
   {
    "id": "R6",
-   "playable": false
+   "playable": true
   }
  ],
  "slotDefaults": {
@@ -459,6 +459,57 @@
     "61"
    ],
    "flip": true
+  },
+  {
+   "id": "nagai",
+   "region": "R6",
+   "x": 560,
+   "y": 170,
+   "screens": [
+    "62",
+    "63",
+    "64"
+   ]
+  },
+  {
+   "id": "sumiyoshi",
+   "region": "R6",
+   "x": 300,
+   "y": 360,
+   "screens": [
+    "65",
+    "66"
+   ],
+   "flip": true
+  },
+  {
+   "id": "sakai",
+   "region": "R6",
+   "x": 230,
+   "y": 620,
+   "screens": [
+    "69"
+   ],
+   "flip": true
+  },
+  {
+   "id": "daisen",
+   "region": "R6",
+   "x": 480,
+   "y": 600,
+   "screens": [
+    "67",
+    "68"
+   ]
+  },
+  {
+   "id": "nakamozu",
+   "region": "R6",
+   "x": 720,
+   "y": 700,
+   "screens": [
+    "70"
+   ]
   }
  ],
  "screens": {
@@ -2081,31 +2132,221 @@
    }
   },
   "62": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "ヤンマースタジアム長居",
+   "kana": "やんまーすたじあむながい",
+   "ro": "Yanmā Sutajiamu Nagai",
+   "cluster": "nagai",
+   "slots": {
+    "A": {
+     "x": 45,
+     "bottom": 3,
+     "h": 44
+    },
+    "B": {
+     "x": 62,
+     "bottom": 16,
+     "h": 32
+    },
+    "C": {
+     "x": 28,
+     "bottom": 8,
+     "h": 40
+    }
+   }
   },
   "63": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "ヨドコウ桜スタジアム",
+   "kana": "よどこうさくらすたじあむ",
+   "ro": "Yodokō Sakura Sutajiamu",
+   "cluster": "nagai",
+   "slots": {
+    "A": {
+     "x": 42,
+     "bottom": 3,
+     "h": 42
+    },
+    "B": {
+     "x": 58,
+     "bottom": 12,
+     "h": 32
+    },
+    "C": {
+     "x": 21,
+     "bottom": 3,
+     "h": 40
+    }
+   }
   },
   "64": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "長居植物園",
+   "kana": "ながいしょくぶつえん",
+   "ro": "Nagai Shokubutsuen",
+   "cluster": "nagai",
+   "slots": {
+    "A": {
+     "x": 52,
+     "bottom": 3,
+     "h": 40
+    },
+    "B": {
+     "x": 84,
+     "bottom": 22,
+     "h": 26
+    },
+    "C": {
+     "x": 32,
+     "bottom": 16,
+     "h": 32
+    }
+   }
   },
   "65": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "住吉大社",
+   "kana": "すみよしたいしゃ",
+   "ro": "Sumiyoshi Taisha",
+   "cluster": "sumiyoshi",
+   "slots": {
+    "A": {
+     "x": 50,
+     "bottom": 2,
+     "h": 46
+    },
+    "B": {
+     "x": 64,
+     "bottom": 12,
+     "h": 36
+    },
+    "C": {
+     "x": 37,
+     "bottom": 11,
+     "h": 36
+    }
+   }
   },
   "66": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "本殿",
+   "kana": "ほんでん",
+   "ro": "Honden",
+   "cluster": "sumiyoshi",
+   "slots": {
+    "A": {
+     "x": 56,
+     "bottom": 3,
+     "h": 42
+    },
+    "B": {
+     "x": 70,
+     "bottom": 12,
+     "h": 32
+    },
+    "C": {
+     "x": 31,
+     "bottom": 5,
+     "h": 40
+    }
+   }
   },
   "67": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "大仙陵古墳",
+   "kana": "だいせんりょうこふん",
+   "ro": "Daisenryō Kofun",
+   "cluster": "daisen",
+   "slots": {
+    "A": {
+     "x": 45,
+     "bottom": 3,
+     "h": 44
+    },
+    "B": {
+     "x": 52,
+     "bottom": 26,
+     "h": 28
+    },
+    "C": {
+     "x": 64,
+     "bottom": 6,
+     "h": 40
+    }
+   }
   },
   "68": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "茶室",
+   "kana": "ちゃしつ",
+   "ro": "Chashitsu",
+   "cluster": "daisen",
+   "slots": {
+    "A": {
+     "x": 48,
+     "bottom": 3,
+     "h": 42
+    },
+    "B": {
+     "x": 40,
+     "bottom": 15,
+     "h": 32
+    },
+    "C": {
+     "x": 76,
+     "bottom": 8,
+     "h": 38
+    }
+   }
   },
   "69": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "堺伝統産業会館",
+   "kana": "さかいでんとうさんぎょうかいかん",
+   "ro": "Sakai Dentō Sangyō Kaikan",
+   "cluster": "sakai",
+   "indoor": true,
+   "slots": {
+    "A": {
+     "x": 45,
+     "bottom": 10,
+     "h": 42
+    },
+    "B": {
+     "x": 56,
+     "bottom": 14,
+     "h": 36
+    },
+    "C": {
+     "x": 58,
+     "bottom": 5,
+     "h": 42
+    }
+   }
   },
   "70": {
-   "region": "R6"
+   "region": "R6",
+   "jp": "中百舌鳥キャンパス",
+   "kana": "なかもずきゃんぱす",
+   "ro": "Nakamozu Kyanpasu",
+   "cluster": "nakamozu",
+   "slots": {
+    "A": {
+     "x": 28,
+     "bottom": 3,
+     "h": 44
+    },
+    "B": {
+     "x": 41,
+     "bottom": 18,
+     "h": 30
+    },
+    "C": {
+     "x": 48,
+     "bottom": 4,
+     "h": 42
+    }
+   }
   }
  }
 }

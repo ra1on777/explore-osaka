@@ -1,7 +1,14 @@
 # ExploreOsaka – Projektstatus
 
-Stand: Demo v0.5 – Regionen 1–5: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b) und „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b).
-Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **345/345 Etappen spielbar, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+Stand: v1.0 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.0
+- Region 6 mit 9 Screens und 5 Orten auf eigener Karte (Nagai-Park mit zwei Stadien und botanischem Garten, Sumiyoshi Taisha, Daisen-Kofun mit Teehaus, Handwerksmuseum Sakai, OMU Nakamozu).
+- Die letzten 97 Etappen: Alle 25 Stränge sind jetzt vollständig spielbar, darunter der neue Strang „Kami, Natur & Heilige Bezirke“ (Schreine, 14 Etappen).
+- Innenraum-Hintergründe: Etappen, die in einer Izakaya, einem Café oder bei Regen in Dōtonbori spielen, zeigen während des Gesprächs die passende Grafik aus `img/bg` (Feld `bg` in den Inhalten). Die beteiligte Figur steht dann groß in der Mitte; danach kehrt der normale Screen zurück. Bildaufgaben (Tippen, Foto) sind in solchen Etappen ausgeschlossen.
+- Hanafuda um Herbst-/Wintermonate und die fünf hellen Karten (Gokō) erweitert; neue Blatt-Silhouetten (Bambus, Kamelie, Moos).
+- Faktencheck zu Region 5 eingearbeitet (Bukubuku-chā, Shusse Kagekiyo 1686).
 
 ### Neu in v0.5
 - Region 5 mit 10 Screens und 5 Orten auf eigener Karte (Shinsekai mit Tsūtenkaku und Spa World, Tennōji-Park, Abeno Harukas, Shitennō-ji, OMU Sugimoto).
@@ -59,9 +66,9 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **345/345 Etappen spiel
 - Logo freigestellt, App-Icons 512/192/180 px, Titelbild aus „Logo mit Skyline“.
 
 ### Welt & Navigation
-- Weltkarte (auf dem oberen Bildschirm), eine Karte pro Region (Region 1: 13 Orte, Region 2: 8 Orte, Region 3: 6 Orte, Region 4: 10 Orte, Region 5: 5 Orte), Umschalten per Region-Tab, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
+- Weltkarte (auf dem oberen Bildschirm), eine Karte pro Region (Region 1: 13 Orte, Region 2: 8 Orte, Region 3: 6 Orte, Region 4: 10 Orte, Region 5: 5 Orte, Region 6: 5 Orte), Umschalten per Region-Tab, freie Schnellreise, Markierung „hier“ und „besucht“, **keine Quest-Marker**.
 - Wege zwischen Unter-Screens eines Ortes (z. B. Wohnheim: Flur ↔ Zimmer ↔ Küche) direkt im Erkunden-Menü.
-- NPC-Platzierung: Slots A/B/C mit Werten pro Screen (x, Fußhöhe, Größe in % der Bildhöhe) in `src/data/world.json`, für alle Screens der Regionen 1–5 einzeln eingemessen.
+- NPC-Platzierung: Slots A/B/C mit Werten pro Screen (x, Fußhöhe, Größe in % der Bildhöhe) in `src/data/world.json`, für alle Screens der Regionen 1–6 einzeln eingemessen.
 
 ### Quest-System
 - Alle Stränge von Beginn an offen; Fortschritt über Etappen-Freischaltung.
@@ -118,35 +125,8 @@ Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **345/345 Etappen spiel
 - Bedienung per Touch, Maus und Tastatur: Enter/Leertaste = weiter, 1–9 = Antworten, Esc = zurück, M/Q/V/B = Karte/Quests/Vokabeln/Tasche.
 - `prefers-reduced-motion` wird respektiert.
 
-### Inhalte der Demo (345 Etappen in 24 Strängen)
-| Strang | Etappen in der Demo | Ende in der Demo führt nach |
-|---|---|---|
-| Geographie | 1–8 | 65 Sumiyoshi Taisha |
-| Natur & Stille | 1–7 | 64 Nagai-Botanischer Garten |
-| Nachtleben | 1–20 | – (abgeschlossen) |
-| Philosophie & Glaube | 1–15 | 65 Sumiyoshi Taisha |
-| Kultur Japan | 1–2 | 65 Sumiyoshi Taisha |
-| Kansai Pride | 1–12 | 63 Yodoko Sakura Stadium |
-| Fußball-Derby | 1–12 | 62 Yanmar Stadium Nagai |
-| Campus-Atlas | 1–17 | 70 OMU Nakamozu |
-| Romance | 1–28 | – (abgeschlossen) |
-| Hiragana | 1–21 | 65 Sumiyoshi Taisha |
-| Katakana | 1–24 | – (abgeschlossen) |
-| Kanji | 1–16 | 65 Sumiyoshi Taisha |
-| Wortschatz | 1–21 | 65 Sumiyoshi Taisha |
-| Konversation | 1–22 | 65 Sumiyoshi Taisha |
-| Bahnhöfe & Gleise | 1–10 | – (abgeschlossen) |
-| Café-Kultur | 1–10 | 68 Daisen-Park |
-| Schnäppchen | 1–9 | – (abgeschlossen) |
-| Literatur | 1–14 | – (abgeschlossen) |
-| Wahrzeichen | 1–13 | – (abgeschlossen) |
-| Kuidaore | 1–14 | 69 Sakai |
-| Subkultur & Sammler | 1–9 | – (abgeschlossen) |
-| Osaka Tamashii | 1–16 | – (abgeschlossen) |
-| Stadtentwicklung | 1–14 | 70 OMU Nakamozu |
-| Tempelpfade | 1–11 | 68 Daisen-Park |
-
-Der Strang „Schreine“ beginnt in Region 6 und kommt noch nicht vor.
+### Inhalte (442 Etappen in 25 Strängen, alle vollständig)
+Alle Stränge laufen bis zu ihrer letzten Etappe; jede letzte Etappe schließt mit einem Abschlussgespräch.
 Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte.
 
 ---
@@ -159,7 +139,6 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 - HANAFUDA_MATCH_MINI (Kultur Japan 2): Monat → Pflanze, mit einfacher SVG-Karte.
 - KARUTA_TOUCH_SLAP (Kansai 4, 7): Satz/Hinweis → Karte, mit 8-Sekunden-Zeitbalken.
 - SILHOUETTE_IDENTIFY (Natur 2): Blatt-Umriss → Baum.
-- Noch gar nicht umgesetzt (keine Etappe in den Regionen 1–5): ITEM_SUBMISSION.
 - KANJI_RADICAL_STROKE_PICK ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen), ohne echtes Strich- oder Radikal-Zerlegen.
 
 ### Grafik
@@ -171,9 +150,7 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 - Weltkarte ist schematisch gezeichnet (keine echte Kartengrundlage).
 
 ### Inhalte
-- Region 6: Bilder fertig konvertiert, aber keine Ortsdaten (japanische Schilder, Slots, Hotspots) und keine Dialoge.
-- 97 von 442 Etappen ohne Dialogtexte (alle in Region 6 oder dahinter).
-- Kanji-Strang bis Etappe 16 auf N5 umgestellt (siehe `CHANGES.md`). Ab Etappe 17 stehen im Bundle noch Nicht-N5-Zeichen (u. a. 神, 鳥, 地, 図, 館, 医, 院, 作, 工). Die Hentaigana-Etappe (Hiragana 12) ist ersetzt durch alte Schreibweisen (ゑ/ゐ, Schilder von rechts nach links).
+- Kanji-Strang vollständig auf N5 umgestellt (siehe `CHANGES.md`). Die Hentaigana-Etappe (Hiragana 12) ist ersetzt durch alte Schreibweisen (ゑ/ゐ, Schilder von rechts nach links).
 - Die gelieferten Sachquellen-PDFs decken nur Bundle 04 ab (beide Dateien identisch). Für Region 1 wurden die „200 Fakten“ und Allgemeinwissen genutzt; zu prüfen siehe `CHANGES.md` → „Zur Faktenprüfung“.
 
 ### Technik

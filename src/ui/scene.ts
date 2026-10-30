@@ -94,6 +94,22 @@ export function setMood(m: Mood | null | undefined) {
   top.dataset.mood = m ?? 'day';
 }
 
+/** Innenraum-Hintergrund (img/bg/…) für die Dauer einer Etappe; null stellt den Screen wieder her. */
+export function setStageBg(key: string | null | undefined, lead?: string) {
+  for (const el of npcLayer.querySelectorAll<HTMLElement>('.npc')) el.classList.toggle('lead', !!key && el.dataset.npc === lead);
+  if (!key) {
+    if (!top.classList.contains('interior')) return;
+    top.classList.remove('interior');
+    bg.src = imgScreen(currentScreen, smallImages());
+    return;
+  }
+  const src = `img/bg/${key}${smallImages() ? '@s' : ''}.webp`;
+  top.classList.add('fading');
+  const img = new Image();
+  img.onload = img.onerror = () => { bg.src = src; top.classList.add('interior'); top.classList.remove('fading'); };
+  img.src = src;
+}
+
 /** Aktuelles Hintergrundbild (für Foto-Ausschnitte). */
 export function sceneImage(): string { return bg.src; }
 

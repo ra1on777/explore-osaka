@@ -7,7 +7,7 @@ const world = j('src/data/world.json');
 const npcs = j('src/data/npcs.json');
 const lang = 'de';
 const stages = {};
-for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang'])
+for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang', 'stages_r6_a', 'stages_r6_b', 'stages_r6_lang'])
   for (const [q, st] of Object.entries(j(`src/content/${lang}/${f}.json`))) stages[q] = { ...stages[q], ...st };
 const art = readFileSync('src/ui/art.ts', 'utf8');
 const hasArt = (k) => new RegExp(`\\b${k}\\s*:`).test(art);
@@ -38,6 +38,11 @@ for (const q of quests) {
     const c = stages[q.quest_id]?.[String(s.stage_index)];
     if (!c) { err(`${key}: kein Inhalt`); continue; }
     if (!c.hint) err(`${key}: kein Hinweis`);
+    if (c.bg) {
+      if (!existsSync(`public/img/bg/${c.bg}.webp`)) err(`${key}: Hintergrund ${c.bg} fehlt`);
+      const ts = [...(c.tasks ?? []), ...Object.values(c.variants ?? {}).flatMap((v) => v.tasks ?? [])];
+      if (ts.some((t) => t.type === 'inspect' || t.type === 'photo')) err(`${key}: Innenraum-Hintergrund mit Bildaufgabe`);
+    }
     if (s.interaction_type === 'FETCH_AND_RETURN') {
       if (!c.fetch) err(`${key}: fetch-Inhalt fehlt`);
       else {

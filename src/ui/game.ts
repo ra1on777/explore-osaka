@@ -13,11 +13,11 @@ import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5 } from './art';
+import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5, mapBaseR6 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
-import { ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay } from './scene';
+import { ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay, setStageBg } from './scene';
 import { runTask } from './tasks';
 import { jpBlock, vars } from './text';
 
@@ -239,7 +239,9 @@ async function playStage(questId: string, idx: number) {
     const npc = resolveNpc(def.npc_id);
     ensureNpc(G.screen, npc);
     if (peekProgress(questId).fetch !== 'got') {
+      setStageBg(c.bg, npc);
       await runLines(c.lines);
+      setStageBg(null);
       startFetch(questId);
       save();
       focusNpc(null);
@@ -250,7 +252,9 @@ async function playStage(questId: string, idx: number) {
         h('button', { class: 'btn primary wide', 'data-primary': '', onclick: () => r() }, t('common.next')))));
       return;
     }
+    setStageBg(c.bg, npc);
     await runLines(c.after);
+    setStageBg(null);
     completeStage(questId, idx, 0);
     save();
     await resultCard(questId, null);
@@ -259,6 +263,7 @@ async function playStage(questId: string, idx: number) {
   const npcId = resolveNpc(def.npc_id);
   ensureNpc(G.screen, npcId);
   if (c.mood && !SCREENS[G.screen]?.night) setMood(c.mood);
+  setStageBg(c.bg, npcId);
   await runLines(c.lines);
   let errors = 0;
   for (const task of c.tasks ?? []) {
@@ -272,6 +277,7 @@ async function playStage(questId: string, idx: number) {
   await runLines(after);
   const res = completeStage(questId, idx, errors);
   save();
+  setStageBg(null);
   await resultCard(questId, res.stars);
   setMood(null);
 }
@@ -308,7 +314,7 @@ function mapScreen(regionId?: string) {
       onclick: () => pick(c.id),
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
   });
-  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4, R5: mapBaseR5 };
+  const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4, R5: mapBaseR5, R6: mapBaseR6 };
   showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();

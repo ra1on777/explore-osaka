@@ -73,6 +73,9 @@ export const icons: Record<string, string> = {
   gate: I('<path d="M3 7h18M5 4h14l2 3M5 7v14M19 7v14M5 13h14M10 13v8M14 13v8"/>'),
   torii: I('<path d="M2 5c6 2 14 2 20 0M4 9h16M7 6v15M17 6v15"/>'),
   bridge: I('<path d="M2 18c4-8 16-8 20 0M2 18h20M7 13v5M12 11v7M17 13v5"/>'),
+  lantern: I('<path d="M12 2v3M9 5h6M7 8c0-2 10-2 10 0v8c0 2-10 2-10 0zM9 19h6M12 19v3"/><path d="M7 12h10"/>'),
+  amulet: I('<path d="M8 6l4-3 4 3v14H8z"/><path d="M10 10h4M10 13h4"/><path d="M12 3V1"/>'),
+  fortune: I('<path d="M6 4h12v16H6z"/><path d="M9 8h6M9 11h6M9 14h4"/><path d="M4 4h4M16 20h4"/>'),
   gear: I('<circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>'),
 };
 
@@ -178,6 +181,9 @@ export const leaves: Record<string, string> = {
   maple: L(`<path d="M60 18l7 22 16-12-4 20 20-2-14 14 14 8-20 4 4 16-16-10-7 22-7-22-16 10 4-16-20-4 14-8-14-14 20 2-4-20 16 12z"/><path d="M60 92v16" fill="none"/>`),
   ginkgo: L(`<path d="M60 92C40 80 24 52 26 30c12 2 24 4 30 10l4 10 4-10c6-6 18-8 30-10 2 22-14 50-34 62z"/><path d="M60 92v18" fill="none"/>`),
   pine: L(`<g fill="none" stroke-width="3"><path d="M60 104l-20-84M60 104l-8-86M60 104l20-84M60 104l8-86"/></g><path d="M54 100h12v10H54z"/>`),
+  bamboo: L(`<path d="M30 92C40 60 70 30 98 22 92 52 64 82 30 92z"/><path d="M30 92L98 22" fill="none"/><path d="M20 104l14-14" fill="none" stroke-width="4"/>`),
+  tsubaki: L(`<path d="M60 100C34 92 24 64 34 34c14 6 22 18 26 30 4-12 12-24 26-30 10 30 0 58-26 66z"/><path d="M60 100V60M60 76l-12-10M60 70l12-8" fill="none"/>`),
+  moss: L(`<g stroke-width="1.5">${Array.from({ length: 9 }, (_, i) => `<path d="M${20 + i * 10} 100c-2-20 4-34 10-50M${20 + i * 10} 100c4-16 2-30-6-40" fill="none" stroke-width="2.5"/><path d="M${28 + i * 10} 50l4-6 3 7z"/>`).join('')}</g><path d="M10 100h100v8H10z" fill="#7a6a4a"/>`),
 };
 
 // ---------- Hanafuda-Karten (vereinfachte Motive) ----------
@@ -192,6 +198,12 @@ export const hanafuda: Record<string, string> = {
   'hf-4': HF('#f3efe4', `<path d="M10 8c20 6 40 4 60 0" stroke="#5a3b2a" stroke-width="4" fill="none"/>${[18, 34, 50].map((x) => [0, 1, 2, 3, 4].map((j) => `<circle cx="${x + (j % 2) * 3}" cy="${20 + j * 12}" r="5" fill="#9b74c9" stroke="${O}"/>`).join('')).join('')}`, '四'),
   'hf-5': HF('#e9f1f7', `<path d="M4 98h72" stroke="${BLUE}" stroke-width="5"/>${[20, 38, 56].map((x) => `<path d="M${x} 100V54" stroke="${GREEN}" stroke-width="3"/><path d="M${x} 56c-8-6-6-16 0-20 6 4 8 14 0 20z" fill="#5b45b0" stroke="${O}"/>`).join('')}`, '五'),
   'hf-6': HF('#f6efe0', `${flower(36, 74, 13, '#e05570')}<path d="M54 44c6-6 14-4 14 2-6 2-8 6-14-2zM54 44c-2-8 4-12 10-10-2 6 0 8-10 10z" fill="${GOLD}" stroke="${O}"/>`, '六'),
+  'hf-1': HF('#c94a3a', `<circle cx="40" cy="44" r="14" fill="${GOLD}" opacity=".9"/><path d="M14 112c6-22 14-30 26-34M40 78c10-4 20-2 28 6" stroke="#3a2a1a" stroke-width="5" fill="none"/><path d="M10 92c10-12 30-12 40 0zM34 76c10-12 30-12 40 0z" fill="#2f5a3a" stroke="${O}"/><path d="M18 64c6-10 18-14 24-6l10-8 2 6-10 6c-4 8-18 10-26 2z" fill="#fff" stroke="${O}"/><circle cx="50" cy="52" r="2" fill="${RED}"/>`, '一'),
+  'hf-8': HF('#e9e2c8', `<rect x="4" y="4" width="72" height="56" fill="#c94a3a"/><circle cx="36" cy="40" r="18" fill="#fff" stroke="${O}"/><path d="M4 116c20-50 50-60 72-60v60z" fill="#2a2a2a"/>${[16, 28, 40, 52, 64].map((x) => `<path d="M${x} 116c0-20 4-34 10-44" stroke="#c9b27a" stroke-width="3" fill="none"/>`).join('')}`, '八'),
+  'hf-9': HF('#f3efe4', `${flower(28, 40, 10, '#e9c04a')}${flower(50, 62, 9, '#e9c04a')}<path d="M24 86h32l-4 20H28z" fill="${RED}" stroke="${O}" stroke-width="2"/><text x="40" y="100" font-size="9" text-anchor="middle" fill="${GOLD}">寿</text>`, '九'),
+  'hf-10': HF('#f3efe4', `<path d="M10 20c20 10 40 8 60 0" stroke="#5a3b2a" stroke-width="4" fill="none"/>${[[20, 30], [40, 26], [58, 32]].map(([x, y]) => `<path d="M${x} ${y}l4 10 9-3-6 8 8 4-10 1 1 10-6-8-6 8 1-10-10-1 8-4-6-8 9 3z" fill="#d6452f" stroke="${O}"/>`).join('')}<path d="M24 110l4-30c4-10 16-10 20 0l4 30M30 72l-6-12M46 72l6-12" stroke="#8a5a32" stroke-width="5" fill="none"/>`, '十'),
+  'hf-11': HF('#3a3a5a', `<path d="M8 4c4 40 10 70 14 110M20 4c2 40 8 70 10 110" stroke="#6fa56a" stroke-width="3" fill="none"/>${[50, 58, 66].map((x) => `<path d="M${x} 10l-8 30" stroke="#9ab" stroke-width="1.5"/>`).join('')}<circle cx="52" cy="70" r="7" fill="#f6e3b4" stroke="${O}"/><path d="M38 66h28l-14-10z" fill="${RED}" stroke="${O}"/><path d="M46 78h12l4 30H42z" fill="#e9e2c8" stroke="${O}"/>`, '十一'),
+  'hf-12': HF('#e9d3a0', `<path d="M40 112V70" stroke="#5a3b2a" stroke-width="5"/><path d="M14 74c10-20 42-20 52 0-10 10-42 10-52 0z" fill="#4E7B74" stroke="${O}"/><path d="M20 50c10-24 30-30 44-20-6 2-10 6-10 10 10-4 18 0 18 0-12 6-24 18-52 10z" fill="${RED}" stroke="${O}"/><circle cx="54" cy="34" r="2" fill="${O}"/>`, '十二'),
 };
 
 // ---------- Fußball / Elfmeter / Karuta ----------
@@ -657,6 +669,34 @@ Object.assign(closeups, {
     ${[[40, 110], [60, 86], [86, 64], [112, 46], [140, 30], [164, 16]].map(([x, y]) => `<path d="M${x} ${y}l8-8 8 8-8 10z" fill="#5c8a3a" stroke="${O}"/>`).join('')}`),
 });
 
+// ---------- Region 6: Nahaufnahmen ----------
+Object.assign(closeups, {
+  keyhole: C(`<rect width="200" height="150" fill="#7aa36a"/><path d="M100 18a34 34 0 0 1 22 60l26 52H52l26-52a34 34 0 0 1 22-60z" fill="#3f6b3a" stroke="#5f97c9" stroke-width="10"/><text x="100" y="146" font-size="9" text-anchor="middle" fill="#fff" font-family="Manrope, sans-serif">Draufsicht · Schlüssellochform</text>`),
+  shimenawa: C(`<path d="M20 40c50 26 110 26 160 0" stroke="#c9b27a" stroke-width="14" fill="none"/><path d="M20 40c50 26 110 26 160 0" stroke="${O}" stroke-width="2" fill="none" stroke-dasharray="10 6"/>${[52, 84, 116, 148].map((x) => `<path d="M${x} 58l-8 12 16 6-8 12 16 6" stroke="${O}" stroke-width="2" fill="#fff"/>`).join('')}`),
+  taikobashi: C(`<rect width="200" height="150" fill="#cfe2f5"/><path d="M0 120h200v30H0z" fill="#5f97c9"/><path d="M20 120C50 30 150 30 180 120" stroke="${RED}" stroke-width="12" fill="none"/>${[40, 60, 80, 100, 120, 140, 160].map((x) => `<path d="M${x} ${x < 100 ? 140 - x * 0.9 : 140 - (200 - x) * 0.9}v-16" stroke="${RED}" stroke-width="3"/>`).join('')}`),
+  chawan: C(`<path d="M50 60h100c0 40-20 64-50 64S50 100 50 60z" fill="#3e3a36" stroke="${O}" stroke-width="2"/><ellipse cx="100" cy="60" rx="50" ry="12" fill="#6fa56a" stroke="${O}" stroke-width="2"/><path d="M80 58c10-4 30-4 40 0" stroke="#a8d39a" stroke-width="3" fill="none"/><path d="M150 40l20-24" stroke="#c8a46a" stroke-width="4"/>`),
+  omikuji: C(`<rect x="60" y="10" width="80" height="130" fill="#fff" stroke="${O}" stroke-width="2"/><text x="100" y="40" font-size="22" font-weight="700" text-anchor="middle" fill="${RED}">大吉</text><text x="100" y="60" font-size="9" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">daikichi · großes Glück</text>${[76, 88, 100, 112].map((y) => `<path d="M70 ${y}h60" stroke="#aaa"/>`).join('')}`),
+  kamon: C(`<rect width="200" height="150" fill="#2c2a2a"/>${[[55, 75], [145, 75]].map(([x, y], i) => `<circle cx="${x}" cy="${y}" r="40" fill="none" stroke="${GOLD}" stroke-width="4"/>${i ? `<path d="M${x} ${y - 28}l8 20 20 2-16 12 6 20-18-12-18 12 6-20-16-12 20-2z" fill="${GOLD}"/>` : `<path d="M${x - 26} ${y + 10}c10-30 42-30 52 0M${x} ${y - 30}v50M${x - 16} ${y - 18}c4 10 28 10 32 0" stroke="${GOLD}" stroke-width="5" fill="none"/>`}`).join('')}`),
+  sakaicraft: C(`<rect width="200" height="150" fill="#3a2f28"/><path d="M20 60h110l30-10v14l-30 6H20z" fill="#d9dde2" stroke="${O}" stroke-width="2"/><rect x="2" y="56" width="22" height="16" rx="3" fill="#5a3b2a"/><path d="M20 100h120l24-6v10l-24 4H20z" fill="#d9dde2" stroke="${O}" stroke-width="2"/><rect x="2" y="96" width="22" height="16" rx="3" fill="#5a3b2a"/>${[150, 160, 170, 180].map((x) => `<path d="M${x} 140V20" stroke="#8a5a32" stroke-width="3"/><path d="M${x} 20c-4-8 4-12 0-18" stroke="#ccc" fill="none"/>`).join('')}`),
+  jomon: C(`<rect width="200" height="150" fill="#e8d6b8"/><path d="M60 140V50c0-30 80-30 80 0v90z" fill="#c98b5a" stroke="${O}" stroke-width="3"/><path d="M66 60c14 10 20-10 34 0s20-10 34 0M66 84c14 10 20-10 34 0s20-10 34 0M66 108c14 10 20-10 34 0s20-10 34 0" stroke="${O}" stroke-width="3" fill="none"/><path d="M52 40c-10-14 6-26 16-14M148 40c10-14-6-26-16-14" stroke="${O}" stroke-width="4" fill="none"/>`),
+  teppo: C(`<rect width="200" height="150" fill="#d9c9a8"/><path d="M14 70h150l20-6v12l-20-2H14z" fill="#5a5a5a" stroke="${O}" stroke-width="2"/><path d="M40 74l-20 40h30l18-36z" fill="#8a5a32" stroke="${O}" stroke-width="2"/><text x="100" y="130" font-size="12" text-anchor="middle" fill="${O}">堺 · 鉄砲</text>`),
+  yakisoba: C(`<rect x="10" y="60" width="180" height="70" rx="6" fill="#444" stroke="${O}" stroke-width="2"/>${Array.from({ length: 10 }, (_, i) => `<path d="M${30 + i * 14} 80c10 10-6 20 4 34" stroke="#c98b45" stroke-width="5" fill="none"/>`).join('')}<circle cx="70" cy="90" r="5" fill="#5c8a3a"/><circle cx="130" cy="100" r="5" fill="${RED}"/><rect x="150" y="16" width="26" height="44" rx="4" fill="#5a3b2a" stroke="${O}"/><text x="163" y="44" font-size="9" text-anchor="middle" fill="#fff">ソース</text>`),
+  crema: C(`<rect width="200" height="150" fill="#e8e2d0"/><path d="M70 30h60v90a10 10 0 0 1-10 10H80a10 10 0 0 1-10-10z" fill="#fff" opacity=".6" stroke="${O}" stroke-width="2"/><rect x="72" y="70" width="56" height="58" fill="#3b2418"/><rect x="72" y="58" width="56" height="14" fill="#c48a52"/><path d="M76 62c10 4 20-2 30 2s14-2 20 0" stroke="#e8b27a" stroke-width="2" fill="none"/>`),
+  stampbook: C(`<rect x="24" y="16" width="152" height="118" rx="4" fill="${PAPER}" stroke="${O}" stroke-width="2"/><path d="M100 16v118" stroke="${O}"/>${[[50, 44], [76, 44], [50, 76], [76, 76], [124, 44], [150, 44], [124, 76], [150, 76], [124, 108]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="11" fill="none" stroke="${RED}" stroke-width="3"/>`).join('')}<circle cx="150" cy="108" r="11" fill="none" stroke="${RED}" stroke-width="3" stroke-dasharray="3 3"/>`),
+  bell: C(`<rect width="200" height="150" fill="#d9d2c2"/><path d="M100 14v12" stroke="${O}" stroke-width="4"/><path d="M66 120V56c0-24 68-24 68 0v64z" fill="#6b5a3a" stroke="${O}" stroke-width="3"/><path d="M60 120h80" stroke="${O}" stroke-width="5"/><path d="M20 70h30" stroke="#8a6427" stroke-width="10"/><path d="M150 60c10 6 14 14 14 24M160 54c14 8 20 20 20 34" stroke="${O}" stroke-width="2" fill="none"/>`),
+  akamon: C(`<rect width="200" height="150" fill="#cfe2f5"/><path d="M20 40l80-24 80 24z" fill="#3a3a3a"/><rect x="40" y="40" width="120" height="16" fill="${RED}" stroke="${O}"/><rect x="50" y="56" width="16" height="84" fill="${RED}" stroke="${O}"/><rect x="134" y="56" width="16" height="84" fill="${RED}" stroke="${O}"/><path d="M66 140h68" stroke="#999" stroke-width="6"/><text x="100" y="106" font-size="9" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">Start: 6 Uhr · 10. Januar</text>`),
+  lioneyes: C(`<rect width="200" height="150" fill="#7a9a86"/>${[60, 140].map((x) => `<ellipse cx="${x}" cy="72" rx="34" ry="26" fill="${GOLD}" stroke="${O}" stroke-width="3"/><circle cx="${x}" cy="72" r="13" fill="${O}"/><circle cx="${x - 4}" cy="68" r="4" fill="#fff"/>`).join('')}<path d="M24 36c20-14 40-14 60 0M116 36c20-14 40-14 60 0" stroke="${O}" stroke-width="5" fill="none"/>`),
+  sacredtree: C(`<rect width="200" height="150" fill="#cfe7c0"/><path d="M80 150V30h40v120z" fill="#7a5230" stroke="${O}" stroke-width="2"/><path d="M76 70c16 8 32 8 48 0" stroke="#c9b27a" stroke-width="8" fill="none"/>${[88, 100, 112].map((x) => `<path d="M${x} 76l-5 8 10 4-5 8" stroke="${O}" fill="#fff"/>`).join('')}<path d="M60 30c0-20 80-20 80 0" fill="#3d5a2a"/>`),
+  lanterns: C(`<rect width="200" height="150" fill="#d9e0d0"/>${[30, 80, 130, 172].map((x, i) => `<g transform="translate(${x - 16} ${30 + i * 6}) scale(${1 - i * 0.12})"><path d="M8 0h16l6 10H2z" fill="#8a8a8a" stroke="${O}"/><rect x="6" y="10" width="20" height="18" fill="#bdbdbd" stroke="${O}"/><rect x="11" y="14" width="10" height="8" fill="#f7e8a0"/><path d="M2 28h28v6H2zM12 34h8v40h-8zM4 74h24v8H4z" fill="#8a8a8a" stroke="${O}"/></g>`).join('')}`),
+  soil: C(`<rect x="60" y="20" width="80" height="110" rx="8" fill="#eef" stroke="${O}" stroke-width="2" opacity=".9"/><rect x="62" y="60" width="76" height="68" fill="#8a6a42"/><rect x="62" y="90" width="76" height="38" fill="#b48a52"/><rect x="74" y="34" width="52" height="16" fill="#fff" stroke="${O}"/><text x="100" y="46" font-size="9" text-anchor="middle" fill="${O}">Probe 67</text>`),
+  plantbook: C(`<rect x="30" y="20" width="140" height="110" rx="4" fill="#fff" stroke="${O}" stroke-width="2"/><path d="M100 20v110" stroke="${O}"/><path d="M50 100c10-30 20-40 30-46M60 74c-10 0-14-10-10-14 6 0 10 6 10 14z" stroke="${GREEN}" stroke-width="3" fill="#9ccf8c"/><circle cx="140" cy="62" r="18" fill="#f4c7cf" stroke="${O}"/><path d="M118 96h44M118 106h36" stroke="#aaa" stroke-width="3"/>`),
+  letter: C(`<rect x="30" y="34" width="140" height="86" fill="#f6efe0" stroke="${O}" stroke-width="2"/><path d="M30 34l70 50 70-50" stroke="${O}" stroke-width="2" fill="none"/><circle cx="140" cy="100" r="10" fill="${RED}"/>`),
+  kadomatsu: C(`<rect width="200" height="150" fill="#f3efe4"/>${[80, 100, 120].map((x, i) => `<path d="M${x - 8} 140V${30 + i * 12}l8-10 8 10v${110 - i * 12}z" fill="#6fa56a" stroke="${O}"/>`).join('')}<path d="M60 110h80v30H60z" fill="#c9a15a" stroke="${O}"/><path d="M58 100c10-20 20-30 30-30M142 100c-10-20-20-30-30-30" stroke="#2f5a3a" stroke-width="8" fill="none"/>`),
+  usb: C(`<rect x="50" y="56" width="100" height="40" rx="8" fill="#1F4B8F" stroke="${O}" stroke-width="2"/><rect x="150" y="64" width="26" height="24" fill="#c9ced6" stroke="${O}"/><text x="100" y="82" font-size="11" text-anchor="middle" fill="#fff" font-family="Manrope, sans-serif">LIGA-DATEN</text>`),
+  scale: C(`<rect x="40" y="70" width="120" height="50" rx="8" fill="#2a2a2a" stroke="${O}" stroke-width="2"/><rect x="60" y="56" width="80" height="14" rx="3" fill="#9aa1a8" stroke="${O}"/><rect x="74" y="84" width="52" height="20" fill="#9ad19a"/><text x="100" y="99" font-size="12" text-anchor="middle" fill="${O}" font-family="Manrope, sans-serif">18,0 g</text>`),
+  whetstone: C(`<rect x="30" y="80" width="140" height="34" rx="4" fill="#c97a4a" stroke="${O}" stroke-width="2"/><rect x="30" y="114" width="140" height="14" fill="#8a5a32" stroke="${O}"/><path d="M40 70l120-14 6 8-120 16z" fill="#d9dde2" stroke="${O}" stroke-width="2"/><path d="M160 56l24-4v10l-18 2z" fill="#5a3b2a" stroke="${O}"/>`),
+});
+
 export const mapBaseR5 = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <rect width="1000" height="820" fill="#12213F"/>
   <path d="M0 0h90c-10 260 0 540 30 820H0z" fill="#1c3b5e"/>
@@ -673,6 +713,22 @@ export const mapBaseR5 = wrap('0 0 1000 820" preserveAspectRatio="none', `
   <text x="985" y="460" font-size="16" text-anchor="end" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">JR-Ringlinie</text>
   <text x="420" y="30" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">↑ Namba / Burg</text>
   <text x="560" y="800" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Sumiyoshi ↓</text>`);
+
+export const mapBaseR6 = wrap('0 0 1000 820" preserveAspectRatio="none', `
+  <rect width="1000" height="820" fill="#12213F"/>
+  <path d="M0 0h160c-30 200-60 420-40 820H0z" fill="#1c3b5e"/>
+  <path d="M150 470C330 480 560 470 1000 430" stroke="#2E5BA6" stroke-width="20" fill="none" opacity=".8"/>
+  <ellipse cx="560" cy="200" rx="160" ry="90" fill="#1f4a3a" opacity=".9"/>
+  <path d="M440 560c30-30 90-30 110 0s0 90-50 110-90-60-60-110z" fill="#24513a" stroke="#2E5BA6" stroke-width="10" opacity=".95"/>
+  <path d="M380 0C380 260 300 520 250 820" stroke="#c9a15a" stroke-width="5" stroke-dasharray="6 8" fill="none" opacity=".7"/>
+  <path d="M560 0V820" stroke="#5a6570" stroke-width="9" stroke-dasharray="22 10" opacity=".5"/>
+  <path d="M0 700H1000" stroke="#5a6570" stroke-width="8" stroke-dasharray="20 10" opacity=".45"/>
+  <text x="60" y="260" font-size="22" fill="rgba(243,241,234,.35)" font-family="Fredoka, sans-serif" transform="rotate(-86 60 260)">Bucht von Ōsaka</text>
+  <text x="780" y="460" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Yamato-gawa</text>
+  <text x="560" y="300" font-size="16" text-anchor="middle" fill="rgba(243,241,234,.4)" font-family="Fredoka, sans-serif">Nagai-Park</text>
+  <text x="330" y="150" font-size="15" fill="rgba(201,161,90,.6)" font-family="Fredoka, sans-serif" transform="rotate(95 330 150)">Hankai-Tram</text>
+  <text x="575" y="40" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">↑ Tennōji</text>
+  <text x="620" y="800" font-size="18" fill="rgba(243,241,234,.3)" font-family="Fredoka, sans-serif">Sakai ↓</text>`);
 
 export const pickupIcon = wrap('0 0 40 48', `
   <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>

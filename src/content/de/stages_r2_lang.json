@@ -623,6 +623,7 @@
    "hint": "Ein Café am Fluss, wo die Terrassen über das Wasser ragen."
   },
   "8": {
+   "bg": "gen_bg_cafe_modern_blur",
    "lines": [
     {
      "s": "ren",
@@ -2082,6 +2083,7 @@
    "hint": "Cafés, deren Terrassen über das Wasser ragen."
   },
   "8": {
+   "bg": "gen_bg_cafe_modern_blur",
    "lines": [
     {
      "s": "ren",

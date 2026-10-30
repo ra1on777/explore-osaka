@@ -80,48 +80,45 @@ Alle Punkte bestätigt. Präzisierungen eingearbeitet:
 - Romance 28: Die Wahl (Kuss / Freundschaft) wird als Flag `ending` gespeichert.
 - Café-Kultur 6 („Dende Town“) und Fußball 12 („Revanchmatch“) erscheinen im Spiel korrekt geschrieben.
 
-## Zur Faktenprüfung (Region 5)
-Nach bestem Wissen geschrieben; bitte gegenprüfen:
-- Midō-suji 1937 auf 44 m verbreitert, U-Bahn darunter seit 1933.
-- Shinsekai 1912: Nordteil nach Pariser Vorbild, Vergnügungspark „Luna Park“ nach Coney Island; erster Tsūtenkaku 1912 (Eiffelturm-Anklang), im Krieg abgebaut; heutiger Turm 1956, rund 103 m (108 m mit Blitzableiter).
-- Wetterlicht des Tsūtenkaku: Weiß = sonnig, Orange = bewölkt, Blau = Regen.
-- Riesenrad Tempozan: Beleuchtung als Wettervorhersage für den nächsten Tag (Rot = sonnig, Grün = bewölkt, Blau = Regen).
-- Billiken: 1908 von einer amerikanischen Künstlerin (Florence Pretz) erfunden, „God of things as they ought to be“, seit 1912 in Shinsekai; Fußsohlen streicheln bringt Glück.
-- Abeno Harukas 300 m, eröffnet 2014, lange höchstes Gebäude Japans.
-- Kostenlose Stadtfähren (渡船) vor allem in Taishō, seit über hundert Jahren städtisch betrieben.
-- Kyocera Dome auf dem Gelände eines ehemaligen Gaswerks.
-- Stadthalle Nakanoshima (1918), gestiftet vom Börsenmakler Iwamoto Einosuke (1 Million Yen).
-- Osaka Station City 2011; Umekita auf dem Gelände des früheren Güterbahnhofs Umeda, mit großem Park.
-- Museum of Housing and Living: nachgebaute Straße der 1830er Jahre (Tenpō-Zeit).
-- Hankai-Tram: letzte Straßenbahnlinie Ōsakas, seit über hundert Jahren, von Ebisuchō bis Sakai.
-- Umeda Sky Building 1993 mit „schwebender Rolltreppe“ und Floating Garden.
-- Turm der Sonne (Okamoto Tarō, 1970): goldenes Gesicht = Zukunft, Mitte = Gegenwart, Schwarze Sonne hinten = Vergangenheit.
-- Kōshien-Efeu 1924 gepflanzt, beim Umbau entfernt und aus Ablegern neu gepflanzt.
-- Kushikatsu: nido-zuke kinshi, Kohlblatt als Löffel. Doteyaki mit (weißer) Miso. Milch aus der Glasflasche nach dem Bad.
-- Okinawa-Soba-Brühe aus Schweinefleisch und Katsuobushi. Bukubuku-chā mit Schaum aus Reis-Röstwasser und Erdnüssen.
-- Chicken Ramen 1958, Cup Noodle 1971 (Andō Momofuku, Ikeda). Momiji-Tempura: Blätter rund ein Jahr in Salz eingelegt.
-- Kitsune-Udon in Ōsaka im 19. Jahrhundert erfunden.
-- Mizuhiki: Rot-Weiß für freudige, Schwarz-Weiß/Silber für traurige Anlässe.
-- Setsuwa-Sammlung (Nihon Ryōiki) aus dem frühen 9. Jahrhundert.
-- Chikamatsu: Shusse Kagekiyo 1685, Sonezaki Shinjū 1703, Kokusen'ya Kassen 1715, Shinjū Ten no Amijima 1720. Saikaku: Kōshoku Ichidai Otoko 1682. Ueda Akinari: Ugetsu Monogatari 1776.
-- Sanada Yukimura als „bester Krieger Japans“ (日本一の兵), Sanada-maru im Süden der Burg.
-- Endō Shūsaku, „Schweigen“ (1966), selbst Katholik.
-- Shitennō-ji 593 von Prinz Shōtoku gegründet; Anordnung Tor–Pagode–Haupthalle–Lehrhalle in einer Süd-Nord-Linie; vier Einrichtungen (Kyōden-in, Hiden-in, Ryōbyō-in, Seyaku-in); Garten des Reinen Landes; steinernes Torii am Westtor, Sonnenuntergang zur Tagundnachtgleiche.
-- Ryūan-ji in Minō als Ursprung einer der ältesten Lotterien Japans (Minō-tomi); En no Gyōja / Shugendō / Yamabushi.
-- Ishiyama Hongan-ji: zehnjähriger Krieg gegen Oda Nobunaga, Aufgabe 1580; später Burg Ōsaka auf dem Gelände.
-- Siebzehn-Artikel-Verfassung, Artikel 1 „Wa“. Ogyū Sorai: Ordnung von den alten Weisen gemacht.
-- Sakata Sankichi als legendärer Shōgi-Spieler aus der Gegend.
-- JR-Spezial-Schnellzug Ōsaka–Kyōto rund 29 Minuten.
-- Kansai-ben: honma, akan, ōkini; Kyōto: oideyasu.
-- Tenjin Matsuri am 24./25. Juli mit über hundert Booten und Feuerwerk, eines der drei großen Feste Japans.
-- Takoishi über hundert Tonnen.
-- Hideyoshi „Taikō“: Titel eines Regenten im Ruhestand.
-- Mōkarimakka / Bochi-bochi denna; Sprichwort „Handel ist wie der Speichel einer Kuh“ (商いは牛の涎).
-- OMU 2022 aus Ōsaka City University und Ōsaka Prefecture University; Wurzeln in einer Handelsschule, die Godai Tomoatsu mitgegründet hat; Godai baute auch die Handelskammer auf.
-- Weltmeisterschaft 2002 im Nagai-Stadion.
+## Faktencheck Region 5 – bestätigt
+Alle Punkte bestätigt. Präzisierungen eingearbeitet:
+- Bukubuku-chā: Schaum aus geröstetem Reiswasser; Erdnüsse nur fein zerstoßen obendrauf.
+- Chikamatsu: Shusse Kagekiyo 1686 (statt 1685).
+- Kitsune-Udon 1893 (Matsubaya), Nihon Ryōiki um 822 (Keikai), Takoishi rund 108–130 t, Kyocera Dome auf dem Gelände des Gaswerks Iwasakibashi.
 
-## Noch zu korrigieren (außerhalb der Demo, betrifft spätere Regionen)
-- „Makerte ya!“ → „Makete ya!“ (Shopping, Etappe 4).
+## Region 6
+- Kanji 17–24: Die Bundle-Zeichen 社 神 鳥 道 白 古 新 田 地 長 工 金 作 図 書 館 生 医 院 電 気 話 sind größtenteils kein N5. Stattdessen die übrigen N5-Kanji: 名 前 後, 高 長 外 国, 日本 本 間, 見 聞 読 書, 語 話, 気 父 母 友, 電 雨 午, Abschlussraster über alle Gruppen.
+- Kultur Japan 11: Statt Faltfächer und Lack (keine Sakai-Spezialität) Messer und Räucherstäbchen, beides traditionelles Sakai-Handwerk.
+- Kultur Japan 13: Statt einer offenen Schätzfrage zum „Erfindergeist“ das Erscheinungsjahr des Cup Noodle (1971).
+- Fußball 13: Erwähnt wird Japans Gruppensieg gegen Tunesien 2002 im Nagai-Stadion. (Das Viertelfinale England–Brasilien fand nach meinem Wissen in Shizuoka statt, im Nagai-Stadion war das Viertelfinale Senegal–Türkei – darum nicht verwendet.)
+- Natur 9 (Silhouetten): Bambus, Kamelie, Moos und Kiefer statt Trittstein-Formen.
+- Kuidaore 15: Gen hat seinen Schleifstein dem Teemeister im Daisen-Park geliehen (Fetch-Ziel 68 wie im Bundle).
+- Schreine 7: Ein verlorenes Prüfungs-Omamori aus Namba Parks (Fetch-Ziel 41 wie im Bundle).
+- Café 12 und 17 sowie Nachtleben 4/5/9/12/17, Kuidaore 9, Romance 3/6/14, Café 2/3, Konversation 8, Katakana 8, Nachtleben 6 nutzen die Innenraum-Hintergründe (Café, Izakaya, Dōtonbori im Regen).
+
+## Zur Faktenprüfung (Region 6)
+Nach bestem Wissen geschrieben; bitte gegenprüfen:
+- Sumiyoshi Taisha früher direkt an der Küste; Sumiyoshi-zukuri (gerade Dächer, Eingang an der Giebelseite) als vorbuddhistischer Stil, Haupthallen Nationalschätze; drei Meeresgötter + Kaiserin Jingū, Schutz von Seefahrt und Dichtkunst; über 600 Steinlaternen von Händlern/Reedern; Taiko-bashi als Übergang; zu Neujahr über zwei Millionen Besucher.
+- Daisen-Kofun fast 500 m, Schlüssellochform, Wassergräben, Welterbe Mozu-Furuichi seit 2019, darf nicht betreten werden; Haniwa 3.–6. Jh.
+- Sen no Rikyū aus Sakai, Zen am Daitoku-ji (Rinzai), Wabi; Teeweg-Grundsätze Wa Kei Sei Jaku; niedrige Tür (Nijiriguchi).
+- Motoori Norinaga (18. Jh.), mono no aware. Misogi/Kegare, Shimenawa.
+- Kaitokudō/Tekijuku als Wurzeln der Handai.
+- Omikuji-Stufen und Festbinden schlechter Lose; Verbeugungswinkel 15/30/45°; zweimal verbeugen, zweimal klatschen, einmal verbeugen.
+- Kiri-Wappen der Toyotomi, heute Regierungssymbol.
+- Osechi, Kadomatsu (Kiefer = langes Leben, Bambus = Stärke); O-Bon Mitte August mit Laternen auf dem Wasser.
+- Hanafuda: Oktober Ahorn & Hirsch, September Chrysantheme & Sake-Becher, November Weide & Mann mit Schirm, Januar Kiefer & Kranich, August Pampasgras & Mond, Dezember Paulownie & Phönix; Gokō = fünf helle Karten.
+- Okamoto Tarō und die Jōmon-Keramik.
+- Sakai im 16. Jh. als von Händlern regierte Stadt mit Gräben, „wie Venedig“ (Missionare), Gewehrherstellung; Messer und Räucherstäbchen; Arbeitsteilung bei Sakai-Messern.
+- Ōsaka-Derby Gamba (Suita, Blau-Schwarz) – Cerezo (Nagai, Pink, „Kirschbaum“); Kirschblüte als Blume der Stadt.
+- WM 2002: Japan – Tunesien im Nagai-Stadion. Japanische Fans räumen nach dem Spiel auf.
+- Nishinomiya: Lauf der Fukuotoko am 10. Januar ab 6 Uhr durch das rote Tor; Ebisu als einziger der sieben Glücksgötter japanischen Ursprungs, mit Angel und Meerbrasse.
+- Namba Yasaka: Löwe verschluckt Böses, beliebt vor Prüfungen.
+- Hōkoku-Schrein in der Meiji-Zeit gegründet; Ema = „Bild-Pferd“, früher echte Pferde als Gabe.
+- Chinju no mori, heilige Bäume mit Shimenawa.
+- Senboku New Town ab den 1960ern, Überalterung.
+- OMU Nakamozu mit Pflanzenfabrik (LED-Anbau).
+- Kaffee: Bloom rund 30 (bis 45) Sekunden; weiches Wasser für grünen Tee; Äthiopien fruchtig-blumig, Brasilien nussig-schokoladig.
+- Sanshō auf Aal; Äpfel aus Aomori; Yakisoba; Konamon.
 
 ## Zur Faktenprüfung (Region 1)
 Nach bestem Wissen geschrieben; bitte bei Gelegenheit gegenprüfen:
