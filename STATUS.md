@@ -1,7 +1,13 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.0 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.1 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.1
+- Figurengrößen und Plätze auf allen Screens gegen die gezeichneten Passanten geprüft. Region 4–6 war zu groß und ist jetzt passend skaliert. Figuren stehen nicht mehr auf Personen, im Teich oder an der Bildkante.
+- Innenraum-Hintergründe mit eigener Platzierung je Bild (Café, Zug, Izakaya, Regen-Dōtonbori), kleiner als vorher (50–60 % statt 78 %).
+- Versteckter **Test-Strang** mit 30 Etappen: Adresse mit `?test=1` öffnen (bleibt gespeichert, `?test=0` schaltet aus). Er führt quer durch alle sechs Regionen und deckt alle Aufgabentypen ab: Auswahl, Eingabe, Schätzen, Suchbild, Paare, Katakana, Wörter zuordnen, Satzbau, Runden mit Zeitlimit, Hanafuda, Karuta, Fußball, Elfmeter, Blätter, Routenwahl mit abhängigem Dialog, Shōgi, Kartenquiz, Fahrkarte, Espresso, Sortieren, Zutat raten, Foto und Kanji-Raster. Dazu kommen Holen und Zurückbringen sowie alle vier Innenraum-Hintergründe. Alle sechs Platzhalter-Figuren treten auf, und jeder Hinweis nennt den nächsten Ort. Der Strang zählt nicht zu den 25 Strängen und verrät nichts aus der Hauptgeschichte.
+- Faktencheck Region 6 eingearbeitet (Stadtblumen: Kirschblüte und Stiefmütterchen).
 
 ### Neu in v1.0
 - Region 6 mit 9 Screens und 5 Orten auf eigener Karte (Nagai-Park mit zwei Stadien und botanischem Garten, Sumiyoshi Taisha, Daisen-Kofun mit Teehaus, Handwerksmuseum Sakai, OMU Nakamozu).

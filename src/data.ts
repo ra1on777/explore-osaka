@@ -1,10 +1,15 @@
 import questsJson from './data/quests.json';
 import worldJson from './data/world.json';
 import npcsJson from './data/npcs.json';
+import testQuestJson from './data/quest_test.json';
+import { TEST_MODE } from './testmode';
 import { pack } from './i18n';
 import type { ClusterDef, NpcDef, QuestDef, ScreenDef, Slot, StageContent, StageDef, Task } from './types';
 
-export const QUESTS: QuestDef[] = (questsJson as { quests: QuestDef[] }).quests;
+export const QUESTS: QuestDef[] = [
+  ...(questsJson as { quests: QuestDef[] }).quests,
+  ...(TEST_MODE ? [testQuestJson as QuestDef] : []),
+];
 export const QUEST_BY_ID: Record<string, QuestDef> = Object.fromEntries(QUESTS.map((q) => [q.quest_id, q]));
 export const SCREENS: Record<string, ScreenDef> = worldJson.screens as Record<string, ScreenDef>;
 export const CLUSTERS: ClusterDef[] = worldJson.clusters as ClusterDef[];

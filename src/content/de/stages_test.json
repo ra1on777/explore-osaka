@@ -1,0 +1,1397 @@
+{
+ "STRANG_TEST": {
+  "1": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 1/30 · reiner Dialog] Dieser Strang ist nur zum Testen da. Er erzählt nichts aus der Hauptgeschichte."
+    },
+    {
+     "s": "kenji",
+     "t": "Hey {{name}}! Ich hab gehört, du testest heute das ganze Spiel?",
+     "p": "hyped"
+    },
+    {
+     "s": "me",
+     "t": "Genau. Einmal quer durch Ōsaka."
+    },
+    {
+     "s": "kenji",
+     "t": "Dann los! Jeder Hinweis sagt dir genau, wohin du als Nächstes musst.",
+     "p": "talk"
+    }
+   ],
+   "hint": "Nächster Ort: Mensa „Kasane“ – dort wartet Haruka."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 2/30 · Auswahlfrage]"
+    },
+    {
+     "s": "haruka",
+     "t": "Kleiner Test in der Mensa: Was heißt „mizu“?",
+     "p": "clipboard"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was bedeutet みず (mizu)?",
+     "show": {
+      "jp": "みず"
+     },
+     "options": [
+      "Wasser",
+      "Tee",
+      "Reis",
+      "Suppe"
+     ],
+     "answer": 0,
+     "explain": "みず – Wasser. In der Mensa gibt es es gratis."
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "t": "Richtig! Als Nächstes geht es in die Gemeinschaftsküche im Wohnheim.",
+     "p": "wave"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "みず",
+     "ro": "mizu",
+     "de": "Wasser"
+    }
+   ],
+   "hint": "Nächster Ort: Wohnheim – Gemeinschaftsküche – dort wartet Frau Morimoto."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 3/30 · Wörter zuordnen]"
+    },
+    {
+     "s": "morimoto",
+     "t": "Ordnung muss sein! Ordne die Wörter den Dingen zu.",
+     "p": "clipboard"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "slots",
+     "q": "Ordne die Wörter den Dingen zu.",
+     "items": [
+      {
+       "icon": "key",
+       "label": "Schlüssel",
+       "answer": "kagi"
+      },
+      {
+       "icon": "trash",
+       "label": "Müll",
+       "answer": "gomi"
+      },
+      {
+       "icon": "door",
+       "label": "Zimmer",
+       "answer": "heya"
+      }
+     ],
+     "words": [
+      {
+       "jp": "かぎ",
+       "ro": "kagi"
+      },
+      {
+       "jp": "ごみ",
+       "ro": "gomi"
+      },
+      {
+       "jp": "へや",
+       "ro": "heya"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "t": "Gut gemacht. Und jetzt raus an die frische Luft – zum Wasserfall in Minō.",
+     "p": "smile"
+    }
+   ],
+   "hint": "Nächster Ort: Wasserfall & Weg zum Ryūan-ji – dort wartet Kater Goro."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 4/30 · Suchbild · Platzhalter-Figur Kater Goro]"
+    },
+    {
+     "s": "goro",
+     "t": "Miau. Ein Mensch mit Testauftrag. Such mal die roten Blätter da oben."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Finde die roten Blätter oben rechts.",
+     "x": 85,
+     "y": 15,
+     "r": 10,
+     "closeup": {
+      "art": "momiji",
+      "title": "もみじ",
+      "text": "Momiji – roter Ahorn. Test bestanden, sagt der Kater."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "goro",
+     "t": "Nicht schlecht. Lauf weiter zum Campus-Tor. Da steht einer mit Stempeln."
+    }
+   ],
+   "hint": "Nächster Ort: Campus-Tor & Rotunde – dort wartet Ryōsuke."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 5/30 · Texteingabe · Platzhalter-Figur Ryōsuke]"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Vor dem Stempel kommt die Prüfung. Lies dieses Zeichen!"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "input",
+     "q": "Wie liest man ね? (in Rōmaji)",
+     "show": {
+      "jp": "ね"
+     },
+     "placeholder": "z. B. ka",
+     "accept": [
+      "ne"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ryosuke",
+     "t": "Korrekt. Weiter zum Central Lawn mit dem Uhrturm."
+    }
+   ],
+   "hint": "Nächster Ort: Central Lawn & Uhrturm – dort wartet Haruto."
+  },
+  "6": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 6/30 · Schätzfrage · Platzhalter-Figur Haruto]"
+    },
+    {
+     "s": "kwansei",
+     "t": "Schätzfrage zum Aufwärmen: Wie viele Minuten hat eine Stunde?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie viele Minuten hat eine Stunde?",
+     "min": 0,
+     "max": 120,
+     "step": 1,
+     "answer": 60,
+     "unit": "Min.",
+     "tol": 0.05
+    }
+   ],
+   "after": [
+    {
+     "s": "kwansei",
+     "t": "Na klar, 60. Jetzt in die Stadt: JR Ōsaka Station City, zur großen Uhr."
+    }
+   ],
+   "hint": "Nächster Ort: JR Ōsaka Station City – Toki no Hiroba – dort wartet Tori."
+  },
+  "7": {
+   "bg": "gen_bg_commuter_train_osaka_blur",
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 7/30 · Fahrkartenautomat · Innenraum-Hintergrund Zug · Platzhalter-Figur Tori]"
+    },
+    {
+     "s": "tori",
+     "t": "Pünktlich! Ich fotografiere Züge. Kauf dir schnell eine Karte nach Umeda."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "ticket",
+     "q": "Kauf eine Fahrkarte nach うめだ (Umeda).",
+     "target": "うめだ",
+     "fares": [
+      {
+       "jp": "うめだ",
+       "ro": "Umeda",
+       "price": 190
+      },
+      {
+       "jp": "なんば",
+       "ro": "Namba",
+       "price": 240
+      },
+      {
+       "jp": "てんのうじ",
+       "ro": "Tennōji",
+       "price": 290
+      },
+      {
+       "jp": "きょうと",
+       "ro": "Kyōto",
+       "price": 580
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "tori",
+     "t": "Perfekt. Unten im Untergrund wartet Aoi im Schilder-Labyrinth."
+    }
+   ],
+   "hint": "Nächster Ort: Umeda Dungeon – Schilder-Labyrinth – dort wartet Aoi."
+  },
+  "8": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 8/30 · Kartenquiz]"
+    },
+    {
+     "s": "aoi",
+     "t": "Hier verläuft sich jeder! Zeig mir die Himmelsrichtungen.",
+     "p": "map"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "umeda",
+     "points": [
+      {
+       "id": "kita",
+       "x": 50,
+       "y": 10,
+       "label": "北"
+      },
+      {
+       "id": "higashi",
+       "x": 88,
+       "y": 50,
+       "label": "東"
+      },
+      {
+       "id": "minami",
+       "x": 50,
+       "y": 90,
+       "label": "南"
+      },
+      {
+       "id": "nishi",
+       "x": 12,
+       "y": 50,
+       "label": "西"
+      }
+     ],
+     "rounds": [
+      {
+       "q": "Wo ist Norden – きた?",
+       "answer": "kita",
+       "fb": "北 – kita."
+      },
+      {
+       "q": "Wo ist Westen – にし?",
+       "answer": "nishi",
+       "fb": "西 – nishi."
+      },
+      {
+       "q": "Wo ist Süden – みなみ?",
+       "answer": "minami",
+       "fb": "南 – minami."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "t": "Super! Jetzt ab ans Wasser: Kitahama mit den Terrassen-Cafés.",
+     "p": "happy"
+    }
+   ],
+   "hint": "Nächster Ort: Kitahama – Terrassen-Cafés am Fluss – dort wartet Shizuku."
+  },
+  "9": {
+   "bg": "gen_bg_cafe_modern_blur",
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 9/30 · Espresso-Regler · Innenraum-Hintergrund Café]"
+    },
+    {
+     "s": "shizuku",
+     "t": "Willkommen. Stell die Maschine ein – ruhig und genau.",
+     "p": "calm"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "espresso",
+     "q": "Stell die Maschine ein und zieh einen guten Espresso.",
+     "start": {
+      "grind": 7,
+      "temp": 85,
+      "tamp": 6
+     },
+     "ok": {
+      "grind": [
+       2,
+       4
+      ],
+      "temp": [
+       90,
+       94
+      ],
+      "tamp": [
+       12,
+       20
+      ]
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "shizuku",
+     "t": "Schön. Nebenan auf der Flussinsel liegt die Nakanoshima-Bibliothek.",
+     "p": "serve"
+    }
+   ],
+   "hint": "Nächster Ort: Nakanoshima-Bibliothek – Lesesaal – dort wartet Sensei Ogata."
+  },
+  "10": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 10/30 · Sortieren]"
+    },
+    {
+     "s": "ogata",
+     "t": "Ein leichter Test: Bring den Tag in die richtige Reihenfolge.",
+     "p": "smile"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "sort",
+     "q": "Bring die Tageszeiten in die richtige Reihenfolge.",
+     "items": [
+      {
+       "label": "あさ",
+       "sub": "asa – Morgen"
+      },
+      {
+       "label": "ひる",
+       "sub": "hiru – Mittag"
+      },
+      {
+       "label": "ゆうがた",
+       "sub": "yūgata – Abend"
+      },
+      {
+       "label": "よる",
+       "sub": "yoru – Nacht"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ogata",
+     "t": "Wunderbar. Nun zur Burg Ōsaka, zum großen Ōte-mon-Tor.",
+     "p": "explain"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あさ",
+     "ro": "asa",
+     "de": "Morgen"
+    },
+    {
+     "jp": "よる",
+     "ro": "yoru",
+     "de": "Nacht"
+    }
+   ],
+   "hint": "Nächster Ort: Burg Ōsaka – Ōte-mon – dort wartet Prof. Takada."
+  },
+  "11": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 11/30 · Holen und Zurückbringen]"
+    },
+    {
+     "s": "takada",
+     "t": "{{name}}, ich habe mein Notizbuch auf der Burg-Plaza liegen lassen. Holst du es mir?",
+     "p": "explain"
+    }
+   ],
+   "fetch": {
+    "item": "Takadas Notizbuch",
+    "x": 30,
+    "y": 70,
+    "art": "stampbook",
+    "find": "Ein abgegriffenes Notizbuch – auf dem Umschlag steht たかだ.",
+    "hintOut": "Das Notizbuch liegt auf der Burg Ōsaka – Burg-Plaza. Danach zurück zum Ōte-mon.",
+    "hintBack": "Bring das Notizbuch zu Prof. Takada am Ōte-mon der Burg Ōsaka."
+   },
+   "after": [
+    {
+     "s": "takada",
+     "t": "Danke! Oben auf der Aussichtsplattform wartet jemand mit Kamera.",
+     "p": "think"
+    }
+   ],
+   "hint": "Nächster Ort: Burg Ōsaka – Aussichtsplattform – dort wartet Clara."
+  },
+  "12": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 12/30 · Foto-Zoom]"
+    },
+    {
+     "s": "clara",
+     "t": "Hilf mir beim Foto! Den goldenen Fisch links auf dem Dach, bitte.",
+     "p": "photo"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "photo",
+     "q": "Fotografiere den goldenen Fisch auf der linken Dachecke.",
+     "target": {
+      "x": 7,
+      "y": 25
+     },
+     "zoom": [
+      3,
+      5
+     ],
+     "title": "Testfoto",
+     "text": "Scharf und mittig – das Foto ist gelungen."
+    }
+   ],
+   "after": [
+    {
+     "s": "clara",
+     "t": "Danke! Gleich neben der Burg liegt der Campus Ōtemae.",
+     "p": "calm"
+    }
+   ],
+   "hint": "Nächster Ort: Campus Ōtemae – Universitätsviertel – dort wartet Mio."
+  },
+  "13": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 13/30 · Kanji-Raster · Platzhalter-Figur Mio]"
+    },
+    {
+     "s": "otemon",
+     "t": "Hallo! Ich mache gerade Kanji-Karten. Hilfst du mir?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "kanjigrid",
+     "q": "Tippe das passende Kanji an.",
+     "grid": [
+      "山",
+      "川",
+      "日",
+      "月",
+      "火",
+      "水"
+     ],
+     "prompts": [
+      {
+       "de": "Berg",
+       "answer": "山"
+      },
+      {
+       "de": "Fluss",
+       "answer": "川"
+      },
+      {
+       "de": "Wasser",
+       "answer": "水"
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "otemon",
+     "t": "Danke! Am Abend lohnt sich Dōtonbori – geh zur Ebisu-Brücke."
+    }
+   ],
+   "hint": "Nächster Ort: Dōtonbori – Ebisu-Brücke – dort wartet Ryō."
+  },
+  "14": {
+   "mood": "night",
+   "bg": "loading_screen_dotonbori_rain",
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 14/30 · Auswahl mit Japanisch-Optionen · Innenraum-Hintergrund Regen-Dōtonbori]"
+    },
+    {
+     "s": "ryo",
+     "t": "Es regnet! Was sagst du, wenn du einen Schirm willst?",
+     "p": "point"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "„Einen Schirm, bitte.“",
+     "options": [
+      {
+       "jp": "かさをください",
+       "ro": "kasa o kudasai"
+      },
+      {
+       "jp": "みずをください",
+       "ro": "mizu o kudasai"
+      },
+      {
+       "jp": "ありがとう",
+       "ro": "arigatō"
+      },
+      {
+       "jp": "さようなら",
+       "ro": "sayōnara"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "ryo",
+     "t": "Läuft. Gleich um die Ecke riecht es nach Takoyaki – die Kuidaore-Gasse.",
+     "p": "sly"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "かさ",
+     "ro": "kasa",
+     "de": "Regenschirm"
+    }
+   ],
+   "hint": "Nächster Ort: Kuidaore-Gasse – dort wartet Meister Gen."
+  },
+  "15": {
+   "mood": "night",
+   "bg": "gen_bg_izakaya_warm_blur_v2",
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 15/30 · Zutat raten · Innenraum-Hintergrund Izakaya]"
+    },
+    {
+     "s": "gen",
+     "t": "Ha! Ein Tester. Rate, was in meinem Takoyaki steckt!",
+     "p": "laugh"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "ingredient",
+     "q": "Was steckt in jeder Takoyaki-Kugel?",
+     "dish": "Takoyaki",
+     "art": "dish",
+     "clues": [
+      "Es lebt im Meer.",
+      "Es hat acht Arme.",
+      "Auf Japanisch heißt es たこ."
+     ],
+     "options": [
+      "Garnele",
+      "Oktopus",
+      "Tofu",
+      "Käse"
+     ],
+     "answer": 1,
+     "fb": "たこ – Oktopus. Darum heißt es Tako-yaki."
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "t": "Richtig! Und jetzt ab nach Den Den Town, da wartet Yuki.",
+     "p": "proud"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "たこ",
+     "ro": "tako",
+     "de": "Oktopus"
+    }
+   ],
+   "hint": "Nächster Ort: Den Den Town – dort wartet Yuki."
+  },
+  "16": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 16/30 · Katakana entziffern]"
+    },
+    {
+     "s": "yuki",
+     "t": "Lies das Schild da! Was steht drauf?",
+     "p": "excited"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "decipher",
+     "q": "Setze die Lesung zusammen.",
+     "sign": "ゲーム",
+     "tiles": [
+      "gē",
+      "mu",
+      "ge",
+      "nu"
+     ],
+     "answer": [
+      "gē",
+      "mu"
+     ],
+     "meaning": "Spiel (game)"
+    }
+   ],
+   "after": [
+    {
+     "s": "yuki",
+     "t": "Genau! Kazu ist im Retro-Gaming-Laden gleich nebenan.",
+     "p": "phone"
+    }
+   ],
+   "hint": "Nächster Ort: Otaku-Laden – Retro-Gaming – dort wartet Kazu."
+  },
+  "17": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 17/30 · Runden-Quiz mit Zeitlimit]"
+    },
+    {
+     "s": "kazu",
+     "t": "Schnellrunde! Zahlen auf Japanisch – los!",
+     "p": "game"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "timed": 10,
+     "rounds": [
+      {
+       "q": "いち",
+       "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "さん",
+       "options": [
+        "2",
+        "3",
+        "5",
+        "8"
+       ],
+       "answer": 1
+      },
+      {
+       "q": "じゅう",
+       "options": [
+        "7",
+        "9",
+        "10",
+        "100"
+       ],
+       "answer": 2
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kazu",
+     "t": "High Score! Jetzt zum Namba-Yasaka-Schrein mit dem großen Löwenkopf.",
+     "p": "thumbs"
+    }
+   ],
+   "hint": "Nächster Ort: Namba-Yasaka-Schrein – dort wartet Herr Yamada."
+  },
+  "18": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 18/30 · Hanafuda-Runden]"
+    },
+    {
+     "s": "yamada",
+     "t": "Ein ruhiges Spiel mit Blumenkarten. Welcher Monat ist das?",
+     "p": "calm"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "hanafuda",
+     "rounds": [
+      {
+       "q": "Kiefer und ein Kranich.",
+       "art": "hf-1",
+       "options": [
+        "Januar",
+        "Mai",
+        "August",
+        "Oktober"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Ein voller Mond über Gras.",
+       "art": "hf-8",
+       "options": [
+        "März",
+        "August",
+        "Juni",
+        "Dezember"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "yamada",
+     "t": "Gut. Der Kuromon-Markt liegt nicht weit – dort sucht Madoka Angebote.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Nächster Ort: Kuromon-Markt – dort wartet Madoka."
+  },
+  "19": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 19/30 · Paare verbinden]"
+    },
+    {
+     "s": "madoka",
+     "t": "Preisschilder lesen! Verbinde Zeichen und Lesung.",
+     "p": "search"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "pairs",
+     "q": "Verbinde jedes Zeichen mit seiner Lesung.",
+     "sets": [
+      [
+       [
+        "や",
+        "ya"
+       ],
+       [
+        "ゆ",
+        "yu"
+       ],
+       [
+        "よ",
+        "yo"
+       ],
+       [
+        "わ",
+        "wa"
+       ]
+      ]
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "t": "Schnäppchen! Als Nächstes: Kyocera Dome, Daiki trainiert dort.",
+     "p": "cheer"
+    }
+   ],
+   "hint": "Nächster Ort: Kyocera Dome – Vorplatz – dort wartet Daiki."
+  },
+  "20": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 20/30 · Fußball-Taktik]"
+    },
+    {
+     "s": "daiki",
+     "t": "Eins gegen eins, Tester! Was machst du?",
+     "p": "cocky"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "soccer",
+     "fixed": [
+      "Tunnel",
+      "Übersteiger",
+      "Ball abschirmen"
+     ],
+     "rounds": [
+      {
+       "q": "Daiki steht breitbeinig vor dir.",
+       "answer": 0,
+       "fb": "Offene Beine – Tunnel!"
+      },
+      {
+       "q": "Daiki drückt mit der Schulter gegen dich.",
+       "answer": 2,
+       "fb": "Körper zwischen Gegner und Ball."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "t": "Okay, okay. Fahr weiter zum Tempozan-Pier, da steht Hina.",
+     "p": "cheer"
+    }
+   ],
+   "hint": "Nächster Ort: Tempozan – Pier & Riesenrad – dort wartet Hina."
+  },
+  "21": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 21/30 · Satzbau]"
+    },
+    {
+     "s": "hina",
+     "t": "Interview-Test! Bilde den Satz für mein Mikrofon.",
+     "p": "note"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "build",
+     "q": "Bilde: „Ich bin Student.“",
+     "tiles": [
+      {
+       "jp": "わたし",
+       "ro": "watashi"
+      },
+      {
+       "jp": "は",
+       "ro": "wa"
+      },
+      {
+       "jp": "がくせい",
+       "ro": "gakusei"
+      },
+      {
+       "jp": "です",
+       "ro": "desu"
+      },
+      {
+       "jp": "を",
+       "ro": "o"
+      }
+     ],
+     "answer": [
+      "わたし",
+      "は",
+      "がくせい",
+      "です"
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "hina",
+     "t": "Danke! Im Kindai-Aqua-Labor wartet Kōta mit einem Kartenspiel.",
+     "p": "phone"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "がくせい",
+     "ro": "gakusei",
+     "de": "Student"
+    }
+   ],
+   "hint": "Nächster Ort: Kindai – Aqua-Labor – dort wartet Kōta."
+  },
+  "22": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 22/30 · Karuta – schnell tippen]"
+    },
+    {
+     "s": "kindai",
+     "t": "Ich lese vor, du tippst die richtige Karte!",
+     "p": "laptop"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "karuta",
+     "timed": 8,
+     "fixed": [
+      "さかな",
+      "いぬ",
+      "ねこ",
+      "とり"
+     ],
+     "rounds": [
+      {
+       "q": "Es schwimmt im Aquarium!",
+       "answer": 0
+      },
+      {
+       "q": "Es macht „miau“!",
+       "answer": 2
+      },
+      {
+       "q": "Es fliegt am Himmel!",
+       "answer": 3
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "kindai",
+     "t": "Stark. Fahr nach Shinsekai in die Janjan Yokochō – Takeshi spielt dort Shōgi.",
+     "p": "thumbs"
+    }
+   ],
+   "hint": "Nächster Ort: Shinsekai – Janjan Yokochō – dort wartet Takeshi."
+  },
+  "23": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 23/30 · Shōgi-Rätsel]"
+    },
+    {
+     "s": "takeshi",
+     "t": "Ein Zug zum Matt. Setz den Gold-General ein.",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "shogi",
+     "q": "Matt in einem Zug: Setze den Gold-General ein.",
+     "cols": 5,
+     "rows": 4,
+     "pieces": [
+      {
+       "k": "王",
+       "x": 3,
+       "y": 1,
+       "foe": true
+      },
+      {
+       "k": "歩",
+       "x": 3,
+       "y": 3
+      }
+     ],
+     "hand": [
+      "金"
+     ],
+     "answer": [
+      {
+       "from": "hand:金",
+       "to": "3,2"
+      }
+     ],
+     "fb": "Gold auf den Kopf – Matt!"
+    }
+   ],
+   "after": [
+    {
+     "s": "takeshi",
+     "t": "Gut gespielt. Fahr hoch zum Aussichtsdeck der Abeno Harukas.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Nächster Ort: Abeno Harukas – Aussichtsdeck – dort wartet Architekt Kuroda."
+  },
+  "24": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 24/30 · Foto-Zoom aus großer Höhe]"
+    },
+    {
+     "s": "kuroda",
+     "t": "Von hier sieht man weit. Fotografiere die kleine Burg rechts im Fenster.",
+     "p": "plan"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "photo",
+     "q": "Fotografiere die winzige Burg rechts im Fenster.",
+     "target": {
+      "x": 80,
+      "y": 46
+     },
+     "zoom": [
+      3,
+      5
+     ],
+     "title": "Testfoto",
+     "text": "Klein, aber deutlich – gut gezoomt."
+    }
+   ],
+   "after": [
+    {
+     "s": "kuroda",
+     "t": "Sehr gut. Unten im Tennōji-Park wartet Maya.",
+     "p": "calm"
+    }
+   ],
+   "hint": "Nächster Ort: Tennōji-Park – Tenshiba – dort wartet Maya."
+  },
+  "25": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 25/30 · Blätter erkennen]"
+    },
+    {
+     "s": "maya",
+     "t": "Schau mal, Blätter! Welche Pflanze ist das?",
+     "p": "wave"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "leaf",
+     "rounds": [
+      {
+       "q": "Ein Blatt wie ein Fächer, im Herbst ganz gelb.",
+       "art": "ginkgo",
+       "options": [
+        "Ginkgo",
+        "Bambus",
+        "Kiefer",
+        "Moos"
+       ],
+       "answer": 0
+      },
+      {
+       "q": "Lange, schmale Blätter, wie Schwerter.",
+       "art": "bamboo",
+       "options": [
+        "Ahorn",
+        "Bambus",
+        "Kamelie",
+        "Ginkgo"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "maya",
+     "t": "Danke! Gleich nebenan liegt der Shitennō-ji – Dr. Kiryū wartet am Südtor.",
+     "p": "coffee"
+    }
+   ],
+   "hint": "Nächster Ort: Shitennō-ji – Südtor & Pagode – dort wartet Dr. Kiryū."
+  },
+  "26": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 26/30 · Entscheidung mit abhängigem Abschluss-Dialog]"
+    },
+    {
+     "s": "kiryu",
+     "t": "Eine Frage ohne falsche Antwort: Was ist dir wichtiger?",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "route",
+     "flag": "test_pick",
+     "q": "Was ist dir wichtiger?",
+     "options": [
+      {
+       "label": "Der Weg",
+       "value": "way",
+       "facts": [
+        "Unterwegs sein",
+        "Neues entdecken"
+       ]
+      },
+      {
+       "label": "Das Ziel",
+       "value": "goal",
+       "facts": [
+        "Ankommen",
+        "Etwas abschließen"
+       ]
+      }
+     ]
+    }
+   ],
+   "afterBy": {
+    "flag": "test_pick",
+    "lines": {
+     "way": [
+      {
+       "s": "kiryu",
+       "t": "Der Weg also. Dann geh weiter nach Süden zum OMU-Campus Sugimoto.",
+       "p": "explain"
+      }
+     ],
+     "goal": [
+      {
+       "s": "kiryu",
+       "t": "Das Ziel also. Dein nächstes ist der OMU-Campus Sugimoto.",
+       "p": "explain"
+      }
+     ]
+    }
+   },
+   "hint": "Nächster Ort: OMU Sugimoto – Hauptallee – dort wartet Nanami."
+  },
+  "27": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 27/30 · Suchbild · Platzhalter-Figur Nanami]"
+    },
+    {
+     "s": "omu",
+     "t": "Willkommen an der OMU! Findest du unsere großen Buchstaben?"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Tippe auf die großen Buchstaben auf der Wiese.",
+     "x": 80,
+     "y": 72,
+     "r": 10,
+     "closeup": {
+      "art": "omusign",
+      "title": "OMU",
+      "text": "Osaka Metropolitan University – Test bestanden."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Gefunden! Nicht weit entfernt liegt das Yanmar Stadium in Nagai."
+    }
+   ],
+   "hint": "Nächster Ort: Nagai – Yanmar Stadium – dort wartet Coach Sakai."
+  },
+  "28": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 28/30 · Elfmeter-Runden]"
+    },
+    {
+     "s": "sakai",
+     "t": "Elfmeter-Test! Wie schießt du?",
+     "p": "shout"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "rounds",
+     "art": "penalty",
+     "rounds": [
+      {
+       "q": "Der Boden ist nass und rutschig.",
+       "options": [
+        "Volle Kraft mit langem Anlauf",
+        "Kurzer Anlauf, sicherer Stand",
+        "Mit der Hacke",
+        "Gar nicht schießen"
+       ],
+       "answer": 1,
+       "fb": "Auf nassem Boden zählt der sichere Stand."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "sakai",
+     "t": "Drin! Weiter mit der Bahn nach Sumiyoshi, zur roten Brücke.",
+     "p": "point"
+    }
+   ],
+   "hint": "Nächster Ort: Sumiyoshi Taisha – Taiko-bashi – dort wartet Dr. Seto."
+  },
+  "29": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 29/30 · Kartenquiz Bucht]"
+    },
+    {
+     "s": "seto",
+     "t": "Ein letzter Blick auf die Karte: die Bucht von Ōsaka.",
+     "p": "map"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "bay",
+     "points": [
+      {
+       "id": "tempozan",
+       "x": 36,
+       "y": 50
+      },
+      {
+       "id": "yodo",
+       "x": 34,
+       "y": 22
+      },
+      {
+       "id": "island",
+       "x": 19,
+       "y": 71
+      }
+     ],
+     "rounds": [
+      {
+       "q": "Tippe auf den Tempozan, wo du vorhin warst.",
+       "answer": "tempozan",
+       "fb": "Genau – dort steht das Riesenrad."
+      },
+      {
+       "q": "Und wo liegt die künstliche Insel im Süden?",
+       "answer": "island",
+       "fb": "Richtig."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "seto",
+     "t": "Gut. Die letzte Station: das Handwerksmuseum in Sakai.",
+     "p": "book"
+    }
+   ],
+   "hint": "Nächster Ort: Sakai – Handwerksmuseum – dort wartet Ren."
+  },
+  "30": {
+   "lines": [
+    {
+     "s": "nar",
+     "t": "[Test 30/30 · Abschluss]"
+    },
+    {
+     "s": "ren",
+     "t": "Hey, du hast es bis nach Sakai geschafft! Letzte Frage.",
+     "p": "relaxed"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was sagt man nach einer langen Reise?",
+     "options": [
+      {
+       "jp": "おつかれさま",
+       "ro": "otsukaresama"
+      },
+      {
+       "jp": "いただきます",
+       "ro": "itadakimasu"
+      },
+      {
+       "jp": "おやすみ",
+       "ro": "oyasumi"
+      },
+      {
+       "jp": "すみません",
+       "ro": "sumimasen"
+      }
+     ],
+     "answer": 0,
+     "explain": "おつかれさま – „Gute Arbeit, du hast dir eine Pause verdient.“"
+    }
+   ],
+   "after": [
+    {
+     "s": "ren",
+     "t": "Otsukaresama! Der Test-Strang ist geschafft.",
+     "p": "guitar"
+    },
+    {
+     "s": "nar",
+     "t": "Ende des Test-Strangs. Danke fürs Testen!"
+    }
+   ],
+   "hint": "Test-Strang abgeschlossen."
+  }
+ }
+}

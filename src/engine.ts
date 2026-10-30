@@ -1,6 +1,7 @@
 // Quest-Fortschritt und Bildschirm-Belegung (Concurrency-Regeln aus explore_osaka_gamerules_concurrency.yaml)
 import { QUESTS, QUEST_BY_ID, STRAND_ORDER, stageContent, stageDef, isScored, screenPlayable } from './data';
 import { G } from './state';
+import { TEST_QUEST } from './testmode';
 import type { StageDef } from './types';
 
 export const MAX_NPCS = 3;
@@ -61,6 +62,8 @@ export function presence(screenId: string): { shown: Presence[]; waiting: number
       const i = STRAND_ORDER.indexOf(o.questId);
       return i < 0 ? 99 : i;
     }));
+    // Der Test-Strang steht immer im Bild, damit er nie im Off-Screen-Puffer landet.
+    if (offers.some((o) => o.questId === TEST_QUEST)) return { touched: Number.MAX_SAFE_INTEGER, done, order };
     return { touched, done, order };
   };
   const groups = [...byNpc.entries()].map(([npcId, offers]) => {

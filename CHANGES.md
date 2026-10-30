@@ -86,6 +86,11 @@ Alle Punkte bestätigt. Präzisierungen eingearbeitet:
 - Chikamatsu: Shusse Kagekiyo 1686 (statt 1685).
 - Kitsune-Udon 1893 (Matsubaya), Nihon Ryōiki um 822 (Keikai), Takoishi rund 108–130 t, Kyocera Dome auf dem Gelände des Gaswerks Iwasakibashi.
 
+## v1.1 – Slots, Innenräume, Test-Strang
+- **Figurengrößen und Plätze überarbeitet:** Alle Screens wurden gegen die gezeichneten Passanten geprüft. Vor allem Region 4–6 (Screens 49–70) waren deutlich zu groß; die Höhen richten sich jetzt nach Menschen auf gleicher Fußhöhe (z. B. Shitennō-ji 40 % → 22 %, Sumiyoshi 46 % → 30 %, Yodoko-Stadion 42 % → 26 %). Figuren, die auf Personen, im Teich, auf Bänken oder an der Bildkante standen, wurden versetzt (u. a. 2a, 2c, 3, 6, 24, 38, 39, 40, 45b, 46, 47, 59, 63, 67, 69).
+- **Innenraum-Hintergründe:** eigene Platzierung je Hintergrund (Café, Zug, Izakaya, Regen-Dōtonbori) statt einheitlich 78 % Höhe; jetzt 50–60 %, Füße auf dem Boden statt auf Tresen oder Geländer.
+- **Test-Strang (versteckt):** 30 Etappen, nur sichtbar mit `?test=1` in der Adresse (bleibt gespeichert, `?test=0` schaltet ihn aus). Zählt nicht zu den 25 Strängen und erzählt nichts aus der Hauptgeschichte.
+
 ## Region 6
 - Kanji 17–24: Die Bundle-Zeichen 社 神 鳥 道 白 古 新 田 地 長 工 金 作 図 書 館 生 医 院 電 気 話 sind größtenteils kein N5. Stattdessen die übrigen N5-Kanji: 名 前 後, 高 長 外 国, 日本 本 間, 見 聞 読 書, 語 話, 気 父 母 友, 電 雨 午, Abschlussraster über alle Gruppen.
 - Kultur Japan 11: Statt Faltfächer und Lack (keine Sakai-Spezialität) Messer und Räucherstäbchen, beides traditionelles Sakai-Handwerk.
@@ -96,8 +101,13 @@ Alle Punkte bestätigt. Präzisierungen eingearbeitet:
 - Schreine 7: Ein verlorenes Prüfungs-Omamori aus Namba Parks (Fetch-Ziel 41 wie im Bundle).
 - Café 12 und 17 sowie Nachtleben 4/5/9/12/17, Kuidaore 9, Romance 3/6/14, Café 2/3, Konversation 8, Katakana 8, Nachtleben 6 nutzen die Innenraum-Hintergründe (Café, Izakaya, Dōtonbori im Regen).
 
-## Zur Faktenprüfung (Region 6)
-Nach bestem Wissen geschrieben; bitte gegenprüfen:
+## Faktencheck Region 6 – bestätigt
+Vom Nutzer geprüft, alles korrekt bis auf:
+- **Stadtblume:** Ōsaka hat zwei Stadtblumen, Kirschblüte und Stiefmütterchen. Kansai 13 sagt das jetzt so (vorher: nur Kirschblüte).
+- **Hanafuda:** die Standard-Zuordnung (Dezember = Paulownie & Phönix; Gokō = Kranich, Kirsche, Mond, Regenmann, Phönix) wurde bestätigt, keine Änderung.
+- **WM 2002:** Japan – Tunesien 2:0 am 14. Juni 2002 im Nagai-Stadion bestätigt.
+
+Ursprüngliche Liste zur Prüfung:
 - Sumiyoshi Taisha früher direkt an der Küste; Sumiyoshi-zukuri (gerade Dächer, Eingang an der Giebelseite) als vorbuddhistischer Stil, Haupthallen Nationalschätze; drei Meeresgötter + Kaiserin Jingū, Schutz von Seefahrt und Dichtkunst; über 600 Steinlaternen von Händlern/Reedern; Taiko-bashi als Übergang; zu Neujahr über zwei Millionen Besucher.
 - Daisen-Kofun fast 500 m, Schlüssellochform, Wassergräben, Welterbe Mozu-Furuichi seit 2019, darf nicht betreten werden; Haniwa 3.–6. Jh.
 - Sen no Rikyū aus Sakai, Zen am Daitoku-ji (Rinzai), Wabi; Teeweg-Grundsätze Wa Kei Sei Jaku; niedrige Tür (Nijiriguchi).
@@ -109,7 +119,7 @@ Nach bestem Wissen geschrieben; bitte gegenprüfen:
 - Hanafuda: Oktober Ahorn & Hirsch, September Chrysantheme & Sake-Becher, November Weide & Mann mit Schirm, Januar Kiefer & Kranich, August Pampasgras & Mond, Dezember Paulownie & Phönix; Gokō = fünf helle Karten.
 - Okamoto Tarō und die Jōmon-Keramik.
 - Sakai im 16. Jh. als von Händlern regierte Stadt mit Gräben, „wie Venedig“ (Missionare), Gewehrherstellung; Messer und Räucherstäbchen; Arbeitsteilung bei Sakai-Messern.
-- Ōsaka-Derby Gamba (Suita, Blau-Schwarz) – Cerezo (Nagai, Pink, „Kirschbaum“); Kirschblüte als Blume der Stadt.
+- Ōsaka-Derby Gamba (Suita, Blau-Schwarz) – Cerezo (Nagai, Pink, „Kirschbaum“); Kirschblüte als Blume der Stadt (korrigiert: Kirschblüte und Stiefmütterchen).
 - WM 2002: Japan – Tunesien im Nagai-Stadion. Japanische Fans räumen nach dem Spiel auf.
 - Nishinomiya: Lauf der Fukuotoko am 10. Januar ab 6 Uhr durch das rote Tor; Ebisu als einziger der sieben Glücksgötter japanischen Ursprungs, mit Angel und Meerbrasse.
 - Namba Yasaka: Löwe verschluckt Böses, beliebt vor Prüfungen.

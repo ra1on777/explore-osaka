@@ -95,7 +95,18 @@ export function setMood(m: Mood | null | undefined) {
 }
 
 /** Innenraum-Hintergrund (img/bg/…) für die Dauer einer Etappe; null stellt den Screen wieder her. */
+/** Platzierung der Figuren auf Innen-Hintergründen: [x, bottom, h] für Hauptfigur und zweite Figur (in %). */
+const BG_SLOTS: Record<string, [[number, number, number], [number, number, number]]> = {
+  gen_bg_cafe_modern_blur: [[31, 2, 58], [63, 6, 54]],
+  gen_bg_commuter_train_osaka_blur: [[44, 3, 60], [64, 9, 52]],
+  gen_bg_izakaya_warm_blur_v2: [[30, 1, 60], [60, 3, 56]],
+  loading_screen_dotonbori_rain: [[46, 2, 56], [64, 4, 50]],
+};
+const BG_DEFAULT: [[number, number, number], [number, number, number]] = [[38, 2, 58], [66, 5, 54]];
+
 export function setStageBg(key: string | null | undefined, lead?: string) {
+  const [l, o] = (key && BG_SLOTS[key]) || BG_DEFAULT;
+  ([['l', l], ['o', o]] as const).forEach(([p, v]) => { top.style.setProperty(`--${p}x`, `${v[0]}%`); top.style.setProperty(`--${p}b`, `${v[1]}%`); top.style.setProperty(`--${p}h`, `${v[2]}%`); });
   for (const el of npcLayer.querySelectorAll<HTMLElement>('.npc')) el.classList.toggle('lead', !!key && el.dataset.npc === lead);
   if (!key) {
     if (!top.classList.contains('interior')) return;

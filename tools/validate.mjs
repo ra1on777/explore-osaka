@@ -2,12 +2,12 @@
 import { readFileSync, existsSync } from 'node:fs';
 
 const j = (p) => JSON.parse(readFileSync(p, 'utf8'));
-const quests = j('src/data/quests.json').quests;
+const quests = [...j('src/data/quests.json').quests, j('src/data/quest_test.json')];
 const world = j('src/data/world.json');
 const npcs = j('src/data/npcs.json');
 const lang = 'de';
 const stages = {};
-for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang', 'stages_r6_a', 'stages_r6_b', 'stages_r6_lang'])
+for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang', 'stages_r6_a', 'stages_r6_b', 'stages_r6_lang', 'stages_test'])
   for (const [q, st] of Object.entries(j(`src/content/${lang}/${f}.json`))) stages[q] = { ...stages[q], ...st };
 const art = readFileSync('src/ui/art.ts', 'utf8');
 const hasArt = (k) => new RegExp(`\\b${k}\\s*:`).test(art);

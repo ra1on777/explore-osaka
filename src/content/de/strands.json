@@ -23,5 +23,6 @@
   "STRANG_LANG_KATAKANA": "Sprache 2: Katakana & Schilder-Code",
   "STRANG_LANG_KANJI": "Sprache 3: Kanji-Zeichen & Ursprünge",
   "STRANG_LANG_VOCABULARY": "Sprache 4: A1-Wortschatz & Alltagswelt",
-  "STRANG_LANG_CONVERSATION": "Sprache 5: Konversation & Satzmuster"
+  "STRANG_LANG_CONVERSATION": "Sprache 5: Konversation & Satzmuster",
+  "STRANG_TEST": "Test-Strang (nur zum Testen)"
 }

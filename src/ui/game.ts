@@ -1,4 +1,5 @@
 // Spielablauf: Titelbild, neues Spiel, Erkunden, Etappen, Menüs.
+import { TEST_MODE, TEST_QUEST, setTestMode } from '../testmode';
 import { sfx } from '../audio';
 import {
   ALL_STRANDS, CLUSTERS, QUEST_BY_ID, REGIONS, SCREENS, clusterName, clusterOf, maxStars, npcName,
@@ -351,7 +352,7 @@ function questLog() {
   const ids = discoveredStrands();
   mount(h('div', { class: 'sub' },
     header(t('quests.title'), explore),
-    h('div', { class: 'small muted' }, t('quests.found', { n: ids.length, total: ALL_STRANDS })),
+    h('div', { class: 'small muted' }, t('quests.found', { n: ids.filter((id) => id !== TEST_QUEST).length, total: ALL_STRANDS })),
     ids.length ? null : h('p', { class: 'muted' }, t('quests.empty')),
     ...ids.map((id) => {
       const p = peekProgress(id);
@@ -459,6 +460,19 @@ function settingsScreen(back: () => void) {
     toggle('sound', t('settings.sound')),
     toggle('autosave', t('settings.autosave')),
     h('label', {}, t('settings.speed')), speed,
-    h('div', { class: 'small muted', html: jpBlock('れい：こんにちは', 'rei: konnichiwa') })));
+    h('div', { class: 'small muted', html: jpBlock('れい：こんにちは', 'rei: konnichiwa') }),
+    testToggle()));
+}
+
+/** Test-Strang an/aus. Erscheint nur, wenn er schon einmal aktiv war oder die Versionszeile 5× angetippt wurde. */
+function testToggle() {
+  const box = h('input', { type: 'checkbox' }) as HTMLInputElement;
+  box.checked = TEST_MODE;
+  box.onchange = () => setTestMode(box.checked);
+  const row = h('label', { class: 'toggle' }, box, h('span', {}, t('settings.test')));
+  if (!TEST_MODE) row.style.display = 'none';
+  let taps = 0;
+  const ver = h('div', { class: 'small muted', onclick: () => { if (++taps >= 5) row.style.display = ''; } }, 'ExploreOsaka v1.1');
+  return h('div', {}, ver, row);
 }
 

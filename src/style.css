@@ -437,7 +437,9 @@ h3 { font-family: var(--title); font-weight: 600; font-size: 1.25em; margin: .2e
 
 /* Innenraum-Hintergrund während einer Etappe */
 .top.interior .items, .top.interior .npc:not(.active):not(.lead) { display: none; }
-.top.interior .npc.lead, .top.interior .npc.active { left: 40% !important; bottom: 0 !important; height: 78% !important; z-index: 2 !important; }
-.top.interior .npc.active:not(.lead) { left: 68% !important; }
+.top.interior .npc.lead, .top.interior .npc.active { left: var(--lx, 38%) !important; bottom: var(--lb, 2%) !important; height: var(--lh, 58%) !important; z-index: 3 !important; }
+.top.interior .npc.active:not(.lead) { left: var(--ox, 66%) !important; bottom: var(--ob, 5%) !important; height: var(--oh, 54%) !important; z-index: 2 !important; }
+.top.interior .npc.small.lead, .top.interior .npc.small.active { height: calc(var(--lh, 58%) * .42) !important; }
+.top.interior .npc.small.active:not(.lead) { height: calc(var(--oh, 54%) * .42) !important; }
 .top.interior .npc .bubble { display: none; }
 .top.interior .bg { object-fit: cover; }
