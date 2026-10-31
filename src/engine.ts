@@ -1,5 +1,5 @@
 // Quest-Fortschritt und Bildschirm-Belegung (Concurrency-Regeln aus explore_osaka_gamerules_concurrency.yaml)
-import { QUESTS, QUEST_BY_ID, STRAND_ORDER, stageContent, stageDef, isScored, screenPlayable } from './data';
+import { QUESTS, QUEST_BY_ID, STRAND_ORDER, freeSlots, stageContent, stageDef, isScored, screenPlayable } from './data';
 import { G } from './state';
 import { TEST_QUEST } from './testmode';
 import type { StageDef } from './types';
@@ -72,12 +72,14 @@ export function presence(screenId: string): { shown: Presence[]; waiting: number
     return { npcId, offers, s: score(offers) };
   });
   groups.sort((a, b) => b.s.touched - a.s.touched || b.s.done - a.s.done || a.s.order - b.s.order);
-  const shown = groups.slice(0, MAX_NPCS);
+  const avail = freeSlots(screenId);
+  const shown = groups.slice(0, Math.min(MAX_NPCS, avail.length));
   // Stabile Platzierung: in Lesereihenfolge des Strang-Index, damit Figuren nicht springen
-  const slotOrder: ('A' | 'B' | 'C')[] = shown.length === 1 ? ['B'] : shown.length === 2 ? ['A', 'C'] : ['A', 'B', 'C'];
+  const slotOrder: ('A' | 'B' | 'C')[] = shown.length === 1 ? [avail.includes('B') ? 'B' : avail[0]]
+    : shown.length === 2 ? [avail[0], avail[avail.length - 1]] : avail;
   const placed = [...shown].sort((a, b) => a.s.order - b.s.order)
     .map((g, i) => ({ npcId: g.npcId, offers: g.offers, slot: slotOrder[i] }));
-  return { shown: placed, waiting: Math.max(0, groups.length - MAX_NPCS) };
+  return { shown: placed, waiting: Math.max(0, groups.length - shown.length) };
 }
 
 export interface StageResult { stars: number | null; questId: string; idx: number }

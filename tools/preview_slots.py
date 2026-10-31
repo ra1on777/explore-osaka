@@ -26,6 +26,8 @@ def render(sid: str) -> Image.Image:
         d.line([(W * k // 10, 0), (W * k // 10, H)], fill=(255, 0, 255, 70))
         d.line([(0, H * k // 10), (W, H * k // 10)], fill=(255, 0, 255, 70))
     for key in "ABC":
+        if s.get("slots", {}).get(key, 0) is None:
+            continue
         slot = {**world["slotDefaults"][key], **(s.get("slots", {}).get(key, {}))}
         fig = Image.open(ROOT / f"public/img/chars/{REF[key]}.webp").convert("RGBA")
         fh = round(H * slot["h"] / 100)

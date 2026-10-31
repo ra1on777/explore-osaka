@@ -13,8 +13,8 @@ FS = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
 W = 800
 BG = {"cafe": "gen_bg_cafe_modern_blur", "zug": "gen_bg_commuter_train_osaka_blur",
       "izakaya": "gen_bg_izakaya_warm_blur_v2", "regen": "loading_screen_dotonbori_rain"}
-BG_SLOTS = {"cafe": [[31, 2, 58], [63, 6, 54]], "zug": [[44, 3, 60], [64, 9, 52]],
-            "izakaya": [[30, 1, 60], [60, 3, 56]], "regen": [[46, 2, 56], [64, 4, 50]]}
+BG_SLOTS = {"cafe": [[31, -14, 52], [64, -10, 46]], "zug": [[42, -12, 54], [64, -6, 46]],
+            "izakaya": [[30, -14, 54], [60, -10, 48]], "regen": [[44, -12, 50], [64, -8, 44]]}
 
 def place(bg, d, fig_path, x, b, h, label, col):
     H = bg.height
@@ -32,6 +32,8 @@ def tile_screen(sid):
     bg = bg.resize((W, round(bg.height * W / bg.width))); d = ImageDraw.Draw(bg)
     cols = {"A": (200, 40, 40), "B": (30, 110, 200), "C": (40, 150, 60)}
     for k in "ABC":
+        if s.get("slots", {}).get(k, 0) is None:
+            continue
         sl = {**world["slotDefaults"][k], **s.get("slots", {}).get(k, {})}
         place(bg, d, REF[k], sl["x"], sl["bottom"], sl["h"], f"{sid}-{k}", cols[k])
     d.rectangle([0, bg.height - 24, W, bg.height], fill=(0, 0, 0))

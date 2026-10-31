@@ -1,5 +1,5 @@
 // Oberer Bildschirm: Schauplatz mit Hintergrund-Artwork, Ortsschild, Figuren und Stimmungsfilter.
-import { SCREENS, SLOT_DEFAULTS, imgChar, imgScreen, NPCS, npcName, screenName } from '../data';
+import { SCREENS, SLOT_DEFAULTS, freeSlots, imgChar, imgScreen, NPCS, npcName, screenName } from '../data';
 import type { Presence } from '../engine';
 import type { Mood } from '../types';
 import { bubble, pickupIcon, placeholders } from './art';
@@ -57,6 +57,7 @@ function npcEl(screenId: string, p: Presence, onNpc: (p: Presence) => void) {
   const el = h('button', {
     class: `npc${scale < 1 ? ' small' : ''}`,
     'data-npc': p.npcId,
+    'data-slot': p.slot,
     style: `left:${slot.x}%;bottom:${slot.bottom}%;height:${slot.h * scale}%;z-index:${100 - Math.round(slot.bottom)}`,
     'aria-label': `${npcName(p.npcId)} ansprechen`,
     onclick: () => onNpc(p),
@@ -87,7 +88,10 @@ export function focusNpc(npcId: string | null, pose?: string) {
 /** Figur ins Bild holen, falls sie (z. B. als Partnerin) noch nicht dasteht. */
 export function ensureNpc(screenId: string, npcId: string) {
   if (npcLayer.querySelector(`[data-npc="${npcId}"]`)) return;
-  npcLayer.append(npcEl(screenId, { npcId, offers: [], slot: 'B' }, () => undefined));
+  const free = freeSlots(screenId);
+  const used = new Set([...npcLayer.querySelectorAll<HTMLElement>('.npc')].map((e) => e.dataset.slot));
+  const slot = (free.includes('B') && !used.has('B') ? 'B' : free.find((k) => !used.has(k))) ?? free[0] ?? 'B';
+  npcLayer.append(npcEl(screenId, { npcId, offers: [], slot }, () => undefined));
 }
 
 export function setMood(m: Mood | null | undefined) {
@@ -98,10 +102,10 @@ export function setMood(m: Mood | null | undefined) {
 /** Innenraum-Hintergrund (img/bg/…) für die Dauer einer Etappe; null stellt den Screen wieder her. */
 /** Platzierung der Figuren auf Innen-Hintergründen: [x, bottom, h] für Hauptfigur und zweite Figur (in %). */
 const BG_SLOTS: Record<string, [[number, number, number], [number, number, number]]> = {
-  gen_bg_cafe_modern_blur: [[31, 2, 58], [63, 6, 54]],
-  gen_bg_commuter_train_osaka_blur: [[44, 3, 60], [64, 9, 52]],
-  gen_bg_izakaya_warm_blur_v2: [[30, 1, 60], [60, 3, 56]],
-  loading_screen_dotonbori_rain: [[46, 2, 56], [64, 4, 50]],
+  gen_bg_cafe_modern_blur: [[31, -14, 52], [64, -10, 46]],
+  gen_bg_commuter_train_osaka_blur: [[42, -12, 54], [64, -6, 46]],
+  gen_bg_izakaya_warm_blur_v2: [[30, -14, 54], [60, -10, 48]],
+  loading_screen_dotonbori_rain: [[44, -12, 50], [64, -8, 44]],
 };
 const BG_DEFAULT: [[number, number, number], [number, number, number]] = [[38, 2, 58], [66, 5, 54]];
 

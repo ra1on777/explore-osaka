@@ -32,6 +32,10 @@ export const STRAND_ORDER = [
 ];
 export const ALL_STRANDS = 25;
 
+/** Belegbare Slots eines Screens (null in world.json = Slot gestrichen). */
+export function freeSlots(screenId: string): ('A' | 'B' | 'C')[] {
+  return (['A', 'B', 'C'] as const).filter((k) => SCREENS[screenId]?.slots?.[k] !== null);
+}
 export function clusterOf(screenId: string): ClusterDef | undefined {
   return CLUSTERS.find((c) => c.screens.includes(screenId));
 }
