@@ -142,5 +142,6 @@
   "task.shogi.foe": "↑ Gegner",
   "task.shogi.wrong": "Kein Matt – der König kann noch entkommen. Versuch es nochmal.",
   "task.shogi.tip": "Tipp: Schau dir die markierten Felder an.",
-  "settings.test": "Test-Strang anzeigen (lädt neu)"
+  "settings.test": "Test-Strang anzeigen (lädt neu)",
+  "settings.mapArt": "Illustrierte Karten (aus: schematische Karte)"
 }

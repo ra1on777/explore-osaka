@@ -15,7 +15,8 @@ export interface ScreenDef {
   region: string; cluster?: string; jp?: string; kana?: string; ro?: string;
   indoor?: boolean; night?: boolean; slots?: Partial<Record<'A' | 'B' | 'C', Slot | null>>; variants?: string[];
 }
-export interface ClusterDef { id: string; region: string; x: number; y: number; screens: string[]; flip?: boolean }
+export interface ClusterDef { id: string; region: string; x: number; y: number; screens: string[]; flip?: boolean;
+  /** Position auf der illustrierten Karte: [x %, y %, Radius %] */ art?: [number, number, number] }
 export interface NpcDef { short: string; default?: string; poses?: string[]; placeholder?: 'cat' | 'person'; /** Höhe relativ zum Slot (z. B. Katze 0.42) */ scale?: number }
 
 // ---------- Inhalte (übersetzbar) ----------
@@ -67,7 +68,7 @@ export type Mood = 'morning' | 'day' | 'golden' | 'night';
 
 // ---------- Spielstand ----------
 export interface StrandProgress { done: number; stars: Record<number, number>; touched: number; fetch?: 'out' | 'got' }
-export interface Settings { romaji: boolean; sound: boolean; autosave: boolean; textSpeed: number }
+export interface Settings { romaji: boolean; sound: boolean; autosave: boolean; textSpeed: number; mapArt: boolean }
 export interface GameState {
   version: 1;
   player: { name: string; nameJa: string };

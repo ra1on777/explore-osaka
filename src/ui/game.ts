@@ -18,7 +18,7 @@ import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5, m
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
-import { ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay, setStageBg } from './scene';
+import { smallImages, ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay, setStageBg } from './scene';
 import { runTask } from './tasks';
 import { jpBlock, vars } from './text';
 
@@ -305,8 +305,21 @@ function mapScreen(regionId?: string) {
   const here = clusterOf(G.screen)?.id;
   const region = regionId ?? clusterOf(G.screen)?.region ?? 'R1';
   const info = h('div', { class: 'map-info' }, h('div', { class: 'small muted' }, t('map.pick')));
+  const art = settings.mapArt;
   const pins = CLUSTERS.filter((c) => c.region === region).map((c) => {
     const visited = c.screens.some((s) => G.visited.includes(s));
+    if (art && c.art) {
+      // Illustrierte Karte: leuchtender Kreis direkt auf dem Gebäude, Name erscheint bei Auswahl
+      const [x, y, r] = c.art;
+      return h('button', {
+        class: `spot ${c.id === here ? 'here' : ''} ${visited ? 'visited' : ''}`,
+        style: `left:${x}%;top:${y}%;--r:${r}`,
+        'aria-label': clusterName(c.id),
+        'data-id': c.id,
+        onclick: () => pick(c.id),
+      }, h('span', { class: 'ring' }), c.id === here ? h('span', { class: 'me' }) : null,
+      h('span', { class: `spot-label ${y < 14 ? 'below' : ''} ${x > 80 ? 'left' : x < 20 ? 'right' : ''}` }, clusterName(c.id)));
+    }
     return h('button', {
       class: `pin ${c.id === here ? 'here' : ''} ${visited ? 'visited' : ''} ${c.flip ? 'flip' : ''}`,
       style: `left:${c.x / 10}%;top:${(c.y / 820) * 100}%`,
@@ -316,7 +329,9 @@ function mapScreen(regionId?: string) {
     }, h('span', { class: 'dot' }), h('span', { class: 'pin-label' }, clusterName(c.id)));
   });
   const bases: Record<string, string> = { R1: mapBase, R2: mapBaseR2, R3: mapBaseR3, R4: mapBaseR4, R5: mapBaseR5, R6: mapBaseR6 };
-  showOverlay(h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
+  showOverlay(art
+    ? h('div', { class: 'worldmap art' }, h('img', { class: 'map-img', src: `img/maps/${region}${smallImages() ? '@s' : ''}.webp`, alt: '' }), ...pins)
+    : h('div', { class: 'worldmap' }, svg(bases[region] ?? mapBase, 'map-base'), ...pins));
   const pick = (id: string) => {
     sfx.tap();
     pins.forEach((p) => p.classList.toggle('sel', p.dataset.id === id));
@@ -444,7 +459,7 @@ function slotScreen(mode: 'save' | 'load', back: () => void) {
 }
 
 function settingsScreen(back: () => void) {
-  const toggle = (key: 'romaji' | 'sound' | 'autosave', label: string) => {
+  const toggle = (key: 'romaji' | 'sound' | 'autosave' | 'mapArt', label: string) => {
     const box = h('input', { type: 'checkbox' }) as HTMLInputElement;
     box.checked = settings[key];
     box.onchange = () => { settings[key] = box.checked; saveSettings(); sfx.tap(); };
@@ -459,6 +474,7 @@ function settingsScreen(back: () => void) {
     toggle('romaji', t('settings.romaji')),
     toggle('sound', t('settings.sound')),
     toggle('autosave', t('settings.autosave')),
+    toggle('mapArt', t('settings.mapArt')),
     h('label', {}, t('settings.speed')), speed,
     h('div', { class: 'small muted', html: jpBlock('れい：こんにちは', 'rei: konnichiwa') }),
     testToggle()));

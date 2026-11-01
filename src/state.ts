@@ -27,7 +27,7 @@ export let currentSlot = 1;
 export function setGame(g: GameState, slot: number) { G = g; currentSlot = slot; }
 
 // ---------- Einstellungen (global, nicht pro Spielstand) ----------
-export const settings: Settings = { romaji: true, sound: true, autosave: true, textSpeed: 1 };
+export const settings: Settings = { romaji: true, sound: true, autosave: true, textSpeed: 1, mapArt: true };
 export function loadSettings() {
   try {
     const raw = localStorage.getItem(KEY_SETTINGS);

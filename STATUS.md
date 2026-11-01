@@ -1,7 +1,12 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.2 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.3 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.3
+- Illustrierte Regionskarten (`public/img/maps/R1–R6`). Orte leuchten als pulsierende Ringe direkt auf dem Gebäude; Hover/Auswahl verstärkt das Leuchten und zeigt den Namen. Positionen in world.json → `clusters[].art` = [x %, y %, Radius %].
+- Die alten schematischen Karten bleiben im Code: Einstellungen → „Illustrierte Karten“ ausschalten.
+- Slots nach Nutzer-Feedback überarbeitet; einzelne Slots lassen sich mit `null` streichen (Screens mit nur 2 Plätzen).
 
 ### Neu in v1.2
 - Sprites für die letzten sechs Figuren: Tori, Ryōsuke, Haruto, Mio, Nanami, Kater Goro (je 3 Posen). Keine Platzhalter-Figuren mehr. Goro wird mit Faktor 0,42 der Slothöhe gezeichnet (`scale` in npcs.json).
@@ -153,12 +158,11 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 - KANJI_RADICAL_STROKE_PICK ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen), ohne echtes Strich- oder Radikal-Zerlegen.
 
 ### Grafik
-- Regionskarten sind noch schematische Vektorzeichnungen (neue Karten in Arbeit, Layout-Vorlagen erstellt).
 - Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner, Espresso, Ladenschild, Linienplan, Buchrücken, Bildband, Holzdruck, Torschild, Uhrturm, Wörterbuch, Register, Graureiher, Schwarzes Brett, Namensstein Ōtemae, Löwenzähne, Seil, Flyer, Shīsā, Spielmodule, Tour-Shirt, Bausatz, Mützenregal, Omamori, Momiji, Filter, Katsuobushi, Artbook, Bunraku-Heft, Kunstrasenschuhe, Comic, Wagashi, Takoyaki-Teller, Thermometer, Senbei, roter Ingwer, Gruppenkasse, Festival-Armband, Reibe, Keramikschale, Schriftrolle, Notizbuch, Tempel-Grundriss, Glückstäfelchen, Skizzenbuch, Hongan-ji, Shōgi-Brett, Kombu, Festplakat, Wandbild, OMU-Schriftzug, Harukas am Abend, Halstuch, Fährplan, Bahnhofsschnitt, Röstgrade, Linse, Efeu) und die Quizkarten (Kanäle, Monorail, Umeda-Ausgänge, Bucht von Ōsaka) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
 - Partikeleffekte (Blüten, Regen, Laub) aus dem GDD fehlen noch.
 - Screen 53: Variante B (überdachte Janjan-Gasse) wird verwendet; Variante A (Straße mit Turmblick, abends) ist eingetragen, aber noch nicht eingebunden.
 - Screens 11–17 haben nur halbe Auflösung (bewusst so belassen).
-- Weltkarte ist schematisch gezeichnet (keine echte Kartengrundlage).
+- Illustrierte Karten sind KI-Bilder: Lage der Orte zueinander stimmt grob, nicht maßstabsgetreu (z. B. Nishinomiya-Schrein in R1 rechts statt links von Kōshien).
 
 ### Inhalte
 - Kanji-Strang vollständig auf N5 umgestellt (siehe `CHANGES.md`). Die Hentaigana-Etappe (Hiragana 12) ist ersetzt durch alte Schreibweisen (ゑ/ゐ, Schilder von rechts nach links).

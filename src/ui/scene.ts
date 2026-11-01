@@ -25,7 +25,7 @@ export function preload(screenId: string) {
   const i = new Image();
   i.src = src;
 }
-function smallImages() { return top.clientWidth * (window.devicePixelRatio || 1) < 1100; }
+export function smallImages() { return top.clientWidth * (window.devicePixelRatio || 1) < 1100; }
 
 export function renderScene(screenId: string, people: Presence[], onNpc: (p: Presence) => void) {
   const def = SCREENS[screenId];
