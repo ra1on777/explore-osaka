@@ -633,7 +633,7 @@
      "type": "ingredient",
      "q": "Was steckt in jeder Takoyaki-Kugel?",
      "dish": "Takoyaki",
-     "art": "dish",
+     "art": "takoyaki",
      "clues": [
       "Es lebt im Meer.",
       "Es hat acht Arme.",
@@ -777,30 +777,15 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "hanafuda",
+     "type": "hanafuda",
      "rounds": [
       {
-       "q": "Kiefer und ein Kranich.",
-       "art": "hf-1",
-       "options": [
-        "Januar",
-        "Mai",
-        "August",
-        "Oktober"
-       ],
-       "answer": 0
+       "card": "hf-1",
+       "q": "Kiefer und ein Kranich."
       },
       {
-       "q": "Ein voller Mond über Gras.",
-       "art": "hf-8",
-       "options": [
-        "März",
-        "August",
-        "Juni",
-        "Dezember"
-       ],
-       "answer": 1
+       "card": "hf-8",
+       "q": "Ein voller Mond über Gras."
       }
      ]
     }
@@ -984,10 +969,9 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "karuta",
-     "timed": 8,
-     "fixed": [
+     "type": "karuta",
+     "time": 8,
+     "cards": [
       "さかな",
       "いぬ",
       "ねこ",
@@ -996,15 +980,15 @@
      "rounds": [
       {
        "q": "Es schwimmt im Aquarium!",
-       "answer": 0
+       "answer": "さかな"
       },
       {
        "q": "Es macht „miau“!",
-       "answer": 2
+       "answer": "ねこ"
       },
       {
        "q": "Es fliegt am Himmel!",
-       "answer": 3
+       "answer": "とり"
       }
      ]
     }

@@ -109,8 +109,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
       const region = await page.evaluate((sid) => window.__eo.data.clusterOf(sid).region, next.screen);
       const tab = await page.$(`[data-region="${region}"]:not(.on)`);
       if (tab) { await tab.click(); await page.waitForTimeout(120); }
-      const label = await page.evaluate((cid) => document.querySelector(`.pin[aria-label]`) && [...document.querySelectorAll('.pin')].find((p) => p.getAttribute('aria-label') === window.__eo.data.clusterName(cid)).getAttribute('aria-label'), cluster);
-      await page.click(`.pin[aria-label="${label}"]`);
+      await page.click(`.worldmap [data-id="${cluster}"]`, { force: true });
       await page.waitForTimeout(100);
       const name = await page.evaluate((sid) => window.__eo.data.screenName(sid), next.screen);
       await page.click(`.map-info .way:has-text("${name}")`);
@@ -120,7 +119,7 @@ const VP = { phone: { width: 390, height: 844 }, desk: { width: 1440, height: 90
     try { await page.click(`.npc[data-npc="${next.npc}"]`, { timeout: 1500 }); }
     catch (e0) {
       // Verdeckte Figur: über die Liste „Hier“ ansprechen (so wie Spieler es auch können)
-      const ok = await page.evaluate((id) => { const n = window.__eo.data.npcName(id); const b = [...document.querySelectorAll('.people .person')].find((x) => x.textContent.trim() === n); if (b) { b.click(); return true; } return false; }, next.npc);
+      const ok = await page.evaluate((id) => { const n = window.__eo.data.npcName(id); const b = [...document.querySelectorAll('.people .person')].find((x) => x.textContent.replace('!', '').trim() === n); if (b) { b.click(); return true; } return false; }, next.npc);
       if (ok) { listClicks.push(`${next.q}#${next.i}@${await page.evaluate(() => window.__eo.G.screen)}`); }
       else try { throw e0; }
     catch (e) { await page.screenshot({ path: `${shotDir || '.'}/FAIL.png` }); console.log('FAIL', JSON.stringify(next), await page.evaluate(() => document.querySelector('.panel').innerText.slice(0, 400))); throw e; } }
@@ -217,6 +216,27 @@ async function solve(page, t) {
         await page.click('.task .btn.primary.wide:not(.pk-shoot)');
         await page.waitForTimeout(150);
       }
+      return 'continued';
+    case 'karuta':
+      for (let i = 0; i < t.rounds.length; i++) {
+        const r = t.rounds[i];
+        await page.waitForSelector(`.kr-card[data-v="${r.answer}"]`);
+        await page.waitForTimeout(300);
+        if (i === 0) { const w = t.cards.find((c) => c !== r.answer); await page.click(`.kr-card[data-v="${w}"]`); }
+        await page.click(`.kr-card[data-v="${r.answer}"]`);
+        await page.waitForSelector(`.kr-card[data-v="${r.answer}"]`, { state: 'detached' });
+      }
+      await page.click('.task .btn.primary.wide');
+      return 'continued';
+    case 'hanafuda':
+      for (let i = 0; i < t.rounds.length; i++) {
+        const m = Number(t.rounds[i].card.slice(3));
+        await page.waitForSelector('.hf-hand .hf-card');
+        if (i === 0) { const other = await page.$(`.hf-slot:not([data-m="${m}"])`); await other.click(); }
+        await page.click(`.hf-slot[data-m="${m}"]`);
+        await page.waitForTimeout(1250);
+      }
+      await page.click('.task .btn.primary.wide');
       return 'continued';
     case 'duel':
       for (let i = 0; i < t.rounds.length; i++) {

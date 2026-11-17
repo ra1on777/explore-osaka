@@ -103,6 +103,7 @@ export const placeholders: Record<string, string> = {
 // ---------- Nahaufnahmen (Inspect), viewBox 200x150 ----------
 const C = (body: string) => wrap('0 0 200 150', `<rect width="200" height="150" fill="${CREME}"/>${body}`);
 export const closeups: Record<string, string> = {
+  takoyaki: '', ema: '', goshuin: '', lantern: '',
   plungepool: C(`
     <rect x="0" y="0" width="200" height="150" fill="#6f8f7a"/>
     <path d="M70 0h60v70H70z" fill="#5d6b70"/><path d="M86 0h28v78H86z" fill="#e9f4fb"/>
@@ -189,7 +190,7 @@ export const leaves: Record<string, string> = {
 // ---------- Hanafuda-Karten (vereinfachte Motive) ----------
 const HF = (bg: string, body: string, kanji: string) => wrap('0 0 80 120', `
   <rect x="2" y="2" width="76" height="116" rx="6" fill="${bg}" stroke="${O}" stroke-width="3"/>${body}
-  <rect x="58" y="8" width="14" height="30" rx="2" fill="${PAPER}" stroke="${O}"/><text x="65" y="28" font-size="12" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">${kanji}</text>`);
+  <g class="hf-tag"><rect x="58" y="8" width="14" height="30" rx="2" fill="${PAPER}" stroke="${O}"/><text x="65" y="28" font-size="12" text-anchor="middle" font-family="Noto Sans JP, sans-serif" fill="${O}">${kanji}</text></g>`);
 const flower = (cx: number, cy: number, r: number, fill: string) =>
   [0, 72, 144, 216, 288].map((a) => `<circle cx="${cx + Math.cos((a * Math.PI) / 180) * r}" cy="${cy + Math.sin((a * Math.PI) / 180) * r}" r="${r * 0.75}" fill="${fill}" stroke="${O}"/>`).join('') + `<circle cx="${cx}" cy="${cy}" r="${r * 0.45}" fill="${GOLD}"/>`;
 export const hanafuda: Record<string, string> = {
@@ -199,6 +200,7 @@ export const hanafuda: Record<string, string> = {
   'hf-5': HF('#e9f1f7', `<path d="M4 98h72" stroke="${BLUE}" stroke-width="5"/>${[20, 38, 56].map((x) => `<path d="M${x} 100V54" stroke="${GREEN}" stroke-width="3"/><path d="M${x} 56c-8-6-6-16 0-20 6 4 8 14 0 20z" fill="#5b45b0" stroke="${O}"/>`).join('')}`, '五'),
   'hf-6': HF('#f6efe0', `${flower(36, 74, 13, '#e05570')}<path d="M54 44c6-6 14-4 14 2-6 2-8 6-14-2zM54 44c-2-8 4-12 10-10-2 6 0 8-10 10z" fill="${GOLD}" stroke="${O}"/>`, '六'),
   'hf-1': HF('#c94a3a', `<circle cx="40" cy="44" r="14" fill="${GOLD}" opacity=".9"/><path d="M14 112c6-22 14-30 26-34M40 78c10-4 20-2 28 6" stroke="#3a2a1a" stroke-width="5" fill="none"/><path d="M10 92c10-12 30-12 40 0zM34 76c10-12 30-12 40 0z" fill="#2f5a3a" stroke="${O}"/><path d="M18 64c6-10 18-14 24-6l10-8 2 6-10 6c-4 8-18 10-26 2z" fill="#fff" stroke="${O}"/><circle cx="50" cy="52" r="2" fill="${RED}"/>`, '一'),
+  'hf-7': HF('#f1e6cf', `${[[10, 112, 30, 20], [24, 116, 52, 34], [40, 116, 70, 54]].map(([x1, y1, x2, y2]) => `<path d="M${x1} ${y1}Q${x1 + 4} ${(y1 + y2) / 2} ${x2} ${y2}" stroke="#6b4a2a" stroke-width="2" fill="none"/>`).join('')}${[[16, 50], [22, 38], [30, 26], [38, 62], [46, 48], [54, 40], [60, 70], [66, 58]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.2" fill="#c0507e" stroke="${O}" stroke-width=".8"/>`).join('')}<path d="M14 100c4-14 20-18 34-16 8 1 14 6 18 12l4 2-4 2c-2 6-8 8-16 8H22c-6 0-10-3-8-8z" fill="#7a5532" stroke="${O}" stroke-width="1.5"/><circle cx="60" cy="96" r="1.4" fill="${O}"/><path d="M22 108v6M34 108v6M48 108v6M58 106v6" stroke="${O}" stroke-width="2.5"/>`, '七'),
   'hf-8': HF('#e9e2c8', `<rect x="4" y="4" width="72" height="56" fill="#c94a3a"/><circle cx="36" cy="40" r="18" fill="#fff" stroke="${O}"/><path d="M4 116c20-50 50-60 72-60v60z" fill="#2a2a2a"/>${[16, 28, 40, 52, 64].map((x) => `<path d="M${x} 116c0-20 4-34 10-44" stroke="#c9b27a" stroke-width="3" fill="none"/>`).join('')}`, '八'),
   'hf-9': HF('#f3efe4', `${flower(28, 40, 10, '#e9c04a')}${flower(50, 62, 9, '#e9c04a')}<path d="M24 86h32l-4 20H28z" fill="${RED}" stroke="${O}" stroke-width="2"/><text x="40" y="100" font-size="9" text-anchor="middle" fill="${GOLD}">寿</text>`, '九'),
   'hf-10': HF('#f3efe4', `<path d="M10 20c20 10 40 8 60 0" stroke="#5a3b2a" stroke-width="4" fill="none"/>${[[20, 30], [40, 26], [58, 32]].map(([x, y]) => `<path d="M${x} ${y}l4 10 9-3-6 8 8 4-10 1 1 10-6-8-6 8 1-10-10-1 8-4-6-8 9 3z" fill="#d6452f" stroke="${O}"/>`).join('')}<path d="M24 110l4-30c4-10 16-10 20 0l4 30M30 72l-6-12M46 72l6-12" stroke="#8a5a32" stroke-width="5" fill="none"/>`, '十'),
@@ -733,3 +735,6 @@ export const mapBaseR6 = wrap('0 0 1000 820" preserveAspectRatio="none', `
 export const pickupIcon = wrap('0 0 40 48', `
   <path d="M20 2a17 17 0 0 1 17 17c0 9-7 15-12 17l-5 9-5-9C10 34 3 28 3 19A17 17 0 0 1 20 2z" fill="#fff" stroke="${NAVY}" stroke-width="3"/>
   <circle cx="18" cy="17" r="7" fill="none" stroke="${NAVY}" stroke-width="3"/><path d="M23 22l6 6" stroke="${NAVY}" stroke-width="3"/>`);
+
+/** Gemalte Nahaufnahmen (img/closeups/<key>.webp). Fehlt ein Bild, wird die Vektorzeichnung genutzt. */
+export const CLOSEUP_IMG = new Set(['goldenface', 'takoyaki', 'charm', 'momiji', 'shogiboard', 'chawan', 'ema', 'goshuin', 'lantern']);

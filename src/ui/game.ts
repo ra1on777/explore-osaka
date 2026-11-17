@@ -14,12 +14,12 @@ import {
   G, SLOTS, autosave, currentSlot, exportGame, importGame, lastSlot, newGame, readSlot, saveSettings, setGame,
   settings, writeSlot,
 } from '../state';
-import { closeups, icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5, mapBaseR6 } from './art';
+import { icons, mapBase, mapBaseR2, mapBaseR3, mapBaseR4, mapBaseR5, mapBaseR6 } from './art';
 import { runLines } from './dialog';
 import { h, svg } from './dom';
 import { confirmBox, mount, toast, top } from './layout';
 import { smallImages, ensureNpc, focusNpc, preload, renderPickups, renderScene, setMood, showOverlay, setStageBg } from './scene';
-import { runTask } from './tasks';
+import { closeupArt, runTask } from './tasks';
 import { jpBlock, vars } from './text';
 
 let busy = false; // läuft gerade eine Etappe?
@@ -220,7 +220,7 @@ async function takeItem(questId: string, f: NonNullable<ReturnType<typeof stageC
   pickUp(questId, f.item);
   save();
   showOverlay(h('div', { class: 'closeup' }, h('div', { class: 'closeup-card' },
-    h('div', { class: 'closeup-head' }, f.item), svg(closeups[f.art ?? ''] ?? closeups.dictionary, 'closeup-art'))));
+    h('div', { class: 'closeup-head' }, f.item), closeupArt(f.art ?? '', 'dictionary'))));
   await new Promise<void>((r) => mount(h('div', { class: 'result' },
     h('div', { class: 'result-strand' }, strandTitle(questId)),
     h('h3', {}, t('fetch.got')),

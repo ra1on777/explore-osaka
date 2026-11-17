@@ -461,10 +461,9 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "karuta",
-     "timed": 8,
-     "fixed": [
+     "type": "karuta",
+     "time": 8,
+     "cards": [
       "きょうと",
       "なら",
       "こうべ",
@@ -474,23 +473,23 @@
      "rounds": [
       {
        "q": "Die alte Kaiserstadt mit tausend Tempeln!",
-       "answer": 0
+       "answer": "きょうと"
       },
       {
        "q": "Die Stadt der Hirsche und des großen Buddha!",
-       "answer": 1
+       "answer": "なら"
       },
       {
        "q": "Der Hafen mit dem berühmten Rindfleisch!",
-       "answer": 2
+       "answer": "こうべ"
       },
       {
        "q": "Die Küche der Nation – hier stehst du gerade!",
-       "answer": 3
+       "answer": "おおさか"
       },
       {
        "q": "Südlich von hier, berühmt für Mandarinen und den Kōya-san!",
-       "answer": 4
+       "answer": "わかやま"
       }
      ]
     }

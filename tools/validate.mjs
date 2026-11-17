@@ -74,6 +74,19 @@ for (const q of quests) {
           if (r.keeper && !['center', 'left', 'right', 'wide', 'diveLeft', 'diveRight'].includes(r.keeper)) err(`${key}: penalty Torwart ${r.keeper}`);
           if (r.power && !(r.power[0] >= 0 && r.power[1] <= 1 && r.power[1] - r.power[0] >= 0.15)) err(`${key}: penalty Kraftfenster`);
         }
+        if (t.type === 'karuta') {
+          if (new Set(t.cards).size !== t.cards.length) err(`${key}: karuta doppelte Karten`);
+          const used = new Set();
+          for (const r of t.rounds) {
+            if (!t.cards.includes(r.answer)) err(`${key}: karuta Antwort ${r.answer} fehlt`);
+            if (used.has(r.answer)) err(`${key}: karuta Karte ${r.answer} doppelt gefragt`);
+            used.add(r.answer);
+          }
+        }
+        if (t.type === 'hanafuda') for (const r of t.rounds) {
+          if (!/^hf-(1[0-2]|[1-9])$/.test(r.card)) err(`${key}: hanafuda Karte ${r.card}`);
+          if (t.months && !t.months.includes(Number(r.card.slice(3)))) err(`${key}: hanafuda Monat fehlt`);
+        }
         if (t.type === 'duel') for (const r of t.rounds) {
           if (!(r.answer >= 0 && r.answer < t.moves.length)) err(`${key}: duel answer`);
           if (!['wide', 'closed', 'rush', 'lunge', 'shoulder', 'deep', 'side', 'loose', 'tired', 'slip', 'post'].includes(r.pose)) err(`${key}: duel Pose ${r.pose}`);

@@ -642,63 +642,22 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "hanafuda",
+     "type": "hanafuda",
      "rounds": [
       {
-       "q": "Welche Pflanze gehört zum März?",
-       "art": "hf-3",
-       "options": [
-        "Pflaumenblüte",
-        "Kirschblüte",
-        "Pfingstrose",
-        "Schwertlilie"
-       ],
-       "answer": 1
+       "card": "hf-3"
       },
       {
-       "q": "Und zum Februar?",
-       "art": "hf-2",
-       "options": [
-        "Pflaumenblüte",
-        "Glyzinie",
-        "Kirschblüte",
-        "Ahorn"
-       ],
-       "answer": 0
+       "card": "hf-2"
       },
       {
-       "q": "Der April zeigt herabhängende lila Blütentrauben …",
-       "art": "hf-4",
-       "options": [
-        "Schwertlilie",
-        "Kiefer",
-        "Glyzinie",
-        "Pfingstrose"
-       ],
-       "answer": 2
+       "card": "hf-4"
       },
       {
-       "q": "Mai – eine Blume, die am Wasser wächst.",
-       "art": "hf-5",
-       "options": [
-        "Chrysantheme",
-        "Schwertlilie",
-        "Glyzinie",
-        "Buschklee"
-       ],
-       "answer": 1
+       "card": "hf-5"
       },
       {
-       "q": "Juni – große, prächtige Blüten mit Schmetterlingen.",
-       "art": "hf-6",
-       "options": [
-        "Kirschblüte",
-        "Weide",
-        "Pflaume",
-        "Pfingstrose"
-       ],
-       "answer": 3
+       "card": "hf-6"
       }
      ]
     }
@@ -869,64 +828,42 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "karuta",
-     "timed": 8,
+     "type": "karuta",
+     "time": 8,
+     "cards": [
+      "Danke",
+      "Wirklich?",
+      "Das geht nicht!",
+      "Wieso das denn?!",
+      "Läuft das Geschäft?",
+      "Bist du müde?",
+      "Lecker"
+     ],
      "rounds": [
       {
        "jp": "おおきに",
        "ro": "ōkini",
-       "options": [
-        "Tschüss",
-        "Danke",
-        "Wie teuer?",
-        "Wirklich?"
-       ],
-       "answer": 1
+       "answer": "Danke"
       },
       {
        "jp": "ほんま？",
        "ro": "honma?",
-       "options": [
-        "Wirklich?",
-        "Danke",
-        "Das geht nicht",
-        "Gut gemacht"
-       ],
-       "answer": 0
+       "answer": "Wirklich?"
       },
       {
        "jp": "あかん",
        "ro": "akan",
-       "options": [
-        "Lecker",
-        "Ich komme",
-        "Das geht nicht!",
-        "Danke"
-       ],
-       "answer": 2
+       "answer": "Das geht nicht!"
       },
       {
        "jp": "なんでやねん！",
        "ro": "nande ya nen!",
-       "options": [
-        "Guten Morgen",
-        "Wie geht's?",
-        "Ich weiß",
-        "Wieso das denn?!"
-       ],
-       "answer": 3
+       "answer": "Wieso das denn?!"
       },
       {
        "jp": "もうかりまっか？",
        "ro": "mōkarimakka?",
-       "options": [
-        "Läuft das Geschäft?",
-        "Bist du müde?",
-        "Hast du Hunger?",
-        "Wo ist der Bahnhof?"
-       ],
-       "answer": 0
+       "answer": "Läuft das Geschäft?"
       }
      ]
     }

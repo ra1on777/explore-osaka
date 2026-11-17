@@ -1,7 +1,13 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.4 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.5 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.5
+- **Karuta** (Aufgabentyp `karuta`): Karten liegen auf dem Tatami, der Vorleser liest, du tippst die Karte. Bei Zeitablauf schlägt der Gegner zu; falsche Karte = お手つき. Genommene Karten verschwinden, am Ende Punktestand. Daten: `cards`, Runden mit `answer` (Kartentext).
+- **Hanafuda** (Aufgabentyp `hanafuda`): Blumenkarte auf den richtigen Monat legen; Monate stehen auf Japanisch (いちがつ … じゅうにがつ) und üben so die N5-Monatsnamen. Monatszahl auf den Karten wird im Spiel ausgeblendet. Neue Karte Juli (Buschklee & Wildschwein).
+- **Blätter**: Silhouette startet unscharf und wird langsam scharf.
+- **Gemalte Nahaufnahmen** (`public/img/closeups/`, Liste `CLOSEUP_IMG` in art.ts): goldenes Gesicht, Takoyaki, Omamori, Momiji, Shōgi-Brett, Teeschale; zusätzlich vorrätig: Ema, Goshuin-Buch, Laterne. Fehlt ein Bild, bleibt die Vektorzeichnung.
 
 ### Neu in v1.4
 - Fußball-Minispiele neu (`src/ui/football.ts`):
@@ -157,9 +163,6 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 ## 2. Offen / vereinfacht (Platzhalter)
 
 ### Thematische Minigames → derzeit als Auswahl-Runden im Thema
-- HANAFUDA_MATCH_MINI (Kultur Japan 2): Monat → Pflanze, mit einfacher SVG-Karte.
-- KARUTA_TOUCH_SLAP (Kansai 4, 7): Satz/Hinweis → Karte, mit 8-Sekunden-Zeitbalken.
-- SILHOUETTE_IDENTIFY (Natur 2): Blatt-Umriss → Baum.
 - KANJI_RADICAL_STROKE_PICK ist als Kanji-Raster umgesetzt (Bedeutung → Zeichen), ohne echtes Strich- oder Radikal-Zerlegen.
 
 ### Grafik

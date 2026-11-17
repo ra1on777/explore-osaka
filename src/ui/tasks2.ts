@@ -5,7 +5,7 @@ import type { Task } from '../types';
 import { closeups, quizMaps } from './art';
 import { h, shuffle, svg, wait } from './dom';
 import { hot, sceneImage, showOverlay } from './scene';
-import { continueBtn, frame, rightFx, wrongFx } from './tasks';
+import { closeupArt, continueBtn, frame, rightFx, wrongFx } from './tasks';
 import { jpBlock, rich } from './text';
 
 // ---------- Kartenquiz / Wegfindung: Tippen auf einen Punkt der Karte (oberer Bildschirm) ----------
@@ -309,7 +309,7 @@ export async function ingredient(task: Extract<Task, { type: 'ingredient' }>): P
   let errors = 0;
   let shown = 1;
   showOverlay(h('div', { class: 'closeup' }, h('div', { class: 'closeup-card' },
-    h('div', { class: 'closeup-head' }, task.dish), svg(closeups[task.art ?? 'dish'] ?? closeups.dish, 'closeup-art'))));
+    h('div', { class: 'closeup-head' }, task.dish), closeupArt(task.art ?? 'dish', 'dish'))));
   const clues = h('ol', { class: 'clues' });
   const draw = () => clues.replaceChildren(...task.clues.slice(0, shown).map((c) => h('li', { html: rich(c) })));
   draw();

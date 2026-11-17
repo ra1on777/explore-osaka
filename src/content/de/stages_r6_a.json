@@ -364,11 +364,11 @@
     {"s": "takeshi", "p": "think", "t": "Ordne die Karten zu."}
    ],
    "tasks": [
-    {"type": "rounds", "art": "hanafuda", "rounds": [
-     {"q": "Rote Blätter und ein Hirsch. Welcher Monat?", "art": "hf-10", "options": ["Oktober – Ahorn", "Mai – Schwertlilie", "Februar – Pflaume", "Juni – Pfingstrose"], "answer": 0},
-     {"q": "Gelbe Blüten und ein Sake-Becher.", "art": "hf-9", "options": ["Januar – Kiefer", "September – Chrysantheme", "April – Glyzinie", "Dezember – Paulownie"], "answer": 1},
-     {"q": "Eine Weide im Regen, ein Mann mit Schirm.", "art": "hf-11", "options": ["November – Weide", "August – Pampasgras", "März – Kirsche", "Juli – Buschklee"], "answer": 0},
-     {"q": "Kiefer, rote Sonne und ein Kranich.", "art": "hf-1", "options": ["Oktober – Ahorn", "Januar – Kiefer", "Mai – Schwertlilie", "September – Chrysantheme"], "answer": 1}
+    {"type": "hanafuda", "rounds": [
+     {"card": "hf-10", "q": "Rote Blätter und ein Hirsch. Welcher Monat?"},
+     {"card": "hf-9", "q": "Gelbe Blüten und ein Sake-Becher."},
+     {"card": "hf-11", "q": "Eine Weide im Regen, ein Mann mit Schirm."},
+     {"card": "hf-1", "q": "Kiefer, rote Sonne und ein Kranich."}
     ]}
    ],
    "after": [
@@ -465,12 +465,12 @@
     {"s": "takeshi", "p": "think", "t": "Finde ihre Monate!"}
    ],
    "tasks": [
-    {"type": "rounds", "art": "hanafuda", "rounds": [
-     {"q": "Der Kranich unter der Kiefer.", "art": "hf-1", "options": ["Januar", "April", "Juli", "Oktober"], "answer": 0},
-     {"q": "Der Vorhang unter Kirschblüten.", "art": "hf-3", "options": ["Februar", "März", "Juni", "November"], "answer": 1},
-     {"q": "Der volle Mond über dem Pampasgras.", "art": "hf-8", "options": ["Mai", "August", "September", "Dezember"], "answer": 1},
-     {"q": "Der Mann mit Schirm unter der Weide.", "art": "hf-11", "options": ["Januar", "Juni", "November", "März"], "answer": 2},
-     {"q": "Der Phönix in der Paulownie.", "art": "hf-12", "options": ["Dezember", "August", "Mai", "Februar"], "answer": 0}
+    {"type": "hanafuda", "rounds": [
+     {"card": "hf-1", "q": "Der Kranich unter der Kiefer."},
+     {"card": "hf-3", "q": "Der Vorhang unter Kirschblüten."},
+     {"card": "hf-8", "q": "Der volle Mond über dem Pampasgras."},
+     {"card": "hf-11", "q": "Der Mann mit Schirm unter der Weide."},
+     {"card": "hf-12", "q": "Der Phönix in der Paulownie."}
     ]}
    ],
    "after": [
@@ -532,13 +532,13 @@
     {"s": "emi", "p": "note", "t": "Ich lese, du tippst die Bedeutung. Aber schnell!"}
    ],
    "tasks": [
-    {"type": "rounds", "art": "karuta", "timed": 8, "rounds": [
-     {"jp": "おおきに", "ro": "ōkini", "options": ["Danke", "Wirklich?", "Tschüss", "Lecker"], "answer": 0},
-     {"jp": "あかん", "ro": "akan", "options": ["Gut", "Das geht nicht!", "Später", "Hallo"], "answer": 1},
-     {"jp": "ほんま", "ro": "honma", "options": ["wirklich", "danke", "nein", "billig"], "answer": 0},
-     {"jp": "ぼちぼち でんな", "ro": "bochi-bochi denna", "options": ["Sehr schlecht!", "Super!", "Geht so", "Keine Ahnung"], "answer": 2},
-     {"jp": "なんでやねん", "ro": "nande ya nen", "options": ["Guten Appetit", "Wieso das denn?!", "Gute Nacht", "Bis morgen"], "answer": 1},
-     {"jp": "おいでやす", "ro": "oideyasu", "options": ["Willkommen (Kyōto)", "Danke (Kōbe)", "Tschüss (Nara)", "Hilfe!"], "answer": 0}
+    {"type": "karuta", "time": 8, "cards": ["Danke", "Das geht nicht!", "wirklich", "Geht so", "Wieso das denn?!", "Willkommen (Kyōto)", "Lecker", "Tschüss"], "rounds": [
+     {"jp": "おおきに", "ro": "ōkini", "answer": "Danke"},
+     {"jp": "あかん", "ro": "akan", "answer": "Das geht nicht!"},
+     {"jp": "ほんま", "ro": "honma", "answer": "wirklich"},
+     {"jp": "ぼちぼち でんな", "ro": "bochi-bochi denna", "answer": "Geht so"},
+     {"jp": "なんでやねん", "ro": "nande ya nen", "answer": "Wieso das denn?!"},
+     {"jp": "おいでやす", "ro": "oideyasu", "answer": "Willkommen (Kyōto)"}
     ]}
    ],
    "after": [

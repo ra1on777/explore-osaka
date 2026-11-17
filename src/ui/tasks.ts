@@ -5,13 +5,14 @@ import { t } from '../i18n';
 import { G } from '../state';
 import { NPCS } from '../data';
 import type { Option, Task } from '../types';
-import { closeups, hanafuda, icons, leaves, sports } from './art';
+import { CLOSEUP_IMG, closeups, hanafuda, icons, leaves, sports } from './art';
 import { h, shuffle, svg, wait } from './dom';
 import { mount, toast } from './layout';
 import { portrait } from './dialog';
 import { hot, showOverlay } from './scene';
 import { jpBlock, matches, rich } from './text';
 import { duel, penalty } from './football';
+import { hanafudaGame, karuta } from './cards';
 import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo, ingredient, shogi } from './tasks2';
 
 type El = HTMLElement;
@@ -32,6 +33,8 @@ export async function runTask(task: Task): Promise<number> {
     case 'shogi': return shogi(task);
     case 'penalty': return penalty(task);
     case 'duel': return duel(task);
+    case 'karuta': return karuta(task);
+    case 'hanafuda': return hanafudaGame(task);
     case 'mapquiz': return mapquiz(task);
     case 'ticket': return ticket(task);
     case 'espresso': return espresso(task);
@@ -43,6 +46,11 @@ export async function runTask(task: Task): Promise<number> {
 }
 
 // ---------- Bausteine ----------
+/** Nahaufnahme: gemaltes Bild, falls vorhanden, sonst Vektorzeichnung. */
+export function closeupArt(key: string, fallback: string): El {
+  if (CLOSEUP_IMG.has(key)) return h('img', { class: 'closeup-art closeup-img', src: `img/closeups/${key}.webp`, alt: '' });
+  return svg(closeups[key] || closeups[fallback], 'closeup-art');
+}
 function frame(q: string, ...body: (El | null)[]) {
   const fb = h('div', { class: 'feedback', 'aria-live': 'assertive' });
   const el = h('div', { class: 'task' }, h('div', { class: 'q', html: rich(q) }), ...body.filter(Boolean) as El[], fb);
@@ -187,7 +195,7 @@ async function inspect(task: Extract<Task, { type: 'inspect' }>): Promise<number
         showOverlay(h('div', { class: 'closeup' },
           h('div', { class: 'closeup-card' },
             h('div', { class: 'closeup-head' }, task.closeup.title),
-            svg(closeups[task.closeup.art] ?? closeups.board, 'closeup-art'))));
+            closeupArt(task.closeup.art, 'board'))));
         rightFx(fb, task.closeup.text);
         resolve();
       } else if (d <= task.r * 2) {
@@ -387,7 +395,7 @@ async function rounds(task: Extract<Task, { type: 'rounds' }>): Promise<number> 
     const timer = task.timed ? h('div', { class: 'timer' }, h('span')) : null;
     const { el, fb } = frame(r.q ?? '',
       h('div', { class: 'small' }, t('task.round', { i: ri + 1, n: task.rounds.length })),
-      art ? svg(art, `round-art ${task.art ?? ''}`) : null,
+      art ? svg(art, `round-art ${task.art ?? ''} ${task.art === 'leaf' ? 'reveal' : ''}`) : null,
       r.jp ? h('div', { class: 'show', html: jpBlock(r.jp, r.ro, 'huge') }) : null,
       timer, grid);
     let tid: number | undefined;
