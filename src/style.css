@@ -468,3 +468,22 @@ h3 { font-family: var(--title); font-weight: 600; font-size: 1.25em; margin: .2e
 @keyframes spot-pulse { 50% { box-shadow: 0 0 10px 3px rgba(255, 210, 90, .75), inset 0 0 10px rgba(255, 210, 90, .45); } }
 @keyframes spot-sel { 50% { box-shadow: 0 0 26px 9px rgba(255, 200, 70, .95), inset 0 0 18px rgba(255, 220, 120, .7); } }
 @media (prefers-reduced-motion: reduce) { .spot .ring { animation: none !important; } }
+
+/* Fußball: Elfmeter und 1 gegen 1 */
+.pk-pitch, .du-pitch { align-self: center; width: min(100%, 26em); }
+.pk-pitch svg, .du-pitch svg { width: 100%; height: auto; display: block; border-radius: .7em; border: 2px solid #0d1a36; }
+.pk-zone { fill: rgba(255, 255, 255, .06); stroke: rgba(255, 255, 255, .35); stroke-width: 1.5; stroke-dasharray: 5 4; cursor: pointer; transition: fill .15s; }
+.pk-zone:hover { fill: rgba(255, 230, 140, .22); }
+.pk-zone.sel { fill: rgba(255, 210, 90, .35); stroke: var(--gold); stroke-width: 3; stroke-dasharray: none; }
+.pk-keeper, .pk-ball, .du-ballg, .du-me { transition: transform .45s cubic-bezier(.3, .7, .3, 1); }
+.pk-steps { display: flex; gap: .5em; font-size: .78em; }
+.pk-step { flex: 1; text-align: center; padding: .2em .4em; border-radius: .5em; background: #0d1a36; opacity: .55; }
+.pk-step.on { opacity: 1; outline: 1px solid var(--gold); color: var(--gold); }
+.pk-power { position: relative; height: 1.4em; border-radius: 1em; background: linear-gradient(90deg, #2b4a7a, #c0392b); overflow: hidden; }
+.pk-ok { position: absolute; top: 0; bottom: 0; background: rgba(124, 252, 138, .75); box-shadow: inset 0 0 0 2px #fff; }
+.pk-mark { position: absolute; top: -2px; bottom: -2px; width: 5px; margin-left: -2.5px; background: #fff; box-shadow: 0 0 6px #fff, 0 0 0 1px var(--navy); }
+.pk-lbl { position: absolute; top: 50%; transform: translateY(-50%); font-size: .6em; opacity: .85; pointer-events: none; }
+.pk-lbl.l { left: .6em; } .pk-lbl.r { right: .6em; }
+.task.pk-goal .pk-pitch svg, .task.pk-goal .du-pitch svg { animation: pk-flash .6s ease-out; }
+@keyframes pk-flash { 30% { box-shadow: 0 0 0 4px var(--gold), 0 0 24px 6px rgba(244, 182, 63, .7); } }
+.du-moves { grid-template-columns: 1fr 1fr; }

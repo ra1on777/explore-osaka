@@ -68,6 +68,16 @@ for (const q of quests) {
           if (!(r.answer >= 0 && r.answer < n)) err(`${key}: rounds answer`);
           if ((t.fixed ?? r.options ?? []).some((o) => typeof o !== 'string')) err(`${key}: rounds-Optionen müssen Text sein`);
         }
+        if (t.type === 'penalty') for (const r of t.rounds) {
+          const Z = ['tl', 'tc', 'tr', 'bl', 'bc', 'br'];
+          if (!r.good?.length || r.good.some((z) => !Z.includes(z))) err(`${key}: penalty Zonen`);
+          if (r.keeper && !['center', 'left', 'right', 'wide', 'diveLeft', 'diveRight'].includes(r.keeper)) err(`${key}: penalty Torwart ${r.keeper}`);
+          if (r.power && !(r.power[0] >= 0 && r.power[1] <= 1 && r.power[1] - r.power[0] >= 0.15)) err(`${key}: penalty Kraftfenster`);
+        }
+        if (t.type === 'duel') for (const r of t.rounds) {
+          if (!(r.answer >= 0 && r.answer < t.moves.length)) err(`${key}: duel answer`);
+          if (!['wide', 'closed', 'rush', 'lunge', 'shoulder', 'deep', 'side', 'loose', 'tired', 'slip', 'post'].includes(r.pose)) err(`${key}: duel Pose ${r.pose}`);
+        }
         if (t.type === 'decipher') {
           const pool = [...t.tiles];
           for (const a of t.answer) { const i = pool.indexOf(a); if (i < 0) err(`${key}: decipher Kachel ${a} fehlt`); else pool.splice(i, 1); }

@@ -1,7 +1,14 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.3 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.4 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.4
+- Fußball-Minispiele neu (`src/ui/football.ts`):
+  - **Elfmeter** (Aufgabentyp `penalty`), zweistufig: 1. auf eine von 6 Torzonen zielen (Torwart-Haltung lesen), 2. Schusskraft im grünen Bereich stoppen. Zu hart = drüber, zu schwach = gehalten, falsche Ecke = Torwart pariert. Daten pro Runde: `good` (Zonen), `keeper`, optional `power`, `speed`, `wind`.
+  - **1 gegen 1** (Aufgabentyp `duel`), zweistufig: 1. Situation lesen (Gegner-Haltung als Grafik + Text, Reaktionszeit) und Zug wählen, 2. im richtigen Moment ausführen (Timing-Ring). Daten: `moves`, Runden mit `pose` und `ball`.
+  - Timing-Fehler zählen halb, Entscheidungsfehler voll.
+- Alle 11 Fußball-Etappen umgestellt; die alten Runden-Varianten bleiben als Code für andere Strände.
 
 ### Neu in v1.3
 - Illustrierte Regionskarten (`public/img/maps/R1–R6`). Orte leuchten als pulsierende Ringe direkt auf dem Gebäude; Hover/Auswahl verstärkt das Leuchten und zeigt den Namen. Positionen in world.json → `clusters[].art` = [x %, y %, Radius %].
@@ -150,8 +157,6 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 ## 2. Offen / vereinfacht (Platzhalter)
 
 ### Thematische Minigames → derzeit als Auswahl-Runden im Thema
-- SOCCER_1V1_TACTIC_MATCH (Fußball 2, 6, 7): Situation lesen → eine der 4 Aktionen wählen.
-- PENALTY_TIMING_STOP (Fußball 4): Torwart lesen → Ecke wählen (kein Timing-Balken).
 - HANAFUDA_MATCH_MINI (Kultur Japan 2): Monat → Pflanze, mit einfacher SVG-Karte.
 - KARUTA_TOUCH_SLAP (Kansai 4, 7): Satz/Hinweis → Karte, mit 8-Sekunden-Zeitbalken.
 - SILHOUETTE_IDENTIFY (Natur 2): Blatt-Umriss → Baum.
@@ -159,7 +164,7 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 
 ### Grafik
 - Nahaufnahmen (Kolk, goldenes Gesicht, Infotafel, Tiger, Spielplan, Gedenkstein, Lageplan, Banner, Espresso, Ladenschild, Linienplan, Buchrücken, Bildband, Holzdruck, Torschild, Uhrturm, Wörterbuch, Register, Graureiher, Schwarzes Brett, Namensstein Ōtemae, Löwenzähne, Seil, Flyer, Shīsā, Spielmodule, Tour-Shirt, Bausatz, Mützenregal, Omamori, Momiji, Filter, Katsuobushi, Artbook, Bunraku-Heft, Kunstrasenschuhe, Comic, Wagashi, Takoyaki-Teller, Thermometer, Senbei, roter Ingwer, Gruppenkasse, Festival-Armband, Reibe, Keramikschale, Schriftrolle, Notizbuch, Tempel-Grundriss, Glückstäfelchen, Skizzenbuch, Hongan-ji, Shōgi-Brett, Kombu, Festplakat, Wandbild, OMU-Schriftzug, Harukas am Abend, Halstuch, Fährplan, Bahnhofsschnitt, Röstgrade, Linse, Efeu) und die Quizkarten (Kanäle, Monorail, Umeda-Ausgänge, Bucht von Ōsaka) sind einfache Vektorzeichnungen und können durch Artworks ersetzt werden (`src/ui/art.ts` → `closeups`).
-- Partikeleffekte (Blüten, Regen, Laub) aus dem GDD fehlen noch.
+- Partikeleffekte: bewusst gestrichen.
 - Screen 53: Variante B (überdachte Janjan-Gasse) wird verwendet; Variante A (Straße mit Turmblick, abends) ist eingetragen, aber noch nicht eingebunden.
 - Screens 11–17 haben nur halbe Auflösung (bewusst so belassen).
 - Illustrierte Karten sind KI-Bilder: Lage der Orte zueinander stimmt grob, nicht maßstabsgetreu (z. B. Nishinomiya-Schrein in R1 rechts statt links von Kōshien).
@@ -171,7 +176,8 @@ Dialoge: Ø 5,2 Zeilen je Etappe (min. 4, max. 8), dazu kommen die Aufgabentexte
 ### Technik
 - Vokabelheft ohne Wiederholungsfunktion (SRS), wie vereinbart.
 - Kein Hilfesystem für schwere Hinweise, wie vereinbart.
-- Keine Musik, keine Sprachausgabe.
+- Keine Musik (bewusst), keine Sprachausgabe.
+- Reihenfolge der letzten Schritte: Markennamen/Logos bereinigen, danach Spaced Repetition als Allerletztes.
 - Play-Store-Paket (z. B. Capacitor/TWA) noch nicht eingerichtet.
 - Markenrechte (Logos auf Screen 10/11/16/17, Markennamen in Texten) für eine Veröffentlichung noch nicht bereinigt.
 - Speicherstände liegen nur im Browser; Export/Import als Sicherung.

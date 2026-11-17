@@ -5,9 +5,10 @@ import { titleScreen } from './ui/game';
 import { G } from './state';
 import * as engine from './engine';
 import * as data from './data';
+import { runTask } from './ui/tasks';
 
 // Für automatisierte Tests und Fehlersuche
-(window as unknown as Record<string, unknown>).__eo = { get G() { return G; }, engine, data };
+(window as unknown as Record<string, unknown>).__eo = { get G() { return G; }, engine, data, runTask };
 
 loadSettings();
 document.getElementById('app')!.append(root);

@@ -204,6 +204,33 @@ async function solve(page, t) {
         if (!isLast) await page.waitForTimeout(100);
       }
       break;
+    case 'penalty':
+      for (let i = 0; i < t.rounds.length; i++) {
+        const r = t.rounds[i];
+        await page.waitForSelector('.pk-zone');
+        const bad = ['tl', 'tc', 'tr', 'bl', 'bc', 'br'].find((z) => !r.good.includes(z));
+        for (const z of i === 0 && bad ? [bad, r.good[0]] : [r.good[0]]) {
+          await page.click(`.pk-zone[data-zone="${z}"]`, { force: true });
+          await page.evaluate(() => new Promise((res) => { const f = () => { const b = document.querySelector('.pk-power'); if (b && b.dataset.ok === '1') { document.querySelector('.pk-shoot').click(); res(); } else requestAnimationFrame(f); }; f(); }));
+          await page.waitForTimeout(1100);
+        }
+        await page.click('.task .btn.primary.wide:not(.pk-shoot)');
+        await page.waitForTimeout(150);
+      }
+      return 'continued';
+    case 'duel':
+      for (let i = 0; i < t.rounds.length; i++) {
+        const r = t.rounds[i];
+        await page.waitForSelector('.task .du-moves .opt:not([disabled])');
+        if (i === 0) await S(`.task [data-opt="${(r.answer + 1) % t.moves.length}"]`), await page.waitForTimeout(800);
+        await S(`.task [data-opt="${r.answer}"]`);
+        await page.waitForSelector('.du-go');
+        await page.evaluate(() => new Promise((res) => { const f = () => { const b = document.querySelector('.du-go'); if (b && b.dataset.ok === '1') { b.click(); res(); } else requestAnimationFrame(f); }; f(); }));
+        await page.waitForTimeout(500);
+        await page.click('.task .btn.primary.wide');
+        await page.waitForTimeout(150);
+      }
+      return 'continued';
     case 'route':
       await S('.task [data-key="1"]');
       break;

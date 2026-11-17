@@ -875,9 +875,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Tunnel",
       "Übersteiger",
       "Ball abschirmen"
@@ -885,11 +884,15 @@
      "rounds": [
       {
        "q": "Daiki steht breitbeinig vor dir.",
+       "pose": "wide",
+       "ball": "me",
        "answer": 0,
        "fb": "Offene Beine – Tunnel!"
       },
       {
        "q": "Daiki drückt mit der Schulter gegen dich.",
+       "pose": "shoulder",
+       "ball": "me",
        "answer": 2,
        "fb": "Körper zwischen Gegner und Ball."
       }
@@ -1260,19 +1263,22 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "penalty",
+     "type": "penalty",
      "rounds": [
       {
-       "q": "Der Boden ist nass und rutschig.",
-       "options": [
-        "Volle Kraft mit langem Anlauf",
-        "Kurzer Anlauf, sicherer Stand",
-        "Mit der Hacke",
-        "Gar nicht schießen"
+       "q": "Der Boden ist nass und rutschig. Der Torwart wartet in der Mitte.",
+       "keeper": "center",
+       "good": [
+        "tl",
+        "tr",
+        "bl",
+        "br"
        ],
-       "answer": 1,
-       "fb": "Auf nassem Boden zählt der sichere Stand."
+       "power": [
+        0.42,
+        0.62
+       ],
+       "fb": "Ins Eck, ohne volle Kraft – auf nassem Boden zählt der sichere Stand."
       }
      ]
     }

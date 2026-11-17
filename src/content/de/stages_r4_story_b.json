@@ -535,9 +535,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Tunnel (Ball durch die Beine)",
       "Übersteiger",
       "Ball abschirmen",
@@ -546,21 +545,29 @@
      "rounds": [
       {
        "q": "Kenji steht breitbeinig und schaut nur auf deinen Oberkörper.",
+       "pose": "wide",
+       "ball": "me",
        "answer": 0,
        "fb": "Offene Beine – Tunnel! Panna!"
       },
       {
        "q": "Kenji schließt die Beine und kommt schnell auf dich zu.",
+       "pose": "closed",
+       "ball": "me",
        "answer": 1,
        "fb": "Eine Finte mit dem Übersteiger bringt ihn aus dem Gleichgewicht."
       },
       {
        "q": "Kenji drückt mit der Schulter gegen dich und will den Ball.",
+       "pose": "shoulder",
+       "ball": "me",
        "answer": 2,
        "fb": "Körper zwischen Gegner und Ball – abschirmen!"
       },
       {
        "q": "Kenji wartet tief und lauert auf einen Fehler.",
+       "pose": "deep",
+       "ball": "me",
        "answer": 3,
        "fb": "Keine Hektik: Tempo rausnehmen, auf die Lücke warten."
       }
@@ -605,41 +612,45 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "penalty",
+     "type": "penalty",
      "rounds": [
       {
-       "q": "Starker Wind von links, das Tor steht weit rechts.",
-       "options": [
-        "Hoch und hart nach rechts",
-        "Flach und kontrolliert, etwas links anvisieren",
-        "Mit der Hacke",
-        "Gar nicht schießen"
+       "q": "Starker Wind weht von links nach rechts. Der Torwart steht leicht rechts.",
+       "keeper": "right",
+       "wind": "right",
+       "good": [
+        "bl"
        ],
-       "answer": 1,
-       "fb": "Flach schießen – der Wind trägt den Ball von selbst nach rechts."
+       "fb": "Flach nach links – einen flachen Ball kann der Wind nicht zum Torwart tragen."
       },
       {
-       "q": "Der Boden ist nass und rutschig.",
-       "options": [
-        "Volle Kraft mit Anlauf",
-        "Kurzer Anlauf, sicherer Stand, Innenseite",
-        "Springen und mit dem Kopf",
-        "Mit links blind"
+       "q": "Der Boden ist nass und rutschig. Der Torwart wartet in der Mitte.",
+       "keeper": "center",
+       "good": [
+        "tl",
+        "tr",
+        "bl",
+        "br"
        ],
-       "answer": 1,
-       "fb": "Auf nassem Boden zählt der sichere Stand."
+       "power": [
+        0.42,
+        0.62
+       ],
+       "fb": "Ins Eck, aber ohne volle Kraft – auf nassem Boden zählt der sichere Stand."
       },
       {
-       "q": "Das letzte Tor ist sehr klein, aber nah.",
-       "options": [
-        "Spannstoß mit voller Kraft",
-        "Innenseite, ruhig platzieren",
-        "Über das Tor lupfen",
-        "Weit links vorbei"
+       "q": "Das letzte Tor ist sehr klein, aber nah. Der Torwart deckt die Mitte ab.",
+       "keeper": "wide",
+       "good": [
+        "bl",
+        "br"
        ],
-       "answer": 1,
-       "fb": "Nah und klein: Genauigkeit vor Kraft."
+       "power": [
+        0.22,
+        0.42
+       ],
+       "speed": 1.2,
+       "fb": "Nah und klein: Genauigkeit vor Kraft – flach und ruhig ins Eck."
       }
      ]
     }

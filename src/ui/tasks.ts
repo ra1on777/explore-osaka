@@ -11,6 +11,7 @@ import { mount, toast } from './layout';
 import { portrait } from './dialog';
 import { hot, showOverlay } from './scene';
 import { jpBlock, matches, rich } from './text';
+import { duel, penalty } from './football';
 import { espresso, kanjigrid, mapquiz, sortTask, ticket, photo, ingredient, shogi } from './tasks2';
 
 type El = HTMLElement;
@@ -29,6 +30,8 @@ export async function runTask(task: Task): Promise<number> {
     case 'rounds': return rounds(task);
     case 'route': return route(task);
     case 'shogi': return shogi(task);
+    case 'penalty': return penalty(task);
+    case 'duel': return duel(task);
     case 'mapquiz': return mapquiz(task);
     case 'ticket': return ticket(task);
     case 'espresso': return espresso(task);

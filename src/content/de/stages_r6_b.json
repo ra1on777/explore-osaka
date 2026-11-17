@@ -128,40 +128,33 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "penalty",
+     "type": "penalty",
      "rounds": [
       {
        "q": "Der Torwart springt schon vor dem Schuss nach rechts.",
-       "options": [
-        "Rechtes Eck",
-        "Linkes Eck",
-        "Drüber",
-        "Abbrechen"
+       "keeper": "diveRight",
+       "good": [
+        "tl",
+        "bl"
        ],
-       "answer": 1,
        "fb": "Er ist weg – ab ins andere Eck."
       },
       {
        "q": "Der Torwart bleibt ruhig in der Mitte und wartet.",
-       "options": [
-        "Hart und hoch ins Eck",
-        "Lupfer in die Mitte",
-        "Flach in die Mitte",
-        "Ganz langsam"
+       "keeper": "center",
+       "good": [
+        "tl",
+        "tr"
        ],
-       "answer": 0,
        "fb": "Gegen einen geduldigen Torwart hilft nur Präzision."
       },
       {
        "q": "Der Torwart macht sich breit und tanzt auf der Linie.",
-       "options": [
-        "Ablenken lassen",
-        "Nicht hinschauen, sauber flach ins Eck",
-        "Mitten auf ihn",
-        "In die Wolken"
+       "keeper": "wide",
+       "good": [
+        "bl",
+        "br"
        ],
-       "answer": 1,
        "fb": "Ruhe bewahren. Flach ins Eck."
       }
      ]
@@ -366,9 +359,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Tunnel (Ball durch die Beine)",
       "Übersteiger",
       "Ball abschirmen",
@@ -377,26 +369,36 @@
      "rounds": [
       {
        "q": "Daiki kommt mit vollem Tempo und offenen Beinen.",
+       "pose": "wide",
+       "ball": "me",
        "answer": 0,
        "fb": "Tunnel – wie beim ersten Mal!"
       },
       {
        "q": "Daiki stellt sich seitlich und wartet tief.",
+       "pose": "deep",
+       "ball": "me",
        "answer": 3,
        "fb": "Geduld. Er wird ungeduldig und macht den ersten Fehler."
       },
       {
        "q": "Daiki drückt mit dem Körper gegen dich.",
+       "pose": "shoulder",
+       "ball": "me",
        "answer": 2,
        "fb": "Körper zwischen ihn und den Ball."
       },
       {
        "q": "Daiki schließt die Beine und schaut nur auf den Ball.",
+       "pose": "closed",
+       "ball": "me",
        "answer": 1,
        "fb": "Übersteiger – und vorbei!"
       },
       {
        "q": "Letzte Chance: Daiki ist müde und wackelt.",
+       "pose": "tired",
+       "ball": "me",
        "answer": 0,
        "fb": "Panna! Durch die Beine. Spiel, Satz, Sieg."
       }

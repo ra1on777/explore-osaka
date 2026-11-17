@@ -57,9 +57,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Dribbling / Antritt",
       "Finte / Körpertäuschung",
       "Grätsche / Pressing",
@@ -68,21 +67,29 @@
      "rounds": [
       {
        "q": "Du hast den Ball. Sakai stürmt mit großen Schritten auf dich zu und kann kaum noch bremsen.",
+       "pose": "rush",
+       "ball": "me",
        "answer": 0,
        "fb": "Wer anrennt, kann nicht stoppen: Ball an ihm vorbeilegen und antreten!"
       },
       {
        "q": "Sakai bleibt tief stehen, wartet geduldig und versperrt dir den Weg nach vorn.",
+       "pose": "deep",
+       "ball": "me",
        "answer": 1,
        "fb": "Gegen einen wartenden Verteidiger hilft eine Körpertäuschung, die ihn aus der Position lockt."
       },
       {
        "q": "Jetzt hat Sakai den Ball. Er schaut immer wieder zum freien Raum auf seiner rechten Seite.",
+       "pose": "side",
+       "ball": "foe",
        "answer": 3,
        "fb": "Er verrät sein Ziel – stell den Raum zu, statt blind hineinzugrätschen."
       },
       {
        "q": "Sakai legt sich den Ball einen Schritt zu weit vor.",
+       "pose": "loose",
+       "ball": "foe",
        "answer": 2,
        "fb": "Jetzt oder nie: sofort dazwischengehen!"
       }
@@ -173,41 +180,36 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "penalty",
+     "type": "penalty",
      "rounds": [
       {
        "q": "Kenji verlagert sein Gewicht schon früh in Richtung deiner linken Ecke.",
-       "options": [
-        "Linkes Eck",
-        "Rechtes Eck",
-        "Hoch in die Mitte",
-        "Abbrechen"
+       "keeper": "left",
+       "good": [
+        "tr",
+        "br"
        ],
-       "answer": 1,
        "fb": "Er ist schon unterwegs nach links – also ab ins rechte Eck!"
       },
       {
        "q": "Kenji bleibt stehen und wartet bis zur letzten Sekunde.",
-       "options": [
-        "Lupfer in die Mitte",
-        "Halbhoch und flach",
-        "Hart und hoch ins Eck",
-        "Ganz langsam schieben"
+       "keeper": "center",
+       "good": [
+        "tl",
+        "tr"
        ],
-       "answer": 2,
        "fb": "Gegen einen geduldigen Torwart hilft nur Präzision: hart und hoch ins Eck."
       },
       {
        "q": "Kenji wirft sich schon vor dem Schuss flach in deine rechte Ecke.",
-       "options": [
-        "Rechtes Eck",
-        "Locker in die Mitte",
-        "Linkes Eck, flach",
-        "Drüberschießen"
+       "keeper": "diveRight",
+       "good": [
+        "tl",
+        "tc",
+        "bl",
+        "bc"
        ],
-       "answer": 1,
-       "fb": "Wenn der Torwart früh springt, ist die Mitte frei."
+       "fb": "Er liegt schon rechts – links und die Mitte sind frei."
       }
      ]
     }
@@ -289,9 +291,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Dribbling / Antritt",
       "Finte / Körpertäuschung",
       "Grätsche / Pressing",
@@ -300,21 +301,29 @@
      "rounds": [
       {
        "q": "Daiki dribbelt auf dich zu und zieht immer wieder nach rechts.",
+       "pose": "side",
+       "ball": "foe",
        "answer": 3,
        "fb": "Er hat eine Lieblingsseite – stell sie zu."
       },
       {
        "q": "Daiki macht Übersteiger, aber der Ball springt ihm dabei weit vom Fuß.",
+       "pose": "loose",
+       "ball": "foe",
        "answer": 2,
        "fb": "Viel Show, wenig Kontrolle: dazwischengehen!"
       },
       {
        "q": "Jetzt hast du den Ball. Daiki ist übermotiviert und springt sofort auf dich zu.",
+       "pose": "lunge",
+       "ball": "me",
        "answer": 1,
        "fb": "Ein Gegner, der anbeißt, fällt auf jede Täuschung herein."
       },
       {
        "q": "Daiki ist ausgerutscht und steht nur halb.",
+       "pose": "slip",
+       "ball": "me",
        "answer": 0,
        "fb": "Sofort antreten und vorbeiziehen!"
       }
@@ -359,9 +368,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Dribbling / Antritt",
       "Finte / Körpertäuschung",
       "Grätsche / Pressing",
@@ -370,21 +378,29 @@
      "rounds": [
       {
        "q": "Sakai ruft: „Er kommt mit vollem Tempo und kann nicht mehr bremsen!“",
+       "pose": "rush",
+       "ball": "me",
        "answer": 0,
        "fb": "Ball zur Seite und vorbei!"
       },
       {
        "q": "Sakai ruft: „Er stellt sich quer und versperrt dir den Weg!“",
+       "pose": "deep",
+       "ball": "me",
        "answer": 1,
        "fb": "Locke ihn mit einer Täuschung aus der Position."
       },
       {
        "q": "Der Kapitän führt den Ball eng, schaut aber immer wieder auf den freien Raum links.",
+       "pose": "side",
+       "ball": "foe",
        "answer": 3,
        "fb": "Er verrät sein Ziel – zustellen!"
       },
       {
        "q": "Er wird müde und lässt den Ball zu weit springen.",
+       "pose": "loose",
+       "ball": "foe",
        "answer": 2,
        "fb": "Jetzt: dazwischen!"
       }

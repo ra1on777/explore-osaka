@@ -2732,9 +2732,8 @@
    ],
    "tasks": [
     {
-     "type": "rounds",
-     "art": "soccer",
-     "fixed": [
+     "type": "duel",
+     "moves": [
       "Tunnel (Ball durch die Beine)",
       "Übersteiger",
       "Ball abschirmen",
@@ -2743,21 +2742,29 @@
      "rounds": [
       {
        "q": "Daiki stellt sich breitbeinig hin und grinst.",
+       "pose": "wide",
+       "ball": "me",
        "answer": 0,
        "fb": "Er hat nichts gelernt – Tunnel!"
       },
       {
        "q": "Daiki drängt dich mit der Schulter zur Seite.",
+       "pose": "shoulder",
+       "ball": "me",
        "answer": 2,
        "fb": "Körper dazwischen – abschirmen!"
       },
       {
        "q": "Daiki macht die Beine zu und läuft frontal auf dich zu.",
+       "pose": "closed",
+       "ball": "me",
        "answer": 1,
        "fb": "Übersteiger – und weg!"
       },
       {
        "q": "Daiki stellt dich am Laternenpfahl. Kein Platz links und rechts.",
+       "pose": "post",
+       "ball": "me",
        "answer": 3,
        "fb": "Ball gegen den Pfosten, zurückprallen lassen – Doppelpass mit der Stadt!"
       }

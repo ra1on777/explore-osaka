@@ -23,6 +23,10 @@ export interface NpcDef { short: string; default?: string; poses?: string[]; pla
 export interface Line { s: string; p?: string; t?: string; jp?: string; ro?: string }
 export type Option = string | { jp: string; ro?: string };
 
+/** Tor-Zonen aus Schützensicht: oben/unten × links/Mitte/rechts */
+export type PkZone = 'tl' | 'tc' | 'tr' | 'bl' | 'bc' | 'br';
+export type PkKeeper = 'center' | 'left' | 'right' | 'wide' | 'diveLeft' | 'diveRight';
+export type DuelPose = 'wide' | 'closed' | 'rush' | 'lunge' | 'shoulder' | 'deep' | 'side' | 'loose' | 'tired' | 'slip' | 'post';
 export type Task =
   | { type: 'choice'; q: string; show?: { jp: string }; options: Option[]; answer: number; explain?: string }
   | { type: 'input'; q: string; show?: { jp: string }; placeholder?: string; accept: string[] }
@@ -32,6 +36,9 @@ export type Task =
   | { type: 'decipher'; q: string; sign: string; tiles: string[]; answer: string[]; meaning: string }
   | { type: 'slots'; q: string; items: { icon: string; label: string; answer: string }[]; words: { jp: string; ro: string }[] }
   | { type: 'build'; q: string; tiles: { jp: string; ro: string }[]; answer: string[] }
+  | { type: 'penalty'; rounds: { q: string; good: PkZone[]; keeper?: PkKeeper; power?: [number, number]; speed?: number; wind?: 'left' | 'right'; fb?: string }[] }
+  | { type: 'duel'; moves: string[]; time?: number; speed?: number;
+      rounds: { q: string; pose: DuelPose; ball?: 'me' | 'foe'; answer: number; time?: number; speed?: number; fb?: string }[] }
   | { type: 'rounds'; art?: string; timed?: number; fixed?: string[];
       rounds: { q?: string; jp?: string; ro?: string; art?: string; options?: string[]; answer: number; fb?: string }[] }
   | { type: 'route'; q: string; flag?: string; options: { label: string; value: string; facts?: string[]; pose?: string }[] }
