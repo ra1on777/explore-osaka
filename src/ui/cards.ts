@@ -9,6 +9,18 @@ import { jpBlock, rich } from './text';
 
 type El = HTMLElement;
 
+/** Schalter „Übersetzen“ direkt im Spiel (nur für dieses Spiel, keine globale Einstellung). */
+function trToggle(el: El) {
+  const b = h('button', { class: 'tr-toggle', 'aria-pressed': 'false' }, t('tr.show')) as HTMLButtonElement;
+  b.onclick = () => {
+    const on = el.classList.toggle('show-tr');
+    b.setAttribute('aria-pressed', String(on));
+    b.textContent = on ? t('tr.hide') : t('tr.show');
+  };
+  el.querySelector('.q')!.after(b);
+}
+const tr = (text?: string) => (text ? h('span', { class: 'tr', html: rich(text) }) : null);
+
 // ================= Karuta =================
 export async function karuta(task: Extract<Task, { type: 'karuta' }>): Promise<number> {
   let errors = 0;
@@ -18,11 +30,12 @@ export async function karuta(task: Extract<Task, { type: 'karuta' }>): Promise<n
   const table = h('div', { class: 'kr-table' });
   const score = h('div', { class: 'kr-score small' });
   const { el, fb } = frame(t('kr.q'), reader, timer, table, score);
+  if (task.cardsDe || task.rounds.some((r) => r.std)) trToggle(el);
   let mine = 0, foe = 0;
   const cards = new Map<string, HTMLButtonElement>();
   for (const c of shuffle([...task.cards])) {
     const b = h('button', { class: 'kr-card', 'data-v': c, style: `--rot:${(Math.random() * 8 - 4).toFixed(1)}deg` },
-      h('span', { class: 'kr-face', html: rich(c) })) as HTMLButtonElement;
+      h('span', { class: 'kr-face', html: rich(c) }), tr(task.cardsDe?.[c])) as HTMLButtonElement;
     cards.set(c, b);
     table.append(b);
   }
@@ -33,6 +46,7 @@ export async function karuta(task: Extract<Task, { type: 'karuta' }>): Promise<n
     reader.replaceChildren(...[
       h('div', { class: 'small muted' }, `${t('kr.reader')} · ${ri + 1}/${task.rounds.length}`),
       r.jp ? h('div', { class: 'show', html: jpBlock(r.jp, r.ro, 'huge') }) : null,
+      r.std ? tr(t('tr.std', { jp: r.std.jp, ro: r.std.ro })) : null,
       r.q ? h('div', { class: 'kr-clue', html: rich(r.q) }) : null].filter(Boolean) as HTMLElement[]);
     fb.className = 'feedback'; fb.textContent = '';
     await wait(250);
@@ -86,12 +100,13 @@ export async function hanafudaGame(task: Extract<Task, { type: 'hanafuda' }>): P
   const slots = new Map<number, El>();
   for (const m of months) {
     const s = h('button', { class: 'hf-slot', 'data-m': String(m) },
-      h('span', { class: 'hf-pile' }), h('span', { class: 'hf-mname', html: jpBlock(MONTH_JP[m - 1], MONTH_RO[m - 1]) }));
+      h('span', { class: 'hf-pile' }), h('span', { class: 'hf-mname', html: jpBlock(MONTH_JP[m - 1], MONTH_RO[m - 1]) }, tr(t(`hf.month${m}`))));
     slots.set(m, s); field.append(s);
   }
   const hand = h('div', { class: 'hf-hand' });
   const { el, fb } = frame(task.q ?? t('hf.q'), hand, field);
   el.classList.add('hf-game');
+  trToggle(el);
   for (let ri = 0; ri < task.rounds.length; ri++) {
     const r = task.rounds[ri];
     const m = monthOf(r.card);

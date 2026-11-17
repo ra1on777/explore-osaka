@@ -39,7 +39,9 @@ export type Task =
   | { type: 'penalty'; rounds: { q: string; good: PkZone[]; keeper?: PkKeeper; power?: [number, number]; speed?: number; wind?: 'left' | 'right'; fb?: string }[] }
   | { type: 'duel'; moves: string[]; time?: number; speed?: number;
       rounds: { q: string; pose: DuelPose; ball?: 'me' | 'foe'; answer: number; time?: number; speed?: number; fb?: string }[] }
-  | { type: 'karuta'; time?: number; cards: string[]; rounds: { q?: string; jp?: string; ro?: string; answer: string; fb?: string }[] }
+  | { type: 'karuta'; time?: number; cards: string[];
+      /** Übersetzung japanischer Karten (für den Übersetzen-Schalter) */ cardsDe?: Record<string, string>;
+      rounds: { q?: string; jp?: string; ro?: string; /** hochjapanische Entsprechung eines Dialekt-Hinweises */ std?: { jp: string; ro: string }; answer: string; fb?: string }[] }
   | { type: 'hanafuda'; q?: string; months?: number[]; rounds: { card: string; q?: string; fb?: string }[] }
   | { type: 'rounds'; art?: string; timed?: number; fixed?: string[];
       rounds: { q?: string; jp?: string; ro?: string; art?: string; options?: string[]; answer: number; fb?: string }[] }

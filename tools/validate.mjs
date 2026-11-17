@@ -1,13 +1,16 @@
 // Prüft Daten und Inhalte auf Konsistenz: node tools/validate.mjs
+// Neue Stränge: Etappen in src/data/quests_<name>.json, Texte in src/content/de/stages_<name>.json, Titel in strands.json.
 import { readFileSync, existsSync } from 'node:fs';
 
 const j = (p) => JSON.parse(readFileSync(p, 'utf8'));
-const quests = [...j('src/data/quests.json').quests, j('src/data/quest_test.json')];
+import { genContent } from './gen_content.mjs';
+const gen = genContent();
+const quests = [...gen.quests.flatMap((f) => j(`src/data/${f}`).quests), j('src/data/quest_test.json')];
 const world = j('src/data/world.json');
 const npcs = j('src/data/npcs.json');
 const lang = 'de';
 const stages = {};
-for (const f of ['stages_story_a', 'stages_story_b', 'stages_lang', 'stages_r2_story', 'stages_r2_lang', 'stages_r3', 'stages_r4_story_a', 'stages_r4_story_b', 'stages_r4_lang', 'stages_r5_a', 'stages_r5_b', 'stages_r5_romance', 'stages_r5_lang', 'stages_r6_a', 'stages_r6_b', 'stages_r6_lang', 'stages_test'])
+for (const f of gen.stages.map((x) => x.replace('.json', '')))
   for (const [q, st] of Object.entries(j(`src/content/${lang}/${f}.json`))) stages[q] = { ...stages[q], ...st };
 const art = readFileSync('src/ui/art.ts', 'utf8');
 const hasArt = (k) => new RegExp(`\\b${k}\\s*:`).test(art);
@@ -30,8 +33,23 @@ for (const [id, n] of Object.entries(npcs)) {
   for (const p of n.poses ?? []) if (!existsSync(`public/img/chars/${id}/${p}.webp`)) err(`Sprite fehlt: ${id}/${p}`);
 }
 
+const strandNames = j(`src/content/${lang}/strands.json`);
+const seenQ = new Set();
 for (const q of quests) {
+  if (seenQ.has(q.quest_id)) err(`Strang ${q.quest_id} doppelt definiert`);
+  seenQ.add(q.quest_id);
+  if (!strandNames[q.quest_id]) err(`Strang ${q.quest_id} ohne Titel in strands.json`);
+  if (q.total_stages !== q.stages.length) err(`${q.quest_id}: total_stages ${q.total_stages} ≠ ${q.stages.length} Etappen`);
+  q.stages.forEach((s, i) => { if (s.stage_index !== i + 1) err(`${q.quest_id}: Etappen-Nummer ${s.stage_index} an Position ${i + 1}`); });
+  const last = q.stages[q.stages.length - 1];
+  if (last?.routing_next) err(`${q.quest_id}: letzte Etappe hat noch ein routing_next`);
+  q.stages.forEach((s, i) => {
+    const n = q.stages[i + 1];
+    if (n && s.interaction_type !== 'FETCH_AND_RETURN' && s.routing_next?.target_screen_id !== n.screen_id)
+      err(`${q.quest_id}#${s.stage_index}: Hinweis führt nach ${s.routing_next?.target_screen_id}, nächste Etappe ist aber auf ${n.screen_id}`);
+  });
   for (const s of q.stages) {
+    if (s.routing_next && !world.screens[s.routing_next.target_screen_id]) err(`${q.quest_id}#${s.stage_index}: Ziel-Screen ${s.routing_next.target_screen_id} unbekannt`);
     const key = `${q.quest_id}#${s.stage_index}`;
     if (!world.screens[s.screen_id]) err(`${key}: unbekannter Screen ${s.screen_id}`);
     if (s.npc_id !== 'BRANCH_ACTIVE_PARTNER' && !npcs[s.npc_id]) err(`${key}: unbekannter NPC ${s.npc_id}`);

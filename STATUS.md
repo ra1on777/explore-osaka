@@ -1,7 +1,21 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.5 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.6 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.6
+- **Übersetzen-Schalter** direkt in Karuta und Hanafuda („あ→A Übersetzen“, gilt nur für dieses Spiel). Karuta: japanische Karten bekommen Lesung/Bedeutung (`cardsDe`), Dialekt-Hinweise zeigen die hochjapanische Entsprechung (`std`), damit die Antwort nicht direkt verraten wird. Hanafuda: deutsche Monatsnamen unter den japanischen.
+- 27 weitere gemalte Nahaufnahmen (Natur & Schreine, Essen & Handwerk, Ōsaka). Damit sind 33 der rund 70 Nahaufnahmen gemalt. Neuer Schlüssel `zengarden` (Kies wie Wasser), „Ein stiller Ort“ nutzt jetzt die Steinlaternen.
+- `tools/cut_grid.py` schneidet 3×3-Raster, auch wenn sich die Bilder berühren.
+- **Neue Stränge ohne Code-Änderung:** `tools/gen_content.mjs` bindet alle `src/content/de/stages_*.json` und `src/data/quests_*.json` automatisch ein (läuft bei Build und Validator). Neue Stränge reihen sich automatisch in die Platzvergabe ein, die Strang-Zahl im Questlog zählt automatisch mit.
+- Validator prüft zusätzlich: Strang-Titel vorhanden, keine doppelten Stränge, Etappen-Nummern lückenlos, `total_stages` stimmt, Hinweis jeder Etappe führt genau zum Screen der nächsten Etappe, letzte Etappe ohne Weiterleitung.
+
+## Neue Stränge einfügen
+1. Etappen (wie in den Quest-Bundles): `src/data/quests_<name>.json` mit `{ "quests": [ … ] }`.
+2. Texte und Aufgaben: `src/content/de/stages_<name>.json`.
+3. Titel: Eintrag in `src/content/de/strands.json`.
+4. `node tools/validate.mjs`, dann `node tools/build.mjs`.
+Aufgabentypen: choice, input, estimate, inspect, pairs, decipher, slots, build, rounds, route, mapquiz, ticket, espresso, sort, kanjigrid, photo, ingredient, shogi, penalty, duel, karuta, hanafuda, fetch.
 
 ### Neu in v1.5
 - **Karuta** (Aufgabentyp `karuta`): Karten liegen auf dem Tatami, der Vorleser liest, du tippst die Karte. Bei Zeitablauf schlägt der Gegner zu; falsche Karte = お手つき. Genommene Karten verschwinden, am Ende Punktestand. Daten: `cards`, Runden mit `answer` (Kartentext).

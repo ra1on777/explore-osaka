@@ -1,13 +1,13 @@
-import questsJson from './data/quests.json';
+import { QUEST_FILES } from './content.gen';
 import worldJson from './data/world.json';
 import npcsJson from './data/npcs.json';
 import testQuestJson from './data/quest_test.json';
-import { TEST_MODE } from './testmode';
+import { TEST_MODE, TEST_QUEST } from './testmode';
 import { pack } from './i18n';
 import type { ClusterDef, NpcDef, QuestDef, ScreenDef, Slot, StageContent, StageDef, Task } from './types';
 
 export const QUESTS: QuestDef[] = [
-  ...(questsJson as { quests: QuestDef[] }).quests,
+  ...QUEST_FILES.flatMap((f) => f.quests as QuestDef[]),
   ...(TEST_MODE ? [testQuestJson as QuestDef] : []),
 ];
 export const QUEST_BY_ID: Record<string, QuestDef> = Object.fromEntries(QUESTS.map((q) => [q.quest_id, q]));
@@ -22,7 +22,7 @@ export const NPC_BY_SHORT: Record<string, string> = Object.fromEntries(
   Object.entries(NPCS).map(([id, n]) => [n.short, id]),
 );
 /** Feste Reihenfolge für Gleichstände bei der Platzvergabe (gemischt, nicht alphabetisch). */
-export const STRAND_ORDER = [
+const STRAND_ORDER_BASE = [
   'STRANG_CAMPUS_EXPEDITION', 'STRANG_LANG_VOCABULARY', 'STRANG_GEOGRAPHY', 'STRANG_NIGHTLIFE_ETIQUETTE',
   'STRANG_LANG_HIRAGANA', 'STRANG_FOOTBALL_DERBY', 'STRANG_NATURE_RETREAT', 'STRANG_LANG_CONVERSATION',
   'STRANG_CULTURE_KANSAI', 'STRANG_LANG_KATAKANA', 'STRANG_PHILOSOPHY_THEOLOGY', 'STRANG_ROMANCE_MEMORIES',
@@ -30,7 +30,13 @@ export const STRAND_ORDER = [
   'STRANG_LITERATURE', 'STRANG_SHOPPING_BARGAINS', 'STRANG_LANDMARKS_DISCOVERY', 'STRANG_FOOD_CULTURE', 'STRANG_OTAKU_CULTURE', 'STRANG_CULTURE_OSAKA',
   'STRANG_TEMPLE_PILGRIMAGE', 'STRANG_URBAN_PLANNING', 'STRANG_SHRINE_HERITAGE',
 ];
-export const ALL_STRANDS = 25;
+/** Neue Stränge, die oben nicht stehen, kommen automatisch hinten dran (in Datei-Reihenfolge). */
+export const STRAND_ORDER = [
+  ...STRAND_ORDER_BASE,
+  ...QUESTS.map((q) => q.quest_id).filter((id) => !STRAND_ORDER_BASE.includes(id) && id !== TEST_QUEST),
+];
+/** Anzahl der regulären Stränge (ohne Test-Strang). */
+export const ALL_STRANDS = STRAND_ORDER.length;
 
 /** Belegbare Slots eines Screens (null in world.json = Slot gestrichen). */
 export function freeSlots(screenId: string): ('A' | 'B' | 'C')[] {

@@ -3,6 +3,9 @@
 // node tools/build.mjs --serve    -> Entwicklungsserver auf http://localhost:5173
 import * as esbuild from 'esbuild';
 import { cpSync, mkdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { genContent } from './gen_content.mjs';
+
+genContent();
 
 const serve = process.argv.includes('--serve');
 const out = 'dist';

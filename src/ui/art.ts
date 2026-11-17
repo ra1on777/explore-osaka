@@ -103,7 +103,7 @@ export const placeholders: Record<string, string> = {
 // ---------- Nahaufnahmen (Inspect), viewBox 200x150 ----------
 const C = (body: string) => wrap('0 0 200 150', `<rect width="200" height="150" fill="${CREME}"/>${body}`);
 export const closeups: Record<string, string> = {
-  takoyaki: '', ema: '', goshuin: '', lantern: '',
+  takoyaki: '', ema: '', goshuin: '', lantern: '', zengarden: '',
   plungepool: C(`
     <rect x="0" y="0" width="200" height="150" fill="#6f8f7a"/>
     <path d="M70 0h60v70H70z" fill="#5d6b70"/><path d="M86 0h28v78H86z" fill="#e9f4fb"/>
@@ -737,4 +737,6 @@ export const pickupIcon = wrap('0 0 40 48', `
   <circle cx="18" cy="17" r="7" fill="none" stroke="${NAVY}" stroke-width="3"/><path d="M23 22l6 6" stroke="${NAVY}" stroke-width="3"/>`);
 
 /** Gemalte Nahaufnahmen (img/closeups/<key>.webp). Fehlt ein Bild, wird die Vektorzeichnung genutzt. */
-export const CLOSEUP_IMG = new Set(['goldenface', 'takoyaki', 'charm', 'momiji', 'shogiboard', 'chawan', 'ema', 'goshuin', 'lantern']);
+export const CLOSEUP_IMG = new Set([
+  'goldenface', 'takoyaki', 'charm', 'momiji', 'shogiboard', 'chawan', 'ema', 'goshuin', 'lantern', 'shisa', 'lioneyes', 'liontooth', 'harukas', 'ivy', 'honganji', 'akamon', 'tsuna', 'kadomatsu', 'whetstone', 'wagashi', 'senbei', 'katsuobushi', 'kombu', 'yakisoba', 'crema', 'bowl', 'sakaicraft', 'jomon', 'plungepool', 'heron', 'keyhole', 'taikobashi', 'shimenawa', 'sacredtree', 'bell', 'lanterns', 'zengarden',
+]);

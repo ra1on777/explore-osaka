@@ -519,3 +519,11 @@ h3 { font-family: var(--title); font-weight: 600; font-size: 1.25em; margin: .2e
 /* Blätter: Silhouette wird langsam scharf */
 .round-art.reveal { animation: leaf-reveal 6s ease-out both; }
 @keyframes leaf-reveal { from { filter: blur(9px) brightness(.4); transform: scale(1.35); } to { filter: none; transform: none; } }
+
+/* Übersetzen-Schalter in Karuta und Hanafuda */
+.tr-toggle { align-self: flex-end; font-size: .72em; padding: .25em .7em; border-radius: 1em; border: 1px solid rgba(255, 255, 255, .35); background: #0d1a36; color: var(--paper); cursor: pointer; }
+.tr-toggle[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); }
+.tr { display: none; }
+.show-tr .tr { display: block; font-size: .72em; opacity: .85; font-weight: 400; margin-top: .15em; }
+.kr-card .tr { color: #4a5a7a; }
+.kr-card { flex-direction: column; }

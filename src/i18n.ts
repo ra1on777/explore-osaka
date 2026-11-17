@@ -4,24 +4,8 @@ import de from './i18n/de.json';
 import deWorld from './content/de/world.json';
 import deNpcs from './content/de/npcs.json';
 import deStrands from './content/de/strands.json';
-import deStoryA from './content/de/stages_story_a.json';
-import deStoryB from './content/de/stages_story_b.json';
-import deLang from './content/de/stages_lang.json';
-import deR2Story from './content/de/stages_r2_story.json';
-import deR2Lang from './content/de/stages_r2_lang.json';
-import deR3 from './content/de/stages_r3.json';
 import deIntro from './content/de/intro.json';
-import deR4a from './content/de/stages_r4_story_a.json';
-import deR4b from './content/de/stages_r4_story_b.json';
-import deR4l from './content/de/stages_r4_lang.json';
-import deR5a from './content/de/stages_r5_a.json';
-import deR5b from './content/de/stages_r5_b.json';
-import deR5r from './content/de/stages_r5_romance.json';
-import deR5l from './content/de/stages_r5_lang.json';
-import deR6a from './content/de/stages_r6_a.json';
-import deR6b from './content/de/stages_r6_b.json';
-import deR6l from './content/de/stages_r6_lang.json';
-import deTest from './content/de/stages_test.json';
+import { STAGE_FILES_DE } from './content.gen';
 import type { Line, StageContent } from './types';
 
 export interface LangPack {
@@ -47,7 +31,7 @@ const packs: Record<string, LangPack> = {
     npcs: deNpcs,
     strands: deStrands,
     intro: deIntro as { kenji: Line[] },
-    stages: mergeStages(deStoryA, deStoryB, deLang, deR2Story, deR2Lang, deR3, deR4a, deR4b, deR4l, deR5a, deR5b, deR5r, deR5l, deR6a, deR6b, deR6l, deTest),
+    stages: mergeStages(...STAGE_FILES_DE),
   },
 };
 

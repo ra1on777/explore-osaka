@@ -843,27 +843,47 @@
       {
        "jp": "おおきに",
        "ro": "ōkini",
-       "answer": "Danke"
+       "answer": "Danke",
+       "std": {
+        "jp": "ありがとう",
+        "ro": "arigatō"
+       }
       },
       {
        "jp": "ほんま？",
        "ro": "honma?",
-       "answer": "Wirklich?"
+       "answer": "Wirklich?",
+       "std": {
+        "jp": "ほんとう？",
+        "ro": "hontō?"
+       }
       },
       {
        "jp": "あかん",
        "ro": "akan",
-       "answer": "Das geht nicht!"
+       "answer": "Das geht nicht!",
+       "std": {
+        "jp": "だめ",
+        "ro": "dame"
+       }
       },
       {
        "jp": "なんでやねん！",
        "ro": "nande ya nen!",
-       "answer": "Wieso das denn?!"
+       "answer": "Wieso das denn?!",
+       "std": {
+        "jp": "どうして？",
+        "ro": "dōshite?"
+       }
       },
       {
        "jp": "もうかりまっか？",
        "ro": "mōkarimakka?",
-       "answer": "Läuft das Geschäft?"
+       "answer": "Läuft das Geschäft?",
+       "std": {
+        "jp": "もうかりますか？",
+        "ro": "mōkarimasu ka?"
+       }
       }
      ]
     }

@@ -491,7 +491,14 @@
        "q": "Südlich von hier, berühmt für Mandarinen und den Kōya-san!",
        "answer": "わかやま"
       }
-     ]
+     ],
+     "cardsDe": {
+      "きょうと": "Kyōto",
+      "なら": "Nara",
+      "こうべ": "Kōbe",
+      "おおさか": "Ōsaka",
+      "わかやま": "Wakayama"
+     }
     }
    ],
    "after": [

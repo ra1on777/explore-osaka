@@ -533,12 +533,12 @@
    ],
    "tasks": [
     {"type": "karuta", "time": 8, "cards": ["Danke", "Das geht nicht!", "wirklich", "Geht so", "Wieso das denn?!", "Willkommen (Kyōto)", "Lecker", "Tschüss"], "rounds": [
-     {"jp": "おおきに", "ro": "ōkini", "answer": "Danke"},
-     {"jp": "あかん", "ro": "akan", "answer": "Das geht nicht!"},
-     {"jp": "ほんま", "ro": "honma", "answer": "wirklich"},
-     {"jp": "ぼちぼち でんな", "ro": "bochi-bochi denna", "answer": "Geht so"},
-     {"jp": "なんでやねん", "ro": "nande ya nen", "answer": "Wieso das denn?!"},
-     {"jp": "おいでやす", "ro": "oideyasu", "answer": "Willkommen (Kyōto)"}
+     {"jp": "おおきに", "ro": "ōkini", "std": {"jp": "ありがとう", "ro": "arigatō"}, "answer": "Danke"},
+     {"jp": "あかん", "ro": "akan", "std": {"jp": "だめ", "ro": "dame"}, "answer": "Das geht nicht!"},
+     {"jp": "ほんま", "ro": "honma", "std": {"jp": "ほんとう", "ro": "hontō"}, "answer": "wirklich"},
+     {"jp": "ぼちぼち でんな", "ro": "bochi-bochi denna", "std": {"jp": "まあまあです", "ro": "māmā desu"}, "answer": "Geht so"},
+     {"jp": "なんでやねん", "ro": "nande ya nen", "std": {"jp": "どうして？", "ro": "dōshite?"}, "answer": "Wieso das denn?!"},
+     {"jp": "おいでやす", "ro": "oideyasu", "std": {"jp": "いらっしゃいませ", "ro": "irasshaimase"}, "answer": "Willkommen (Kyōto)"}
     ]}
    ],
    "after": [

@@ -19,7 +19,16 @@ objs = [s for s in ndimage.find_objects(lab) if (s[0].stop - s[0].start) * (s[1]
 # nach Zeile (Mitte im Drittel) und dann nach Spalte sortieren
 objs.sort(key=lambda s: (int(((s[0].start + s[0].stop) / 2) / (H / 3)), s[1].start))
 if len(objs) != 9:
-    sys.exit(f'{len(objs)} Bilder erkannt statt 9 – Raster bitte prüfen')
+    # Bilder berühren sich: feste Drittel nehmen und weißen Rand pro Zelle abschneiden
+    print(f'{len(objs)} Bilder erkannt statt 9 – schneide in feste Drittel')
+    W = im.width
+    objs = []
+    for r in range(3):
+        for c in range(3):
+            y0, y1, x0, x1 = r * H // 3, (r + 1) * H // 3, c * W // 3, (c + 1) * W // 3
+            m = mask[y0:y1, x0:x1]
+            ys = np.where(m.mean(1) > .3)[0]; xs = np.where(m.mean(0) > .3)[0]
+            objs.append((slice(y0 + ys[0], y0 + ys[-1] + 1), slice(x0 + xs[0], x0 + xs[-1] + 1)))
 OUT.mkdir(parents=True, exist_ok=True)
 for n, s in zip(names, objs):
     if n == '-':

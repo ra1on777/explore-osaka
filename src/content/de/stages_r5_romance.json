@@ -108,7 +108,7 @@
    },
    "tasks": [
     {"type": "inspect", "q": "Tippe auf die ruhigen Steinlaternen rechts am Platz.", "x": 91, "y": 68, "r": 9,
-     "closeup": {"art": "stone", "title": "Ein stiller Ort", "text": "Zwei alte Steinlaternen, ein wenig abseits. Hier hört man nur noch den Wind."}}
+     "closeup": {"art": "lanterns", "title": "Ein stiller Ort", "text": "Zwei alte Steinlaternen, ein wenig abseits. Hier hört man nur noch den Wind."}}
    ],
    "hint": "Oben auf dem Hauptturm der Burg."
   },

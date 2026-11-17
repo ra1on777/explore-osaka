@@ -990,7 +990,13 @@
        "q": "Es fliegt am Himmel!",
        "answer": "とり"
       }
-     ]
+     ],
+     "cardsDe": {
+      "さかな": "sakana – Fisch",
+      "いぬ": "inu – Hund",
+      "ねこ": "neko – Katze",
+      "とり": "tori – Vogel"
+     }
     }
    ],
    "after": [
