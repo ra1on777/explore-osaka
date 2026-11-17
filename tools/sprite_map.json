@@ -118,5 +118,19 @@
   "6": "TALKING_STRAY_CAT/sit",
   "7": "TALKING_STRAY_CAT/walk",
   "8": "TALKING_STRAY_CAT/smug"
+ },
+ "10": {
+  "0": "KOBAYASHI_PARK_KEEPER/map",
+  "1": "KOBAYASHI_PARK_KEEPER/point",
+  "2": "KOBAYASHI_PARK_KEEPER/wipe",
+  "3": "HARUKA_FERRY_CREW/binoculars",
+  "4": "HARUKA_FERRY_CREW/salute",
+  "5": "HARUKA_FERRY_CREW/timetable",
+  "6": "SATO_ARCHIVE_CLERK/books",
+  "7": "SATO_ARCHIVE_CLERK/explain",
+  "8": "SATO_ARCHIVE_CLERK/bow",
+  "9": "NANA_SHOTENGAI_FLORIST/plant",
+  "10": "NANA_SHOTENGAI_FLORIST/laugh",
+  "11": "NANA_SHOTENGAI_FLORIST/think"
  }
 }

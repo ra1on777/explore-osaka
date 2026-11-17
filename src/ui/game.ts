@@ -2,7 +2,7 @@
 import { TEST_MODE, TEST_QUEST, setTestMode } from '../testmode';
 import { sfx } from '../audio';
 import {
-  ALL_STRANDS, CLUSTERS, QUEST_BY_ID, REGIONS, SCREENS, clusterName, clusterOf, maxStars, npcName,
+  ALL_STRANDS, ALL_SIDE, isSideQuest, CLUSTERS, QUEST_BY_ID, REGIONS, SCREENS, clusterName, clusterOf, maxStars, npcName,
   regionName, screenName, screenPlayable, stageContent, strandTitle,
 } from '../data';
 import {
@@ -364,12 +364,17 @@ function header(title: string, back: () => void) {
 // Quest-Log, Vokabelheft, Tasche
 // =====================================================================
 function questLog() {
-  const ids = discoveredStrands();
+  const all = discoveredStrands();
+  // Hauptstränge zuerst, Nebenaufgaben darunter in eigenem Abschnitt
+  const main = all.filter((id) => !isSideQuest(id));
+  const side = all.filter(isSideQuest);
+  const ids = [...main, ...side];
   mount(h('div', { class: 'sub' },
     header(t('quests.title'), explore),
-    h('div', { class: 'small muted' }, t('quests.found', { n: ids.filter((id) => id !== TEST_QUEST).length, total: ALL_STRANDS })),
+    h('div', { class: 'small muted' }, t('quests.found', { n: main.filter((id) => id !== TEST_QUEST).length, total: ALL_STRANDS }),
+      ALL_SIDE ? ` · ${t('quests.sideFound', { n: side.length, total: ALL_SIDE })}` : ''),
     ids.length ? null : h('p', { class: 'muted' }, t('quests.empty')),
-    ...ids.map((id) => {
+    ...ids.flatMap((id, i) => [i === main.length && side.length ? h('h3', { class: 'quest-sec' }, t('quests.side')) : null, (() => {
       const p = peekProgress(id);
       const q = QUEST_BY_ID[id];
       const hint = lastHint(id);
@@ -383,7 +388,7 @@ function questLog() {
         isStrandComplete(id) ? h('div', { class: 'small good' }, t('quests.complete'))
           : hint ? h('div', { class: 'quest-hint' }, h('span', { class: 'label' }, t('quests.next')), ' ', vars(hint.text),
             isStrandDemoFinished(id) && hint.outside ? h('div', { class: 'small muted' }, t('quests.demoEnd')) : null) : null);
-    })));
+    })()]).filter(Boolean) as HTMLElement[]));
 }
 
 function vocabScreen() {

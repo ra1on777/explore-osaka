@@ -199,5 +199,7 @@
   "hf.m12": "Paulownie und Phönix",
   "tr.show": "あ→A Übersetzen",
   "tr.hide": "あ→A Übersetzung aus",
-  "tr.std": "Hochjapanisch: {jp} ({ro})"
+  "tr.std": "Hochjapanisch: {jp} ({ro})",
+  "quests.side": "Nebenaufgaben",
+  "quests.sideFound": "{n} von {total} Nebenaufgaben"
 }

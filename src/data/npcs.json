@@ -31,5 +31,9 @@
   "TORI_TETSU_TAKUMI":    {"short": "tori", "poses": ["camera", "point", "excited"], "default": "camera"},
   "STUDENT_KWANSEI_REP":  {"short": "kwansei", "poses": ["welcome", "point", "quiz"], "default": "welcome"},
   "STUDENT_OTEMON_BIZ":   {"short": "otemon", "poses": ["wave", "tablet", "explain"], "default": "wave"},
-  "STUDENT_OMU_LEAD":     {"short": "omu", "poses": ["guide", "stampbook", "cheer"], "default": "guide"}
+  "STUDENT_OMU_LEAD":     {"short": "omu", "poses": ["guide", "stampbook", "cheer"], "default": "guide"},
+  "KOBAYASHI_PARK_KEEPER": {"short": "kobayashi", "default": "map", "poses": ["map", "point", "wipe"]},
+  "HARUKA_FERRY_CREW":    {"short": "harukaf", "default": "salute", "poses": ["salute", "binoculars", "timetable"]},
+  "SATO_ARCHIVE_CLERK":   {"short": "sato", "default": "books", "poses": ["books", "explain", "bow"]},
+  "NANA_SHOTENGAI_FLORIST": {"short": "nana", "default": "plant", "poses": ["plant", "laugh", "think"]}
 }

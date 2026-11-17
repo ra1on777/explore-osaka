@@ -1,7 +1,12 @@
 # ExploreOsaka – Projektstatus
 
-Stand: v1.6 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
+Stand: v1.7 – alle sechs Regionen: „Hokusetsu & Hanshin-Nord“ (Screens 1–19 inkl. 2a/2b/2c), „Kita & Nakanoshima“ (20–29), „Chūō – Burgbezirk“ (30–36 inkl. 32a/32b), „Minami & Bucht“ (37–52 inkl. 45a/45b), „Tennōji & Shinsekai“ (53–61 inkl. 56a/56b) und „Sakai & Süd-Ōsaka“ (62–70).
 Automatischer Komplett-Durchlauf (`tools/playtest.cjs`): **442/442 Etappen spielbar – alle 25 Stränge bis zum Ende –, keine Laufzeitfehler, keine fehlenden Dateien** (Handy- und PC-Layout).
+
+### Neu in v1.7
+- **Bundle 09: 30 Nebenaufgaben mit 70 Etappen** (`src/data/quests_side_09.json`, Texte in `src/content/de/stages_side_09.json`). Alle Dialoge, Aufgaben und Hinweise geschrieben.
+- 4 neue Figuren mit je 3 Posen: Herr Kobayashi (Parkwächter), Matrosin Haruka (Fähre), Herr Satō (Archiv), Nana (Blumenladen).
+- Questlog: Nebenaufgaben (quest_id `SIDE_…`) stehen in eigenem Abschnitt und zählen getrennt („x von 30 Nebenaufgaben“). Bei der Platzvergabe haben Hauptstränge Vorrang.
 
 ### Neu in v1.6
 - **Übersetzen-Schalter** direkt in Karuta und Hanafuda („あ→A Übersetzen“, gilt nur für dieses Spiel). Karuta: japanische Karten bekommen Lesung/Bedeutung (`cardsDe`), Dialekt-Hinweise zeigen die hochjapanische Entsprechung (`std`), damit die Antwort nicht direkt verraten wird. Hanafuda: deutsche Monatsnamen unter den japanischen.

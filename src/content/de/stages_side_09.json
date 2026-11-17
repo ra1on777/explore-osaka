@@ -1,0 +1,4204 @@
+{
+ "SIDE_01_FERRY_TIMETABLE": {
+  "1": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Ahoi! Ich bin Haruka von der Hafenfähre. Du siehst aus, als hättest du gute Beine.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Unser großer Fahrplan für die Rundfahrt ist weg. Ich habe ihn heute früh am Info-Schalter beim Kyocera Dome liegen lassen.",
+     "p": "timetable"
+    },
+    {
+     "s": "me",
+     "t": "Ich hole ihn dir."
+    },
+    {
+     "s": "harukaf",
+     "t": "Danke! Ohne Plan fragen mich alle zehn Minuten: „なんじ？“ – „Wie spät?“",
+     "p": "binoculars"
+    }
+   ],
+   "fetch": {
+    "item": "Fährplan der Bucht-Rundfahrt",
+    "x": 56,
+    "y": 84,
+    "art": "ferrymap",
+    "find": "Ein laminierter Fahrplan mit kleinen Schiffen darauf: ふね – Fähre.",
+    "hintOut": "Der Fahrplan liegt am Info-Schalter auf dem Vorplatz des Kyocera Dome. Danach zurück zu Haruka am Tempozan-Pier.",
+    "hintBack": "Bring den Fahrplan zu Haruka am Tempozan-Pier."
+   },
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Mein Plan! Jetzt kann die Rundfahrt pünktlich ablegen.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Weißt du was? Auf Japanisch heißt Schiff ふね (fune). Merk dir das – ich frag dich später ab!",
+     "p": "timetable"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ふね",
+     "ro": "fune",
+     "de": "Schiff"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_02_KOFUN_BINOCULARS": {
+  "1": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Guten Tag! Kobayashi, Parkwächter. Gleich kommt eine Schulklasse, und mein Ersatz-Fernglas fehlt.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Von hier sieht man das Grab nur als Wald. Die Schlüssellochform erkennt man nur von oben – oder mit gutem Fernglas am Graben.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Das Fernglas liegt im Teehaus im Daisen-Park. Holst du es mir?",
+     "p": "wipe"
+    }
+   ],
+   "fetch": {
+    "item": "Ersatz-Fernglas",
+    "x": 60,
+    "y": 84,
+    "art": "lens",
+    "find": "Ein altes Fernglas in einer Ledertasche, mit einem Zettel: こばやし.",
+    "hintOut": "Das Fernglas liegt im Teehaus-Garten im Daisen-Park. Danach zurück zur Aussichtsplattform am Daisen-Kofun.",
+    "hintBack": "Bring das Fernglas zu Herrn Kobayashi auf der Aussichtsplattform am Daisen-Kofun."
+   },
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Perfekt, gerade rechtzeitig! Die Kinder werden staunen.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Der Graben ist übrigens fast drei Kilometer lang. Wer ihn umrundet, braucht etwa eine Stunde.",
+     "p": "map"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_03_AMAGASAKI_DELIVERY": {
+  "1": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Hallo! Ich bin Nana, ich habe den Blumenladen hier in der Einkaufsstraße.",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Ich habe frischen Shiso bestellt – die grünen Kräuterblätter, die man zu Sashimi isst.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Der Händler steht vor dem roten Tor des Nishinomiya-Schreins. Ich kann den Laden nicht allein lassen. Holst du das Päckchen?",
+     "p": "laugh"
+    }
+   ],
+   "fetch": {
+    "item": "Päckchen mit Shiso",
+    "x": 68,
+    "y": 90,
+    "art": "plantbook",
+    "find": "Ein kleines Päckchen, das nach Minze und Zitrone duftet: しそ.",
+    "hintOut": "Das Päckchen wartet vor dem roten Haupttor des Nishinomiya-Schreins. Danach zurück zu Nana in der Einkaufsstraße von Amagasaki.",
+    "hintBack": "Bring den Shiso zu Nana in der Einkaufsstraße von Amagasaki."
+   },
+   "after": [
+    {
+     "s": "nana",
+     "t": "Riecht das gut! Danke dir.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "In Amagasaki ist alles nah: Schrein, Markt, Bahnhof. Das mag ich hier.",
+     "p": "plant"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_04_OTEMON_STUDENT_CARD": {
+  "1": {
+   "lines": [
+    {
+     "s": "otemon",
+     "t": "Hilfe! Ein Kommilitone hat seinen Studierendenausweis verloren. Ohne Ausweis kommt er nicht in die Prüfung!",
+     "p": "explain"
+    },
+    {
+     "s": "otemon",
+     "t": "Er hat in der Pause gegenüber am Ōte-mon der Burg auf einer Bank gesessen.",
+     "p": "tablet"
+    },
+    {
+     "s": "me",
+     "t": "Ich schaue nach."
+    }
+   ],
+   "fetch": {
+    "item": "Studierendenausweis",
+    "x": 32,
+    "y": 86,
+    "art": "notebook",
+    "find": "Ein Ausweis mit Foto. Darauf steht がくせい – Student.",
+    "hintOut": "Der Ausweis liegt auf einer Bank am Ōte-mon der Burg Ōsaka. Danach zurück zu Mio am Campus Ōtemae.",
+    "hintBack": "Bring den Ausweis zu Mio am Campus Ōtemae."
+   },
+   "after": [
+    {
+     "s": "otemon",
+     "t": "Du bist ein Schatz! Er hätte die Prüfung verpasst.",
+     "p": "wave"
+    },
+    {
+     "s": "otemon",
+     "t": "Unser Campus liegt nur fünf Minuten von der Burg entfernt. Manchmal lernen wir dort im Park.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_05_DOME_SEAT_CHECK": {
+  "1": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Du hier? Ich habe Freikarten für das Abendspiel gewonnen!",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Auf der Karte steht alles auf Japanisch. Eingang heißt いりぐち (iriguchi), der Platz heißt せき (seki).",
+     "p": "timetable"
+    },
+    {
+     "s": "harukaf",
+     "t": "Und raus geht es durch den でぐち (deguchi), den Ausgang. Testest du mich?",
+     "p": "binoculars"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wo gehst du hinein?",
+     "options": [
+      {
+       "jp": "いりぐち",
+       "ro": "iriguchi"
+      },
+      {
+       "jp": "でぐち",
+       "ro": "deguchi"
+      },
+      {
+       "jp": "ひがしぐち",
+       "ro": "higashiguchi"
+      },
+      {
+       "jp": "せき",
+       "ro": "seki"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was ist dein Sitzplatz?",
+     "options": [
+      {
+       "jp": "せき",
+       "ro": "seki"
+      },
+      {
+       "jp": "いす",
+       "ro": "isu"
+      },
+      {
+       "jp": "へや",
+       "ro": "heya"
+      },
+      {
+       "jp": "まど",
+       "ro": "mado"
+      }
+     ],
+     "answer": 0,
+     "explain": "いす ist ein Stuhl allgemein – auf der Eintrittskarte steht せき."
+    }
+   ],
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Genau! Eingang Nord, Reihe 12, Platz 7. Jetzt finde ich mich zurecht.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Und wenn das Spiel vorbei ist: でぐち – und schnell zur letzten Fähre!",
+     "p": "binoculars"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "いりぐち",
+     "ro": "iriguchi",
+     "de": "Eingang"
+    },
+    {
+     "jp": "せき",
+     "ro": "seki",
+     "de": "Sitzplatz"
+    },
+    {
+     "jp": "でぐち",
+     "ro": "deguchi",
+     "de": "Ausgang"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_06_HOSPITAL_VISITOR_PASS": {
+  "1": {
+   "lines": [
+    {
+     "s": "haruka",
+     "t": "Ein älterer Herr sucht die Ambulanz und weiß nicht, wohin. Hilfst du mir?",
+     "p": "clipboard"
+    },
+    {
+     "s": "haruka",
+     "t": "Besucher melden sich zuerst am Informationsschalter an. Dort bekommt man auch einen Besucherausweis.",
+     "p": "think"
+    },
+    {
+     "s": "haruka",
+     "t": "Siehst du ihn? Tippe ihn an, dann bringe ich den Herrn hin.",
+     "p": "wave"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo ist der Informationsschalter?",
+     "x": 81,
+     "y": 64,
+     "r": 8,
+     "closeup": {
+      "art": "noticeboard",
+      "title": "うけつけ – Empfang",
+      "text": "Am Schalter steht うけつけ (uketsuke): Anmeldung. Hier gibt es Besucherausweise und den Weg zur Ambulanz."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt die Monorail-Station direkt vor dem Klinikum?",
+     "options": [
+      "Handai-byōin-mae",
+      "Banpaku-kinen-kōen",
+      "Senri-Chūō",
+      "Shibahara-handaimae"
+     ],
+     "answer": 0,
+     "explain": "byōin-mae heißt „vor dem Krankenhaus“."
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "t": "Danke! Der Herr ist erleichtert.",
+     "p": "wave"
+    },
+    {
+     "s": "haruka",
+     "t": "びょういん (byōin) heißt Krankenhaus. Das Wort brauchst du hoffentlich nie – aber gut, es zu kennen.",
+     "p": "clipboard"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "びょういん",
+     "ro": "byōin",
+     "de": "Krankenhaus"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_07_SAKAI_WHETSTONE": {
+  "1": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Ah, guten Tag. Satō, ich arbeite im Archiv der Stadt. Heute helfe ich hier im Museum aus.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Gleich zeigt der Schmied, wie man ein Sakai-Messer schärft. Aber der feine Wasserstein fehlt.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Er wurde im Teehaus im Daisen-Park vergessen, nach einer Teezeremonie mit Messerkunst. Holen Sie ihn bitte?",
+     "p": "books"
+    }
+   ],
+   "fetch": {
+    "item": "Feiner Wasserstein",
+    "x": 66,
+    "y": 86,
+    "art": "whetstone",
+    "find": "Ein glatter grauer Stein in einem Holzkästchen. Er ist noch etwas feucht.",
+    "hintOut": "Der Wasserstein liegt im Teehaus-Garten im Daisen-Park. Danach zurück zu Herrn Satō ins Handwerksmuseum Sakai.",
+    "hintBack": "Bring den Wasserstein zu Herrn Satō ins Handwerksmuseum Sakai."
+   },
+   "after": [
+    {
+     "s": "sato",
+     "t": "Vielen Dank. Ein Messer aus Sakai wird zuerst grob, dann ganz fein geschliffen.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Ohne diesen Stein wäre die Vorführung nur halb so scharf gewesen. Verzeihen Sie das Wortspiel.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_08_MINOH_BENCH_SIGN": {
+  "1": {
+   "lines": [
+    {
+     "s": "sota",
+     "t": "Ich gehe nachher im Minō-Tal spazieren. Auf den Wegschildern stehen zwei Wörter immer wieder.",
+     "p": "note"
+    },
+    {
+     "s": "sota",
+     "t": "たき (taki) heißt Wasserfall. はし (hashi) heißt Brücke.",
+     "p": "point"
+    },
+    {
+     "s": "sota",
+     "t": "Aber Vorsicht: はし heißt auch Essstäbchen! Nur die Betonung ist anders.",
+     "p": "puzzled"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Das Schild zeigt zum Wasserfall. Was steht darauf?",
+     "options": [
+      {
+       "jp": "たき",
+       "ro": "taki"
+      },
+      {
+       "jp": "かわ",
+       "ro": "kawa"
+      },
+      {
+       "jp": "やま",
+       "ro": "yama"
+      },
+      {
+       "jp": "いけ",
+       "ro": "ike"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und welches Wort heißt Brücke?",
+     "options": [
+      {
+       "jp": "はし",
+       "ro": "hashi"
+      },
+      {
+       "jp": "はな",
+       "ro": "hana"
+      },
+      {
+       "jp": "みち",
+       "ro": "michi"
+      },
+      {
+       "jp": "えき",
+       "ro": "eki"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sota",
+     "t": "Super. Dann verlaufe ich mich nicht.",
+     "p": "point"
+    },
+    {
+     "s": "sota",
+     "t": "Wenn du mal zum Wasserfall willst: Vom Bahnhof Minō läuft man etwa 40 Minuten.",
+     "p": "note"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "たき",
+     "ro": "taki",
+     "de": "Wasserfall"
+    },
+    {
+     "jp": "はし",
+     "ro": "hashi",
+     "de": "Brücke"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_09_OSAKAJO_HALL_TICKET": {
+  "1": {
+   "lines": [
+    {
+     "s": "ryo",
+     "t": "Hey! Gut, dass du da bist. Ich organisiere heute Abend ein Konzert in der Halle.",
+     "p": "phone"
+    },
+    {
+     "s": "ryo",
+     "t": "Und ich Genie habe meinen Backstage-Pass am Kiosk beim Hōkoku-Schrein liegen lassen.",
+     "p": "sly"
+    },
+    {
+     "s": "ryo",
+     "t": "In 20 Minuten ist Soundcheck. Rennst du für mich?",
+     "p": "point"
+    }
+   ],
+   "fetch": {
+    "item": "Backstage-Pass",
+    "x": 12,
+    "y": 86,
+    "art": "wristband",
+    "find": "Ein Pass an einem Band. Darauf steht in großen Buchstaben: スタッフ – Staff.",
+    "hintOut": "Der Pass liegt am Kiosk beim Hōkoku-Schrein im Burgpark. Danach zurück zu Ryō vor der Ōsaka-jō Hall.",
+    "hintBack": "Bring den Pass zu Ryō vor der Ōsaka-jō Hall."
+   },
+   "after": [
+    {
+     "s": "ryo",
+     "t": "Lebensretter! Komm heute Abend vorbei, ich setz dich auf die Liste.",
+     "p": "point"
+    },
+    {
+     "s": "ryo",
+     "t": "スタッフ ist Katakana – das kommt vom englischen „staff“. Lies das nächste Mal selbst!",
+     "p": "sly"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_10_SPA_WORLD_TOWEL": {
+  "1": {
+   "lines": [
+    {
+     "s": "kenji",
+     "t": "Willkommen im Badehaus! Erste Regel: Schuhe aus, schon hier am Eingang.",
+     "p": "talk"
+    },
+    {
+     "s": "kenji",
+     "t": "Die Schuhe kommen in ein kleines Schließfach. Den Schlüssel trägst du am Handgelenk.",
+     "p": "relaxed"
+    },
+    {
+     "s": "kenji",
+     "t": "Das kleine Handtuch nimmst du mit, aber es kommt nie ins Badewasser. Man legt es auf den Kopf. Ehrlich!",
+     "p": "hyped"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Was heißt くつ (kutsu)?",
+     "options": [
+      "Schuhe",
+      "Socken",
+      "Handtuch",
+      "Schlüssel"
+     ],
+     "answer": 0,
+     "show": {
+      "jp": "くつ"
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wohin kommt das kleine Handtuch, während du badest?",
+     "options": [
+      "Auf den Kopf",
+      "Ins Badewasser",
+      "Um den Hals ins Wasser",
+      "In den Schuhschrank"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kenji",
+     "t": "Du lernst schnell! Jetzt ab ins warme Wasser.",
+     "p": "hyped"
+    },
+    {
+     "s": "kenji",
+     "t": "Und danach gibt es Milch aus der Glasflasche. Das ist auch eine Regel. Meine.",
+     "p": "relaxed"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "くつ",
+     "ro": "kutsu",
+     "de": "Schuhe"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_11_NAGAI_BOTANICAL_SEEDS": {
+  "1": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Ah, Sie schon wieder! Heute hole ich Samen für einen Schulgarten.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Die Kinder wollen wissen, was im Sommer blüht. Im Juni die Hortensien, im Juli und August der Lotus.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Sehen Sie die großen runden Blätter im Teich? Zeigen Sie mal drauf.",
+     "p": "wipe"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo wächst der Lotus?",
+     "x": 68,
+     "y": 66,
+     "r": 9,
+     "closeup": {
+      "art": "taikobashi",
+      "title": "はす – Lotus",
+      "text": "Die Blätter sind so groß, dass das Wasser in Tropfen darauf rollt. Die Blüte öffnet sich nur morgens."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Genau. Lotus wächst im Schlamm und blüht trotzdem ganz sauber.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Ich bringe die Samen zum Parkausgang am Yanmar Stadium. Begleiten Sie mich?",
+     "p": "map"
+    }
+   ],
+   "hint": "Nächster Ort: Nagai-Park, Yanmar Stadium – dort wartet Herr Kobayashi."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Danke fürs Mitkommen. Die Kinder holen die Samen hier ab.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Eine letzte Frage für unsere Schüler: Wie heißt Blume auf Japanisch?",
+     "p": "point"
+    },
+    {
+     "s": "me",
+     "t": "Hm, das kommt in vielen Namen vor …"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Blume“?",
+     "options": [
+      {
+       "jp": "はな",
+       "ro": "hana"
+      },
+      {
+       "jp": "はし",
+       "ro": "hashi"
+      },
+      {
+       "jp": "はこ",
+       "ro": "hako"
+      },
+      {
+       "jp": "なつ",
+       "ro": "natsu"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und was heißt はなび (hanabi) wörtlich?",
+     "options": [
+      "Feuer-Blume (Feuerwerk)",
+      "Blumen-Garten",
+      "Kirschblüte",
+      "Blumenladen"
+     ],
+     "answer": 0,
+     "explain": "はな (Blume) + ひ (Feuer) = はなび, Feuerwerk."
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Sehr gut! Die Kinder werden sich freuen.",
+     "p": "wipe"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Puh, warm heute. Aber so ein Tag im Park ist die beste Arbeit der Welt.",
+     "p": "wipe"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "はな",
+     "ro": "hana",
+     "de": "Blume"
+    },
+    {
+     "jp": "はなび",
+     "ro": "hanabi",
+     "de": "Feuerwerk"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_12_TAISHO_OKINAWA_BENTO": {
+  "1": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Hallo! Heute bin ich in Taishō, hier wohnen viele Familien aus Okinawa.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Wir feiern ein kleines Nachbarschaftsfest. Es fehlen nur noch Sata Andagi – runde Krapfen aus Okinawa.",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Der Stand am Tempozan-Pier hat welche für mich zurückgelegt. Holst du sie?",
+     "p": "think"
+    }
+   ],
+   "fetch": {
+    "item": "Tüte Sata Andagi",
+    "x": 38,
+    "y": 84,
+    "art": "senbei",
+    "find": "Eine warme Papiertüte voller goldbrauner Krapfen.",
+    "hintOut": "Die Krapfen warten am Stand am Tempozan-Pier. Danach zurück zu Nana in die Okinawa-Einkaufsstraße in Taishō.",
+    "hintBack": "Bring die Krapfen zu Nana in die Okinawa-Einkaufsstraße in Taishō."
+   },
+   "after": [
+    {
+     "s": "nana",
+     "t": "Die riechen herrlich! Und noch warm.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Warte, ich muss noch ausrechnen, was ich dem Stand schulde. Bleib kurz hier.",
+     "p": "think"
+    }
+   ],
+   "hint": "Nächster Ort: gleich hier, Okinawa-Einkaufsstraße in Taishō – Nana rechnet."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Auf der Tafel steht: サーターアンダギー 1こ 120えん.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "„1こ“ heißt ein Stück, „えん“ ist Yen. Ich habe fünf Stück genommen.",
+     "p": "plant"
+    },
+    {
+     "s": "me",
+     "t": "Dann rechne ich mal mit."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Was kosten 5 Stück zu je 120 Yen?",
+     "min": 0,
+     "max": 1500,
+     "step": 10,
+     "answer": 600,
+     "unit": "Yen",
+     "tol": 0.02
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Sechshundert Yen, genau. ろっぴゃくえん!",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Danke! Komm doch zum Fest – es gibt auch Okinawa-Musik mit der Sanshin.",
+     "p": "plant"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "えん",
+     "ro": "en",
+     "de": "Yen"
+    },
+    {
+     "jp": "ろっぴゃく",
+     "ro": "roppyaku",
+     "de": "sechshundert"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_13_NAKANOSHIMA_ARCHIVES": {
+  "1": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Guten Tag. Ich sortiere alte Stadtpläne von Nakanoshima, für eine kleine Ausstellung.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Nakanoshima heißt „Insel in der Mitte“. Sie liegt zwischen zwei Flüssen.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Im Norden fließt der Dōjima-Fluss, im Süden der Tosabori-Fluss. Vorne treffen sie sich wieder.",
+     "p": "explain"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welche zwei Flüsse umschließen Nakanoshima?",
+     "options": [
+      "Dōjima und Tosabori",
+      "Yodo und Kanzaki",
+      "Dōtonbori und Kizu",
+      "Ōkawa und Neya"
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was bedeutet なかのしま (Nakanoshima)?",
+     "options": [
+      "Insel in der Mitte",
+      "Neue Insel",
+      "Lange Brücke",
+      "Insel der Bücher"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Richtig. Die Pläne bringe ich jetzt in den Lesesaal der Nakanoshima-Bibliothek.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Dort liegt ein alter Plan, auf dem Sie mir etwas zeigen könnten.",
+     "p": "books"
+    }
+   ],
+   "hint": "Nächster Ort: Nakanoshima-Bibliothek, Lesesaal – dort wartet Herr Satō."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Hier ist der alte Plan. Die Naniwa-Brücke ist eine der berühmtesten Brücken Ōsakas.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Sie hat vier große Löwen aus Stein. Darum nennen manche sie die Löwenbrücke.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Der Plan steckt im Regal links. Würden Sie ihn mir zeigen?",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo steckt der alte Stadtplan?",
+     "x": 10,
+     "y": 30,
+     "r": 9,
+     "closeup": {
+      "art": "scroll",
+      "title": "Plan von Nakanoshima",
+      "text": "Eine Brücke mit vier gezeichneten Löwen: die Naniwa-Brücke über den Tosabori-Fluss, nahe der Bibliothek."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Was steht an der Naniwa-Brücke?",
+     "options": [
+      "Vier Löwen aus Stein",
+      "Zwei Drachen aus Bronze",
+      "Ein großer Torii",
+      "Eine Uhr aus Gold"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Ausgezeichnet. Der Plan bekommt einen Ehrenplatz in der Ausstellung.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Wenn Sie über die Brücke gehen, grüßen Sie die Löwen von mir.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_14_KANDAI_LIBRARY_RETURN": {
+  "1": {
+   "lines": [
+    {
+     "s": "ryosuke",
+     "t": "Moment, bevor du gehst – ich habe ein Problem. Mein Lehrbuch muss heute zurück.",
+     "p": "book"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Ich habe es aus der Bibliothek in Suita geliehen. Bibliothek heißt としょかん (toshokan), Buch heißt ほん (hon).",
+     "p": "explain"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Ich prüfe gern, bevor ich vertraue. Kennst du die Wörter?",
+     "p": "stamp"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Bibliothek“?",
+     "options": [
+      {
+       "jp": "としょかん",
+       "ro": "toshokan"
+      },
+      {
+       "jp": "たいしかん",
+       "ro": "taishikan"
+      },
+      {
+       "jp": "びょういん",
+       "ro": "byōin"
+      },
+      {
+       "jp": "きっさてん",
+       "ro": "kissaten"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und „Buch“?",
+     "options": [
+      {
+       "jp": "ほん",
+       "ro": "hon"
+      },
+      {
+       "jp": "はこ",
+       "ro": "hako"
+      },
+      {
+       "jp": "かみ",
+       "ro": "kami"
+      },
+      {
+       "jp": "えき",
+       "ro": "eki"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "ryosuke",
+     "t": "Bestanden. Dann komm mit zur Monorail – ich verlaufe mich in Suita immer.",
+     "p": "book"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Wir treffen uns an der Station, wo die Bahn über den Campus gleitet.",
+     "p": "explain"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "としょかん",
+     "ro": "toshokan",
+     "de": "Bibliothek"
+    },
+    {
+     "jp": "ほん",
+     "ro": "hon",
+     "de": "Buch"
+    }
+   ],
+   "hint": "Dort, wo eine Einschienenbahn über den Campus in Suita gleitet – Ryōsuke wartet."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "ryosuke",
+     "t": "Hier ist die Station Handai-byōin-mae. Ich muss nach Senri-Chūō, da fährt mein Bus.",
+     "p": "book"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Aber diese Strecke ist eine Abzweigung. Wo steige ich um?",
+     "p": "explain"
+    },
+    {
+     "s": "me",
+     "t": "Zeig mal den Streckenplan."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "monorail",
+     "q": "Ryōsukes Weg nach Senri-Chūō",
+     "points": [
+      {
+       "id": "airport",
+       "x": 5,
+       "y": 72,
+       "label": "Ōsaka-kūkō"
+      },
+      {
+       "id": "senri",
+       "x": 45,
+       "y": 59,
+       "label": "Senri-Chūō"
+      },
+      {
+       "id": "banpaku",
+       "x": 71,
+       "y": 53,
+       "label": "Banpaku-kinen-kōen"
+      },
+      {
+       "id": "byoin",
+       "x": 70,
+       "y": 30,
+       "label": "Handai-byōin-mae"
+      },
+      {
+       "id": "saito",
+       "x": 70,
+       "y": 11,
+       "label": "Saito-nishi"
+      },
+      {
+       "id": "kadoma",
+       "x": 95,
+       "y": 39,
+       "label": "Kadoma-shi"
+      }
+     ],
+     "rounds": [
+      {
+       "q": "Wo seid ihr gerade?",
+       "answer": "byoin",
+       "fb": "Handai-byōin-mae – vor dem Uniklinikum."
+      },
+      {
+       "q": "Wo steigt Ryōsuke auf die Hauptlinie um?",
+       "answer": "banpaku",
+       "fb": "Am Expo-Park treffen sich beide Strecken."
+      },
+      {
+       "q": "Und wo ist sein Ziel?",
+       "answer": "senri",
+       "fb": "Senri-Chūō, Richtung Westen."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "ryosuke",
+     "t": "Logisch und sauber. Ich sollte dich als Zeugen anrufen.",
+     "p": "stamp"
+    },
+    {
+     "s": "ryosuke",
+     "t": "Das Buch kommt pünktlich zurück. Danke!",
+     "p": "book"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_15_KWANSEI_CLOCKTOWER_PHOTO": {
+  "1": {
+   "lines": [
+    {
+     "s": "kwansei",
+     "t": "Willkommen! Ein Austauschstudent will ein Foto vor dem Uhrturm – und das Gründungsjahr wissen.",
+     "p": "welcome"
+    },
+    {
+     "s": "kwansei",
+     "t": "Es steht auf einer kleinen Tafel am Eingang unter dem Turm. Findest du sie?",
+     "p": "point"
+    },
+    {
+     "s": "me",
+     "t": "Ich schau mal genau hin."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo ist die Tafel mit dem Gründungsjahr?",
+     "x": 50,
+     "y": 66,
+     "r": 6,
+     "closeup": {
+      "art": "gateplaque",
+      "title": "1889",
+      "text": "Kwansei Gakuin wurde 1889 in Kōbe gegründet. 1929 zog die Hochschule hierher nach Nishinomiya."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Wann wurde Kwansei Gakuin gegründet?",
+     "options": [
+      "1889",
+      "1929",
+      "1949",
+      "1868"
+     ],
+     "answer": 0,
+     "explain": "1929 ist das Jahr des Umzugs auf diesen Campus."
+    }
+   ],
+   "after": [
+    {
+     "s": "kwansei",
+     "t": "Genau! Das Foto ist im Kasten.",
+     "p": "quiz"
+    },
+    {
+     "s": "kwansei",
+     "t": "Ich bringe ihn noch zum Bahnhof. Wir gehen über den Schrein mit dem großen roten Tor.",
+     "p": "point"
+    }
+   ],
+   "hint": "Ein großes rotes Tor auf dem Weg zum Bahnhof, beim Schrein des Glücksgottes Ebisu – Haruto wartet dort."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kwansei",
+     "t": "Unser Gast hat eine gute Frage: Wie fragt man nach der Uhrzeit?",
+     "p": "quiz"
+    },
+    {
+     "s": "kwansei",
+     "t": "Man sagt: なんじですか (nan-ji desu ka) – Wie viel Uhr ist es?",
+     "p": "point"
+    },
+    {
+     "s": "kwansei",
+     "t": "Die Antwort ist zum Beispiel: さんじです (san-ji desu) – Es ist drei Uhr.",
+     "p": "welcome"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie fragst du nach der Uhrzeit?",
+     "options": [
+      {
+       "jp": "なんじですか",
+       "ro": "nan-ji desu ka"
+      },
+      {
+       "jp": "いくらですか",
+       "ro": "ikura desu ka"
+      },
+      {
+       "jp": "どこですか",
+       "ro": "doko desu ka"
+      },
+      {
+       "jp": "だれですか",
+       "ro": "dare desu ka"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt よじです (yo-ji desu)?",
+     "options": [
+      "Es ist vier Uhr.",
+      "Es ist acht Uhr.",
+      "Es ist neun Uhr.",
+      "Es ist sieben Uhr."
+     ],
+     "answer": 0,
+     "explain": "Vorsicht: 4 Uhr ist よじ, nicht よんじ. 9 Uhr ist くじ."
+    }
+   ],
+   "after": [
+    {
+     "s": "kwansei",
+     "t": "Perfekt. Und jetzt ist es さんじ – höchste Zeit für den Zug!",
+     "p": "welcome"
+    },
+    {
+     "s": "kwansei",
+     "t": "Danke für deine Hilfe. Mastery for Service, wie wir sagen.",
+     "p": "point"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "なんじですか",
+     "ro": "nan-ji desu ka",
+     "de": "Wie spät ist es?"
+    },
+    {
+     "jp": "よじ",
+     "ro": "yo-ji",
+     "de": "vier Uhr"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_16_TENROKU_UMBRELLA_SWAP": {
+  "1": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Oh nein. Nach dem Regenschauer steht ein fremder Schirm in meinem Ständer!",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Ich war vorhin im Café am Fluss in Kitahama. Bestimmt hat jemand dort meinen mitgenommen und seinen hiergelassen.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Meiner ist hellgrün mit einer Blume am Griff. Tauschst du die beiden für mich?",
+     "p": "plant"
+    }
+   ],
+   "fetch": {
+    "item": "Nanas grüner Schirm",
+    "x": 35,
+    "y": 86,
+    "art": "scarf",
+    "find": "Ein hellgrüner Schirm mit einer kleinen Blume am Griff. Daneben ein Zettel: すみません！",
+    "hintOut": "Nanas Schirm steht im Café am Fluss in Kitahama. Danach zurück zu Nana in die Tenjinbashisuji-Einkaufsstraße.",
+    "hintBack": "Bring den Schirm zu Nana in die Tenjinbashisuji-Einkaufsstraße."
+   },
+   "after": [
+    {
+     "s": "nana",
+     "t": "Mein Schirm! Und der andere geht ins Fundbüro.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Ich muss gleich weiter zum Museum of Housing and Living, ein paar Meter von hier. Komm mit!",
+     "p": "plant"
+    }
+   ],
+   "hint": "Nächster Ort: Museum of Housing and Living – dort wartet Nana."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Drinnen im Museum regnet es nie. Aber draußen schon wieder.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Regen heißt あめ (ame). Der Schirm heißt かさ (kasa).",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Und あめ heißt auch Bonbon! Wieder nur die Betonung. Japanisch liebt solche Spiele.",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Regen“?",
+     "options": [
+      {
+       "jp": "あめ",
+       "ro": "ame"
+      },
+      {
+       "jp": "ゆき",
+       "ro": "yuki"
+      },
+      {
+       "jp": "かぜ",
+       "ro": "kaze"
+      },
+      {
+       "jp": "くも",
+       "ro": "kumo"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und „Regenschirm“?",
+     "options": [
+      {
+       "jp": "かさ",
+       "ro": "kasa"
+      },
+      {
+       "jp": "かさね",
+       "ro": "kasane"
+      },
+      {
+       "jp": "かぎ",
+       "ro": "kagi"
+      },
+      {
+       "jp": "かばん",
+       "ro": "kaban"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Richtig. Wenn’s regnet, sag einfach: あめですね – „Es regnet, nicht wahr?“",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Danke für die Rettung meines Schirms!",
+     "p": "plant"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あめ",
+     "ro": "ame",
+     "de": "Regen"
+    },
+    {
+     "jp": "かさ",
+     "ro": "kasa",
+     "de": "Regenschirm"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_17_NAKAMOZ_GREENHOUSE": {
+  "1": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "Hallo! Im Technologie-Hof testen wir Gemüse ohne Erde, nur mit Wasser und Nährstoffen.",
+     "p": "guide"
+    },
+    {
+     "s": "omu",
+     "t": "Die Sensoren sind ausgefallen. Ich muss die Raumtemperatur schätzen und aufschreiben.",
+     "p": "stampbook"
+    },
+    {
+     "s": "omu",
+     "t": "Salat mag es warm, aber nicht heiß. Was meinst du?",
+     "p": "cheer"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie warm ist es im Gewächshaus für den Salat ungefähr?",
+     "min": 0,
+     "max": 50,
+     "step": 1,
+     "answer": 22,
+     "unit": "°C",
+     "tol": 0.2
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Gut geschätzt! Zwischen 18 und 25 Grad wächst Salat am besten.",
+     "p": "cheer"
+    },
+    {
+     "s": "omu",
+     "t": "Das Messprotokoll muss zum anderen Campus nach Sugimoto, in die alte Bibliothek.",
+     "p": "guide"
+    }
+   ],
+   "hint": "Der andere Campus der OMU, im Süden der Stadt – in der alten Bibliothek wartet Nanami."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "Danke, dass du das Protokoll mitgebracht hast!",
+     "p": "stampbook"
+    },
+    {
+     "s": "omu",
+     "t": "Zum Schluss Vokabeln: heiß heißt あつい (atsui), kalt heißt さむい (samui).",
+     "p": "guide"
+    },
+    {
+     "s": "omu",
+     "t": "Bei Wetter sagt man さむい. Bei einem kalten Getränk sagt man つめたい (tsumetai).",
+     "p": "cheer"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Im Sommer im Gewächshaus. Was sagst du?",
+     "options": [
+      {
+       "jp": "あついです",
+       "ro": "atsui desu"
+      },
+      {
+       "jp": "さむいです",
+       "ro": "samui desu"
+      },
+      {
+       "jp": "つめたいです",
+       "ro": "tsumetai desu"
+      },
+      {
+       "jp": "おいしいです",
+       "ro": "oishii desu"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Im Winter draußen ohne Jacke. Was sagst du?",
+     "options": [
+      {
+       "jp": "さむいです",
+       "ro": "samui desu"
+      },
+      {
+       "jp": "つめたいです",
+       "ro": "tsumetai desu"
+      },
+      {
+       "jp": "あついです",
+       "ro": "atsui desu"
+      },
+      {
+       "jp": "たかいです",
+       "ro": "takai desu"
+      }
+     ],
+     "answer": 0,
+     "explain": "さむい für Wetter und Luft, つめたい für Dinge, die man anfasst oder trinkt."
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Perfekt! Du wärst eine gute Forschungsassistenz.",
+     "p": "cheer"
+    },
+    {
+     "s": "omu",
+     "t": "Komm im Herbst zum Campusfest in Nakamozu!",
+     "p": "guide"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あつい",
+     "ro": "atsui",
+     "de": "heiß"
+    },
+    {
+     "jp": "さむい",
+     "ro": "samui",
+     "de": "kalt (Wetter)"
+    },
+    {
+     "jp": "つめたい",
+     "ro": "tsumetai",
+     "de": "kalt (Dinge)"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_18_EXPO_PARK_PICNIC_SPOT": {
+  "1": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Guten Tag! Heute ist der Expo-Park voll. Alle wollen in die Sonne.",
+     "p": "wipe"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Hinter dem Turm gibt es ruhige Wiesen im Schatten und Trinkbrunnen. Das steht alles auf der großen Übersichtskarte.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Zeigen Sie mir die Karte? Dann schicke ich die Familien dorthin.",
+     "p": "map"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo steht die Übersichtskarte des Parks?",
+     "x": 19,
+     "y": 72,
+     "r": 7,
+     "closeup": {
+      "art": "campusmap",
+      "title": "Parkplan",
+      "text": "Grüne Flächen hinter dem Turm, blaue Punkte für Trinkbrunnen. Der Park ist mehr als 250 Hektar groß."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Danke. Jetzt verteile ich die Leute.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Ich muss noch zum Stadion-Vorplatz beim Panasonic Stadium – die Mülleimer prüfen. Kommen Sie mit?",
+     "p": "map"
+    }
+   ],
+   "hint": "Nächster Ort: Panasonic Stadium, Stadion-Vorplatz – dort wartet Herr Kobayashi."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Hier gibt es nach jedem Spiel viel Müll. Man trennt ihn in Japan sehr genau.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "もえるごみ (moeru gomi) ist Müll, der brennt – Papier, Essensreste.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Die leere Flasche kommt zu ペットボトル (petto botoru), der Deckel aber extra!",
+     "p": "wipe"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wohin kommt eine leere Plastikflasche ohne Deckel?",
+     "options": [
+      {
+       "jp": "ペットボトル",
+       "ro": "petto botoru"
+      },
+      {
+       "jp": "もえるごみ",
+       "ro": "moeru gomi"
+      },
+      {
+       "jp": "かん",
+       "ro": "kan"
+      },
+      {
+       "jp": "びん",
+       "ro": "bin"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Wohin kommt eine benutzte Papierserviette?",
+     "options": [
+      {
+       "jp": "もえるごみ",
+       "ro": "moeru gomi"
+      },
+      {
+       "jp": "ペットボトル",
+       "ro": "petto botoru"
+      },
+      {
+       "jp": "かん",
+       "ro": "kan"
+      },
+      {
+       "jp": "びん",
+       "ro": "bin"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Sie trennen besser als manche Fans!",
+     "p": "wipe"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Ein sauberer Park ist ein glücklicher Park. Danke für Ihre Hilfe.",
+     "p": "point"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ごみ",
+     "ro": "gomi",
+     "de": "Müll"
+    },
+    {
+     "jp": "ペットボトル",
+     "ro": "petto botoru",
+     "de": "Plastikflasche"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_19_HARBOR_LIGHTHOUSE_LOG": {
+  "1": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Heute schreibe ich ins Logbuch, welche Schiffe einlaufen. Siehst du das Riesenrad?",
+     "p": "binoculars"
+    },
+    {
+     "s": "harukaf",
+     "t": "Kapitäne nutzen es als Orientierung. Es ist eines der höchsten Riesenräder Japans.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Was schätzt du, wie hoch ist es?",
+     "p": "timetable"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie hoch ist das Riesenrad am Tempozan?",
+     "min": 0,
+     "max": 300,
+     "step": 1,
+     "answer": 112,
+     "unit": "m",
+     "tol": 0.15
+    }
+   ],
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Gut! Es ist etwa 112 Meter hoch. Bei Nacht leuchtet es in Farben – die Farbe sagt das Wetter für morgen an.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Mein Proviant für die Hafenwache kommt heute aus Taishō. Gehst du schon mal hin? Da duftet es nach Okinawa.",
+     "p": "binoculars"
+    }
+   ],
+   "hint": "Dort, wo es nach Okinawa riecht und die Shisa-Löwen auf den Dächern sitzen – Nana packt den Proviant."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Ah, du kommst wegen Harukas Proviant! Die Box ist fast fertig.",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Aber Haruka hat ihre Bestellliste am Pier vergessen. Ohne Liste weiß ich nicht, was rein soll.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Holst du die Liste am Tempozan-Pier und bringst sie mir?",
+     "p": "laugh"
+    }
+   ],
+   "fetch": {
+    "item": "Harukas Bestellliste",
+    "x": 52,
+    "y": 80,
+    "art": "notebook",
+    "find": "Ein Zettel mit Harukas Handschrift: おにぎり ×3, おちゃ ×2.",
+    "hintOut": "Die Bestellliste liegt am Tempozan-Pier. Danach zurück zu Nana in die Okinawa-Einkaufsstraße in Taishō.",
+    "hintBack": "Bring die Liste zu Nana in die Okinawa-Einkaufsstraße in Taishō."
+   },
+   "after": [
+    {
+     "s": "nana",
+     "t": "Drei Reisbällchen, zwei Tee. Fertig!",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Haruka hat Pause am Kyocera Dome. Bring ihr die Box dorthin.",
+     "p": "plant"
+    }
+   ],
+   "hint": "Nächster Ort: Kyocera Dome, Vorplatz – dort wartet Haruka."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Mein Proviant! Ich hatte so einen Hunger.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Zum Abschluss der Hafenrunde: Meer heißt うみ (umi), Schiff heißt ふね (fune).",
+     "p": "binoculars"
+    },
+    {
+     "s": "harukaf",
+     "t": "Ich habe dir doch gesagt, dass ich frage!",
+     "p": "timetable"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Meer“?",
+     "options": [
+      {
+       "jp": "うみ",
+       "ro": "umi"
+      },
+      {
+       "jp": "いけ",
+       "ro": "ike"
+      },
+      {
+       "jp": "かわ",
+       "ro": "kawa"
+      },
+      {
+       "jp": "みず",
+       "ro": "mizu"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und „Schiff“?",
+     "options": [
+      {
+       "jp": "ふね",
+       "ro": "fune"
+      },
+      {
+       "jp": "ふく",
+       "ro": "fuku"
+      },
+      {
+       "jp": "ふゆ",
+       "ro": "fuyu"
+      },
+      {
+       "jp": "でんしゃ",
+       "ro": "densha"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Volle Punktzahl! Du darfst auf meiner Fähre mitfahren.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Das Logbuch ist voll, der Bauch auch. Guter Tag.",
+     "p": "binoculars"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "うみ",
+     "ro": "umi",
+     "de": "Meer"
+    },
+    {
+     "jp": "ふね",
+     "ro": "fune",
+     "de": "Schiff"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_20_CASTLE_MOAT_CLEANUP": {
+  "1": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Guten Morgen! Morgenrunde am Burggraben. Ich prüfe, wie viel Wasser drin ist.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Der Graben schützte die Burg früher. Heute schwimmen Karpfen und Enten darin.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Zeigen Sie mir das Wasser am Graben?",
+     "p": "wipe"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo ist das Wasser des Burggrabens?",
+     "x": 88,
+     "y": 58,
+     "r": 8,
+     "closeup": {
+      "art": "heron",
+      "title": "Der Graben",
+      "text": "Ruhiges grünes Wasser vor riesigen Steinmauern. Ein Reiher wartet auf Fische."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Wasserstand normal. Gut so.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Mein Kollege Satō zählt die Besucher am Hōkoku-Schrein, mitten im Burgpark. Er braucht Hilfe.",
+     "p": "map"
+    }
+   ],
+   "hint": "Nächster Ort: Burgpark, Hōkoku-Schrein – dort wartet Herr Satō."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Ah, guten Morgen. Ich zähle für das Parkamt die Besucher.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Bis jetzt waren es ungefähr hundert, ひゃく (hyaku). Bis Mittag werden es tausend, せん (sen).",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Helfen Sie mir beim Aufschreiben?",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie liest man 100?",
+     "options": [
+      {
+       "jp": "ひゃく",
+       "ro": "hyaku"
+      },
+      {
+       "jp": "せん",
+       "ro": "sen"
+      },
+      {
+       "jp": "まん",
+       "ro": "man"
+      },
+      {
+       "jp": "じゅう",
+       "ro": "jū"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Und 1000?",
+     "options": [
+      {
+       "jp": "せん",
+       "ro": "sen"
+      },
+      {
+       "jp": "ひゃく",
+       "ro": "hyaku"
+      },
+      {
+       "jp": "まん",
+       "ro": "man"
+      },
+      {
+       "jp": "さん",
+       "ro": "san"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Danke. Hundert und tausend – damit kommt man schon weit.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Jetzt gehe ich in das hohe Glasgebäude neben dem Park, vom Aussichtssaal sieht man alles.",
+     "p": "explain"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ひゃく",
+     "ro": "hyaku",
+     "de": "hundert"
+    },
+    {
+     "jp": "せん",
+     "ro": "sen",
+     "de": "tausend"
+    }
+   ],
+   "hint": "Ein hohes Glasgebäude neben dem Burgpark, mit Blick über die Stadtgeschichte – Herr Satō ist schon oben."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Von hier oben sieht man den ganzen Burgpark. Eine gute Gelegenheit für Himmelsrichtungen.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Norden ist きた, Süden みなみ, Osten ひがし, Westen にし.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Das Museum steht südwestlich der Burg. In welche Richtung schauen wir also zur Burg?",
+     "p": "explain"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wir schauen vom Museum zur Burg. Welche Richtung ist das ungefähr?",
+     "options": [
+      {
+       "jp": "ひがし",
+       "ro": "higashi"
+      },
+      {
+       "jp": "にし",
+       "ro": "nishi"
+      },
+      {
+       "jp": "みなみ",
+       "ro": "minami"
+      },
+      {
+       "jp": "した",
+       "ro": "shita"
+      }
+     ],
+     "answer": 0,
+     "explain": "Die Burg liegt nordöstlich – also vor allem ひがし, Osten."
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „Süden“?",
+     "options": [
+      {
+       "jp": "みなみ",
+       "ro": "minami"
+      },
+      {
+       "jp": "きた",
+       "ro": "kita"
+      },
+      {
+       "jp": "にし",
+       "ro": "nishi"
+      },
+      {
+       "jp": "みぎ",
+       "ro": "migi"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Ausgezeichnet. Ein guter Orientierungssinn ist das halbe Archiv.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Die Morgenrunde ist geschafft. Danke im Namen des Parkamts.",
+     "p": "bow"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "きた",
+     "ro": "kita",
+     "de": "Norden"
+    },
+    {
+     "jp": "みなみ",
+     "ro": "minami",
+     "de": "Süden"
+    },
+    {
+     "jp": "ひがし",
+     "ro": "higashi",
+     "de": "Osten"
+    },
+    {
+     "jp": "にし",
+     "ro": "nishi",
+     "de": "Westen"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_21_SAKAI_TEA_AND_BLADES": {
+  "1": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "In dieser Vitrine liegen drei typische Sakai-Messer. Jedes hat eine Aufgabe.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Santoku für alles, Deba für ganze Fische, Yanagiba – lang und schmal – für Sashimi.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Zeigen Sie mir das Messerregal an der Wand?",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo hängen die Messer an der Wand?",
+     "x": 51,
+     "y": 30,
+     "r": 7,
+     "closeup": {
+      "art": "sakaicraft",
+      "title": "Sakai-Messer",
+      "text": "Jede Klinge wird geschmiedet, geschärft und mit Griff versehen – oft von drei verschiedenen Meistern."
+     }
+    },
+    {
+     "type": "choice",
+     "q": "Welches Messer nimmt man für Sashimi?",
+     "options": [
+      "Yanagiba – lang und schmal",
+      "Deba – schwer und dick",
+      "Santoku – für alles",
+      "Nakiri – für Gemüse"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Genau. Mit einem Yanagiba schneidet man in einem einzigen Zug.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Ich gehe jetzt ins Teehaus im Daisen-Park. Dort liefert Nana heute Blumen.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Nächster Ort: Daisen-Park, Teehaus – dort wartet Nana."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Hallo! Ich bringe Blumen für die Tokonoma, die kleine Nische im Teeraum.",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Danach gibt es おちゃ (ocha), grünen Tee, und おかし (okashi), Süßigkeiten.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Die Süßigkeit isst man vor dem Tee. Dann schmeckt der bittere Tee weicher.",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Tee“?",
+     "options": [
+      {
+       "jp": "おちゃ",
+       "ro": "ocha"
+      },
+      {
+       "jp": "おさけ",
+       "ro": "osake"
+      },
+      {
+       "jp": "おみず",
+       "ro": "omizu"
+      },
+      {
+       "jp": "おかね",
+       "ro": "okane"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was isst man zuerst?",
+     "options": [
+      {
+       "jp": "おかし",
+       "ro": "okashi"
+      },
+      {
+       "jp": "おにぎり",
+       "ro": "onigiri"
+      },
+      {
+       "jp": "おすし",
+       "ro": "osushi"
+      },
+      {
+       "jp": "おべんとう",
+       "ro": "obentō"
+      }
+     ],
+     "answer": 0,
+     "explain": "Erst die Süßigkeit, dann der bittere Matcha."
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Lecker, oder? Herr Satō will noch zum Sumiyoshi-Schrein.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Er nimmt von dort die alte Straßenbahn zurück.",
+     "p": "plant"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "おちゃ",
+     "ro": "ocha",
+     "de": "Tee"
+    },
+    {
+     "jp": "おかし",
+     "ro": "okashi",
+     "de": "Süßigkeit"
+    }
+   ],
+   "hint": "Ein alter Schrein im Süden der Stadt, mit geraden Dächern ohne Schwung – Herr Satō wartet bei den Haupthallen."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Schön ruhig hier. Die Hallen sind im ältesten Stil gebaut – gerade Dächer, keine Kurven.",
+     "p": "explain"
+    },
+    {
+     "s": "me",
+     "t": "Ein ruhiger Ort nach so viel Stahl und Tee."
+    },
+    {
+     "s": "sato",
+     "t": "Draußen hält die Hankai-Straßenbahn. Sie fährt seit über hundert Jahren nach Sakai.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Danke für den Tag. Handwerk, Tee und Schrein – das ist Sakai und Ōsaka in einem Nachmittag.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_22_SUITA_CAMPUS_ERRAND": {
+  "1": {
+   "lines": [
+    {
+     "s": "haruka",
+     "t": "Du kommst wie gerufen! Ein Laborbericht muss unterschrieben werden.",
+     "p": "clipboard"
+    },
+    {
+     "s": "haruka",
+     "t": "Der Professor sitzt im Robotik-Labor im Cybermedia-Gebäude. Ich darf hier nicht weg.",
+     "p": "think"
+    },
+    {
+     "s": "haruka",
+     "t": "Bringst du den Bericht hin und holst ihn unterschrieben zurück?",
+     "p": "wave"
+    }
+   ],
+   "fetch": {
+    "item": "Unterschriebener Laborbericht",
+    "x": 12,
+    "y": 90,
+    "art": "notebook",
+    "find": "Der Bericht – mit Stempel und Unterschrift. In Japan stempelt man oft statt zu unterschreiben.",
+    "hintOut": "Der Bericht wartet im Robotik-Labor im Cybermedia-Gebäude in Suita. Danach zurück zu Haruka am Universitätsklinikum.",
+    "hintBack": "Bring den Bericht zu Haruka am Universitätsklinikum."
+   },
+   "after": [
+    {
+     "s": "haruka",
+     "t": "Danke! Jetzt brauche ich einen Kaffee.",
+     "p": "wave"
+    },
+    {
+     "s": "haruka",
+     "t": "Komm mit zur Main Plaza an der Monorail-Station, da stehen Automaten.",
+     "p": "clipboard"
+    }
+   ],
+   "hint": "Nächster Ort: Handai Suita, Main Plaza & Monorail-Station – dort wartet Haruka."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "haruka",
+     "t": "Ein Dosenkaffee aus dem Automaten – das beste Medikament.",
+     "p": "wave"
+    },
+    {
+     "s": "haruka",
+     "t": "Diese Woche war lang. Montag heißt げつようび (getsuyōbi), Freitag きんようび (kin’yōbi).",
+     "p": "think"
+    },
+    {
+     "s": "haruka",
+     "t": "Und heute ist endlich きんようび!",
+     "p": "clipboard"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Montag“?",
+     "options": [
+      {
+       "jp": "げつようび",
+       "ro": "getsuyōbi"
+      },
+      {
+       "jp": "かようび",
+       "ro": "kayōbi"
+      },
+      {
+       "jp": "にちようび",
+       "ro": "nichiyōbi"
+      },
+      {
+       "jp": "どようび",
+       "ro": "doyōbi"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Welcher Tag ist きんようび (kin’yōbi)?",
+     "options": [
+      "Freitag",
+      "Donnerstag",
+      "Mittwoch",
+      "Samstag"
+     ],
+     "answer": 0,
+     "explain": "きん = Gold. Der Gold-Tag ist Freitag."
+    }
+   ],
+   "after": [
+    {
+     "s": "haruka",
+     "t": "Super. Jetzt geh nach Hause und ruh dich aus.",
+     "p": "wave"
+    },
+    {
+     "s": "haruka",
+     "t": "Frau Morimoto hat bestimmt schon etwas in der Küche für dich.",
+     "p": "clipboard"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "げつようび",
+     "ro": "getsuyōbi",
+     "de": "Montag"
+    },
+    {
+     "jp": "きんようび",
+     "ro": "kin’yōbi",
+     "de": "Freitag"
+    }
+   ],
+   "hint": "Nach Hause – in die Gemeinschaftsküche des Wohnheims. Frau Morimoto wartet."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "t": "Da bist du ja. Langer Tag an der Uni, was?",
+     "p": "smile"
+    },
+    {
+     "s": "morimoto",
+     "t": "Ich habe むぎちゃ (mugicha) kalt gestellt, Gerstentee. Den trinkt man in Japan den ganzen Sommer.",
+     "p": "clipboard"
+    },
+    {
+     "s": "me",
+     "t": "Danke, Frau Morimoto. Genau das brauche ich."
+    },
+    {
+     "s": "morimoto",
+     "t": "Und das Glas spülst du danach selbst. Ordnung muss sein!",
+     "p": "scold"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "むぎちゃ",
+     "ro": "mugicha",
+     "de": "Gerstentee"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_23_HANSHIN_MARKET_STROLL": {
+  "1": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Willkommen in meiner Einkaufsstraße! Hier ist alles günstig.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Wenn etwas billig ist, sagt man: やすいですね (yasui desu ne)! Teuer ist たかい (takai).",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Schau mal, Gurken für 100 Yen. Was sagst du?",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Drei Gurken für 100 Yen. Was sagst du?",
+     "options": [
+      {
+       "jp": "やすいですね",
+       "ro": "yasui desu ne"
+      },
+      {
+       "jp": "たかいですね",
+       "ro": "takai desu ne"
+      },
+      {
+       "jp": "おいしいですね",
+       "ro": "oishii desu ne"
+      },
+      {
+       "jp": "さむいですね",
+       "ro": "samui desu ne"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt たかい (takai)?",
+     "options": [
+      "teuer (auch: hoch)",
+      "billig",
+      "lecker",
+      "neu"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Genau! Daiki kauft heute Bentō für das Spiel – vor dem Stadion mit der grünen Efeuwand.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Mit der Hanshin-Bahn sind es nur ein paar Stationen.",
+     "p": "plant"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "やすい",
+     "ro": "yasui",
+     "de": "billig"
+    },
+    {
+     "jp": "たかい",
+     "ro": "takai",
+     "de": "teuer, hoch"
+    }
+   ],
+   "hint": "Das Stadion mit der Ziegelwand voller Efeu, an der Hanshin-Linie – Daiki kauft dort Bentō."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "daiki",
+     "t": "Na, auch hier? Ich hole Bentō fürs Spiel. Mit Sieger-Energie!",
+     "p": "cocky"
+    },
+    {
+     "s": "daiki",
+     "t": "Nachher muss ich schnell zurück nach Umeda. Mit dem Schnellzug der Hanshin-Linie.",
+     "p": "ready"
+    },
+    {
+     "s": "daiki",
+     "t": "Wetten, du weißt nicht, wie lange das dauert?",
+     "p": "cheer"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Wie viele Minuten braucht der Schnellzug von Kōshien nach Umeda ungefähr?",
+     "min": 0,
+     "max": 90,
+     "step": 1,
+     "answer": 15,
+     "unit": "Min.",
+     "tol": 0.35
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "t": "Hm, nicht schlecht. Etwa eine Viertelstunde.",
+     "p": "cocky"
+    },
+    {
+     "s": "daiki",
+     "t": "Komm mit auf die Tribüne, das Spiel fängt gleich an!",
+     "p": "cheer"
+    }
+   ],
+   "hint": "Nächster Ort: Kōshien, Tribüne & Spielfeld – dort wartet Daiki."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "daiki",
+     "t": "Gute Plätze, was? Jetzt essen wir.",
+     "p": "cheer"
+    },
+    {
+     "s": "daiki",
+     "t": "Essen heißt たべもの (tabemono), Getränk heißt のみもの (nomimono).",
+     "p": "ready"
+    },
+    {
+     "s": "daiki",
+     "t": "たべる ist essen, のむ ist trinken. Dann noch もの – Ding. Einfach, oder?",
+     "p": "cocky"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Getränk“?",
+     "options": [
+      {
+       "jp": "のみもの",
+       "ro": "nomimono"
+      },
+      {
+       "jp": "たべもの",
+       "ro": "tabemono"
+      },
+      {
+       "jp": "くだもの",
+       "ro": "kudamono"
+      },
+      {
+       "jp": "かいもの",
+       "ro": "kaimono"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Was heißt たべもの?",
+     "options": [
+      "Essen",
+      "Getränk",
+      "Obst",
+      "Einkauf"
+     ],
+     "answer": 0,
+     "explain": "くだもの ist Obst, かいもの ist Einkaufen."
+    }
+   ],
+   "after": [
+    {
+     "s": "daiki",
+     "t": "Na gut, du bist besser als ich dachte.",
+     "p": "cocky"
+    },
+    {
+     "s": "daiki",
+     "t": "Aber beim Fußball schlag ich dich trotzdem!",
+     "p": "cheer"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "たべもの",
+     "ro": "tabemono",
+     "de": "Essen"
+    },
+    {
+     "jp": "のみもの",
+     "ro": "nomimono",
+     "de": "Getränk"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_24_KUROMON_MORNING_PREP": {
+  "1": {
+   "lines": [
+    {
+     "s": "gen",
+     "t": "Ha! Frühaufsteher! Ich kaufe hier jeden Morgen für meinen Stand ein.",
+     "p": "laugh"
+    },
+    {
+     "s": "gen",
+     "t": "Heute brauche ich ねぎ (negi), Frühlingszwiebeln, und frischen Ingwer.",
+     "p": "proud"
+    },
+    {
+     "s": "gen",
+     "t": "Such mir die beste Auslage! Ein Koch erkennt Frische auf den ersten Blick.",
+     "p": "ladle"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo ist die Auslage mit frischer Ware?",
+     "x": 14,
+     "y": 82,
+     "r": 8,
+     "closeup": {
+      "art": "benishoga",
+      "title": "Frisch vom Markt",
+      "text": "Grüne Zwiebeln und Ingwer zwischen Fisch auf Eis. Der Ingwer wird später rot eingelegt: べにしょうが."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "gen",
+     "t": "Gutes Auge! Das nehme ich.",
+     "p": "proud"
+    },
+    {
+     "s": "gen",
+     "t": "Nana stellt am Schrein mit dem Löwenkopf frische Zweige auf. Bring ihr diesen Gruß von mir.",
+     "p": "laugh"
+    }
+   ],
+   "hint": "Ein Schrein mit einem riesigen Löwenkopf, ganz nah bei Namba – Nana stellt dort Zweige auf."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Guten Morgen! Am Morgen ist der Schrein am schönsten. So leer!",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Morgen heißt あさ (asa), heute heißt きょう (kyō).",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Und „Guten Morgen“ kennst du sicher: おはようございます!",
+     "p": "think"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „heute“?",
+     "options": [
+      {
+       "jp": "きょう",
+       "ro": "kyō"
+      },
+      {
+       "jp": "あした",
+       "ro": "ashita"
+      },
+      {
+       "jp": "きのう",
+       "ro": "kinō"
+      },
+      {
+       "jp": "いま",
+       "ro": "ima"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „Morgen“ (die Tageszeit)?",
+     "options": [
+      {
+       "jp": "あさ",
+       "ro": "asa"
+      },
+      {
+       "jp": "あした",
+       "ro": "ashita"
+      },
+      {
+       "jp": "よる",
+       "ro": "yoru"
+      },
+      {
+       "jp": "ひる",
+       "ro": "hiru"
+      }
+     ],
+     "answer": 0,
+     "explain": "あした ist „morgen“ im Sinne von „der nächste Tag“."
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Richtig! Meister Gen öffnet gleich seinen Stand in der Kuidaore-Gasse.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Er macht dir bestimmt Frühstück.",
+     "p": "plant"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "あさ",
+     "ro": "asa",
+     "de": "Morgen (Tageszeit)"
+    },
+    {
+     "jp": "きょう",
+     "ro": "kyō",
+     "de": "heute"
+    }
+   ],
+   "hint": "Nächster Ort: Dōtonbori, Kuidaore-Gasse – dort wartet Meister Gen."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "gen",
+     "t": "Pünktlich wie die Sonne! Der Stand ist offen.",
+     "p": "proud"
+    },
+    {
+     "s": "gen",
+     "t": "Die erste Portion des Tages gehört dem Helfer. Takoyaki mit deinem Ingwer!",
+     "p": "ladle"
+    },
+    {
+     "s": "me",
+     "t": "Zum Frühstück? In Ōsaka schon, oder?"
+    },
+    {
+     "s": "gen",
+     "t": "In Ōsaka ist immer Takoyaki-Zeit! いただきます!",
+     "p": "laugh"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_25_SOUTH_OSAKA_PARK_TOUR": {
+  "1": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Guten Morgen! Ich mache heute die große Runde durch die Parks im Süden.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Der Nagai-Park ist riesig: zwei Stadien, ein Botanischer Garten und viele Jogger.",
+     "p": "point"
+    },
+    {
+     "s": "me",
+     "t": "Darf ich mit?"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Gern! Zuerst in den Botanischen Garten, gleich hier im Park.",
+     "p": "wipe"
+    }
+   ],
+   "hint": "Nächster Ort: Nagai-Park, Botanischer Garten – dort wartet Herr Kobayashi."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Jetzt zählen wir die Wasservögel am Teich. Das mache ich jede Woche.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Enten, Reiher, manchmal ein Eisvogel. Zeigen Sie mir die Vögel auf dem Wasser?",
+     "p": "point"
+    },
+    {
+     "s": "me",
+     "t": "Ich sehe etwas da vorne."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo schwimmen die Wasservögel?",
+     "x": 46,
+     "y": 54,
+     "r": 7,
+     "closeup": {
+      "art": "heron",
+      "title": "とり – Vogel",
+      "text": "Ein Graureiher steht ganz still im flachen Wasser. Daneben paddeln zwei Enten."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Drei Enten, ein Reiher. Ich schreibe es auf.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Die Studentin Nanami zählt die Bäume auf ihrem Campus. Die Uni liegt nicht weit von hier im Süden.",
+     "p": "point"
+    }
+   ],
+   "hint": "Ein großer Uni-Campus im Süden der Stadt, mit einer langen Allee – Nanami wartet dort."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "omu",
+     "t": "Hallo! Herr Kobayashi hat dich geschickt? Wir zählen die Ginkgo-Bäume an der Allee.",
+     "p": "guide"
+    },
+    {
+     "s": "omu",
+     "t": "Baum heißt き (ki), Park heißt こうえん (kōen).",
+     "p": "stampbook"
+    },
+    {
+     "s": "omu",
+     "t": "Im Herbst werden die Ginkgo-Blätter ganz gelb. Dann ist die Allee wie Gold.",
+     "p": "cheer"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Park“?",
+     "options": [
+      {
+       "jp": "こうえん",
+       "ro": "kōen"
+      },
+      {
+       "jp": "こうこう",
+       "ro": "kōkō"
+      },
+      {
+       "jp": "ぎんこう",
+       "ro": "ginkō"
+      },
+      {
+       "jp": "くうこう",
+       "ro": "kūkō"
+      }
+     ],
+     "answer": 0,
+     "explain": "こうこう ist die Oberschule, ぎんこう die Bank, くうこう der Flughafen."
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „Baum“?",
+     "options": [
+      {
+       "jp": "き",
+       "ro": "ki"
+      },
+      {
+       "jp": "け",
+       "ro": "ke"
+      },
+      {
+       "jp": "は",
+       "ro": "ha"
+      },
+      {
+       "jp": "み",
+       "ro": "mi"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "omu",
+     "t": "Richtig! Herr Kobayashi beendet seine Runde im Tennōji-Park, auf der großen Rasenfläche.",
+     "p": "guide"
+    },
+    {
+     "s": "omu",
+     "t": "Grüß ihn von mir!",
+     "p": "cheer"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "き",
+     "ro": "ki",
+     "de": "Baum"
+    },
+    {
+     "jp": "こうえん",
+     "ro": "kōen",
+     "de": "Park"
+    }
+   ],
+   "hint": "Eine große Rasenfläche mit Blick auf das höchste Hochhaus der Stadt – Herr Kobayashi beendet dort die Runde."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Geschafft! Die Rasenfläche hier heißt Tenshiba.",
+     "p": "wipe"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Früher war hier ein Parkplatz und ein Teich. Heute picknicken hier Familien.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Eine letzte Frage zur Runde.",
+     "p": "map"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Welches Hochhaus sieht man von der Tenshiba aus ganz nah?",
+     "options": [
+      "Abeno Harukas",
+      "Umeda Sky Building",
+      "Tsūtenkaku",
+      "Ōsaka-jō Hall"
+     ],
+     "answer": 0,
+     "explain": "Abeno Harukas steht direkt neben dem Park – 300 Meter hoch."
+    },
+    {
+     "type": "choice",
+     "q": "Was gehört NICHT in den Park, den Sie heute besucht haben?",
+     "options": [
+      "Ein Hafen mit Riesenrad",
+      "Ein Botanischer Garten",
+      "Ein Stadion",
+      "Ein Teich mit Wasservögeln"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Prima. Ōsaka hat viel Beton – aber auch grüne Lungen.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Danke, dass Sie mitgelaufen sind. Jetzt eine Pause im Schatten.",
+     "p": "wipe"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_26_BAY_AREA_COMMUTE": {
+  "1": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Das Spiel ist vorbei! Jetzt wollen alle gleichzeitig raus.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Ich kenne einen schnelleren Weg zum Wasser. Ich zeige dir heute, wie man in der Bucht herumkommt.",
+     "p": "timetable"
+    },
+    {
+     "s": "me",
+     "t": "Fähre statt U-Bahn? Gern!"
+    },
+    {
+     "s": "harukaf",
+     "t": "Dann treffen wir uns am Tempozan-Pier.",
+     "p": "binoculars"
+    }
+   ],
+   "hint": "Nächster Ort: Tempozan, Pier & Riesenrad – dort wartet Haruka."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Ōsaka hat kleine Stadtfähren, die nichts kosten. Sie fahren über die Flüsse an der Bucht.",
+     "p": "timetable"
+    },
+    {
+     "s": "harukaf",
+     "t": "Von hier fährt eine kostenlose Fähre über den Fluss nach Sakurajima.",
+     "p": "binoculars"
+    },
+    {
+     "s": "harukaf",
+     "t": "Zeig mir die Route auf der Karte!",
+     "p": "salute"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "bay",
+     "q": "Mit der Stadtfähre über den Fluss",
+     "points": [
+      {
+       "id": "tempozan",
+       "x": 36,
+       "y": 50
+      },
+      {
+       "id": "sakura",
+       "x": 34,
+       "y": 36
+      },
+      {
+       "id": "yodo",
+       "x": 34,
+       "y": 22
+      },
+      {
+       "id": "kizu",
+       "x": 38,
+       "y": 81
+      },
+      {
+       "id": "island",
+       "x": 19,
+       "y": 71
+      }
+     ],
+     "rounds": [
+      {
+       "q": "Wo legt die Fähre ab?",
+       "answer": "tempozan",
+       "fb": "Tempozan – hier stehst du gerade."
+      },
+      {
+       "q": "Wohin fährt sie, über den Fluss nach Norden?",
+       "answer": "sakura",
+       "fb": "Sakurajima – nur ein paar Minuten Fahrt."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Genau. Drei Minuten, kostenlos, mit Wind im Gesicht.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Aoi aus der Verkehrs-AG wartet in Taishō. Da, wo die Shisa-Löwen auf den Dächern sitzen.",
+     "p": "binoculars"
+    }
+   ],
+   "hint": "Dort, wo es nach Okinawa riecht und Shisa-Löwen auf den Dächern sitzen – Aoi wartet."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "aoi",
+     "t": "Hey! Von Taishō zurück nach Namba fährt man am besten mit dem Bus.",
+     "p": "map"
+    },
+    {
+     "s": "aoi",
+     "t": "Bus heißt einfach バス (basu). Bahnhof heißt えき (eki).",
+     "p": "note"
+    },
+    {
+     "s": "aoi",
+     "t": "Die Bushaltestelle heißt übrigens バスてい (basutei).",
+     "p": "happy"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Bahnhof“?",
+     "options": [
+      {
+       "jp": "えき",
+       "ro": "eki"
+      },
+      {
+       "jp": "えん",
+       "ro": "en"
+      },
+      {
+       "jp": "いえ",
+       "ro": "ie"
+      },
+      {
+       "jp": "みせ",
+       "ro": "mise"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Welches Wort ist in Katakana: „Bus“?",
+     "options": [
+      {
+       "jp": "バス",
+       "ro": "basu"
+      },
+      {
+       "jp": "パス",
+       "ro": "pasu"
+      },
+      {
+       "jp": "バン",
+       "ro": "ban"
+      },
+      {
+       "jp": "ベス",
+       "ro": "besu"
+      }
+     ],
+     "answer": 0,
+     "explain": "Die Punkte ゛ machen ハ zu バ (ba), der Kreis ゜ macht パ (pa)."
+    }
+   ],
+   "after": [
+    {
+     "s": "aoi",
+     "t": "Super! Mit dem Bus bist du in 20 Minuten in Namba.",
+     "p": "cheer"
+    },
+    {
+     "s": "aoi",
+     "t": "Wir treffen uns oben im Dachgarten von Namba Parks. Ausklang mit Aussicht!",
+     "p": "happy"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "えき",
+     "ro": "eki",
+     "de": "Bahnhof"
+    },
+    {
+     "jp": "バス",
+     "ro": "basu",
+     "de": "Bus"
+    }
+   ],
+   "hint": "Nächster Ort: Namba Parks, Dachgarten – dort wartet Aoi."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "aoi",
+     "t": "Hier oben ist es ruhig, obwohl unten tausende Leute laufen.",
+     "p": "happy"
+    },
+    {
+     "s": "aoi",
+     "t": "Der Dachgarten liegt auf dem Gelände des alten Baseballstadions von Namba.",
+     "p": "map"
+    },
+    {
+     "s": "me",
+     "t": "Fähre, Bus, Dachgarten. Ein guter Tag."
+    },
+    {
+     "s": "aoi",
+     "t": "Und alles ohne Auto. So geht Ōsaka!",
+     "p": "cheer"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_27_ARCHIVIST_STAMP_RALLY": {
+  "1": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Guten Tag. Das Archiv veranstaltet eine kleine Stempel-Rallye zur Stadtgeschichte.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Hier ist Ihr Stempelheft. In Japan gibt es an vielen Museen und Bahnhöfen Stempel – man sammelt sie aus Spaß.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Der erste Stempel liegt im Museum im Hauptturm der Burg.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Im Museum im Hauptturm der Burg Ōsaka – Herr Satō wartet bei den Vitrinen."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Willkommen im Hauptturm. Der Stempel steht neben dem goldenen Wandschirm.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Solche Schirme schmückten die Räume der Burg zur Zeit von Toyotomi Hideyoshi.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Finden Sie ihn?",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo ist die Stempelstation beim goldenen Wandschirm?",
+     "x": 80,
+     "y": 36,
+     "r": 7,
+     "closeup": {
+      "art": "stampbook",
+      "title": "Stempel Nr. 1",
+      "text": "Ein roter Stempel mit dem Hauptturm der Burg. Die Tinte ist noch frisch."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Schön. Der zweite Stempel liegt im Museum mit der alten Edo-Straße, im Norden der Stadt.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Dort kann man durch nachgebaute Häuser von vor 200 Jahren laufen.",
+     "p": "books"
+    }
+   ],
+   "hint": "Irgendwo im Norden der Stadt, in einem Museum mit einer nachgebauten Straße aus der Edo-Zeit."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Hier ist der zweite Stempel. In diesem Museum ist alles alt und doch wie neu aufgebaut.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Alt heißt ふるい (furui), neu heißt あたらしい (atarashii).",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Ein Archivar sagt beides ungefähr hundertmal am Tag.",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „alt“ (für Dinge)?",
+     "options": [
+      {
+       "jp": "ふるい",
+       "ro": "furui"
+      },
+      {
+       "jp": "ふとい",
+       "ro": "futoi"
+      },
+      {
+       "jp": "わるい",
+       "ro": "warui"
+      },
+      {
+       "jp": "ふゆ",
+       "ro": "fuyu"
+      }
+     ],
+     "answer": 0
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „neu“?",
+     "options": [
+      {
+       "jp": "あたらしい",
+       "ro": "atarashii"
+      },
+      {
+       "jp": "あたたかい",
+       "ro": "atatakai"
+      },
+      {
+       "jp": "あかるい",
+       "ro": "akarui"
+      },
+      {
+       "jp": "あぶない",
+       "ro": "abunai"
+      }
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Zwei Stempel! Den letzten bekommen Sie im Universitätsmuseum auf dem Campus Toyonaka.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Dort gebe ich Ihnen auch die Belohnung.",
+     "p": "bow"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "ふるい",
+     "ro": "furui",
+     "de": "alt"
+    },
+    {
+     "jp": "あたらしい",
+     "ro": "atarashii",
+     "de": "neu"
+    }
+   ],
+   "hint": "Auf deinem Heimatcampus in Toyonaka, im Archivsaal des Universitätsmuseums – Herr Satō wartet."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Willkommen im Archivsaal. Darf ich Ihr Stempelheft sehen?",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Burg, Edo-Straße und jetzt die Universität. Alle Stempel sind da.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Was sagt man höflich, wenn man jemandem etwas überreicht?",
+     "p": "bow"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Du gibst Herrn Satō das Heft. Was sagst du?",
+     "options": [
+      {
+       "jp": "どうぞ",
+       "ro": "dōzo"
+      },
+      {
+       "jp": "どうも",
+       "ro": "dōmo"
+      },
+      {
+       "jp": "ただいま",
+       "ro": "tadaima"
+      },
+      {
+       "jp": "いただきます",
+       "ro": "itadakimasu"
+      }
+     ],
+     "answer": 0,
+     "explain": "どうぞ – „Bitte sehr“, beim Überreichen."
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Danke sehr. Hier ist Ihre Belohnung: eine alte Postkarte von Ōsaka aus den 1930er-Jahren.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Bewahren Sie sie gut auf. Geschichte ist leicht – man muss sie nur festhalten.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_28_DORM_WELCOME_DINNER": {
+  "1": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "t": "Ah, {{name}}. Am Wochenende kommen neue Austauschstudierende.",
+     "p": "clipboard"
+    },
+    {
+     "s": "morimoto",
+     "t": "Ich koche ein Willkommensessen. Aber ich brauche Hilfe beim Einkaufen.",
+     "p": "smile"
+    },
+    {
+     "s": "morimoto",
+     "t": "Fang in der längsten Einkaufsstraße Japans an. Nana hat dort heute einen Stand mit Gemüse und Blumen.",
+     "p": "clipboard"
+    }
+   ],
+   "hint": "Die längste Einkaufsstraße Japans – Nana hat dort heute einen Gemüsestand."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Frau Morimoto hat schon angerufen! Ich habe alles vorbereitet.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Gemüse heißt やさい (yasai), Obst heißt くだもの (kudamono).",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Und für den Tisch packe ich ein paar Blumen dazu – geschenkt.",
+     "p": "laugh"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Gemüse“?",
+     "options": [
+      {
+       "jp": "やさい",
+       "ro": "yasai"
+      },
+      {
+       "jp": "やすい",
+       "ro": "yasui"
+      },
+      {
+       "jp": "くだもの",
+       "ro": "kudamono"
+      },
+      {
+       "jp": "たまご",
+       "ro": "tamago"
+      }
+     ],
+     "answer": 0,
+     "explain": "やすい heißt billig – leicht zu verwechseln!"
+    },
+    {
+     "type": "choice",
+     "q": "Was ist くだもの?",
+     "options": [
+      "Obst",
+      "Gemüse",
+      "Fleisch",
+      "Getränk"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Fehlt noch etwas Süßes. Die besten Senbei gibt es in der Lebensmittelhalle unter dem höchsten Hochhaus der Stadt.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Madoka ist da gerade auf Schnäppchenjagd.",
+     "p": "laugh"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "やさい",
+     "ro": "yasai",
+     "de": "Gemüse"
+    },
+    {
+     "jp": "くだもの",
+     "ro": "kudamono",
+     "de": "Obst"
+    }
+   ],
+   "hint": "Im Süden der Stadt, in der Lebensmittelhalle unter dem höchsten Hochhaus – Madoka sucht Senbei."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "madoka",
+     "t": "Senbei für ein Willkommensessen? Ich kenne die besten Angebote!",
+     "p": "search"
+    },
+    {
+     "s": "madoka",
+     "t": "Eine Tüte kostet 450 Yen. Wir brauchen drei Tüten – und Frau Morimoto will unter 1500 Yen bleiben.",
+     "p": "shopping"
+    },
+    {
+     "s": "madoka",
+     "t": "Rechnest du mit?",
+     "p": "cheer"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "estimate",
+     "q": "Was kosten drei Tüten zu je 450 Yen?",
+     "min": 0,
+     "max": 3000,
+     "step": 10,
+     "answer": 1350,
+     "unit": "Yen",
+     "tol": 0.02
+    }
+   ],
+   "after": [
+    {
+     "s": "madoka",
+     "t": "1350 Yen – unter dem Budget! Frau Morimoto wird stolz sein.",
+     "p": "cheer"
+    },
+    {
+     "s": "madoka",
+     "t": "Jetzt schnell nach Hause damit, bevor die Senbei weich werden.",
+     "p": "shopping"
+    }
+   ],
+   "hint": "Nach Hause – in die Gemeinschaftsküche des Wohnheims. Frau Morimoto wartet."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "morimoto",
+     "t": "Du bist zurück! Zeig mal, was du hast.",
+     "p": "smile"
+    },
+    {
+     "s": "morimoto",
+     "t": "Gemüse, Obst, Blumen und Senbei. Und das Budget gehalten! Sehr gut.",
+     "p": "clipboard"
+    },
+    {
+     "s": "morimoto",
+     "t": "Wie sagt man vor dem Essen?",
+     "p": "smile"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Alle sitzen am Tisch. Was sagt man vor dem Essen?",
+     "options": [
+      {
+       "jp": "いただきます",
+       "ro": "itadakimasu"
+      },
+      {
+       "jp": "ごちそうさま",
+       "ro": "gochisōsama"
+      },
+      {
+       "jp": "おやすみなさい",
+       "ro": "oyasuminasai"
+      },
+      {
+       "jp": "おかえりなさい",
+       "ro": "okaerinasai"
+      }
+     ],
+     "answer": 0,
+     "explain": "ごちそうさま sagt man nach dem Essen."
+    }
+   ],
+   "after": [
+    {
+     "s": "morimoto",
+     "t": "Richtig. Die Neuen werden sich hier wohlfühlen – dank dir.",
+     "p": "smile"
+    },
+    {
+     "s": "morimoto",
+     "t": "Und danach spülen alle gemeinsam ab!",
+     "p": "scold"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_29_OSAKA_POSTCARD_COLLECTION": {
+  "1": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Was für ein Fund! In dieser Retro-Gasse verkauft jemand alte Postkarten aus den 1960er-Jahren.",
+     "p": "books"
+    },
+    {
+     "s": "sato",
+     "t": "Fünf Ansichten von Ōsaka. Ich möchte die Orte heute wiederfinden und vergleichen.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Die erste Karte zeigt die Skyline von Kita. Dafür gehen wir ganz nach oben, auf die Brücke zwischen den zwei Türmen hier im Haus.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Nächster Ort: Umeda Sky Building, Aussichtsbrücke – dort wartet Herr Satō."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Auf der alten Karte sieht man nur niedrige Häuser und ein paar Kamine.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Heute stehen überall Hochhäuser. Zeigen Sie mir die Skyline von Kita?",
+     "p": "books"
+    },
+    {
+     "s": "me",
+     "t": "Da drüben, am Fluss entlang."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Wo sieht man die heutige Skyline von Kita?",
+     "x": 81,
+     "y": 47,
+     "r": 9,
+     "closeup": {
+      "art": "harukas",
+      "title": "まち – Stadt",
+      "text": "Wo 1960 Lagerhallen standen, stehen heute Bürotürme. Nur der Fluss ist noch derselbe."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "sato",
+     "t": "Unglaublich, wie sich alles verändert hat.",
+     "p": "bow"
+    },
+    {
+     "s": "sato",
+     "t": "Die zweite Karte zeigt die Burg von oben. Mein Kollege Kobayashi ist dort auf dem höchsten Punkt.",
+     "p": "explain"
+    }
+   ],
+   "hint": "Ganz oben auf der berühmtesten Burg der Stadt – Herr Kobayashi wartet auf der Plattform."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Ah, die alte Postkarte! Damals gab es im Burgpark noch Kasernen. Heute ist alles grün.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Stadt heißt まち (machi), Foto heißt しゃしん (shashin).",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Machen Sie ein しゃしん für Herrn Satō – vom selben Platz wie damals!",
+     "p": "wipe"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Foto“?",
+     "options": [
+      {
+       "jp": "しゃしん",
+       "ro": "shashin"
+      },
+      {
+       "jp": "しんぶん",
+       "ro": "shinbun"
+      },
+      {
+       "jp": "じしょ",
+       "ro": "jisho"
+      },
+      {
+       "jp": "てがみ",
+       "ro": "tegami"
+      }
+     ],
+     "answer": 0,
+     "explain": "しんぶん ist die Zeitung, てがみ der Brief."
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „Stadt“?",
+     "options": [
+      {
+       "jp": "まち",
+       "ro": "machi"
+      },
+      {
+       "jp": "みち",
+       "ro": "michi"
+      },
+      {
+       "jp": "むら",
+       "ro": "mura"
+      },
+      {
+       "jp": "まど",
+       "ro": "mado"
+      }
+     ],
+     "answer": 0,
+     "explain": "むら ist ein Dorf, みち ein Weg."
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Schönes Foto! Die nächste Karte zeigt den alten Turm in Shinsekai. Haruka von der Fähre ist dort oben.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Sie mag hohe Aussichtspunkte – von da sieht sie ihren Hafen.",
+     "p": "map"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "しゃしん",
+     "ro": "shashin",
+     "de": "Foto"
+    },
+    {
+     "jp": "まち",
+     "ro": "machi",
+     "de": "Stadt"
+    }
+   ],
+   "hint": "Ein alter Stahlturm über dem Retro-Viertel im Süden – Haruka wartet auf dem Aussichtsdeck."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Von hier oben sehe ich fast bis zur Bucht! Auf der Postkarte ist der Turm noch ganz neu.",
+     "p": "binoculars"
+    },
+    {
+     "s": "harukaf",
+     "t": "Der heutige Turm steht seit 1956. Rundherum liegt Shinsekai – „Neue Welt“.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Kleine Orientierungsfrage!",
+     "p": "timetable"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "In welcher Richtung liegt von hier der Hafen mit dem Riesenrad?",
+     "options": [
+      {
+       "jp": "にし",
+       "ro": "nishi"
+      },
+      {
+       "jp": "ひがし",
+       "ro": "higashi"
+      },
+      {
+       "jp": "きた",
+       "ro": "kita"
+      },
+      {
+       "jp": "みなみ",
+       "ro": "minami"
+      }
+     ],
+     "answer": 0,
+     "explain": "Die Bucht von Ōsaka liegt im Westen – にし."
+    },
+    {
+     "type": "choice",
+     "q": "Was bedeutet しんせかい (Shinsekai)?",
+     "options": [
+      "Neue Welt",
+      "Alter Turm",
+      "Neue Stadt",
+      "Großer Markt"
+     ],
+     "answer": 0
+    }
+   ],
+   "after": [
+    {
+     "s": "harukaf",
+     "t": "Genau! Die letzte Karte zeigt den Süden von ganz oben.",
+     "p": "salute"
+    },
+    {
+     "s": "harukaf",
+     "t": "Herr Satō wartet auf dem höchsten Aussichtsdeck der Stadt, 300 Meter hoch.",
+     "p": "binoculars"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "しんせかい",
+     "ro": "shinsekai",
+     "de": "neue Welt"
+    }
+   ],
+   "hint": "Das höchste Aussichtsdeck der Stadt, 300 Meter über dem Boden – Herr Satō wartet."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "sato",
+     "t": "Hier gab es 1960 nichts so Hohes. Die fünfte Postkarte zeigt nur Dächer.",
+     "p": "explain"
+    },
+    {
+     "s": "sato",
+     "t": "Heute sehen wir die ganze Stadt: die Burg, den Turm, den Hafen, sogar die Berge.",
+     "p": "books"
+    },
+    {
+     "s": "me",
+     "t": "Fünf Karten, fünf Orte. Alles wiedergefunden."
+    },
+    {
+     "s": "sato",
+     "t": "Danke. Ich hänge die alten Karten und Ihre Fotos nebeneinander ins Archiv. Gestern und heute.",
+     "p": "bow"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ },
+ "SIDE_30_KANSAI_LOCAL_LINES_EXPLORER": {
+  "1": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Heute habe ich frei! Ich will einfach mit Bahnen durch Kansai fahren.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Hankyū, Hanshin, U-Bahn, Straßenbahn – jede Linie hat ihre eigene Farbe und Stimmung.",
+     "p": "plant"
+    },
+    {
+     "s": "nana",
+     "t": "Erster Halt: die Bahnviadukte in Nakatsu. Unter den Gleisen gibt es kleine Cafés.",
+     "p": "think"
+    }
+   ],
+   "hint": "Kleine Gassen unter den Bahngleisen, gleich nördlich von Umeda – Nana wartet dort."
+  },
+  "2": {
+   "lines": [
+    {
+     "s": "nana",
+     "t": "Hier oben fährt die Hankyū-Bahn, unten die U-Bahn. Ich verwechsle die Eingänge immer.",
+     "p": "think"
+    },
+    {
+     "s": "nana",
+     "t": "Zeig mir den Weg auf dem Plan!",
+     "p": "plant"
+    },
+    {
+     "s": "me",
+     "t": "Hankyū steht in Kanji: 阪急."
+    }
+   ],
+   "tasks": [
+    {
+     "type": "mapquiz",
+     "map": "umeda",
+     "q": "Bahnen in Nakatsu und Umeda",
+     "points": [
+      {
+       "id": "hankyu",
+       "x": 75,
+       "y": 20,
+       "label": "阪急"
+      },
+      {
+       "id": "jr",
+       "x": 50,
+       "y": 10,
+       "label": "JR"
+      },
+      {
+       "id": "hanshin",
+       "x": 25,
+       "y": 80,
+       "label": "阪神"
+      },
+      {
+       "id": "subway",
+       "x": 50,
+       "y": 90,
+       "label": "地下鉄"
+      }
+     ],
+     "rounds": [
+      {
+       "q": "„Zuerst zur Hankyū-Bahn.“",
+       "answer": "hankyu",
+       "fb": "阪急 – Hankyū."
+      },
+      {
+       "q": "„Jetzt zur U-Bahn – ちかてつ.“",
+       "answer": "subway",
+       "fb": "地下鉄 – chikatetsu, die U-Bahn."
+      },
+      {
+       "q": "„Und wo fährt die Hanshin-Bahn, die nach Kōshien geht?“",
+       "answer": "hanshin",
+       "fb": "阪神 – Hanshin."
+      }
+     ]
+    }
+   ],
+   "after": [
+    {
+     "s": "nana",
+     "t": "Perfekt! Jetzt mit der U-Bahn nach Süden – ins Elektronikviertel.",
+     "p": "laugh"
+    },
+    {
+     "s": "nana",
+     "t": "Mein Cousin Kazu arbeitet dort in einem Retro-Laden.",
+     "p": "plant"
+    }
+   ],
+   "hint": "Im Süden, im Viertel der Elektronik- und Spieleläden – Kazu wartet in der Retro-Ecke."
+  },
+  "3": {
+   "lines": [
+    {
+     "s": "kazu",
+     "t": "Nana hat dich geschickt? Schau, hier sind alte Zug-Videospiele!",
+     "p": "game"
+    },
+    {
+     "s": "kazu",
+     "t": "Zug heißt でんしゃ (densha), Fahrkarte heißt きっぷ (kippu).",
+     "p": "card"
+    },
+    {
+     "s": "kazu",
+     "t": "In den alten Spielen kaufst du sogar am Automaten eine きっぷ.",
+     "p": "thumbs"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "choice",
+     "q": "Wie heißt „Fahrkarte“?",
+     "options": [
+      {
+       "jp": "きっぷ",
+       "ro": "kippu"
+      },
+      {
+       "jp": "きって",
+       "ro": "kitte"
+      },
+      {
+       "jp": "きっさ",
+       "ro": "kissa"
+      },
+      {
+       "jp": "かっぷ",
+       "ro": "kappu"
+      }
+     ],
+     "answer": 0,
+     "explain": "きって ist eine Briefmarke!"
+    },
+    {
+     "type": "choice",
+     "q": "Wie heißt „Zug“?",
+     "options": [
+      {
+       "jp": "でんしゃ",
+       "ro": "densha"
+      },
+      {
+       "jp": "でんわ",
+       "ro": "denwa"
+      },
+      {
+       "jp": "じてんしゃ",
+       "ro": "jitensha"
+      },
+      {
+       "jp": "くるま",
+       "ro": "kuruma"
+      }
+     ],
+     "answer": 0,
+     "explain": "でんわ ist das Telefon, じてんしゃ das Fahrrad."
+    }
+   ],
+   "after": [
+    {
+     "s": "kazu",
+     "t": "High Score! Nana will noch zur ältesten Straßenbahn der Stadt.",
+     "p": "thumbs"
+    },
+    {
+     "s": "kazu",
+     "t": "Die hält direkt vor dem großen Schrein im Süden. Kobayashi wartet dort an der Brücke.",
+     "p": "game"
+    }
+   ],
+   "vocab": [
+    {
+     "jp": "でんしゃ",
+     "ro": "densha",
+     "de": "Zug"
+    },
+    {
+     "jp": "きっぷ",
+     "ro": "kippu",
+     "de": "Fahrkarte"
+    }
+   ],
+   "hint": "Ein alter Schrein im Süden mit einer steilen roten Bogenbrücke – Herr Kobayashi wartet am Eingang."
+  },
+  "4": {
+   "lines": [
+    {
+     "s": "kobayashi",
+     "t": "Guten Tag! Hinter uns fährt die Hankai-Straßenbahn, direkt vor dem Schrein.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Sie fährt seit über hundert Jahren bis nach Sakai. Ich nehme sie jeden Tag.",
+     "p": "map"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Schauen Sie hoch – am großen Tor hängt etwas Besonderes.",
+     "p": "wipe"
+    }
+   ],
+   "tasks": [
+    {
+     "type": "inspect",
+     "q": "Was hängt oben am großen Steintor?",
+     "x": 50,
+     "y": 22,
+     "r": 8,
+     "closeup": {
+      "art": "shimenawa",
+      "title": "しめなわ – heiliges Seil",
+      "text": "Ein dickes Strohseil markiert den Eingang in einen heiligen Bereich."
+     }
+    }
+   ],
+   "after": [
+    {
+     "s": "kobayashi",
+     "t": "Genau, das heilige Seil. Nana will den Tag am Wasser beenden.",
+     "p": "point"
+    },
+    {
+     "s": "kobayashi",
+     "t": "Haruka von der Fähre wartet am Hafen mit dem großen Riesenrad.",
+     "p": "map"
+    }
+   ],
+   "hint": "Ein Hafen mit einem großen Riesenrad, wo die Sonne über dem Meer untergeht – Haruka wartet."
+  },
+  "5": {
+   "lines": [
+    {
+     "s": "harukaf",
+     "t": "Da seid ihr ja! Genau richtig zum Sonnenuntergang.",
+     "p": "salute"
+    },
+    {
+     "s": "nana",
+     "t": "Hankyū, U-Bahn, Straßenbahn und jetzt das Meer. Ein ganz normaler Tag.",
+     "p": "laugh"
+    },
+    {
+     "s": "me",
+     "t": "Ein ganz normaler, schöner Tag in Ōsaka."
+    },
+    {
+     "s": "harukaf",
+     "t": "Die schönsten Tage sind die normalen. Bis zum nächsten Mal!",
+     "p": "binoculars"
+    }
+   ],
+   "hint": "Nebenaufgabe abgeschlossen."
+  }
+ }
+}

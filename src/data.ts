@@ -35,8 +35,11 @@ export const STRAND_ORDER = [
   ...STRAND_ORDER_BASE,
   ...QUESTS.map((q) => q.quest_id).filter((id) => !STRAND_ORDER_BASE.includes(id) && id !== TEST_QUEST),
 ];
-/** Anzahl der regulären Stränge (ohne Test-Strang). */
-export const ALL_STRANDS = STRAND_ORDER.length;
+/** Nebenaufgaben (quest_id beginnt mit SIDE_) zählen getrennt von den Strängen. */
+export const isSideQuest = (id: string) => id.startsWith('SIDE_');
+/** Anzahl der regulären Stränge (ohne Test-Strang und Nebenaufgaben). */
+export const ALL_STRANDS = STRAND_ORDER.filter((id) => !isSideQuest(id)).length;
+export const ALL_SIDE = STRAND_ORDER.filter(isSideQuest).length;
 
 /** Belegbare Slots eines Screens (null in world.json = Slot gestrichen). */
 export function freeSlots(screenId: string): ('A' | 'B' | 'C')[] {

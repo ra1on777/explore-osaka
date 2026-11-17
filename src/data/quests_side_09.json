@@ -1,0 +1,1005 @@
+{
+ "quests": [
+  {
+   "quest_id": "SIDE_01_FERRY_TIMETABLE",
+   "total_stages": 1,
+   "lead_npcs": [
+    "HARUKA_FERRY_CREW"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "50",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "50",
+      "target_fetch_screens": [
+       "47"
+      ],
+      "return_screen_id": "50"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_02_KOFUN_BINOCULARS",
+   "total_stages": 1,
+   "lead_npcs": [
+    "KOBAYASHI_PARK_KEEPER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "67",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "67",
+      "target_fetch_screens": [
+       "68"
+      ],
+      "return_screen_id": "67"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_03_AMAGASAKI_DELIVERY",
+   "total_stages": 1,
+   "lead_npcs": [
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "19",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "19",
+      "target_fetch_screens": [
+       "18"
+      ],
+      "return_screen_id": "19"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_04_OTEMON_STUDENT_CARD",
+   "total_stages": 1,
+   "lead_npcs": [
+    "STUDENT_OTEMON_BIZ"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "36",
+     "npc_id": "STUDENT_OTEMON_BIZ",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "36",
+      "target_fetch_screens": [
+       "30"
+      ],
+      "return_screen_id": "36"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_05_DOME_SEAT_CHECK",
+   "total_stages": 1,
+   "lead_npcs": [
+    "HARUKA_FERRY_CREW"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "48",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_06_HOSPITAL_VISITOR_PASS",
+   "total_stages": 1,
+   "lead_npcs": [
+    "STUDENT_HANDAI_MEDIC"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "7",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_07_SAKAI_WHETSTONE",
+   "total_stages": 1,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "69",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "69",
+      "target_fetch_screens": [
+       "68"
+      ],
+      "return_screen_id": "69"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_08_MINOH_BENCH_SIGN",
+   "total_stages": 1,
+   "lead_npcs": [
+    "STUDENT_MINOH_LANG"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "12",
+     "npc_id": "STUDENT_MINOH_LANG",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_09_OSAKAJO_HALL_TICKET",
+   "total_stages": 1,
+   "lead_npcs": [
+    "RYO_NIGHT_PROMOTER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "34",
+     "npc_id": "RYO_NIGHT_PROMOTER",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "34",
+      "target_fetch_screens": [
+       "33"
+      ],
+      "return_screen_id": "34"
+     },
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_10_SPA_WORLD_TOWEL",
+   "total_stages": 1,
+   "lead_npcs": [
+    "KENJI_DORM_MATE"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "55",
+     "npc_id": "KENJI_DORM_MATE",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_11_NAGAI_BOTANICAL_SEEDS",
+   "total_stages": 2,
+   "lead_npcs": [
+    "KOBAYASHI_PARK_KEEPER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "64",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "62",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "62",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_12_TAISHO_OKINAWA_BENTO",
+   "total_stages": 2,
+   "lead_npcs": [
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "49",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "49",
+      "target_fetch_screens": [
+       "50"
+      ],
+      "return_screen_id": "49"
+     },
+     "routing_next": {
+      "target_screen_id": "49",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "49",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_13_NAKANOSHIMA_ARCHIVES",
+   "total_stages": 2,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "24",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "25",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "25",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_14_KANDAI_LIBRARY_RETURN",
+   "total_stages": 2,
+   "lead_npcs": [
+    "STUDENT_KANDAI_LAW"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "8",
+     "npc_id": "STUDENT_KANDAI_LAW",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "5",
+     "npc_id": "STUDENT_KANDAI_LAW",
+     "interaction_type": "WAYFINDING_MAP",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_15_KWANSEI_CLOCKTOWER_PHOTO",
+   "total_stages": 2,
+   "lead_npcs": [
+    "STUDENT_KWANSEI_REP"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "15",
+     "npc_id": "STUDENT_KWANSEI_REP",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "18",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "18",
+     "npc_id": "STUDENT_KWANSEI_REP",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_16_TENROKU_UMBRELLA_SWAP",
+   "total_stages": 2,
+   "lead_npcs": [
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "28",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "28",
+      "target_fetch_screens": [
+       "26"
+      ],
+      "return_screen_id": "28"
+     },
+     "routing_next": {
+      "target_screen_id": "29",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "29",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_17_NAKAMOZ_GREENHOUSE",
+   "total_stages": 2,
+   "lead_npcs": [
+    "STUDENT_OMU_LEAD"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "70",
+     "npc_id": "STUDENT_OMU_LEAD",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "61",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "61",
+     "npc_id": "STUDENT_OMU_LEAD",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_18_EXPO_PARK_PICNIC_SPOT",
+   "total_stages": 2,
+   "lead_npcs": [
+    "KOBAYASHI_PARK_KEEPER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "9",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "10",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "10",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_19_HARBOR_LIGHTHOUSE_LOG",
+   "total_stages": 3,
+   "lead_npcs": [
+    "HARUKA_FERRY_CREW"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "50",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "49",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "49",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "49",
+      "target_fetch_screens": [
+       "50"
+      ],
+      "return_screen_id": "49"
+     },
+     "routing_next": {
+      "target_screen_id": "47",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "47",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_20_CASTLE_MOAT_CLEANUP",
+   "total_stages": 3,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK",
+    "KOBAYASHI_PARK_KEEPER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "30",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "33",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "33",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "35",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "35",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_21_SAKAI_TEA_AND_BLADES",
+   "total_stages": 3,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK",
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "69",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "68",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "68",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "66",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "66",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_22_SUITA_CAMPUS_ERRAND",
+   "total_stages": 3,
+   "lead_npcs": [
+    "STUDENT_HANDAI_MEDIC"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "7",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "FETCH_AND_RETURN",
+     "fetch_details": {
+      "origin_screen_id": "7",
+      "target_fetch_screens": [
+       "6"
+      ],
+      "return_screen_id": "7"
+     },
+     "routing_next": {
+      "target_screen_id": "5",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "5",
+     "npc_id": "STUDENT_HANDAI_MEDIC",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "2c",
+      "difficulty_tier": 2,
+      "hint_type": "HOME_BASE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "2c",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_23_HANSHIN_MARKET_STROLL",
+   "total_stages": 3,
+   "lead_npcs": [
+    "NANA_SHOTENGAI_FLORIST",
+    "DAIKI_SPORTS_RIVAL"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "19",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "16",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "16",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "17",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "17",
+     "npc_id": "DAIKI_SPORTS_RIVAL",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_24_KUROMON_MORNING_PREP",
+   "total_stages": 3,
+   "lead_npcs": [
+    "MASTER_GEN_FOOD",
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "43",
+     "npc_id": "MASTER_GEN_FOOD",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "42",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "42",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "38",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "38",
+     "npc_id": "MASTER_GEN_FOOD",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_25_SOUTH_OSAKA_PARK_TOUR",
+   "total_stages": 4,
+   "lead_npcs": [
+    "KOBAYASHI_PARK_KEEPER",
+    "STUDENT_OMU_LEAD"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "62",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "64",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "64",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "60",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "60",
+     "npc_id": "STUDENT_OMU_LEAD",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "57",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "57",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_26_BAY_AREA_COMMUTE",
+   "total_stages": 4,
+   "lead_npcs": [
+    "HARUKA_FERRY_CREW",
+    "AOI_TRANSIT_STUDENT"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "48",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "50",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "50",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "WAYFINDING_MAP",
+     "routing_next": {
+      "target_screen_id": "49",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "49",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "41",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "41",
+     "npc_id": "AOI_TRANSIT_STUDENT",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_27_ARCHIVIST_STAMP_RALLY",
+   "total_stages": 4,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "36",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "32a",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "32a",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "29",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "29",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "4",
+      "difficulty_tier": 2,
+      "hint_type": "CAMPUS_POINTER"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "4",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "ITEM_SUBMISSION",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_28_DORM_WELCOME_DINNER",
+   "total_stages": 4,
+   "lead_npcs": [
+    "MRS_MORIMOTO_RYOBO",
+    "NANA_SHOTENGAI_FLORIST"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "2a",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "28",
+      "difficulty_tier": 2,
+      "hint_type": "MAJOR_SHOTENGAI"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "28",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "56b",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "56b",
+     "npc_id": "MADOKA_BARGAIN_HUNTER",
+     "interaction_type": "ESTIMATION_INPUT",
+     "routing_next": {
+      "target_screen_id": "2c",
+      "difficulty_tier": 1,
+      "hint_type": "HOME_BASE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "2c",
+     "npc_id": "MRS_MORIMOTO_RYOBO",
+     "interaction_type": "ITEM_SUBMISSION",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_29_OSAKA_POSTCARD_COLLECTION",
+   "total_stages": 5,
+   "lead_npcs": [
+    "SATO_ARCHIVE_CLERK",
+    "KOBAYASHI_PARK_KEEPER",
+    "HARUKA_FERRY_CREW"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "23",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "22",
+      "difficulty_tier": 1,
+      "hint_type": "EXPLICIT_NAME"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "22",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "32b",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "32b",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "54",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "54",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "KNOWLEDGE_MULTIPLE_CHOICE",
+     "routing_next": {
+      "target_screen_id": "56a",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "56a",
+     "npc_id": "SATO_ARCHIVE_CLERK",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  },
+  {
+   "quest_id": "SIDE_30_KANSAI_LOCAL_LINES_EXPLORER",
+   "total_stages": 5,
+   "lead_npcs": [
+    "HARUKA_FERRY_CREW",
+    "NANA_SHOTENGAI_FLORIST",
+    "KOBAYASHI_PARK_KEEPER"
+   ],
+   "stages": [
+    {
+     "stage_index": 1,
+     "screen_id": "18",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": {
+      "target_screen_id": "27",
+      "difficulty_tier": 2,
+      "hint_type": "NEIGHBORHOOD_VIBE"
+     }
+    },
+    {
+     "stage_index": 2,
+     "screen_id": "27",
+     "npc_id": "NANA_SHOTENGAI_FLORIST",
+     "interaction_type": "WAYFINDING_MAP",
+     "routing_next": {
+      "target_screen_id": "45a",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 3,
+     "screen_id": "45a",
+     "npc_id": "KAZU_RETRO_COLLECTOR",
+     "interaction_type": "DIALOGUE_RECALL",
+     "routing_next": {
+      "target_screen_id": "65",
+      "difficulty_tier": 3,
+      "hint_type": "DISTRICT_ZONE"
+     }
+    },
+    {
+     "stage_index": 4,
+     "screen_id": "65",
+     "npc_id": "KOBAYASHI_PARK_KEEPER",
+     "interaction_type": "POINT_AND_CLICK_INSPECT",
+     "routing_next": {
+      "target_screen_id": "50",
+      "difficulty_tier": 2,
+      "hint_type": "LANDMARK_FEATURE"
+     }
+    },
+    {
+     "stage_index": 5,
+     "screen_id": "50",
+     "npc_id": "HARUKA_FERRY_CREW",
+     "interaction_type": "DIALOGUE_PURE",
+     "routing_next": null
+    }
+   ]
+  }
+ ]
+}

@@ -86,6 +86,19 @@ Alle Punkte bestätigt. Präzisierungen eingearbeitet:
 - Chikamatsu: Shusse Kagekiyo 1686 (statt 1685).
 - Kitsune-Udon 1893 (Matsubaya), Nihon Ryōiki um 822 (Keikai), Takoishi rund 108–130 t, Kyocera Dome auf dem Gelände des Gaswerks Iwasakibashi.
 
+## v1.7 – Nebenaufgaben-Bundle 09 (30 Nebenaufgaben, 70 Etappen)
+Stillschweigend angepasst, weil Szene oder Fakten nicht passten:
+- **SIDE_06 Klinik:** Auf Screen 7 gibt es keinen Campus-Lageplan. Gesucht wird stattdessen der Informationsschalter (うけつけ); die Monorail-Station wird als Frage abgefragt (Handai-byōin-mae).
+- **SIDE_11 Botanischer Garten:** Keine Infotafel im Bild. Gezeigt wird der Lotus im Teich, die Blütezeiten (Hortensie Juni, Lotus Juli/August) stehen im Dialog.
+- **SIDE_13 Bibliothek:** Die Naniwa-Brücke ist im Lesesaal nicht zu sehen. Gesucht wird der alte Stadtplan im Regal, die Löwen kommen in Nahaufnahme und Frage vor.
+- **SIDE_19 Etappe 2:** Laut Daten führt der Holen-Auftrag von Taishō zum Pier und zurück nach Taishō, der Text wollte aber „zurück zu Haruka an den Pier“. Jetzt holt man Harukas Bestellliste am Pier für Nana; Haruka bekommt die Box in Etappe 3 am Kyocera Dome.
+- **SIDE_20 Etappe 3:** Vom Museum of History liegt die Burg nordöstlich – gefragt wird nach ひがし (Osten).
+- **SIDE_29 Etappe 4:** Vom Tsūtenkaku liegt der Hafen im Westen, nicht im Süden. Die Frage lautet jetzt, in welcher Richtung der Hafen liegt (にし).
+- **SIDE_26 Etappe 2:** Die kostenlose Stadtfähre ab Tempozan fährt nach Sakurajima (Tempozan-Fähre), nicht in die Bucht hinaus.
+- **SIDE_30 Etappe 4:** Die Hankai-Straßenbahn ist auf Screen 65 nicht zu sehen. Gesucht wird das heilige Seil am Steintor, die Bahn kommt im Dialog vor.
+- **ITEM_SUBMISSION** (SIDE_27/28, Abschluss): umgesetzt als Übergabe-Dialog mit Frage (どうぞ bzw. いただきます).
+- **Namen:** HARUKA_FERRY_CREW heißt im Spiel „Matrosin Haruka“, damit sie nicht mit der Medizinstudentin Haruka verwechselt wird.
+
 ## v1.2 – Antwortmöglichkeiten
 - 135 Auswahlfragen (v. a. Dialog-Abfragen und Wissensfragen der Regionen 2–6) mit neuen, plausibleren falschen Antworten; die richtige Antwort ist unverändert. Antworten werden jetzt gemischt angezeigt.
 
